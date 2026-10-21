@@ -4,10 +4,11 @@ Neue Website für RITZ Instrument Transformers (Entwurf von Medialyte), veröffe
 **https://ritz.entwurf.medialyte.de**.
 
 - **Branch `main`**: die fertige, statische Website (5 Sprachen, Produktfinder, Konfigurator, Standortkarte,
-  Downloads). Diese Dateien liefert GitHub Pages aus.
+  Downloads). GitHub Pages liefert den Branch **`gh-pages`** aus, der denselben Stand hat:
+  Änderungen immer auf beide pushen (`git push origin main main:gh-pages`).
 - **Branch `quellcode`**: Quellcode, Datenaufbereitung und Build. Neu bauen für diese Adresse:
   `cd site && npm ci && DIST=dist-gh SITE=https://ritz.entwurf.medialyte.de DRAFT=1 ONLY=static node build.mjs`,
-  danach den Inhalt von `site/dist-gh` (ohne `.htaccess` und `_projekt`) nach `main` kopieren.
+  danach den Inhalt von `site/dist-gh` (ohne `.htaccess` und `_projekt`) nach `main` kopieren und `main` sowie `gh-pages` pushen.
 
 Besonderheiten des Entwurfs (`DRAFT=1`): für Suchmaschinen gesperrt, Formulare im Vorschaumodus (es wird nichts
 versendet, der Text lässt sich kopieren), die Startadresse zeigt direkt die deutsche Startseite – keine
