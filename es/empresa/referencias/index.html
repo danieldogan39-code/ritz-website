@@ -17,10 +17,10 @@
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#141110" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="icon" href="/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest">
 <link rel="preload" href="/assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/main.css?v=0b8bc7a7">
+<link rel="stylesheet" href="/assets/main.css?v=c334369b">
 <script>(function(){var d=document.documentElement;d.dataset.hostTheme=d.dataset.theme||'';try{var t=JSON.parse(localStorage.getItem('ritz-theme')||'"auto"');if(t==='light'||t==='dark')d.dataset.theme=t}catch(e){}})()</script>
-<script>window.__RITZ__={"lang":"es","mode":"static","base":"/","dataBase":"/data/","v":"0b8bc7a7","api":null,"preview":true,"route":{"id":"references","p":{}}}</script>
-<script type="module" src="/assets/app.js?v=0b8bc7a7"></script>
+<script>window.__RITZ__={"lang":"es","mode":"static","base":"/","dataBase":"/data/","v":"c334369b","api":null,"preview":true,"route":{"id":"references","p":{}}}</script>
+<script type="module" src="/assets/app.js?v=c334369b"></script>
 </head>
 <body class="">
 <a class="skip" href="#main">Ir al contenido</a>
@@ -30,6 +30,7 @@
 <nav class="nav" aria-label="Navegación principal">
 <div class="nav__item"><button class="nav__link" type="button" aria-expanded="false" aria-controls="mega-products" data-mega="products">Productos<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></button></div>
 <div class="nav__item"><button class="nav__link" type="button" aria-expanded="false" aria-controls="mega-sectors" data-mega="sectors">Aplicaciones<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></button></div>
+<div class="nav__item"><a class="nav__link" href="/es/herramientas/">Herramientas</a></div>
 <div class="nav__item"><a class="nav__link" href="/es/descargas/">Descargas</a></div>
 <div class="nav__item"><button class="nav__link is-active" type="button" aria-expanded="false" aria-controls="mega-company" data-mega="company">Empresa<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></button></div>
 <div class="nav__item"><a class="nav__link" href="/es/empleo/">Empleo</a></div>
@@ -75,6 +76,7 @@
 <strong class="h4">Encuentre el transformador adecuado</strong>
 <p>Filtre más de 290 tipos por nivel de tensión, corriente primaria, clase de precisión y norma, configúrelos y solicítelos directamente.</p>
 <a class="btn btn--light btn--small" href="/es/buscador-productos/">Abrir buscador de productos</a>
+<a class="link link--light" href="/es/herramientas/analisis-especificacion/">Specification check</a>
 <a class="link link--light" href="/es/productos/">Todos los productos</a>
 </div>
 </div>
@@ -104,6 +106,10 @@
 <li><details><summary>Aplicaciones<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><ul>
 <li><a href="/es/aplicaciones/redes-energia/">Suministro eléctrico y redes</a></li><li><a href="/es/aplicaciones/fabricantes-aparamenta/">Fabricantes de celdas</a></li><li><a href="/es/aplicaciones/industria-infraestructura/">Industria e infraestructura</a></li><li><a href="/es/aplicaciones/ferroviario/">Ferrocarril</a></li><li><a href="/es/aplicaciones/renovables-hvdc-calidad-energia/">Renovables, HVDC y calidad de la energía</a></li><li><a href="/es/aplicaciones/centrales-generadores/">Centrales eléctricas y generadores</a></li><li><a href="/es/aplicaciones/medicion-ensayos/">Medición y ensayos</a></li>
 </ul></details></li>
+<li><details><summary>Herramientas<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><ul>
+<li><a href="/es/herramientas/analisis-especificacion/">Specification check</a></li><li><a href="/es/herramientas/calculadoras/">Transformer calculators</a></li>
+<li><a href="/es/solicitud/">Lista de solicitud</a></li><li><a href="/es/herramientas/">Tools</a></li>
+</ul></details></li>
 <li><a href="/es/descargas/">Descargas</a></li>
 <li><details><summary>Empresa<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><ul>
 <li><a href="/es/empresa/">Sobre RITZ</a></li><li><a href="/es/empresa/sedes/">Sedes</a></li>
@@ -121,9 +127,10 @@
 </div>
 </div>
 <main id="main" tabindex="-1">
-<section class="phead ">
+<section class="phead phead--figure ">
 <div class="wrap"><nav aria-label="Ruta de navegación"><ol class="crumbs"><li><a href="/es/">Inicio</a></li><li><a href="/es/empresa/">Empresa</a></li><li><span aria-current="page">Referencias</span></li></ol></nav>
-<div class="phead__grid"><div><h1>Referencias</h1><p class="lead">Muchas de nuestras relaciones con clientes se mantienen desde hace décadas – hablan de la calidad de nuestros productos, de nuestro asesoramiento y de nuestro soporte técnico.</p></div></div>
+<div class="phead__grid phead__grid--figure"><div><h1>Referencias</h1><p class="lead">Muchas de nuestras relaciones con clientes se mantienen desde hace décadas – hablan de la calidad de nuestros productos, de nuestro asesoramiento y de nuestro soporte técnico.</p></div>
+<figure class="phead__fig"><img src="/img/mimg-JKI0984-2-2048x1366-1200.webp" srcset="/img/mimg-JKI0984-2-2048x1366-320.webp 320w, /img/mimg-JKI0984-2-2048x1366-640.webp 640w, /img/mimg-JKI0984-2-2048x1366-960.webp 960w, /img/mimg-JKI0984-2-2048x1366-1200.webp 1200w" sizes="(max-width: 900px) 100vw, 42vw" width="1200" height="800" alt="" class="is-cover" fetchpriority="high" decoding="async"></figure></div>
 </div>
 </section>
 <section class="section section--tight"><div class="wrap stack" style="--s:clamp(32px,5vw,64px)">
@@ -133,19 +140,19 @@
 <div class="cluster"><a class="link" href="/es/noticias/supplier-of-the-year-award-at-hitachi-supplier-days-2024/">Leer artículo</a></div>
 </div>
 </article><article class="ref ref--flip">
-<div class="ref__img"><img src="/img/mimg-Angebauter-Stromwandler-von-Ritz-bei-einer-HYPACT-Schaltanlage-320.webp" srcset="/img/mimg-Angebauter-Stromwandler-von-Ritz-bei-einer-HYPACT-Schaltanlage-320.webp 320w" sizes="(max-width: 900px) 100vw, 40vw" width="320" height="430" alt="" class="is-cover" loading="lazy" decoding="async"></div>
+<div class="ref__img"><img src="/img/mimg-Angebauter-Stromwandler-von-Ritz-bei-einer-HYPACT-Schaltanlage-320.webp" srcset="/img/mimg-Angebauter-Stromwandler-von-Ritz-bei-einer-HYPACT-Schaltanlage-320.webp 320w" sizes="352px" width="320" height="430" alt="" class="is-cover is-lowres" loading="lazy" decoding="async"></div>
 <div class="ref__body stack" style="--s:.8rem"><span class="area__kv">GE Vernova</span><h2 class="h3">Transformadores de corriente para celdas HYpact</h2><p>En 2025, los equipos de ventas e ingeniería de aplicaciones de RITZ desarrollaron, junto con GE Vernova, transformadores de corriente adaptados con precisión a los requisitos de las celdas HYpact.</p>
-<div class="cluster"><a class="btn btn--ghost btn--small" href="https://ritz-international.com/wp-content/uploads/RITZ_Solution_GE_HYpact-1.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>PDF</a><a class="link" href="/es/noticias/ge-hypact-system-with-ritz-converters/">Leer artículo</a></div>
+<div class="cluster"><a class="btn btn--ghost btn--small" href="/es/contacto/?topic=2&amp;msg=Env%C3%ADenme%2C+por+favor%2C+el+documento+%C2%ABRITZ-L%C3%B6sung+f%C3%BCr+die+GE-HYpact-Anlage%C2%BB+%28RITZ_Solution_GE_HYpact-1.pdf%29." data-doc-req><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m3 7 9 6 9-6"/></svg>Solicitar</a><a class="link" href="/es/noticias/ge-hypact-system-with-ritz-converters/">Leer artículo</a></div>
 </div>
 </article><article class="ref">
 <div class="ref__img"><img src="/img/mimg-Kundenreferenz-SIS-Projekt-BSW-5-769.webp" srcset="/img/mimg-Kundenreferenz-SIS-Projekt-BSW-5-320.webp 320w, /img/mimg-Kundenreferenz-SIS-Projekt-BSW-5-640.webp 640w, /img/mimg-Kundenreferenz-SIS-Projekt-BSW-5-769.webp 769w" sizes="(max-width: 900px) 100vw, 40vw" width="769" height="1026" alt="" class="is-cover" loading="lazy" decoding="async"></div>
 <div class="ref__body stack" style="--s:.8rem"><span class="area__kv">Badische Stahlwerke</span><h2 class="h3">Barra SIS con aislamiento sólido de 6000 A</h2><p>Para ELATEC Power Distribution, RITZ suministró, instaló y puso en servicio una barra con aislamiento sólido de 6000 A. Conecta dos secciones de la instalación M17-24 HD, las primeras celdas aisladas en aire del mundo de 24 kV y 6000 A – RITZ fue el único proveedor con una solución para el espacio reducido.</p>
-<div class="cluster"><a class="btn btn--ghost btn--small" href="https://ritz-international.com/wp-content/uploads/Kundenreferenz-SIS-Projekt-BSW.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>PDF</a><a class="link" href="/es/noticias/customer-reference-sis-project-bsw/">Leer artículo</a></div>
+<div class="cluster"><a class="btn btn--ghost btn--small" href="/es/contacto/?topic=2&amp;msg=Env%C3%ADenme%2C+por+favor%2C+el+documento+%C2%ABKundenreferenz+SIS+%E2%80%93+Projekt+BSW%C2%BB+%28Kundenreferenz-SIS-Projekt-BSW.pdf%29." data-doc-req><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m3 7 9 6 9-6"/></svg>Solicitar</a><a class="link" href="/es/noticias/customer-reference-sis-project-bsw/">Leer artículo</a></div>
 </div>
 </article><article class="ref ref--flip">
 <div class="ref__img"><img src="/img/mimg-2022__07__unternehmen_referenzen_1-561.webp" srcset="/img/mimg-2022__07__unternehmen_referenzen_1-320.webp 320w, /img/mimg-2022__07__unternehmen_referenzen_1-561.webp 561w" sizes="(max-width: 900px) 100vw, 40vw" width="561" height="561" alt="" class="is-cover" loading="lazy" decoding="async"></div>
 <div class="ref__body stack" style="--s:.8rem"><span class="area__kv">Operador de red</span><h2 class="h3">Transformadores de banda ancha para calidad de la energía</h2><p>Informe práctico sobre el uso de transformadores de banda ancha de RITZ para medir la calidad de la energía.</p>
-<div class="cluster"><a class="btn btn--ghost btn--small" href="https://ritz-international.com/wp-content/uploads/2302-AM-Offenbach-v6.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>PDF</a></div>
+<div class="cluster"><a class="btn btn--ghost btn--small" href="/es/contacto/?topic=2&amp;msg=Env%C3%ADenme%2C+por+favor%2C+el+documento+%C2%ABUse+of+RITZ+broadband+converters+-+July+2017%C2%BB+%282302-AM-Offenbach-v6.pdf%29." data-doc-req><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m3 7 9 6 9-6"/></svg>Solicitar</a></div>
 </div>
 </article>
 <p class="lead">Estaremos encantados de presentarle casos prácticos detallados en una reunión personal.</p>
@@ -167,6 +174,7 @@
 </ul></nav>
 <nav aria-label="Servicio"><h2>Servicio</h2><ul>
 <li><a href="/es/descargas/">Descargas</a></li><li><a href="/es/contacto/">Contacto</a></li>
+<li><a href="/es/herramientas/">Herramientas</a></li><li><a href="/es/herramientas/analisis-especificacion/">Specification check</a></li>
 <li><a href="/es/solicitud/">Lista de solicitud</a></li><li><a href="/es/aplicaciones/">Aplicaciones</a></li>
 <li><a href="/es/empresa/calidad/">Calidad y certificados</a></li>
 </ul></nav>

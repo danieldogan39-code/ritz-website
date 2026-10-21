@@ -17,10 +17,10 @@
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#141110" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="icon" href="/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest">
 <link rel="preload" href="/assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/main.css?v=0b8bc7a7">
+<link rel="stylesheet" href="/assets/main.css?v=c334369b">
 <script>(function(){var d=document.documentElement;d.dataset.hostTheme=d.dataset.theme||'';try{var t=JSON.parse(localStorage.getItem('ritz-theme')||'"auto"');if(t==='light'||t==='dark')d.dataset.theme=t}catch(e){}})()</script>
-<script>window.__RITZ__={"lang":"fr","mode":"static","base":"/","dataBase":"/data/","v":"0b8bc7a7","api":null,"preview":true,"route":{"id":"inquiry","p":{}}}</script>
-<script type="module" src="/assets/app.js?v=0b8bc7a7"></script>
+<script>window.__RITZ__={"lang":"fr","mode":"static","base":"/","dataBase":"/data/","v":"c334369b","api":null,"preview":true,"route":{"id":"inquiry","p":{}}}</script>
+<script type="module" src="/assets/app.js?v=c334369b"></script>
 </head>
 <body class="">
 <a class="skip" href="#main">Aller au contenu</a>
@@ -30,6 +30,7 @@
 <nav class="nav" aria-label="Navigation principale">
 <div class="nav__item"><button class="nav__link" type="button" aria-expanded="false" aria-controls="mega-products" data-mega="products">Produits<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></button></div>
 <div class="nav__item"><button class="nav__link" type="button" aria-expanded="false" aria-controls="mega-sectors" data-mega="sectors">Applications<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></button></div>
+<div class="nav__item"><a class="nav__link" href="/fr/outils/">Outils</a></div>
 <div class="nav__item"><a class="nav__link" href="/fr/telechargements/">Téléchargements</a></div>
 <div class="nav__item"><button class="nav__link" type="button" aria-expanded="false" aria-controls="mega-company" data-mega="company">Entreprise<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></button></div>
 <div class="nav__item"><a class="nav__link" href="/fr/carriere/">Carrière</a></div>
@@ -75,6 +76,7 @@
 <strong class="h4">Trouver le transformateur adapté</strong>
 <p>Filtrez plus de 290 types par niveau de tension, courant primaire, classe de précision et norme, configurez-les et envoyez directement une demande.</p>
 <a class="btn btn--light btn--small" href="/fr/recherche-produits/">Ouvrir le sélecteur de produits</a>
+<a class="link link--light" href="/fr/outils/analyse-specification/">Specification check</a>
 <a class="link link--light" href="/fr/produits/">Tous les produits</a>
 </div>
 </div>
@@ -104,6 +106,10 @@
 <li><details><summary>Applications<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><ul>
 <li><a href="/fr/applications/reseaux-energie/">Fournisseurs d’énergie et réseaux</a></li><li><a href="/fr/applications/fabricants-appareillage/">Constructeurs d’appareillages</a></li><li><a href="/fr/applications/industrie-infrastructure/">Industrie et infrastructures</a></li><li><a href="/fr/applications/ferroviaire/">Ferroviaire</a></li><li><a href="/fr/applications/renouvelables-ccht-qualite-reseau/">Énergies renouvelables, CCHT et qualité de l’énergie</a></li><li><a href="/fr/applications/centrales-generateurs/">Centrales électriques et générateurs</a></li><li><a href="/fr/applications/comptage-essais/">Mesure, essais et comptage</a></li>
 </ul></details></li>
+<li><details><summary>Outils<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><ul>
+<li><a href="/fr/outils/analyse-specification/">Specification check</a></li><li><a href="/fr/outils/calculateurs/">Transformer calculators</a></li>
+<li><a href="/fr/demande/">Liste de demande</a></li><li><a href="/fr/outils/">Tools</a></li>
+</ul></details></li>
 <li><a href="/fr/telechargements/">Téléchargements</a></li>
 <li><details><summary>Entreprise<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary><ul>
 <li><a href="/fr/entreprise/">À propos de RITZ</a></li><li><a href="/fr/entreprise/sites/">Sites</a></li>
@@ -122,18 +128,34 @@
 </div>
 <main id="main" tabindex="-1">
 <section class="phead phead--compact">
-<div class="wrap"><nav aria-label="Fil d’Ariane"><ol class="crumbs"><li><a href="/fr/">Accueil</a></li><li><span aria-current="page">Demande</span></li></ol></nav>
+<div class="wrap"><nav aria-label="Fil d’Ariane"><ol class="crumbs"><li><a href="/fr/">Accueil</a></li><li><a href="/fr/outils/">Tools</a></li><li><span aria-current="page">Demande</span></li></ol></nav>
 <div class="phead__grid"><div><h1>Demande</h1><p class="lead">Vérifiez votre sélection et envoyez-nous votre demande. Vous recevrez une offre de l’équipe commerciale compétente.</p></div></div>
 </div>
 </section>
 <section class="section section--tight">
-<div class="wrap basket">
-<div>
-<div class="section-head section-head--row"><h2 class="h3">Votre liste de demande</h2><button class="link" type="button" data-basket-clear hidden>Vider la liste</button></div>
-<div data-basket-list><div class="empty"><h3>Votre liste de demande est vide.</h3><p>Ajoutez des produits dans le sélecteur de produits ou sur une page produit – ou écrivez-nous directement.</p><a class="btn" href="/fr/recherche-produits/">Ouvrir le sélecteur de produits</a></div></div>
+<div class="wrap pm" data-mappe>
+<div class="pm__main">
+<div class="pm__import" data-pm-import role="region" aria-label="Shared project list" hidden></div>
+<div class="pm__meta">
+<div class="field"><label for="pm-name">Project name</label><input class="input" id="pm-name" data-pm="name" maxlength="120" autocomplete="off"></div>
+<div class="field"><label for="pm-ref">Project or inquiry number</label><input class="input" id="pm-ref" data-pm="ref" maxlength="80" autocomplete="off"></div>
+<div class="field"><label for="pm-due">Requested delivery date</label><input class="input" id="pm-due" data-pm="due" type="date"></div>
+<div class="field"><label for="pm-buffer">Buffer for transport and goods receipt</label><select class="select" id="pm-buffer" data-pm="buffer"><option value="0">0 week</option><option value="1" selected>1 week</option><option value="2">2 weeks</option><option value="3">3 weeks</option><option value="4">4 weeks</option><option value="6">6 weeks</option></select></div>
+</div>
+<p class="pm__plan" data-pm-plan>With a delivery date, the list shows the latest order date for every item.</p>
+<div class="pm__bar">
+<h2 class="h3">Votre liste de demande <span class="faint" data-pm-count></span></h2>
+<div class="cluster" data-pm-actions hidden>
+<button class="btn btn--ghost btn--small" type="button" data-pm-renumber><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 6h12M9 12h12M9 18h12"/><path d="M4 6h.01M4 12h.01M4 18h.01" stroke-width="3"/></svg>Renumber</button><button class="btn btn--ghost btn--small" type="button" data-pm-tender aria-expanded="false" aria-controls="pm-tender"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3H6v18h12V7z"/><path d="M14 3v4h4"/></svg>Tender texts</button><button class="btn btn--ghost btn--small" type="button" data-pm-csv><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Export CSV</button><button class="btn btn--ghost btn--small" type="button" data-pm-share><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 5h5v5M19 5l-8 8M18 14v5H5V6h5"/></svg>Share list</button><button class="btn btn--ghost btn--small" type="button" data-pm-print><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 9V3h10v6M7 18H4v-8h16v8h-3M7 14h10v7H7z"/></svg>Print</button>
+<span class="pm__confirm" data-pm-clearbox><button class="link small" type="button" data-basket-clear>Vider la liste</button></span>
+</div>
+</div>
+<div data-basket-list><div class="empty"><h3>Votre liste de demande est vide.</h3><p>Ajoutez des produits dans le sélecteur de produits ou sur une page produit – ou écrivez-nous directement.</p><div class="cluster" style="justify-content:center"><a class="btn" href="/fr/recherche-produits/">Ouvrir le sélecteur de produits</a><a class="btn btn--ghost" href="/fr/outils/analyse-specification/">Specification check</a></div></div></div>
+<details class="pm__tender" id="pm-tender" data-pm-tenderbox hidden><summary>Tender texts for your bill of quantities</summary><p class="small muted" style="padding:0 14px">Per item with all technical data – ready to paste into a bill of quantities or purchase order.</p><pre class="copybox" tabindex="0" data-pm-tendertext></pre><div class="cluster"><button class="btn btn--small" type="button" data-pm-tendercopy><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="8" y="8" width="12" height="12" rx="1"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg>Copy all</button></div></details>
 </div>
 <form class="basket__form" data-inquiry-form novalidate>
 <h2 class="h3">Vos coordonnées</h2>
+<p class="pm__form-intro">The inquiry contains all items with configuration, tag and date – and a link that lets our sales team open the list directly.</p>
 <div class="form-grid">
 <div class="field full"><label for="f-company">Société *</label><input class="input" type="text" id="f-company" name="company" required autocomplete="organization"></div>
 <div class="field full"><label for="f-name">Prénom et nom *</label><input class="input" type="text" id="f-name" name="name" required autocomplete="name"></div>
@@ -166,6 +188,7 @@
 </ul></nav>
 <nav aria-label="Services"><h2>Services</h2><ul>
 <li><a href="/fr/telechargements/">Téléchargements</a></li><li><a href="/fr/contact/">Contact</a></li>
+<li><a href="/fr/outils/">Outils</a></li><li><a href="/fr/outils/analyse-specification/">Specification check</a></li>
 <li><a href="/fr/demande/">Liste de demande</a></li><li><a href="/fr/applications/">Applications</a></li>
 <li><a href="/fr/entreprise/qualite/">Qualité &amp; certificats</a></li>
 </ul></nav>
