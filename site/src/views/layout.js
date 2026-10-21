@@ -152,7 +152,7 @@ export function footer(ctx) {
         <a class="logo" href="${href('home')}" aria-label="RITZ – ${esc(t.ui.home)}">${LOGO}</a>
         <p class="ftr__claim">${esc(F.claim)}</p>
         <p class="ftr__lead">${esc(F.lead)}</p>
-        <address class="ftr__addr">RITZ Instrument Transformers GmbH<br>Wandsbeker Zollstraße 92–98<br>22041 Hamburg<br><a href="tel:+4940511230"><span class="nw">+49&nbsp;40&nbsp;51123-0</span></a><br><a href="mailto:info@ritz-international.com">info@ritz-international.com</a></address>
+        <address class="ftr__addr">RITZ Instrument Transformers GmbH<br>Wandsbeker Zollstraße 92–98<br>22041 Hamburg<br><a href="tel:+4940511230"><span class="nw">+49&nbsp;40&nbsp;51123&#8209;0</span></a><br><a href="mailto:info@ritz-international.com">info@ritz-international.com</a></address>
       </div>
       <nav aria-label="${esc(F.colProducts)}"><h2>${esc(F.colProducts)}</h2><ul>
         ${AREAS.map((a) => `<li><a href="${href('area', { area: a })}">${esc(t.lbl.area[a])}</a></li>`).join('')}

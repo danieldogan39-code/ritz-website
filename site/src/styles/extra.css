@@ -485,6 +485,8 @@ input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; a
 }
 :root[data-intro="play"] .intro__skip { display: inline-flex; }
 :root[data-intro] .hdr .logo { opacity: 0; }
+/* Vorschau: kein Seiten-Überblenden, solange das Intro läuft (sonst läge der Kopf kurz über dem Intro) */
+:root[data-intro] .route-fade { animation: none; }
 .intro__svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
 .intro__svg--p { display: none; }
 @media (max-aspect-ratio: 4/5) { .intro__svg--l { display: none; } .intro__svg--p { display: block; } }

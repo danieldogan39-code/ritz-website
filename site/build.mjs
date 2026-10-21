@@ -215,7 +215,7 @@ ${DRAFT ? '<meta name="robots" content="noindex, nofollow">' : page.noindex || p
 <link rel="canonical" href="${SITE}${url}">
 ${alternates.map(([l, u]) => `<link rel="alternate" hreflang="${l}" href="${SITE}${u}">`).join('\n')}
 <meta property="og:type" content="${page.type === 'article' ? 'article' : 'website'}"><meta property="og:title" content="${esc(page.title)}"><meta property="og:description" content="${esc(page.desc)}"><meta property="og:url" content="${SITE}${url}"><meta property="og:locale" content="${LOCALES[ctx.lang].replace('-', '_')}">${ogImg ? `<meta property="og:image" content="${ogImg}">` : ''}
-<meta name="theme-color" content="#1c1311">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#141110" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="icon" href="/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest">
 <link rel="preload" href="/assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/main.css?v=${V}">

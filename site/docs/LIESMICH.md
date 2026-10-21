@@ -40,6 +40,8 @@ Die bisherigen Auftritte `ritz-international.com` (WordPress) und `produkte.ritz
 
 **Suche.** Gesamtsuche über Produkte, Seiten und Dokumente (Strg/Cmd + K oder „/“), Typcodes werden direkt erkannt.
 
+**Startseite in Bewegung.** Beim ersten Besuch je Sitzung zeigt ein kurzes Intro (etwa 2,6 Sekunden, jederzeit per Klick, Taste, Mausrad oder Wischen zu überspringen) das Messwandler-Prinzip: Ein großer Primärstrom (2000 A) läuft in den Ringkern, heraus kommt ein kleiner, proportionaler Sekundärstrom (5 A). Dann setzt sich das RITZ-Zeichen zusammen und fliegt an seinen Platz im Seitenkopf. Danach steigt die Hauptaussage maskiert auf, die Spannungsachse misst sich einmal von 0,72 bis 24 kV ein (jede Bedienung bricht das ab), Bilder öffnen sich beim Scrollen, Kennzahlen zählen wie ein Messgerät hoch und das Standortnetz zeichnet sich von Hamburg aus. Bewegt werden nur `transform`, `opacity` und `clip-path`. Bei „Bewegung reduzieren“, ohne JavaScript und im Druck ist alles sofort sichtbar; Vorleseprogramme hören immer die Endwerte. Gesteuert wird das über `data-intro` und die Klasse `rv` am Wurzelelement (Kopfskript in `build.mjs`, Stile in `extra.css` unter „Startseite: Intro und Bewegung“, Auslöser in `src/client/motion.js`). Prüfskript: `node tools/qa/intro.mjs`.
+
 **Weiteres.** Hell- und Dunkelmodus (folgt dem System, umschaltbar), druckfreundliche Produktseiten, strukturierte Daten (Organization, Product, NewsArticle), Sitemap mit Sprachzuordnung, saubere Sprachwechsel auf die jeweils gleiche Seite.
 
 ## 3. Konzept
@@ -96,6 +98,8 @@ Erfasst wurden alle öffentlich erreichbaren Seiten, Beiträge, Produkte, Dokume
 3. Dokumente umziehen: `bash _projekt/dokumente-migration.sh` im Webroot ausführen (lädt alle 1.272 Dateien nach `/dokumente/`), dann die Seite mit `DOCBASE=/dokumente/ node build.mjs` neu bauen, damit alle Links auf den eigenen Server zeigen. Anschließend `_projekt/dokumente-redirects-hauptdomain.htaccess` in die `.htaccess` übernehmen.
 4. Für `produkte.ritz-international.com` die Datei `_projekt/produkte-domain.htaccess` (Produktseiten) und `_projekt/dokumente-redirects-produktdomain.htaccess` (Dokumente) als `.htaccess` einsetzen, damit alte Produktlinks und Datenblatt-Links auf die neue Seite führen.
 5. Sitemap in der Google Search Console einreichen: `https://ritz-international.com/sitemap.xml`.
+
+**Entwurf auf GitHub Pages.** Die Entwurfsfassung läuft unter https://ritz.entwurf.medialyte.de (Repository `danieldogan39-code/ritz-website`, Branch `main`; Quellcode im Branch `quellcode`). Gebaut wird sie mit `DIST=dist-gh SITE=https://ritz.entwurf.medialyte.de DRAFT=1 ONLY=static node build.mjs`: alle Adressen in canonical, hreflang und Vorschaubildern zeigen auf die Entwurfsadresse, die Seite ist für Suchmaschinen gesperrt, Formulare versenden nichts (Hinweis und Text zum Kopieren), die Startadresse zeigt direkt die deutsche Startseite ohne Weiterleitung, PHP-Dateien und `_projekt/` entfallen. Verweise aus alten Newsbeiträgen auf Seiten der alten Website sind auf die neuen Seiten umgestellt (oder bleiben als Text stehen).
 
 **Wichtig zu den Dokumenten.** Bis zur Migration verlinkt die Seite alle Dokumente an ihren bisherigen Adressen (`/wp-content/uploads/…` auf ritz-international.com und `/media/…` auf produkte.ritz-international.com). Wird die Domain umgestellt, also entweder Schritt 3 vor dem Go-live ausführen oder den bisherigen Ordner `/wp-content/uploads/` unverändert in den neuen Webroot übernehmen und den Produktfinder-Server für `/media/` weiterlaufen lassen.
 
