@@ -1,0 +1,218 @@
+{
+ "produktdaten": [
+  {
+   "msg": "GSO 1307: Genauigkeitsklasse im Shop vertippt, aus der Reihe ergänzt: „0.S5 FS5…10 (depends on burden)“ → „0.5S FS5…10 (depends on burden)“ – bitte bestätigen.",
+   "pid": 158,
+   "code": "GSO 1307"
+  },
+  {
+   "msg": "GSO 1307: Genauigkeitsklasse im Shop vertippt, aus der Reihe ergänzt: „0.S5 FS5…10 bürdenabhängig“ → „0.5S FS5…10 bürdenabhängig“ – bitte bestätigen.",
+   "pid": 158,
+   "code": "GSO 1307"
+  },
+  {
+   "msg": "GSO 2507: Genauigkeitsklasse im Shop vertippt, aus der Reihe ergänzt: „.2 FS5…65 (depends on burden)“ → „0.2 FS5…65 (depends on burden)“ – bitte bestätigen.",
+   "pid": 159,
+   "code": "GSO 2507"
+  },
+  {
+   "msg": "GSO 5539: Genauigkeitsklasse im Shop vertippt, aus der Reihe ergänzt: „0.FS5…50 (depends on burden)“ → „0.5S FS5…50 (depends on burden)“ – bitte bestätigen.",
+   "pid": 177,
+   "code": "GSO 5539"
+  },
+  {
+   "msg": "GSO 5539: Genauigkeitsklasse im Shop vertippt, aus der Reihe ergänzt: „0.FS5…50 bürdenabhängig“ → „0.5S FS5…50 bürdenabhängig“ – bitte bestätigen.",
+   "pid": 177,
+   "code": "GSO 5539"
+  },
+  {
+   "msg": "UGSS 305: deutsche Zeile in der englischen Beschreibung entfernt („Montage in beliebiger Position Der Stromwandler ist wartungs“).",
+   "pid": 214,
+   "code": "UGSS 305"
+  },
+  {
+   "msg": "UGSS 304: Genauigkeitsklasse im Shop vertippt, aus der Reihe ergänzt: „05 FS 5…25 (depends on burden)“ → „0.5 FS 5…25 (depends on burden)“ – bitte bestätigen.",
+   "pid": 215,
+   "code": "UGSS 304"
+  },
+  {
+   "msg": "KSR 60 / 62: Englische Beschreibung war deutsch – übersetzt.",
+   "pid": 227,
+   "code": "KSR 60 / 62"
+  },
+  {
+   "msg": "Englische Bezeichnung enthält deutschen Text: „KSSH 44 Innenraum Schienen-Stromwandler Niederspannung“",
+   "pid": 228,
+   "code": "KSSH 44"
+  },
+  {
+   "msg": "KSSH 44: Englische Bezeichnung und Beschreibung waren deutsch – übersetzt.",
+   "pid": 228,
+   "code": "KSSH 44"
+  },
+  {
+   "msg": "Deutsche Bezeichnung enthält englischen Text: „UGSSF 704 Outdoor Current Transformer Split-Core Type“",
+   "pid": 279,
+   "code": "UGSSF 704"
+  },
+  {
+   "msg": "UGSSF 704: Deutsche Bezeichnung und Beschreibung waren englisch – übersetzt.",
+   "pid": 279,
+   "code": "UGSSF 704"
+  },
+  {
+   "msg": "Deutsche Bezeichnung enthält englischen Text: „KSER 100 Indoor voltage transformer, Low voltag. single pole“",
+   "pid": 288,
+   "code": "KSER 100"
+  },
+  {
+   "msg": "KSER 100: Englische Fassung nannte 2 Klemmenabdeckungen und eine abweichende Bemessungsspannung, die deutsche 1 Klemmenabdeckung – an die deutsche Fassung angeglichen.",
+   "pid": 288,
+   "code": "KSER 100"
+  },
+  {
+   "msg": "KSER 104: Englische Beschreibung war deutsch; englische Bezeichnung nannte „Double-pole“, Beschreibung und Daten sagen einpolig – korrigiert.",
+   "pid": 291,
+   "code": "KSER 104"
+  },
+  {
+   "msg": "KSZ 150: Englische Beschreibung mit deutschen Wörtern und Tippfehlern („oder“, „Sizee“, „12ksg“) – bereinigt.",
+   "pid": 293,
+   "code": "KSZ 150"
+  },
+  {
+   "msg": "KSZR 70: deutsche Zeile in der englischen Beschreibung entfernt („Sonderzubehör: verdrehbare Schnappbefestigung für Tragschien“).",
+   "pid": 294,
+   "code": "KSZR 70"
+  },
+  {
+   "msg": "Typcode im Produktfinder lautet „EMWI 7xx“, auf der Hauptseite „EMVI 7xx“ – vereinheitlicht auf EMVI 7xx.",
+   "pid": 323
+  },
+  {
+   "msg": "MKSOH-S: Code 1082, englische Bezeichnung und Hauptseite nennen 1384.",
+   "pid": 328
+  },
+  {
+   "msg": "Englischer Produktfinder (Grundlage auch für FR/HU/ES): 385 Optionstexte in 109 Produkten waren deutsch oder zusammengeklebt (z. B. „4 Wochen“, „… Special Requestsünsche angeben“) – über die Options-IDs mit der deutschen Fassung abgeglichen und übersetzt."
+  }
+ ],
+ "inhalt": [
+  {
+   "msg": "Standortseite: Schwerpunkte der Werke standen auch auf Deutsch überwiegend englisch, bei Marchtrenk fehlte die Liste, englische Adressen waren zusammengeklebt („…92-9822041 HamburgGermany“) – Schwerpunkte in fünf Sprachen gepflegt (bitte freigeben), Land je Sprache ergänzt."
+  },
+  {
+   "msg": "GBMW/GBMEI werden nur in einer News mit Datenblatt genannt; Produktbeschreibung fehlt (Typart aus dem Kürzel abgeleitet, bitte prüfen)."
+  },
+  {
+   "msg": "News „Kombiwandler Platzersparnis“ verlinkt das PDF zu metallgekapselten Kombiwandlern mit dem Linktext „Zusatzbürde“ (DE und EN)."
+  },
+  {
+   "msg": "Beitrag in „es“ ist eine unveränderte Kopie der englischen Fassung: https://ritz-international.com/es/customer-letter-about-the-latest-developments-in-foreign-trade-and-the-implications-of-regulation-eu-2026-2133/"
+  },
+  {
+   "msg": "Beitrag in „fr“ ist eine unveränderte Kopie der englischen Fassung: https://ritz-international.com/fr/customer-letter-about-the-latest-developments-in-foreign-trade-and-the-implications-of-regulation-eu-2026-2133/"
+  },
+  {
+   "msg": "Beitrag in „hu“ ist eine unveränderte Kopie der englischen Fassung: https://ritz-international.com/hu/customer-letter-about-the-latest-developments-in-foreign-trade-and-the-implications-of-regulation-eu-2026-2133/"
+  },
+  {
+   "msg": "News-URL besteht nur aus einer Zahl: https://ritz-international.com/20380/"
+  },
+  {
+   "msg": "News-URL besteht nur aus einer Zahl: https://ritz-international.com/en/20395/"
+  },
+  {
+   "msg": "Deutscher Beitrag „Visit us at the German Pavilion“ enthielt nur englischen Text – für die neue Seite übersetzt (bitte fachlich freigeben)."
+  },
+  {
+   "msg": "Beitrag „sponsoring-sportclub-lichteneiche“ in „en“ war unübersetzt – für die neue Seite übersetzt (bitte freigeben)."
+  },
+  {
+   "msg": "Beitrag in „en“ enthält unübersetzten deutschen Text: https://ritz-international.com/en/ritz-nimmt-an-xxx-vde-zaehlerfachtagung-am-17-18-september-2024-in-gera-teil/"
+  },
+  {
+   "msg": "Beitrag in „es“ enthält unübersetzten deutschen Text: https://ritz-international.com/es/ritz-nimmt-an-xxx-vde-zaehlerfachtagung-am-17-18-september-2024-in-gera-teil/"
+  },
+  {
+   "msg": "Beitrag in „fr“ enthält unübersetzten deutschen Text: https://ritz-international.com/fr/ritz-nimmt-an-xxx-vde-zaehlerfachtagung-am-17-18-september-2024-in-gera-teil/"
+  },
+  {
+   "msg": "Beitrag in „hu“ enthält unübersetzten deutschen Text: https://ritz-international.com/hu/ritz-nimmt-an-xxx-vde-zaehlerfachtagung-am-17-18-september-2024-in-gera-teil/"
+  },
+  {
+   "msg": "Beitrag „ritz-nimmt-an-xxx-vde-zaehlerfachtagung-am-17-18-september-2024-in-gera-teil“ in „en“ war unübersetzt – für die neue Seite übersetzt (bitte freigeben)."
+  },
+  {
+   "msg": "Beitrag „ritz-nimmt-an-xxx-vde-zaehlerfachtagung-am-17-18-september-2024-in-gera-teil“ in „fr“ war unübersetzt – für die neue Seite übersetzt (bitte freigeben)."
+  },
+  {
+   "msg": "Beitrag „ritz-nimmt-an-xxx-vde-zaehlerfachtagung-am-17-18-september-2024-in-gera-teil“ in „hu“ war unübersetzt – für die neue Seite übersetzt (bitte freigeben)."
+  },
+  {
+   "msg": "Beitrag „ritz-nimmt-an-xxx-vde-zaehlerfachtagung-am-17-18-september-2024-in-gera-teil“ in „es“ war unübersetzt – für die neue Seite übersetzt (bitte freigeben)."
+  },
+  {
+   "msg": "Beitrag in „es“ ist eine unveränderte Kopie der englischen Fassung: https://ritz-international.com/es/supplier-of-the-year-award-at-hitachi-supplier-days-2024/"
+  },
+  {
+   "msg": "Beitrag in „fr“ ist eine unveränderte Kopie der englischen Fassung: https://ritz-international.com/fr/supplier-of-the-year-award-at-hitachi-supplier-days-2024/"
+  },
+  {
+   "msg": "Beitrag in „hu“ ist eine unveränderte Kopie der englischen Fassung: https://ritz-international.com/hu/supplier-of-the-year-award-at-hitachi-supplier-days-2024/"
+  },
+  {
+   "msg": "News-URL besteht nur aus einer Zahl: https://ritz-international.com/en/2024/"
+  },
+  {
+   "msg": "News-URL besteht nur aus einer Zahl: https://ritz-international.com/hu/2024/"
+  },
+  {
+   "msg": "Englischer News-Titel besteht nur aus Platzhaltern („$$$$“): https://ritz-international.com/en/ritz-is-an-exhibitor-at-eltefa-in-stuttgart-be-part-of-it/"
+  },
+  {
+   "msg": "Deutscher Beitrag mit englischem Titel/Slug „lorem-ipsum-news-1“: https://ritz-international.com/lorem-ipsum-news-1/"
+  },
+  {
+   "msg": "Deutscher Beitrag enthielt nur englischen Text – für die neue Seite übersetzt (bitte fachlich freigeben): https://ritz-international.com/lorem-ipsum-news-1/"
+  },
+  {
+   "msg": "Platzhalter-Slug in Produktion: https://ritz-international.com/lorem-ipsum-news-1/"
+  },
+  {
+   "msg": "Platzhalter-Slug in Produktion: https://ritz-international.com/lorem-ipsum-news-4/"
+  },
+  {
+   "msg": "Platzhalter-Slug in Produktion: https://ritz-international.com/lorem-ipsum-news-3/"
+  }
+ ],
+ "altlasten": [
+  {
+   "msg": "Defekter Dokumentlink (zwei URLs in einem Link): https://ritz-international.com/wp-content/uploads/RITZ_SIS_Broschuere_DE-1.pdf%20https://ritz-international.com/wp-content/uploads/RITZ_SIS_Brochure_EN-3.pdf"
+  },
+  {
+   "msg": "Shop-/Altlast-Beitrag aus 2019 öffentlich erreichbar: https://ritz-international.com/widerrufsformular/"
+  },
+  {
+   "msg": "Shop-/Altlast-Beitrag aus 2019 öffentlich erreichbar: https://ritz-international.com/widerrufsbelehrung/"
+  },
+  {
+   "msg": "Shop-/Altlast-Beitrag aus 2019 öffentlich erreichbar: https://ritz-international.com/agb/"
+  },
+  {
+   "msg": "Shop-/Altlast-Beitrag aus 2019 öffentlich erreichbar: https://ritz-international.com/order/"
+  },
+  {
+   "msg": "Shop-/Altlast-Beitrag aus 2019 öffentlich erreichbar: https://ritz-international.com/lieferung/"
+  },
+  {
+   "msg": "Shop-/Altlast-Beitrag aus 2019 öffentlich erreichbar: https://ritz-international.com/datenschutz/"
+  },
+  {
+   "msg": "Shop-/Altlast-Beitrag aus 2019 öffentlich erreichbar: https://ritz-international.com/zahlungsarten/"
+  },
+  {
+   "msg": "Shop-/Altlast-Beitrag aus 2019 öffentlich erreichbar: https://ritz-international.com/no-route/"
+  }
+ ]
+}

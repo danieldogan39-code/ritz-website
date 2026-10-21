@@ -1,0 +1,26 @@
+# Karrier - RITZ
+URL: https://ritz-international.com/hu/karrier/  status=200 lang=hu kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "hu_HU", "og:type": "article", "og:title": "Karrier - RITZ", "og:description": "Kezdőoldal Tele energiával a jövő felé! A villamosság izgalmas. Olyan munkáltatót keres, amely izgalmas környezetet kínál Önnek? Szeretne egy olyan nemzetközi, innovatív és inspiráló vállalatnál dolgozni, amely aktívan előmozdítja az energetikai átállást? Otthonosan érzi magát az elektrotechnika világában? Akkor a RITZ Instrument Transformers GmbH lehet a megfelelő hely az Ön számára. Mindig szívesen látjuk azoka
+canonical: https://ritz-international.com/en/career/
+hreflang: [['en', 'https://ritz-international.com/en/career/'], ['fr', 'https://ritz-international.com/fr/carriere/'], ['de', 'https://ritz-international.com/karriere/'], ['hu', 'https://ritz-international.com/hu/karrier/'], ['es', 'https://ritz-international.com/es/carrera-profesional/'], ['x-default', 'https://ritz-international.com/karriere/']]
+
+[H H2] Tele energiával a jövő felé!
+[TEXT] A villamosság izgalmas. Olyan munkáltatót keres, amely izgalmas környezetet kínál Önnek? Szeretne egy olyan nemzetközi, innovatív és inspiráló vállalatnál dolgozni, amely aktívan előmozdítja az energetikai átállást? Otthonosan érzi magát az elektrotechnika világában? Akkor a RITZ Instrument Transformers GmbH lehet a megfelelő hely az Ön számára. Mindig szívesen látjuk azokat a képzett munkatársakat, akik aktív erősítést jelentenek csapatainknak. A lehetőségek sokrétűek és változatosak: a RITZ-csoportnál több mint 20 különböző szakmát lehet gyakorolni. 
+ Sokat teszünk az alkalmazottainkért. A RITZ munkavállalójaként számos előnyt élvezhet, mint például otthonról való munkavégzés, rugalmas munkaidő, 30 nap szabadság, képzési lehetőségek (pl. nyelvtanfolyamok), átjárható hierarchia, költözési támogatás és még sok más. 
+ A jövő most íródik. A RITZ-csoport egy globális ipari vállalat – németországi, ausztriai, magyarországi, kínai és egyesült államokbeli gyártóhelyekkel. Európában még az áramátalakítók bizonyos típusainak, például a kisfeszültségű átalakítóknak is az egyik vezető gyártója vagyunk. Szeretne csatlakozni a nagyokhoz? Ügyfeleink között a villamosenergia-ipar és az energiaellátási ágazat világszerte ismert vállalatai megtalálhatók. Írjon sikertörténetet a RITZ vállalattal együtt. 
+ A RITZ az elektromos ipar feltörekvő multispecialistája, Európában, Kínában és az USA-ban található telephelyekkel. Az energiaellátási ágazat neves ügyfelei számára az ötleteket és elképzeléseket együtt úttörő megoldásokká alakítjuk. Az egész világon.
+ Szolgáltatásorientált ipari vállalatként már több mint 70 éve a legmagasabb fokú minőséget és innovációt képviseljük. Nemzeti és nemzetközi gyártóüzemeinkkel európai vezető szerepet töltünk be a kis- és középfeszültségű átalakítók, az érintésbiztos SIS áramvezető sínrendszerek és az öntőgyantás alkatrészek területén.
+ A nálunk foglalkoztatott körülbelül 1200 munkatárs a legmagasabb minőséget képviseli nagy szakértelemmel, és közös szenvedélyünknek, az elektromos jövőnk fejlesztésének hódolva. Legyen Ön is részese sikertörténetünknek. Legyen a RITZ-történetének része.
+[H H2] Kapcsolat
+[H H2] Maria Schunk Humánerőforrás csoportigazgató
+[LIST] personal.hamburg@ritz-international.com <mailto:personal.hamburg@ritz-international.com>
+[IMG] https://ritz-international.com/wp-content/uploads/2022/07/network_lines_big_new.svg alt=''
+[H H2] Állásajánlatok  -> https://ritz-international.com/hu/karrier-portal/
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] Állásajánlatok  -> https://ritz-international.com/hu/karrier-portal/
+[H H2] Szakmai gyakorlat  -> https://ritz-international.com/hu/karrier/oktatas/
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] Szakmai gyakorlat  -> https://ritz-international.com/hu/karrier/oktatas/
+[H H2] SZAKMAI GYAKORLAT / DIPLOMAMUNKA  -> https://ritz-international.com/hu/karrier/gyakorlatok/
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] SZAKMAI GYAKORLAT / DIPLOMAMUNKA  -> https://ritz-international.com/hu/karrier/gyakorlatok/

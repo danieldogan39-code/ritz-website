@@ -1,0 +1,32 @@
+# Products - RITZ
+URL: https://ritz-international.com/en/products/  status=200 lang=en kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "en_US", "og:type": "article", "og:title": "Products - RITZ", "og:description": "Home Comprehensive product portfolio. More than standard. We offer you customised product solutions and respond to complex special requests with first-class results. Rely on the outstanding quality of our products and our expertise. Are you looking for medium voltage transformers, e.g. for indoor and outdoor use? Or do you need low voltage transformers that are […]", "og:url": "https://ritz-international.com/en/
+canonical: https://ritz-international.com/en/products/
+hreflang: [['en', 'https://ritz-international.com/en/products/'], ['fr', 'https://ritz-international.com/fr/produits/'], ['de', 'https://ritz-international.com/produkte/'], ['hu', 'https://ritz-international.com/hu/termekek/'], ['es', 'https://ritz-international.com/es/productos/'], ['x-default', 'https://ritz-international.com/produkte/']]
+
+[H H2] Comprehensive product portfolio.
+[TEXT] More than standard. We offer you customised product solutions and respond to complex special requests with first-class results. Rely on the outstanding quality of our products and our expertise. 
+ Are you looking for medium voltage transformers, e.g. for indoor and outdoor use? Or do you need low voltage transformers that are perfectly tailored to your requirements? Perhaps you are interested in an innovative SIS bus bar insulation system? Get in touch with us. 
+ High grade cast resin parts and compounds developed to your specifications complete our range. 
+ The application of casting resins is the specialist area of our subsidiary DUROMER. Last but not least, the RITZ portfolio also includes electronic instrument transformers and sensors manufactured to superior levels of quality.
+[IMG] https://ritz-international.com/wp-content/uploads/2022/07/produkte_umfassendes_produktportfolio.jpg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/2022/07/network_lines_new.svg alt=''
+[H H2] Our products
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] learn more  -> https://ritz-international.com/en/products/medium-voltage-transformer/
+[H H2] Medium-voltage converter  -> https://ritz-international.com/en/products/medium-voltage-transformer/
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] learn more  -> https://ritz-international.com/en/products/low-voltage-transformer/
+[H H2] Low-voltage converter  -> https://ritz-international.com/en/products/low-voltage-transformer/
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] learn more  -> https://ritz-international.com/en/products/high-voltage-transformer/
+[H H2] High-voltage converter  -> https://ritz-international.com/en/products/high-voltage-transformer/
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] learn more  -> https://ritz-international.com/en/products/current-rails/
+[H H2] SIS bus bar insulation system  -> https://ritz-international.com/en/products/current-rails/
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] learn more  -> https://ritz-international.com/en/products/duromer-cast-resin-parts/
+[H H2] Cast resin parts DUROMER  -> https://ritz-international.com/en/products/duromer-cast-resin-parts/
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] learn more  -> https://ritz-international.com/en/products/electronic-transducers-and-sensors/
+[H H2] Electronic instrument transformers and sensors  -> https://ritz-international.com/en/products/electronic-transducers-and-sensors/

@@ -1,0 +1,32 @@
+# Nouveautés - RITZ
+URL: https://ritz-international.com/fr/actualites/  status=200 lang=fr kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "description": "Tenez-vous au courant de l'actualité de RITZ Instrument Transformers. Apprenez-en plus sur nos derniers développements, nos participations aux salons et nos récompenses dans le domaine des transformateurs de mesure et de la technique énergétique.", "og:locale": "fr_FR", "og:type": "article", "og:title": "Nouveautés - RITZ", "og:description": "Tenez-vous au courant de l'actualité de RITZ Instrument Transformers. Apprenez-en plus sur nos derniers développements, nos participations aux salon
+canonical: https://ritz-international.com/fr/actualites/actualites/
+hreflang: [['en', 'https://ritz-international.com/en/news/'], ['fr', 'https://ritz-international.com/fr/actualites/'], ['de', 'https://ritz-international.com/news/'], ['hu', 'https://ritz-international.com/hu/hirek/'], ['es', 'https://ritz-international.com/es/noticias/'], ['x-default', 'https://ritz-international.com/news/']]
+
+[H H2] Vous devriez le savoir.
+[TEXT] Rien n’est plus constant que le changement. RITZ Instrument Transformers GmbH est également une entreprise dynamique, ouverte au changement. Ici, nous vous tenons toujours au courant de nos dernières nouveautés et développements. Utilisez ce site comme portail d’informations et de services.
+[IMG] https://ritz-international.com/wp-content/uploads/2022/07/network_lines_on_white_right.svg alt=''
+[pp-posts.classic] Published on: 20 octobre 2026
+Customer letter about the latest developments in foreign trade and the implications of regulation (EU) 2026/2133
+Dear Valued Customers, We would like to inform you about the latest developments in foreign trade and the implications of Implementing Regulation (EU) 2026/2133, which entered into force on 25 September 2026. Customer Letter_EU_Regulation_2026_2133
+En apprendre plus
+Published on: 26 novembre 2025
+DATES DU SALON RITZ 2026
+En apprendre plus
+Published on: 18 septembre 2024
+RITZ nimmt an der XXX. VDE-Zählerfachtagung am 17./18. September 2024 in Gera teil
+Besuchen Sie unsere Kollegen an unserem RITZ Stand!   Ihr RITZ-Vertriebsteam
+En apprendre plus
+Published on: 19 juin 2024
+Supplier of the Year Award at Hitachi Supplier Days 2024
+Ritz Instrument Transformers was named Technology Supplier of the Year by Hitachi Energy Sweden in April. The continuous development of our DC converter EMVI has led to its recognition as an optimal solution for Hitachi Energy’s next-generation SVC Light portfolio. This technology contributes significantly to the integration of renewable energy ...
+En apprendre plus
+Published on: 26 janvier 2024
+Dates des salons RITZ en 2024
+En apprendre plus
+Published on: 19 janvier 2024
+Salon du personnel KarriereStart Dresde
+RITZ participe au salon du personnel KarriereStart sur le site de Messe Dresden halle 1 stand L 24 du 19 au 21/01/ 2024. Nous avons hâte de vous y rencontrer ! Votre équipe Salon RITZ
+En apprendre plus
+En voir plus IMGS=https://ritz-international.com/wp-content/uploads/cropped-RTZ-LOGO-RUND-red.png https://ritz-international.com/wp-content/uploads/Screenshot-2025-11-26-013209.png https://ritz-international.com/wp-content/uploads/IMG-20240917-WA0014.jpg https://ritz-international.com/wp-content/uploads/Ritz-Lieferanten-auszeichnung_Ausgeschnitten-1.jpg https://ritz-international.com/wp-content/uploads/RITZ-MESSETERMINE-2024-fuer-Webseite.png https://ritz-international.com/wp-content/uploads/IMG-20240119-WA0003.jpg LINKS=<https://ritz-international.com/fr/customer-letter-about-the-latest-developments-in-foreign-trade-and-the-implications-of-regulation-eu-2026-2133/> Customer letter about the latest developments in foreign trade and the implications of regulation (E<https://ritz-international.com/fr/customer-letter-about-the-latest-developments-in-foreign-trade-and-the-implications-of-regulation-eu-2026-2133/> En apprendre plus<https://ritz-international.com/fr/customer-letter-about-the-latest-developments-in-foreign-trade-and-the-implications-of-regulation-eu-2026-2133/> <https://ritz-international.com/fr/dates-du-salon-ritz-2026/> DATES DU SALON RITZ 2026<https://ritz-international.com/fr/dates-du-salon-ritz-2026/> En apprendre plus<https://ritz-international.com/fr/dates-du-salon-ritz-2026/> <https://ritz-international.com/fr/ritz-nimmt-an-xxx-vde-zaehlerfachtagung-am-17-18-september-2024-in-gera-teil/> RITZ nimmt an der XXX. VDE-Zählerfachtagung am 17./18. September 2024 in Gera teil<https://ritz-international.com/fr/ritz-nimmt-an-xxx-vde-zaehlerfachtagung-am-17-18-september-2024-in-gera-teil/> En apprendre plus<https://ritz-international.com/fr/ritz-nimmt-an-xxx-vde-zaehlerfachtagung-am-17-18-september-2024-in-gera-teil/> <https://ritz-international.com/fr/supplier-of-the-year-award-at-hitachi-supplier-days-2024/> Supplier of the Year Award at Hitachi Supplier Days 2024<https://ritz-international.com/fr/supplier-of-the-year-award-at-hitachi-supplier-days-2024/> En apprendre plus<https://ritz-international.com/fr/supplier-of-the-year-award-at-hitachi-supplier-days-2024/> <https://ritz-international.com/fr/dates-des-salons-ritz-en-2024/> Dates des salons RITZ en 2024<https://ritz-international.com/fr/dates-des-salons-ritz-en-2024/> En apprendre plus<https://ritz-international.com/fr/dates-des-salons-ritz-en-2024/> <https://ritz-international.com/fr/salon-du-personnel-karrierestart-dresden/> Salon du personnel KarriereStart Dresde<https://ritz-international.com/fr/salon-du-personnel-karrierestart-dresden/> En apprendre plus<https://ritz-international.com/fr/salon-du-personnel-karrierestart-dresden/> En voir plus<javascript:void(0);>

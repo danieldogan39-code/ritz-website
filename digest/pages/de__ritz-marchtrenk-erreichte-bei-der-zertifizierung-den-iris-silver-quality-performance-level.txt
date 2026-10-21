@@ -1,0 +1,12 @@
+# RITZ Marchtrenk erreichte bei der Zertifizierung den IRIS Silver Quality Performance Level - RITZ
+URL: https://ritz-international.com/ritz-marchtrenk-erreichte-bei-der-zertifizierung-den-iris-silver-quality-performance-level/  status=200 lang=de kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "RITZ Marchtrenk erreichte bei der Zertifizierung den IRIS Silver Quality Performance Level - RITZ", "og:description": "Wir freuen uns, bekannt zu geben, dass die RITZ Messwandler GmbH bei ihrem letzten Audit den IRIS Silver Quality Performance Level erreicht hat. Von den rund 3.000 Unternehmen mit IRIS-Zertifizierung weltweit haben bislang erst 401 diesen Status erreicht. Entsprechend freuen wir uns diesen beeindruckenden Erfolg unseres Qualitätswe
+canonical: https://ritz-international.com/ritz-marchtrenk-erreichte-bei-der-zertifizierung-den-iris-silver-quality-performance-level/
+hreflang: [['de', 'https://ritz-international.com/ritz-marchtrenk-erreichte-bei-der-zertifizierung-den-iris-silver-quality-performance-level/'], ['x-default', 'https://ritz-international.com/ritz-marchtrenk-erreichte-bei-der-zertifizierung-den-iris-silver-quality-performance-level/']]
+
+[POSTTITLE] RITZ Marchtrenk erreichte bei der Zertifizierung den IRIS Silver Quality Performance Level
+[POSTCONTENT] Wir freuen uns, bekannt zu geben, dass die RITZ Messwandler GmbH bei ihrem letzten Audit den IRIS Silver Quality Performance Level erreicht hat. Von den rund 3.000 Unternehmen mit IRIS-Zertifizierung weltweit haben bislang erst 401 diesen Status erreicht. Entsprechend freuen wir uns diesen beeindruckenden Erfolg unseres Qualitätswesens nun auch nachweisen zu können.
+ IRIS_Silver_performance_level_news IMGS= LINKS=IRIS_Silver_performance_level_news<https://ritz-international.com/wp-content/uploads/IRIS_Silver_performance_level_news-1.pdf>
+[BTN] Zurück -> /aktuelles/news
+[FEATURED] https://ritz-international.com/wp-content/uploads/IRIS_Silber.png
+[PDFS] https://ritz-international.com/wp-content/uploads/IRIS_Silver_performance_level_news-1.pdf

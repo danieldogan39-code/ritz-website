@@ -1,0 +1,14 @@
+# 25 Years of High Precision DC – Measurement - RITZ
+URL: https://ritz-international.com/lorem-ipsum-news-1/  status=200 lang=de kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "25 Years of High Precision DC – Measurement - RITZ", "og:description": "RITZ again awarded by his Swedish partner in HVDC-Projects with an order of 96 DC – Measurement Systems High Voltage Direct Current (HVDC) – technology allows for nearly 25 years the exchange of clean, renewable electrical power between Quebec and New England. From the beginning involved was the high-precision DC metrology of Ritz Instrument Transformers […]", "og:url": "https:
+canonical: https://ritz-international.com/lorem-ipsum-news-1/
+hreflang: [['en', 'https://ritz-international.com/en/25-years-of-high-precision-dc-measurement/'], ['fr', 'https://ritz-international.com/fr/25-ans-de-mesure-dc-de-haute-precision/'], ['de', 'https://ritz-international.com/lorem-ipsum-news-1/'], ['hu', 'https://ritz-international.com/hu/25-ev-nagy-pontossagu-dc-meres/'], ['es', 'https://ritz-international.com/es/25-anos-de-medicion-de-cc-de-alta-precision/'], ['x-default', 'https://ritz-international.com/lorem-ipsum-news-1/']]
+
+[POSTTITLE] 25 Years of High Precision DC – Measurement
+[POSTCONTENT] RITZ again awarded by his Swedish partner in HVDC-Projects with an order of 96 DC – Measurement Systems
+ High Voltage Direct Current (HVDC) – technology allows for nearly 25 years the exchange of clean, renewable electrical power between Quebec and New England.
+ From the beginning involved was the high-precision DC metrology of Ritz Instrument Transformers GmbH.
+ After 25 years of trouble-free operation, the replacement of the electronic components of the DC measurement systems is now scheduled as part of a project upgrade. The Swedish executive contractor for Hydro Quebec (HD) and National Grid (NG)) has again placed an order to Ritz for the supply of 96 electronic component units of the type EMVI. Due to their durable quality the associated sensor heads (CTs) remain in the station, resulting in a significant cost reduction for the system operator.
+ The high precision DC and AC measuring system type EMVI is worldwide used since 1985 in almost all major HVDC, SVC and GKK equipment to measure DC and AC currents up to 24kA at all voltage levels for measurement, protection and billing purposes. IMGS= LINKS=
+[BTN] Zurück -> /aktuelles/news
+[FEATURED] https://ritz-international.com/wp-content/uploads/ritz-emvi_01-212x300-1.png

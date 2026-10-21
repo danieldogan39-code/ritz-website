@@ -1,0 +1,188 @@
+# Career portal - RITZ
+URL: https://ritz-international.com/en/career-portal/  status=200 lang=en kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "description": "Discover a wide range of career opportunities in the RITZ career portal. Find your dream job in the electrical industry - from apprenticeships to management positions. Shape the future of energy technology with us.", "og:locale": "en_US", "og:type": "article", "og:title": "Career portal - RITZ", "og:description": "Discover a wide range of career opportunities in the RITZ career portal. Find your dream job in the electrical industry - from apprenticeships to management positions. Shape the
+canonical: https://ritz-international.com/en/career-portal/
+hreflang: [['en', 'https://ritz-international.com/en/career-portal/'], ['fr', 'https://ritz-international.com/fr/portail-des-carrieres/'], ['de', 'https://ritz-international.com/karriereportal/'], ['hu', 'https://ritz-international.com/hu/karrier-portal/'], ['es', 'https://ritz-international.com/es/portal-de-empleo/'], ['x-default', 'https://ritz-international.com/karriereportal/']]
+
+[IMG] https://ritz-international.com/wp-content/uploads/arrow-red-RTZ-2048x1448.png alt='' -> #first-section
+[H H2] CERTAINLY A GOOD DECISION
+[shortcode] Search
+Location
+All
+Hamburg
+Kirchaich
+Ottendorf-Okrilla
+Category
+All
+Auszubildende
+Fach- und Führungskräfte
+Gewerblich
+Kaufmännisch
+15 open positions
+Ausbildung Fachkraft für Lagerlogistik (m/w/d)
+Ottendorf-Okrilla
+Full-time
+Apprenticeship
+View job
+(opens in a new tab)
+Ausbildung Mechatroniker (m/w/d)
+Ottendorf-Okrilla
+Full-time
+Apprenticeship
+View job
+(opens in a new tab)
+Elektroniker (m/w/d) Prüffeld
+Ottendorf-Okrilla
+Full-time
+Permanent
+View job
+(opens in a new tab)
+Specialist Energy (m/w/d)
+Ottendorf-Okrilla
+Full-time
+Permanent
+View job
+(opens in a new tab)
+Konstrukteur (m/w/d)
+Hamburg
+Full-time
+Permanent
+View job
+(opens in a new tab)
+Group ERP Manager (m/w/d)
+Hamburg
+Full-time
+Permanent
+View job
+(opens in a new tab)
+Lagerleiter / Manager Warehouse (m/w/d)
+Kirchaich
+Full-time
+Permanent
+View job
+(opens in a new tab)
+HR Specialist (m/w/d)
+Ottendorf-Okrilla
+Full-time
+Permanent
+View job
+(opens in a new tab)
+Leitung Prüffeld / Manager Testing (m/w/d)
+Kirchaich
+Full-time
+Permanent
+View job
+(opens in a new tab)
+Leitung Prüffeld / Manager Testing (m/w/d)
+Ottendorf-Okrilla
+Full-time
+Permanent
+View job
+(opens in a new tab)
+Mitarbeiter Instandhaltung (m/w/d)
+Ottendorf-Okrilla
+Full-time
+Permanent
+View job
+(opens in a new tab)
+Specialist Engineering (m/w/d)
+Kirchaich
+Full-time
+Permanent
+View job
+(opens in a new tab)
+Konstrukteur (m/w/d)
+Ottendorf-Okrilla
+Full-time
+Permanent
+View job
+(opens in a new tab)
+Teamleitung Zuschnitt- und Schweißzentrum (m/w/d)
+Kirchaich
+Full-time
+Permanent
+View job
+(opens in a new tab)
+Produktionsmitarbeiter (m/w/d)
+Ottendorf-Okrilla
+Full-time
+Permanent
+View job
+(opens in a new tab)
+There are currently no open positions matching your selection. LINKS=Ausbildung Fachkraft für Lagerlogistik (m/w/d)
+Ottendorf-Okrilla
+Full-time
+Apprenticeship
+View job
+(<https://ritz.jobs.personio.de/job/2835088> Ausbildung Mechatroniker (m/w/d)
+Ottendorf-Okrilla
+Full-time
+Apprenticeship
+View job
+(opens in a new<https://ritz.jobs.personio.de/job/2834291> Elektroniker (m/w/d) Prüffeld
+Ottendorf-Okrilla
+Full-time
+Permanent
+View job
+(opens in a new tab)<https://ritz.jobs.personio.de/job/2800669> Specialist Energy (m/w/d)
+Ottendorf-Okrilla
+Full-time
+Permanent
+View job
+(opens in a new tab)<https://ritz.jobs.personio.de/job/2775247> Konstrukteur (m/w/d)
+Hamburg
+Full-time
+Permanent
+View job
+(opens in a new tab)<https://ritz.jobs.personio.de/job/2749868> Group ERP Manager (m/w/d)
+Hamburg
+Full-time
+Permanent
+View job
+(opens in a new tab)<https://ritz.jobs.personio.de/job/2740479> Lagerleiter / Manager Warehouse (m/w/d)
+Kirchaich
+Full-time
+Permanent
+View job
+(opens in a new tab)<https://ritz.jobs.personio.de/job/2676193> HR Specialist (m/w/d)
+Ottendorf-Okrilla
+Full-time
+Permanent
+View job
+(opens in a new tab)<https://ritz.jobs.personio.de/job/2573686> Leitung Prüffeld / Manager Testing (m/w/d)
+Kirchaich
+Full-time
+Permanent
+View job
+(opens in a new ta<https://ritz.jobs.personio.de/job/2556201> Leitung Prüffeld / Manager Testing (m/w/d)
+Ottendorf-Okrilla
+Full-time
+Permanent
+View job
+(opens in <https://ritz.jobs.personio.de/job/2527864> Mitarbeiter Instandhaltung (m/w/d)
+Ottendorf-Okrilla
+Full-time
+Permanent
+View job
+(opens in a new ta<https://ritz.jobs.personio.de/job/2469114> Specialist Engineering (m/w/d)
+Kirchaich
+Full-time
+Permanent
+View job
+(opens in a new tab)<https://ritz.jobs.personio.de/job/2455915> Konstrukteur (m/w/d)
+Ottendorf-Okrilla
+Full-time
+Permanent
+View job
+(opens in a new tab)<https://ritz.jobs.personio.de/job/2433976> Teamleitung Zuschnitt- und Schweißzentrum (m/w/d)
+Kirchaich
+Full-time
+Permanent
+View job
+(opens in a<https://ritz.jobs.personio.de/job/2415773> Produktionsmitarbeiter (m/w/d)
+Ottendorf-Okrilla
+Full-time
+Permanent
+View job
+(opens in a new tab)<https://ritz.jobs.personio.de/job/2028868>
+[SECTIONS-BG] [{"id": "7879c1a", "settings": "{\"jet_parallax_layout_list\":[],\"background_background\":\"slideshow\",\"background_slideshow_gallery\":[{\"id\":1405,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/2022\\/11\\/intro_home_slider_1.webp\"},{\"id\":2787,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/stellenangebote_intro_slider_2_Produktion.webp\"},{\"id\":2790,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/stellenangebote_intro_slider_5_Logistik.webp\"},{\"id\":2789,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/stellenangebote_intro_slider_4_International.webp\"},{\"id\":1406,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/2022\\/11\\/intro_home_slider_2.webp\"}],\"background_slideshow_ken_burns\":\"yes\",\"background_slideshow_loop\":\"yes\",\"background_slideshow_slide_duration\":5000,\"background_slideshow_slide_transition\":\"fade\",\"background_slideshow_transition_duration\":500,\"background_slideshow_ken_burns_zoom_direction\":\"in\"}"}]

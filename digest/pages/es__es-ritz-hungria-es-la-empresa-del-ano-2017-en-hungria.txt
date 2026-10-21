@@ -1,0 +1,10 @@
+# RITZ Hungría es la "Empresa del Año 2017" en Hungría - RITZ
+URL: https://ritz-international.com/es/ritz-hungria-es-la-empresa-del-ano-2017-en-hungria/  status=200 lang=es kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "es_ES", "og:type": "article", "og:title": "RITZ Hungría es la \"Empresa del Año 2017\" en Hungría - RITZ", "og:description": "\r RITZ Mérötranszformátor Kft. fue elegida «Empresa del año 2017» en Hungría por la Asociación Nacional de Empresarios y Empleadores Húngaros (VOSZ). El Ritz se ha caracterizado por su fuerte desarrollo en las últimas décadas. El número de empleados no ha dejado de aumentar y la inversión en forma de nueva planta ha contribuido al […]", "og:url": "https://ritz-inter
+canonical: https://ritz-international.com/es/ritz-hungria-es-la-empresa-del-ano-2017-en-hungria/
+hreflang: [['en', 'https://ritz-international.com/en/ritz-hungary-is-company-of-the-year-2017-in-hungary/'], ['fr', 'https://ritz-international.com/fr/ritz-hongrie-est-entreprise-de-lannee-2017-en-hongrie/'], ['de', 'https://ritz-international.com/lorem-ipsum-news-3/'], ['hu', 'https://ritz-international.com/hu/a-ritz-magyarorszag-az-ev-vallalata-2017-magyarorszagon/'], ['es', 'https://ritz-international.com/es/ritz-hungria-es-la-empresa-del-ano-2017-en-hungria/'], ['x-default', 'https://ritz-international.com/lorem-ipsum-news-3/']]
+
+[POSTTITLE] RITZ Hungría es la «Empresa del Año 2017» en Hungría
+[POSTCONTENT] RITZ Mérötranszformátor Kft. fue elegida «Empresa del año 2017» en Hungría por la Asociación Nacional de Empresarios y Empleadores Húngaros (VOSZ). El Ritz se ha caracterizado por su fuerte desarrollo en las últimas décadas. El número de empleados no ha dejado de aumentar y la inversión en forma de nueva planta ha contribuido al desarrollo urbano de Kecskemét. IMGS= LINKS=
+[BTN] Volver -> https://ritz-international.com/es/?page_id=5592
+[FEATURED] https://ritz-international.com/wp-content/uploads/P1030113_retusalt-768x432-1.jpg

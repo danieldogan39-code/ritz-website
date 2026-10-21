@@ -1,0 +1,15 @@
+# References - RITZ
+URL: https://ritz-international.com/en/company/references/  status=200 lang=en kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "description": "Discover the successful projects and references of RITZ Instrument Transformers. Our high-quality instrument transformers and solutions have convinced renowned customers in the electrical industry and have won several awards.", "og:locale": "en_US", "og:type": "article", "og:title": "References - RITZ", "og:description": "Discover the successful projects and references of RITZ Instrument Transformers. Our high-quality instrument transformers and solutions have convinced renowned customers
+canonical: https://ritz-international.com/en/company/references/
+hreflang: [['en', 'https://ritz-international.com/en/company/references/'], ['fr', 'https://ritz-international.com/fr/entreprise/references/'], ['de', 'https://ritz-international.com/unternehmen/referenzen/'], ['hu', 'https://ritz-international.com/hu/a-vallalat/hivatkozasok/'], ['es', 'https://ritz-international.com/es/la-empresa/referencias/'], ['x-default', 'https://ritz-international.com/unternehmen/referenzen/']]
+
+[H H2] First-class products for well-known customers.
+[TEXT] Indicator of corporate success. The satisfaction of our customers is our top priority.Our intensive customer relationships, which we have maintained for decades, speak for the excellent quality of our products, a high level of consulting expertise and good technical support.   
+ We would be happy to present some of our detailed case studies in a personal meeting.Get in touch with us and make an appointment.
+[IMG] https://ritz-international.com/wp-content/uploads/2022/07/unternehmen_referenzen_1.jpg alt=''
+[H H2] Supplier of the Year Award at Hitachi Supplier Days 2024
+[TEXT] Ritz Instrument Transformers was named Technology Supplier of the Year by Hitachi Energy Sweden in April.
+The continuous development of our DC converter EMVI has led to its recognition as an optimal solution for Hitachi Energy’s next-generation SVC Light portfolio. This technology contributes significantly to the integration of renewable energy and supports a wide range of applications, from data centers to sustainable mobility.
+Our enhanced product has facilitated the successful combination of two power quality and grid stabilization technologies into a single, compact system.
+[IMG] https://ritz-international.com/wp-content/uploads/Ritz-Lieferanten-auszeichnung.png alt=''

@@ -1,0 +1,85 @@
+# Nagyfeszültségű átalakítók - RITZ
+URL: https://ritz-international.com/hu/termekek/nagyfeszueltsegu-atalakitok/  status=200 lang=hu kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "hu_HU", "og:type": "article", "og:title": "Nagyfeszültségű átalakítók - RITZ", "og:description": "Kezdőoldal Nagyfeszültségű mérőváltók Nagyfeszültségű transzformátoraink olajpapír szigetelésűek, modern, bevált Ritz minőségben. Kiváló minőségű PCB-mentes szigetelőolajat használnak, és az átalakítók hermetikusan le vannak zárva. Ezt a korrózióálló alkatrészek, a rozsdamentes acél tágulási cella és a szorított O-gyűrűs tömítések biztosítják. Ez megvédi az olaj-papír szigetelést a külső hatáso
+canonical: https://ritz-international.com/hu/termekek/nagyfeszueltsegu-atalakitok/
+hreflang: [['en', 'https://ritz-international.com/en/products/high-voltage-transformer/'], ['fr', 'https://ritz-international.com/fr/produits/transformateurs-haute-tension/'], ['de', 'https://ritz-international.com/produkte/hochspannungswandler/'], ['hu', 'https://ritz-international.com/hu/termekek/nagyfeszueltsegu-atalakitok/'], ['es', 'https://ritz-international.com/es/productos/transformadores-de-alta-tension/'], ['x-default', 'https://ritz-international.com/produkte/hochspannungswandler/']]
+
+[H H2] Nagyfeszültségű mérőváltók
+[IMG] https://ritz-international.com/wp-content/uploads/Hochspannungswandler-Intro2.jpg alt=''
+[TEXT] Nagyfeszültségű transzformátoraink olajpapír szigetelésűek, modern, bevált Ritz minőségben. Kiváló minőségű PCB-mentes szigetelőolajat használnak, és az átalakítók hermetikusan le vannak zárva. Ezt a korrózióálló alkatrészek, a rozsdamentes acél tágulási cella és a szorított O-gyűrűs tömítések biztosítják. Ez megvédi az olaj-papír szigetelést a külső hatásoktól, és a teljes élettartam alatt megóvja az olaj karbantartásának szükségességét. A primer vezetők kapcsolhatók, és így különböző primer áramokhoz igazíthatók. Előnyben részesítjük a kompozit szigetelők használatát 31 mm/kV specifikus kúszási távolsággal és 2. terhelési osztállyal. A csatlakozódoboz praktikus kialakítású a biztonságos és gyors csatlakoztatási munkákhoz.
+[H H2] Kapcsolat
+[H H2] Ritz Instrument Transformers Inc.
+[TEXT] 25 Hamburg Avenue Lavonia, GA 30907
+[LIST] +1 706-356-7180 <tel:+17063567180> | sales@ritzusa.com <mailto:sales@ritzusa.com>
+[H H2] Dr. Horst Riedner
+[LIST] +49 172 9538976 <tel:+491729538976> | horst.riedner@ritz-international.com <mailto:kay.leschick@ritz-international.com>
+[template] TERMÉKEK
+Nagyfeszültség (69 kV és 500 kV között)
+A RITZ standard készülékeket és egyedi megoldásokat egyaránt kínál , amelyek kialakítása és kivitelezése megfelel minden nemzetközi szabványnak .Ha nem találja meg kínálatunkban, amit keres, és további információra van szüksége, kérjük, lépjen kapcsolatba velünk.
+IVO típusOlajpapír szigetelésű kültéri feszültség transzformátor
+Az IVO típusú nagyfeszültségű transzformátor induktív feszültségtranszformátor. Kimeneti áramot biztosít a forgalom mérésére szolgáló mérőeszközök, a védőrelék és más áramfelügyeleti eszközök számára.
+Ez a kiadvány a RITZ IVO típusú áramváltó funkcióit és teljesítményjellemzőit ismerteti a 72 kV és 245 kV közötti feszültségosztályokhoz.
+Termékismertető
+ICO típus Olajozott papírszigetelésű kültéri áramváltó
+Az ICO típusú nagyfeszültségű transzformátor induktív áramváltó (CT). Nagyfeszültségű rendszerekben használják a kimeneti áram biztosítására a forgalommérésre szolgáló mérőeszközök, a védőrelék és egyéb áramfelügyeleti eszközök számára.
+Ez a kiadvány a RITZ ICO típusú áramváltó funkcióit és teljesítményjellemzőit ismerteti a 72 kV és 245 kV közötti feszültségosztályokhoz.
+Termékismertető
+CMO típusOlajozott papír szigetelésű CT/VT
+A CMO nagyfeszültségű transzformátor egy kombinált nagy- és kisfeszültségű transzformátor. induktív áram- és feszültségváltók (CT/VT). Ezt a következőkben használják Nagyfeszültségű rendszerek kimeneti áram és feszültség biztosítására a következőkhöz mérőberendezésekhez a forgalom méréséhez, a védőrelékhez és más eszközökhöz, amelyek az áram és a feszültség ellenőrzésére.
+Ez a kiadvány a RITZ CMO típusú áramváltó funkcióit és teljesítményjellemzőitismerteti a 72 kV és 245 kV közötti feszültségosztályokhoz .
+Termékismertető
+CVO típus Kapacitív feszültségtranszformátor
+A RITZ CVO egy kapcsolókondenzátoros feszültségtranszformátor (CCVT), amelyet nagy- és extranagyfeszültségű rendszerekben használnak a mérőműszerek, védőrelék és egyéb mérőeszközök kimeneti feszültségének biztosítására. Ezenkívül a készülék egy tartozék segítségével speciális konzolokkal is felszerelhető, amelyek lehetővé teszik, hogy a CCVT-t kommunikációs alkalmazásokban a távközlési vivőjelek (PLC) átviteli vezetékre történő csatolására használják.
+Az induktív feszültségtranszformátorokhoz képest a CCVT-k a hálózati feszültség növekedésével egyre költséghatékonyabbá válnak. Ezenkívül a CCVT-k súlya kisebb, mint az induktív feszültségtranszformátoroké. A felső kondenzátor szegmensek a könnyebb szállítás és kezelés érdekében eltávolíthatók. Ez a brosúra a RITZ-CCVT CVO típus funkcióit és jellemzőit ismerteti.
+Termékismertető
+CVO550EM információ a földrengésbiztonságról az IEEE693 szabvány szerint
+CVO: élethosszig tartó pontossági garancia r2024
+ÁLTALÁNOS LETÖLTÉSEK
+3 Year Warranty Statement
+High Voltage Type Designation Change Notice IMGS=https://ritz-international.com/wp-content/uploads/Type-IVO-Outdoor-Oil-Filled.jpg https://ritz-international.com/wp-content/uploads/Type-ICO-Outdoor-Oil-Filled.jpg https://ritz-international.com/wp-content/uploads/Type-CMO-Oil-Filled-CV-VT.jpg https://ritz-international.com/wp-content/uploads/CVO-Capacitor.jpg LINKS=Termékismertető<https://ritz-international.com/wp-content/uploads/type-ivo-outdoor-oil-filled-product-brochure.pdf> Termékismertető<https://ritz-international.com/wp-content/uploads/type-ico-outdoor-oil-filled-product-brochure.pdf> Termékismertető<https://ritz-international.com/wp-content/uploads/type-cmo-outdoor-oil-filled-combined-ct-vt-product-brochure.pdf> Termékismertető<https://ritz-international.com/wp-content/uploads/cvo-capacitor-product-brochure.pdf> CVO550EM információ a földrengésbiztonságról az IEEE693 szabvány szerint<https://ritz-international.com/wp-content/uploads/CVO550EM-IEEE693-High-Seismic.pdf> CVO: élethosszig tartó pontossági garancia r2024<https://ritz-international.com/wp-content/uploads/CVO-Lifetime-Accuracy-Warranty-r2024.pdf> 3 Year Warranty Statement<https://ritz-international.com/wp-content/uploads/3-Year-Warranty-Statement.pdf> High Voltage Type Designation Change Notice<https://ritz-international.com/wp-content/uploads/High-Voltage-Type-Designation-Change-Notice.pdf>
+[ACC] (in 6a73017) <TERMÉKEK> tpl=13067 Nagyfeszültség (69 kV és 500 kV között)
+ A RITZ standard készülékeket és egyedi megoldásokat egyaránt kínál , amelyek kialakítása és kivitelezése megfelel minden nemzetközi szabványnak . Ha nem találja meg kínálatunkban, amit keres, és további információra van szüksége, kérjük, lépjen kapcsolatba velünk .
+IVO típus Olajpapír szigetelésű kültéri feszültség transzformátor 
+ Az IVO típusú nagyfeszültségű transzformátor induktív feszültségtranszformátor. Kimeneti áramot biztosít a forgalom mérésére szolgáló mérőeszközök, a védőrelék és más áramfelügyeleti eszközök számára.
+ Ez a kiadvány a RITZ IVO típusú áramváltó funkcióit és teljesítményjellemzőit ismerteti a 72 kV és 245 kV közötti feszültségosztályokhoz.
+ Termékismertető 
+ I CO típus Olajozott papírszigetelésű kültéri áramváltó
+ Az ICO típusú nagyfeszültségű transzformátor induktív áramváltó (CT). Nagyfeszültségű rendszerekben használják a kimeneti áram biztosítására a forgalommérésre szolgáló mérőeszközök, a védőrelék és egyéb áramfelügyeleti eszközök számára.
+ Ez a kiadvány a RITZ ICO típusú áramváltó funkcióit és teljesítményjellemzőit ismerteti a 72 kV és 245 kV közötti feszültségosztályokhoz.
+ Termékismertető 
+CMO típus Olajozott papír szigetelésű CT/VT 
+ A CMO nagyfeszültségű transzformátor egy kombinált nagy- és kisfeszültségű transzformátor. induktív áram- és feszültségváltók (CT/VT). Ezt a következőkben használják Nagyfeszültségű rendszerek kimeneti áram és feszültség biztosítására a következőkhöz mérőberendezésekhez a forgalom méréséhez, a védőrelékhez és más eszközökhöz, amelyek az áram és a feszültség ellenőrzésére. 
+ Ez a kiadvány a RITZ CMO típusú áramváltó funkcióit és teljesítményjellemzőit ismerteti a 72 kV és 245 kV közötti feszültségosztályokhoz .
+ Termékismertető 
+ C VO típus Kapacitív feszültségtranszformátor
+ A RITZ CVO egy kapcsolókondenzátoros feszültségtranszformátor (CCVT), amelyet nagy- és extranagyfeszültségű rendszerekben használnak a mérőműszerek, védőrelék és egyéb mérőeszközök kimeneti feszültségének biztosítására. Ezenkívül a készülék egy tartozék segítségével speciális konzolokkal is felszerelhető, amelyek lehetővé teszik, hogy a CCVT-t kommunikációs alkalmazásokban a távközlési vivőjelek (PLC) átviteli vezetékre történő csatolására használják.
+ Az induktív feszültségtranszformátorokhoz képest a CCVT-k a hálózati feszültség növekedésével egyre költséghatékonyabbá válnak. Ezenkívül a CCVT-k súlya kisebb, mint az induktív feszültségtranszformátoroké. A felső kondenzátor szegmensek a könnyebb szállítás és kezelés érdekében eltávolíthatók. Ez a brosúra a RITZ-CCVT CVO típus funkcióit és jellemzőit ismerteti.
+ Termékismertető 
+ CVO550EM információ a földrengésbiztonságról az IEEE693 szabvány szerint 
+ CVO: élethosszig tartó pontossági garancia r2024 || <ÁLTALÁNOS LETÖLTÉSEK> tpl=13162 3 Year Warranty Statement 
+ High Voltage Type Designation Change Notice
+[H H2] (in 1cd068ff) Nagyfeszültség (69 kV és 500 kV között)
+[TEXT] (in 1cd068ff) A RITZ standard készülékeket és egyedi megoldásokat egyaránt kínál , amelyek kialakítása és kivitelezése megfelel minden nemzetközi szabványnak . Ha nem találja meg kínálatunkban, amit keres, és további információra van szüksége, kérjük, lépjen kapcsolatba velünk .
+[IMG] (in 1cd068ff) https://ritz-international.com/wp-content/uploads/Type-IVO-Outdoor-Oil-Filled.jpg alt=''
+[TEXT] (in 1cd068ff) IVO típus Olajpapír szigetelésű kültéri feszültség transzformátor
+[TEXT] (in 1cd068ff) Az IVO típusú nagyfeszültségű transzformátor induktív feszültségtranszformátor. Kimeneti áramot biztosít a forgalom mérésére szolgáló mérőeszközök, a védőrelék és más áramfelügyeleti eszközök számára.
+ Ez a kiadvány a RITZ IVO típusú áramváltó funkcióit és teljesítményjellemzőit ismerteti a 72 kV és 245 kV közötti feszültségosztályokhoz.
+[LIST] (in 1cd068ff) Termékismertető <https://ritz-international.com/wp-content/uploads/type-ivo-outdoor-oil-filled-product-brochure.pdf>
+[IMG] (in 1cd068ff) https://ritz-international.com/wp-content/uploads/Type-ICO-Outdoor-Oil-Filled.jpg alt=''
+[TEXT] (in 1cd068ff) I CO típus Olajozott papírszigetelésű kültéri áramváltó
+[TEXT] (in 1cd068ff) Az ICO típusú nagyfeszültségű transzformátor induktív áramváltó (CT). Nagyfeszültségű rendszerekben használják a kimeneti áram biztosítására a forgalommérésre szolgáló mérőeszközök, a védőrelék és egyéb áramfelügyeleti eszközök számára.
+ Ez a kiadvány a RITZ ICO típusú áramváltó funkcióit és teljesítményjellemzőit ismerteti a 72 kV és 245 kV közötti feszültségosztályokhoz.
+[LIST] (in 1cd068ff) Termékismertető <https://ritz-international.com/wp-content/uploads/type-ico-outdoor-oil-filled-product-brochure.pdf>
+[IMG] (in 1cd068ff) https://ritz-international.com/wp-content/uploads/Type-CMO-Oil-Filled-CV-VT.jpg alt=''
+[TEXT] (in 1cd068ff) CMO típus Olajozott papír szigetelésű CT/VT
+[TEXT] (in 1cd068ff) A CMO nagyfeszültségű transzformátor egy kombinált nagy- és kisfeszültségű transzformátor. induktív áram- és feszültségváltók (CT/VT). Ezt a következőkben használják Nagyfeszültségű rendszerek kimeneti áram és feszültség biztosítására a következőkhöz mérőberendezésekhez a forgalom méréséhez, a védőrelékhez és más eszközökhöz, amelyek az áram és a feszültség ellenőrzésére. 
+ Ez a kiadvány a RITZ CMO típusú áramváltó funkcióit és teljesítményjellemzőit ismerteti a 72 kV és 245 kV közötti feszültségosztályokhoz .
+[LIST] (in 1cd068ff) Termékismertető <https://ritz-international.com/wp-content/uploads/type-cmo-outdoor-oil-filled-combined-ct-vt-product-brochure.pdf>
+[IMG] (in 1cd068ff) https://ritz-international.com/wp-content/uploads/CVO-Capacitor.jpg alt=''
+[TEXT] (in 1cd068ff) C VO típus Kapacitív feszültségtranszformátor
+[TEXT] (in 1cd068ff) A RITZ CVO egy kapcsolókondenzátoros feszültségtranszformátor (CCVT), amelyet nagy- és extranagyfeszültségű rendszerekben használnak a mérőműszerek, védőrelék és egyéb mérőeszközök kimeneti feszültségének biztosítására. Ezenkívül a készülék egy tartozék segítségével speciális konzolokkal is felszerelhető, amelyek lehetővé teszik, hogy a CCVT-t kommunikációs alkalmazásokban a távközlési vivőjelek (PLC) átviteli vezetékre történő csatolására használják.
+ Az induktív feszültségtranszformátorokhoz képest a CCVT-k a hálózati feszültség növekedésével egyre költséghatékonyabbá válnak. Ezenkívül a CCVT-k súlya kisebb, mint az induktív feszültségtranszformátoroké. A felső kondenzátor szegmensek a könnyebb szállítás és kezelés érdekében eltávolíthatók. Ez a brosúra a RITZ-CCVT CVO típus funkcióit és jellemzőit ismerteti.
+[LIST] (in 1cd068ff) Termékismertető <https://ritz-international.com/wp-content/uploads/cvo-capacitor-product-brochure.pdf> | CVO550EM információ a földrengésbiztonságról az IEEE693 szabvány szerint <https://ritz-international.com/wp-content/uploads/CVO550EM-IEEE693-High-Seismic.pdf> | CVO: élethosszig tartó pontossági garancia r2024 <https://ritz-international.com/wp-content/uploads/CVO-Lifetime-Accuracy-Warranty-r2024.pdf>
+[LIST] (in 1cd068ff) 3 Year Warranty Statement <https://ritz-international.com/wp-content/uploads/3-Year-Warranty-Statement.pdf> | High Voltage Type Designation Change Notice <https://ritz-international.com/wp-content/uploads/High-Voltage-Type-Designation-Change-Notice.pdf>
+[PDFS] https://ritz-international.com/wp-content/uploads/type-ivo-outdoor-oil-filled-product-brochure.pdf https://ritz-international.com/wp-content/uploads/type-ico-outdoor-oil-filled-product-brochure.pdf https://ritz-international.com/wp-content/uploads/type-cmo-outdoor-oil-filled-combined-ct-vt-product-brochure.pdf https://ritz-international.com/wp-content/uploads/cvo-capacitor-product-brochure.pdf https://ritz-international.com/wp-content/uploads/CVO550EM-IEEE693-High-Seismic.pdf https://ritz-international.com/wp-content/uploads/CVO-Lifetime-Accuracy-Warranty-r2024.pdf https://ritz-international.com/wp-content/uploads/3-Year-Warranty-Statement.pdf https://ritz-international.com/wp-content/uploads/High-Voltage-Type-Designation-Change-Notice.pdf
+[TEMPLATES] 13067 13162

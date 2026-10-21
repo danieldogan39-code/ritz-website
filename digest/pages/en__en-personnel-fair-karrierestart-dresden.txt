@@ -1,0 +1,11 @@
+# Personnel fair Karrierestart Dresden - RITZ
+URL: https://ritz-international.com/en/personnel-fair-karrierestart-dresden/  status=200 lang=en kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "en_US", "og:type": "article", "og:title": "Personnel fair Karrierestart Dresden - RITZ", "og:description": "RITZ takes part in the personnel fair Karrierestart in the Dresden Messe Hall 1 Stand L 24 from 19-21.01. 2024. We look forward to seeing you! Your RITZ Trade Fair Team", "og:url": "https://ritz-international.com/en/personnel-fair-karrierestart-dresden/", "og:site_name": "RITZ", "og:image": "https://ritz-international.com/wp-content/uploads/IMG-20240119-WA0003.jpg", "og:image:width": 
+canonical: https://ritz-international.com/en/personnel-fair-karrierestart-dresden/
+hreflang: [['en', 'https://ritz-international.com/en/personnel-fair-karrierestart-dresden/'], ['fr', 'https://ritz-international.com/fr/salon-du-personnel-karrierestart-dresden/'], ['de', 'https://ritz-international.com/personalmesse-karrierestart-dresden/'], ['hu', 'https://ritz-international.com/hu/szemelyzeti-vasar-karrierestart-dresden/'], ['es', 'https://ritz-international.com/es/feria-de-personal-karrierestart-dresde/'], ['x-default', 'https://ritz-international.com/personalmesse-karrierestart-dresden/']]
+
+[POSTTITLE] Personnel fair Karrierestart Dresden
+[POSTCONTENT] RITZ takes part in the personnel fair Karrierestart in the Dresden Messe Hall 1 Stand L 24 from 19-21.01. 2024. 
+ We look forward to seeing you! Your RITZ Trade Fair Team IMGS= LINKS=
+[BTN] Back -> https://ritz-international.com/en/?page_id=5595
+[FEATURED] https://ritz-international.com/wp-content/uploads/IMG-20240119-WA0003.jpg

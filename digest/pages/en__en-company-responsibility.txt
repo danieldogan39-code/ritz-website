@@ -1,0 +1,25 @@
+# Responsibility - RITZ
+URL: https://ritz-international.com/en/company/responsibility/  status=200 lang=en kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "en_US", "og:type": "article", "og:title": "Responsibility - RITZ", "og:description": "Home Innovation meets Responsibility:Together for a better Future. ENVIRONMENT SOCIAL GOVERNANCE Social responsibility For over 80 years, the name RITZ has stood for first-class instrument transformers and innovative solutions in the electrical industry. Ever since the company was founded, the name RITZ has been synonymous with the highest quality in the manufacture of instrument transformers […]", "og:url
+canonical: https://ritz-international.com/en/company/responsibility/
+hreflang: [['en', 'https://ritz-international.com/en/company/responsibility/'], ['fr', 'https://ritz-international.com/fr/entreprise/responsibility/'], ['de', 'https://ritz-international.com/unternehmen/verantwortung/'], ['hu', 'https://ritz-international.com/hu/a-vallalat/felelosseg/'], ['es', 'https://ritz-international.com/es/la-empresa/responsibility/'], ['x-default', 'https://ritz-international.com/unternehmen/verantwortung/']]
+
+[html] 
+[H H1] Innovation meets Responsibility:Together for a better Future.
+[html] 
+[H H3] ENVIRONMENT
+[H H3] SOCIAL
+[H H3] GOVERNANCE
+[H H2] Social responsibility
+[TEXT] For over 80 years, the name RITZ has stood for first-class instrument transformers and innovative solutions in the electrical industry. Ever since the company was founded, the name RITZ has been synonymous with the highest quality in the manufacture of instrument transformers and is closely associated with the RITZ Foundation.
+ We have over 1,500 employees at our nine locations in Europe, China, and the United States. Together with our customers, we develop customised solutions and design durable products to strengthen and expand our electrical energy grids for a sustainable future.
+[TEXT] Our corporate philosophy encompasses a wide range of sustainable approaches both internally and externally, which we are continuously expanding. We take our social and societal responsibilities seriously and promote them in a holistic manner.
+ As part of our commitment to sustainability, we focus on environmental, social and governance issues (ESG). RITZ and the RITZ Foundation stand for safety, reliability and a responsibility that spans generations. People are at the heart of everything we do.
+[H H2] Our vision
+[TEXT] We regard electricity as the most important form of energy for the future. We are therefore continuously and proactively developing as a profitable specialist and provider of solutions for electrical power engineering.
+ RITZ and the RITZ Foundation stand for safety, reliability and a responsibility that spans generations – with people at the heart of our actions.
+[H H2] Further information
+[TEXT] In our Downloads section, you will find a constantly growing archive of comprehensive documents covering relevant topics relating to responsibility.
+[H H3] DOWNLOADS
+[LIST] Whistleblower system <https://ritz-international.com/wp-content/uploads/EN-Hinweisgebersystem.pdf> | Code of Conduct for Suppliers <https://ritz-international.com/wp-content/uploads/Supplier-Code-of-Conduct-.pdf> | ZVEI-VDMA Code of Conduct <https://ritz-international.com/wp-content/uploads/ZVEI-VDMA-Code-of-Conduct-RITZ-EN.pdf>
+[PDFS] https://ritz-international.com/wp-content/uploads/EN-Hinweisgebersystem.pdf https://ritz-international.com/wp-content/uploads/Supplier-Code-of-Conduct-.pdf https://ritz-international.com/wp-content/uploads/ZVEI-VDMA-Code-of-Conduct-RITZ-EN.pdf

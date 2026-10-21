@@ -1,0 +1,25 @@
+# Kombiwandler Platzersparnis - RITZ
+URL: https://ritz-international.com/kombiwandler-platzersparnis/  status=200 lang=de kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "Kombiwandler Platzersparnis - RITZ", "og:description": "Metallgekapselte Kombiwandler im Fokus Kostenersparnis von ca. 12.000€ bei Einsatz von Kombiwandlern gegenüber Messfeld mit Kabeleingangsfeld. Kostenersparnis von ca. 12.000€ bei Einsatz von Kombiwandlern gegenüber Messfeld mit Kabeleingangsfeld Beispiel: Kosten für 3 Stück 20kV-Kombiwandler = ca. 10.000€ Kosten für luftisoliertes 20kV-Schaltanlage mit Kabeleingangsfeld und Messfeld = 22.000€ 
+canonical: https://ritz-international.com/kombiwandler-platzersparnis/
+hreflang: [['en', 'https://ritz-international.com/en/combination-converter-space-saving/'], ['de', 'https://ritz-international.com/kombiwandler-platzersparnis/'], ['x-default', 'https://ritz-international.com/kombiwandler-platzersparnis/']]
+
+[POSTTITLE] Kombiwandler Platzersparnis
+[POSTCONTENT] Metallgekapselte Kombiwandler im Fokus 
+ Kostenersparnis von ca. 12.000€ bei Einsatz von Kombiwandlern gegenüber Messfeld mit Kabeleingangsfeld. Kostenersparnis von ca. 12.000€ bei Einsatz von Kombiwandlern gegenüber Messfeld mit Kabeleingangsfeld
+ Beispiel:
+ Kosten für 3 Stück 20kV-Kombiwandler = ca. 10.000€ 
+ Kosten für luftisoliertes 20kV-Schaltanlage mit Kabeleingangsfeld und Messfeld = 22.000€ 
+ Platzsparend durch Nutzung des Kabelkellers und damit keine Notwendigkeit von zusätzlicher Fläche im Gebäude und damit verbundene Baukostenersparnis.
+ Parametervielfalt: Mehrkern- und Mehrwicklungs-Auslegungen möglich
+ Verrechnungszählung möglich
+ frequenzoptimierte Auslegung bis 9 kHz möglich
+ sehr lange Lebensdauer minimal 30 Jahre und damit nachhaltig !
+ berührungssicher bei Betrieb durch geerdetes Gehäuse
+ Wartungsfrei und schmutzunempfindlich über die komplette Betriebsdauer im Gegensatz müssen luftisolierte Messfelder alle 4 Jahre gesäubert werden, nach Vorschrift DGUV V3. Hier ist dann eine Abschaltung der Messzelle erforderlich. Mit Kombiwandler entfällt so eine Säuberung und bringt eine Kostenersparnis für den Energieversorger über Jahrzehnte.
+ Auf dem Markt gibt es sehr wenig Hersteller von 30kV-luftisolierten Messfeldern. Hier wird alternativ gerne auf 30kV-Kombiwandler zurückgegriffen
+ Einbaulage unabhängig
+ Zusatzbürde IMGS= LINKS=Zusatzbürde<https://ritz-international.com/wp-content/uploads/Produktwissen_kompakt_metallgekapselte_Kombiwandler.pdf>
+[BTN] Zurück -> /aktuelles/news
+[FEATURED] https://ritz-international.com/wp-content/uploads/Kombiwandler-Platzersparnis.png
+[PDFS] https://ritz-international.com/wp-content/uploads/Produktwissen_kompakt_metallgekapselte_Kombiwandler.pdf

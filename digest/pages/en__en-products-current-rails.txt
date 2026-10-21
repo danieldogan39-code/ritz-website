@@ -1,0 +1,67 @@
+# BUS BARS SIS - RITZ
+URL: https://ritz-international.com/en/products/current-rails/  status=200 lang=en kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "en_US", "og:type": "article", "og:title": "BUS BARS SIS - RITZ", "og:description": "Home BUS BARS Advantages Our bus bar insulation system offers an alternative to cables routed in parallel and enclosed metal bus bar trunking, especially for the transmission of high currents and power, and situations where space is limited. Below are some system-specific benefits of using fully insulated, capacitively controlled bus bars: Design Space saving Enclosed […]", "og:url": "https://ritz-internatio
+canonical: https://ritz-international.com/produkte/stromschienen/
+hreflang: [['en', 'https://ritz-international.com/en/products/current-rails/'], ['fr', 'https://ritz-international.com/fr/produits/fils-electriques/'], ['de', 'https://ritz-international.com/produkte/stromschienen/'], ['hu', 'https://ritz-international.com/hu/termekek/folyo-sinek/'], ['es', 'https://ritz-international.com/es/productos/carriles-actuales/'], ['x-default', 'https://ritz-international.com/produkte/stromschienen/']]
+
+[H H2] BUS BARS SIS
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/introduction_image_stromschienen-e1705680286556.jpg alt=''
+[H H3] Advantages
+[TEXT] Our bus bar insulation system offers an alternative to cables routed in parallel and enclosed metal bus bar trunking, especially for the transmission of high currents and power, and situations where space is limited.
+ Below are some system-specific benefits of using fully insulated, capacitively controlled bus bars:
+ Design 
+ Space saving
+ Enclosed space can be scaled down accordingly at the design stage
+ Very small bending radii (depending on the material)
+ Any geometric shape possible (depending on the material)
+Installation 
+ Low installation effort thanks to the use of standardised mounting and fastening components
+ Low project planning effort by the customer
+Safety 
+ Capacitively controlled field distribution
+ High thermal and dynamic short-circuit
+strength
+ Contact protection in the area of the concentrically embedded earth layer
+ Phase short circuits are almost impossible
+ Natural cooling through sufficiently sized conductor
+ High operational safety due to routine testing in the factory
+[H H2] Contacts
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/icon_contact_flag_de.svg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/icon_contact_flag_en.svg alt=''
+[H H2] Florian Däumler
+[LIST] +49 151 22310380 <tel:+4915122310380> | Chat with me on MS Teams <https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fchat%2F0%2F0%3Fusers%3Dflorian.daeumler%40ritz-international.com&type=chat&deeplinkId=e17d460f-1fb0-4af1-87fa-6419c131b82e&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true>
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/icon_contact_flag_de.svg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/icon_contact_flag_en.svg alt=''
+[H H2] Daniel Schilling
+[LIST] +49 173 6701824 <tel:+4915161321024> | Chat with me on MS Teams <https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fchat%2F0%2F0%3Fusers%3Daniel.schilling%40ritz-international.com&type=chat&deeplinkId=ef4fc145-d0c5-416b-b2e3-27bc29fd2855&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true>
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/icon_contact_flag_de.svg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/icon_contact_flag_en.svg alt=''
+[H H2] Sascha Kensche
+[LIST] +49 172 1922431 <tel:+491721922431> | Chat with me on MS Teams <https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fchat%2F0%2F0%3Fusers%3Dsascha.kensche%40ritz-international.com&type=chat&deeplinkId=4caf1354-e335-42bf-9144-91f591fa00e7&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true>
+[H H2] Contact us
+[LIST] sales.sis@ritz-international.com <mailto:%20sales.sis@ritz-international.com>
+[H H2] Specifications
+[LIST] Technical specification – SIS <https://ritz-international.com/wp-content/uploads/Technical_specification_SIS.pdf> | Tender – Example Sections <https://ritz-international.com/wp-content/uploads/F2PD004_Tender_Textbeispiele_SIS_EN.pdf>
+[H H3] Lengths produced
+[TEXT] The lengths and geometric configurations of the bus bars depend on the production facilities, local conditions and means of transport.
+[H H3] Multi-part bus bar connections
+[TEXT] Particularly long bus bar connections are manufactured in sections to facilitate production, transport and handling on site. To ensure a continuous, potential-free bus bar system, an insulated connection sleeve is fitted between the sections, covering the controlled bus bar ends.
+[H H3] Fastening elements
+[TEXT] A versatile yet very easy-to-install modular system is available for fastening the bus bars. If necessary, adjustments can also be made on site. The bus bar fastening consists of an aluminium double “C”-profile, angle brackets, T-head bolts and plastic fastening clamps.
+ The fastening clamps are/must be designed as “fixed bearings” or “plain bearings” to enable axial sliding of the bus bar when there are several fastening points.
+ The support points of the bus bar fastening are primarily determined by the short-circuit forces of the switchgear.
+ It must also be ensured that no mechanical resonances occur at mains frequency and its harmonics. The spacing of the supports between the bus bars must be calculated accordingly.
+ A calculation program is available for this purpose which, in addition to the parameters already mentioned, takes into account the following factors for the material:
+ Bus bar diameter
+ Phase-to-phase clearance
+ Mass of the bus bar
+ Flexural rigidity of the material.
+ The distances must be recalculated for each order.
+[H H3] Fastening elements
+[TEXT] A distinction is made here between “fixed bearings” and “plain bearings”. The use of plain or fixed bearings is determined by the calculation of the support spacing. A fixed bearing is designed with rubber discs, whereas a plain bearing has metal discs.
+[H H3] Earthing
+[TEXT] In general, an earth bar must be laid parallel to the bus bar, the cross-section of which must be sized for any short-circuit currents that may occur. This earth bar must serve to connect all bus bars, connection sleeves and fastening profiles to earth.
+[H H3] Connection options
+[TEXT] Standardised flat terminals with flexible connectors that are sized for the corresponding amperage are used to connect bus bars to each other. Many different designs are available for connection to the switchgear components that are linked to one another. For special customer requirements, suitable terminals can be defined to enable an optimum connection.
+ If fixed connections are to be provided on both sides, it is usually necessary to split the bus bars and connect them with a sleeve in order to compensate for tolerances and allow for thermal expansion of the bus bar.
+[PDFS] https://ritz-international.com/wp-content/uploads/Technical_specification_SIS.pdf https://ritz-international.com/wp-content/uploads/F2PD004_Tender_Textbeispiele_SIS_EN.pdf

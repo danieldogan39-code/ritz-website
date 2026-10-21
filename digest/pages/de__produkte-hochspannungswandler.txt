@@ -1,0 +1,90 @@
+# Hochspannungswandler - RITZ
+URL: https://ritz-international.com/produkte/hochspannungswandler/  status=200 lang=de kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "description": "Entdecken Sie die hochpräzisen Hochspannungswandler von RITZ Instrument Transformers. Unsere Produkte bieten zuverlässige Messungen und optimale Leistung für anspruchsvolle Anwendungen in der Energietechnik.", "og:locale": "de_DE", "og:type": "article", "og:title": "Hochspannungswandler - RITZ", "og:description": "Entdecken Sie die hochpräzisen Hochspannungswandler von RITZ Instrument Transformers. Unsere Produkte bieten zuverlässige Messungen und optimale Leistung für anspruchsvolle Anwe
+canonical: https://ritz-international.com/produkte/hochspannungswandler/
+hreflang: [['en', 'https://ritz-international.com/en/products/high-voltage-transformer/'], ['fr', 'https://ritz-international.com/fr/produits/transformateurs-haute-tension/'], ['de', 'https://ritz-international.com/produkte/hochspannungswandler/'], ['hu', 'https://ritz-international.com/hu/termekek/nagyfeszueltsegu-atalakitok/'], ['es', 'https://ritz-international.com/es/productos/transformadores-de-alta-tension/'], ['x-default', 'https://ritz-international.com/produkte/hochspannungswandler/']]
+
+[H H2] Hochspannungswandler
+[IMG] https://ritz-international.com/wp-content/uploads/Hochspannungswandler-Intro2.jpg alt=''
+[TEXT] Unsere Hochspannungswandler sind Öl-Papier isoliert in moderner, bewährter Ritz-Qualität. Es wird ein hochwertiges PCB-freies Isolieröl eingesetzt und die Wandler sind hermetisch abgeschlossen. Dies wird durch korrosionsbeständige Bauteile, eine Edelstahl-Dehnzelle und durch geklammerte O-Ring Dichtungen sichergestellt. Dadurch ist die Öl-Papierisolation vor äußeren Einflüssen geschützt und eine Ölwartung über die gesamte Lebensdauer nicht nötig. Die Primärleiter können umschaltbar ausgeführt und damit auf verschiedene Primärströme angepasst werden. Wir setzen bevorzugt Verbundisolatoren mit einem spezifischen Kriechweg von 31 mm/kV und der Belastungsklasse 2 ein. Der Klemmkasten ist praxisgerecht, für sichere und schnelle Anschlussarbeiten gestaltet.
+[H H2] Kontakt
+[H H2] Ritz Instrument Transformers Inc.
+[TEXT] 25 Hamburg Avenue
+ Lavonia, GA 30907
+[LIST] +1 706-356-7180 <tel:+17063567180> | sales@ritzusa.com <mailto:sales@ritzusa.com>
+[H H2] Dr. Horst Riedner
+[LIST] +49 172 9538976 <tel:+491729538976> | horst.riedner@ritz-international.com <mailto:kay.leschick@ritz-international.com>
+[template] PRODUKTE
+Hochspannung (69kV to 500kV)
+Die Firma RITZ bietet sowohl Standard-Geräte als auch kundenspezifische Lösungen, deren Design und Konstruktion alle internationalen Normen erfüllen. Sollten Sie in unserem Angebot nicht fündig werden und weitere Informationen benötigen, nehmen Sie bitte Kontakt mit uns auf.
+Type IVOÖlpapier-isolierter Freiluft-Spannungswandler
+Beim Hochspannungswandler vom Typ IVO handelt es sich um einen induktiven Spannungswandler. Er wird zur Bereitstellung von Ausgangsstrom für Messgeräte zur Umsatzmessung, für Schutzrelais und andere Geräte zur Stromüberwachung eingesetzt.In dieser Broschüre werden die Funktionen und Leistungsmerkmale des RITZ – Stromwandlers vom Typ IVO für Spannungsklassen von 72 kV bis 245 kV beschrieben.
+Produktbroschüre
+Type ICOÖlpapier-isolierter Freiluft-Stromwandler
+Beim Hochspannungswandler vom Typ ICO handelt es sich um einen induktiven Stromwandler (CT). Er wird in Hochspannungsanlagen zur Bereitstellung von Ausgangsstrom für Messgeräte zur Umsatzmessung, für Schutzrelais und andere Geräte zur Stromüberwachung eingesetzt.In dieser Broschüre werden die Funktionen und Leistungsmerkmale des RITZ – Stromwandlers vom Typ ICO für Spannungsklassen von 72 kV bis 245 kV beschrieben.
+Produktbroschüre
+Type CMOÖlpapier-isolierter CT/VT
+Beim Hochspannungswandler vom Typ CMO handelt es sich um einen kombinierten induktiven Strom- und Spannungswandler (CT/VT). Er wird in Hochspannungsanlagen zur Bereitstellung von Ausgangsstrom und -spannung für Messgeräte zur Umsatzmessung, für Schutzrelais und andere Geräte zur Überwachung von Strom und Spannung.In dieser Broschüre werden die Funktionen und Leistungsmerkmale des RITZ – Stromwandlers vom Typ CMO für Spannungsklassen von 72 kV bis 245 kV beschrieben.
+Produktbroschüre
+Type CVOKapazitiver Spannungswandler
+Der CVO aus dem Hause RITZ ist ein Koppelkondensator-Spannungswandler (CCVT), der in Hoch- und Höchstspannungsanlagen zur Bereitstellung von Ausgangsspannung für Zähler, Schutzrelais und andere Messgeräte verwendet wird. Zusätzlich kann das Gerät durch ein Zubehör mit speziellen Halterungen ausgestattet werden, das es ermöglicht, den CCVT zur Einkopplung von Powerline- Trägersignalen (PLC) auf die Übertragungsleitung für Kommunikationsanwendungen zu nutzen.CCVT werden im Vergleich zu induktiven Spannungswandlern mit steigender Netzspannung immer kostengünstiger. Darüber hinaus haben CCVT weniger Gewicht als induktive Spannungswandler. Für einfacheren Versand und leichtere Handhabung können die oberen Kondensatorsegmente demontiert werden. In dieser Broschüre werden die Funktionen und Leistungsmerkmale des RITZ-CCVT vom Typ CVO beschrieben.
+Produktbroschüre
+Information CVO550EM zur Erbebensicherheit gemäß IEEE693
+CVO: Garantie für lebenslange Genauigkeit 2024
+ALLGEMEINE DOWNLOADS
+3 Year Warranty Statement
+High Voltage Type Designation Change Notice IMGS=https://ritz-international.com/wp-content/uploads/Type-IVO-Outdoor-Oil-Filled.jpg https://ritz-international.com/wp-content/uploads/Type-ICO-Outdoor-Oil-Filled.jpg https://ritz-international.com/wp-content/uploads/Type-CMO-Oil-Filled-CV-VT.jpg https://ritz-international.com/wp-content/uploads/CVO-Capacitor.jpg LINKS=Produktbroschüre<https://ritz-international.com/wp-content/uploads/type-ivo-outdoor-oil-filled-product-brochure.pdf> Produktbroschüre<https://ritz-international.com/wp-content/uploads/type-ico-outdoor-oil-filled-product-brochure.pdf> Produktbroschüre<https://ritz-international.com/wp-content/uploads/type-cmo-outdoor-oil-filled-combined-ct-vt-product-brochure.pdf> Produktbroschüre<https://ritz-international.com/wp-content/uploads/cvo-capacitor-product-brochure.pdf> Information CVO550EM zur Erbebensicherheit gemäß IEEE693<https://ritz-international.com/wp-content/uploads/CVO550EM-IEEE693-High-Seismic.pdf> CVO: Garantie für lebenslange Genauigkeit 2024<https://ritz-international.com/wp-content/uploads/CVO-Lifetime-Accuracy-Warranty-r2024.pdf> 3 Year Warranty Statement<https://ritz-international.com/wp-content/uploads/3-Year-Warranty-Statement.pdf> High Voltage Type Designation Change Notice<https://ritz-international.com/wp-content/uploads/High-Voltage-Type-Designation-Change-Notice.pdf>
+[ACC] (in 6a73017) <PRODUKTE> tpl=13067 Hochspannung (69kV to 500kV)
+ Die Firma RITZ bietet sowohl Standard-Geräte als auch kundenspezifische  Lösungen, deren Design und Konstruktion alle internationalen Normen erfüllen.  Sollten Sie in unserem Angebot nicht fündig werden und weitere Informationen  benötigen, nehmen Sie bitte Kontakt mit uns auf. 
+ Type IVO
+ Ölpapier-isolierter Freiluft-Spannungswandler
+ Beim Hochspannungswandler vom Typ IVO handelt es sich um einen induktiven Spannungswandler. Er wird zur Bereitstellung von Ausgangsstrom für Messgeräte zur Umsatzmessung, für Schutzrelais und andere Geräte zur Stromüberwachung eingesetzt.
+ In dieser Broschüre werden die Funktionen und Leistungsmerkmale des RITZ – Stromwandlers vom Typ IVO für Spannungsklassen von 72 kV bis 245 kV beschrieben.
+ Produktbroschüre 
+ Type ICO 
+Ölpapier-isolierter Freiluft-Stromwandler
+ Beim Hochspannungswandler vom Typ ICO handelt es sich um einen induktiven Stromwandler (CT). Er wird in Hochspannungsanlagen zur Bereitstellung von Ausgangsstrom für Messgeräte zur Umsatzmessung, für Schutzrelais und andere Geräte zur Stromüberwachung eingesetzt.
+ In dieser Broschüre werden die Funktionen und Leistungsmerkmale des RITZ – Stromwandlers vom Typ ICO für Spannungsklassen von 72 kV bis 245 kV beschrieben.
+ Produktbroschüre 
+ Type CMO
+ Ölpapier-isolierter CT/VT
+ Beim Hochspannungswandler vom Typ CMO handelt es sich um einen kombinierten  induktiven Strom- und Spannungswandler (CT/VT). Er wird in  Hochspannungsanlagen zur Bereitstellung von Ausgangsstrom und -spannung für  Messgeräte zur Umsatzmessung, für Schutzrelais und andere Geräte zur  Überwachung von Strom und Spannung. 
+ In dieser Broschüre werden die Funktionen und Leistungsmerkmale des RITZ –  Stromwandlers vom Typ CMO für Spannungsklassen von 72 kV bis 245 kV  beschrieben. 
+ Produktbroschüre 
+ Type CVO 
+Kapazitiver Spannungswandler
+ Der CVO aus dem Hause RITZ ist ein Koppelkondensator-Spannungswandler (CCVT), der in Hoch- und Höchstspannungsanlagen zur Bereitstellung von Ausgangsspannung für Zähler, Schutzrelais und andere Messgeräte verwendet wird. Zusätzlich kann das Gerät durch ein Zubehör mit speziellen Halterungen ausgestattet werden, das es ermöglicht, den CCVT zur Einkopplung von Powerline- Trägersignalen (PLC) auf die Übertragungsleitung für Kommunikationsanwendungen zu nutzen.
+ CCVT werden im Vergleich zu induktiven Spannungswandlern mit steigender Netzspannung immer kostengünstiger. Darüber hinaus haben CCVT weniger Gewicht als induktive Spannungswandler. Für einfacheren Versand und leichtere Handhabung können die oberen Kondensatorsegmente demontiert werden. In dieser Broschüre werden die Funktionen und Leistungsmerkmale des RITZ-CCVT vom Typ CVO beschrieben.
+ Produktbroschüre 
+ Information CVO550EM zur Erbebensicherheit gemäß IEEE693 
+ CVO: Garantie für lebenslange Genauigkeit 2024 || <ALLGEMEINE DOWNLOADS> tpl=13162 3 Year Warranty Statement 
+ High Voltage Type Designation Change Notice
+[H H2] (in 1cd068ff) Hochspannung (69kV to 500kV)
+[TEXT] (in 1cd068ff) Die Firma RITZ bietet sowohl Standard-Geräte als auch kundenspezifische  Lösungen, deren Design und Konstruktion alle internationalen Normen erfüllen.  Sollten Sie in unserem Angebot nicht fündig werden und weitere Informationen  benötigen, nehmen Sie bitte Kontakt mit uns auf.
+[IMG] (in 1cd068ff) https://ritz-international.com/wp-content/uploads/Type-IVO-Outdoor-Oil-Filled.jpg alt=''
+[TEXT] (in 1cd068ff) Type IVO
+ Ölpapier-isolierter Freiluft-Spannungswandler
+[TEXT] (in 1cd068ff) Beim Hochspannungswandler vom Typ IVO handelt es sich um einen induktiven Spannungswandler. Er wird zur Bereitstellung von Ausgangsstrom für Messgeräte zur Umsatzmessung, für Schutzrelais und andere Geräte zur Stromüberwachung eingesetzt.
+ In dieser Broschüre werden die Funktionen und Leistungsmerkmale des RITZ – Stromwandlers vom Typ IVO für Spannungsklassen von 72 kV bis 245 kV beschrieben.
+[LIST] (in 1cd068ff) Produktbroschüre <https://ritz-international.com/wp-content/uploads/type-ivo-outdoor-oil-filled-product-brochure.pdf>
+[IMG] (in 1cd068ff) https://ritz-international.com/wp-content/uploads/Type-ICO-Outdoor-Oil-Filled.jpg alt=''
+[TEXT] (in 1cd068ff) Type ICO 
+Ölpapier-isolierter Freiluft-Stromwandler
+[TEXT] (in 1cd068ff) Beim Hochspannungswandler vom Typ ICO handelt es sich um einen induktiven Stromwandler (CT). Er wird in Hochspannungsanlagen zur Bereitstellung von Ausgangsstrom für Messgeräte zur Umsatzmessung, für Schutzrelais und andere Geräte zur Stromüberwachung eingesetzt.
+ In dieser Broschüre werden die Funktionen und Leistungsmerkmale des RITZ – Stromwandlers vom Typ ICO für Spannungsklassen von 72 kV bis 245 kV beschrieben.
+[LIST] (in 1cd068ff) Produktbroschüre <https://ritz-international.com/wp-content/uploads/type-ico-outdoor-oil-filled-product-brochure.pdf>
+[IMG] (in 1cd068ff) https://ritz-international.com/wp-content/uploads/Type-CMO-Oil-Filled-CV-VT.jpg alt=''
+[TEXT] (in 1cd068ff) Type CMO
+ Ölpapier-isolierter CT/VT
+[TEXT] (in 1cd068ff) Beim Hochspannungswandler vom Typ CMO handelt es sich um einen kombinierten  induktiven Strom- und Spannungswandler (CT/VT). Er wird in  Hochspannungsanlagen zur Bereitstellung von Ausgangsstrom und -spannung für  Messgeräte zur Umsatzmessung, für Schutzrelais und andere Geräte zur  Überwachung von Strom und Spannung. 
+ In dieser Broschüre werden die Funktionen und Leistungsmerkmale des RITZ –  Stromwandlers vom Typ CMO für Spannungsklassen von 72 kV bis 245 kV  beschrieben.
+[LIST] (in 1cd068ff) Produktbroschüre <https://ritz-international.com/wp-content/uploads/type-cmo-outdoor-oil-filled-combined-ct-vt-product-brochure.pdf>
+[IMG] (in 1cd068ff) https://ritz-international.com/wp-content/uploads/CVO-Capacitor.jpg alt=''
+[TEXT] (in 1cd068ff) Type CVO 
+Kapazitiver Spannungswandler
+[TEXT] (in 1cd068ff) Der CVO aus dem Hause RITZ ist ein Koppelkondensator-Spannungswandler (CCVT), der in Hoch- und Höchstspannungsanlagen zur Bereitstellung von Ausgangsspannung für Zähler, Schutzrelais und andere Messgeräte verwendet wird. Zusätzlich kann das Gerät durch ein Zubehör mit speziellen Halterungen ausgestattet werden, das es ermöglicht, den CCVT zur Einkopplung von Powerline- Trägersignalen (PLC) auf die Übertragungsleitung für Kommunikationsanwendungen zu nutzen.
+ CCVT werden im Vergleich zu induktiven Spannungswandlern mit steigender Netzspannung immer kostengünstiger. Darüber hinaus haben CCVT weniger Gewicht als induktive Spannungswandler. Für einfacheren Versand und leichtere Handhabung können die oberen Kondensatorsegmente demontiert werden. In dieser Broschüre werden die Funktionen und Leistungsmerkmale des RITZ-CCVT vom Typ CVO beschrieben.
+[LIST] (in 1cd068ff) Produktbroschüre <https://ritz-international.com/wp-content/uploads/cvo-capacitor-product-brochure.pdf> | Information CVO550EM zur Erbebensicherheit gemäß IEEE693 <https://ritz-international.com/wp-content/uploads/CVO550EM-IEEE693-High-Seismic.pdf> | CVO: Garantie für lebenslange Genauigkeit 2024 <https://ritz-international.com/wp-content/uploads/CVO-Lifetime-Accuracy-Warranty-r2024.pdf>
+[LIST] (in 1cd068ff) 3 Year Warranty Statement <https://ritz-international.com/wp-content/uploads/3-Year-Warranty-Statement.pdf> | High Voltage Type Designation Change Notice <https://ritz-international.com/wp-content/uploads/High-Voltage-Type-Designation-Change-Notice.pdf>
+[PDFS] https://ritz-international.com/wp-content/uploads/type-ivo-outdoor-oil-filled-product-brochure.pdf https://ritz-international.com/wp-content/uploads/type-ico-outdoor-oil-filled-product-brochure.pdf https://ritz-international.com/wp-content/uploads/type-cmo-outdoor-oil-filled-combined-ct-vt-product-brochure.pdf https://ritz-international.com/wp-content/uploads/cvo-capacitor-product-brochure.pdf https://ritz-international.com/wp-content/uploads/CVO550EM-IEEE693-High-Seismic.pdf https://ritz-international.com/wp-content/uploads/CVO-Lifetime-Accuracy-Warranty-r2024.pdf https://ritz-international.com/wp-content/uploads/3-Year-Warranty-Statement.pdf https://ritz-international.com/wp-content/uploads/High-Voltage-Type-Designation-Change-Notice.pdf
+[TEMPLATES] 13067 13162

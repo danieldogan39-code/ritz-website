@@ -1,0 +1,25 @@
+# Combination converter Space saving - RITZ
+URL: https://ritz-international.com/en/combination-converter-space-saving/  status=200 lang=en kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "en_US", "og:type": "article", "og:title": "Combination converter Space saving - RITZ", "og:description": "Focus on metal-encapsulated combi converters Cost savings of approx. 12,000€ when using combi-transducers compared to measuring field with cable input field. Cost savings of approx. 12,000€ when using combi converters compared to measuring field with cable input field Example: Costs for 3 20kV combination transformers = approx. 10.000€ Costs for air-insulated 20kV switchgear with cable 
+canonical: https://ritz-international.com/en/combination-converter-space-saving/
+hreflang: [['en', 'https://ritz-international.com/en/combination-converter-space-saving/'], ['de', 'https://ritz-international.com/kombiwandler-platzersparnis/'], ['x-default', 'https://ritz-international.com/kombiwandler-platzersparnis/']]
+
+[POSTTITLE] Combination converter Space saving
+[POSTCONTENT] Focus on metal-encapsulated combi converters 
+ Cost savings of approx. 12,000€ when using combi-transducers compared to measuring field with cable input field. Cost savings of approx. 12,000€ when using combi converters compared to measuring field with cable input field
+ Example:
+ Costs for 3 20kV combination transformers = approx. 10.000€ 
+ Costs for air-insulated 20kV switchgear with cable entry panel and measuring panel = €22,000 
+ Space-saving through use of the cable cellar and therefore no need for additional space in the building and associated construction cost savings.
+ Variety of parameters: multi-core and multi-winding designs possible
+ Offset counting possible
+ Frequency-optimized design up to 9 kHz possible
+ very long service life of at least 30 years and therefore sustainable!
+ Safe to touch during operation due to earthed housing
+ Maintenance-free and insensitive to dirt over the entire service life, in contrast to air-insulated measuring fields, which must be cleaned every 4 years in accordance with DGUV V3 regulations. In this case, the measuring cell must be switched off. With a combi-transformer, cleaning is no longer necessary and saves costs for the energy supplier for decades. 
+ There are very few manufacturers of 30kV air-insulated measuring fields on the market. As an alternative, 30kV combination transformers are often used here 
+ Mounting position independent
+ Additional burden IMGS= LINKS=Additional burden<https://ritz-international.com/wp-content/uploads/Compact_product_knowledge_metal_clad_combined_transformers.pdf>
+[BTN] Back -> https://ritz-international.com/en/?page_id=5595
+[FEATURED] https://ritz-international.com/wp-content/uploads/Kombiwandler-Platzersparnis.png
+[PDFS] https://ritz-international.com/wp-content/uploads/Compact_product_knowledge_metal_clad_combined_transformers.pdf

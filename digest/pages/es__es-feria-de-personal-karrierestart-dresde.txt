@@ -1,0 +1,10 @@
+# Feria de personal Karrierestart en Dresde - RITZ
+URL: https://ritz-international.com/es/feria-de-personal-karrierestart-dresde/  status=200 lang=es kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "es_ES", "og:type": "article", "og:title": "Feria de personal Karrierestart en Dresde - RITZ", "og:description": "RITZ participa en la feria de personal Karrierestart en Dresde, recinto 1, stand L 24, del 19 al 21/01/ 2024. ¡Esperamos su visita! Su equipo de ferias RITZ", "og:url": "https://ritz-international.com/es/feria-de-personal-karrierestart-dresde/", "og:site_name": "RITZ", "og:image": "https://ritz-international.com/wp-content/uploads/IMG-20240119-WA0003.jpg", "og:image:width": "1024
+canonical: https://ritz-international.com/es/feria-de-personal-karrierestart-dresde/
+hreflang: [['en', 'https://ritz-international.com/en/personnel-fair-karrierestart-dresden/'], ['fr', 'https://ritz-international.com/fr/salon-du-personnel-karrierestart-dresden/'], ['de', 'https://ritz-international.com/personalmesse-karrierestart-dresden/'], ['hu', 'https://ritz-international.com/hu/szemelyzeti-vasar-karrierestart-dresden/'], ['es', 'https://ritz-international.com/es/feria-de-personal-karrierestart-dresde/'], ['x-default', 'https://ritz-international.com/personalmesse-karrierestart-dresden/']]
+
+[POSTTITLE] Feria de personal Karrierestart en Dresde
+[POSTCONTENT] RITZ participa en la feria de personal Karrierestart en Dresde, recinto 1, stand L 24, del 19 al 21/01/ 2024. ¡Esperamos su visita! Su equipo de ferias RITZ IMGS= LINKS=
+[BTN] Volver -> https://ritz-international.com/es/?page_id=5592
+[FEATURED] https://ritz-international.com/wp-content/uploads/IMG-20240119-WA0003.jpg

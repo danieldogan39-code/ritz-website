@@ -1,0 +1,263 @@
+# Elektronische Messwandler und Sensoren - RITZ
+URL: https://ritz-international.com/produkte/elektronische-messwandler-und-sensoren/  status=200 lang=de kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "description": "Entdecken Sie die innovativen elektronischen Messwandler und Sensoren von RITZ. Unsere Produkte bieten hohe Messgenauigkeit und sind ideal für die Herausforderungen der modernen Energietechnik.", "og:locale": "de_DE", "og:type": "article", "og:title": "Elektronische Messwandler und Sensoren - RITZ", "og:description": "Entdecken Sie die innovativen elektronischen Messwandler und Sensoren von RITZ. Unsere Produkte bieten hohe Messgenauigkeit und sind ideal für die Herausforderungen der mode
+canonical: https://ritz-international.com/produkte/elektronische-messwandler-und-sensoren/
+hreflang: [['en', 'https://ritz-international.com/en/products/electronic-transducers-and-sensors/'], ['fr', 'https://ritz-international.com/fr/produits/transformateurs-de-mesure-electroniques-et-capteurs/'], ['de', 'https://ritz-international.com/produkte/elektronische-messwandler-und-sensoren/'], ['hu', 'https://ritz-international.com/hu/termekek/elektronikus-meroatalakitok-es-erzekelok/'], ['es', 'https://ritz-international.com/es/productos/transductores-y-sensores-electronicos-de-medicion/'], ['x-default', 'https://ritz-international.com/produkte/elektronische-messwandler-und-sensoren/']]
+
+[H H2] Elektronische Messwandler und Sensoren
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/introduction_image_elektronische_messwandler_und_sensoren-e1705680342912.jpg alt=''
+[TEXT] Kompetenz in der innovativen Lösung Ihrer Messaufgabe
+ Mehr als 40 Jahre Erfahrung im Einsatz von Elektronik in der Energietechnik
+ Ausgereifte Isolationstechnik, verbunden mit hoher Messgenauigkeit und Fertigungsqualität
+ Unkonventionelle Techniken für hohe Zuverlässigkeit auch in stark störbelasteten Umgebungen
+ Zertifizierung nach DIN/EN/ISO 9001
+[H H2] Kontakt
+[H H2] Gregor Pohl
+[LIST] +49 40 51123 - 260 <tel:+494051123260> | gregor.pohl@ritz-international.com <mailto:gregor.pohl@ritz-international.com>
+[H H2] Download Infomaterial
+[LIST] Elektronik <https://ritz-international.com/wp-content/uploads/ELEKTRONIK.pdf> | Sensoren <https://ritz-international.com/wp-content/uploads/Sensoren-2.pdf>
+[template] Merkmale, Techniken und Anwendungen
+Strommessung
+Ströme bis 24 kAFrequenzen von 0 bis 10 kHzGenauigkeiten ab 0,1%
+Techniken
+ModulationsverfahrenLWL- und LasertechnikSelbstversorgerTransformatorprinzipKompensationsverfahrenRogowskispulenKrämerwandlerR- und C- Spannungsteiler
+Spannungsmessung
+Spannungen bis 90 kVFrequenzen von 0 bis 150 kHzGenauigkeiten ab 0,1%
+Anwendungen
+EnergietechnikBahntechnikElektrochemieUmwelttechnikForschungAutomobilindustrie
+PRODUKTE
+STROMSENSOREN INNENRAUM
+Stromsensor KSOH-S 1082 Passiver Kleinsignal-Stromwandler
+Sensorkatalog
+Stromsensor MKSOH-S 1384 Passiver Kleinsignal-Stromwandler
+Sensorkatalog
+Stromsensor UGSS-S 104 Gr. 1 Passiver Kleinsignal-Stromwandler
+Sensorkatalog
+Stromsensor RKU-S 2012 Passiver Kleinsignal-Stromwandler
+Sensorkatalog
+Spannungssensoren Innenraum
+Spannungssensor GBERA 12 | 24 | 36 Passiver Kleinsignal-Spannungswandler
+Sensorkatalog
+Spannungssensor GSER 3Passiver Kleinsignal-Spannungswandler
+Sensorkatalog
+Spannungssensor MGTK 12 | 17.5 | 24Passiver Kleinsignal-Spannungswandler
+Sensorkatalog
+Spannungssensor MGTK-V 12 | 17.5 | 24 Passiver Kleinsignal-Spannungswandler
+Sensorkatalog
+Spannungssensoren FREILUFT
+GSER(F) 16 Passiver Kleinsignal-Spannungswandler
+Sensorkatalog
+GSER(F) 52 Passiver Kleinsignal-Spannungswandler
+Sensorkatalog
+GSR 27 | 38 Passiver Kleinsignal-Spannungswandler
+Sensorkatalog
+Kombisensoren Innenraum
+Kombisensor ABS 12 | 17,5 | 24 | 36 Stützer-Bauform für den Einbau in luftisolierte Schaltanlagen
+Datenblatt
+Elektronische Spannungwandler
+Elektronischer Spannungswandler EGIW x64 DC- und AC-Messsystem mit optischer Datenübertragung
+Datenblatt (Englisch)
+Elektronischer Spannungswandler EGIW x45DC- und AC-Messsystem mit Trennverstärker
+Datenblatt (Englisch)
+Elektronischer Spannungswandler EVBA x06 DC- und AC-Messsystem mit Pufferverstärker
+Datenblatt (Englisch)
+Elektronische stromwandler
+Elektronischer Stromwandler EMVI 7xx DC- und AC-Messsystem basierend auf Nullfluss-Prinzip
+Datenblatt (Englisch)
+Stand-Alone Elektronik
+Pufferverstärker EVBA 06 Ergänzung für vorhandene Spannungssensoren
+Datenblatt (Englisch)
+Messwandlerzubehör
+Offenspannungsschutz EOSS 122 Schutzreinrichtung für Stromwandler
+Datenblatt IMGS=https://ritz-international.com/wp-content/uploads/2022/10/produkte_stromsensoren_innenraum_stromsensor_ksoh-s_1082.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_stromsensoren_innenraum_stromsensor_mksoh-s_1384.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_stromsensoren_innenraum_stromsensor_ugss-s_104_gr_1.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_stromsensoren_innenraum_stromsensor_rku-s_2012.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_innenraum_spannungssensor_gbera_12_24_36.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_innenraum_spannungssensor_gser_3.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_innenraum_spannungssensor_mgtk_12_17_5_24.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_innenraum_spannungssensor_mgtk-v_12_17_5_24.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_freiluft_gserf_16.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_freiluft_gserf_52.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_freiluft_gsr_27_38.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_kombisensoren_innenraum_kombisensor_abs_12_17_5_24_36.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_elektronische_spannungwandler_elektronischer_spannungswandler_egiw_x64.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_elektronische_spannungwandler_elektronischer_spannungswandler_egiw_x85.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_elektronische_spannungwandler_elektronischer_spannungswandler_evba_x06.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_elektronische_stromwandler_elektronischer_stromwandler_emvi_7xx.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_stand-alone_elektronik_pufferverstaerker_evba_006.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_messwandlerzubehoer_offenspannungsschutz_eoss_122.jpg LINKS=Sensorkatalog<https://ritz-international.com/wp-content/uploads/DE-Kundenkatalog-Sensoren_2024_V3.pdf> Sensorkatalog<https://ritz-international.com/wp-content/uploads/DE-Kundenkatalog-Sensoren_2024_V3.pdf> Sensorkatalog<https://ritz-international.com/wp-content/uploads/DE-Kundenkatalog-Sensoren_2024_V3.pdf> Sensorkatalog<https://ritz-international.com/wp-content/uploads/DE-Kundenkatalog-Sensoren_2024_V3.pdf> Sensorkatalog<https://ritz-international.com/wp-content/uploads/DE-Kundenkatalog-Sensoren_2024_V3.pdf> Sensorkatalog<https://ritz-international.com/wp-content/uploads/DE-Kundenkatalog-Sensoren_2024_V3.pdf> Sensorkatalog<https://ritz-international.com/wp-content/uploads/DE-Kundenkatalog-Sensoren_2024_V3.pdf> Sensorkatalog<https://ritz-international.com/wp-content/uploads/DE-Kundenkatalog-Sensoren_2024_V3.pdf> Sensorkatalog<https://ritz-international.com/wp-content/uploads/DE-Kundenkatalog-Sensoren_2024_V3.pdf> Sensorkatalog<https://ritz-international.com/wp-content/uploads/DE-Kundenkatalog-Sensoren_2024_V3.pdf> Sensorkatalog<https://ritz-international.com/wp-content/uploads/DE-Kundenkatalog-Sensoren_2024_V3.pdf> Datenblatt<https://ritz-international.com/wp-content/uploads/DE_T.Data-Sheet_ABS-12_17.5_24_36.pdf> Datenblatt (Englisch)<https://ritz-international.com/wp-content/uploads/2018-08_EGIW_x64_datasheet-1.pdf> Datenblatt (Englisch)<https://ritz-international.com/wp-content/uploads/EGIW_x45_Data_Sheet.pdf> Datenblatt (Englisch)<https://ritz-international.com/wp-content/uploads/2018-08_EVBA_x06_datasheet.pdf> Datenblatt (Englisch)<https://ritz-international.com/wp-content/uploads/2018-08_EMVI_7xx_datasheet.pdf> Datenblatt (Englisch)<https://ritz-international.com/wp-content/uploads/2018-08_EVBA_x06_datasheet-1.pdf> Datenblatt<https://ritz-international.com/wp-content/uploads/EOSS_122_DE_2021-11-1.pdf>
+[ACC] (in 2556fde) <Merkmale, Techniken und Anwendungen> tpl=1220 Strommessung
+ Ströme bis 24 kA
+ Frequenzen von 0 bis 10 kHz
+ Genauigkeiten ab 0,1%
+ Techniken
+ Modulationsverfahren
+ LWL- und Lasertechnik
+ Selbstversorger
+ Transformatorprinzip
+ Kompensationsverfahren
+ Rogowskispulen
+ Krämerwandler
+ R- und C- Spannungsteiler
+ Spannungsmessung
+ Spannungen bis 90 kV
+ Frequenzen von 0 bis 150 kHz
+ Genauigkeiten ab 0,1%
+ Anwendungen
+ Energietechnik
+ Bahntechnik
+ Elektrochemie
+ Umwelttechnik
+ Forschung
+ Automobilindustrie || <PRODUKTE> tpl=1224 STROMSENSOREN INNENRAUM
+ Stromsensor KSOH-S 1082 
+ Passiver Kleinsignal-Stromwandler 
+ Sensorkatalog 
+ Stromsensor MKSOH-S 1384 
+ Passiver Kleinsignal-Stromwandler 
+ Sensorkatalog 
+ Stromsensor UGSS-S 104 Gr. 1 
+Passiver Kleinsignal-Stromwandler
+ Sensorkatalog 
+ Stromsensor RKU-S 2012 
+Passiver Kleinsignal-Stromwandler 
+ Sensorkatalog 
+ Spannungssensoren Innenraum
+ Spannungssensor GBERA 12 | 24 | 36 
+Passiver Kleinsignal-Spannungswandler 
+ Sensorkatalog 
+ Spannungssensor GSER 3
+ Passiver Kleinsignal-Spannungswandler 
+ Sensorkatalog 
+ Spannungssensor MGTK 12 | 17.5 | 24 
+Passiver Kleinsignal-Spannungswandler 
+ Sensorkatalog 
+ Spannungssensor MGTK-V 12 | 17.5 | 24 
+Passiver Kleinsignal-Spannungswandler 
+ Sensorkatalog 
+ Spannungssensoren FREILUFT
+ GSER(F) 16 
+Passiver Kleinsignal-Spannungswandler 
+ Sensorkatalog 
+ GSER(F) 52 
+Passiver Kleinsignal-Spannungswandler 
+ Sensorkatalog 
+ GSR 27 | 38 
+Passiver Kleinsignal-Spannungswandler 
+ Sensorkatalog 
+ Kombisensoren Innenraum 
+ Kombisensor ABS 12 | 17,5 | 24 | 36 
+Stützer-Bauform für den Einbau in luftisolierte Schaltanlagen 
+ Datenblatt 
+ Elektronische Spannungwandler
+ Elektronischer Spannungswandler EGIW x64 
+DC- und AC-Messsystem mit optischer Datenübertragung 
+ Datenblatt (Englisch) 
+ Elektronischer Spannungswandler EGIW x45 
+DC- und AC-Messsystem mit Trennverstärker 
+ Datenblatt (Englisch) 
+ Elektronischer Spannungswandler EVBA x06 
+DC- und AC-Messsystem mit Pufferverstärker 
+ Datenblatt (Englisch) 
+ Elektronische stromwandler
+ Elektronischer Stromwandler EMVI 7xx 
+DC- und AC-Messsystem basierend auf Nullfluss-Prinzip
+ Datenblatt (Englisch) 
+ Stand-Alone Elektronik
+ Pufferverstärker EVBA 06 
+Ergänzung für vorhandene Spannungssensoren
+ Datenblatt (Englisch) 
+ Messwandlerzubehör
+ Offenspannungsschutz EOSS 122 
+Schutzreinrichtung für Stromwandler 
+ Datenblatt
+[H H2] (in 00c4c7b) Strommessung
+[TEXT] (in 00c4c7b) Ströme bis 24 kA
+ Frequenzen von 0 bis 10 kHz
+ Genauigkeiten ab 0,1%
+[H H2] (in 00c4c7b) Techniken
+[TEXT] (in 00c4c7b) Modulationsverfahren
+ LWL- und Lasertechnik
+ Selbstversorger
+ Transformatorprinzip
+ Kompensationsverfahren
+ Rogowskispulen
+ Krämerwandler
+ R- und C- Spannungsteiler
+[H H2] (in 00c4c7b) Spannungsmessung
+[TEXT] (in 00c4c7b) Spannungen bis 90 kV
+ Frequenzen von 0 bis 150 kHz
+ Genauigkeiten ab 0,1%
+[H H2] (in 00c4c7b) Anwendungen
+[TEXT] (in 00c4c7b) Energietechnik
+ Bahntechnik
+ Elektrochemie
+ Umwelttechnik
+ Forschung
+ Automobilindustrie
+[H H2] (in 00c4c7b) STROMSENSOREN INNENRAUM
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_stromsensoren_innenraum_stromsensor_ksoh-s_1082.jpg alt=''
+[TEXT] (in 00c4c7b) Stromsensor KSOH-S 1082 
+ Passiver Kleinsignal-Stromwandler
+[LIST] (in 00c4c7b) Sensorkatalog <https://ritz-international.com/wp-content/uploads/DE-Kundenkatalog-Sensoren_2024_V3.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_stromsensoren_innenraum_stromsensor_mksoh-s_1384.jpg alt=''
+[TEXT] (in 00c4c7b) Stromsensor MKSOH-S 1384 
+ Passiver Kleinsignal-Stromwandler
+[LIST] (in 00c4c7b) Sensorkatalog <https://ritz-international.com/wp-content/uploads/DE-Kundenkatalog-Sensoren_2024_V3.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_stromsensoren_innenraum_stromsensor_ugss-s_104_gr_1.jpg alt=''
+[TEXT] (in 00c4c7b) Stromsensor UGSS-S 104 Gr. 1 
+Passiver Kleinsignal-Stromwandler
+[LIST] (in 00c4c7b) Sensorkatalog <https://ritz-international.com/wp-content/uploads/DE-Kundenkatalog-Sensoren_2024_V3.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_stromsensoren_innenraum_stromsensor_rku-s_2012.jpg alt=''
+[TEXT] (in 00c4c7b) Stromsensor RKU-S 2012 
+Passiver Kleinsignal-Stromwandler
+[LIST] (in 00c4c7b) Sensorkatalog <https://ritz-international.com/wp-content/uploads/DE-Kundenkatalog-Sensoren_2024_V3.pdf>
+[H H2] (in 00c4c7b) Spannungssensoren Innenraum
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_innenraum_spannungssensor_gbera_12_24_36.jpg alt=''
+[TEXT] (in 00c4c7b) Spannungssensor GBERA 12 | 24 | 36 
+Passiver Kleinsignal-Spannungswandler
+[LIST] (in 00c4c7b) Sensorkatalog <https://ritz-international.com/wp-content/uploads/DE-Kundenkatalog-Sensoren_2024_V3.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_innenraum_spannungssensor_gser_3.jpg alt=''
+[TEXT] (in 00c4c7b) Spannungssensor GSER 3
+ Passiver Kleinsignal-Spannungswandler
+[LIST] (in 00c4c7b) Sensorkatalog <https://ritz-international.com/wp-content/uploads/DE-Kundenkatalog-Sensoren_2024_V3.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_innenraum_spannungssensor_mgtk_12_17_5_24.jpg alt=''
+[TEXT] (in 00c4c7b) Spannungssensor MGTK 12 | 17.5 | 24 
+Passiver Kleinsignal-Spannungswandler
+[LIST] (in 00c4c7b) Sensorkatalog <https://ritz-international.com/wp-content/uploads/DE-Kundenkatalog-Sensoren_2024_V3.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_innenraum_spannungssensor_mgtk-v_12_17_5_24.jpg alt=''
+[TEXT] (in 00c4c7b) Spannungssensor MGTK-V 12 | 17.5 | 24 
+Passiver Kleinsignal-Spannungswandler
+[LIST] (in 00c4c7b) Sensorkatalog <https://ritz-international.com/wp-content/uploads/DE-Kundenkatalog-Sensoren_2024_V3.pdf>
+[H H2] (in 00c4c7b) Spannungssensoren FREILUFT
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_freiluft_gserf_16.jpg alt=''
+[TEXT] (in 00c4c7b) GSER(F) 16 
+Passiver Kleinsignal-Spannungswandler
+[LIST] (in 00c4c7b) Sensorkatalog <https://ritz-international.com/wp-content/uploads/DE-Kundenkatalog-Sensoren_2024_V3.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_freiluft_gserf_52.jpg alt=''
+[TEXT] (in 00c4c7b) GSER(F) 52 
+Passiver Kleinsignal-Spannungswandler
+[LIST] (in 00c4c7b) Sensorkatalog <https://ritz-international.com/wp-content/uploads/DE-Kundenkatalog-Sensoren_2024_V3.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_freiluft_gsr_27_38.jpg alt=''
+[TEXT] (in 00c4c7b) GSR 27 | 38 
+Passiver Kleinsignal-Spannungswandler
+[LIST] (in 00c4c7b) Sensorkatalog <https://ritz-international.com/wp-content/uploads/DE-Kundenkatalog-Sensoren_2024_V3.pdf>
+[H H2] (in 00c4c7b) Kombisensoren Innenraum
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_kombisensoren_innenraum_kombisensor_abs_12_17_5_24_36.jpg alt=''
+[TEXT] (in 00c4c7b) Kombisensor ABS 12 | 17,5 | 24 | 36 
+Stützer-Bauform für den Einbau in luftisolierte Schaltanlagen
+[LIST] (in 00c4c7b) Datenblatt <https://ritz-international.com/wp-content/uploads/DE_T.Data-Sheet_ABS-12_17.5_24_36.pdf>
+[H H2] (in 00c4c7b) Elektronische Spannungwandler
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_elektronische_spannungwandler_elektronischer_spannungswandler_egiw_x64.jpg alt=''
+[TEXT] (in 00c4c7b) Elektronischer Spannungswandler EGIW x64 
+DC- und AC-Messsystem mit optischer Datenübertragung
+[LIST] (in 00c4c7b) Datenblatt (Englisch) <https://ritz-international.com/wp-content/uploads/2018-08_EGIW_x64_datasheet-1.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_elektronische_spannungwandler_elektronischer_spannungswandler_egiw_x85.jpg alt=''
+[TEXT] (in 00c4c7b) Elektronischer Spannungswandler EGIW x45 
+DC- und AC-Messsystem mit Trennverstärker
+[LIST] (in 00c4c7b) Datenblatt (Englisch) <https://ritz-international.com/wp-content/uploads/EGIW_x45_Data_Sheet.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_elektronische_spannungwandler_elektronischer_spannungswandler_evba_x06.jpg alt=''
+[TEXT] (in 00c4c7b) Elektronischer Spannungswandler EVBA x06 
+DC- und AC-Messsystem mit Pufferverstärker
+[LIST] (in 00c4c7b) Datenblatt (Englisch) <https://ritz-international.com/wp-content/uploads/2018-08_EVBA_x06_datasheet.pdf>
+[H H2] (in 00c4c7b) Elektronische stromwandler
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_elektronische_stromwandler_elektronischer_stromwandler_emvi_7xx.jpg alt=''
+[TEXT] (in 00c4c7b) Elektronischer Stromwandler EMVI 7xx 
+DC- und AC-Messsystem basierend auf Nullfluss-Prinzip
+[LIST] (in 00c4c7b) Datenblatt (Englisch) <https://ritz-international.com/wp-content/uploads/2018-08_EMVI_7xx_datasheet.pdf>
+[H H2] (in 00c4c7b) Stand-Alone Elektronik
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_stand-alone_elektronik_pufferverstaerker_evba_006.jpg alt=''
+[TEXT] (in 00c4c7b) Pufferverstärker EVBA 06 
+Ergänzung für vorhandene Spannungssensoren
+[LIST] (in 00c4c7b) Datenblatt (Englisch) <https://ritz-international.com/wp-content/uploads/2018-08_EVBA_x06_datasheet-1.pdf>
+[H H2] (in 00c4c7b) Messwandlerzubehör
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_messwandlerzubehoer_offenspannungsschutz_eoss_122.jpg alt=''
+[TEXT] (in 00c4c7b) Offenspannungsschutz EOSS 122 
+Schutzreinrichtung für Stromwandler
+[LIST] (in 00c4c7b) Datenblatt <https://ritz-international.com/wp-content/uploads/EOSS_122_DE_2021-11-1.pdf>
+[PDFS] https://ritz-international.com/wp-content/uploads/ELEKTRONIK.pdf https://ritz-international.com/wp-content/uploads/Sensoren-2.pdf https://ritz-international.com/wp-content/uploads/DE-Kundenkatalog-Sensoren_2024_V3.pdf https://ritz-international.com/wp-content/uploads/DE_T.Data-Sheet_ABS-12_17.5_24_36.pdf https://ritz-international.com/wp-content/uploads/2018-08_EGIW_x64_datasheet-1.pdf https://ritz-international.com/wp-content/uploads/EGIW_x45_Data_Sheet.pdf https://ritz-international.com/wp-content/uploads/2018-08_EVBA_x06_datasheet.pdf https://ritz-international.com/wp-content/uploads/2018-08_EMVI_7xx_datasheet.pdf https://ritz-international.com/wp-content/uploads/2018-08_EVBA_x06_datasheet-1.pdf https://ritz-international.com/wp-content/uploads/EOSS_122_DE_2021-11-1.pdf
+[TEMPLATES] 1220 1224

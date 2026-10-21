@@ -1,0 +1,10 @@
+# AGB - RITZ
+URL: https://ritz-international.com/agb/  status=200 lang=de kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "AGB - RITZ", "og:description": "AGB {{block type=“cms/block“ block_id=“business_terms“}}", "og:url": "https://ritz-international.com/agb/", "og:site_name": "RITZ"}
+canonical: https://ritz-international.com/agb/
+hreflang: [['de', 'https://ritz-international.com/agb/'], ['x-default', 'https://ritz-international.com/agb/']]
+
+[POSTTITLE] AGB
+[POSTCONTENT] AGB
+ {{block type=“cms/block“ block_id=“business_terms“}} IMGS= LINKS=
+[BTN] Zurück -> /aktuelles/news

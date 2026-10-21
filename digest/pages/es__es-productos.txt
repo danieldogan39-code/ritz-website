@@ -1,0 +1,32 @@
+# Productos - RITZ
+URL: https://ritz-international.com/es/productos/  status=200 lang=es kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "es_ES", "og:type": "article", "og:title": "Productos - RITZ", "og:description": "Inicio Amplia cartera de productos. Más que estándar. Le ofrecemos soluciones de productos personalizadas y realizamos complejas peticiones especiales con la máxima calidad. Confíe en la alta calidad de nuestros productos y en nuestra experiencia. ¿Busca transformadores de media tensión, por ejemplo para interiores y exteriores? ¿O necesita transformadores de baja tensión adaptados de forma […]", "og:url": "htt
+canonical: https://ritz-international.com/es/productos/
+hreflang: [['en', 'https://ritz-international.com/en/products/'], ['fr', 'https://ritz-international.com/fr/produits/'], ['de', 'https://ritz-international.com/produkte/'], ['hu', 'https://ritz-international.com/hu/termekek/'], ['es', 'https://ritz-international.com/es/productos/'], ['x-default', 'https://ritz-international.com/produkte/']]
+
+[H H2] Amplia cartera de productos.
+[TEXT] Más que estándar. Le ofrecemos soluciones de productos personalizadas y realizamos complejas peticiones especiales con la máxima calidad. Confíe en la alta calidad de nuestros productos y en nuestra experiencia. 
+ ¿Busca transformadores de media tensión, por ejemplo para interiores y exteriores? ¿O necesita transformadores de baja tensión adaptados de forma óptima a sus necesidades? ¿O está interesado en un innovador sistema SIS de aislamiento de barras colectoras? Póngase en contacto con nosotros. 
+ Nuestra gama se completa con piezas de resina fundida de alta calidad y compuestos desarrollados según sus especificaciones. 
+ La aplicación de resinas de moldeo es una especialidad de nuestra filial DUROMER. Por último, pero no por ello menos importante, la cartera de productos de RITZ también incluye convertidores electrónicos de cuchillas y sensores de la más alta calidad de fabricación.
+[IMG] https://ritz-international.com/wp-content/uploads/2022/07/produkte_umfassendes_produktportfolio.jpg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/2022/07/network_lines_new.svg alt=''
+[H H2] Nuestros productos
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] saber más  -> https://ritz-international.com/es/productos/transformador-de-media-tension/
+[H H2] Transformadores de media tensión  -> https://ritz-international.com/es/productos/transformador-de-media-tension/
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] saber más  -> https://ritz-international.com/es/productos/transformador-de-baja-tension/
+[H H2] Transformadores de baja tensión  -> https://ritz-international.com/es/productos/transformador-de-baja-tension/
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] saber más  -> https://ritz-international.com/es/productos/transformadores-de-alta-tension/
+[H H2] Transformadores de alta tensión  -> https://ritz-international.com/es/productos/transformadores-de-alta-tension/
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] saber más  -> https://ritz-international.com/es/productos/carriles-actuales/
+[H H2] Sistema de aislamiento de barras SIS  -> https://ritz-international.com/es/productos/carriles-actuales/
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] saber más  -> https://ritz-international.com/es/productos/piezas-de-resina-de-moldeo-duromer/
+[H H2] Piezas de resina DUROMER  -> https://ritz-international.com/es/productos/piezas-de-resina-de-moldeo-duromer/
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] saber más  -> https://ritz-international.com/es/productos/transductores-y-sensores-electronicos-de-medicion/
+[H H2] Transformadores de medida electrónicos y sensores  -> https://ritz-international.com/es/productos/transductores-y-sensores-electronicos-de-medicion/

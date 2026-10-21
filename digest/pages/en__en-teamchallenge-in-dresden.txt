@@ -1,0 +1,13 @@
+# TEAM CHALLENGE IN DRESDEN - RITZ
+URL: https://ritz-international.com/en/teamchallenge-in-dresden/  status=200 lang=en kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "en_US", "og:type": "article", "og:title": "TEAM CHALLENGE IN DRESDEN - RITZ", "og:description": "Recently, 22 runners from our RITZ site in Ottendorf-Okrilla took part in the Rewe Team Challenge in Dresden. Preparing for the challenge together, having fun together and crossing the finish line together not only promotes communication and togetherness within the company, but will definitely be remembered for a long time to come! Many thanks to […]", "og:url": "https://ritz-international.com/e
+canonical: https://ritz-international.com/en/teamchallenge-in-dresden/
+hreflang: [['en', 'https://ritz-international.com/en/teamchallenge-in-dresden/'], ['fr', 'https://ritz-international.com/fr/teamchallenge-a-dresde/'], ['de', 'https://ritz-international.com/teamchallenge-in-dresden/'], ['hu', 'https://ritz-international.com/hu/teamchallenge-dresdenben/'], ['es', 'https://ritz-international.com/es/teamchallenge-en-dresde/'], ['x-default', 'https://ritz-international.com/teamchallenge-in-dresden/']]
+
+[POSTTITLE] TEAM CHALLENGE IN DRESDEN
+[POSTCONTENT] Recently, 22 runners from our RITZ site in Ottendorf-Okrilla took part in the Rewe Team Challenge in Dresden.
+ Preparing for the challenge together, having fun together and crossing the finish line together not only promotes communication and togetherness within the company, but will definitely be remembered for a long time to come!
+ Many thanks to all our runners for representing our company so worthily and congratulations on your great performance!
+ Would you also like to support our running team next year? Then take a quick look at our job advertisements now. IMGS=https://ritz-international.com/wp-content/uploads/IMG_20230607_060435_853.jpg https://ritz-international.com/wp-content/uploads/IMG_20230607_060435_863.jpg LINKS=
+[BTN] Back -> https://ritz-international.com/en/?page_id=5595
+[FEATURED] https://ritz-international.com/wp-content/uploads/IMG_20230607_060125_233.jpg

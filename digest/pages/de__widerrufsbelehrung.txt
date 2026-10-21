@@ -1,0 +1,10 @@
+# Widerrufsbelehrung - RITZ
+URL: https://ritz-international.com/widerrufsbelehrung/  status=200 lang=de kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "Widerrufsbelehrung - RITZ", "og:description": "Widerrufsbelehrung {{block type=“cms/block“ block_id=“revocation“}}", "og:url": "https://ritz-international.com/widerrufsbelehrung/", "og:site_name": "RITZ"}
+canonical: https://ritz-international.com/widerrufsbelehrung/
+hreflang: [['de', 'https://ritz-international.com/widerrufsbelehrung/'], ['x-default', 'https://ritz-international.com/widerrufsbelehrung/']]
+
+[POSTTITLE] Widerrufsbelehrung
+[POSTCONTENT] Widerrufsbelehrung
+ {{block type=“cms/block“ block_id=“revocation“}} IMGS= LINKS=
+[BTN] Zurück -> /aktuelles/news

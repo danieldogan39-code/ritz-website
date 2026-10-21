@@ -1,0 +1,185 @@
+# Portal de empleo - RITZ
+URL: https://ritz-international.com/es/portal-de-empleo/  status=200 lang=es kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "description": "Descubre una amplia gama de oportunidades profesionales en el portal de empleo de RITZ. Encuentra el trabajo de tus sueños en la industria eléctrica: desde prácticas hasta puestos directivos. Da forma al futuro de la tecnología energética con nosotros.", "og:locale": "es_ES", "og:type": "article", "og:title": "Portal de empleo - RITZ", "og:description": "Descubre una amplia gama de oportunidades profesionales en el portal de empleo de RITZ. Encuentra el trabajo de tus sueños en la industr
+canonical: https://ritz-international.com/es/portal-de-empleo/
+hreflang: [['en', 'https://ritz-international.com/en/career-portal/'], ['fr', 'https://ritz-international.com/fr/portail-des-carrieres/'], ['de', 'https://ritz-international.com/karriereportal/'], ['hu', 'https://ritz-international.com/hu/karrier-portal/'], ['es', 'https://ritz-international.com/es/portal-de-empleo/'], ['x-default', 'https://ritz-international.com/karriereportal/']]
+
+[IMG] https://ritz-international.com/wp-content/uploads/arrow-red-RTZ-2048x1448.png alt='' -> #first-section
+[H H2] SIN DUDA UNA BUENA DECISIÓN
+[shortcode] Búsqueda
+Ubicación
+Todos
+Hamburg
+Kirchaich
+Ottendorf-Okrilla
+Categoría
+Todos
+Auszubildende
+Fach- und Führungskräfte
+Gewerblich
+Kaufmännisch
+15 vacantes
+Ausbildung Fachkraft für Lagerlogistik (m/w/d)
+Ottendorf-Okrilla
+Jornada completa
+Formación profesional
+Ver oferta
+(se abre en una nueva pestaña)
+Ausbildung Mechatroniker (m/w/d)
+Ottendorf-Okrilla
+Jornada completa
+Formación profesional
+Ver oferta
+(se abre en una nueva pestaña)
+Elektroniker (m/w/d) Prüffeld
+Ottendorf-Okrilla
+Jornada completa
+Indefinido
+Ver oferta
+(se abre en una nueva pestaña)
+Specialist Energy (m/w/d)
+Ottendorf-Okrilla
+Jornada completa
+Indefinido
+Ver oferta
+(se abre en una nueva pestaña)
+Konstrukteur (m/w/d)
+Hamburg
+Jornada completa
+Indefinido
+Ver oferta
+(se abre en una nueva pestaña)
+Group ERP Manager (m/w/d)
+Hamburg
+Jornada completa
+Indefinido
+Ver oferta
+(se abre en una nueva pestaña)
+Lagerleiter / Manager Warehouse (m/w/d)
+Kirchaich
+Jornada completa
+Indefinido
+Ver oferta
+(se abre en una nueva pestaña)
+HR Specialist (m/w/d)
+Ottendorf-Okrilla
+Jornada completa
+Indefinido
+Ver oferta
+(se abre en una nueva pestaña)
+Leitung Prüffeld / Manager Testing (m/w/d)
+Kirchaich
+Jornada completa
+Indefinido
+Ver oferta
+(se abre en una nueva pestaña)
+Leitung Prüffeld / Manager Testing (m/w/d)
+Ottendorf-Okrilla
+Jornada completa
+Indefinido
+Ver oferta
+(se abre en una nueva pestaña)
+Mitarbeiter Instandhaltung (m/w/d)
+Ottendorf-Okrilla
+Jornada completa
+Indefinido
+Ver oferta
+(se abre en una nueva pestaña)
+Specialist Engineering (m/w/d)
+Kirchaich
+Jornada completa
+Indefinido
+Ver oferta
+(se abre en una nueva pestaña)
+Konstrukteur (m/w/d)
+Ottendorf-Okrilla
+Jornada completa
+Indefinido
+Ver oferta
+(se abre en una nueva pestaña)
+Teamleitung Zuschnitt- und Schweißzentrum (m/w/d)
+Kirchaich
+Jornada completa
+Indefinido
+Ver oferta
+(se abre en una nueva pestaña)
+Produktionsmitarbeiter (m/w/d)
+Ottendorf-Okrilla
+Jornada completa
+Indefinido
+Ver oferta
+(se abre en una nueva pestaña)
+Actualmente no hay vacantes que coincidan con su selección. LINKS=Ausbildung Fachkraft für Lagerlogistik (m/w/d)
+Ottendorf-Okrilla
+Jornada completa
+Formación profesio<https://ritz.jobs.personio.de/job/2835088> Ausbildung Mechatroniker (m/w/d)
+Ottendorf-Okrilla
+Jornada completa
+Formación profesional
+Ver oferta<https://ritz.jobs.personio.de/job/2834291> Elektroniker (m/w/d) Prüffeld
+Ottendorf-Okrilla
+Jornada completa
+Indefinido
+Ver oferta
+(se abre en u<https://ritz.jobs.personio.de/job/2800669> Specialist Energy (m/w/d)
+Ottendorf-Okrilla
+Jornada completa
+Indefinido
+Ver oferta
+(se abre en una n<https://ritz.jobs.personio.de/job/2775247> Konstrukteur (m/w/d)
+Hamburg
+Jornada completa
+Indefinido
+Ver oferta
+(se abre en una nueva pestaña)<https://ritz.jobs.personio.de/job/2749868> Group ERP Manager (m/w/d)
+Hamburg
+Jornada completa
+Indefinido
+Ver oferta
+(se abre en una nueva pesta<https://ritz.jobs.personio.de/job/2740479> Lagerleiter / Manager Warehouse (m/w/d)
+Kirchaich
+Jornada completa
+Indefinido
+Ver oferta
+(se abre en<https://ritz.jobs.personio.de/job/2676193> HR Specialist (m/w/d)
+Ottendorf-Okrilla
+Jornada completa
+Indefinido
+Ver oferta
+(se abre en una nueva<https://ritz.jobs.personio.de/job/2573686> Leitung Prüffeld / Manager Testing (m/w/d)
+Kirchaich
+Jornada completa
+Indefinido
+Ver oferta
+(se abre<https://ritz.jobs.personio.de/job/2556201> Leitung Prüffeld / Manager Testing (m/w/d)
+Ottendorf-Okrilla
+Jornada completa
+Indefinido
+Ver oferta
+<https://ritz.jobs.personio.de/job/2527864> Mitarbeiter Instandhaltung (m/w/d)
+Ottendorf-Okrilla
+Jornada completa
+Indefinido
+Ver oferta
+(se abre<https://ritz.jobs.personio.de/job/2469114> Specialist Engineering (m/w/d)
+Kirchaich
+Jornada completa
+Indefinido
+Ver oferta
+(se abre en una nuev<https://ritz.jobs.personio.de/job/2455915> Konstrukteur (m/w/d)
+Ottendorf-Okrilla
+Jornada completa
+Indefinido
+Ver oferta
+(se abre en una nueva <https://ritz.jobs.personio.de/job/2433976> Teamleitung Zuschnitt- und Schweißzentrum (m/w/d)
+Kirchaich
+Jornada completa
+Indefinido
+Ver oferta
+(<https://ritz.jobs.personio.de/job/2415773> Produktionsmitarbeiter (m/w/d)
+Ottendorf-Okrilla
+Jornada completa
+Indefinido
+Ver oferta
+(se abre en <https://ritz.jobs.personio.de/job/2028868>
+[SECTIONS-BG] [{"id": "7879c1a", "settings": "{\"jet_parallax_layout_list\":[],\"background_background\":\"slideshow\",\"background_slideshow_gallery\":[{\"id\":1405,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/2022\\/11\\/intro_home_slider_1.webp\"},{\"id\":2787,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/stellenangebote_intro_slider_2_Produktion.webp\"},{\"id\":2790,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/stellenangebote_intro_slider_5_Logistik.webp\"},{\"id\":2789,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/stellenangebote_intro_slider_4_International.webp\"},{\"id\":1406,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/2022\\/11\\/intro_home_slider_2.webp\"}],\"background_slideshow_ken_burns\":\"yes\",\"background_slideshow_loop\":\"yes\",\"background_slideshow_slide_duration\":5000,\"background_slideshow_slide_transition\":\"fade\",\"background_slideshow_transition_duration\":500,\"background_slideshow_ken_burns_zoom_direction\":\"in\"}"}]

@@ -1,0 +1,308 @@
+de	extra	https://ritz-international.com/?id=116	Home - RITZ	11147	/home/claude/ritz/digest/pages/de__id-116.txt
+de	extra	https://ritz-international.com/?id=6	Home - RITZ	11145	/home/claude/ritz/digest/pages/de__id-6.txt
+de	extra	https://ritz-international.com/category/anwendungsbereich/	Anwendungsbereich Archive - RITZ	834	/home/claude/ritz/digest/pages/de__category-anwendungsbereich.txt
+de	extra	https://ritz-international.com/category/case-studies/	Case Studies Archive - RITZ	2497	/home/claude/ritz/digest/pages/de__category-case-studies.txt
+de	extra	https://ritz-international.com/category/einsatzgebiet/	Einsatzgebiet Archive - RITZ	1334	/home/claude/ritz/digest/pages/de__category-einsatzgebiet.txt
+de	extra	https://ritz-international.com/category/neue-produkte/	Neue Produkte Archive - RITZ	1783	/home/claude/ritz/digest/pages/de__category-neue-produkte.txt
+de	extra	https://ritz-international.com/jobs-und-karriere/ausbildung/	Ausbildung - RITZ	3951	/home/claude/ritz/digest/pages/de__jobs-und-karriere-ausbildung.txt
+de	extra	https://ritz-international.com/jobs-und-karriere/stellenangebote/	Karriereportal - RITZ	6330	/home/claude/ritz/digest/pages/de__jobs-und-karriere-stellenangebote.txt
+de	extra	https://ritz-international.com/language/fr/downloads-4/	Seite wurde nicht gefunden. - RITZ	389	/home/claude/ritz/digest/pages/de__language-fr-downloads-4.txt
+de	extra	https://ritz-international.com/ritz-kontakte/	RITZ Kontakte Archiv - RITZ	4927	/home/claude/ritz/digest/pages/de__ritz-kontakte.txt
+de	extra	https://ritz-international.com/ritz-produktbereiche/mittelspannung/	Mittelspannung Archive - RITZ	1210	/home/claude/ritz/digest/pages/de__ritz-produktbereiche-mittelspannung.txt
+de	extra	https://ritz-international.com/ritz-standorte/ritz-china/	RITZ China Archive - RITZ	981	/home/claude/ritz/digest/pages/de__ritz-standorte-ritz-china.txt
+de	extra	https://ritz-international.com/ritz-standorte/ritz-deutschland/	RITZ Deutschland Archive - RITZ	1138	/home/claude/ritz/digest/pages/de__ritz-standorte-ritz-deutschland.txt
+de	extra	https://ritz-international.com/ritz-standorte/ritz-naher-osten/	RITZ Naher Osten Archive - RITZ	1050	/home/claude/ritz/digest/pages/de__ritz-standorte-ritz-naher-osten.txt
+de	extra	https://ritz-international.com/ritz-standorte/ritz-oesterreich/	RITZ Österreich Archive - RITZ	1041	/home/claude/ritz/digest/pages/de__ritz-standorte-ritz-oesterreich.txt
+de	extra	https://ritz-international.com/ritz-standorte/ritz-ungarn/	RITZ Ungarn Archive - RITZ	999	/home/claude/ritz/digest/pages/de__ritz-standorte-ritz-ungarn.txt
+de	extra	https://ritz-international.com/ritz-standorte/ritz-usa/	RITZ USA Archive - RITZ	996	/home/claude/ritz/digest/pages/de__ritz-standorte-ritz-usa.txt
+de	extra	https://ritz-international.com/ritz-vertretungen/vertretungen-deutschland/	Vertretungen Deutschland Archive - RITZ	1289	/home/claude/ritz/digest/pages/de__ritz-vertretungen-vertretungen-deutschland.txt
+de	extra	https://ritz-international.com/ritz-vertretungen/vertretungen-international/	Vertretungen International Archive - RITZ	3216	/home/claude/ritz/digest/pages/de__ritz-vertretungen-vertretungen-international.txt
+de	extra	https://ritz-international.com/tag/karriere/	Karriere Archive - RITZ	1029	/home/claude/ritz/digest/pages/de__tag-karriere.txt
+de	extra	https://ritz-international.com/tag/messe/	Messe Archive - RITZ	1002	/home/claude/ritz/digest/pages/de__tag-messe.txt
+de	extra	https://ritz-international.com/unternehmen/799-2/historie-standort-marchtrenk/	Seite wurde nicht gefunden. - RITZ	412	/home/claude/ritz/digest/pages/de__unternehmen-799-2-historie-standort-marchtrenk.txt
+de	extra	https://ritz-international.com/unternehmen/engagement/	Seite wurde nicht gefunden. - RITZ	388	/home/claude/ritz/digest/pages/de__unternehmen-engagement.txt
+de	extra	https://ritz-international.com/unternehmen/engagement/syrienhilfe/	Seite wurde nicht gefunden. - RITZ	400	/home/claude/ritz/digest/pages/de__unternehmen-engagement-syrienhilfe.txt
+de	extra	https://ritz-international.com/unternehmen/produktionsstandorte-ritz-gruppe/produktionsstandort-hartwell/	Seite wurde nicht gefunden. - RITZ	439	/home/claude/ritz/digest/pages/de__unternehmen-produktionsstandorte-ritz-gruppe-produktionsstandort-hartwell.txt
+de	pages	https://ritz-international.com/	Home - RITZ	11140	/home/claude/ritz/digest/pages/de__home.txt
+de	pages	https://ritz-international.com/datenschutzerklaerung/	Datenschutzerklärung - RITZ	23105	/home/claude/ritz/digest/pages/de__datenschutzerklaerung.txt
+de	pages	https://ritz-international.com/downloads/	Downloads - RITZ	6215	/home/claude/ritz/digest/pages/de__downloads.txt
+de	pages	https://ritz-international.com/innenraumanwendung/	Innenraumanwendung - RITZ	619	/home/claude/ritz/digest/pages/de__innenraumanwendung.txt
+de	pages	https://ritz-international.com/karriere/	Karriere - RITZ	4088	/home/claude/ritz/digest/pages/de__karriere.txt
+de	pages	https://ritz-international.com/karriere/ausbildung/	Ausbildung - RITZ	3942	/home/claude/ritz/digest/pages/de__karriere-ausbildung.txt
+de	pages	https://ritz-international.com/karriere/praktika/	Praktika - RITZ	2838	/home/claude/ritz/digest/pages/de__karriere-praktika.txt
+de	pages	https://ritz-international.com/karriere/stellenangebote/	Karriereportal - RITZ	6321	/home/claude/ritz/digest/pages/de__karriere-stellenangebote.txt
+de	pages	https://ritz-international.com/karriereportal/	Karriereportal - RITZ	6311	/home/claude/ritz/digest/pages/de__karriereportal.txt
+de	pages	https://ritz-international.com/kasse/	Kasse - RITZ	515	/home/claude/ritz/digest/pages/de__kasse.txt
+de	pages	https://ritz-international.com/kontakt/	Kontakt - RITZ	1754	/home/claude/ritz/digest/pages/de__kontakt.txt
+de	pages	https://ritz-international.com/mein-konto/	Mein Konto - RITZ	581	/home/claude/ritz/digest/pages/de__mein-konto.txt
+de	pages	https://ritz-international.com/news/	News - RITZ	6075	/home/claude/ritz/digest/pages/de__news.txt
+de	pages	https://ritz-international.com/produkte/	Produkte - RITZ	3567	/home/claude/ritz/digest/pages/de__produkte.txt
+de	pages	https://ritz-international.com/produkte/elektronische-messwandler-und-sensoren/	Elektronische Messwandler und Sensoren - RITZ	19402	/home/claude/ritz/digest/pages/de__produkte-elektronische-messwandler-und-sensoren.txt
+de	pages	https://ritz-international.com/produkte/giessharzteile-duromer/	Gießharzteile Duromer - RITZ	14121	/home/claude/ritz/digest/pages/de__produkte-giessharzteile-duromer.txt
+de	pages	https://ritz-international.com/produkte/hochspannungswandler/	Hochspannungswandler - RITZ	14919	/home/claude/ritz/digest/pages/de__produkte-hochspannungswandler.txt
+de	pages	https://ritz-international.com/produkte/mittelspannungswandler/	Mittelspannungswandler - RITZ	29776	/home/claude/ritz/digest/pages/de__produkte-mittelspannungswandler.txt
+de	pages	https://ritz-international.com/produkte/niederspannungswandler/	Niederspannungswandler - RITZ	11130	/home/claude/ritz/digest/pages/de__produkte-niederspannungswandler.txt
+de	pages	https://ritz-international.com/produkte/stromschienen/	STROMSCHIENEN SIS - RITZ	8540	/home/claude/ritz/digest/pages/de__produkte-stromschienen.txt
+de	pages	https://ritz-international.com/produktfinder/	Produktfinder - RITZ	3476	/home/claude/ritz/digest/pages/de__produktfinder.txt
+de	pages	https://ritz-international.com/produktfinder/elektronik-und-sensoren/	Elektronik und Sensoren - RITZ	775	/home/claude/ritz/digest/pages/de__produktfinder-elektronik-und-sensoren.txt
+de	pages	https://ritz-international.com/produktfinder/elektronik-und-sensoren/blockkombisensoren/	Blockkombisensoren - RITZ	850	/home/claude/ritz/digest/pages/de__produktfinder-elektronik-und-sensoren-blockkombisensoren.txt
+de	pages	https://ritz-international.com/produktfinder/elektronik-und-sensoren/kombisensoren/	Kombisensoren - RITZ	805	/home/claude/ritz/digest/pages/de__produktfinder-elektronik-und-sensoren-kombisensoren.txt
+de	pages	https://ritz-international.com/produktfinder/elektronik-und-sensoren/spannungssensoren/	Spannungssensoren - RITZ	841	/home/claude/ritz/digest/pages/de__produktfinder-elektronik-und-sensoren-spannungssensoren.txt
+de	pages	https://ritz-international.com/produktfinder/giessharzteile/	Gießharzteile - RITZ	1013	/home/claude/ritz/digest/pages/de__produktfinder-giessharzteile.txt
+de	pages	https://ritz-international.com/produktfinder/mittelspannung/	Mittelspannung - RITZ	694	/home/claude/ritz/digest/pages/de__produktfinder-mittelspannung.txt
+de	pages	https://ritz-international.com/produktfinder/mittelspannung/beruehrungssichere-wandler/	Berührungssichere Wandler - RITZ	873	/home/claude/ritz/digest/pages/de__produktfinder-mittelspannung-beruehrungssichere-wandler.txt
+de	pages	https://ritz-international.com/produktfinder/mittelspannung/freiluftanwendung/	Freiluftanwendung - RITZ	796	/home/claude/ritz/digest/pages/de__produktfinder-mittelspannung-freiluftanwendung.txt
+de	pages	https://ritz-international.com/produktfinder/mittelspannung/innenraumanwendung/	Innenraumanwendung - RITZ	805	/home/claude/ritz/digest/pages/de__produktfinder-mittelspannung-innenraumanwendung.txt
+de	pages	https://ritz-international.com/produktfinder/mittelspannung/innenraumanwendung/spannungswandler/	Spannungswandler - RITZ	882	/home/claude/ritz/digest/pages/de__produktfinder-mittelspannung-innenraumanwendung-spannungswandler.txt
+de	pages	https://ritz-international.com/produktfinder/mittelspannung/innenraumanwendung/stromwandler/	Stromwandler - RITZ	846	/home/claude/ritz/digest/pages/de__produktfinder-mittelspannung-innenraumanwendung-stromwandler.txt
+de	pages	https://ritz-international.com/produktfinder/mittelspannung/sonderwandler/	Sonderwandler - RITZ	760	/home/claude/ritz/digest/pages/de__produktfinder-mittelspannung-sonderwandler.txt
+de	pages	https://ritz-international.com/produktfinder/mittelspannung/wandler-speziell-fuer-pq/	Wandler speziell für PQ - RITZ	855	/home/claude/ritz/digest/pages/de__produktfinder-mittelspannung-wandler-speziell-fuer-pq.txt
+de	pages	https://ritz-international.com/produktfinder/niederspannung/	Niederspannung - RITZ	694	/home/claude/ritz/digest/pages/de__produktfinder-niederspannung.txt
+de	pages	https://ritz-international.com/produktkataloge/	Produktkataloge - RITZ	4666	/home/claude/ritz/digest/pages/de__produktkataloge.txt
+de	pages	https://ritz-international.com/shop/	Shop - RITZ	507	/home/claude/ritz/digest/pages/de__shop.txt
+de	pages	https://ritz-international.com/unternehmen/	Unternehmen - RITZ	3550	/home/claude/ritz/digest/pages/de__unternehmen.txt
+de	pages	https://ritz-international.com/unternehmen/produktionsstandorte/	Produktionsstandorte - RITZ	4987	/home/claude/ritz/digest/pages/de__unternehmen-produktionsstandorte.txt
+de	pages	https://ritz-international.com/unternehmen/qualitaetsmanagement/	Managementsysteme und Zertifikate - RITZ	5045	/home/claude/ritz/digest/pages/de__unternehmen-qualitaetsmanagement.txt
+de	pages	https://ritz-international.com/unternehmen/referenzen/	Referenzen - RITZ	3314	/home/claude/ritz/digest/pages/de__unternehmen-referenzen.txt
+de	pages	https://ritz-international.com/unternehmen/verantwortung/	Verantwortung - RITZ	4349	/home/claude/ritz/digest/pages/de__unternehmen-verantwortung.txt
+de	pages	https://ritz-international.com/unternehmen/vision/	Vision - RITZ	7158	/home/claude/ritz/digest/pages/de__unternehmen-vision.txt
+de	pages	https://ritz-international.com/warenkorb/	Warenkorb - RITZ	629	/home/claude/ritz/digest/pages/de__warenkorb.txt
+de	posts	https://ritz-international.com/20380/	Neues Werk in Waynesboro, USA - RITZ	1642	/home/claude/ritz/digest/pages/de__20380.txt
+de	posts	https://ritz-international.com/agb/	AGB - RITZ	695	/home/claude/ritz/digest/pages/de__agb.txt
+de	posts	https://ritz-international.com/auszeichnung-zum-lieferanten-des-jahres-bei-den-hitachi-supplier-days-2024/	Auszeichnung zum Lieferanten des Jahres bei den Hitachi Supplier Days 2024 - RITZ	2649	/home/claude/ritz/digest/pages/de__auszeichnung-zum-lieferanten-des-jahres-bei-den-hitachi-supplier-days-2024.txt
+de	posts	https://ritz-international.com/co2-reduktion-in-den-werken/	CO2 Reduktion in den Werken - RITZ	3737	/home/claude/ritz/digest/pages/de__co2-reduktion-in-den-werken.txt
+de	posts	https://ritz-international.com/das-neueste-aus-der-alzheimerforschung-veranstaltung-bei-ritz-mit-experten-vom-uke/	Das Neueste aus der Alzheimerforschung – Veranstaltung bei RITZ mit Experten vom UKE - RITZ	3305	/home/claude/ritz/digest/pages/de__das-neueste-aus-der-alzheimerforschung-veranstaltung-bei-ritz-mit-experten-vom-uke.txt
+de	posts	https://ritz-international.com/datenschutz/	Datenschutz - RITZ	761	/home/claude/ritz/digest/pages/de__datenschutz.txt
+de	posts	https://ritz-international.com/ein-voller-erfolg-auf-und-neben-dem-platz/	Ein voller Erfolg auf und neben dem Platz! - RITZ	2625	/home/claude/ritz/digest/pages/de__ein-voller-erfolg-auf-und-neben-dem-platz.txt
+de	posts	https://ritz-international.com/em-power-europe/	EM-POWER EUROPE - RITZ	1648	/home/claude/ritz/digest/pages/de__em-power-europe.txt
+de	posts	https://ritz-international.com/emvi-produktneuheit/	EMVI Produktneuheit - RITZ	2098	/home/claude/ritz/digest/pages/de__emvi-produktneuheit.txt
+de	posts	https://ritz-international.com/erweiterung-des-ritz-standortes-in-kecskemet/	Erweiterung des RITZ-Standortes in Kecskemét - RITZ	2634	/home/claude/ritz/digest/pages/de__erweiterung-des-ritz-standortes-in-kecskemet.txt
+de	posts	https://ritz-international.com/f1-in-schools/	F1 in schools - RITZ	2366	/home/claude/ritz/digest/pages/de__f1-in-schools.txt
+de	posts	https://ritz-international.com/ge-hypact-anlage-mit-ritz-wandlern/	GE HYPACT-Anlage mit RITZ Wandlern - RITZ	2228	/home/claude/ritz/digest/pages/de__ge-hypact-anlage-mit-ritz-wandlern.txt
+de	posts	https://ritz-international.com/giessharzanwendungen-in-der-elektrotechnik-und-mehr/	Gießharzanwendungen in der Elektrotechnik und mehr - RITZ	1545	/home/claude/ritz/digest/pages/de__giessharzanwendungen-in-der-elektrotechnik-und-mehr.txt
+de	posts	https://ritz-international.com/impressum/	Impressum - RITZ	7102	/home/claude/ritz/digest/pages/de__impressum.txt
+de	posts	https://ritz-international.com/irbt-generatorwandler-mit-optimiertem-design/	IRBT: Generatorwandler mit optimiertem Design - RITZ	2834	/home/claude/ritz/digest/pages/de__irbt-generatorwandler-mit-optimiertem-design.txt
+de	posts	https://ritz-international.com/kombiwandler-platzersparnis/	Kombiwandler Platzersparnis - RITZ	2825	/home/claude/ritz/digest/pages/de__kombiwandler-platzersparnis.txt
+de	posts	https://ritz-international.com/konstruktion-neues-hochspannungswerk/	Konstruktion neues Hochspannungswerk - RITZ	2024	/home/claude/ritz/digest/pages/de__konstruktion-neues-hochspannungswerk.txt
+de	posts	https://ritz-international.com/kundenmitteilung-zu-aktuellen-entwicklungen-im-aussenwirtschaftsbereich-sowie-zur-eu-verordnung-eu-2026-2133/	Kundenmitteilung zu aktuellen Entwicklungen im Außenwirtschaftsbereich sowie zur EU Verordnung (EU) 2026/2133 - RITZ	2159	/home/claude/ritz/digest/pages/de__kundenmitteilung-zu-aktuellen-entwicklungen-im-aussenwirtschaftsbereich-sowie-zur-eu-verordnung-eu-2026-2133.txt
+de	posts	https://ritz-international.com/kundenreferenz-sis-projekt-bsw/	Kundenreferenz SIS - Projekt BSW - RITZ	6539	/home/claude/ritz/digest/pages/de__kundenreferenz-sis-projekt-bsw.txt
+de	posts	https://ritz-international.com/lieferung/	Lieferung - RITZ	827	/home/claude/ritz/digest/pages/de__lieferung.txt
+de	posts	https://ritz-international.com/lorem-ipsum-news-1/	25 Years of High Precision DC – Measurement - RITZ	2603	/home/claude/ritz/digest/pages/de__lorem-ipsum-news-1.txt
+de	posts	https://ritz-international.com/lorem-ipsum-news-3/	RITZ Ungarn ist „Unternehmen des Jahres 2017“ in Ungarn - RITZ	1969	/home/claude/ritz/digest/pages/de__lorem-ipsum-news-3.txt
+de	posts	https://ritz-international.com/lorem-ipsum-news-4/	Ritz bietet neue Dienstleistung zur TE-Messung von Leistungstransformatoren an - RITZ	2521	/home/claude/ritz/digest/pages/de__lorem-ipsum-news-4.txt
+de	posts	https://ritz-international.com/mehr-sicherheit-fuer-mensch-und-anlage-der-neue-offenspannungsschutz-eoss/	Mehr Sicherheit für Mensch und Anlage – der neue Offenspannungsschutz EOSS! - RITZ	2828	/home/claude/ritz/digest/pages/de__mehr-sicherheit-fuer-mensch-und-anlage-der-neue-offenspannungsschutz-eoss.txt
+de	posts	https://ritz-international.com/neue-produkte-gbmw-gbmei/	Neue Produkte GBMW /GBMEI - RITZ	1243	/home/claude/ritz/digest/pages/de__neue-produkte-gbmw-gbmei.txt
+de	posts	https://ritz-international.com/no-route/	Seite nicht gefunden - RITZ	1433	/home/claude/ritz/digest/pages/de__no-route.txt
+de	posts	https://ritz-international.com/order/	Bestellvorgang - RITZ	3708	/home/claude/ritz/digest/pages/de__order.txt
+de	posts	https://ritz-international.com/personalmesse-karrierestart-dresden/	Personalmesse Karrierestart Dresden - RITZ	1704	/home/claude/ritz/digest/pages/de__personalmesse-karrierestart-dresden.txt
+de	posts	https://ritz-international.com/ritz-auf-der-eltefa-2025/	RITZ auf der eltefa 2025 - RITZ	1371	/home/claude/ritz/digest/pages/de__ritz-auf-der-eltefa-2025.txt
+de	posts	https://ritz-international.com/ritz-auf-der-gritec-energy-conference/	RITZ auf der GRITEC Energy conference - RITZ	1172	/home/claude/ritz/digest/pages/de__ritz-auf-der-gritec-energy-conference.txt
+de	posts	https://ritz-international.com/ritz-familienfest/	RITZ FAMILIENFEST - RITZ	2406	/home/claude/ritz/digest/pages/de__ritz-familienfest.txt
+de	posts	https://ritz-international.com/ritz-ist-aussteller-auf-der-eltefa-in-stuttgart-seien-sie-dabei/	RITZ IST AUSSTELLER AUF DER ELTEFA IN STUTTGART. SEIEN SIE DABEI! - RITZ	2994	/home/claude/ritz/digest/pages/de__ritz-ist-aussteller-auf-der-eltefa-in-stuttgart-seien-sie-dabei.txt
+de	posts	https://ritz-international.com/ritz-ist-zugelassener-wirtschaftsbeteiligter/	RITZ ist zugelassener Wirtschaftsbeteiligter - RITZ	2370	/home/claude/ritz/digest/pages/de__ritz-ist-zugelassener-wirtschaftsbeteiligter.txt
+de	posts	https://ritz-international.com/ritz-marchtrenk-erreichte-bei-der-zertifizierung-den-iris-silver-quality-performance-level/	RITZ Marchtrenk erreichte bei der Zertifizierung den IRIS Silver Quality Performance Level - RITZ	2154	/home/claude/ritz/digest/pages/de__ritz-marchtrenk-erreichte-bei-der-zertifizierung-den-iris-silver-quality-performance-level.txt
+de	posts	https://ritz-international.com/ritz-messetermine-2024/	RITZ Messetermine 2024 - RITZ	1229	/home/claude/ritz/digest/pages/de__ritz-messetermine-2024.txt
+de	posts	https://ritz-international.com/ritz-messetermine-2026/	RITZ Messetermine 2026 - RITZ	1704	/home/claude/ritz/digest/pages/de__ritz-messetermine-2026.txt
+de	posts	https://ritz-international.com/ritz-mitarbeiterin-zur-besten-auszubildenden-ihres-lehrgangs-ausgezeichnet-worden/	RITZ-Mitarbeiterin zur besten Auszubildenden ihres Lehrgangs ausgezeichnet worden - RITZ	2150	/home/claude/ritz/digest/pages/de__ritz-mitarbeiterin-zur-besten-auszubildenden-ihres-lehrgangs-ausgezeichnet-worden.txt
+de	posts	https://ritz-international.com/ritz-nimmt-an-der-13-hausmesse-der-firma-ludwar-in-gerolzhofen-teil/	RITZ nimmt an der 13. Hausmesse der Firma LUDWAR Elektrobau in Gerolzhofen teil - RITZ	1625	/home/claude/ritz/digest/pages/de__ritz-nimmt-an-der-13-hausmesse-der-firma-ludwar-in-gerolzhofen-teil.txt
+de	posts	https://ritz-international.com/ritz-nimmt-an-xxx-vde-zaehlerfachtagung-am-17-18-september-2024-in-gera-teil/	RITZ nimmt an der XXX. VDE-Zählerfachtagung am 17./18. September 2024 in Gera teil - RITZ	2029	/home/claude/ritz/digest/pages/de__ritz-nimmt-an-xxx-vde-zaehlerfachtagung-am-17-18-september-2024-in-gera-teil.txt
+de	posts	https://ritz-international.com/ritz-nimmt-an-zahlreichen-fachmessen-im-jahr-2025-teil/	RITZ nimmt an zahlreichen Fachmessen im Jahr 2025 teil - RITZ	1557	/home/claude/ritz/digest/pages/de__ritz-nimmt-an-zahlreichen-fachmessen-im-jahr-2025-teil.txt
+de	posts	https://ritz-international.com/ritz-oeffnet-tueren-fuer-kleine-entdecker-kita-kinder-blicken-hinter-die-kulissen-der-technik/	RITZ öffnet Türen für kleine Entdecker: Kita-Kinder blicken hinter die Kulissen der Technik - RITZ	3028	/home/claude/ritz/digest/pages/de__ritz-oeffnet-tueren-fuer-kleine-entdecker-kita-kinder-blicken-hinter-die-kulissen-der-technik.txt
+de	posts	https://ritz-international.com/ritz-stellt-auf-der-eltefa-aus/	RITZ stellt auf der eltefa aus - RITZ	1127	/home/claude/ritz/digest/pages/de__ritz-stellt-auf-der-eltefa-aus.txt
+de	posts	https://ritz-international.com/sponsoring-sportclub-lichteneiche/	Sponsoring Sportclub Lichteneiche - RITZ	1499	/home/claude/ritz/digest/pages/de__sponsoring-sportclub-lichteneiche.txt
+de	posts	https://ritz-international.com/teamchallenge-in-dresden/	TEAMCHALLENGE IN DRESDEN - RITZ	2201	/home/claude/ritz/digest/pages/de__teamchallenge-in-dresden.txt
+de	posts	https://ritz-international.com/uebersicht-hvdc-und-anwendungen/	Übersicht HVDC und Anwendungen - RITZ	1240	/home/claude/ritz/digest/pages/de__uebersicht-hvdc-und-anwendungen.txt
+de	posts	https://ritz-international.com/visit-us-at-the-german-pavilion/	Visit us at the German Pavilion - RITZ	1719	/home/claude/ritz/digest/pages/de__visit-us-at-the-german-pavilion.txt
+de	posts	https://ritz-international.com/widerrufsbelehrung/	Widerrufsbelehrung - RITZ	837	/home/claude/ritz/digest/pages/de__widerrufsbelehrung.txt
+de	posts	https://ritz-international.com/widerrufsformular/	Formular zur Widerrufsbelehrung - RITZ	907	/home/claude/ritz/digest/pages/de__widerrufsformular.txt
+de	posts	https://ritz-international.com/zahlungsarten/	Zahlungsarten - RITZ	2062	/home/claude/ritz/digest/pages/de__zahlungsarten.txt
+de	posts	https://ritz-international.com/zusatzbuerde/	Zusatzbürde - RITZ	1590	/home/claude/ritz/digest/pages/de__zusatzbuerde.txt
+en	pages	https://ritz-international.com/en/	Home - RITZ	10503	/home/claude/ritz/digest/pages/en__en.txt
+en	pages	https://ritz-international.com/en/career-portal/	Career portal - RITZ	6173	/home/claude/ritz/digest/pages/en__en-career-portal.txt
+en	pages	https://ritz-international.com/en/career/	Career - RITZ	4175	/home/claude/ritz/digest/pages/en__en-career.txt
+en	pages	https://ritz-international.com/en/career/education/	Education - RITZ	3911	/home/claude/ritz/digest/pages/en__en-career-education.txt
+en	pages	https://ritz-international.com/en/career/internships/	Internships - RITZ	2823	/home/claude/ritz/digest/pages/en__en-career-internships.txt
+en	pages	https://ritz-international.com/en/career/vacancies/	Vacancies - RITZ	5257	/home/claude/ritz/digest/pages/en__en-career-vacancies.txt
+en	pages	https://ritz-international.com/en/company/	Company - RITZ	3522	/home/claude/ritz/digest/pages/en__en-company.txt
+en	pages	https://ritz-international.com/en/company/production-sites/	Production locations - RITZ	4879	/home/claude/ritz/digest/pages/en__en-company-production-sites.txt
+en	pages	https://ritz-international.com/en/company/quality-management/	Management systems and certificates - RITZ	4990	/home/claude/ritz/digest/pages/en__en-company-quality-management.txt
+en	pages	https://ritz-international.com/en/company/references/	References - RITZ	2529	/home/claude/ritz/digest/pages/en__en-company-references.txt
+en	pages	https://ritz-international.com/en/company/responsibility/	Responsibility - RITZ	3681	/home/claude/ritz/digest/pages/en__en-company-responsibility.txt
+en	pages	https://ritz-international.com/en/company/vision/	Vision - RITZ	7012	/home/claude/ritz/digest/pages/en__en-company-vision.txt
+en	pages	https://ritz-international.com/en/contact-us/	Contact us - RITZ	1726	/home/claude/ritz/digest/pages/en__en-contact-us.txt
+en	pages	https://ritz-international.com/en/downloads/	Downloads - RITZ	6173	/home/claude/ritz/digest/pages/en__en-downloads.txt
+en	pages	https://ritz-international.com/en/imprint/	Legal notice - RITZ	6598	/home/claude/ritz/digest/pages/en__en-imprint.txt
+en	pages	https://ritz-international.com/en/latest-news/	Latest news - RITZ	1022	/home/claude/ritz/digest/pages/en__en-latest-news.txt
+en	pages	https://ritz-international.com/en/latest-news/downloads/	Downloads - RITZ	6100	/home/claude/ritz/digest/pages/en__en-latest-news-downloads.txt
+en	pages	https://ritz-international.com/en/news/	News - RITZ	5896	/home/claude/ritz/digest/pages/en__en-news.txt
+en	pages	https://ritz-international.com/en/privacy-policy/	Privacy policy - RITZ	21020	/home/claude/ritz/digest/pages/en__en-privacy-policy.txt
+en	pages	https://ritz-international.com/en/products/	Products - RITZ	3883	/home/claude/ritz/digest/pages/en__en-products.txt
+en	pages	https://ritz-international.com/en/products/cast-resin-parts-duromer-copy/	Cast resin parts Duromer - Copy - RITZ	12748	/home/claude/ritz/digest/pages/en__en-products-cast-resin-parts-duromer-copy.txt
+en	pages	https://ritz-international.com/en/products/current-rails/	BUS BARS SIS - RITZ	7366	/home/claude/ritz/digest/pages/en__en-products-current-rails.txt
+en	pages	https://ritz-international.com/en/products/duromer-cast-resin-parts/	Cast resin parts Duromer - RITZ	13152	/home/claude/ritz/digest/pages/en__en-products-duromer-cast-resin-parts.txt
+en	pages	https://ritz-international.com/en/products/electronic-transducers-and-sensors/	Electronic instrument transformers and sensors - RITZ	19889	/home/claude/ritz/digest/pages/en__en-products-electronic-transducers-and-sensors.txt
+en	pages	https://ritz-international.com/en/products/high-voltage-transformer/	High-voltage transformers - RITZ	14393	/home/claude/ritz/digest/pages/en__en-products-high-voltage-transformer.txt
+en	pages	https://ritz-international.com/en/products/low-voltage-transformer/	Low-voltage transformers - RITZ	11584	/home/claude/ritz/digest/pages/en__en-products-low-voltage-transformer.txt
+en	pages	https://ritz-international.com/en/products/medium-voltage-transformer/	Medium voltage transformers - RITZ	29653	/home/claude/ritz/digest/pages/en__en-products-medium-voltage-transformer.txt
+en	posts	https://ritz-international.com/en/2024/	RITZ trade fair dates 2024 - RITZ	1226	/home/claude/ritz/digest/pages/en__en-2024.txt
+en	posts	https://ritz-international.com/en/20395/	New Facility Waynesboro, USA - RITZ	1701	/home/claude/ritz/digest/pages/en__en-20395.txt
+en	posts	https://ritz-international.com/en/25-years-of-high-precision-dc-measurement/	25 Years of High Precision DC - Measurement - RITZ	2685	/home/claude/ritz/digest/pages/en__en-25-years-of-high-precision-dc-measurement.txt
+en	posts	https://ritz-international.com/en/additional-burden/	Additional burden - RITZ	1712	/home/claude/ritz/digest/pages/en__en-additional-burden.txt
+en	posts	https://ritz-international.com/en/cast-resin-applications-in-electrical-engineering-and-more/	Cast resin applications in electrical engineering and more - RITZ	1646	/home/claude/ritz/digest/pages/en__en-cast-resin-applications-in-electrical-engineering-and-more.txt
+en	posts	https://ritz-international.com/en/combination-converter-space-saving/	Combination converter Space saving - RITZ	2986	/home/claude/ritz/digest/pages/en__en-combination-converter-space-saving.txt
+en	posts	https://ritz-international.com/en/construction-of-new-high-voltage-plant/	Construction of new high-voltage plant - RITZ	2071	/home/claude/ritz/digest/pages/en__en-construction-of-new-high-voltage-plant.txt
+en	posts	https://ritz-international.com/en/customer-letter-about-the-latest-developments-in-foreign-trade-and-the-implications-of-regulation-eu-2026-2133/	Customer letter about the latest developments in foreign trade and the implications of regulation (EU) 2026/2133 - RITZ	2027	/home/claude/ritz/digest/pages/en__en-customer-letter-about-the-latest-developments-in-foreign-trade-and-the-implications-of-regulation-eu-2026-2133.txt
+en	posts	https://ritz-international.com/en/customer-reference-sis-project-bsw/	Customer reference SIS - Project BSW - RITZ	6209	/home/claude/ritz/digest/pages/en__en-customer-reference-sis-project-bsw.txt
+en	posts	https://ritz-international.com/en/em-power-europe/	EM-POWER EUROPE - RITZ	1676	/home/claude/ritz/digest/pages/en__en-em-power-europe.txt
+en	posts	https://ritz-international.com/en/emvi-product-innovation/	EMVI product innovation - RITZ	2144	/home/claude/ritz/digest/pages/en__en-emvi-product-innovation.txt
+en	posts	https://ritz-international.com/en/expansion-of-the-ritz-site-in-kecskemet/	Expansion of the RITZ site in Kecskemét - RITZ	2520	/home/claude/ritz/digest/pages/en__en-expansion-of-the-ritz-site-in-kecskemet.txt
+en	posts	https://ritz-international.com/en/f1-in-schools/	F1 in schools - RITZ	2334	/home/claude/ritz/digest/pages/en__en-f1-in-schools.txt
+en	posts	https://ritz-international.com/en/ge-hypact-system-with-ritz-converters/	GE HYPACT system with RITZ converters - RITZ	2222	/home/claude/ritz/digest/pages/en__en-ge-hypact-system-with-ritz-converters.txt
+en	posts	https://ritz-international.com/en/irbt-generator-converter-with-optimized-design/	IRBT: Generator converter with optimized design - RITZ	2837	/home/claude/ritz/digest/pages/en__en-irbt-generator-converter-with-optimized-design.txt
+en	posts	https://ritz-international.com/en/more-safety-for-people-and-systems-the-new-eoss-open-circuit-voltage-protection/	More safety for people and systems - the new EOSS open-circuit voltage protection! - RITZ	2920	/home/claude/ritz/digest/pages/en__en-more-safety-for-people-and-systems-the-new-eoss-open-circuit-voltage-protection.txt
+en	posts	https://ritz-international.com/en/new-products-gbmw-gbmei/	New products GBMW /GBMEI - RITZ	1258	/home/claude/ritz/digest/pages/en__en-new-products-gbmw-gbmei.txt
+en	posts	https://ritz-international.com/en/overview-of-hvdc-and-applications/	Overview of HVDC and applications - RITZ	1306	/home/claude/ritz/digest/pages/en__en-overview-of-hvdc-and-applications.txt
+en	posts	https://ritz-international.com/en/personnel-fair-karrierestart-dresden/	Personnel fair Karrierestart Dresden - RITZ	1755	/home/claude/ritz/digest/pages/en__en-personnel-fair-karrierestart-dresden.txt
+en	posts	https://ritz-international.com/en/ritz-employee-named-best-trainee-of-her-course/	RITZ employee named best trainee of her course - RITZ	2039	/home/claude/ritz/digest/pages/en__en-ritz-employee-named-best-trainee-of-her-course.txt
+en	posts	https://ritz-international.com/en/ritz-family-party/	RITZ FAMILY PARTY - RITZ	2416	/home/claude/ritz/digest/pages/en__en-ritz-family-party.txt
+en	posts	https://ritz-international.com/en/ritz-hungary-is-company-of-the-year-2017-in-hungary/	RITZ Hungary is "Company of the Year 2017" in Hungary - RITZ	2062	/home/claude/ritz/digest/pages/en__en-ritz-hungary-is-company-of-the-year-2017-in-hungary.txt
+en	posts	https://ritz-international.com/en/ritz-instrument-transformers-gmbh-achieves-the-iris-silver-quality-performance-level/	RITZ Instrument Transformers GmbH achieves the IRIS Silver Quality Performance Level - RITZ	1999	/home/claude/ritz/digest/pages/en__en-ritz-instrument-transformers-gmbh-achieves-the-iris-silver-quality-performance-level.txt
+en	posts	https://ritz-international.com/en/ritz-is-an-authorized-economic-operator/	RITZ is an authorized economic operator - RITZ	2321	/home/claude/ritz/digest/pages/en__en-ritz-is-an-authorized-economic-operator.txt
+en	posts	https://ritz-international.com/en/ritz-is-an-exhibitor-at-eltefa-in-stuttgart-be-part-of-it/	$$$$$ $$$$ $$$$$$$$$$$$$ $$$$ $$$$ $$$$$$$$ $$$ $$$$$$$$$$$$. $$$$$$$ $$$$ $$$$$$$! - RITZ	3084	/home/claude/ritz/digest/pages/en__en-ritz-is-an-exhibitor-at-eltefa-in-stuttgart-be-part-of-it.txt
+en	posts	https://ritz-international.com/en/ritz-nimmt-an-xxx-vde-zaehlerfachtagung-am-17-18-september-2024-in-gera-teil/	RITZ nimmt an der XXX. VDE-Zählerfachtagung am 17./18. September 2024 in Gera teil - RITZ	2065	/home/claude/ritz/digest/pages/en__en-ritz-nimmt-an-xxx-vde-zaehlerfachtagung-am-17-18-september-2024-in-gera-teil.txt
+en	posts	https://ritz-international.com/en/ritz-offers-new-service-for-pd-measurement-of-power-transformers/	Ritz offers new service for PD measurement of power transformers - RITZ	2630	/home/claude/ritz/digest/pages/en__en-ritz-offers-new-service-for-pd-measurement-of-power-transformers.txt
+en	posts	https://ritz-international.com/en/ritz-takes-part-in-numerous-trade-fairs-in-2025/	RITZ takes part in numerous trade fairs in 2025 - RITZ	1554	/home/claude/ritz/digest/pages/en__en-ritz-takes-part-in-numerous-trade-fairs-in-2025.txt
+en	posts	https://ritz-international.com/en/ritz-trade-fair-dates-2026/	RITZ TRADE FAIR DATES 2026 - RITZ	1770	/home/claude/ritz/digest/pages/en__en-ritz-trade-fair-dates-2026.txt
+en	posts	https://ritz-international.com/en/sponsoring-sportclub-lichteneiche/	Sponsoring Sportclub Lichteneiche - RITZ	1535	/home/claude/ritz/digest/pages/en__en-sponsoring-sportclub-lichteneiche.txt
+en	posts	https://ritz-international.com/en/supplier-of-the-year-award-at-hitachi-supplier-days-2024/	Supplier of the Year Award at Hitachi Supplier Days 2024 - RITZ	2530	/home/claude/ritz/digest/pages/en__en-supplier-of-the-year-award-at-hitachi-supplier-days-2024.txt
+en	posts	https://ritz-international.com/en/teamchallenge-in-dresden/	TEAM CHALLENGE IN DRESDEN - RITZ	2184	/home/claude/ritz/digest/pages/en__en-teamchallenge-in-dresden.txt
+es	pages	https://ritz-international.com/es/	Home - RITZ	8389	/home/claude/ritz/digest/pages/es__es.txt
+es	pages	https://ritz-international.com/es/carrera-profesional/	Carrera profesional - RITZ	4502	/home/claude/ritz/digest/pages/es__es-carrera-profesional.txt
+es	pages	https://ritz-international.com/es/carrera-profesional/educacion/	Formación - RITZ	4028	/home/claude/ritz/digest/pages/es__es-carrera-profesional-educacion.txt
+es	pages	https://ritz-international.com/es/carrera-profesional/practicas/	Prácticas - RITZ	2838	/home/claude/ritz/digest/pages/es__es-carrera-profesional-practicas.txt
+es	pages	https://ritz-international.com/es/carrera-profesional/vacantes/	Ofertas de empleo - RITZ	5577	/home/claude/ritz/digest/pages/es__es-carrera-profesional-vacantes.txt
+es	pages	https://ritz-international.com/es/contacto/	Contacto - RITZ	1791	/home/claude/ritz/digest/pages/es__es-contacto.txt
+es	pages	https://ritz-international.com/es/descargas/	Descargas - RITZ	6358	/home/claude/ritz/digest/pages/es__es-descargas.txt
+es	pages	https://ritz-international.com/es/la-empresa/	Empresa - RITZ	3560	/home/claude/ritz/digest/pages/es__es-la-empresa.txt
+es	pages	https://ritz-international.com/es/la-empresa/centros-de-produccion/	Centros de producción - RITZ	5149	/home/claude/ritz/digest/pages/es__es-la-empresa-centros-de-produccion.txt
+es	pages	https://ritz-international.com/es/la-empresa/gestion-de-la-calidad/	Sistemas de gestión y certificados - RITZ	5031	/home/claude/ritz/digest/pages/es__es-la-empresa-gestion-de-la-calidad.txt
+es	pages	https://ritz-international.com/es/la-empresa/referencias/	Referencias - RITZ	1853	/home/claude/ritz/digest/pages/es__es-la-empresa-referencias.txt
+es	pages	https://ritz-international.com/es/la-empresa/responsibility/	Responsibility - RITZ	1929	/home/claude/ritz/digest/pages/es__es-la-empresa-responsibility.txt
+es	pages	https://ritz-international.com/es/la-empresa/vision/	Visión - RITZ	7265	/home/claude/ritz/digest/pages/es__es-la-empresa-vision.txt
+es	pages	https://ritz-international.com/es/noticias/	Noticias - RITZ	5869	/home/claude/ritz/digest/pages/es__es-noticias.txt
+es	pages	https://ritz-international.com/es/pie-de-imprenta/	Aviso legal - RITZ	7479	/home/claude/ritz/digest/pages/es__es-pie-de-imprenta.txt
+es	pages	https://ritz-international.com/es/politica-de-privacidad/	Política de privacidad - RITZ	23180	/home/claude/ritz/digest/pages/es__es-politica-de-privacidad.txt
+es	pages	https://ritz-international.com/es/portal-de-empleo/	Portal de empleo - RITZ	6578	/home/claude/ritz/digest/pages/es__es-portal-de-empleo.txt
+es	pages	https://ritz-international.com/es/productos/	Productos - RITZ	4130	/home/claude/ritz/digest/pages/es__es-productos.txt
+es	pages	https://ritz-international.com/es/productos/carriles-actuales/	BARRAS CONDUCTORAS SIS - RITZ	8105	/home/claude/ritz/digest/pages/es__es-productos-carriles-actuales.txt
+es	pages	https://ritz-international.com/es/productos/piezas-de-resina-de-moldeo-duromer/	Componentes de resina de moldeo Duromer - RITZ	13891	/home/claude/ritz/digest/pages/es__es-productos-piezas-de-resina-de-moldeo-duromer.txt
+es	pages	https://ritz-international.com/es/productos/transductores-y-sensores-electronicos-de-medicion/	Transductores electrónicos y sensores - RITZ	21246	/home/claude/ritz/digest/pages/es__es-productos-transductores-y-sensores-electronicos-de-medicion.txt
+es	pages	https://ritz-international.com/es/productos/transformador-de-baja-tension/	Transformadores de baja tensión - RITZ	12299	/home/claude/ritz/digest/pages/es__es-productos-transformador-de-baja-tension.txt
+es	pages	https://ritz-international.com/es/productos/transformador-de-media-tension/	Transformadores de media tensión - RITZ	31848	/home/claude/ritz/digest/pages/es__es-productos-transformador-de-media-tension.txt
+es	pages	https://ritz-international.com/es/productos/transformadores-de-alta-tension/	Transformadores de alta tensión - RITZ	15498	/home/claude/ritz/digest/pages/es__es-productos-transformadores-de-alta-tension.txt
+es	pages	https://ritz-international.com/es/ultimas-noticias/	Últimas noticias - RITZ	1037	/home/claude/ritz/digest/pages/es__es-ultimas-noticias.txt
+es	pages	https://ritz-international.com/es/ultimas-noticias/descargas/	Descargas - RITZ	6323	/home/claude/ritz/digest/pages/es__es-ultimas-noticias-descargas.txt
+es	posts	https://ritz-international.com/es/25-anos-de-medicion-de-cc-de-alta-precision/	25 años de medición de CC de alta precisión - RITZ	2837	/home/claude/ritz/digest/pages/es__es-25-anos-de-medicion-de-cc-de-alta-precision.txt
+es	posts	https://ritz-international.com/es/calendario-de-ferias-ritz-2024/	Calendario de ferias RITZ 2024 - RITZ	1318	/home/claude/ritz/digest/pages/es__es-calendario-de-ferias-ritz-2024.txt
+es	posts	https://ritz-international.com/es/customer-letter-about-the-latest-developments-in-foreign-trade-and-the-implications-of-regulation-eu-2026-2133/	Customer letter about the latest developments in foreign trade and the implications of regulation (EU) 2026/2133 - RITZ	2029	/home/claude/ritz/digest/pages/es__es-customer-letter-about-the-latest-developments-in-foreign-trade-and-the-implications-of-regulation-eu-2026-2133.txt
+es	posts	https://ritz-international.com/es/em-power-europa/	EM-POWER EUROPE - RITZ	1696	/home/claude/ritz/digest/pages/es__es-em-power-europa.txt
+es	posts	https://ritz-international.com/es/empleada-de-ritz-premiada-como-la-mejor-becaria-de-su-curso/	Empleada de RITZ premiada como la mejor becaria de su curso - RITZ	2109	/home/claude/ritz/digest/pages/es__es-empleada-de-ritz-premiada-como-la-mejor-becaria-de-su-curso.txt
+es	posts	https://ritz-international.com/es/f1-en-las-escuelas/	F1 in schools - RITZ	2356	/home/claude/ritz/digest/pages/es__es-f1-en-las-escuelas.txt
+es	posts	https://ritz-international.com/es/fechas-de-la-feria-ritz-2026/	FECHAS DE LA FERIA RITZ 2026 - RITZ	1784	/home/claude/ritz/digest/pages/es__es-fechas-de-la-feria-ritz-2026.txt
+es	posts	https://ritz-international.com/es/feria-de-personal-karrierestart-dresde/	Feria de personal Karrierestart en Dresde - RITZ	1757	/home/claude/ritz/digest/pages/es__es-feria-de-personal-karrierestart-dresde.txt
+es	posts	https://ritz-international.com/es/fiesta-familiar-ritz/	FIESTA FAMILIAR RITZ - RITZ	2480	/home/claude/ritz/digest/pages/es__es-fiesta-familiar-ritz.txt
+es	posts	https://ritz-international.com/es/mas-seguridad-para-las-personas-y-los-sistemas-la-nueva-proteccion-contra-tension-de-circuito-abierto-eoss/	Más seguridad para las personas y los sistemas: ¡la nueva protección contra tensión de circuito abierto EOSS! - RITZ	3119	/home/claude/ritz/digest/pages/es__es-mas-seguridad-para-las-personas-y-los-sistemas-la-nueva-proteccion-contra-tension-de-circuito-abierto-eoss.txt
+es	posts	https://ritz-international.com/es/ritz-es-un-operador-economico-autorizado/	RITZ es un operador económico autorizado - RITZ	2348	/home/claude/ritz/digest/pages/es__es-ritz-es-un-operador-economico-autorizado.txt
+es	posts	https://ritz-international.com/es/ritz-hungria-es-la-empresa-del-ano-2017-en-hungria/	RITZ Hungría es la "Empresa del Año 2017" en Hungría - RITZ	2039	/home/claude/ritz/digest/pages/es__es-ritz-hungria-es-la-empresa-del-ano-2017-en-hungria.txt
+es	posts	https://ritz-international.com/es/ritz-instrument-transformers-estara-participando-en-expomin-2025/	Ritz Instrument Transformers estará participando en EXPOMIN 2025 - RITZ	1692	/home/claude/ritz/digest/pages/es__es-ritz-instrument-transformers-estara-participando-en-expomin-2025.txt
+es	posts	https://ritz-international.com/es/ritz-nimmt-an-xxx-vde-zaehlerfachtagung-am-17-18-september-2024-in-gera-teil/	RITZ nimmt an der XXX. VDE-Zählerfachtagung am 17./18. September 2024 in Gera teil - RITZ	2067	/home/claude/ritz/digest/pages/es__es-ritz-nimmt-an-xxx-vde-zaehlerfachtagung-am-17-18-september-2024-in-gera-teil.txt
+es	posts	https://ritz-international.com/es/ritz-ofrece-un-nuevo-servicio-de-medicion-de-descargas-parciales-de-transformadores-de-potencia/	Ritz ofrece un nuevo servicio de medición de descargas parciales de transformadores de potencia - RITZ	2791	/home/claude/ritz/digest/pages/es__es-ritz-ofrece-un-nuevo-servicio-de-medicion-de-descargas-parciales-de-transformadores-de-potencia.txt
+es	posts	https://ritz-international.com/es/ritz-participa-como-expositor-en-la-feria-eltefa-de-stuttgart-participa/	RITZ EXPONE EN LA ELTEFA DE STUTTGART. ¡VISÍTENOS! - RITZ	3026	/home/claude/ritz/digest/pages/es__es-ritz-participa-como-expositor-en-la-feria-eltefa-de-stuttgart-participa.txt
+es	posts	https://ritz-international.com/es/supplier-of-the-year-award-at-hitachi-supplier-days-2024/	Supplier of the Year Award at Hitachi Supplier Days 2024 - RITZ	2532	/home/claude/ritz/digest/pages/es__es-supplier-of-the-year-award-at-hitachi-supplier-days-2024.txt
+es	posts	https://ritz-international.com/es/teamchallenge-en-dresde/	DESAFÍO POR EQUIPOS EN DRESDE - RITZ	2219	/home/claude/ritz/digest/pages/es__es-teamchallenge-en-dresde.txt
+fr	pages	https://ritz-international.com/fr/	Home - RITZ	8507	/home/claude/ritz/digest/pages/fr__fr.txt
+fr	pages	https://ritz-international.com/fr/actualites/	Nouveautés - RITZ	5738	/home/claude/ritz/digest/pages/fr__fr-actualites.txt
+fr	pages	https://ritz-international.com/fr/actualites/telechargements/	Téléchargements - RITZ	6275	/home/claude/ritz/digest/pages/fr__fr-actualites-telechargements.txt
+fr	pages	https://ritz-international.com/fr/carriere/	Carrière - RITZ	4733	/home/claude/ritz/digest/pages/fr__fr-carriere.txt
+fr	pages	https://ritz-international.com/fr/carriere/formation/	Formation - RITZ	4032	/home/claude/ritz/digest/pages/fr__fr-carriere-formation.txt
+fr	pages	https://ritz-international.com/fr/carriere/offres-demploi/	Offres d’emploi - RITZ	5698	/home/claude/ritz/digest/pages/fr__fr-carriere-offres-demploi.txt
+fr	pages	https://ritz-international.com/fr/carriere/stages/	Stages - RITZ	2833	/home/claude/ritz/digest/pages/fr__fr-carriere-stages.txt
+fr	pages	https://ritz-international.com/fr/contact/	Contact - RITZ	1842	/home/claude/ritz/digest/pages/fr__fr-contact.txt
+fr	pages	https://ritz-international.com/fr/declaration-de-confidentialite/	Déclaration de confidentialité - RITZ	25082	/home/claude/ritz/digest/pages/fr__fr-declaration-de-confidentialite.txt
+fr	pages	https://ritz-international.com/fr/entreprise/	Entreprise - RITZ	3603	/home/claude/ritz/digest/pages/fr__fr-entreprise.txt
+fr	pages	https://ritz-international.com/fr/entreprise/gestion-de-la-qualite/	Systèmes de gestion et certificats - RITZ	5092	/home/claude/ritz/digest/pages/fr__fr-entreprise-gestion-de-la-qualite.txt
+fr	pages	https://ritz-international.com/fr/entreprise/references/	Références - RITZ	1883	/home/claude/ritz/digest/pages/fr__fr-entreprise-references.txt
+fr	pages	https://ritz-international.com/fr/entreprise/responsibility/	Responsibility - RITZ	1929	/home/claude/ritz/digest/pages/fr__fr-entreprise-responsibility.txt
+fr	pages	https://ritz-international.com/fr/entreprise/sites-de-production/	Sites de production - RITZ	5309	/home/claude/ritz/digest/pages/fr__fr-entreprise-sites-de-production.txt
+fr	pages	https://ritz-international.com/fr/entreprise/vision/	Vision - RITZ	7277	/home/claude/ritz/digest/pages/fr__fr-entreprise-vision.txt
+fr	pages	https://ritz-international.com/fr/mentions-legales/	Mentions légales - RITZ	7538	/home/claude/ritz/digest/pages/fr__fr-mentions-legales.txt
+fr	pages	https://ritz-international.com/fr/portail-des-carrieres/	Portail des carrières - RITZ	6442	/home/claude/ritz/digest/pages/fr__fr-portail-des-carrieres.txt
+fr	pages	https://ritz-international.com/fr/produits/	Produits - RITZ	4160	/home/claude/ritz/digest/pages/fr__fr-produits.txt
+fr	pages	https://ritz-international.com/fr/produits/fils-electriques/	BARRES CONDUCTRICES SIS - RITZ	8121	/home/claude/ritz/digest/pages/fr__fr-produits-fils-electriques.txt
+fr	pages	https://ritz-international.com/fr/produits/pieces-en-resine-coulee-duromer/	Pièces en résine de coulée Duromer - RITZ	14468	/home/claude/ritz/digest/pages/fr__fr-produits-pieces-en-resine-coulee-duromer.txt
+fr	pages	https://ritz-international.com/fr/produits/transformateurs-basse-tension/	Transformateurs basse tension - RITZ	12171	/home/claude/ritz/digest/pages/fr__fr-produits-transformateurs-basse-tension.txt
+fr	pages	https://ritz-international.com/fr/produits/transformateurs-de-mesure-electroniques-et-capteurs/	Transformateurs de mesure électroniques et capteurs - RITZ	21418	/home/claude/ritz/digest/pages/fr__fr-produits-transformateurs-de-mesure-electroniques-et-capteurs.txt
+fr	pages	https://ritz-international.com/fr/produits/transformateurs-haute-tension/	Transformateurs haute tension - RITZ	15789	/home/claude/ritz/digest/pages/fr__fr-produits-transformateurs-haute-tension.txt
+fr	pages	https://ritz-international.com/fr/produits/transformateurs-moyenne-tension/	Transformateurs moyenne tension - RITZ	32091	/home/claude/ritz/digest/pages/fr__fr-produits-transformateurs-moyenne-tension.txt
+fr	pages	https://ritz-international.com/fr/telechargements/	Téléchargements - RITZ	6383	/home/claude/ritz/digest/pages/fr__fr-telechargements.txt
+fr	posts	https://ritz-international.com/fr/25-ans-de-mesure-dc-de-haute-precision/	25 ans de mesure DC de haute précision - RITZ	2818	/home/claude/ritz/digest/pages/fr__fr-25-ans-de-mesure-dc-de-haute-precision.txt
+fr	posts	https://ritz-international.com/fr/customer-letter-about-the-latest-developments-in-foreign-trade-and-the-implications-of-regulation-eu-2026-2133/	Customer letter about the latest developments in foreign trade and the implications of regulation (EU) 2026/2133 - RITZ	2029	/home/claude/ritz/digest/pages/fr__fr-customer-letter-about-the-latest-developments-in-foreign-trade-and-the-implications-of-regulation-eu-2026-2133.txt
+fr	posts	https://ritz-international.com/fr/dates-des-salons-ritz-en-2024/	Dates des salons RITZ en 2024 - RITZ	1312	/home/claude/ritz/digest/pages/fr__fr-dates-des-salons-ritz-en-2024.txt
+fr	posts	https://ritz-international.com/fr/dates-du-salon-ritz-2026/	DATES DU SALON RITZ 2026 - RITZ	1760	/home/claude/ritz/digest/pages/fr__fr-dates-du-salon-ritz-2026.txt
+fr	posts	https://ritz-international.com/fr/em-power-europe/	EM-POWER EUROPE - RITZ	1688	/home/claude/ritz/digest/pages/fr__fr-em-power-europe.txt
+fr	posts	https://ritz-international.com/fr/f1-dans-les-ecoles/	F1 in schools - RITZ	2445	/home/claude/ritz/digest/pages/fr__fr-f1-dans-les-ecoles.txt
+fr	posts	https://ritz-international.com/fr/plus-de-securite-pour-les-personnes-et-les-installations-la-nouvelle-protection-contre-la-tension-en-circuit-ouvert-eoss/	Plus de sécurité pour les personnes et les installations - la nouvelle protection contre la tension en circuit ouvert EOSS ! - RITZ	3226	/home/claude/ritz/digest/pages/fr__fr-plus-de-securite-pour-les-personnes-et-les-installations-la-nouvelle-protection-contre-la-tension-en-circuit-ouvert-eoss.txt
+fr	posts	https://ritz-international.com/fr/ritz-est-exposant-au-salon-eltefa-de-stuttgart-soyez-present/	RITZ EST EXPOSANT AU SALON ELTEFA DE STUTTGART. REJOIGNEZ-NOUS ! - RITZ	3024	/home/claude/ritz/digest/pages/fr__fr-ritz-est-exposant-au-salon-eltefa-de-stuttgart-soyez-present.txt
+fr	posts	https://ritz-international.com/fr/ritz-est-un-operateur-economique-agree/	RITZ est un opérateur économique agréé - RITZ	2363	/home/claude/ritz/digest/pages/fr__fr-ritz-est-un-operateur-economique-agree.txt
+fr	posts	https://ritz-international.com/fr/ritz-fete-de-famille/	FÊTE DE FAMILLE RITZ - RITZ	2543	/home/claude/ritz/digest/pages/fr__fr-ritz-fete-de-famille.txt
+fr	posts	https://ritz-international.com/fr/ritz-hongrie-est-entreprise-de-lannee-2017-en-hongrie/	RITZ Hongrie est "Entreprise de l'année 2017" en Hongrie - RITZ	2095	/home/claude/ritz/digest/pages/fr__fr-ritz-hongrie-est-entreprise-de-lannee-2017-en-hongrie.txt
+fr	posts	https://ritz-international.com/fr/ritz-nimmt-an-xxx-vde-zaehlerfachtagung-am-17-18-september-2024-in-gera-teil/	RITZ nimmt an der XXX. VDE-Zählerfachtagung am 17./18. September 2024 in Gera teil - RITZ	2067	/home/claude/ritz/digest/pages/fr__fr-ritz-nimmt-an-xxx-vde-zaehlerfachtagung-am-17-18-september-2024-in-gera-teil.txt
+fr	posts	https://ritz-international.com/fr/ritz-propose-un-nouveau-service-de-mesure-des-dp-des-transformateurs-de-puissance/	Ritz propose un nouveau service de mesure des DP des transformateurs de puissance - RITZ	2751	/home/claude/ritz/digest/pages/fr__fr-ritz-propose-un-nouveau-service-de-mesure-des-dp-des-transformateurs-de-puissance.txt
+fr	posts	https://ritz-international.com/fr/salon-du-personnel-karrierestart-dresden/	Salon du personnel KarriereStart Dresde - RITZ	1784	/home/claude/ritz/digest/pages/fr__fr-salon-du-personnel-karrierestart-dresden.txt
+fr	posts	https://ritz-international.com/fr/supplier-of-the-year-award-at-hitachi-supplier-days-2024/	Supplier of the Year Award at Hitachi Supplier Days 2024 - RITZ	2532	/home/claude/ritz/digest/pages/fr__fr-supplier-of-the-year-award-at-hitachi-supplier-days-2024.txt
+fr	posts	https://ritz-international.com/fr/teamchallenge-a-dresde/	DÉFI D’ÉQUIPE À DRESDE - RITZ	2234	/home/claude/ritz/digest/pages/fr__fr-teamchallenge-a-dresde.txt
+fr	posts	https://ritz-international.com/fr/une-collaboratrice-de-ritz-elue-meilleure-apprentie-de-sa-filiere-de-formation/	Une collaboratrice de RITZ élue meilleure apprentie de sa filière de formation - RITZ	2231	/home/claude/ritz/digest/pages/fr__fr-une-collaboratrice-de-ritz-elue-meilleure-apprentie-de-sa-filiere-de-formation.txt
+hu	pages	https://ritz-international.com/hu/	Kezdőoldal - RITZ	8278	/home/claude/ritz/digest/pages/hu__hu.txt
+hu	pages	https://ritz-international.com/hu/a-vallalat/	Vállalat - RITZ	3568	/home/claude/ritz/digest/pages/hu__hu-a-vallalat.txt
+hu	pages	https://ritz-international.com/hu/a-vallalat/felelosseg/	Felelősségvállalás - RITZ	3846	/home/claude/ritz/digest/pages/hu__hu-a-vallalat-felelosseg.txt
+hu	pages	https://ritz-international.com/hu/a-vallalat/gyartasi-helyszinek/	Gyártási helyszínek - RITZ	5018	/home/claude/ritz/digest/pages/hu__hu-a-vallalat-gyartasi-helyszinek.txt
+hu	pages	https://ritz-international.com/hu/a-vallalat/hivatkozasok/	Hivatkozások - RITZ	1780	/home/claude/ritz/digest/pages/hu__hu-a-vallalat-hivatkozasok.txt
+hu	pages	https://ritz-international.com/hu/a-vallalat/minosegiranyitas/	Irányítási rendszerek és tanúsítványok - RITZ	4911	/home/claude/ritz/digest/pages/hu__hu-a-vallalat-minosegiranyitas.txt
+hu	pages	https://ritz-international.com/hu/a-vallalat/vision/	Vízió - RITZ	7031	/home/claude/ritz/digest/pages/hu__hu-a-vallalat-vision.txt
+hu	pages	https://ritz-international.com/hu/adatvedelmi-szabalyzat/	Adatvédelmi szabályzat - RITZ	22498	/home/claude/ritz/digest/pages/hu__hu-adatvedelmi-szabalyzat.txt
+hu	pages	https://ritz-international.com/hu/hirek/	Hírek - RITZ	5851	/home/claude/ritz/digest/pages/hu__hu-hirek.txt
+hu	pages	https://ritz-international.com/hu/impresszum/	Impresszum - RITZ	7086	/home/claude/ritz/digest/pages/hu__hu-impresszum.txt
+hu	pages	https://ritz-international.com/hu/kapcsolatfelvetel/	Kapcsolat - RITZ	1751	/home/claude/ritz/digest/pages/hu__hu-kapcsolatfelvetel.txt
+hu	pages	https://ritz-international.com/hu/karrier-portal/	Karrier portál - RITZ	6524	/home/claude/ritz/digest/pages/hu__hu-karrier-portal.txt
+hu	pages	https://ritz-international.com/hu/karrier/	Karrier - RITZ	4315	/home/claude/ritz/digest/pages/hu__hu-karrier.txt
+hu	pages	https://ritz-international.com/hu/karrier/allasajanlatok/	Állásajánlatok - RITZ	5542	/home/claude/ritz/digest/pages/hu__hu-karrier-allasajanlatok.txt
+hu	pages	https://ritz-international.com/hu/karrier/gyakorlatok/	Szakmai gyakorlatok - RITZ	2845	/home/claude/ritz/digest/pages/hu__hu-karrier-gyakorlatok.txt
+hu	pages	https://ritz-international.com/hu/karrier/oktatas/	Szakmai gyakorlat - RITZ	3937	/home/claude/ritz/digest/pages/hu__hu-karrier-oktatas.txt
+hu	pages	https://ritz-international.com/hu/legfrissebb-hirek/	Legfrissebb hírek - RITZ	1040	/home/claude/ritz/digest/pages/hu__hu-legfrissebb-hirek.txt
+hu	pages	https://ritz-international.com/hu/legfrissebb-hirek/letoeltesek/	Letöltések - RITZ	6176	/home/claude/ritz/digest/pages/hu__hu-legfrissebb-hirek-letoeltesek.txt
+hu	pages	https://ritz-international.com/hu/letoeltesek/	Letöltések - RITZ	6189	/home/claude/ritz/digest/pages/hu__hu-letoeltesek.txt
+hu	pages	https://ritz-international.com/hu/termekek/	Termékek - RITZ	4034	/home/claude/ritz/digest/pages/hu__hu-termekek.txt
+hu	pages	https://ritz-international.com/hu/termekek/duromer-oentoett-gyanta-alkatreszek/	Duromer öntőgyantás alkatrészek - RITZ	13121	/home/claude/ritz/digest/pages/hu__hu-termekek-duromer-oentoett-gyanta-alkatreszek.txt
+hu	pages	https://ritz-international.com/hu/termekek/elektronikus-meroatalakitok-es-erzekelok/	Elektronikus mérőátalakítók és érzékelők - RITZ	19542	/home/claude/ritz/digest/pages/hu__hu-termekek-elektronikus-meroatalakitok-es-erzekelok.txt
+hu	pages	https://ritz-international.com/hu/termekek/folyo-sinek/	ÁRAMVEZETŐ SÍNEK SIS - RITZ	7759	/home/claude/ritz/digest/pages/hu__hu-termekek-folyo-sinek.txt
+hu	pages	https://ritz-international.com/hu/termekek/kisfeszueltsegu-transzformator/	Kisfeszültségű átalakítók - RITZ	11480	/home/claude/ritz/digest/pages/hu__hu-termekek-kisfeszueltsegu-transzformator.txt
+hu	pages	https://ritz-international.com/hu/termekek/koezepfeszueltsegu-transzformator/	Középfeszültségű átalakítók - RITZ	29588	/home/claude/ritz/digest/pages/hu__hu-termekek-koezepfeszueltsegu-transzformator.txt
+hu	pages	https://ritz-international.com/hu/termekek/nagyfeszueltsegu-atalakitok/	Nagyfeszültségű átalakítók - RITZ	14785	/home/claude/ritz/digest/pages/hu__hu-termekek-nagyfeszueltsegu-atalakitok.txt
+hu	posts	https://ritz-international.com/hu/2024/	RITZ vásári dátumok 2024 - RITZ	1222	/home/claude/ritz/digest/pages/hu__hu-2024.txt
+hu	posts	https://ritz-international.com/hu/25-ev-nagy-pontossagu-dc-meres/	25 év nagy pontosságú DC - mérés - RITZ	2658	/home/claude/ritz/digest/pages/hu__hu-25-ev-nagy-pontossagu-dc-meres.txt
+hu	posts	https://ritz-international.com/hu/a-ritz-engedelyezett-gazdasagi-szereplo/	A RITZ engedélyezett gazdasági szereplő - RITZ	2334	/home/claude/ritz/digest/pages/hu__hu-a-ritz-engedelyezett-gazdasagi-szereplo.txt
+hu	posts	https://ritz-international.com/hu/a-ritz-kecskemeti-telephelyenek-bovitese/	A RITZ kecskeméti telephelyének bővítése - RITZ	2499	/home/claude/ritz/digest/pages/hu__hu-a-ritz-kecskemeti-telephelyenek-bovitese.txt
+hu	posts	https://ritz-international.com/hu/a-ritz-kiallitokent-vesz-reszt-a-stuttgarti-eltefan-legy-a-reszese/	A RITZ KIÁLLÍTÓKÉNT VESZ RÉSZT A STUTTGARTI ELTEFÁN. LEGYEN OTT ÖN IS! - RITZ	3048	/home/claude/ritz/digest/pages/hu__hu-a-ritz-kiallitokent-vesz-reszt-a-stuttgarti-eltefan-legy-a-reszese.txt
+hu	posts	https://ritz-international.com/hu/a-ritz-magyarorszag-az-ev-vallalata-2017-magyarorszagon/	A RITZ Magyarország "Az Év Vállalata 2017" Magyarországon - RITZ	2024	/home/claude/ritz/digest/pages/hu__hu-a-ritz-magyarorszag-az-ev-vallalata-2017-magyarorszagon.txt
+hu	posts	https://ritz-international.com/hu/a-ritz-munkatarsa-a-legjobb-gyakornok-lett-a-tanfolyamon/	A RITZ munkatársa a legjobb gyakornok lett a tanfolyamon - RITZ	2077	/home/claude/ritz/digest/pages/hu__hu-a-ritz-munkatarsa-a-legjobb-gyakornok-lett-a-tanfolyamon.txt
+hu	posts	https://ritz-international.com/hu/a-ritz-uj-szolgaltatast-kinal-a-teljesitmenytranszformatorok-pd-meresehez/	A Ritz új szolgáltatást kínál a teljesítménytranszformátorok PD-méréséhez - RITZ	2727	/home/claude/ritz/digest/pages/hu__hu-a-ritz-uj-szolgaltatast-kinal-a-teljesitmenytranszformatorok-pd-meresehez.txt
+hu	posts	https://ritz-international.com/hu/customer-letter-about-the-latest-developments-in-foreign-trade-and-the-implications-of-regulation-eu-2026-2133/	Customer letter about the latest developments in foreign trade and the implications of regulation (EU) 2026/2133 - RITZ	2029	/home/claude/ritz/digest/pages/hu__hu-customer-letter-about-the-latest-developments-in-foreign-trade-and-the-implications-of-regulation-eu-2026-2133.txt
+hu	posts	https://ritz-international.com/hu/em-power-europe/	EM-POWER EUROPE - RITZ	1670	/home/claude/ritz/digest/pages/hu__hu-em-power-europe.txt
+hu	posts	https://ritz-international.com/hu/f1-az-iskolakban/	F1 in schools - RITZ	2313	/home/claude/ritz/digest/pages/hu__hu-f1-az-iskolakban.txt
+hu	posts	https://ritz-international.com/hu/nagyobb-biztonsag-az-emberek-es-a-rendszerek-szamara-az-uj-eoss-nyitott-aramkoeru-feszueltsegvedelem/	Nagyobb biztonság az emberek és a rendszerek számára - az új EOSS nyitott áramkörű feszültségvédelem! - RITZ	2991	/home/claude/ritz/digest/pages/hu__hu-nagyobb-biztonsag-az-emberek-es-a-rendszerek-szamara-az-uj-eoss-nyitott-aramkoeru-feszueltsegvedelem.txt
+hu	posts	https://ritz-international.com/hu/ritz-csaladi-party/	RITZ CSALÁDI PARTI - RITZ	2410	/home/claude/ritz/digest/pages/hu__hu-ritz-csaladi-party.txt
+hu	posts	https://ritz-international.com/hu/ritz-nimmt-an-xxx-vde-zaehlerfachtagung-am-17-18-september-2024-in-gera-teil/	RITZ nimmt an der XXX. VDE-Zählerfachtagung am 17./18. September 2024 in Gera teil - RITZ	2067	/home/claude/ritz/digest/pages/hu__hu-ritz-nimmt-an-xxx-vde-zaehlerfachtagung-am-17-18-september-2024-in-gera-teil.txt
+hu	posts	https://ritz-international.com/hu/ritz-vasar-datumok-2026/	RITZ VÁSÁR DÁTUMOK 2026 - RITZ	1754	/home/claude/ritz/digest/pages/hu__hu-ritz-vasar-datumok-2026.txt
+hu	posts	https://ritz-international.com/hu/supplier-of-the-year-award-at-hitachi-supplier-days-2024/	Supplier of the Year Award at Hitachi Supplier Days 2024 - RITZ	2532	/home/claude/ritz/digest/pages/hu__hu-supplier-of-the-year-award-at-hitachi-supplier-days-2024.txt
+hu	posts	https://ritz-international.com/hu/szemelyzeti-vasar-karrierestart-dresden/	Drezdai Karrierestart állásbörze - RITZ	1740	/home/claude/ritz/digest/pages/hu__hu-szemelyzeti-vasar-karrierestart-dresden.txt
+hu	posts	https://ritz-international.com/hu/teamchallenge-dresdenben/	TEAMCHALLENGE DREZDÁBAN - RITZ	2137	/home/claude/ritz/digest/pages/hu__hu-teamchallenge-dresdenben.txt

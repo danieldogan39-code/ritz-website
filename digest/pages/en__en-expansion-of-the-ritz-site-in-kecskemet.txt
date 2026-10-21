@@ -1,0 +1,14 @@
+# Expansion of the RITZ site in Kecskemét - RITZ
+URL: https://ritz-international.com/en/expansion-of-the-ritz-site-in-kecskemet/  status=200 lang=en kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "en_US", "og:type": "article", "og:title": "Expansion of the RITZ site in Kecskemét - RITZ", "og:description": "Developments in RITZ Hungary The development of the Hungarian plant represents a comprehensive, strategic investment that will serve as a foundation for future growth. The aim of the measure is to significantly expand production capacity, increase energy efficiency and implement sustainable operations. The development plan focuses on expanding the office space and extending the exi
+canonical: https://ritz-international.com/en/expansion-of-the-ritz-site-in-kecskemet/
+hreflang: [['en', 'https://ritz-international.com/en/expansion-of-the-ritz-site-in-kecskemet/'], ['de', 'https://ritz-international.com/erweiterung-des-ritz-standortes-in-kecskemet/'], ['hu', 'https://ritz-international.com/hu/a-ritz-kecskemeti-telephelyenek-bovitese/'], ['x-default', 'https://ritz-international.com/erweiterung-des-ritz-standortes-in-kecskemet/']]
+
+[POSTTITLE] Expansion of the RITZ site in Kecskemét
+[POSTCONTENT] Developments in RITZ Hungary The development of the Hungarian plant represents a comprehensive, strategic investment that will serve as a foundation for future growth. The aim of the measure is to significantly expand production capacity, increase energy efficiency and implement sustainable operations. The development plan focuses on expanding the office space and extending the existing production hall by 1000 m².
+ Read more IMGS= LINKS=Read more<https://ritz-international.com/wp-content/uploads/Expansion_factory_RITZ_Hungary.pdf>
+[TEXT] (in a71c4dd) Developments in RITZ Hungary The development of the Hungarian plant represents a comprehensive, strategic investment that will serve as a foundation for future growth. The aim of the measure is to significantly expand production capacity, increase energy efficiency and implement sustainable operations. The development plan focuses on expanding the office space and extending the existing production hall by 1000 m².
+ Read more
+[BTN] Back -> https://ritz-international.com/en/?page_id=5595
+[FEATURED] https://ritz-international.com/wp-content/uploads/Screenshot-2025-09-18-210156.png
+[PDFS] https://ritz-international.com/wp-content/uploads/Expansion_factory_RITZ_Hungary.pdf

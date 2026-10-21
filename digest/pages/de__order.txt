@@ -1,0 +1,29 @@
+# Bestellvorgang - RITZ
+URL: https://ritz-international.com/order/  status=200 lang=de kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "Bestellvorgang - RITZ", "og:description": "Bestellvorgang DISCLAIMER Die hier bereitgestellten Mustertexte sind ausdrücklich als MUSTER zu verstehen und müssen in jedem Fall durch eigene rechtssichere Texte unter CMS -> Statische Blöcke ersetzt werden. Weder FireGento e.V. noch Trusted Shops tragen für die Richtigkeit und Vollständigkeit dieser Texte eine Verantwortung. Bestellvorgang, einfach und bequem bestellen Wie kann ich bei {{block type=“mag
+canonical: https://ritz-international.com/order/
+hreflang: [['de', 'https://ritz-international.com/order/'], ['x-default', 'https://ritz-international.com/order/']]
+
+[POSTTITLE] Bestellvorgang
+[POSTCONTENT] Bestellvorgang
+ DISCLAIMER
+ Die hier bereitgestellten Mustertexte sind ausdrücklich als
+ MUSTER zu verstehen und müssen in jedem Fall durch
+ eigene rechtssichere Texte unter CMS -> Statische Blöcke ersetzt
+ werden. Weder FireGento e.V. noch Trusted Shops tragen für die
+ Richtigkeit und Vollständigkeit dieser Texte eine Verantwortung.
+ Bestellvorgang, einfach und bequem bestellen
+ Wie kann ich bei {{block type=“magesetup/imprint_field“ value=“shop_name“}} bestellen?
+ 1. Warenkorb
+ Wählen Sie die Produkte aus, die Sie bestellen möchten, indem Sie den „In den Warenkorb“ Button anklicken. Dadurch wird Ihre Auswahl in den Warenkorb gelegt. Sie können diese Auswahl bis zum Absenden Ihrer Bestellung jederzeit ändern, in dem Sie die Anzahl der Produkte ändern, durch Anklicken des Kästchens „Entfernen“ die Auswahl löschen oder den Bestellvorgang abbrechen. Durch Anklicken des Buttons „Kasse“ gelangen Sie zum nächsten Bestellschritt.
+ 2. Kasse
+ Melden Sie sich bitte mit Ihrer eMail Adresse und Ihrem Passwort an falls Sie bereits ein Kundenkonto besitzen, ansonsten registrieren Sie sich bitte als neuer Kunde. Ihre Daten werden unter Beachtung der datenschutzrechtlichen Bestimmungen erhoben, verarbeitet und genutzt ( Datenschutzhinweis ). Eine anderweitige Verwendung oder Weitergabe an Dritte erfolgt nicht. Sind Sie bereits angemeldet, können Sie nun die Versandart auswählen. Durch klicken des Buttons „Weiter“ gelangen Sie zum nächsten Bestellschritt.
+ 3. Rechnungsadresse prüfen / Zahlungsweise auswählen
+ Überprüfen Sie nun Ihre Rechnungsadresse und geben Sie Ihre gewünschte Zahlungsweise an. Durch Klicken des Buttons „Weiter“ gelangen Sie zum nächsten Bestellschritt. 
+ 4. Versandadresse prüfen / Versandart auswählen
+ Überprüfen Sie nun Ihre Versandadresse und geben Sie Ihre gewünschte Versandart an. Durch Klicken des Buttons „Weiter“ gelangen Sie zum nächsten Bestellschritt.
+ 5. Bestellvorgang abschließen / AGB und Widerrufsbelehrung
+ Sie erhalten eine Übersicht Ihrer Bestellung: die ausgewählten Produkte, die Versand- und Rechnungsadresse und Ihre Kontaktdaten. Überprüfen Sie, ob alle Angaben stimmen und lesen sich bitte die Allgemeinen Geschäftsbedingungen und die Widerrufsbelehrung aufmerksam durch. Sie können mit der Bestellung nur fortfahren, wenn Sie den AGB und der Widerrufsbelehrung zustimmen (Häkchen setzen). Mit dem Anklicken des Buttons „Jetzt kaufen“ übersenden Sie Ihre Bestellung an uns. Hiermit geben Sie ein rechtsverbindliches Angebot ab.
+ Widerrufsrecht für Verbraucher
+ Alle Informationen zum Widerrufsrecht IMGS= LINKS=Datenschutzhinweis<{{store url=> Zahlungsweise<{{store url=> Versandart<{{store url=> Allgemeinen Geschäftsbedingungen<{{store url=> Widerrufsbelehrung<{{store url=> Widerrufsrecht<{{store url=>
+[BTN] Zurück -> /aktuelles/news

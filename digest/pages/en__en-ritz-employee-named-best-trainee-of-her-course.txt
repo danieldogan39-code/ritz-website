@@ -1,0 +1,10 @@
+# RITZ employee named best trainee of her course - RITZ
+URL: https://ritz-international.com/en/ritz-employee-named-best-trainee-of-her-course/  status=200 lang=en kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "en_US", "og:type": "article", "og:title": "RITZ employee named best trainee of her course - RITZ", "og:description": "\r On November 9, 2017, our colleague Julia Petersen was named the best trainee of her 2016/2017 course by the Hamburg Chamber of Industry and Commerce. RITZ was also honored for its achievements in dual vocational training! \r", "og:url": "https://ritz-international.com/en/ritz-employee-named-best-trainee-of-her-course/", "og:site_name": "RITZ", "og:image": "https://ritz-in
+canonical: https://ritz-international.com/en/ritz-employee-named-best-trainee-of-her-course/
+hreflang: [['en', 'https://ritz-international.com/en/ritz-employee-named-best-trainee-of-her-course/'], ['fr', 'https://ritz-international.com/fr/une-collaboratrice-de-ritz-elue-meilleure-apprentie-de-sa-filiere-de-formation/'], ['de', 'https://ritz-international.com/ritz-mitarbeiterin-zur-besten-auszubildenden-ihres-lehrgangs-ausgezeichnet-worden/'], ['hu', 'https://ritz-international.com/hu/a-ritz-munkatarsa-a-legjobb-gyakornok-lett-a-tanfolyamon/'], ['es', 'https://ritz-international.com/es/empleada-de-ritz-premiada-como-la-mejor-becaria-de-su-curso/'], ['x-default', 'https://ritz-international.com/ritz-mitarbeiterin-zur-besten-auszubildenden-ihres-lehrgangs-ausgezeichnet-worden/']]
+
+[POSTTITLE] RITZ employee named best trainee of her course
+[POSTCONTENT] On November 9, 2017, our colleague Julia Petersen was named the best trainee of her 2016/2017 course by the Hamburg Chamber of Industry and Commerce. RITZ was also honored for its achievements in dual vocational training! IMGS= LINKS=
+[BTN] Back -> https://ritz-international.com/en/?page_id=5595
+[FEATURED] https://ritz-international.com/wp-content/uploads/Foto_Ehrung_IHK_Petersen-768x510-1.jpg

@@ -1,0 +1,124 @@
+# Low-voltage transformers - RITZ
+URL: https://ritz-international.com/en/products/low-voltage-transformer/  status=200 lang=en kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "en_US", "og:type": "article", "og:title": "Low-voltage transformers - RITZ", "og:description": "Home Low-voltage transformers Contact Karola Walzer (Low Voltage Sales) +49 40 511 23 328 karola.walzer@ritz-international.com Melanie Hille (Low Voltage Sales) +49 40 511 23 248 melanie.hille@ritz-international.com Download catalogs Low-voltage instrument transformers – Special applications", "og:url": "https://ritz-international.com/en/products/low-voltage-transformer/", "og:site_name": "RITZ",
+canonical: https://ritz-international.com/en/products/low-voltage-transformer/
+hreflang: [['en', 'https://ritz-international.com/en/products/low-voltage-transformer/'], ['fr', 'https://ritz-international.com/fr/produits/transformateurs-basse-tension/'], ['de', 'https://ritz-international.com/produkte/niederspannungswandler/'], ['hu', 'https://ritz-international.com/hu/termekek/kisfeszueltsegu-transzformator/'], ['es', 'https://ritz-international.com/es/productos/transformador-de-baja-tension/'], ['x-default', 'https://ritz-international.com/produkte/niederspannungswandler/']]
+
+[H H2] Low-voltage transformers
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/introduction_image_niederspannungswandler-e1705680245358.jpg alt=''
+[H H2] Contact
+[H H2] Karola Walzer (Low Voltage Sales)
+[LIST] +49 40 511 23 328 <tel:+494051123328> | karola.walzer@ritz-international.com <mailto:karola.walzer@ritz-international.com>
+[H H2] Melanie Hille (Low Voltage Sales)
+[LIST] +49 40 511 23 248 <tel:+494051123248> | melanie.hille@ritz-international.com <mailto:melanie.hille@ritz-international.com>
+[H H2] Download catalogs
+[LIST] Low-voltage instrument transformers - Special applications <https://ritz-international.com/wp-content/uploads/N7-2002-111-3.pdf>
+[template] LOW VOLTAGE TRANSFORMERS - Standard
+KS_50-02_e
+M005585_I06
+KS_60-03_e
+M005587_I05
+KS_70-04_e
+M005588_I05
+KS_79-05_e
+M005589_I05
+KS_95-06_e
+M005590_I06
+KS_120-08_e
+M005591_I06
+KS_160-12_e
+M005592_I06
+KSO_311_e
+M006681I2
+KSW_52_e
+M003651I5
+Current transformers for measuring Purposes
+Current transformers for measuring and protection purposes
+Winding-type current transformers
+Intermediate current transformers
+Summation current transformer
+Current transformers for safety edges
+Sip-over current transformers
+Tubular rod current transformer
+Slip-over current transformers for high currents
+Multiple current transformers
+Split core current transformers
+Split core current transformers for earth fault protection
+Transformers for measuring purposes
+3-phase current transformer set
+Laboratory current and voltage transformers
+Voltage transformers
+Certifiable instrument transformers
+Relaxation oscillation damping units IMGS=https://ritz-international.com/wp-content/uploads/2022/09/niederspannungsstromwandler_standard_ks_50-02_d_m005585_i06_m005590_i06.jpg https://ritz-international.com/wp-content/uploads/2022/09/niederspannungsstromwandler_standard_ks_60-03_d_m005587_i05.jpg https://ritz-international.com/wp-content/uploads/2022/09/niederspannungsstromwandler_standard_ks_70-04_d_m005588_i05.jpg https://ritz-international.com/wp-content/uploads/2022/09/niederspannungsstromwandler_standard_ks_79-05_d_m005589_i05.jpg https://ritz-international.com/wp-content/uploads/2022/09/niederspannungsstromwandler_standard__ks_95-06_d_m005590_i06.jpg https://ritz-international.com/wp-content/uploads/2022/09/niederspannungsstromwandler_standard__m005591_i06.jpg https://ritz-international.com/wp-content/uploads/2022/09/niederspannungsstromwandler_standard_ks_160-12_d_m005592_i06.jpg https://ritz-international.com/wp-content/uploads/2022/09/niederspannungsstromwandler_standard_kso_311_d_m006681i2.jpg https://ritz-international.com/wp-content/uploads/2022/09/niederspannungsstromwandler_standard_ksw_52_d_m003651i5.jpg https://ritz-international.com/wp-content/uploads/2022/09/sonderwandler_fuer_messzwecke.jpg LINKS=KS_50-02_e<https://ritz-international.com/wp-content/uploads/KS_50-02_e.pdf> M005585_I06<https://ritz-international.com/wp-content/uploads/M005585_I06-1.pdf> KS_60-03_e<https://ritz-international.com/wp-content/uploads/KS_60-03_e.pdf> M005587_I05<https://ritz-international.com/wp-content/uploads/M005587_I05-1.pdf> KS_70-04_e<https://ritz-international.com/wp-content/uploads/KS_70-04_e.pdf> M005588_I05<https://ritz-international.com/wp-content/uploads/M005588_I05-1.pdf> KS_79-05_e<https://ritz-international.com/wp-content/uploads/KS_79-05_e.pdf> M005589_I05<https://ritz-international.com/wp-content/uploads/M005589_I05-1.pdf> KS_95-06_e<https://ritz-international.com/wp-content/uploads/KS_95-06_e.pdf> M005590_I06<https://ritz-international.com/wp-content/uploads/M005590_I06.pdf> KS_120-08_e<https://ritz-international.com/wp-content/uploads/KS_120-08_e.pdf> M005591_I06<https://ritz-international.com/wp-content/uploads/M005591_I06-1.pdf> KS_160-12_e<https://ritz-international.com/wp-content/uploads/KS_160-12_e.pdf> M005592_I06<https://ritz-international.com/wp-content/uploads/M005592_I06-1.pdf> KSO_311_e<https://ritz-international.com/wp-content/uploads/KSO_311_e.pdf> M006681I2<https://ritz-international.com/wp-content/uploads/M006681I2-1.pdf> KSW_52_e<https://ritz-international.com/wp-content/uploads/KSW_52_e.pdf> M003651I5<https://ritz-international.com/wp-content/uploads/M003651I5-1.pdf>
+[ACC] (in 1e558e0) <LOW VOLTAGE TRANSFORMERS - Standard> tpl=1046 KS_50-02_e 
+ M005585_I06 
+ KS_60-03_e 
+ M005587_I05 
+ KS_70-04_e 
+ M005588_I05 
+ KS_79-05_e 
+ M005589_I05 
+ KS_95-06_e 
+ M005590_I06 
+ KS_120-08_e 
+ M005591_I06 
+ KS_160-12_e 
+ M005592_I06 
+ KSO_311_e 
+ M006681I2 
+ KSW_52_e 
+ M003651I5 || <Current transformers for measuring Purposes> tpl=1061 Current transformers for measuring and protection purposes
+ Winding-type current transformers
+ Intermediate current transformers
+ Summation current transformer
+ Current transformers for safety edges
+ Sip-over current transformers
+ Tubular rod current transformer
+ Slip-over current transformers for high currents
+ Multiple current transformers
+ Split core current transformers
+ Split core current transformers for earth fault protection
+Transformers for measuring purposes 
+ 3-phase current transformer set
+ Laboratory current and voltage transformers
+Voltage transformers 
+ Certifiable instrument transformers 
+ Relaxation oscillation damping units
+[IMG] (in a892fcf) https://ritz-international.com/wp-content/uploads/2022/09/niederspannungsstromwandler_standard_ks_50-02_d_m005585_i06_m005590_i06.jpg alt=''
+[LIST] (in a892fcf) KS_50-02_e <https://ritz-international.com/wp-content/uploads/KS_50-02_e.pdf> | M005585_I06 <https://ritz-international.com/wp-content/uploads/M005585_I06-1.pdf>
+[IMG] (in a892fcf) https://ritz-international.com/wp-content/uploads/2022/09/niederspannungsstromwandler_standard_ks_60-03_d_m005587_i05.jpg alt=''
+[LIST] (in a892fcf) KS_60-03_e <https://ritz-international.com/wp-content/uploads/KS_60-03_e.pdf> | M005587_I05 <https://ritz-international.com/wp-content/uploads/M005587_I05-1.pdf>
+[IMG] (in a892fcf) https://ritz-international.com/wp-content/uploads/2022/09/niederspannungsstromwandler_standard_ks_70-04_d_m005588_i05.jpg alt=''
+[LIST] (in a892fcf) KS_70-04_e <https://ritz-international.com/wp-content/uploads/KS_70-04_e.pdf> | M005588_I05 <https://ritz-international.com/wp-content/uploads/M005588_I05-1.pdf>
+[IMG] (in a892fcf) https://ritz-international.com/wp-content/uploads/2022/09/niederspannungsstromwandler_standard_ks_79-05_d_m005589_i05.jpg alt=''
+[LIST] (in a892fcf) KS_79-05_e <https://ritz-international.com/wp-content/uploads/KS_79-05_e.pdf> | M005589_I05 <https://ritz-international.com/wp-content/uploads/M005589_I05-1.pdf>
+[IMG] (in a892fcf) https://ritz-international.com/wp-content/uploads/2022/09/niederspannungsstromwandler_standard__ks_95-06_d_m005590_i06.jpg alt=''
+[LIST] (in a892fcf) KS_95-06_e <https://ritz-international.com/wp-content/uploads/KS_95-06_e.pdf> | M005590_I06 <https://ritz-international.com/wp-content/uploads/M005590_I06.pdf>
+[IMG] (in a892fcf) https://ritz-international.com/wp-content/uploads/2022/09/niederspannungsstromwandler_standard__m005591_i06.jpg alt=''
+[LIST] (in a892fcf) KS_120-08_e <https://ritz-international.com/wp-content/uploads/KS_120-08_e.pdf> | M005591_I06 <https://ritz-international.com/wp-content/uploads/M005591_I06-1.pdf>
+[IMG] (in a892fcf) https://ritz-international.com/wp-content/uploads/2022/09/niederspannungsstromwandler_standard_ks_160-12_d_m005592_i06.jpg alt=''
+[LIST] (in a892fcf) KS_160-12_e <https://ritz-international.com/wp-content/uploads/KS_160-12_e.pdf> | M005592_I06 <https://ritz-international.com/wp-content/uploads/M005592_I06-1.pdf>
+[IMG] (in a892fcf) https://ritz-international.com/wp-content/uploads/2022/09/niederspannungsstromwandler_standard_kso_311_d_m006681i2.jpg alt=''
+[LIST] (in a892fcf) KSO_311_e <https://ritz-international.com/wp-content/uploads/KSO_311_e.pdf> | M006681I2 <https://ritz-international.com/wp-content/uploads/M006681I2-1.pdf>
+[IMG] (in a892fcf) https://ritz-international.com/wp-content/uploads/2022/09/niederspannungsstromwandler_standard_ksw_52_d_m003651i5.jpg alt=''
+[LIST] (in a892fcf) KSW_52_e <https://ritz-international.com/wp-content/uploads/KSW_52_e.pdf> | M003651I5 <https://ritz-international.com/wp-content/uploads/M003651I5-1.pdf>
+[IMG] (in a892fcf) https://ritz-international.com/wp-content/uploads/2022/09/sonderwandler_fuer_messzwecke.jpg alt=''
+[TEXT] (in a892fcf) Current transformers for measuring and protection purposes
+ Winding-type current transformers
+ Intermediate current transformers
+ Summation current transformer
+ Current transformers for safety edges
+ Sip-over current transformers
+ Tubular rod current transformer
+ Slip-over current transformers for high currents
+ Multiple current transformers
+ Split core current transformers
+ Split core current transformers for earth fault protection
+Transformers for measuring purposes 
+ 3-phase current transformer set
+ Laboratory current and voltage transformers
+Voltage transformers 
+ Certifiable instrument transformers 
+ Relaxation oscillation damping units
+[PDFS] https://ritz-international.com/wp-content/uploads/N7-2002-111-3.pdf https://ritz-international.com/wp-content/uploads/KS_50-02_e.pdf https://ritz-international.com/wp-content/uploads/M005585_I06-1.pdf https://ritz-international.com/wp-content/uploads/KS_60-03_e.pdf https://ritz-international.com/wp-content/uploads/M005587_I05-1.pdf https://ritz-international.com/wp-content/uploads/KS_70-04_e.pdf https://ritz-international.com/wp-content/uploads/M005588_I05-1.pdf https://ritz-international.com/wp-content/uploads/KS_79-05_e.pdf https://ritz-international.com/wp-content/uploads/M005589_I05-1.pdf https://ritz-international.com/wp-content/uploads/KS_95-06_e.pdf https://ritz-international.com/wp-content/uploads/M005590_I06.pdf https://ritz-international.com/wp-content/uploads/KS_120-08_e.pdf https://ritz-international.com/wp-content/uploads/M005591_I06-1.pdf https://ritz-international.com/wp-content/uploads/KS_160-12_e.pdf https://ritz-international.com/wp-content/uploads/M005592_I06-1.pdf https://ritz-international.com/wp-content/uploads/KSO_311_e.pdf https://ritz-international.com/wp-content/uploads/M006681I2-1.pdf https://ritz-international.com/wp-content/uploads/KSW_52_e.pdf https://ritz-international.com/wp-content/uploads/M003651I5-1.pdf
+[TEMPLATES] 1046 1061

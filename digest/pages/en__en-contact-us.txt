@@ -1,0 +1,13 @@
+# Contact us - RITZ
+URL: https://ritz-international.com/en/contact-us/  status=200 lang=en kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "en_US", "og:type": "article", "og:title": "Contact us - RITZ", "og:description": "Home we are there for you. Many roads lead to RITZ. Do you have any questions, requests, suggestions or need technical support? Our experts will be happy to advise you personally at any time and share their in-depth knowledge with you. Please get in touch with us. We have listed the most important contacts for […]", "og:url": "https://ritz-international.com/en/contact-us/", "og:site_name": "RITZ", "og:image": 
+canonical: https://ritz-international.com/en/contact-us/
+hreflang: [['en', 'https://ritz-international.com/en/contact-us/'], ['fr', 'https://ritz-international.com/fr/contact/'], ['de', 'https://ritz-international.com/kontakt/'], ['hu', 'https://ritz-international.com/hu/kapcsolatfelvetel/'], ['es', 'https://ritz-international.com/es/contacto/'], ['x-default', 'https://ritz-international.com/kontakt/']]
+
+[H H2] we are
+there for you.
+[TEXT] Many roads lead to RITZ. Do you have any questions, requests, suggestions or need technical support? Our experts will be happy to advise you personally at any time and share their in-depth knowledge with you. Please get in touch with us. We have listed the most important contacts for you.
+[IMG] https://ritz-international.com/wp-content/uploads/Kontakt_intro_bild.webp alt=''
+[template] Production sitesLocationsProduct areasAgencies
+[TABS] (in f45ef3c) Production sites#2279 | Locations#1368 | Product areas#1609 | Agencies#1621 contents: 
+[TEMPLATES] 2279 1368 1609 1621

@@ -1,0 +1,134 @@
+# Cast resin parts Duromer - Copy - RITZ
+URL: https://ritz-international.com/en/products/cast-resin-parts-duromer-copy/  status=200 lang=en kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "en_US", "og:type": "article", "og:title": "Cast resin parts Duromer - Copy - RITZ", "og:description": "Home Duromer cast resin parts Our subsidiary DUROMER specializes in the use of casting resins in the electrical industry. DUROMER develops and formulates casting resin molding compounds for electrical applications in the low and medium voltage range and for electronics. Our specialists design and produce cast-resin insulated devices and molded parts for use in electrical […]", "og:url": "h
+canonical: https://ritz-international.com/en/products/cast-resin-parts-duromer-copy/
+hreflang: [['en', 'https://ritz-international.com/en/products/cast-resin-parts-duromer-copy/']]
+
+[H H2] Duromer cast resin parts
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/introduction_image_giessharzteile_duromer-e1705680313569.jpg alt=''
+[TEXT] Our subsidiary DUROMER specializes in the use of casting resins in the electrical industry.
+ DUROMER develops and formulates casting resin molding compounds for electrical applications in the low and medium voltage range and for electronics. Our specialists design and produce cast-resin insulated devices and molded parts for use in electrical power engineering. In the engineering area, you will be advised on the selection of materials and processes as well as on customer-specific designs.
+ DUROMER’s main production areas are the manufacture of cast resin compounds and their processing into insulating parts as well as the production of solid insulated electrical devices.
+ DUROMER has been ISO 9001 certified since 1998.
+[LIST] Production overview <https://ritz-international.com/wp-content/uploads/produktionsuebersicht.pdf>
+[H H2] Contact us
+[H H2] Gottfried Schuster
+[H H2] Development / Technical Engineering / Sales
+[LIST] gottfried.schuster@ritz-international.com <mailto:gottfried.schuster@ritz-international.com>
+[H H2] Frank Karschau
+[H H2] Sales Manager East Europe​
+[LIST] frank.karschau@ritz-international.com <mailto:torsten.hilbert@ritz-international.com>
+[template] What are duromers?
+Thermosetting polymers, also referred to as thermosets or duromers, are plastics that harden through a chemical reaction. They usually react by polyaddition and crosslink to form a closely interlinked lattice of macromolecules, which gives the thermoset its high mechanical strength. Since this kind of hardening, or curing, changes the structure of the molecule, it is an irreversible process.
+Thermosets have no softening range; the material retains its strength even at high temperatures and has excellent heat resistance. Thermosets are characterised by their hardness and rigidity. Their low coefficient of thermal expansion ensures high dimensional stability. The behaviour of thermosets in fire is also advantageous.
+Range of services
+Advice on the production of cast resin parts and compounds
+We are at your disposal for advice on the design of cast resin parts, the construction of electrical insulating parts and the production of the necessary tools.
+Regardless of the manufacturer, we recommend casting resins that are suitable for your products as well as optimum processing techniques.
+You can also draw on our expertise when it comes to selecting the right processing machines for the job.
+Manufacture of casting resin compounds
+We know that the key to a quality product is the special composition of casting resins.
+After considering the respective advantages and disadvantages of different casting resin systems, the various components are mixed according to the requirements of the finished part.
+DUROMER mainly manufactures on the basis of polyurethanes and acts as a system house partner of Bayer Material Science AG.A general overview of the polyurethane-based casting resin systems produced by DUROMER is available for download here. For further information, please contact us by email or telephone.
+Development all the way to series production
+Our specialist knowledge of casting resin systems is put into practice in the new and further development of moulded parts.
+All systems are tested and documented in our laboratory after completion. This includes development tests with regard to insulation capacity, freedom from partial discharge and the fulfilment of climatic requirements with the corresponding supporting documents.
+In the production of moulded parts, casting resin machines are used for both vacuum casting and the pressure gelation process.
+Equipment and technical apparatus
+Equipment
+Vacuum casting systems
+Pressure gelation technology
+Dissolver technology
+Locking units
+Mixing and dosing technology
+Laboratory technology
+We use our laboratory technology to ensure the quality of our products. Amongst other things, we carry out the following analyses and measurements:
+Thermal analysis
+Viscosity measurements
+Determination of technological parameters such as gelling time and exothermic processes
+Reference projects
+DUROMER is a supplier of cast resin applications in all areas of electrical engineering, especially in power engineering, hi
+[ACC] (in cdf037c) <What are duromers?> tpl=9197 Thermosetting polymers, also referred to as thermosets or duromers, are plastics that harden through a chemical reaction. They usually react by polyaddition and crosslink to form a closely interlinked lattice of macromolecules, which gives the thermoset its high mechanical strength. Since this kind of hardening, or curing, changes the structure of the molecule, it is an irreversible process.
+ Thermosets have no softening range; the material retains its strength even at high temperatures and has excellent heat resistance. Thermosets are characterised by their hardness and rigidity. Their low coefficient of thermal expansion ensures high dimensional stability. The behaviour of thermosets in fire is also advantageous. || <Range of services> tpl=1195 Advice on the production of cast resin parts and compounds
+ We are at your disposal for advice on the design of cast resin parts, the construction of electrical insulating parts and the production of the necessary tools.
+ Regardless of the manufacturer, we recommend casting resins that are suitable for your products as well as optimum processing techniques.
+ You can also draw on our expertise when it comes to selecting the right processing machines for the job.
+ Manufacture of casting resin compounds
+ We know that the key to a quality product is the special composition of casting resins.
+ After considering the respective advantages and disadvantages of different casting resin systems, the various components are mixed according to the requirements of the finished part.
+ DUROMER mainly manufactures on the basis of polyurethanes and acts as a system house partner of Bayer Material Science AG.
+A general overview of the polyurethane-based casting resin systems produced by DUROMER is available for download here. For further information, please contact us by email or telephone.
+ Development all the way to series production
+ Our specialist knowledge of casting resin systems is put into practice in the new and further development of moulded parts.
+ All systems are tested and documented in our laboratory after completion. This includes development tests with regard to insulation capacity, freedom from partial discharge and the fulfilment of climatic requirements with the corresponding supporting documents.
+ In the production of moulded parts, casting resin machines are used for both vacuum casting and the pressure gelation process. || <Equipment and technical apparatus> tpl=1199 Equipment
+ Vacuum casting systems
+ Pressure gelation technology
+ Dissolver technology
+ Locking units
+ Mixing and dosing technology
+ Laboratory technology
+ We use our laboratory technology to ensure the quality of our products. Amongst other things, we carry out the following analyses and measurements:
+ Thermal analysis
+ Viscosity measurements
+ Determination of technological parameters such as gelling time and exothermic processes || <Reference projects> tpl=1202 DUROMER is a supplier of cast resin applications in all areas of electrical engineering, especially in power engineering, high and medium voltage technology, light and cable measurement technology as well as sensor and X-ray technology.
+ We work together with companies including:
+ Siemens
+ Philips
+ Megger || <Contact addresses> tpl=1205 Bergener Ring 65 – 67 D 
+01458 Ottendorf-Okrilla 
+Phone: +49 (35205) 62 140 
+Fax: +49 (035205) 62 141 
+Email: info@duromer.de
+ Frank Karschau 
+Sales Manager East Europe
+ Bergener Ring 65 – 67 D 
+01458 Ottendorf-Okrilla 
+Phone: +49 35 205 / 62 212
+Mobile +49 173 397 1102
+Email: frank.karschau@ritz-international.com
+[TEXT] (in 10bab9d) Thermosetting polymers, also referred to as thermosets or duromers, are plastics that harden through a chemical reaction. They usually react by polyaddition and crosslink to form a closely interlinked lattice of macromolecules, which gives the thermoset its high mechanical strength. Since this kind of hardening, or curing, changes the structure of the molecule, it is an irreversible process.
+ Thermosets have no softening range; the material retains its strength even at high temperatures and has excellent heat resistance. Thermosets are characterised by their hardness and rigidity. Their low coefficient of thermal expansion ensures high dimensional stability. The behaviour of thermosets in fire is also advantageous.
+[H H2] (in 10bab9d) Advice on the production of cast resin parts and compounds
+[TEXT] (in 10bab9d) We are at your disposal for advice on the design of cast resin parts, the construction of electrical insulating parts and the production of the necessary tools.
+ Regardless of the manufacturer, we recommend casting resins that are suitable for your products as well as optimum processing techniques.
+ You can also draw on our expertise when it comes to selecting the right processing machines for the job.
+[H H2] (in 10bab9d) Manufacture of casting resin compounds
+[TEXT] (in 10bab9d) We know that the key to a quality product is the special composition of casting resins.
+ After considering the respective advantages and disadvantages of different casting resin systems, the various components are mixed according to the requirements of the finished part.
+ DUROMER mainly manufactures on the basis of polyurethanes and acts as a system house partner of Bayer Material Science AG.
+A general overview of the polyurethane-based casting resin systems produced by DUROMER is available for download here. For further information, please contact us by email or telephone.
+[H H2] (in 10bab9d) Development all the way to series production
+[TEXT] (in 10bab9d) Our specialist knowledge of casting resin systems is put into practice in the new and further development of moulded parts.
+ All systems are tested and documented in our laboratory after completion. This includes development tests with regard to insulation capacity, freedom from partial discharge and the fulfilment of climatic requirements with the corresponding supporting documents.
+ In the production of moulded parts, casting resin machines are used for both vacuum casting and the pressure gelation process.
+[H H2] (in 10bab9d) Equipment
+[TEXT] (in 10bab9d) Vacuum casting systems
+ Pressure gelation technology
+ Dissolver technology
+ Locking units
+ Mixing and dosing technology
+[H H2] (in 10bab9d) Laboratory technology
+[TEXT] (in 10bab9d) We use our laboratory technology to ensure the quality of our products. Amongst other things, we carry out the following analyses and measurements:
+ Thermal analysis
+ Viscosity measurements
+ Determination of technological parameters such as gelling time and exothermic processes
+[TEXT] (in 10bab9d) DUROMER is a supplier of cast resin applications in all areas of electrical engineering, especially in power engineering, high and medium voltage technology, light and cable measurement technology as well as sensor and X-ray technology.
+ We work together with companies including:
+ Siemens
+ Philips
+ Megger
+[TEXT] (in 10bab9d) Bergener Ring 65 – 67 D 
+01458 Ottendorf-Okrilla 
+Phone: +49 (35205) 62 140 
+Fax: +49 (035205) 62 141 
+Email: info@duromer.de
+[TEXT] (in 10bab9d) Frank Karschau 
+Sales Manager East Europe
+ Bergener Ring 65 – 67 D 
+01458 Ottendorf-Okrilla 
+Phone: +49 35 205 / 62 212
+Mobile +49 173 397 1102
+Email: frank.karschau@ritz-international.com
+[PDFS] https://ritz-international.com/wp-content/uploads/produktionsuebersicht.pdf
+[TEMPLATES] 9197 1195 1199 1202 1205

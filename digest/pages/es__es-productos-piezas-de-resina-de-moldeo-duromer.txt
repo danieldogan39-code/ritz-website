@@ -1,0 +1,131 @@
+# Componentes de resina de moldeo Duromer - RITZ
+URL: https://ritz-international.com/es/productos/piezas-de-resina-de-moldeo-duromer/  status=200 lang=es kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "es_ES", "og:type": "article", "og:title": "Componentes de resina de moldeo Duromer - RITZ", "og:description": "Inicio Componentes de resina de moldeo Duromer Nuestra filial DUROMER se especializa en la aplicación de resinas de moldeo en el sector eléctrico. DUROMER desarrolla y formula masas de resina de moldeo para aplicaciones eléctricas de baja y media tensión, así como para electrónica. Nuestros especialistas diseñan y producen dispositivos y piezas moldeadas aisladas con […]", "og:url"
+canonical: https://ritz-international.com/produkte/giessharzteile-duromer/
+hreflang: [['en', 'https://ritz-international.com/en/products/duromer-cast-resin-parts/'], ['fr', 'https://ritz-international.com/fr/produits/pieces-en-resine-coulee-duromer/'], ['de', 'https://ritz-international.com/produkte/giessharzteile-duromer/'], ['hu', 'https://ritz-international.com/hu/termekek/duromer-oentoett-gyanta-alkatreszek/'], ['es', 'https://ritz-international.com/es/productos/piezas-de-resina-de-moldeo-duromer/'], ['x-default', 'https://ritz-international.com/produkte/giessharzteile-duromer/']]
+
+[H H2] Componentes de resina de moldeo Duromer
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/introduction_image_giessharzteile_duromer-e1705680313569.jpg alt=''
+[TEXT] Nuestra filial DUROMER se especializa en la aplicación de resinas de moldeo en el sector eléctrico.
+ DUROMER desarrolla y formula masas de resina de moldeo para aplicaciones eléctricas de baja y media tensión, así como para electrónica. Nuestros especialistas diseñan y producen dispositivos y piezas moldeadas aisladas con resina de moldeo para su aplicación en la tecnología de energía eléctrica. En el área de ingeniería, le ofrecemos asesoramiento en la selección de materiales y procesos, así como en diseños específicos para los clientes.
+ Las principales áreas de producción de DUROMER incluyen la producción de masas de resina de moldeo y su procesamiento en piezas aislantes, así como la fabricación de dispositivos eléctricos con aislamiento sólido.
+ DUROMER dispone de la certificación ISO 9001 desde 1998.
+[LIST] Resumen de producción <https://ritz-international.com/wp-content/uploads/produktionsuebersicht.pdf>
+[H H2] Contacto
+[H H2] Gottfried Schuster
+[H H2] Desarrollo / Ingeniería técnica / Ventas
+[LIST] gottfried.schuster@ritz-international.com <mailto:gottfried.schuster@ritz-international.com>
+[H H2] Frank Karschau
+[H H2] Application Engineer
+[LIST] frank.karschau@ritz-international.com <mailto:torsten.hilbert@ritz-international.com>
+[template] ¿Qué son los durómeros?
+El grupo de los termoestables, a menudo denominados durómeros, incluye los plásticos que se solidifican por reacción química. Normalmente reaccionan con una poliadición y se entrecruzan para formar un entramado de macromoléculas espacialmente próximas, lo que confiere al termoestable su elevada resistencia mecánica. Este endurecimiento por cambio de la estructura de la molécula es irreversible.
+Los termoestables no tienen rango de reblandecimiento, el material conserva su resistencia incluso a altas temperaturas y tiene una gran resistencia al calor. Los termoestables se caracterizan por su dureza y rigidez. El bajo coeficiente de dilatación garantiza una gran estabilidad dimensional. El comportamiento al fuego de los termoestables también es ventajoso.
+Gama de servicios
+Asesoramiento en la producción de masas y componentes de resina de moldeo
+Estamos a su disposición para brindarle asesoramiento sobre el diseño de componentes de resina de moldeo, la construcción de piezas aislantes eléctricas y la fabricación de las herramientas necesarias.
+Independientemente del fabricante, le recomendamos las resinas de moldeo adecuadas para sus productos y sus técnicas de procesamiento óptimas.
+También ponemos a su disposición nuestros conocimientos a la hora de seleccionar máquinas de procesamiento adecuadas para cada tarea.
+Producción de masas de resina de moldeo
+La formulación especial de las resinas de moldeo es nuestra clave para lograr un producto de calidad.
+A partir del análisis de las ventajas y desventajas de distintos sistemas de resinas de moldeo, se mezclan los diferentes componentes según los requisitos de la pieza acabada.
+DUROMER fabrica principalmente a base de poliuretanos y actúa como socio de sistemas de Bayer Material Science AG.Aquí puede descargarse un resumen general de los sistemas de resina de moldeo a base de poliuretano fabricados por DUROMER. Para obtener más información, contáctenos por correo electrónico o por teléfono.
+Del desarrollo a la producción en serie
+Nuestros conocimientos especializados en sistemas de resina de moldeo se utilizan en el desarrollo inicial y continuo de piezas moldeadas.
+Todos los sistemas se prueban y documentan en nuestro laboratorio una vez terminados. Esto incluye pruebas de desarrollo con respecto a la capacidad aislante, la ausencia de descargas parciales y el cumplimiento de los requisitos climáticos con los certificados correspondientes.
+En la fabricación de piezas moldeadas se utilizan máquinas de resina de moldeo tanto para colada al vacío como para el proceso de gelificación a presión.
+Equipamiento y equipo técnico
+Equipamiento
+Sistemas de colada al vacío
+Tecnología de gelificación a presión
+Tecnología de disolución
+Unidades de cierre
+Tecnología de mezcla y dosificación
+Tecnología de laboratorio
+Mediante nuestra tecnología de laboratorio garantizamos la calidad de los productos. Realizamos los siguientes análisis y mediciones, entre otros:
+Análisis térmicos
+Mediciones d
+[ACC] (in cdf037c) <¿Qué son los durómeros?> tpl=9197 El grupo de los termoestables, a menudo denominados durómeros, incluye los plásticos que se solidifican por reacción química. Normalmente reaccionan con una poliadición y se entrecruzan para formar un entramado de macromoléculas espacialmente próximas, lo que confiere al termoestable su elevada resistencia mecánica. Este endurecimiento por cambio de la estructura de la molécula es irreversible.
+ Los termoestables no tienen rango de reblandecimiento, el material conserva su resistencia incluso a altas temperaturas y tiene una gran resistencia al calor. Los termoestables se caracterizan por su dureza y rigidez. El bajo coeficiente de dilatación garantiza una gran estabilidad dimensional. El comportamiento al fuego de los termoestables también es ventajoso. || <Gama de servicios> tpl=1195 Asesoramiento en la producción de masas y componentes de resina de moldeo
+ Estamos a su disposición para brindarle asesoramiento sobre el diseño de componentes de resina de moldeo, la construcción de piezas aislantes eléctricas y la fabricación de las herramientas necesarias.
+ Independientemente del fabricante, le recomendamos las resinas de moldeo adecuadas para sus productos y sus técnicas de procesamiento óptimas.
+ También ponemos a su disposición nuestros conocimientos a la hora de seleccionar máquinas de procesamiento adecuadas para cada tarea.
+ Producción de masas de resina de moldeo
+ La formulación especial de las resinas de moldeo es nuestra clave para lograr un producto de calidad.
+ A partir del análisis de las ventajas y desventajas de distintos sistemas de resinas de moldeo, se mezclan los diferentes componentes según los requisitos de la pieza acabada.
+ DUROMER fabrica principalmente a base de poliuretanos y actúa como socio de sistemas de Bayer Material Science AG.
+Aquí puede descargarse un resumen general de los sistemas de resina de moldeo a base de poliuretano fabricados por DUROMER. Para obtener más información, contáctenos por correo electrónico o por teléfono.
+ Del desarrollo a la producción en serie
+ Nuestros conocimientos especializados en sistemas de resina de moldeo se utilizan en el desarrollo inicial y continuo de piezas moldeadas.
+ Todos los sistemas se prueban y documentan en nuestro laboratorio una vez terminados. Esto incluye pruebas de desarrollo con respecto a la capacidad aislante, la ausencia de descargas parciales y el cumplimiento de los requisitos climáticos con los certificados correspondientes.
+ En la fabricación de piezas moldeadas se utilizan máquinas de resina de moldeo tanto para colada al vacío como para el proceso de gelificación a presión. || <Equipamiento y equipo técnico> tpl=1199 Equipamiento
+ Sistemas de colada al vacío
+ Tecnología de gelificación a presión
+ Tecnología de disolución
+ Unidades de cierre
+ Tecnología de mezcla y dosificación
+ Tecnología de laboratorio
+ Mediante nuestra tecnología de laboratorio garantizamos la calidad de los productos. Realizamos los siguientes análisis y mediciones, entre otros:
+ Análisis térmicos
+ Mediciones de viscosidad
+ Determinación de parámetros tecnológicos como el tiempo de gelificación y las curvas exotérmicas || <Referencias> tpl=1202 DUROMER es proveedor de aplicaciones de resina de moldeo en todos los ámbitos de la ingeniería eléctrica, especialmente en las tecnologías de energía, de alta y media tensión, de medición de luz y cables, así como de sensores y rayos X.
+ Trabajamos con las siguientes empresas, entre otras:
+ Siemens
+ Philips
+ Megger || <Direcciones de contacto> tpl=1205 Anillo Bergener 65 – 67 D 
+01458 Ottendorf-Okrilla 
+Teléfono: +49 (35205) 62 140 
+Fax: +49 (035205) 62 141 
+Correo electrónico: info@duromer.de
+ Frank Karschau 
+Director de Ventas para Europa del Este
+ Anillo Bergener 65 – 67 D 
+01458 Ottendorf-Okrilla 
+Teléfono: +49 35 205 / 62 212
+Móvil +49 173 397 1102
+Correo electrónico: frank.karschau@ritz-international.com
+[TEXT] (in 10bab9d) El grupo de los termoestables, a menudo denominados durómeros, incluye los plásticos que se solidifican por reacción química. Normalmente reaccionan con una poliadición y se entrecruzan para formar un entramado de macromoléculas espacialmente próximas, lo que confiere al termoestable su elevada resistencia mecánica. Este endurecimiento por cambio de la estructura de la molécula es irreversible.
+ Los termoestables no tienen rango de reblandecimiento, el material conserva su resistencia incluso a altas temperaturas y tiene una gran resistencia al calor. Los termoestables se caracterizan por su dureza y rigidez. El bajo coeficiente de dilatación garantiza una gran estabilidad dimensional. El comportamiento al fuego de los termoestables también es ventajoso.
+[H H2] (in 10bab9d) Asesoramiento en la producción de masas y componentes de resina de moldeo
+[TEXT] (in 10bab9d) Estamos a su disposición para brindarle asesoramiento sobre el diseño de componentes de resina de moldeo, la construcción de piezas aislantes eléctricas y la fabricación de las herramientas necesarias.
+ Independientemente del fabricante, le recomendamos las resinas de moldeo adecuadas para sus productos y sus técnicas de procesamiento óptimas.
+ También ponemos a su disposición nuestros conocimientos a la hora de seleccionar máquinas de procesamiento adecuadas para cada tarea.
+[H H2] (in 10bab9d) Producción de masas de resina de moldeo
+[TEXT] (in 10bab9d) La formulación especial de las resinas de moldeo es nuestra clave para lograr un producto de calidad.
+ A partir del análisis de las ventajas y desventajas de distintos sistemas de resinas de moldeo, se mezclan los diferentes componentes según los requisitos de la pieza acabada.
+ DUROMER fabrica principalmente a base de poliuretanos y actúa como socio de sistemas de Bayer Material Science AG.
+Aquí puede descargarse un resumen general de los sistemas de resina de moldeo a base de poliuretano fabricados por DUROMER. Para obtener más información, contáctenos por correo electrónico o por teléfono.
+[H H2] (in 10bab9d) Del desarrollo a la producción en serie
+[TEXT] (in 10bab9d) Nuestros conocimientos especializados en sistemas de resina de moldeo se utilizan en el desarrollo inicial y continuo de piezas moldeadas.
+ Todos los sistemas se prueban y documentan en nuestro laboratorio una vez terminados. Esto incluye pruebas de desarrollo con respecto a la capacidad aislante, la ausencia de descargas parciales y el cumplimiento de los requisitos climáticos con los certificados correspondientes.
+ En la fabricación de piezas moldeadas se utilizan máquinas de resina de moldeo tanto para colada al vacío como para el proceso de gelificación a presión.
+[H H2] (in 10bab9d) Equipamiento
+[TEXT] (in 10bab9d) Sistemas de colada al vacío
+ Tecnología de gelificación a presión
+ Tecnología de disolución
+ Unidades de cierre
+ Tecnología de mezcla y dosificación
+[H H2] (in 10bab9d) Tecnología de laboratorio
+[TEXT] (in 10bab9d) Mediante nuestra tecnología de laboratorio garantizamos la calidad de los productos. Realizamos los siguientes análisis y mediciones, entre otros:
+ Análisis térmicos
+ Mediciones de viscosidad
+ Determinación de parámetros tecnológicos como el tiempo de gelificación y las curvas exotérmicas
+[TEXT] (in 10bab9d) DUROMER es proveedor de aplicaciones de resina de moldeo en todos los ámbitos de la ingeniería eléctrica, especialmente en las tecnologías de energía, de alta y media tensión, de medición de luz y cables, así como de sensores y rayos X.
+ Trabajamos con las siguientes empresas, entre otras:
+ Siemens
+ Philips
+ Megger
+[TEXT] (in 10bab9d) Anillo Bergener 65 – 67 D 
+01458 Ottendorf-Okrilla 
+Teléfono: +49 (35205) 62 140 
+Fax: +49 (035205) 62 141 
+Correo electrónico: info@duromer.de
+[TEXT] (in 10bab9d) Frank Karschau 
+Director de Ventas para Europa del Este
+ Anillo Bergener 65 – 67 D 
+01458 Ottendorf-Okrilla 
+Teléfono: +49 35 205 / 62 212
+Móvil +49 173 397 1102
+Correo electrónico: frank.karschau@ritz-international.com
+[PDFS] https://ritz-international.com/wp-content/uploads/produktionsuebersicht.pdf
+[TEMPLATES] 9197 1195 1199 1202 1205

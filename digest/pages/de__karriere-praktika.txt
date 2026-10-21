@@ -1,0 +1,22 @@
+# Praktika - RITZ
+URL: https://ritz-international.com/karriere/praktika/  status=200 lang=de kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "description": "RITZ bietet vielfältige Praktikumsmöglichkeiten: von Entwicklung bis Vertrieb. Starte deine Karriere beim führenden Hersteller von Messwandlern und gestalte die Zukunft der Energieversorgung aktiv mit.", "og:locale": "de_DE", "og:type": "article", "og:title": "Praktika - RITZ", "og:description": "RITZ bietet vielfältige Praktikumsmöglichkeiten: von Entwicklung bis Vertrieb. Starte deine Karriere beim führenden Hersteller von Messwandlern und gestalte die Zukunft der Energieversorgung akti
+canonical: https://ritz-international.com/karriere/praktika/
+hreflang: [['en', 'https://ritz-international.com/en/career/internships/'], ['fr', 'https://ritz-international.com/fr/carriere/stages/'], ['de', 'https://ritz-international.com/karriere/praktika/'], ['hu', 'https://ritz-international.com/hu/karrier/gyakorlatok/'], ['es', 'https://ritz-international.com/es/carrera-profesional/practicas/'], ['x-default', 'https://ritz-international.com/karriere/praktika/']]
+
+[H H2] Deine Berufswahl auf dem Prüfstand!
+[TEXT] Ein praktischer Einblick. Du peilst einen Job in der Elektroindustrie an? Mit einem Praktikum bei RITZ Instrument Transformers GmbH kannst du deinen beruflichen Wunsch aus nächster Nähe kennen lernen und viele praktische Erfahrungen sammeln. 
+ Ein Praktikum hilft dir auch dabei, deine eigenen Stärken und Schwächen auf den Prüfstand zu stellen, wichtige Kontakte zu knüpfen und deinen Lebenslauf aufzuwerten. Und: Auch bei Studienarbeiten, z.B. im Rahmen einer Abschlussarbeit, unterstützen wir dich gerne.
+[H H2] Kontakt
+[H H2] Hamburg
+[LIST] personal.hamburg@ritz-international.com <mailto:personal.hamburg@ritz-international.com>
+[H H2] KIRCHAICH
+[LIST] personal.kirchaich@ritz-international.com <mailto:personal.kirchaich@ritz-international.com>
+[H H2] DRESDEN
+[LIST] personal.dresden@ritz-international.com <mailto:personal.dresden@ritz-international.com>
+[IMG] https://ritz-international.com/wp-content/uploads/praktika_intro_Bild_links.webp alt=''
+[H H2] praktika
+[TEXT] Schüler/innen und Student/innen verschiedener Fachrichtungen können ihr Praktikum bei uns absolvieren. Bitte richte deine Anfrage dazu mit einem kurzen Lebenslauf und deinem letzten Zeugnis unter Angabe des gewünschten Standortes, des Zeitraums und des Fachbereichs an den jeweiligen Standort.
+[IMG] https://ritz-international.com/wp-content/uploads/praktika_intro_Bild_rechts.webp alt=''
+[H H2] studienarbeit
+[TEXT] Wir betreuen Studien- und Abschlussarbeiten aus ganz verschiedenen Fachbereichen. Bitte stelle deine Anfrage dazu unter Angabe deines Studienganges und ggf. des geplanten Themas an die oben genannten Standorte.

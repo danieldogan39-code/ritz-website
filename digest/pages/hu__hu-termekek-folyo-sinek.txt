@@ -1,0 +1,69 @@
+# ÁRAMVEZETŐ SÍNEK SIS - RITZ
+URL: https://ritz-international.com/hu/termekek/folyo-sinek/  status=200 lang=hu kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "hu_HU", "og:type": "article", "og:title": "ÁRAMVEZETŐ SÍNEK SIS - RITZ", "og:description": "Kezdőoldal SIS GYŰJTŐSÍN-RENDSZEREK Előnyök A szilárd szigetelésű SIS gyűjtősín rendszer alternatívát kínál a párhuzamosan kapcsolt kábelekkel és a fém tokozású síncsatornákkal szemben, különösen nagy áram- és teljesítmények átvitelére, valamint korlátozott helyigény esetén. A következő rendszerspecifikus előnyök a teljesen szigetelt, kapacitívan vezérelt gyűjtősínek alkalmazása mellett szólnak: Kial
+canonical: https://ritz-international.com/hu/termekek/folyo-sinek/
+hreflang: [['en', 'https://ritz-international.com/en/products/current-rails/'], ['fr', 'https://ritz-international.com/fr/produits/fils-electriques/'], ['de', 'https://ritz-international.com/produkte/stromschienen/'], ['hu', 'https://ritz-international.com/hu/termekek/folyo-sinek/'], ['es', 'https://ritz-international.com/es/productos/carriles-actuales/'], ['x-default', 'https://ritz-international.com/produkte/stromschienen/']]
+
+[H H2] SIS GYŰJTŐSÍN-RENDSZEREK
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/introduction_image_stromschienen-e1705680286556.jpg alt=''
+[H H3] Előnyök
+[TEXT] A szilárd szigetelésű SIS gyűjtősín rendszer alternatívát kínál a párhuzamosan kapcsolt kábelekkel és a fém tokozású síncsatornákkal szemben, különösen nagy áram- és teljesítmények átvitelére, valamint korlátozott helyigény esetén.
+ A következő rendszerspecifikus előnyök a teljesen szigetelt, kapacitívan vezérelt gyűjtősínek alkalmazása mellett szólnak:
+ Kialakítás 
+ Helytakarékos
+ Az átalakított tér az építés során megfelelően kisebbre méretezhető.
+ Nagyon kis hajlítási sugarak (anyagtól függően)
+ Bármilyen geometriai forma megvalósítható (az anyagtól függően)
+Felszerelés 
+ Alacsony összeszerelési költségek a szabványosított szerelvények és rögzítőelemek használatának köszönhetően
+ Alacsony projekttervezési ráfordítás a megrendelő részéről
+Biztonság 
+ Kapacitással szabályozott mezőelosztás
+ Nagy termikus és dinamikus rövidzárlati-
+ellenállás
+ Érintésbiztonság a koncentrikusan beágyazott talajtakaró területén
+ A fázisok rövidzárlatai gyakorlatilag kizártak
+ Természetes hűtés a megfelelően méretezett vezetőnek köszönhetően
+ Nagyfokú üzembiztonság a gyárban végzett rutinellenőrzésnek köszönhetően
+[H H2] Kapcsolattartó
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/icon_contact_flag_de.svg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/icon_contact_flag_en.svg alt=''
+[H H2] Florian Däumler
+[LIST] +49 151 22310380 <tel:+4915122310380> | Csevegjen velem az MS Teamsen <https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fchat%2F0%2F0%3Fusers%3Dflorian.daeumler%40ritz-international.com&type=chat&deeplinkId=e17d460f-1fb0-4af1-87fa-6419c131b82e&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true>
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/icon_contact_flag_de.svg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/icon_contact_flag_en.svg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/icon_contact_flag_ru.svg alt=''
+[H H2] Roman Ravilov
+[LIST] +49 151 61321024 <tel:+4915161321024> | Csevegjen velem az MS Teamsen <https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fchat%2F0%2F0%3Fusers%3Droman.ravilov%40ritz-international.com&type=chat&deeplinkId=ef4fc145-d0c5-416b-b2e3-27bc29fd2855&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true>
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/icon_contact_flag_de.svg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/icon_contact_flag_en.svg alt=''
+[H H2] Sascha Kensche
+[LIST] +49 172 1922431 <tel:+491721922431> | Csevegjen velem az MS Teamsen <https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fchat%2F0%2F0%3Fusers%3Dsascha.kensche%40ritz-international.com&type=chat&deeplinkId=4caf1354-e335-42bf-9144-91f591fa00e7&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true>
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/icon_contact_flag_de.svg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/icon_contact_flag_en.svg alt=''
+[H H2] Stephan Neimann
+[LIST] +49 1511 2974172 <tel:+4915112974172> | Csevegjen velem az MS Teamsen <https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fchat%2F0%2F0%3Fusers%3Dstephan.neimann%40ritz-international.com&type=chat&deeplinkId=7b922f11-40fe-456b-8e46-95312114589c&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true>
+[H H2] Kapcsolat
+[LIST] sales.sis@ritz-international.com <mailto:%20sales.sis@ritz-international.com>
+[H H3] Gyártási hosszok
+[TEXT] A sínek hossza és geometriai kialakítása a gyártási létesítményektől, a helyi viszonyoktól és a szállítóeszközöktől függ.
+[H H3] Többrészes síncsatlakozások
+[TEXT] A gyártóberendezések, a szállíthatóság és a kezelhetőség miatt a térben kiterjedt gyűjtősín-csatlakozások szelvényekből készülnek. A folyamatos, potenciálmentes sínvezetés biztosítása érdekében a szelvények közé a vezérelt gyűjtősínvégeket takaró szigetelt karmantyút szerelnek.
+[H H3] Rögzítőelemek
+[TEXT] A sínek rögzítéséhez sokoldalú, mégis nagyon könnyen felszerelhető moduláris rendszer áll rendelkezésre. Szükség esetén a beállítások a helyszínen is elvégezhetők. A sínrögzítés alumínium kettős „C” profilból, sarokkonzolokból, kalapácsfejű csavarokból és műanyag rögzítőbilincsekből áll.
+ A rögzítőbilincseket „támasztó csapágyas” vagy „siklócsapágyas” kialakítással kell elkészíteni, hogy a sín tengelyirányú csúszása több rögzítési ponton is lehetséges legyen.
+ A sínrögzítés alátámasztási pontjait elsősorban a rendszer rövidzárlati erői határozzák meg.
+ Azt is biztosítani kell, hogy a hálózati frekvencián és annak felharmonikusainál ne lépjenek fel mechanikai rezonanciák. A sínek közötti támaszok távolságát ennek megfelelően kell kiszámítani.
+ Erre a célra rendelkezésre áll egy számítási program, amely a már említett paramétereken kívül figyelembe veszi a következő tényezőket is:
+ Sínátmérő
+ Fázistávolság
+ Sín tömege
+ Hajlítási merevség az adott anyagnál.
+ A távolságokat minden egyes megrendelésnél újra kell számítani.
+[H H3] Rögzítőelemek
+[TEXT] Itt különbséget kell tenni a „támasztó csapágyak” és a „siklócsapágyak” között. Azt, hogy sikló- vagy támasztoó csapágyak használatára kerül-e sor, a támasztási távolságok számítása adja meg a választ. A támasztó csapágyak szerkezetét gumitárcsákkal, a siklócsapágyakét fémtárcsákkal tervezik.
+[H H3] Földelés
+[TEXT] A sínnel párhuzamosan általában egy földelősínt kell lefektetni, amelynek keresztmetszetét az esetlegesen fellépő rövidzárlati áramokra kell méretezni. Minden sínt, összekötő karmantyút és rögzítőprofilt ezen a földelősínen keresztül kell a földelési potenciálra csatlakoztatni.
+[H H3] Csatlakoztatási lehetőségek
+[TEXT] A sínek egymáshoz csatlakoztatása szabványosított, rugalmas csatlakozójú, megfelelő áramerősségre méretezett, lapos csatlakozókkal történik. Az egymással összekapcsolt rendszerek rendszerhez csatlakoztatása céljából a kialakítások széles választéka áll rendelkezésre. Különleges vevői igények esetén az optimális csatlakozás érdekében odaillő csatlakozások határozhatók meg.
+ Ha mindkét oldalon fix csatlakozásokra van szükség, akkor a síneket általában fel kell osztani, és karmantyú segítségével kell összekötni őket, hogy azok a tűréseket kiegyenlítsék, és lehetővé tegyék a sín hőtágulását.

@@ -1,0 +1,49 @@
+# Impresszum - RITZ
+URL: https://ritz-international.com/hu/impresszum/  status=200 lang=hu kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "hu_HU", "og:type": "article", "og:title": "Impresszum - RITZ", "og:description": "RITZ impresszum RITZ Instrument Transformers GmbHWandsbeker Zollstraße 92-9822041 HamburgTel.: +49 40 51123 – 0Fax: +49 40 51123 – 322E-mail: info@ritz-international.comInternet: www.ritz-international.com Megbízott ügyvezető igazgató:Dr. Andreas Grambow, Dr. Christian Henze Cégbíróság:Hamburgi helyi bíróság Nyilvántartási szám:HR B 102486 Uniós adószám a forgalmi adóról szóló törvény 27a. §-a szerint:DE 140 2
+canonical: https://ritz-international.com/impressum/
+hreflang: [['en', 'https://ritz-international.com/en/imprint/'], ['fr', 'https://ritz-international.com/fr/mentions-legales/'], ['de', 'https://ritz-international.com/impressum/'], ['hu', 'https://ritz-international.com/hu/impresszum/'], ['es', 'https://ritz-international.com/es/pie-de-imprenta/'], ['x-default', 'https://ritz-international.com/impressum/']]
+
+[H H2] RITZ impresszum
+[TEXT] RITZ Instrument Transformers GmbH 
+Wandsbeker Zollstraße 92-98
+22041 Hamburg
+Tel.: +49 40 51123 – 0
+Fax: +49 40 51123 – 322
+E-mail:  info@ritz-international.com 
+Internet:  www.ritz-international.com 
+ Megbízott ügyvezető igazgató: 
+Dr. Andreas Grambow, Dr. Christian Henze
+ Cégbíróság: 
+Hamburgi helyi bíróság
+ Nyilvántartási szám: 
+HR B 102486
+ Uniós adószám a forgalmi adóról szóló törvény 27a. §-a szerint: 
+DE 140 211 002
+ Adóazonosító: 
+51/780/04184
+ Az RStV 55. szakasz 2. §-a szerinti felelős személy: Jogi nyilatkozat: 
+A tartalom gondos ellenőrzése ellenére nem vállalunk felelősséget a külső hivatkozások tartalmáért. A hivatkozott oldalak tartalmáért kizárólag a hivatkozott oldalak üzemeltetői felelősek.
+ Koncepció, tervezés és megvalósítás: 
+SERIOUS GmbH
+Jungfernstieg 38
+20354 Hamburg
+Internet: www.serious.de 
+ JOGI TUDNIVALÓK
+ Tartalomért vállalt felelősség
+ Weboldalunk tartalmát a legnagyobb gondossággal állítottuk össze. A tartalom pontosságáért, teljességéért és aktualitásáért azonban nem tudunk felelősséget vállalni.
+ Szolgáltatóként a TMG (német telemédiatörvény) 7. § (1) bekezdése és az általános jogszabályok értelmében mi magunk vagyunk felelősek az oldalakon található tartalmakért. A TMG 8–10. §-ai szerint azonban szolgáltatóként nem vagyunk kötelesek az átvitt vagy tárolt, harmadik féltől származó információkat ellenőrizni, illetve a jogellenes tevékenységre utaló körülményeket kivizsgálni. Az általános jogszabályok szerinti, az információk eltávolítására vagy használatának megakadályozására vonatkozó kötelezettségek ettől függetlenül fennmaradnak. Az ezzel kapcsolatos felelősségre vonás azonban csak a konkrét jogsértésről való tudomásszerzéstől kezdve lehetséges. Amint tudomást szerzünk az ilyen jogsértésekről, azonnal eltávolítjuk ezt a tartalmat.
+ Felelősség a hivatkozásokért
+ Weboldalunk külső, harmadik felek weboldalaira mutató hivatkozásokat tartalmaz, amelyek tartalmára nincs befolyásunk. Ezért nem tudunk felelősséget vállalni a külső tartalmakért. A hivatkozott oldalak tartalmáért mindig a mindenkori szolgáltató vagy az oldalak üzemeltetője a felelős. A hivatkozott oldalakat a hivatkozás időpontjában ellenőriztük az esetleges törvénysértések szempontjából. Jogellenes tartalom a hivatkozás időpontjában nem volt felismerhető. A hivatkozott oldalak tartalmának állandó ellenőrzése azonban nem észszerű a jogsértés konkrét bizonyítéka nélkül. Amennyiben jogszabálysértésről szerezünk tudomást, a hivatkozásokat haladéktalanul eltávolítjuk.
+ Szerzői jogok
+ Az oldalak üzemeltetői által ezen oldalakon létrehozott tartalmak és művek a német szerzői jog hatálya alá tartoznak. A harmadik féltől származó hozzájárulások ekként vannak megjelölve. A sokszorosítás, szerkesztés, terjesztés és a szerzői jogi korlátokon kívüli bármilyen felhasználás csak az adott szerző vagy alkotó írásbeli hozzájárulásával lehetséges. Az oldal letöltése és másolása kizárólag magánjellegű, nem kereskedelmi célú felhasználásra engedélyezett.
+ A weboldal üzemeltetői igyekeznek mindig tiszteletben tartani mások szerzői jogait, illetve igyekeznek saját maguk által készített műveket vagy licencmentes műveket használni.
+ Adatvédelem
+ Amennyiben weboldalunkon személyes adatokat (pl. név, cím vagy e-mail-cím) gyűjtünk, az a lehetőségekhez mérten mindig önkéntes alapon történik. Az ajánlatok és szolgáltatások igénybevétele, amennyire csak mód van rá, mindig személyes adatok megadása nélkül lehetséges.
+ Szeretnénk felhívni a figyelmet arra, hogy az interneten keresztüli adatátvitel (pl. az e-mailes kommunikáció során) biztonsági résekkel járhat. Az adatok teljes körű védelme harmadik személyek hozzáférése ellen nem lehetséges.
+ Ezúton kifejezetten tiltjuk, hogy az impresszumadási kötelezettség keretében közzétett elérhetőségi adatokat harmadik személyek kéretlen reklám- és tájékoztató anyagok küldésére használják fel. A weboldal üzemeltetői kifejezetten fenntartják a jogot, hogy kéretlen rekláminformációk, például levélszemét e-mailek küldése esetén jogi lépéseket tegyenek.
+ Google Analytics
+ Ez a weboldal a Google Inc („Google”) által nyújtott Google Analytics webanalitikai szolgáltatást használja. A Google Analytics „cookie-kat” használ, amelyek az Ön számítógépén elhelyezett szöveges fájlok, és amelyek segítségével a weboldal elemezni tudja, hogy a felhasználók hogyan használják a weboldalt. A cookie-k által generált, a weboldal használatára vonatkozó információkat általában a Google egyik USA-beli kiszolgálójára továbbítják és ott tárolják.
+ Ha azonban az IP-anonimizálás aktiválva van ezen a weboldalon, az Ön IP-címét a Google először az Európai Unió tagállamaiban vagy az Európai Gazdasági Térségről szóló megállapodás más aláíró államaiban rövidíti meg. A teljes IP-cím csak kivételes esetekben kerül továbbításra a Google egyik USA-beli kiszolgálójára, és ott kerül rövidítésre. A weboldal üzemeltetőjének megbízásából a Google ezeket az információkat a weboldal használatának elemzésére, a weboldal tevékenységéről szóló jelentések összeállítására, valamint a weboldal üzemeltetője számára a weboldal tevékenységével és az internethasználattal kapcsolatos egyéb szolgáltatások nyújtására használja fel. A Google Analytics eljárása keretében a böngészője által továbbított IP-cím nem kerül összevonásra a Google egyéb adataival.
+ A cookie-k használatát a böngészője megfelelő beállításainak kiválasztásával elutasíthatja, azonban kérjük, vegye figyelembe, hogy ebben az esetben előfordulhat, hogy nem tudja teljes mértékben használni a weboldal funkcióit. A cookie-k által generált és a weboldal használatával kapcsolatos adatok (beleértve az Ön IP-címét is) Google általi gyűjtését, valamint ezen adatok Google általi feldolgozását is megakadályozhatja a következő hivatkozáson keresztül elérhető böngésző plug-in letöltésével és telepítésével: http://tools.google.com/dlpage/gaoptout?hl=de .
+ Források: eRecht24 jogi nyilatkozat , Google Analytics jogi nyilatkozat

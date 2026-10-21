@@ -1,0 +1,22 @@
+# Internships - RITZ
+URL: https://ritz-international.com/en/career/internships/  status=200 lang=en kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "en_US", "og:type": "article", "og:title": "Internships - RITZ", "og:description": "Home Put your career choice to the test! A practical insight.Are you aiming for a job in the electrical industry?With an internship at RITZ Instrument Transformers GmbH, you can get to know all the ins and outs of your career of choice, whilst picking up lots of practical experience.  An internship also helps you to […]", "og:url": "https://ritz-international.com/en/career/internships/", "og:site_name": "RITZ
+canonical: https://ritz-international.com/en/career/internships/
+hreflang: [['en', 'https://ritz-international.com/en/career/internships/'], ['fr', 'https://ritz-international.com/fr/carriere/stages/'], ['de', 'https://ritz-international.com/karriere/praktika/'], ['hu', 'https://ritz-international.com/hu/karrier/gyakorlatok/'], ['es', 'https://ritz-international.com/es/carrera-profesional/practicas/'], ['x-default', 'https://ritz-international.com/karriere/praktika/']]
+
+[H H2] Put your career choice to the test!
+[TEXT] A practical insight. Are you aiming for a job in the electrical industry?With an internship at RITZ Instrument Transformers GmbH, you can get to know all the ins and outs of your career of choice, whilst picking up lots of practical experience. 
+ An internship also helps you to put your own strengths and weaknesses to the test, make important contacts and enhance your CV.What's more: we are also happy to support you with student research projects, e.g. as part of a dissertation or thesis.
+[H H2] Contact
+[H H2] Hamburg
+[LIST] personal.hamburg@ritz-international.com <mailto:personal.hamburg@ritz-international.com>
+[H H2] KIRCHAICH
+[LIST] personal.kirchaich@ritz-international.com <mailto:personal.kirchaich@ritz-international.com>
+[H H2] DRESDEN
+[LIST] personal.dresden@ritz-international.com <mailto:personal.dresden@ritz-international.com>
+[IMG] https://ritz-international.com/wp-content/uploads/praktika_intro_Bild_links.webp alt=''
+[H H2] internships
+[TEXT] School and university students from various disciplines can complete an internship with us.Please send your enquiry to the relevant location with a short CV and your most recent school report, stating your preferred location, time period and department.
+[IMG] https://ritz-international.com/wp-content/uploads/praktika_intro_Bild_rechts.webp alt=''
+[H H2] student research project
+[TEXT] We supervise student research projects and dissertations/theses from a wide range of disciplines.Please send your enquiry to the above-mentioned locations, stating your degree programme and, if applicable, the planned topic.

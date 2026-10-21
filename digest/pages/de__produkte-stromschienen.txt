@@ -1,0 +1,74 @@
+# STROMSCHIENEN SIS - RITZ
+URL: https://ritz-international.com/produkte/stromschienen/  status=200 lang=de kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "description": "Entdecken Sie die vollisolierten Stromschienen von RITZ Instrument Transformers. Unsere Systeme bieten Platzersparnis und hohe Sicherheit für die effiziente Energieübertragung in der Elektroindustrie.", "og:locale": "de_DE", "og:type": "article", "og:title": "STROMSCHIENEN SIS - RITZ", "og:description": "Entdecken Sie die vollisolierten Stromschienen von RITZ Instrument Transformers. Unsere Systeme bieten Platzersparnis und hohe Sicherheit für die effiziente Energieübertragung in der Elek
+canonical: https://ritz-international.com/produkte/stromschienen/
+hreflang: [['en', 'https://ritz-international.com/en/products/current-rails/'], ['fr', 'https://ritz-international.com/fr/produits/fils-electriques/'], ['de', 'https://ritz-international.com/produkte/stromschienen/'], ['hu', 'https://ritz-international.com/hu/termekek/folyo-sinek/'], ['es', 'https://ritz-international.com/es/productos/carriles-actuales/'], ['x-default', 'https://ritz-international.com/produkte/stromschienen/']]
+
+[H H2] STROMSCHIENEN SIS
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/introduction_image_stromschienen-e1705680286556.jpg alt=''
+[H H3] Vorteile
+[TEXT] Das zur Verfügung stehende vollisolierte Stromschienensystem SIS bietet speziell zur Übertragung von hohen Strömen und Leistungen und bei räumlicher Enge eine Alternative zu parallel geschalteten Kabeln und blechgekapselten Schienenkanälen.
+ Folgende systemspezifische Vorteile sprechen für den Einsatz von vollisolierten, kapazitiv gesteuerten Sammelschienen:
+ Bauweise 
+ Platzsparend
+ Umbauter Raum kann bereits bei der Erstellung entsprechend kleiner dimensioniert werden
+ Sehr kleine Biegeradien (abhängig vom Material)
+ Jegliche geometrische Formen ausführbar (abhängig vom Material)
+Montage 
+ Geringer Montageaufwand durch Verwendung von genormten Montage- und Befestigungsteilen
+ Geringer Projektierungsaufwand durch den Kunden
+Sicherheit 
+ Kapazitiv gesteuerte Feldverteilung
+ Hohe thermische und dynamische Kurzschluss-
+Festigkeit
+ Berührungssicherheit im Bereich des konzentrisch eingebetteten Erdungsbelags
+ Phasenkurzschlüsse sind nahezu ausgeschlossen
+ Natürliche Kühlung durch ausreichend dimensionierten Leiter
+ Hohe Betriebssicherheit durch Stückprüfung im Werk
+[H H2] Kontakt
+[LIST] sales.sis@ritz-international.com <mailto:%20sales.sis@ritz-international.com>
+[H H2] Ansprechpartner SIS
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/icon_contact_flag_de.svg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/icon_contact_flag_en.svg alt=''
+[H H2] Sascha Kensche
+[LIST] +49 172 1922431 <tel:+491721922431> | Chat with me on MS Teams <https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fchat%2F0%2F0%3Fusers%3Dsascha.kensche%40ritz-international.com&type=chat&deeplinkId=4caf1354-e335-42bf-9144-91f591fa00e7&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true>
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/icon_contact_flag_de.svg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/icon_contact_flag_en.svg alt=''
+[H H2] Alexander Kobelt
+[LIST] +49 151 23494805 <tel:+4915123494805> | Chat with me on MS Teams <https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fchat%2F0%2F0%3Fusers%3Dalexander.kobelt%40ritz-international.com&type=chat&deeplinkId=4caf1354-e335-42bf-9144-91f591fa00e7&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true>
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/icon_contact_flag_de.svg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/icon_contact_flag_en.svg alt=''
+[H H2] Daniel Schilling
+[LIST] +49 173 6701824 <tel:+491736701824> | Chat with me on MS Teams <https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fchat%2F0%2F0%3Fusers%3Daniel.schilling%40ritz-international.com&type=chat&deeplinkId=ef4fc145-d0c5-416b-b2e3-27bc29fd2855&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true>
+[H H2] Ansprechpartner SISD
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/icon_contact_flag_de.svg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/icon_contact_flag_en.svg alt=''
+[H H2] Florian Däumler
+[LIST] +49 151 22310380 <tel:+4915122310380> | Chat with me on MS Teams <https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fchat%2F0%2F0%3Fusers%3Dflorian.daeumler%40ritz-international.com&type=chat&deeplinkId=e17d460f-1fb0-4af1-87fa-6419c131b82e&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true>
+[H H2] Referenzen
+[LIST] Kundenreferenz SIS - Projekt BSW <https://ritz-international.com/wp-content/uploads/Kundenreferenz-SIS-Projekt-BSW.pdf>
+[H H2] Spezifikationen
+[LIST] Technische Spezifikation - SIS <https://ritz-international.com/wp-content/uploads/Technische_Spezifikation_SIS.pdf> | Beispieltexte für Ausschreibungen <https://ritz-international.com/wp-content/uploads/F2PD003_Tender_Textbesipiele_SIS_DE.pdf>
+[H H3] Fertigungslängen
+[TEXT] Die Längen und die geometrischen Konfigurationen der Schienen sind abhängig von den Fertigungseinrichtungen, den örtlichen Gegebenheiten und dem Transportmittel.
+[H H3] Mehrteilige Schienenverbindungen
+[TEXT] Räumlich ausgedehnte Sammelschienen-Verbindungen werden aus Gründen der Fertigungseinrichtungen, des Transports und des Handlings vor Ort aus Teilstücken hergestellt. Um eine durchgehende, potentialfreie Schienenführung zu gewährleisten, wird zwischen den Teilstücken eine isolierte Muffe montiert, die die gesteuerten Sammelschienen-Enden überdeckt.
+[H H3] Befestigungselemente
+[TEXT] Zur Befestigung der Schienen steht ein vielfältiges und trotzdem sehr einfach zu montierendes Baukastensystem zur Verfügung. Notfalls können hier auch auf der Baustelle Anpassungen vorgenommen werden. Die Schienenbefestigung besteht aus einem Al-Doppel-„C“-Profil, Winkeln, Hammerkopfschrauben und Befestigungsschellen aus Kunststoff.
+ Die Befestigungschellen werden/müssen als „Festlager“ oder „Gleitlager“ ausgeführt werden, so dass bei mehreren Befestigungspunkten ein axiales Gleiten der Schiene ermöglicht wird.
+ Die Stützpunkte der Schienenbefestigung werden in erster Linie durch die Kurzschlusskräfte der Anlage vorgegeben.
+ Dabei ist ebenfalls darauf zu achten, daß bei der Netzfrequenz und deren Harmonischen keine mechanischen Resonanzen auftreten. Dementsprechend sind die Abstände der Abstützungen zwischen den Schienen zu berechnen.
+ Dazu steht ein Rechenprogramm zur Verfügung, welches neben den bereits erwähnten Parametern die Faktoren
+ Schienendurchmesser
+ Phasenabstand
+ Masse der Schiene
+ Biegesteifigkeit
+des Materials enthält. Die Abstände müssen für jeden Auftrag neu gerechnet werden.
+[H H3] Befestigungsschellen
+[TEXT] Hier wird zwischen „Festlager“ und „Gleitlager“ unterschieden. Die Verwendung von Gleit- oder Festlagern ergibt sich aus der Berechnung der Stützabstände. Der Aufbau eines Festlagers wird mit Gummischeiben, die des Gleitlagers mit Metallscheiben, ausgeführt.
+[H H3] Erdung
+[TEXT] Generell muss parallel zum Schienenverlauf eine Erdungsschiene verlegt werden, deren Querschnitt auf möglicherweise auftretende Kurzschlussströme dimensioniert werden muss. Alle Schienen, Verbindungsmuffen und Befestigungsprofile müssen über diese Erdschiene mit Erdpotential verbunden werden.
+[H H3] Anschlussmöglichkeiten
+[TEXT] Um Schienen miteinander zu verbinden, werden standardisierte Flachanschlüsse mit flexiblen Verbindern eingesetzt, die auf die entsprechende Stromstärke ausgelegt sind. Für den Anschluss an die Anlagen, die miteinander verbunden werden, stehen vielfältige Ausführungen zur Verfügung. Bei speziellen Kundenwünschen können passende Anschlüsse definiert werden, um einen optimalen Anschluss zu ermöglichen.
+ Wenn beidseitig feste Anschlüsse vorzusehen sind, ist es in der Regel notwendig, die Schienen aufzuteilen und mit einer Muffe zu verbinden, um Toleranzen ausgleichen zu können und die thermische Ausdehnung der Schiene zu ermöglichen.
+[PDFS] https://ritz-international.com/wp-content/uploads/Kundenreferenz-SIS-Projekt-BSW.pdf https://ritz-international.com/wp-content/uploads/Technische_Spezifikation_SIS.pdf https://ritz-international.com/wp-content/uploads/F2PD003_Tender_Textbesipiele_SIS_DE.pdf

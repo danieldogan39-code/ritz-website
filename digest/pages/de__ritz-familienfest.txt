@@ -1,0 +1,16 @@
+# RITZ FAMILIENFEST - RITZ
+URL: https://ritz-international.com/ritz-familienfest/  status=200 lang=de kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "RITZ FAMILIENFEST - RITZ", "og:description": "Was eine Bobbycar-Bahn, Kinderscchminken und eine Hüpfburg mit RITZ zu tun haben? Sie alle waren Teil des diesjährigen Sommerfestes unseres Standortes in Ottendorf-Okrilla ! Unter dem Motto „Familienfreude“ feierten unsere Mitarbeiter zusammen mit ihren Familien die Einweihung unserer neu gebauten Versandhalle. Mit köstlichem Essen und Trinken, guter Musik und Kinderattraktionen möchten wir unseren Mita
+canonical: https://ritz-international.com/ritz-familienfest/
+hreflang: [['en', 'https://ritz-international.com/en/ritz-family-party/'], ['fr', 'https://ritz-international.com/fr/ritz-fete-de-famille/'], ['de', 'https://ritz-international.com/ritz-familienfest/'], ['hu', 'https://ritz-international.com/hu/ritz-csaladi-party/'], ['es', 'https://ritz-international.com/es/fiesta-familiar-ritz/'], ['x-default', 'https://ritz-international.com/ritz-familienfest/']]
+
+[POSTTITLE] RITZ FAMILIENFEST
+[POSTCONTENT] Was eine Bobbycar-Bahn, Kinderscchminken und eine Hüpfburg mit RITZ zu tun haben?
+ Sie alle waren Teil des diesjährigen Sommerfestes unseres Standortes in Ottendorf-Okrilla !
+ Unter dem Motto „Familienfreude“ feierten unsere Mitarbeiter zusammen mit ihren Familien die Einweihung unserer neu gebauten Versandhalle.
+ Mit köstlichem Essen und Trinken, guter Musik und Kinderattraktionen möchten wir unseren Mitarbeitern DANKE sagen!
+ Vielen Dank für eure tatkräftige Unterstützung und dass ihr das Familienfest besonders gemacht habt! Es war sehr schön, gemeinsam mit euch und eurer Familie, den Tag zu verbringen!
+ Ihr möchtet beim nächsten Mal auch dabei sein? Dann schaut schnell auf das Stellenportal in unserer.
+ Wir freuen uns auf eure Bewerbung! IMGS=https://ritz-international.com/wp-content/uploads/20230624_153724.jpg https://ritz-international.com/wp-content/uploads/20230624_160153.jpg https://ritz-international.com/wp-content/uploads/20230624_171355.jpg https://ritz-international.com/wp-content/uploads/20230624_172404.jpg LINKS=
+[BTN] Zurück -> /aktuelles/news
+[FEATURED] https://ritz-international.com/wp-content/uploads/20230624_180218-rotated_zugeschnitten.png

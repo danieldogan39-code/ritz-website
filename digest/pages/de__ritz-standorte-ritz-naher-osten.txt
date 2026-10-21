@@ -1,0 +1,8 @@
+# RITZ Naher Osten Archive - RITZ
+URL: https://ritz-international.com/ritz-standorte/ritz-naher-osten/  status=200 lang=de kind=extra
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "RITZ Naher Osten Archive - RITZ", "og:url": "https://ritz-international.com/ritz-standorte/ritz-naher-osten/", "og:site_name": "RITZ"}
+canonical: https://ritz-international.com/ritz-standorte/ritz-naher-osten/
+hreflang: [['en', 'https://ritz-international.com/en/ritz-standorte/ritz-middle-east/'], ['fr', 'https://ritz-international.com/fr/ritz-standorte/ritz-proche-orient/'], ['de', 'https://ritz-international.com/ritz-standorte/ritz-naher-osten/'], ['hu', 'https://ritz-international.com/hu/ritz-standorte/ritz-koezel-kelet/'], ['es', 'https://ritz-international.com/es/ritz-standorte/ritz-oriente-medio/'], ['x-default', 'https://ritz-international.com/ritz-standorte/ritz-naher-osten/']]
+
+[MAINHTML] RITZ Standorte: RITZ Naher Osten 
+ Standort Naher Osten

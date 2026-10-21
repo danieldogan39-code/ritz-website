@@ -1,0 +1,35 @@
+# News - RITZ
+URL: https://ritz-international.com/news/  status=200 lang=de kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "description": "Bleiben Sie auf dem Laufenden über RITZ Instrument Transformers. Erfahren Sie mehr über unsere neuesten Entwicklungen, Messeteilnahmen und Auszeichnungen in der Messwandler- und Energietechnik.", "og:locale": "de_DE", "og:type": "article", "og:title": "News - RITZ", "og:description": "Bleiben Sie auf dem Laufenden über RITZ Instrument Transformers. Erfahren Sie mehr über unsere neuesten Entwicklungen, Messeteilnahmen und Auszeichnungen in der Messwandler- und Energietechnik.", "og:url": "
+canonical: https://ritz-international.com/news/
+hreflang: [['en', 'https://ritz-international.com/en/news/'], ['fr', 'https://ritz-international.com/fr/actualites/'], ['de', 'https://ritz-international.com/news/'], ['hu', 'https://ritz-international.com/hu/hirek/'], ['es', 'https://ritz-international.com/es/noticias/'], ['x-default', 'https://ritz-international.com/news/']]
+
+[H H2] Das sollten
+Sie wissen.
+[TEXT] Nichts ist beständiger als der Wandel. Auch die RITZ Instrument Transformers GmbH ist ein dynamisches Unternehmen, das offen für Veränderungen ist. An dieser Stelle halten wir Sie immer über unsere aktuellen Neuigkeiten und Entwicklungen auf dem Laufenden. Nutzen Sie diese Seite als Informations- und Serviceportal.
+[IMG] https://ritz-international.com/wp-content/uploads/2022/07/network_lines_on_white_right.svg alt=''
+[pp-posts.classic] Published on: 20. Oktober 2026
+Kundenmitteilung zu aktuellen Entwicklungen im Außenwirtschaftsbereich sowie zur EU Verordnung (EU) 2026/2133
+Sehr geehrte Kundinnen und Kunden, wir möchten Sie über die aktuellen Entwicklungen im Außenwirtschaftsbereich sowie über die Auswirkungen der am 25.09.2026 in Kraft getretenen Durchführungsverordnung (EU) 2026/2133 informieren.   Kundenmitteilung_EU_Verordnung_2026_2133
+Mehr erfahren
+Published on: 29. Juni 2026
+RITZ Marchtrenk erreichte bei der Zertifizierung den IRIS Silver Quality Performance Level
+Wir freuen uns, bekannt zu geben, dass die RITZ Messwandler GmbH bei ihrem letzten Audit den IRIS Silver Quality Performance Level erreicht hat. Von den rund 3.000 Unternehmen mit IRIS-Zertifizierung weltweit haben bislang erst 401 diesen Status erreicht. Entsprechend freuen wir uns diesen beeindruckenden Erfolg unseres Qualitätswesens nun auch nachweisen ...
+Mehr erfahren
+Published on: 25. Juni 2026
+Neues Werk in Waynesboro, USA
+RITZ Instrument Transformers, Inc., freut sich, die offizielle Eröffnung seines neuen hochmodernen Produktions- und Prüfzentrums in der 101 RITZ Avenue, Waynesboro, GA 30830, bekannt zu geben.New_facility_RITZ_Waynesboro
+Mehr erfahren
+Published on: 7. Mai 2026
+RITZ auf der GRITEC Energy conference
+RITZ stellt auf der Hausmesse Gritec aus
+Mehr erfahren
+Published on: 16. Februar 2026
+Übersicht HVDC und Anwendungen
+Wir bieten verschiedene Lösungen zu HVDC Anwendungen. Produktwissen_kompakt_HVDC
+Mehr erfahren
+Published on: 16. Februar 2026
+Konstruktion neues Hochspannungswerk
+Ritz Instrument Transformers kündigt Bau einer neuen Hochspannungsfabrik an Lavonia, Georgia, USA: Ritz Instrument Transformers, Inc. gab heute bekannt, dass es in Waynesboro, Georgia, eine neue hochmoderne Produktionsstätte für die Herstellung von Hochspannungs-Messwandlern errichten wird. Die Anfangsinvestition wird voraussichtlich 28 Millionen US-Dollar betragen, und das Projekt wird 130 Arbeitsplätze in ...
+Mehr erfahren
+Mehr anzeigen IMGS=https://ritz-international.com/wp-content/uploads/cropped-RTZ-LOGO-RUND-red.png https://ritz-international.com/wp-content/uploads/IRIS_Silber.png https://ritz-international.com/wp-content/uploads/RITZ-USA-HV-Waynesboro-Grand-Opening-2026-Ribbon-Cutting.jpg https://ritz-international.com/wp-content/plugins/elementor/assets/images/placeholder.png https://ritz-international.com/wp-content/plugins/elementor/assets/images/placeholder.png https://ritz-international.com/wp-content/plugins/elementor/assets/images/placeholder.png LINKS=<https://ritz-international.com/kundenmitteilung-zu-aktuellen-entwicklungen-im-aussenwirtschaftsbereich-sowie-zur-eu-verordnung-eu-2026-2133/> Kundenmitteilung zu aktuellen Entwicklungen im Außenwirtschaftsbereich sowie zur EU Verordnung (EU) <https://ritz-international.com/kundenmitteilung-zu-aktuellen-entwicklungen-im-aussenwirtschaftsbereich-sowie-zur-eu-verordnung-eu-2026-2133/> Mehr erfahren<https://ritz-international.com/kundenmitteilung-zu-aktuellen-entwicklungen-im-aussenwirtschaftsbereich-sowie-zur-eu-verordnung-eu-2026-2133/> <https://ritz-international.com/ritz-marchtrenk-erreichte-bei-der-zertifizierung-den-iris-silver-quality-performance-level/> RITZ Marchtrenk erreichte bei der Zertifizierung den IRIS Silver Quality Performance Level<https://ritz-international.com/ritz-marchtrenk-erreichte-bei-der-zertifizierung-den-iris-silver-quality-performance-level/> Mehr erfahren<https://ritz-international.com/ritz-marchtrenk-erreichte-bei-der-zertifizierung-den-iris-silver-quality-performance-level/> <https://ritz-international.com/20380/> Neues Werk in Waynesboro, USA<https://ritz-international.com/20380/> Mehr erfahren<https://ritz-international.com/20380/> <https://ritz-international.com/ritz-auf-der-gritec-energy-conference/> RITZ auf der GRITEC Energy conference<https://ritz-international.com/ritz-auf-der-gritec-energy-conference/> Mehr erfahren<https://ritz-international.com/ritz-auf-der-gritec-energy-conference/> <https://ritz-international.com/uebersicht-hvdc-und-anwendungen/> Übersicht HVDC und Anwendungen<https://ritz-international.com/uebersicht-hvdc-und-anwendungen/> Mehr erfahren<https://ritz-international.com/uebersicht-hvdc-und-anwendungen/> <https://ritz-international.com/konstruktion-neues-hochspannungswerk/> Konstruktion neues Hochspannungswerk<https://ritz-international.com/konstruktion-neues-hochspannungswerk/> Mehr erfahren<https://ritz-international.com/konstruktion-neues-hochspannungswerk/> Mehr anzeigen<javascript:void(0);>

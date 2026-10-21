@@ -1,0 +1,7 @@
+# Elektronik und Sensoren - RITZ
+URL: https://ritz-international.com/produktfinder/elektronik-und-sensoren/  status=200 lang=de kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "Elektronik und Sensoren - RITZ", "og:description": "Home Elektronik und Sensoren", "og:url": "https://ritz-international.com/produktfinder/elektronik-und-sensoren/", "og:site_name": "RITZ"}
+canonical: https://ritz-international.com/produktfinder/elektronik-und-sensoren/
+hreflang: [['de', 'https://ritz-international.com/produktfinder/elektronik-und-sensoren/'], ['x-default', 'https://ritz-international.com/produktfinder/elektronik-und-sensoren/']]
+
+[H H2] Elektronik und Sensoren

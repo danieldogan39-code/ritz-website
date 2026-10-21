@@ -1,0 +1,129 @@
+# Gießharzteile Duromer - RITZ
+URL: https://ritz-international.com/produkte/giessharzteile-duromer/  status=200 lang=de kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "description": "Das RITZ Tochterunternehmen DUROMER bietet innovative Gießharzteile für zuverlässige Energieversorgungslösungen. Profitieren Sie von maßgeschneiderten Produkten mit hoher Qualität und Langlebigkeit.", "og:locale": "de_DE", "og:type": "article", "og:title": "Gießharzteile Duromer - RITZ", "og:description": "Das RITZ Tochterunternehmen DUROMER bietet innovative Gießharzteile für zuverlässige Energieversorgungslösungen. Profitieren Sie von maßgeschneiderten Produkten mit hoher Qualität und L
+canonical: https://ritz-international.com/produkte/giessharzteile-duromer/
+hreflang: [['en', 'https://ritz-international.com/en/products/duromer-cast-resin-parts/'], ['fr', 'https://ritz-international.com/fr/produits/pieces-en-resine-coulee-duromer/'], ['de', 'https://ritz-international.com/produkte/giessharzteile-duromer/'], ['hu', 'https://ritz-international.com/hu/termekek/duromer-oentoett-gyanta-alkatreszek/'], ['es', 'https://ritz-international.com/es/productos/piezas-de-resina-de-moldeo-duromer/'], ['x-default', 'https://ritz-international.com/produkte/giessharzteile-duromer/']]
+
+[H H2] Gießharzteile
+Duromer
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/introduction_image_giessharzteile_duromer-e1705680313569.jpg alt=''
+[TEXT] Unser Tochterunternehmen DUROMER hat sich auf die Anwendung von Gießharzen in der Elektroindustrie spezialisiert.
+ DUROMER entwickelt und formuliert Gießharzformmassen für Elektroanwendungen im Nieder- und Mittelspannungsbereich und für die Elektronik. Unsere Spezialisten entwerfen und produzieren gießharzisolierte Geräte und Formteile zur Anwendung in der elektrischen Energietechnik. Im Engineeringbereich werden Sie bei der Werkstoff- und Verfahrensauswahl sowie bei kundenspezifischen Konstruktionen beraten.
+ Die Hauptproduktionsbereiche von DUROMER sind die Konfektionierung von Gießharzmassen und deren Verarbeitung zu Isolierteilen sowie die Herstellung von feststoffisolierten elektrischen Geräten.
+ DUROMER ist seit 1998 zertifiziert nach ISO 9001.
+[LIST] Produktionsübersicht <https://ritz-international.com/wp-content/uploads/produktionsuebersicht.pdf>
+[H H2] Kontakt
+[H H2] Gottfried Schuster
+[H H2] Development / Technical Engineering / Sales
+[LIST] gottfried.schuster@ritz-international.com <mailto:gottfried.schuster@ritz-international.com>
+[H H2] Frank Karschau
+[H H2] Application Engineer
+[LIST] frank.karschau@ritz-international.com <mailto:torsten.hilbert@ritz-international.com>
+[template] Was sind Duromere?
+Die Gruppe der Duroplaste, oft auch als Duromere bezeichnet, beinhaltet Kunststoffe, die durch chemische Reaktion erstarren. Sie reagieren meist mit einer Polyaddition und vernetzen zu einem räumlich engmaschigen Gitter aus Makromolekülen, das dem Duroplast seine hohe mechanische Festigkeit verleiht. Dieses Aushärten mittels Strukturveränderung des Moleküls ist nicht umkehrbar.Duroplaste kennen keinen Erweichungsbereich, der Werkstoff behält auch bei hohen Temperaturen seine Festigkeit und verfügt über eine hohe Wärmeformbeständigkeit. Duroplaste zeichnen sich durch ihre Härte und Steifigkeit aus. Der geringe Ausdehnungskoeffizient bringt eine hohe Maßstabilität. Auch das Brandverhalten von Duroplasten ist vorteilhaft.
+Leistungsspektrum
+Beratung zur Herstellung von Gießharzteilen und -massen
+Bei der Gestaltung von Gießharzteilen, der Konstruktion von elektrischen Isolierteilen und der Herstellung der erforderlichen Werkzeuge stehen wir Ihnen beratend zur Seite.Herstellerunabhängig empfehlen wir die für Ihre Produkte geeigneten Gießharze und ihre optimalen Verarbeitungstechniken.Auch stehen Ihnen unsere Kenntnisse bei der Auswahl aufgabengerechter Verarbeitungsmaschinen zur Verfügung.
+Konfektionierung von Gießharzmassen
+Die spezielle Rezeptur der Gießharze ist unser Schlüssel zum Qualitätsprodukt.Aus der Betrachtung der jeweiligen Vor- und Nachteile unterschiedlichster Gießharzsysteme heraus werden nach den Anforderungen an das Fertigteil die verschiedenen Komponenten gemischt.DUROMER konfektioniert hauptsächlich auf Basis von Polyurethanen und agiert als Systemhaus-Partner der Bayer Material Science AG.Eine allgemeine Übersicht der von DUROMER produzierten Gießharzsysteme auf Polyurethanbasis steht hier für Sie zum Download bereit. Für weitere Informationen wenden Sie sich bitte per Mail oder Telefon an uns.
+Entwicklung bis zur Serienproduktion
+Unser Spezialwissen zu Gießharzsystemen wird bei der Neu- und Weiterentwicklung von Formteilen eingesetzt.Alle Systeme werden nach Fertigstellung in unserem Labor geprüft und dokumentiert. Dazu gehören Entwicklungsprüfungen hinsichtlich Isoliervermögen, Teilentladungsfreiheit und der Erfüllung klimatischer Forderungen mit den entsprechenden Nachweisen.Bei der Herstellung der Formteile werden Gießharzmaschinen sowohl für den Vakuumverguss als auch für das Druckgelierverfahren eingesetzt.
+Equipment und Technische Ausrüstung
+Equipment
+Vakuum-VergussanlagenDruck-GeliertechnikDissolvertechnikSchließeinheitenMisch- und Dosiertechnik
+Labortechnik
+Mit Hilfe unserer Labortechnik sichern wir die Qualität der Produkte. Unter anderem führen wir folgende Analysen und Messungen durch:ThermoanalyseViskositätsmessungenBestimmungen technologischer Parameter wie z.B. Gelierzeit und Exothermieverläufe
+BERÜHRUNGSSICHERE KABELVERTEILERBOX
+DATENBLATT
+Referenzen
+DUROMER ist Lieferant für Gießharzanwendungen in allen Bereichen der Elektrotechnik, vor allem in der Energie-, Hoch- und Mittelspannungstechnik, der  IMGS=https://ritz-international.com/wp-content/uploads/4-polig-Typ-B-1.png https://ritz-international.com/wp-content/uploads/3-polig-Typ-B-1.png https://ritz-international.com/wp-content/uploads/EB1.png https://ritz-international.com/wp-content/uploads/EB2-2.png https://ritz-international.com/wp-content/uploads/4-Konen-Adapter-in-Anlage-1.png LINKS=DATENBLATT<https://ritz-international.com/wp-content/uploads/Datenblatt-GBVBA-2.pdf>
+[ACC] (in cdf037c) <Was sind Duromere?> tpl=9197 Die Gruppe der Duroplaste, oft auch als Duromere bezeichnet, beinhaltet Kunststoffe, die durch chemische Reaktion erstarren. Sie reagieren meist mit einer Polyaddition und vernetzen zu einem räumlich engmaschigen Gitter aus Makromolekülen, das dem Duroplast seine hohe mechanische Festigkeit verleiht. Dieses Aushärten mittels Strukturveränderung des Moleküls ist nicht umkehrbar.
+ Duroplaste kennen keinen Erweichungsbereich, der Werkstoff behält auch bei hohen Temperaturen seine Festigkeit und verfügt über eine hohe Wärmeformbeständigkeit. Duroplaste zeichnen sich durch ihre Härte und Steifigkeit aus. Der geringe Ausdehnungskoeffizient bringt eine hohe Maßstabilität. Auch das Brandverhalten von Duroplasten ist vorteilhaft. || <Leistungsspektrum> tpl=1195 Beratung zur Herstellung von Gießharzteilen und -massen
+ Bei der Gestaltung von Gießharzteilen, der Konstruktion von elektrischen Isolierteilen und der Herstellung der erforderlichen Werkzeuge stehen wir Ihnen beratend zur Seite.
+ Herstellerunabhängig empfehlen wir die für Ihre Produkte geeigneten Gießharze und ihre optimalen Verarbeitungstechniken.
+ Auch stehen Ihnen unsere Kenntnisse bei der Auswahl aufgabengerechter Verarbeitungsmaschinen zur Verfügung.
+ Konfektionierung von Gießharzmassen
+ Die spezielle Rezeptur der Gießharze ist unser Schlüssel zum Qualitätsprodukt.
+ Aus der Betrachtung der jeweiligen Vor- und Nachteile unterschiedlichster Gießharzsysteme heraus werden nach den Anforderungen an das Fertigteil die verschiedenen Komponenten gemischt.
+ DUROMER konfektioniert hauptsächlich auf Basis von Polyurethanen und agiert als Systemhaus-Partner der Bayer Material Science AG.
+Eine allgemeine Übersicht der von DUROMER produzierten Gießharzsysteme auf Polyurethanbasis steht hier für Sie zum Download bereit. Für weitere Informationen wenden Sie sich bitte per Mail oder Telefon an uns.
+ Entwicklung bis zur Serienproduktion
+ Unser Spezialwissen zu Gießharzsystemen wird bei der Neu- und Weiterentwicklung von Formteilen eingesetzt.
+ Alle Systeme werden nach Fertigstellung in unserem Labor geprüft und dokumentiert. Dazu gehören Entwicklungsprüfungen hinsichtlich Isoliervermögen, Teilentladungsfreiheit und der Erfüllung klimatischer Forderungen mit den entsprechenden Nachweisen.
+ Bei der Herstellung der Formteile werden Gießharzmaschinen sowohl für den Vakuumverguss als auch für das Druckgelierverfahren eingesetzt. || <Equipment und Technische Ausrüstung> tpl=1199 Equipment
+ Vakuum-Vergussanlagen
+ Druck-Geliertechnik
+ Dissolvertechnik
+ Schließeinheiten
+ Misch- und Dosiertechnik
+ Labortechnik
+ Mit Hilfe unserer Labortechnik sichern wir die Qualität der Produkte. Unter anderem führen wir folgende Analysen und Messungen durch:
+ Thermoanalyse
+ Viskositätsmessungen
+ Bestimmungen technologischer Parameter wie z.B. Gelierzeit und Exothermieverläufe || <BERÜHRUNGSSICHERE KABELVERTEILERBOX> tpl=12929 DATENBLATT || <Referenzen> tpl=1202 DUROMER ist Lieferant für Gießharzanwendungen in allen Bereichen der Elektrotechnik, vor allem in der Energie-, Hoch- und Mittelspannungstechnik, der Licht- und Kabelmesstechnik sowie in der Sensor- und Röntgentechnik.
+ Wir arbeiten unter anderem zusammen mit den Firmen:
+ Siemens
+ Philips
+ Megger || <Kontaktadressen> tpl=1205 Bergener Ring 65 – 67 D 
+01458 Ottendorf-Okrilla 
+Telefon: +49 (35205) 62 140 
+Telefax: +49 (035205) 62 141 
+Email: info@duromer.de
+ Frank Karschau 
+Sales Manager East Europe
+ Bergener Ring 65 – 67 D 
+01458 Ottendorf-Okrilla 
+Telefon: +49 35 205 / 62 212
+Mobile +49 173 397 1102
+Email: frank.karschau@ritz-international.com
+[TEXT] (in 10bab9d) Die Gruppe der Duroplaste, oft auch als Duromere bezeichnet, beinhaltet Kunststoffe, die durch chemische Reaktion erstarren. Sie reagieren meist mit einer Polyaddition und vernetzen zu einem räumlich engmaschigen Gitter aus Makromolekülen, das dem Duroplast seine hohe mechanische Festigkeit verleiht. Dieses Aushärten mittels Strukturveränderung des Moleküls ist nicht umkehrbar.
+ Duroplaste kennen keinen Erweichungsbereich, der Werkstoff behält auch bei hohen Temperaturen seine Festigkeit und verfügt über eine hohe Wärmeformbeständigkeit. Duroplaste zeichnen sich durch ihre Härte und Steifigkeit aus. Der geringe Ausdehnungskoeffizient bringt eine hohe Maßstabilität. Auch das Brandverhalten von Duroplasten ist vorteilhaft.
+[H H2] (in 10bab9d) Beratung zur Herstellung von Gießharzteilen und -massen
+[TEXT] (in 10bab9d) Bei der Gestaltung von Gießharzteilen, der Konstruktion von elektrischen Isolierteilen und der Herstellung der erforderlichen Werkzeuge stehen wir Ihnen beratend zur Seite.
+ Herstellerunabhängig empfehlen wir die für Ihre Produkte geeigneten Gießharze und ihre optimalen Verarbeitungstechniken.
+ Auch stehen Ihnen unsere Kenntnisse bei der Auswahl aufgabengerechter Verarbeitungsmaschinen zur Verfügung.
+[H H2] (in 10bab9d) Konfektionierung von Gießharzmassen
+[TEXT] (in 10bab9d) Die spezielle Rezeptur der Gießharze ist unser Schlüssel zum Qualitätsprodukt.
+ Aus der Betrachtung der jeweiligen Vor- und Nachteile unterschiedlichster Gießharzsysteme heraus werden nach den Anforderungen an das Fertigteil die verschiedenen Komponenten gemischt.
+ DUROMER konfektioniert hauptsächlich auf Basis von Polyurethanen und agiert als Systemhaus-Partner der Bayer Material Science AG.
+Eine allgemeine Übersicht der von DUROMER produzierten Gießharzsysteme auf Polyurethanbasis steht hier für Sie zum Download bereit. Für weitere Informationen wenden Sie sich bitte per Mail oder Telefon an uns.
+[H H2] (in 10bab9d) Entwicklung bis zur Serienproduktion
+[TEXT] (in 10bab9d) Unser Spezialwissen zu Gießharzsystemen wird bei der Neu- und Weiterentwicklung von Formteilen eingesetzt.
+ Alle Systeme werden nach Fertigstellung in unserem Labor geprüft und dokumentiert. Dazu gehören Entwicklungsprüfungen hinsichtlich Isoliervermögen, Teilentladungsfreiheit und der Erfüllung klimatischer Forderungen mit den entsprechenden Nachweisen.
+ Bei der Herstellung der Formteile werden Gießharzmaschinen sowohl für den Vakuumverguss als auch für das Druckgelierverfahren eingesetzt.
+[H H2] (in 10bab9d) Equipment
+[TEXT] (in 10bab9d) Vakuum-Vergussanlagen
+ Druck-Geliertechnik
+ Dissolvertechnik
+ Schließeinheiten
+ Misch- und Dosiertechnik
+[H H2] (in 10bab9d) Labortechnik
+[TEXT] (in 10bab9d) Mit Hilfe unserer Labortechnik sichern wir die Qualität der Produkte. Unter anderem führen wir folgende Analysen und Messungen durch:
+ Thermoanalyse
+ Viskositätsmessungen
+ Bestimmungen technologischer Parameter wie z.B. Gelierzeit und Exothermieverläufe
+[pp-icon-list] (in 10bab9d) 
+[IMG] (in 10bab9d) https://ritz-international.com/wp-content/uploads/4-polig-Typ-B-1.png alt=''
+[IMG] (in 10bab9d) https://ritz-international.com/wp-content/uploads/3-polig-Typ-B-1.png alt=''
+[IMG] (in 10bab9d) https://ritz-international.com/wp-content/uploads/EB1.png alt=''
+[IMG] (in 10bab9d) https://ritz-international.com/wp-content/uploads/EB2-2.png alt=''
+[IMG] (in 10bab9d) https://ritz-international.com/wp-content/uploads/4-Konen-Adapter-in-Anlage-1.png alt=''
+[TEXT] (in 10bab9d) DUROMER ist Lieferant für Gießharzanwendungen in allen Bereichen der Elektrotechnik, vor allem in der Energie-, Hoch- und Mittelspannungstechnik, der Licht- und Kabelmesstechnik sowie in der Sensor- und Röntgentechnik.
+ Wir arbeiten unter anderem zusammen mit den Firmen:
+ Siemens
+ Philips
+ Megger
+[TEXT] (in 10bab9d) Bergener Ring 65 – 67 D 
+01458 Ottendorf-Okrilla 
+Telefon: +49 (35205) 62 140 
+Telefax: +49 (035205) 62 141 
+Email: info@duromer.de
+[TEXT] (in 10bab9d) Frank Karschau 
+Sales Manager East Europe
+ Bergener Ring 65 – 67 D 
+01458 Ottendorf-Okrilla 
+Telefon: +49 35 205 / 62 212
+Mobile +49 173 397 1102
+Email: frank.karschau@ritz-international.com
+[PDFS] https://ritz-international.com/wp-content/uploads/produktionsuebersicht.pdf https://ritz-international.com/wp-content/uploads/Datenblatt-GBVBA-2.pdf
+[TEMPLATES] 9197 1195 1199 12929 1202 1205

@@ -1,0 +1,12 @@
+# Hivatkozások - RITZ
+URL: https://ritz-international.com/hu/a-vallalat/hivatkozasok/  status=200 lang=hu kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "hu_HU", "og:type": "article", "og:title": "Hivatkozások - RITZ", "og:description": "Kezdőoldal Első osztályú termékek a neves ügyfelek számára. A vállalati siker mércéje. Ügyfeleink elégedettsége a legfontosabb számunkra. Az évtizedek óta fenntartott intenzív ügyfélkapcsolataink termékeink kiváló minőségéről, a magas szintű szaktanácsadási szakértelemről és a jó műszaki támogatásról beszélnek. Szívesen bemutatunk Önnek részletes esettanulmányokat egy személyes találkozó keretében. Vegye fel
+canonical: https://ritz-international.com/hu/a-vallalat/hivatkozasok/
+hreflang: [['en', 'https://ritz-international.com/en/company/references/'], ['fr', 'https://ritz-international.com/fr/entreprise/references/'], ['de', 'https://ritz-international.com/unternehmen/referenzen/'], ['hu', 'https://ritz-international.com/hu/a-vallalat/hivatkozasok/'], ['es', 'https://ritz-international.com/es/la-empresa/referencias/'], ['x-default', 'https://ritz-international.com/unternehmen/referenzen/']]
+
+[H H2] Első osztályú
+termékek a
+neves ügyfelek számára.
+[TEXT] A vállalati siker mércéje. Ügyfeleink elégedettsége a legfontosabb számunkra. Az évtizedek óta fenntartott intenzív ügyfélkapcsolataink termékeink kiváló minőségéről, a magas szintű szaktanácsadási szakértelemről és a jó műszaki támogatásról beszélnek. 
+ Szívesen bemutatunk Önnek részletes esettanulmányokat egy személyes találkozó keretében. Vegye fel velünk a kapcsolatot és egyeztessen időpontot.
+[IMG] https://ritz-international.com/wp-content/uploads/2022/07/unternehmen_referenzen_1.jpg alt=''

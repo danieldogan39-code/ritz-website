@@ -1,0 +1,32 @@
+# Produits - RITZ
+URL: https://ritz-international.com/fr/produits/  status=200 lang=fr kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "fr_FR", "og:type": "article", "og:title": "Produits - RITZ", "og:description": "Accueil Portefeuille de produits complet. Plus que standard. Nous vous proposons des solutions de produits sur mesure et réalisons des demandes spéciales complexes de la plus haute qualité. Misez sur la qualité supérieure de nos produits et sur notre expertise. Vous cherchez des transformateurs de moyenne tension, par exemple pour l’intérieur et l’extérieur ? Ou […]", "og:url": "https://ritz-international.com/fr
+canonical: https://ritz-international.com/fr/produits/
+hreflang: [['en', 'https://ritz-international.com/en/products/'], ['fr', 'https://ritz-international.com/fr/produits/'], ['de', 'https://ritz-international.com/produkte/'], ['hu', 'https://ritz-international.com/hu/termekek/'], ['es', 'https://ritz-international.com/es/productos/'], ['x-default', 'https://ritz-international.com/produkte/']]
+
+[H H2] Portefeuille de produits complet.
+[TEXT] Plus que standard. Nous vous proposons des solutions de produits sur mesure et réalisons des demandes spéciales complexes de la plus haute qualité. Misez sur la qualité supérieure de nos produits et sur notre expertise. 
+ Vous cherchez des transformateurs de moyenne tension, par exemple pour l’intérieur et l’extérieur ? Ou vous avez besoin de transformateurs basse tension parfaitement adaptés à vos besoins ? Ou êtes-vous intéressé par un système d’isolation de jeux de barres SIS innovant ? N’hésitez pas à prendre contact avec nous. 
+ Des pièces et masses en résine de coulée de haute qualité, développées selon vos spécifications, complètent notre gamme. 
+ L’application de résines de coulée est une spécialité de notre filiale DUROMER. Et enfin et surtout, le portefeuille de RITZ comprend également des transformateurs de mesure électroniques et des capteurs de la meilleure qualité de fabrication.
+[IMG] https://ritz-international.com/wp-content/uploads/2022/07/produkte_umfassendes_produktportfolio.jpg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/2022/07/network_lines_new.svg alt=''
+[H H2] Nos produits
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] en savoir plus  -> https://ritz-international.com/fr/produits/transformateur-de-moyenne-tension/
+[H H2] Transformateurs de moyenne tension  -> https://ritz-international.com/fr/produits/transformateur-de-moyenne-tension/
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] en savoir plus  -> https://ritz-international.com/fr/produits/transformateur-basse-tension/
+[H H2] Transformateurs basse tension  -> https://ritz-international.com/fr/produits/transformateur-basse-tension/
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] en savoir plus  -> https://ritz-international.com/fr/produits/transformateurs-haute-tension/
+[H H2] Transformateurs haute tension  -> https://ritz-international.com/fr/produits/transformateurs-haute-tension/
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] en savoir plus  -> https://ritz-international.com/fr/produits/fils-electriques/
+[H H2] SIS Système d'isolation des jeux de barres  -> https://ritz-international.com/fr/produits/fils-electriques/
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] en savoir plus  -> https://ritz-international.com/fr/produits/pieces-en-resine-coulee-duromer/
+[H H2] Pièces en résine moulée DUROMER  -> https://ritz-international.com/fr/produits/pieces-en-resine-coulee-duromer/
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] en savoir plus  -> https://ritz-international.com/fr/produits/transformateurs-de-mesure-electroniques-et-capteurs/
+[H H2] Transformateurs de mesure électroniques et capteurs  -> https://ritz-international.com/fr/produits/transformateurs-de-mesure-electroniques-et-capteurs/

@@ -1,0 +1,51 @@
+# Kezdőoldal - RITZ
+URL: https://ritz-international.com/hu/  status=200 lang=hu kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "description": "RITZ Instrument Transformers: A műszeres transzformátorok, öntöttgyanta szigetelésű gyűjtősínek és teljesítménytranszformátorok vezető specialistája. Innovatív megoldások a globális energiaellátás számára 1945 óta.", "og:locale": "hu_HU", "og:type": "website", "og:title": "Kezdőoldal - RITZ", "og:description": "RITZ Instrument Transformers: A műszeres transzformátorok, öntöttgyanta szigetelésű gyűjtősínek és teljesítménytranszformátorok vezető specialistája. Innovatív megoldások a globáli
+canonical: https://ritz-international.com/hu/
+hreflang: [['en', 'https://ritz-international.com/en/'], ['fr', 'https://ritz-international.com/fr/'], ['de', 'https://ritz-international.com/'], ['hu', 'https://ritz-international.com/hu/'], ['es', 'https://ritz-international.com/es/'], ['x-default', 'https://ritz-international.com/']]
+
+[IMG] https://ritz-international.com/wp-content/uploads/arrow-red-RTZ-2048x1448.png alt='' -> #empowering-our-electrical-future
+[IMG] https://ritz-international.com/wp-content/uploads/2022/06/image_empowering_the_future.jpg alt=''
+[H H2] Empowering Our Electrical Future
+[TEXT] A RITZ név több mint 75 éve az első osztályú mérőtranszformátorok és innovatív megoldások jelképe a villamosiparban.
+Kilenc európai, kínai és amerikai telephelyünkön több mint 1300 alkalmazott dolgozik.
+Ügyfeleinkkel együtt személyre szabott megoldásokat fejlesztünk és tartós termékeket tervezünk, hogy megerősítsük és bővítsük az villamosenergia-hálózatokat a fenntartható jövő érdekében.
+[H H2] Termékeink
+[pp-info-box-carousel] Középfeszültségű átalakítók
+Ismerje meg beltéri, kültéri és egyéb transzformátortípusokhoz való középfeszültségű átalakítóinkat.
+Még több információ
+Kisfeszültségű átalakítók
+Ismerje meg kisfeszültségű átalakítóinkat.
+Még több információ
+Nagyfeszültségű átalakítók
+Ismerje meg nagyfeszültségű átalakítók.
+Még több információ
+Áramvezető sínek SIS
+Ismerje meg áramvezető sínjeinket.
+Még több információ
+Öntőgyantás alkatrészek duromerből
+Ismerje meg a Duromer öntöttgyanta alkatrészeinket.
+Még több információ
+Elektronikus mérőátalakítók és érzékelők
+Ismerje meg elektronikus mérőátalakítóinkat és érzékelőinket.
+Még több információ
+Showing Slide 1 of 6 IMGS=https://ritz-international.com/wp-content/uploads/2022/09/introduction_image_mittelspannungswandler-e1705680173177.jpg https://ritz-international.com/wp-content/uploads/2022/09/introduction_image_niederspannungswandler-e1705680245358.jpg https://ritz-international.com/wp-content/uploads/home_teaser_image_hochspannungswandler.jpg https://ritz-international.com/wp-content/uploads/2022/09/introduction_image_stromschienen-e1705680286556.jpg https://ritz-international.com/wp-content/uploads/2022/09/introduction_image_giessharzteile_duromer-e1705680313569.jpg https://ritz-international.com/wp-content/uploads/2022/09/introduction_image_elektronische_messwandler_und_sensoren-e1705680342912.jpg LINKS=Még több információ<https://ritz-international.com/hu/termekek/koezepfeszueltsegu-transzformator/> Még több információ<https://ritz-international.com/hu/termekek/kisfeszueltsegu-transzformator/> Még több információ<https://ritz-international.com/hu/termekek/nagyfeszueltsegu-atalakitok/> Még több információ<https://ritz-international.com/hu/termekek/folyo-sinek/> Még több információ<https://ritz-international.com/hu/termekek/duromer-oentoett-gyanta-alkatreszek/> Még több információ<https://ritz-international.com/hu/termekek/elektronikus-meroatalakitok-es-erzekelok/>
+[IMG] https://ritz-international.com/wp-content/uploads/2022/06/stellenangebote_ausbildung_images_1.jpg alt=''
+[H H2] Állásajánlatok
+[TEXT] Mindig szívesen látjuk a szakképzett munkatársakat. Ismerje meg jelenleg betöltetlen pozícióinkat.
+[BTN] Még több információ -> https://ritz-international.com/hu/karrier-portal/
+[IMG] https://ritz-international.com/wp-content/uploads/Stellenangebote_image_RTZ-1.jpg alt=''
+[H H2] Szakképzési lehetőségek
+[TEXT] A RITZ-csoport számos izgalmas képzési lehetőséget és jövőbeli perspektívát kínál Önnek. Tudja meg, melyek ezek.
+[BTN] Még több információ -> https://ritz-international.com/hu/karrier/oktatas/
+[H H2] Telephelyek
+[TEXT] A RITZ-csoport világszerte képviselteti magát. Tudjon meg többet a gyártóhelyekről.
+[H H2] Hírek
+[TEXT] Dinamikus vállalatként nyitottak vagyunk a változásokra. Tudja meg, mi újság a RITZ Instrument Transformers GmbH-nál.
+[H H2] Minőségirányítás
+[TEXT] A RITZ minőségirányítása megfelel a szigorú nemzetközi szabványoknak. Tudja meg, hogyan szerveződik a minőségirányítás, és milyen elektromos vizsgálatokat végzünk.
+[H H2] Az Ön személyes vonala a RITZ-hez
+[TEXT] Szakértőink az Ön rendelkezésére állnak. Tanácsokkal, tettekkel és innovatív megoldásokkal. Lépjen kapcsolatba velünk, ha kérdése, kérése vagy javaslata van, vagy ha műszaki támogatásra van szüksége. Itt megtudhatja, hogy ki az a kapcsolattartó munkatársunk, akihez fordulhat.
+[BTN] Kapcsolat -> https://ritz-international.com/hu/kapcsolatfelvetel/
+[IMG] https://ritz-international.com/wp-content/uploads/2022/06/ihr_persoenlicher_draht_zu_ritz.jpg alt=''
+[SECTIONS-BG] [{"id": "c3010e0", "settings": "{\"background_background\":\"slideshow\",\"background_motion_fx_scale_effect\":\"yes\",\"background_motion_fx_scale_speed\":{\"unit\":\"px\",\"size\":1,\"sizes\":[]},\"background_motion_fx_scale_range\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":{\"start\":50,\"end\":100}},\"jet_parallax_layout_list\":[],\"background_slideshow_gallery\":[{\"id\":4366,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/2022\\/11\\/intro_home_slider_1.webp\"},{\"id\":13965,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/RTZ_Website-slider-2-neu2.jpg\"},{\"id\":4378,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/intro_home_slider_4.webp\"},{\"id\":4382,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/intro_home_slider_5.webp\"},{\"id\":4386,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/intro_home_slider_6.webp\"},{\"id\":4390,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/intro_home_slider_7.webp\"},{\"id\":4394,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/intro_home_slider_8.webp\"}],\"background_slideshow_transition_duration\":1000,\"background_slideshow_ken_burns\":\"yes\",\"background_slideshow_loop\":\"yes\",\"background_slideshow_slide_duration\":5000,\"background_slideshow_slide_transition\":\"fade\",\"background_slideshow_ken_burns_zoom_direction\":\"in\",\"background_motion_fx_scale_direction\":\"out-in\",\"background_motion_fx_devices\":[\"desktop\",\"tablet\",\"mobile\"]}"}, {"id": "35f3476", "settings": "{\"motion_fx_motion_fx_scrolling\":\"yes\",\"motion_fx_translateX_effect\":\"yes\",\"motion_fx_translateX_direction\":\"negative\",\"motion_fx_translateX_affectedRange\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":{\"start\":0,\"end\":50}},\"motion_fx_opacity_effect\":\"yes\",\"motion_fx_opacity_range\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":{\"start\":0,\"end\":40}},\"motion_fx_devices\":[\"desktop\"],\"motion_fx_translateX_speed\":{\"unit\":\"px\",\"size\":4,\"sizes\":[]},\"motion_fx_opacity_direction\":\"out-in\",\"motion_fx_opacity_level\":{\"unit\":\"px\",\"size\":10,\"sizes\":[]}}"}, {"id": "37f7d9f", "settings": "{\"motion_fx_motion_fx_scrolling\":\"yes\",\"motion_fx_translateX_effect\":\"yes\",\"motion_fx_translateX_affectedRange\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":{\"start\":0,\"end\":50}},\"motion_fx_opacity_effect\":\"yes\",\"motion_fx_opacity_range\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":{\"start\":0,\"end\":40}},\"motion_fx_devices\":[\"desktop\"],\"motion_fx_translateX_speed\":{\"unit\":\"px\",\"size\":4,\"sizes\":[]},\"motion_fx_opacity_direction\":\"out-in\",\"motion_fx_opacity_level\":{\"unit\":\"px\",\"size\":10,\"sizes\":[]}}"}, {"id": "aea46fe", "settings": "{\"jet_parallax_layout_list\":[],\"motion_fx_motion_fx_scrolling\":\"yes\",\"motion_fx_translateX_effect\":\"yes\",\"motion_fx_translateX_direction\":\"negative\",\"motion_fx_translateX_affecte

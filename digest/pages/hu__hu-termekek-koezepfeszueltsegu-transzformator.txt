@@ -1,0 +1,289 @@
+# Középfeszültségű átalakítók - RITZ
+URL: https://ritz-international.com/hu/termekek/koezepfeszueltsegu-transzformator/  status=200 lang=hu kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "hu_HU", "og:type": "article", "og:title": "Középfeszültségű átalakítók - RITZ", "og:description": "Kezdőoldal Középfeszültségű mérőváltók A mérőváltók olyan transzformátorok, amelyek az áramot és feszültséget arányos és fázishelyes módon, mérhető és szabványosított árammá és feszültséggé alakítják át. Ezek mérőműszereket, számlálókat és/vagy védőreléket szolgáltathatnak ki. Ezenkívül a csatlakoztatott mérő- és védőeszközök elektromosan el vannak szigetelve a feszültség alatt álló rendszerel
+canonical: https://ritz-international.com/produkte/mittelspannungswandler/
+hreflang: [['en', 'https://ritz-international.com/en/products/medium-voltage-transformer/'], ['fr', 'https://ritz-international.com/fr/produits/transformateurs-moyenne-tension/'], ['de', 'https://ritz-international.com/produkte/mittelspannungswandler/'], ['hu', 'https://ritz-international.com/hu/termekek/koezepfeszueltsegu-transzformator/'], ['es', 'https://ritz-international.com/es/productos/transformador-de-media-tension/'], ['x-default', 'https://ritz-international.com/produkte/mittelspannungswandler/']]
+
+[H H2] Középfeszültségű
+mérőváltók
+[IMG] https://ritz-international.com/wp-content/uploads/2022/07/produkte_mittelspannungswandler_image_1.jpg alt=''
+[TEXT] A mérőváltók olyan transzformátorok, amelyek az áramot és feszültséget arányos és fázishelyes módon, mérhető és szabványosított árammá és feszültséggé alakítják át.
+ Ezek mérőműszereket, számlálókat és/vagy védőreléket szolgáltathatnak ki. Ezenkívül a csatlakoztatott mérő- és védőeszközök elektromosan el vannak szigetelve a feszültség alatt álló rendszerelemektől.
+[H H2] Kapcsolat
+[H H2] Kay Leschick
+[LIST] +49 35205 62 - 219 <tel:+493520562219> | kay.leschick@ritz-international.com <mailto:kay.leschick@ritz-international.com>
+[H H2] RITZ Mérötranszformátor Kft, Kecskemét
+[LIST] sales.hungary@ritz-international.com <mailto:sales.hungary@ritz-international.com>
+[H H2] Katalógusok letöltése
+[LIST] Középfeszültségű mérőváltók <https://ritz-international.com/wp-content/uploads/RITZ-Medium_Voltage_Instrument_Transformers_Standard_ENG_2014_01-1.pdf> | Fém tokozású mérőváltók <https://ritz-international.com/wp-content/uploads/RITZ-Metal_Clad_Instrument_Transformers_ENG_2013-02-1.pdf> | PQ-elemzés <https://ritz-international.com/wp-content/uploads/PQ_Analysis_EN-1.pdf>
+[H H2] HIVATKOZÁSOK
+[LIST] A RITZ szélessávú konverterek használata - 2017. július <https://ritz-international.com/wp-content/uploads/2302-AM-Offenbach-v6.pdf>
+[template] BELTÉRI ALKALMAZÁS
+Áramátalakítók beltéri alkalmazásokhoz 72,5 kV-ig
+ÁRAMÁTALAKÍTÓ
+ASS 12 | 17,5 | 24 | 36 Támaszos áramátalakítókTömbös kivitel; keskeny kialakítás, DIN 42600, 8. rész; 1, 2, 3 méretben kaphatók 1, 2, 3
+Adatlap
+GSW 12/0 3,6 | 7,2 | 12 Támaszos áramátalakítókTömbös kivitel, kisméretű kialakítás, DIN 42600, 4. rész
+Adatlap
+ASN 12 | 17,5 | 24 | 36 Támaszos áramátalakítókTömbös kivitel, nagyméretű kialakítás, DIN 42600, 5. rész
+Adatlap
+GI 52 | 72.5 Támaszos áramátalakítók,DIN 42600, 1. rész
+Adatlap
+FESZÜLTSÉGÁTALAKÍTÓK
+VES 12|17.5|24 FeszültségátalakítókEgypólusú, keskeny kialakítás, DIN 42600, 9. rész
+Adatlap
+GSE 12/0 3.6|7.2|12 FeszültségátalakítókEgypólusú, kisméretű kialakítás, DIN 42600, 7. rész
+Adatlap
+VEN 12|17,5|24|36|52|72,5 Feszültségátalakítók Egypólusú, nagyméretű kivitel/támaszos kialakítás, DIN 42600, 3. rész
+Adatlap
+VZS 12|17.5|24 FeszültségátalakítókKétpólusú, keskeny kialakítás, DIN 42600, 9. rész
+Adatlap
+GSZ 12/0 3.6|7.2|12 Feszültségátalakítók Kétpólusú, kisméretű kialakítás, DIN 42600 7. rész
+Adatlap
+VZN 12|17.5|24|36 Feszültségátalakítók Kétpólusú, nagyméretű kialakítás, DIN 42600, 3. rész
+Adatlap
+KÜLTÉRI ALKALMAZÁS
+ÁRAMÁTALAKÍTÓK
+GIFK 12 | 17,5 | 24 | 36 támaszos áramátalakítókKompakt kialakítás
+Adatlap
+GIFS 12 | 17,5 | 24 | 36 támaszos áramátalakítókNormál kialakítás
+Adatlap
+GIF 10 | 17,5 | 20 | 30 | 36 | 52 | 72,5 Fejre rögzíthető kialakítás, GOST-tal kapható
+Adatlap
+FESZÜLTSÉGÁTALAKÍTÓK
+VEF 12 | 17,5 | 24 | 36 feszültségátalakítókEgypólusú, keskeny kialakítás DIN 42600, 9. rész
+Adatlap
+VEF 52 | 72,5 Egypólusú, kisméretű kialakítás, DIN 42600, 7. rész
+Adatlap
+VZF 12 | 17,5 | 24 | 36 feszültségátalakítókKétpólusú, nagyméretű kialakítás/támaszos kialakítás DIN 42600, 3. rész
+Adatlap
+ÉRINTÉSBIZTOS ÁTALAKÍTÓK
+ÁRAMÁTALAKÍTÓK
+GBWFém tokozású áramátalakítók, 12–36 kV
+Adatlap
+FESZÜLTSÉGÁTALAKÍTÓK
+GBEIN, GBEANFém tokozású feszültségátalakítók, 12–52 kV
+Adatlap
+KOMBINÁLT ÁTALAKÍTÓ
+KGBEI/KGBEAFém tokozású kombinált átalakítók, 12–36 kV
+Adatlap
+KÜLÖNLEGES ÁTALAKÍTÓK
+Vasúti átalakítók
+GSEFBA GSEFB kültéri feszültségátalakító elektromos vasúti járművek felső feszültségátalakítójaként való használatra szolgál. A szigetelés kültérnek ellenálló, kivételesen jó mechanikai és elektromos tulajdonságokkal rendelkező cikloalifás epoxigyantából készül. A GSEFBC-t egy szilikon kompozit szigetelőbe is beágyazzák, hogy megvédjék a sérüléstől vagy a felrobbanás valószínűtlen esetétől, és a tetején nyomáscsökkentő sapkával van ellátva. Minden kültéri alkatrész korrózióálló anyagból készül, és a készülékek karbantartásmentesek.
+A vasúti feszültségátalakítók 40,5 kV-os szigetelési feszültségig használhatók, megfelelnek az európai és nemzetközi szabványoknak, és IRIS tanúsítvánnyal rendelkező gyárban készülnek.
+A transzformátorok megfelelnek az EN 50463 szabványnak, teljesítik a hatályos LOC&PAS átjárhatósági műszaki előírás (ÁME) követelményeit, és ezért alkalmasak a járművön történő energiamérésre. Sok átalakító esetében erre a célra kiál IMGS=https://ritz-international.com/wp-content/uploads/2022/07/produkte_stromwandler_ASS_12_1_7_5_24_36_stuetzerstromwandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/produkte_stromwandler_GSW_12_0_3_6_7_2_12_Stuetzerstromwandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_stromwandler_asn_12_17_5_24_36_stuetzerstromwandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_stromwandler_gi_52_72_5_stuetzerstromwandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_spannungswandler_ves_12_17_5_24_spannungswandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_spannungswandler_gse_12_0_3_6_7_2_12_spannungswandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_spannungswandler_ven_12_17_5_24_36_52_72_5_spannungswandler.jpg https://ritz-international.com/wp-content/uploads/VZS-12_175_24-Spannungswandler-Zweipolig.jpg https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_spannungswandler_gsz_12_0_3_6_7_2_12_spannungswandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_spannungswandler_vzn_12_17_5_24_36_spannungswandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_stromwandler_gifk_12_17_5_24_36_stuetzerstromwandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_stromwandler_GIFS-12-17-5-24-36-Stützerstromwandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_stromwandler_gif_10_17_5_20_30_36_52_72_5.jpg https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_spannungswandler_ves_12_17_5_24_spannungswandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_spannungswandler_gse_12_0_3_6_7_2_12_spannungswandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_spannungswandler_ven_12_17_5_24_36_52_72_5_spannungswandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/beruehrungssichere_wandler_stromwandler_gbw.jpg https://ritz-international.com/wp-content/uploads/2022/07/beruehrungssichere_wandler_spannungswandler_gbein_gbean.jpg https://ritz-international.com/wp-content/uploads/2022/07/beruehrungssichere_wandler_kombiwandler_kgbei_kgbea.jpg https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_bahnwandler_gsefb.jpg https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_durchfuehrungsstabstromwandler_gds_127c_7_5_24_36_durchfuehrungsstromwandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_stuetzerstromwandler_gsso_12_17_5_24_hochstromwandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_metallgekapselte_kombiwandler_12-36_kv_kgbea_36_kgbei_36_ausgefuehrt_als_breitbandwandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_stuetzerstromwandler_gsws24_mit_optional_erweitertem_frequenzbereich.jpg https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_induktiver_einpoliger_spannungswandler_gses24d_mit_optional_erweitertem_frequenzbereich.jpg LINKS=Adatlap<https://ritz-international.com/wp-content/uploads/TDB20260015_REV01.pdf> Adatlap<https://ritz-international.com/wp-content/uploads/En_GSW.pdf> Adatlap<https://ritz-international.com/wp-content/uploads/En_ASN.pdf> Adatlap<https://ritz-international.com/wp-content/uploads/En_GI.pdf> Adatlap<https://ritz-international.com/wp-content/uploads/En_VES.pdf> Adatlap<https://ritz-international.com/wp-content/uploads/En_GSE.pdf> Adatlap<https://ritz-international.com/wp-content/uploads/En_VEN.pdf> Adatlap<https://ritz-international.com/wp-content/uploads/En_VZS.pdf> Adatlap<https://ritz-international.com/wp-content/uploads/En_GSZ.pdf> Adatlap<https://ritz-international.com/wp-content/uploads/En_VZN.pdf> Adatlap<https://ritz-international.com/wp-content/uploads/De_GIFK_Stuetzerstromwandler.pdf> Adatlap<https://ritz-international.com/wp-content/uploads/De_GIFS_Stuetzerstromwandler.pdf> Adatlap<https://ritz-international.com/wp-content/uploads/De_GIF.pdf> Adatlap<https://ritz-international.com/wp-content/uploads/De_VES_12_24_Spannungswandler.pdf> Adatlap<https://ritz-international.com/wp-content/uploads/De_GSE_12_0_12_Spannungswandler.pdf> Adatlap<https://ritz-international.com/wp-content/uploads/De_VEN_12_72_5_Spannungswandler.pdf> Adatlap<https://ritz-international.com/wp-content/uploads/DE_GBW.pdf> Adatlap<https://ritz-international.com/wp-content/uploads/DE_GBEIN_GBEAN.pdf> Adatlap<https://ritz-international.com/wp-content/uploads/DE_KGBEIKGBEA.pdf> Adatlap<https://ritz-international.com/wp-content/uploads/En_GDS.pdf> Adatlap<https://ritz-international.com/wp-content/uploads/En_GSSO.pdf> Adatlap<https://ritz-international.com/wp-content/uploads/Datenblatt_KGBEA36_Breitband_Index_05_de-DE_en-GB.pdf> Adatlap<https://ritz-international.com/wp-content/uploads/Datenblatt_GSWS24_Breitband_Index_01_de-DE_en-GB.pdf> Adatlap<https://ritz-international.com/wp-content/uploads/Datenblatt_GSES24D_Breitband_Index_01_de-DE_en-GB.pdf>
+[ACC] (in 4eb3cf4) <BELTÉRI ALKALMAZÁS> tpl=370 Áramátalakítók beltéri alkalmazásokhoz 72,5 kV-ig
+ ÁRAMÁTALAKÍTÓ
+ ASS 12 | 17,5 | 24 | 36 Támaszos áramátalakítók
+ Tömbös kivitel; keskeny kialakítás, DIN 42600, 8. rész; 
+1, 2, 3 méretben kaphatók 1, 2, 3
+ Adatlap 
+ GSW 12/0 3,6 | 7,2 | 12 Támaszos áramátalakítók
+ Tömbös kivitel, kisméretű kialakítás, DIN 42600, 4. rész 
+ Adatlap 
+ ASN 12 | 17,5 | 24 | 36 Támaszos áramátalakítók 
+Tömbös kivitel, nagyméretű kialakítás, DIN 42600, 5. rész
+ Adatlap 
+ GI 52 | 72.5 Támaszos áramátalakítók
+, DIN 42600, 1. rész 
+ Adatlap 
+ FESZÜLTSÉGÁTALAKÍTÓK
+ VES 12|17.5|24 Feszültségátalakítók
+ Egypólusú, keskeny kialakítás, DIN 42600, 9. rész 
+ Adatlap 
+ GSE 12/0 3.6|7.2|12 Feszültségátalakítók
+ Egypólusú, kisméretű kialakítás, DIN 42600, 7. rész 
+ Adatlap 
+ VEN 12|17,5|24|36|52|72,5 Feszültségátalakítók 
+ Egypólusú, nagyméretű kivitel/támaszos kialakítás, DIN 42600, 3. rész 
+ Adatlap 
+ VZS 12|17.5|24 Feszültségátalakítók
+ Kétpólusú, keskeny kialakítás, DIN 42600, 9. rész 
+ Adatlap 
+ GSZ 12/0 3.6|7.2|12 Feszültségátalakítók 
+ Kétpólusú, kisméretű kialakítás, DIN 42600 7. rész 
+ Adatlap 
+ VZN 12|17.5|24|36 Feszültségátalakítók 
+ Kétpólusú, nagyméretű kialakítás, DIN 42600, 3. rész 
+ Adatlap || <KÜLTÉRI ALKALMAZÁS> tpl=1013 ÁRAMÁTALAKÍTÓK
+ GIFK 12 | 17,5 | 24 | 36 támaszos áramátalakítók
+ Kompakt kialakítás
+ Adatlap 
+ GIFS 12 | 17,5 | 24 | 36 támaszos áramátalakítók
+ Normál kialakítás
+ Adatlap 
+ GIF 10 | 17,5 | 20 | 30 | 36 | 52 | 72,5 
+ Fejre rögzíthető kialakítás, GOST-tal kapható
+ Adatlap 
+ FESZÜLTSÉGÁTALAKÍTÓK
+ VEF 12 | 17,5 | 24 | 36 feszültségátalakítók
+ Egypólusú, keskeny kialakítás DIN 42600, 9. rész
+ Adatlap 
+ VEF 52 | 72,5 
+ Egypólusú, kisméretű kialakítás, DIN 42600, 7. rész
+ Adatlap 
+ VZF 12 | 17,5 | 24 | 36 feszültségátalakítók
+ Kétpólusú, nagyméretű kialakítás/támaszos kialakítás DIN 42600, 3. rész
+ Adatlap || <ÉRINTÉSBIZTOS ÁTALAKÍTÓK> tpl=1017 ÁRAMÁTALAKÍTÓK
+ GBW
+ Fém tokozású áramátalakítók, 12–36 kV
+ Adatlap 
+ FESZÜLTSÉGÁTALAKÍTÓK
+ GBEIN, GBEAN
+ Fém tokozású feszültségátalakítók, 12–52 kV
+ Adatlap 
+ KOMBINÁLT ÁTALAKÍTÓ
+ KGBEI/KGBEA
+ Fém tokozású kombinált átalakítók, 12–36 kV
+ Adatlap || <KÜLÖNLEGES ÁTALAKÍTÓK> tpl=1020 Vasúti átalakítók
+ GSEFB
+ A GSEFB kültéri feszültségátalakító elektromos vasúti járművek felső feszültségátalakítójaként való használatra szolgál. A szigetelés kültérnek ellenálló, kivételesen jó mechanikai és elektromos tulajdonságokkal rendelkező cikloalifás epoxigyantából készül. A GSEFBC-t egy szilikon kompozit szigetelőbe is beágyazzák, hogy megvédjék a sérüléstől vagy a felrobbanás valószínűtlen esetétől, és a tetején nyomáscsökkentő sapkával van ellátva. Minden kültéri alkatrész korrózióálló anyagból készül, és a készülékek karbantartásmentesek.
+ A vasúti feszültségátalakítók 40,5 kV-os szigetelési feszültségig használhatók, megfelelnek az európai és nemzetközi szabványoknak, és IRIS tanúsítvánnyal rendelkező gyárban készülnek.
+ A transzformátorok megfelelnek az EN 50463 szabványnak, teljesítik a hatályos LOC&PAS átjárhatósági műszaki előírás (ÁME) követelményeit, és ezért alkalmasak a járművön történő energiamérésre. Sok átalakító esetében erre a célra kiállítható ideiglenes EK közbenső vizsgálati tanúsítvány. 
+ GSO(F)B 
+ A GSO(F)B egy egyfázisú, Um = 0,8 kV-os, öntőgyanta szigetelésű, dugaszolható áramátalakító, amelyet túláram- vagy visszáram-átalakítóként használnak villamos vasúti járművekben vagy járműveken.
+ A primer vezetőt a ügyféloldali szigetelt kábel vagy sín képezi, és az ügyfél az átalakítón keresztül táplálja. A kültérnek ellenálló cikloalifás epoxigyantával való szigetelésének köszönhetően megfelel a jármű tetején való használatra vonatkozó valamennyi követelménynek. Az átalakítók megfelelnek az európai és nemzetközi szabványoknak, és IRIS tanúsítvánnyal rendelkező gyárban készülnek.
+ A transzformátorok megfelelnek az EN 50463 szabványnak, teljesítik a hatályos LOC&PAS átjárhatósági műszaki előírás (ÁME) követelményeit, és ezért alkalmasak a járművön történő energiamérésre. Sok átalakító esetében erre a célra kiállítható ideiglenes EK közbenső vizsgálati tanúsítvány.
+ Igény esetén minden vasúti áram- és feszültségátalakító más kivitelben is rendelhető.
+ Átvezető áramátalakítók
+ GDS 12|17.5|24|36 Átvezető áramátalakítók 
+ rögzített vezetővel 
+ Adatlap 
+ Támaszos áramátalakító
+ GSSO 12 | 17,5 | 24 Nagyáramú átalakítók 
+ nagyáramú átalakítók
+ Adatlap || <Átalakító, különösen a teljesítményminőséghez> tpl=1023 Fém tokozású kombinált átalakítók, 12–36 kV
+ KGBEA 36 / KGBEI 36 szélessávú átalakítóként tervezve 
+ Fém tokozású kombinált átalakítók 
+ Adatlap 
+ Támaszos áramátalakító
+ GSWS 24 opcionálisan kibővített frekvenciatartományban 
+ Támaszos áramátalakító
+ Adatlap 
+ Indukciós típusú, egypólusú feszültségátalakító
+ GSES 24D opcionálisan kibővített frekvenciatartományban 
+ Indukciós típusú, egypólusú feszültségátalakító
+ Adatlap
+[TEXT] (in e931b90) Áramátalakítók beltéri alkalmazásokhoz 72,5 kV-ig
+[H H2] (in e931b90) ÁRAMÁTALAKÍTÓ
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/produkte_stromwandler_ASS_12_1_7_5_24_36_stuetzerstromwandler.jpg alt=''
+[TEXT] (in e931b90) ASS 12 | 17,5 | 24 | 36 Támaszos áramátalakítók
+ Tömbös kivitel; keskeny kialakítás, DIN 42600, 8. rész; 
+1, 2, 3 méretben kaphatók 1, 2, 3
+[LIST] (in e931b90) Adatlap <https://ritz-international.com/wp-content/uploads/TDB20260015_REV01.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/produkte_stromwandler_GSW_12_0_3_6_7_2_12_Stuetzerstromwandler.jpg alt=''
+[TEXT] (in e931b90) GSW 12/0 3,6 | 7,2 | 12 Támaszos áramátalakítók
+ Tömbös kivitel, kisméretű kialakítás, DIN 42600, 4. rész
+[LIST] (in e931b90) Adatlap <https://ritz-international.com/wp-content/uploads/En_GSW.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_stromwandler_asn_12_17_5_24_36_stuetzerstromwandler.jpg alt=''
+[TEXT] (in e931b90) ASN 12 | 17,5 | 24 | 36 Támaszos áramátalakítók 
+Tömbös kivitel, nagyméretű kialakítás, DIN 42600, 5. rész
+[LIST] (in e931b90) Adatlap <https://ritz-international.com/wp-content/uploads/En_ASN.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_stromwandler_gi_52_72_5_stuetzerstromwandler.jpg alt=''
+[TEXT] (in e931b90) GI 52 | 72.5 Támaszos áramátalakítók
+, DIN 42600, 1. rész
+[LIST] (in e931b90) Adatlap <https://ritz-international.com/wp-content/uploads/En_GI.pdf>
+[H H2] (in e931b90) FESZÜLTSÉGÁTALAKÍTÓK
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_spannungswandler_ves_12_17_5_24_spannungswandler.jpg alt=''
+[TEXT] (in e931b90) VES 12|17.5|24 Feszültségátalakítók
+ Egypólusú, keskeny kialakítás, DIN 42600, 9. rész
+[LIST] (in e931b90) Adatlap <https://ritz-international.com/wp-content/uploads/En_VES.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_spannungswandler_gse_12_0_3_6_7_2_12_spannungswandler.jpg alt=''
+[TEXT] (in e931b90) GSE 12/0 3.6|7.2|12 Feszültségátalakítók
+ Egypólusú, kisméretű kialakítás, DIN 42600, 7. rész
+[LIST] (in e931b90) Adatlap <https://ritz-international.com/wp-content/uploads/En_GSE.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_spannungswandler_ven_12_17_5_24_36_52_72_5_spannungswandler.jpg alt=''
+[TEXT] (in e931b90) VEN 12|17,5|24|36|52|72,5 Feszültségátalakítók 
+ Egypólusú, nagyméretű kivitel/támaszos kialakítás, DIN 42600, 3. rész
+[LIST] (in e931b90) Adatlap <https://ritz-international.com/wp-content/uploads/En_VEN.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/VZS-12_175_24-Spannungswandler-Zweipolig.jpg alt=''
+[TEXT] (in e931b90) VZS 12|17.5|24 Feszültségátalakítók
+ Kétpólusú, keskeny kialakítás, DIN 42600, 9. rész
+[LIST] (in e931b90) Adatlap <https://ritz-international.com/wp-content/uploads/En_VZS.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_spannungswandler_gsz_12_0_3_6_7_2_12_spannungswandler.jpg alt=''
+[TEXT] (in e931b90) GSZ 12/0 3.6|7.2|12 Feszültségátalakítók 
+ Kétpólusú, kisméretű kialakítás, DIN 42600 7. rész
+[LIST] (in e931b90) Adatlap <https://ritz-international.com/wp-content/uploads/En_GSZ.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_spannungswandler_vzn_12_17_5_24_36_spannungswandler.jpg alt=''
+[TEXT] (in e931b90) VZN 12|17.5|24|36 Feszültségátalakítók 
+ Kétpólusú, nagyméretű kialakítás, DIN 42600, 3. rész
+[LIST] (in e931b90) Adatlap <https://ritz-international.com/wp-content/uploads/En_VZN.pdf>
+[H H2] (in e931b90) ÁRAMÁTALAKÍTÓK
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_stromwandler_gifk_12_17_5_24_36_stuetzerstromwandler.jpg alt=''
+[TEXT] (in e931b90) GIFK 12 | 17,5 | 24 | 36 támaszos áramátalakítók
+ Kompakt kialakítás
+[LIST] (in e931b90) Adatlap <https://ritz-international.com/wp-content/uploads/De_GIFK_Stuetzerstromwandler.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_stromwandler_GIFS-12-17-5-24-36-Stützerstromwandler.jpg alt=''
+[TEXT] (in e931b90) GIFS 12 | 17,5 | 24 | 36 támaszos áramátalakítók
+ Normál kialakítás
+[LIST] (in e931b90) Adatlap <https://ritz-international.com/wp-content/uploads/De_GIFS_Stuetzerstromwandler.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_stromwandler_gif_10_17_5_20_30_36_52_72_5.jpg alt=''
+[TEXT] (in e931b90) GIF 10 | 17,5 | 20 | 30 | 36 | 52 | 72,5 
+ Fejre rögzíthető kialakítás, GOST-tal kapható
+[LIST] (in e931b90) Adatlap <https://ritz-international.com/wp-content/uploads/De_GIF.pdf>
+[H H2] (in e931b90) FESZÜLTSÉGÁTALAKÍTÓK
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_spannungswandler_ves_12_17_5_24_spannungswandler.jpg alt=''
+[TEXT] (in e931b90) VEF 12 | 17,5 | 24 | 36 feszültségátalakítók
+ Egypólusú, keskeny kialakítás DIN 42600, 9. rész
+[LIST] (in e931b90) Adatlap <https://ritz-international.com/wp-content/uploads/De_VES_12_24_Spannungswandler.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_spannungswandler_gse_12_0_3_6_7_2_12_spannungswandler.jpg alt=''
+[TEXT] (in e931b90) VEF 52 | 72,5 
+ Egypólusú, kisméretű kialakítás, DIN 42600, 7. rész
+[LIST] (in e931b90) Adatlap <https://ritz-international.com/wp-content/uploads/De_GSE_12_0_12_Spannungswandler.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_spannungswandler_ven_12_17_5_24_36_52_72_5_spannungswandler.jpg alt=''
+[TEXT] (in e931b90) VZF 12 | 17,5 | 24 | 36 feszültségátalakítók
+ Kétpólusú, nagyméretű kialakítás/támaszos kialakítás DIN 42600, 3. rész
+[LIST] (in e931b90) Adatlap <https://ritz-international.com/wp-content/uploads/De_VEN_12_72_5_Spannungswandler.pdf>
+[H H2] (in e931b90) ÁRAMÁTALAKÍTÓK
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/beruehrungssichere_wandler_stromwandler_gbw.jpg alt=''
+[TEXT] (in e931b90) GBW
+ Fém tokozású áramátalakítók, 12–36 kV
+[LIST] (in e931b90) Adatlap <https://ritz-international.com/wp-content/uploads/DE_GBW.pdf>
+[H H2] (in e931b90) FESZÜLTSÉGÁTALAKÍTÓK
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/beruehrungssichere_wandler_spannungswandler_gbein_gbean.jpg alt=''
+[TEXT] (in e931b90) GBEIN, GBEAN
+ Fém tokozású feszültségátalakítók, 12–52 kV
+[LIST] (in e931b90) Adatlap <https://ritz-international.com/wp-content/uploads/DE_GBEIN_GBEAN.pdf>
+[H H2] (in e931b90) KOMBINÁLT ÁTALAKÍTÓ
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/beruehrungssichere_wandler_kombiwandler_kgbei_kgbea.jpg alt=''
+[TEXT] (in e931b90) KGBEI/KGBEA
+ Fém tokozású kombinált átalakítók, 12–36 kV
+[LIST] (in e931b90) Adatlap <https://ritz-international.com/wp-content/uploads/DE_KGBEIKGBEA.pdf>
+[H H2] (in e931b90) Vasúti átalakítók
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_bahnwandler_gsefb.jpg alt=''
+[TEXT] (in e931b90) GSEFB
+ A GSEFB kültéri feszültségátalakító elektromos vasúti járművek felső feszültségátalakítójaként való használatra szolgál. A szigetelés kültérnek ellenálló, kivételesen jó mechanikai és elektromos tulajdonságokkal rendelkező cikloalifás epoxigyantából készül. A GSEFBC-t egy szilikon kompozit szigetelőbe is beágyazzák, hogy megvédjék a sérüléstől vagy a felrobbanás valószínűtlen esetétől, és a tetején nyomáscsökkentő sapkával van ellátva. Minden kültéri alkatrész korrózióálló anyagból készül, és a készülékek karbantartásmentesek.
+ A vasúti feszültségátalakítók 40,5 kV-os szigetelési feszültségig használhatók, megfelelnek az európai és nemzetközi szabványoknak, és IRIS tanúsítvánnyal rendelkező gyárban készülnek.
+ A transzformátorok megfelelnek az EN 50463 szabványnak, teljesítik a hatályos LOC&PAS átjárhatósági műszaki előírás (ÁME) követelményeit, és ezért alkalmasak a járművön történő energiamérésre. Sok átalakító esetében erre a célra kiállítható ideiglenes EK közbenső vizsgálati tanúsítvány.
+[TEXT] (in e931b90) GSO(F)B 
+ A GSO(F)B egy egyfázisú, Um = 0,8 kV-os, öntőgyanta szigetelésű, dugaszolható áramátalakító, amelyet túláram- vagy visszáram-átalakítóként használnak villamos vasúti járművekben vagy járműveken.
+ A primer vezetőt a ügyféloldali szigetelt kábel vagy sín képezi, és az ügyfél az átalakítón keresztül táplálja. A kültérnek ellenálló cikloalifás epoxigyantával való szigetelésének köszönhetően megfelel a jármű tetején való használatra vonatkozó valamennyi követelménynek. Az átalakítók megfelelnek az európai és nemzetközi szabványoknak, és IRIS tanúsítvánnyal rendelkező gyárban készülnek.
+ A transzformátorok megfelelnek az EN 50463 szabványnak, teljesítik a hatályos LOC&PAS átjárhatósági műszaki előírás (ÁME) követelményeit, és ezért alkalmasak a járművön történő energiamérésre. Sok átalakító esetében erre a célra kiállítható ideiglenes EK közbenső vizsgálati tanúsítvány.
+ Igény esetén minden vasúti áram- és feszültségátalakító más kivitelben is rendelhető.
+[H H2] (in e931b90) Átvezető áramátalakítók
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_durchfuehrungsstabstromwandler_gds_127c_7_5_24_36_durchfuehrungsstromwandler.jpg alt=''
+[TEXT] (in e931b90) GDS 12|17.5|24|36 Átvezető áramátalakítók 
+ rögzített vezetővel
+[LIST] (in e931b90) Adatlap <https://ritz-international.com/wp-content/uploads/En_GDS.pdf>
+[H H2] (in e931b90) Támaszos áramátalakító
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_stuetzerstromwandler_gsso_12_17_5_24_hochstromwandler.jpg alt=''
+[TEXT] (in e931b90) GSSO 12 | 17,5 | 24 Nagyáramú átalakítók 
+ nagyáramú átalakítók
+[LIST] (in e931b90) Adatlap <https://ritz-international.com/wp-content/uploads/En_GSSO.pdf>
+[H H2] (in e931b90) Fém tokozású kombinált átalakítók, 12–36 kV
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_metallgekapselte_kombiwandler_12-36_kv_kgbea_36_kgbei_36_ausgefuehrt_als_breitbandwandler.jpg alt=''
+[TEXT] (in e931b90) KGBEA 36 / KGBEI 36 szélessávú átalakítóként tervezve 
+ Fém tokozású kombinált átalakítók
+[LIST] (in e931b90) Adatlap <https://ritz-international.com/wp-content/uploads/Datenblatt_KGBEA36_Breitband_Index_05_de-DE_en-GB.pdf>
+[H H2] (in e931b90) Támaszos áramátalakító
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_stuetzerstromwandler_gsws24_mit_optional_erweitertem_frequenzbereich.jpg alt=''
+[TEXT] (in e931b90) GSWS 24 opcionálisan kibővített frekvenciatartományban 
+ Támaszos áramátalakító
+[LIST] (in e931b90) Adatlap <https://ritz-international.com/wp-content/uploads/Datenblatt_GSWS24_Breitband_Index_01_de-DE_en-GB.pdf>
+[H H2] (in e931b90) Indukciós típusú, egypólusú feszültségátalakító
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_induktiver_einpoliger_spannungswandler_gses24d_mit_optional_erweitertem_frequenzbereich.jpg alt=''
+[TEXT] (in e931b90) GSES 24D opcionálisan kibővített frekvenciatartományban 
+ Indukciós típusú, egypólusú feszültségátalakító
+[LIST] (in e931b90) Adatlap <https://ritz-international.com/wp-content/uploads/Datenblatt_GSES24D_Breitband_Index_01_de-DE_en-GB.pdf>
+[PDFS] https://ritz-international.com/wp-content/uploads/RITZ-Medium_Voltage_Instrument_Transformers_Standard_ENG_2014_01-1.pdf https://ritz-international.com/wp-content/uploads/RITZ-Metal_Clad_Instrument_Transformers_ENG_2013-02-1.pdf https://ritz-international.com/wp-content/uploads/PQ_Analysis_EN-1.pdf https://ritz-international.com/wp-content/uploads/2302-AM-Offenbach-v6.pdf https://ritz-international.com/wp-content/uploads/TDB20260015_REV01.pdf https://ritz-international.com/wp-content/uploads/En_GSW.pdf https://ritz-international.com/wp-content/uploads/En_ASN.pdf https://ritz-international.com/wp-content/uploads/En_GI.pdf https://ritz-international.com/wp-content/uploads/En_VES.pdf https://ritz-international.com/wp-content/uploads/En_GSE.pdf https://ritz-international.com/wp-content/uploads/En_VEN.pdf https://ritz-international.com/wp-content/uploads/En_VZS.pdf https://ritz-international.com/wp-content/uploads/En_GSZ.pdf https://ritz-international.com/wp-content/uploads/En_VZN.pdf https://ritz-international.com/wp-content/uploads/De_GIFK_Stuetzerstromwandler.pdf https://ritz-international.com/wp-content/uploads/De_GIFS_Stuetzerstromwandler.pdf https://ritz-international.com/wp-content/uploads/De_GIF.pdf https://ritz-international.com/wp-content/uploads/De_VES_12_24_Spannungswandler.pdf https://ritz-international.com/wp-content/uploads/De_GSE_12_0_12_Spannungswandler.pdf https://ritz-international.com/wp-content/uploads/De_VEN_12_72_5_Spannungswandler.pdf https://ritz-international.com/wp-content/uploads/DE_GBW.pdf https://ritz-international.com/wp-content/uploads/DE_GBEIN_GBEAN.pdf https://ritz-international.com/wp-content/uploads/DE_KGBEIKGBEA.pdf https://ritz-international.com/wp-content/uploads/En_GDS.pdf https://ritz-international.com/wp-content/uploads/En_GSSO.pdf https://ritz-international.com/wp-content/uploads/Datenblatt_KGBEA36_Breitband_Index_05_de-DE_en-GB.pdf https://ritz-international.com/wp-content/uploads/Datenblatt_GSWS24_Breitband_Index_01_de-DE_en-GB.pdf https://ritz-international.com/wp-content/uploads/Datenblatt_GSES24D_Breitband_Index_01_de-DE_en-GB.pdf
+[TEMPLATES] 370 1013 1017 1020 1023

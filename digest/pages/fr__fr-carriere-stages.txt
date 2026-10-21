@@ -1,0 +1,22 @@
+# Stages - RITZ
+URL: https://ritz-international.com/fr/carriere/stages/  status=200 lang=fr kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "fr_FR", "og:type": "article", "og:title": "Stages - RITZ", "og:description": "Accueil Ton choix professionnel mis à l’épreuve ! Un aperçu pratique. Tu vises un emploi dans l’industrie électrique ? En effectuant un stage chez RITZ Instrument Transformers GmbH, tu peux découvrir concrètement le métier qui t’intéresse et acquérir de nombreuses expériences pratiques.  Un stage t’aide également à évaluer tes propres forces et faiblesses, à nouer des contacts […]", "og:url": "https://ritz-interna
+canonical: https://ritz-international.com/en/career/internships/
+hreflang: [['en', 'https://ritz-international.com/en/career/internships/'], ['fr', 'https://ritz-international.com/fr/carriere/stages/'], ['de', 'https://ritz-international.com/karriere/praktika/'], ['hu', 'https://ritz-international.com/hu/karrier/gyakorlatok/'], ['es', 'https://ritz-international.com/es/carrera-profesional/practicas/'], ['x-default', 'https://ritz-international.com/karriere/praktika/']]
+
+[H H2] Ton choix professionnel mis à l’épreuve !
+[TEXT] Un aperçu pratique. Tu vises un emploi dans l’industrie électrique ? En effectuant un stage chez RITZ Instrument Transformers GmbH, tu peux découvrir concrètement le métier qui t’intéresse et acquérir de nombreuses expériences pratiques. 
+ Un stage t’aide également à évaluer tes propres forces et faiblesses, à nouer des contacts importants et à valoriser ton CV. En outre, nous te soutenons également volontiers dans tes travaux scolaires, par ex. dans le cadre d’un mémoire de fin d’études.
+[H H2] Contact
+[H H2] Hambourg
+[LIST] personal.hamburg@ritz-international.com <mailto:personal.hamburg@ritz-international.com>
+[H H2] KIRCHAICH
+[LIST] personal.kirchaich@ritz-international.com <mailto:personal.kirchaich@ritz-international.com>
+[H H2] DRESDE
+[LIST] personal.dresden@ritz-international.com <mailto:personal.dresden@ritz-international.com>
+[IMG] https://ritz-international.com/wp-content/uploads/praktika_intro_Bild_links.webp alt=''
+[H H2] stages
+[TEXT] Les élèves et les étudiants de différentes disciplines peuvent effectuer leur stage chez nous. Pour ce faire, adresse ta demande au site concerné, accompagnée d’un bref CV et de ton dernier bulletin de notes, en précisant le site souhaité, la période et le domaine d’études.
+[IMG] https://ritz-international.com/wp-content/uploads/praktika_intro_Bild_rechts.webp alt=''
+[H H2] travail scolaire
+[TEXT] Nous encadrons des travaux scolaires et de fin d’études dans des domaines très variés. Veuillez adresser votre demande à ce sujet aux sites susmentionnés en indiquant votre filière d’études et, le cas échéant, le sujet envisagé.

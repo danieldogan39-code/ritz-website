@@ -1,0 +1,25 @@
+# Verantwortung - RITZ
+URL: https://ritz-international.com/unternehmen/verantwortung/  status=200 lang=de kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "description": "Erfahren Sie, wie RITZ Instrument Transformers Verantwortung für Umwelt und Nachhaltigkeit übernimmt.", "og:locale": "de_DE", "og:type": "article", "og:title": "Verantwortung - RITZ", "og:description": "Erfahren Sie, wie RITZ Instrument Transformers Verantwortung für Umwelt und Nachhaltigkeit übernimmt.", "og:url": "https://ritz-international.com/unternehmen/verantwortung/", "og:site_name": "RITZ"}
+canonical: https://ritz-international.com/unternehmen/verantwortung/
+hreflang: [['en', 'https://ritz-international.com/en/company/responsibility/'], ['fr', 'https://ritz-international.com/fr/entreprise/responsibility/'], ['de', 'https://ritz-international.com/unternehmen/verantwortung/'], ['hu', 'https://ritz-international.com/hu/a-vallalat/felelosseg/'], ['es', 'https://ritz-international.com/es/la-empresa/responsibility/'], ['x-default', 'https://ritz-international.com/unternehmen/verantwortung/']]
+
+[html] 
+[H H1] Innovation trifft Verantwortung:Gemeinsam für eine bessere Zukunft.
+[html] 
+[H H3] ENVIRONMENT
+[H H3] SOCIAL
+[H H3] GOVERNANCE
+[H H2] Gesellschaftliche Verantwortung
+[TEXT] Seit über 80 Jahren steht der Name RITZ für erstklassige Messwandler und innovative Lösungen in der Elektroindustrie. Der Name RITZ bürgt seit der Gründung des Unternehmens für höchste Qualität im Messwandlerbau und ist eng mit der RITZ Stiftung verbunden.
+ In unseren neun Standorten in Europa, China und in den USA arbeiten weltweit über 1.500 Mitarbeiter. Gemeinsam mit unseren Kunden entwickeln wir maßgeschneiderte Lösungen und gestalten langlebige Produkte für die Stärkung und den Ausbau unserer elektrischen Energienetze für eine nachhaltige Zukunft.
+[TEXT] Unsere Unternehmensphilosophie beinhaltet intern und extern vielfältige nachhaltige Ansätze, die wir kontinuierlich weiter ausbauen. Wir nehmen unsere gesellschaftliche und soziale Verantwortung ernst und fördern diese ganzheitlich.
+ Im Rahmen unserer nachhaltigen Verantwortung orientieren wir uns dabei an den Themen Environment, Social und Governance. RITZ und die RITZ Stiftung stehen für Sicherheit, Verlässlichkeit und eine generationsübergreifende Verantwortung. Der Mensch steht im Mittelpunkt unseres Handelns.
+[H H2] Unsere Vision
+[TEXT] Wir sehen Elektrizität als die wichtigste Energieform der Zukunft. Daher entwickeln wir uns als profitabler Spezialist und Anbieter von Lösungen der elektrischen Energietechnik beständig und zukunftsorientiert weiter.
+ RITZ und die RITZ Stiftung stehen für Sicherheit, Verlässlichkeit und eine generationsübergreifende Verantwortung – mit dem Menschen als Mittelpunkt unseres Handelns.
+[H H2] Weitere Informationen
+[TEXT] In unseren Downloads finden Sie ein stetig wachsendes Archiv an umfangreichen Dokumenten zu relevanten Inhalten in Bezug auf das Thema Verantwortung.
+[H H3] DOWNLOADS
+[LIST] Hinweisgebersystem <https://ritz-international.com/wp-content/uploads/DE-Hinweisgebersystem.pdf> | Das Neueste aus der Alzheimerforschung – Veranstaltung bei RITZ mit Experten vom UKE <https://ritz-international.com/wp-content/uploads/RITZ_Praesentation_UKE_2025-1.pdf> | CO2 Reduktion in den Werken <https://ritz-international.com/wp-content/uploads/RITZ-CO2-Reduktion-in-den-Werken-1.pdf> | Verhaltenskodex für Lieferanten <https://ritz-international.com/wp-content/uploads/Verhaltenskodex_Lieferanten_30_7_2025-1.pdf> | ZVEI-VDMA Code of Conduct <https://ritz-international.com/wp-content/uploads/ZVEI-VDMA-Code-of-Conduct-RITZ-DE.pdf> | Förderung des Projektes zum Austausch der Beleuchtung an dem Standort Ottendorf Okrilla <https://ritz-international.com/wp-content/uploads/Foerderung-des-Projektes-zum-Austausch-der-Beleuchtung-an-dem-Standort-Ottendorf-Okrilla.docx>
+[PDFS] https://ritz-international.com/wp-content/uploads/DE-Hinweisgebersystem.pdf https://ritz-international.com/wp-content/uploads/RITZ_Praesentation_UKE_2025-1.pdf https://ritz-international.com/wp-content/uploads/RITZ-CO2-Reduktion-in-den-Werken-1.pdf https://ritz-international.com/wp-content/uploads/Verhaltenskodex_Lieferanten_30_7_2025-1.pdf https://ritz-international.com/wp-content/uploads/ZVEI-VDMA-Code-of-Conduct-RITZ-DE.pdf

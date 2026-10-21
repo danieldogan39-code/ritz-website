@@ -1,0 +1,10 @@
+# A RITZ munkatársa a legjobb gyakornok lett a tanfolyamon - RITZ
+URL: https://ritz-international.com/hu/a-ritz-munkatarsa-a-legjobb-gyakornok-lett-a-tanfolyamon/  status=200 lang=hu kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "hu_HU", "og:type": "article", "og:title": "A RITZ munkatársa a legjobb gyakornok lett a tanfolyamon - RITZ", "og:description": "\r 2017. november 9-én kollégánkat, Julia Petersent a Hamburgi Ipari és Kereskedelmi Kamara a 2016/2017-es tanfolyam legjobb gyakornokának választotta. A RITZ-et a duális szakképzésben elért eredményeiért is kitüntették! \r", "og:url": "https://ritz-international.com/hu/a-ritz-munkatarsa-a-legjobb-gyakornok-lett-a-tanfolyamon/", "og:site_name": "RITZ", "og:image": 
+canonical: https://ritz-international.com/hu/a-ritz-munkatarsa-a-legjobb-gyakornok-lett-a-tanfolyamon/
+hreflang: [['en', 'https://ritz-international.com/en/ritz-employee-named-best-trainee-of-her-course/'], ['fr', 'https://ritz-international.com/fr/une-collaboratrice-de-ritz-elue-meilleure-apprentie-de-sa-filiere-de-formation/'], ['de', 'https://ritz-international.com/ritz-mitarbeiterin-zur-besten-auszubildenden-ihres-lehrgangs-ausgezeichnet-worden/'], ['hu', 'https://ritz-international.com/hu/a-ritz-munkatarsa-a-legjobb-gyakornok-lett-a-tanfolyamon/'], ['es', 'https://ritz-international.com/es/empleada-de-ritz-premiada-como-la-mejor-becaria-de-su-curso/'], ['x-default', 'https://ritz-international.com/ritz-mitarbeiterin-zur-besten-auszubildenden-ihres-lehrgangs-ausgezeichnet-worden/']]
+
+[POSTTITLE] A RITZ munkatársa a legjobb gyakornok lett a tanfolyamon
+[POSTCONTENT] 2017. november 9-én kollégánkat, Julia Petersent a Hamburgi Ipari és Kereskedelmi Kamara a 2016/2017-es tanfolyam legjobb gyakornokának választotta. A RITZ-et a duális szakképzésben elért eredményeiért is kitüntették! IMGS= LINKS=
+[BTN] Vissza -> https://ritz-international.com/hu/?page_id=5606
+[FEATURED] https://ritz-international.com/wp-content/uploads/Foto_Ehrung_IHK_Petersen-768x510-1.jpg

@@ -1,0 +1,39 @@
+{
+  "name": "ritz-website",
+  "version": "1.0.0",
+  "description": "RITZ Instrument Transformers – statische Website in fünf Sprachen (Build, Vorschau, Prüfungen)",
+  "scripts": {
+    "build": "node build.mjs",
+    "build:static": "ONLY=static node build.mjs",
+    "build:preview": "ONLY=spa node build.mjs",
+    "build:docs-local": "DOCBASE=/dokumente/ node build.mjs",
+    "serve": "cd dist && python3 -m http.server 8080",
+    "check:i18n": "for l in de fr hu es; do node tools/check_i18n.mjs $l || exit 1; done",
+    "qa:shots": "node tools/shot.mjs ../qa-shots 1440x900 /de/ /de/produkte/ /de/produktfinder/ /de/kontakt/ --full",
+    "qa:flow": "node tools/qa/flow.mjs",
+    "qa:map": "node tools/qa/map.mjs",
+    "qa:config": "node tools/qa/configurator.mjs",
+    "images:products": "node tools/fetch_product_images.mjs",
+    "qa:crawl": "node tools/qa/crawl.mjs http://localhost:8080 390 120 && node tools/qa/crawl.mjs http://localhost:8080 1440 60",
+    "qa:a11y": "node tools/qa/a11y.mjs",
+    "qa:perf": "node tools/qa/perf.mjs"
+  },
+  "keywords": [],
+  "author": "Medialyte",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@fontsource-variable/archivo": "^5.1.1",
+    "d3-geo": "^3.1.1",
+    "esbuild": "^0.24.2",
+    "sharp": "^0.33.5",
+    "topojson-client": "^3.1.0",
+    "topojson-simplify": "^3.0.3",
+    "world-atlas": "^2.0.2"
+  },
+  "type": "module",
+  "devDependencies": {
+    "axe-core": "^4.10.2",
+    "playwright-core": "^1.48.2"
+  },
+  "private": true
+}

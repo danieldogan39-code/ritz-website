@@ -1,0 +1,69 @@
+# BARRAS CONDUCTORAS SIS - RITZ
+URL: https://ritz-international.com/es/productos/carriles-actuales/  status=200 lang=es kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "es_ES", "og:type": "article", "og:title": "BARRAS CONDUCTORAS SIS - RITZ", "og:description": "Inicio BARRAS CONDUCTORAS Ventajas El sistema de aislamiento de barras conductoras disponible constituye una alternativa a los cables conectados en paralelo y a las canalizaciones de barras encapsuladas en chapa, especialmente para la transmisión de corrientes y potencias elevadas y cuando el espacio es limitado. Las siguientes ventajas específicas del sistema hablan en favor del […]", "og:url": "h
+canonical: https://ritz-international.com/es/productos/carriles-actuales/
+hreflang: [['en', 'https://ritz-international.com/en/products/current-rails/'], ['fr', 'https://ritz-international.com/fr/produits/fils-electriques/'], ['de', 'https://ritz-international.com/produkte/stromschienen/'], ['hu', 'https://ritz-international.com/hu/termekek/folyo-sinek/'], ['es', 'https://ritz-international.com/es/productos/carriles-actuales/'], ['x-default', 'https://ritz-international.com/produkte/stromschienen/']]
+
+[H H2] BARRAS CONDUCTORAS SIS
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/introduction_image_stromschienen-e1705680286556.jpg alt=''
+[H H3] Ventajas
+[TEXT] El sistema de aislamiento de barras conductoras disponible constituye una alternativa a los cables conectados en paralelo y a las canalizaciones de barras encapsuladas en chapa, especialmente para la transmisión de corrientes y potencias elevadas y cuando el espacio es limitado.
+ Las siguientes ventajas específicas del sistema hablan en favor del uso de barras colectoras totalmente aisladas y controladas capacitivamente:
+ Formato 
+ Ahorro de espacio
+ El espacio convertido puede dimensionarse en consecuencia más pequeño ya durante la creación
+ Radios de curvatura muy pequeños (según el material)
+ Cualquier forma geométrica posible (según el material)
+Montaje 
+ Escaso esfuerzo de instalación gracias al uso de piezas de montaje y fijación normalizadas
+ Escaso esfuerzo de planificación del proyecto por parte del cliente
+Seguridad 
+ Distribución de campo controlada capacitivamente
+ Alta resistencia térmica y dinámica a 
+cortocircuitos
+ Seguridad al contacto en la zona de conexión a tierra integrada concéntricamente
+ Los cortocircuitos de fase son casi imposibles
+ Refrigeración natural a través de un conductor suficientemente dimensionado
+ Alta fiabilidad operativa gracias a los ensayos individuales en fábrica
+[H H2] Contacto
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/icon_contact_flag_de.svg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/icon_contact_flag_en.svg alt=''
+[H H2] Florian Däumler
+[LIST] +49 151 22310380 | Hablemos por chat en MS Teams <https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fchat%2F0%2F0%3Fusers%3Dflorian.daeumler%40ritz-international.com&type=chat&deeplinkId=e17d460f-1fb0-4af1-87fa-6419c131b82e&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true>
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/icon_contact_flag_de.svg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/icon_contact_flag_en.svg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/icon_contact_flag_ru.svg alt=''
+[H H2] Roman Ravilov
+[LIST] +49 151 61321024 | Hablemos por chat en MS Teams <https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fchat%2F0%2F0%3Fusers%3Droman.ravilov%40ritz-international.com&type=chat&deeplinkId=ef4fc145-d0c5-416b-b2e3-27bc29fd2855&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true>
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/icon_contact_flag_de.svg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/icon_contact_flag_en.svg alt=''
+[H H2] Sascha Kensche
+[LIST] +49 172 1922431 | Hablemos por chat en MS Teams <https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fchat%2F0%2F0%3Fusers%3Dsascha.kensche%40ritz-international.com&type=chat&deeplinkId=4caf1354-e335-42bf-9144-91f591fa00e7&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true>
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/icon_contact_flag_de.svg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/icon_contact_flag_en.svg alt=''
+[H H2] Stephan Neimann
+[LIST] +49 1511 2974172 | Hablemos por chat en MS Teams <https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fchat%2F0%2F0%3Fusers%3Dstephan.neimann%40ritz-international.com&type=chat&deeplinkId=7b922f11-40fe-456b-8e46-95312114589c&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true>
+[H H2] Contacto
+[LIST] sales.sis@ritz-international.com <mailto:%20sales.sis@ritz-international.com>
+[H H3] Longitudes de fabricación
+[TEXT] Las longitudes y configuraciones geométricas de las barras dependen de las instalaciones de fabricación, las condiciones locales y el medio de transporte.
+[H H3] Conexiones de barra de varias piezas
+[TEXT] Las conexiones de barras conductoras extensas se fabrican a partir de secciones parciales debido a las condiciones de las instalaciones de fabricación, el transporte y la manipulación in situ. Para garantizar un trazado continuo y sin tensión de la barra, entre los distintos segmentos se instala un manguito aislante que cubre los extremos controlados de las barras colectoras.
+[H H3] Elementos de fijación
+[TEXT] Para la fijación de las barras se dispone de un sistema modular con distintas opciones y a la vez muy fácil de montar. En caso necesario, también se pueden realizar adaptaciones en la obra. La fijación de las barras consta de un perfil de aluminio en forma de doble «C», ángulos, tornillos con cabeza de martillo y abrazaderas de fijación de plástico.
+ Las abrazaderas de fijación deben ser diseñadas como «cojinete fijo» o «cojinete liso», de modo que se permita un deslizamiento axial de la barra en varios puntos de fijación.
+ Los puntos de apoyo de la fijación de las barras están determinados principalmente por las fuerzas de cortocircuito del sistema.
+ También es necesario asegurarse de que no se produzcan resonancias mecánicas en la frecuencia de red y sus armónicos. Por lo tanto, las distancias de los apoyos entre las barras deben calcularse en consecuencia.
+ Para ello, hay disponible un programa de cálculo que, además de los parámetros ya mencionados, incluye los factores
+ Diámetro de la barra
+ Distancia entre fases
+ Masa de la barra
+ Rigidez a la flexión del material. 
+ Las distancias deben recalcularse para cada pedido.
+[H H3] Elementos de fijación
+[TEXT] Aquí hay que diferenciar entre «cojinetes fijos» y «cojinetes lisos». El uso de cojinetes lisos o fijos se determina mediante el cálculo de las distancias de apoyo. La estructura de un cojinete fijo cuenta con arandelas de caucho, mientras que la del cojinete liso es con arandelas de metal.
+[H H3] Puesta a tierra
+[TEXT] En general debe instalarse, en paralelo a la barra, una barra de puesta a tierra cuya sección transversal debe dimensionarse para las corrientes de cortocircuito que puedan producirse. Todas las barras, manguitos de unión y perfiles de fijación deben conectarse al potencial de tierra a través de esta barra de puesta a tierra.
+[H H3] Opciones de conexión
+[TEXT] Para conectar barras entre sí, se utilizan conexiones planas estandarizadas con conectores flexibles diseñados para la corriente correspondiente. Para la conexión a las instalaciones que se van a interconectar, hay disponibles diversos modelos. En caso de peticiones específicas de los clientes, se pueden definir conexiones adecuadas para lograr una conexión óptima.
+ Cuando se requieren conexiones fijas en ambos lados, generalmente es necesario dividir las barras y conectarlas con un manguito con el fin de compensar las tolerancias y permitir la expansión térmica de la barra.

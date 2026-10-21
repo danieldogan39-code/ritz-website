@@ -1,0 +1,104 @@
+# Gyártási helyszínek - RITZ
+URL: https://ritz-international.com/hu/a-vallalat/gyartasi-helyszinek/  status=200 lang=hu kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "hu_HU", "og:type": "article", "og:title": "Gyártási helyszínek - RITZ", "og:description": "Főoldal   >   Vállalat    >    Gyártóhelyek    Az egész világnak szüksége van energiára. Hamburgtól Hartwellig (USA). Mi, a RITZ-csoportk nemzetközi szinten működünk, és következetes növekedési pályán vagyunk.  A hat németországi, ausztriai, magyarországi, kínai és amerikai gyártóhelyünk szorosan kapcsolódik egymáshoz. Partnereinkkel együtt szeretnénk javítani globális jelenlétünket. Lépésről lépésre.
+canonical: https://ritz-international.com/hu/a-vallalat/gyartasi-helyszinek/
+hreflang: [['en', 'https://ritz-international.com/en/company/production-sites/'], ['fr', 'https://ritz-international.com/fr/entreprise/sites-de-production/'], ['de', 'https://ritz-international.com/unternehmen/produktionsstandorte/'], ['hu', 'https://ritz-international.com/hu/a-vallalat/gyartasi-helyszinek/'], ['es', 'https://ritz-international.com/es/la-empresa/centros-de-produccion/'], ['x-default', 'https://ritz-international.com/unternehmen/produktionsstandorte/']]
+
+[TEXT] Főoldal    >    Vállalat     >    Gyártóhelyek
+[H H2] Az egész világnak szüksége van energiára.
+[TEXT] Hamburgtól Hartwellig (USA). Mi, a RITZ-csoportk nemzetközi szinten működünk, és következetes növekedési pályán vagyunk. 
+ A hat németországi, ausztriai, magyarországi, kínai és amerikai gyártóhelyünk szorosan kapcsolódik egymáshoz. Partnereinkkel együtt szeretnénk javítani globális jelenlétünket. Lépésről lépésre.
+[IMG] https://ritz-international.com/wp-content/uploads/2022/07/network_lines_on_white_right.svg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/2022/07/network_lines_on_white_right.svg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/2022/07/unternehmen_produktionsstandorte_1.jpg.jpg alt=''
+[H H2] TELEPHELYEK ÁTTEKINTÉSE
+[H H2] Hamburg
+[TEXT] RITZ Instrument 
+Transformers GmbH, Hamburg
+[LIST] Wandsbeker Zollstraße 92-98 22041 Hamburg Németország | +49 40 511 230
+[BTN] Útvonaltervező -> https://goo.gl/maps/5ng9TzyrJcWU8ibV9
+[BTN] Kapcsolat -> #
+[H H2] Wirges
+[TEXT] RITZ Instrument 
+Transformers GmbH, Wirges
+[LIST] Siemensstraße 2 56422 Wirges Németország | +49 2602 6790
+[BTN] Útvonaltervező -> https://goo.gl/maps/e3Do4eB4mcXijkLeA
+[BTN] Kapcsolat -> #
+[html] Hamburg
+Funkció
+A vállalat székhelye – Ritz-alapítvány
+Értékesítés
+Kontrolling/számvitel
+IT
+Humán erőforrás
+Fejlesztés/építés
+Elektronika IMGS=/wp-content/uploads/2022/07/icon_angle_up.svg
+[html] Wirges
+Funkció
+Értékesítés
+Termelés
+Beltéri feszültség- és áramátalakítók 72,5 kV-ig
+Kültéri feszültség- és áramátalakítók 72,5 kV-igÖntőgyanta szigetelésű teljesítménytranszformátorok 40,5 kV-ig és 25 MVA-ig IMGS=/wp-content/uploads/2022/07/icon_angle_up.svg
+[jet-listing-grid] Útvonaltervező
+Kapcsolat
+MUNKAVÁLLALÓ
+Útvonaltervező
+Kapcsolat
+MUNKAVÁLLALÓ
+Útvonaltervező
+Kapcsolat
+MUNKAVÁLLALÓ
+Útvonaltervező
+Kapcsolat
+MUNKAVÁLLALÓ
+Útvonaltervező
+Kapcsolat
+MUNKAVÁLLALÓ
+Útvonaltervező
+Kapcsolat
+MUNKAVÁLLALÓ
+Útvonaltervező
+Kapcsolat
+MUNKAVÁLLALÓ LINKS=Kapcsolat<#> Kapcsolat<#> Kapcsolat<#> Kapcsolat<#> Kapcsolat<#> Kapcsolat<#> Kapcsolat<#>
+[LIST] (in 32b1f72)  | 
+[BTN] (in 32b1f72) Útvonaltervező -> None
+[BTN] (in 32b1f72) Kapcsolat -> #
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) MUNKAVÁLLALÓ
+[LIST] (in 32b1f72)  | 
+[BTN] (in 32b1f72) Útvonaltervező -> None
+[BTN] (in 32b1f72) Kapcsolat -> #
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) MUNKAVÁLLALÓ
+[LIST] (in 32b1f72)  | 
+[BTN] (in 32b1f72) Útvonaltervező -> None
+[BTN] (in 32b1f72) Kapcsolat -> #
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) MUNKAVÁLLALÓ
+[LIST] (in 32b1f72)  | 
+[BTN] (in 32b1f72) Útvonaltervező -> None
+[BTN] (in 32b1f72) Kapcsolat -> #
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) MUNKAVÁLLALÓ
+[LIST] (in 32b1f72)  | 
+[BTN] (in 32b1f72) Útvonaltervező -> None
+[BTN] (in 32b1f72) Kapcsolat -> #
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) MUNKAVÁLLALÓ
+[LIST] (in 32b1f72)  | 
+[BTN] (in 32b1f72) Útvonaltervező -> None
+[BTN] (in 32b1f72) Kapcsolat -> #
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) MUNKAVÁLLALÓ
+[LIST] (in 32b1f72)  | 
+[BTN] (in 32b1f72) Útvonaltervező -> None
+[BTN] (in 32b1f72) Kapcsolat -> #
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) MUNKAVÁLLALÓ

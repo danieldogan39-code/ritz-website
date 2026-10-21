@@ -1,0 +1,10 @@
+# Warenkorb - RITZ
+URL: https://ritz-international.com/warenkorb/  status=200 lang=de kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "Warenkorb - RITZ", "og:url": "https://ritz-international.com/warenkorb/", "og:site_name": "RITZ"}
+canonical: https://ritz-international.com/warenkorb/
+hreflang: [['de', 'https://ritz-international.com/warenkorb/'], ['x-default', 'https://ritz-international.com/warenkorb/']]
+
+[MAINHTML] Warenkorb
+ Das interessiert dich vielleicht …
+ Dein Warenkorb ist gerade leer!
+ Neu im Shop

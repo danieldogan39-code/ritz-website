@@ -1,0 +1,69 @@
+# BARRES CONDUCTRICES SIS - RITZ
+URL: https://ritz-international.com/fr/produits/fils-electriques/  status=200 lang=fr kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "fr_FR", "og:type": "article", "og:title": "BARRES CONDUCTRICES SIS - RITZ", "og:description": "Accueil BARRES CONDUCTRICES Avantages Le système d’isolation de jeux de barres disponible offre une alternative aux câbles montés en parallèle et aux gaines de barres sous enveloppe métallique, en particulier pour la transmission de courants et de puissances élevés et dans des espaces restreints. Les avantages spécifiques au système suivants parlent en faveur de l’utilisation […]", "og:url": "http
+canonical: https://ritz-international.com/fr/produits/fils-electriques/
+hreflang: [['en', 'https://ritz-international.com/en/products/current-rails/'], ['fr', 'https://ritz-international.com/fr/produits/fils-electriques/'], ['de', 'https://ritz-international.com/produkte/stromschienen/'], ['hu', 'https://ritz-international.com/hu/termekek/folyo-sinek/'], ['es', 'https://ritz-international.com/es/productos/carriles-actuales/'], ['x-default', 'https://ritz-international.com/produkte/stromschienen/']]
+
+[H H2] BARRES CONDUCTRICES SIS
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/introduction_image_stromschienen-e1705680286556.jpg alt=''
+[H H3] Avantages
+[TEXT] Le système d’isolation de jeux de barres disponible offre une alternative aux câbles montés en parallèle et aux gaines de barres sous enveloppe métallique, en particulier pour la transmission de courants et de puissances élevés et dans des espaces restreints.
+ Les avantages spécifiques au système suivants parlent en faveur de l’utilisation de jeux de barres entièrement isolés et à commande capacitive :
+ Construction 
+ Peu encombrant
+ L’espace aménagé peut être réduit en conséquence dès la construction.
+ Rayons de courbure très faibles (en fonction du matériau)
+ Toutes les formes géométriques sont réalisables (en fonction du matériau)
+Montage 
+ Travail de montage réduit grâce à l’utilisation de pièces de montage et de fixation normalisées
+ Peu de travail d’étude de projet de la part du client
+Sécurité 
+ Répartition du champ à commande capacitive
+ Haute résistance aux 
+courts-circuits thermiques et dynamiques
+ Sécurité de contact dans la zone du revêtement de terre encastré de manière concentrique
+ Les courts-circuits de phase sont pratiquement exclus
+ Refroidissement naturel grâce à un conducteur suffisamment dimensionné
+ Grande sécurité de fonctionnement grâce au contrôle des pièces en usine
+[H H2] Interlocuteur
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/icon_contact_flag_de.svg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/icon_contact_flag_en.svg alt=''
+[H H2] Florian Däumler
+[LIST] +49 151 22310380 | Discutez avec moi sur MS Teams <https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fchat%2F0%2F0%3Fusers%3Dflorian.daeumler%40ritz-international.com&type=chat&deeplinkId=e17d460f-1fb0-4af1-87fa-6419c131b82e&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true>
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/icon_contact_flag_de.svg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/icon_contact_flag_en.svg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/icon_contact_flag_ru.svg alt=''
+[H H2] Roman Ravilov
+[LIST] +49 151 61321024 | Discutez avec moi sur MS Teams <https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fchat%2F0%2F0%3Fusers%3Droman.ravilov%40ritz-international.com&type=chat&deeplinkId=ef4fc145-d0c5-416b-b2e3-27bc29fd2855&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true>
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/icon_contact_flag_de.svg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/icon_contact_flag_en.svg alt=''
+[H H2] Sascha Kensche
+[LIST] +49 172 1922431 | Discutez avec moi sur MS Teams <https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fchat%2F0%2F0%3Fusers%3Dsascha.kensche%40ritz-international.com&type=chat&deeplinkId=4caf1354-e335-42bf-9144-91f591fa00e7&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true>
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/icon_contact_flag_de.svg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/icon_contact_flag_en.svg alt=''
+[H H2] Stephan Neimann
+[LIST] +49 1511 2974172 | Discutez avec moi sur MS Teams <https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fchat%2F0%2F0%3Fusers%3Dstephan.neimann%40ritz-international.com&type=chat&deeplinkId=7b922f11-40fe-456b-8e46-95312114589c&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true>
+[H H2] Contact
+[LIST] sales.sis@ritz-international.com <mailto:%20sales.sis@ritz-international.com>
+[H H3] Longueurs de fabrication
+[TEXT] Les longueurs et les configurations géométriques des rails dépendent des installations de fabrication, des conditions locales et du moyen de transport.
+[H H3] Raccordements de barres en plusieurs éléments
+[TEXT] Les raccordements de jeux de barres étendus dans l’espace sont fabriqués sur place à partir de pièces détachées pour des raisons d’installations de fabrication, de transport et de manipulation. Pour garantir un guidage des barres continu et libre de potentiel, un manchon isolé est posé entre les segments et recouvre les extrémités commandées des jeux de barres.
+[H H3] Éléments de fixation
+[TEXT] Pour fixer les rails, il existe un système modulaire varié et pourtant très facile à monter. Si nécessaire, il est possible de procéder à des adaptations sur le chantier. La fixation du rail se compose d’un profilé double « C » en aluminium, d’équerres, de boulons à tête rectangulaire et de colliers de serrage en plastique.
+ Les colliers de fixation seront/doivent être des « paliers fixes » ou des « paliers lisses », de manière à permettre un glissement axial du rail en cas de points de fixation multiples.
+ Les points d’appui de la fixation des rails sont principalement déterminés par les forces de court-circuit de l’installation.
+ Il faut également veiller à ce qu’aucune résonance mécanique n’apparaisse à la fréquence du réseau et à ses harmoniques. En conséquence, il faut calculer les distances des supports entre les rails.
+ Pour ce faire, il existe un programme de calcul qui, outre les paramètres déjà mentionnés, contient les facteurs
+ Diamètre de la barre
+ Écart de phase
+ Masse du rail
+ Résistance à la flexion
+ du matériau. Les distances doivent être recalculées pour chaque commande.
+[H H3] Éléments de fixation
+[TEXT] On distingue ici les « paliers fixes » et les « paliers lisses ». L’utilisation de paliers glissants ou fixes résulte du calcul des distances entre appuis. La structure d’un palier fixe est réalisée avec des rondelles en caoutchouc, celle d’un palier lisse avec des rondelles métalliques.
+[H H3] Mise à la terre
+[TEXT] En général, il faut poser un câble de mise à la terre parallèlement à la barre conductrice, dont la section doit être dimensionnée en fonction des éventuels courants de court-circuit. Toutes les barres, tous les manchons de raccordement et tous les profilés de fixation doivent être raccordés à la terre par le biais de cette barre conductrice.
+[H H3] Possibilités de raccordement
+[TEXT] Pour relier les rails entre eux, on utilise des raccords plats standardisés avec des connecteurs flexibles, conçus pour l’intensité de courant correspondante. De multiples versions sont disponibles pour le raccordement aux installations qui sont reliées entre elles. Si le client a des souhaits particuliers, des connexions adaptées peuvent être définies afin de permettre un raccordement optimal.
+ Si des raccords fixes doivent être installés des deux côtés, il est généralement nécessaire de diviser les rails et de les relier par un manchon afin de pouvoir compenser les tolérances et permettre la dilatation thermique du rail.

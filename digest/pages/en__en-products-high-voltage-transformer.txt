@@ -1,0 +1,94 @@
+# High-voltage transformers - RITZ
+URL: https://ritz-international.com/en/products/high-voltage-transformer/  status=200 lang=en kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "en_US", "og:type": "article", "og:title": "High-voltage transformers - RITZ", "og:description": "Home High-voltage transformers Our high-voltage transformers are oil-paper insulated in modern, proven Ritz quality. A high-quality PCB-free insulating oil is used and the converters are hermetically sealed. This is ensured by corrosion-resistant components, a stainless steel expansion cell and clamped O-ring seals. This protects the oil-paper insulation from external influences and eliminates t
+canonical: https://ritz-international.com/en/products/high-voltage-transformer/
+hreflang: [['en', 'https://ritz-international.com/en/products/high-voltage-transformer/'], ['fr', 'https://ritz-international.com/fr/produits/transformateurs-haute-tension/'], ['de', 'https://ritz-international.com/produkte/hochspannungswandler/'], ['hu', 'https://ritz-international.com/hu/termekek/nagyfeszueltsegu-atalakitok/'], ['es', 'https://ritz-international.com/es/productos/transformadores-de-alta-tension/'], ['x-default', 'https://ritz-international.com/produkte/hochspannungswandler/']]
+
+[H H2] High-voltage transformers
+[IMG] https://ritz-international.com/wp-content/uploads/Hochspannungswandler-Intro2.jpg alt=''
+[TEXT] Our high-voltage transformers are oil-paper insulated in modern, proven Ritz quality. A high-quality PCB-free insulating oil is used and the converters are hermetically sealed. This is ensured by corrosion-resistant components, a stainless steel expansion cell and clamped O-ring seals. This protects the oil-paper insulation from external influences and eliminates the need for oil maintenance over the entire service life. The primary conductors can be made switchable and thus adapted to different primary currents. We prefer to use composite insulators with a specific creepage distance of 31 mm/kV and load class 2. The terminal box has a practical design for safe and fast connection work.
+[H H2] Contact us
+[H H2] Ritz Instrument Transformers Inc.
+[TEXT] 25 Hamburg Avenue
+ Lavonia, GA 30907
+[LIST] +1 706-356-7180 <tel:+17063567180> | sales@ritzusa.com <mailto:sales@ritzusa.com>
+[H H2] Dr. Horst Riedner
+[LIST] +49 172 9538976 <tel:+491729538976> | horst.riedner@ritz-international.com <mailto:kay.leschick@ritz-international.com>
+[template] PRODUCTS
+High voltage (69kV to 500kV)
+RITZ offers both standard devices and customized solutions whose design and construction meet all international standards .If you cannot find what you are looking for in our range and requirefurther information , please contact us.
+Type IVOOil-paper insulated outdoor voltage transformer
+The type IVO high-voltage transformer is an inductive voltage transformer. It is used to provide output current for measuring devices for measuring turnover, for protective relays and other devices for current monitoring.
+This brochure describes the functions and performance features of the RITZ type IVO current transformer for voltage classes from 72 kV to 245 kV.
+Product brochure
+Type ICOOiled paper-insulated outdoor current transformer
+The ICO type high-voltage transformer is an inductive current transformer (CT). It is used in high-voltage systems to provide output current for measuring devices for turnover measurement, for protective relays and other devices for current monitoring.
+This brochure describes the functions and performance features of the RITZ current transformer type ICO for voltage classes from 72 kV to 245 kV.
+Product brochure
+Type CMOOiled paper-insulated CT/VT
+The CMO type high voltage transformer is a combined high voltage transformer. inductive current and voltage transformers (CT/VT). It is used in High-voltage systems for the provision of output current and voltage for measuring devices for measuring turnover, for protective relays and other devices for monitoring of current and voltage.
+This brochuredescribes the functions and performance features of the RITZ current transformer type CMO for voltage classes from 72 kV to 245 kV .
+Product brochure
+Type CVOCapacitive voltage transformer
+The CVO from RITZ is a coupling capacitor voltage transformer (CCVT) used in high and extra-high voltage systems to provide output voltage for meters, protective relays and other measuring devices. In addition, the device can be equipped with special brackets using an accessory that enables the CCVT to be used for coupling powerline carrier signals (PLC) to the transmission line for communication applications.
+Compared to inductive voltage transformers, CCVTs become increasingly cost-effective as the grid voltage increases. In addition, CCVTs weigh less than inductive voltage transformers. The upper condenser segments can be dismantled for easier shipping and handling. This brochure describes the functions and features of the RITZ-CCVT type CVO.
+Product brochure
+Information CVO550EM on earthquake safety in accordance with IEEE693
+CVO: Lifetime accuracy guarantee r2024
+GENERAL DOWNLOADS
+3 Year Warranty Statement
+High Voltage Type Designation Change Notice IMGS=https://ritz-international.com/wp-content/uploads/Type-IVO-Outdoor-Oil-Filled.jpg https://ritz-international.com/wp-content/uploads/Type-ICO-Outdoor-Oil-Filled.jpg https://ritz-international.com/wp-content/uploads/Type-CMO-Oil-Filled-CV-VT.jpg https://ritz-international.com/wp-content/uploads/CVO-Capacitor.jpg LINKS=Product brochure<https://ritz-international.com/wp-content/uploads/type-ivo-outdoor-oil-filled-product-brochure.pdf> Product brochure<https://ritz-international.com/wp-content/uploads/type-ico-outdoor-oil-filled-product-brochure.pdf> Product brochure<https://ritz-international.com/wp-content/uploads/type-cmo-outdoor-oil-filled-combined-ct-vt-product-brochure.pdf> Product brochure<https://ritz-international.com/wp-content/uploads/cvo-capacitor-product-brochure.pdf> Information CVO550EM on earthquake safety in accordance with IEEE693<https://ritz-international.com/wp-content/uploads/CVO550EM-IEEE693-High-Seismic.pdf> CVO: Lifetime accuracy guarantee r2024<https://ritz-international.com/wp-content/uploads/CVO-Lifetime-Accuracy-Warranty-r2024.pdf> 3 Year Warranty Statement<https://ritz-international.com/wp-content/uploads/3-Year-Warranty-Statement.pdf> High Voltage Type Designation Change Notice<https://ritz-international.com/wp-content/uploads/High-Voltage-Type-Designation-Change-Notice.pdf>
+[ACC] (in 6a73017) <PRODUCTS> tpl=13067 High voltage (69kV to 500kV)
+ RITZ offers both standard devices and customized solutions whose design and construction meet all international standards . If you cannot find what you are looking for in our range and require further information , please contact us .
+ Type IVO
+ Oil-paper insulated outdoor voltage transformer
+ The type IVO high-voltage transformer is an inductive voltage transformer. It is used to provide output current for measuring devices for measuring turnover, for protective relays and other devices for current monitoring.
+ This brochure describes the functions and performance features of the RITZ type IVO current transformer for voltage classes from 72 kV to 245 kV.
+ Product brochure 
+ Type ICO 
+Oiled paper-insulated outdoor current transformer
+ The ICO type high-voltage transformer is an inductive current transformer (CT). It is used in high-voltage systems to provide output current for measuring devices for turnover measurement, for protective relays and other devices for current monitoring.
+ This brochure describes the functions and performance features of the RITZ current transformer type ICO for voltage classes from 72 kV to 245 kV.
+ Product brochure 
+ Type CMO
+ Oiled paper-insulated CT/VT
+ The CMO type high voltage transformer is a combined high voltage transformer. inductive current and voltage transformers (CT/VT). It is used in High-voltage systems for the provision of output current and voltage for measuring devices for measuring turnover, for protective relays and other devices for monitoring of current and voltage. 
+ This brochure describes the functions and performance features of the RITZ current transformer type CMO for voltage classes from 72 kV to 245 kV .
+ Product brochure 
+ Type CVO 
+Capacitive voltage transformer
+ The CVO from RITZ is a coupling capacitor voltage transformer (CCVT) used in high and extra-high voltage systems to provide output voltage for meters, protective relays and other measuring devices. In addition, the device can be equipped with special brackets using an accessory that enables the CCVT to be used for coupling powerline carrier signals (PLC) to the transmission line for communication applications.
+ Compared to inductive voltage transformers, CCVTs become increasingly cost-effective as the grid voltage increases. In addition, CCVTs weigh less than inductive voltage transformers. The upper condenser segments can be dismantled for easier shipping and handling. This brochure describes the functions and features of the RITZ-CCVT type CVO.
+ Product brochure 
+ Information CVO550EM on earthquake safety in accordance with IEEE693 
+ CVO: Lifetime accuracy guarantee r2024 || <GENERAL DOWNLOADS> tpl=13162 3 Year Warranty Statement 
+ High Voltage Type Designation Change Notice
+[H H2] (in 1cd068ff) High voltage (69kV to 500kV)
+[TEXT] (in 1cd068ff) RITZ offers both standard devices and customized solutions whose design and construction meet all international standards . If you cannot find what you are looking for in our range and require further information , please contact us .
+[IMG] (in 1cd068ff) https://ritz-international.com/wp-content/uploads/Type-IVO-Outdoor-Oil-Filled.jpg alt=''
+[TEXT] (in 1cd068ff) Type IVO
+ Oil-paper insulated outdoor voltage transformer
+[TEXT] (in 1cd068ff) The type IVO high-voltage transformer is an inductive voltage transformer. It is used to provide output current for measuring devices for measuring turnover, for protective relays and other devices for current monitoring.
+ This brochure describes the functions and performance features of the RITZ type IVO current transformer for voltage classes from 72 kV to 245 kV.
+[LIST] (in 1cd068ff) Product brochure <https://ritz-international.com/wp-content/uploads/type-ivo-outdoor-oil-filled-product-brochure.pdf>
+[IMG] (in 1cd068ff) https://ritz-international.com/wp-content/uploads/Type-ICO-Outdoor-Oil-Filled.jpg alt=''
+[TEXT] (in 1cd068ff) Type ICO 
+Oiled paper-insulated outdoor current transformer
+[TEXT] (in 1cd068ff) The ICO type high-voltage transformer is an inductive current transformer (CT). It is used in high-voltage systems to provide output current for measuring devices for turnover measurement, for protective relays and other devices for current monitoring.
+ This brochure describes the functions and performance features of the RITZ current transformer type ICO for voltage classes from 72 kV to 245 kV.
+[LIST] (in 1cd068ff) Product brochure <https://ritz-international.com/wp-content/uploads/type-ico-outdoor-oil-filled-product-brochure.pdf>
+[IMG] (in 1cd068ff) https://ritz-international.com/wp-content/uploads/Type-CMO-Oil-Filled-CV-VT.jpg alt=''
+[TEXT] (in 1cd068ff) Type CMO
+ Oiled paper-insulated CT/VT
+[TEXT] (in 1cd068ff) The CMO type high voltage transformer is a combined high voltage transformer. inductive current and voltage transformers (CT/VT). It is used in High-voltage systems for the provision of output current and voltage for measuring devices for measuring turnover, for protective relays and other devices for monitoring of current and voltage. 
+ This brochure describes the functions and performance features of the RITZ current transformer type CMO for voltage classes from 72 kV to 245 kV .
+[LIST] (in 1cd068ff) Product brochure <https://ritz-international.com/wp-content/uploads/type-cmo-outdoor-oil-filled-combined-ct-vt-product-brochure.pdf>
+[IMG] (in 1cd068ff) https://ritz-international.com/wp-content/uploads/CVO-Capacitor.jpg alt=''
+[TEXT] (in 1cd068ff) Type CVO 
+Capacitive voltage transformer
+[TEXT] (in 1cd068ff) The CVO from RITZ is a coupling capacitor voltage transformer (CCVT) used in high and extra-high voltage systems to provide output voltage for meters, protective relays and other measuring devices. In addition, the device can be equipped with special brackets using an accessory that enables the CCVT to be used for coupling powerline carrier signals (PLC) to the transmission line for communication applications.
+ Compared to inductive voltage transformers, CCVTs become increasingly cost-effective as the grid voltage increases. In addition, CCVTs weigh less than inductive voltage transformers. The upper condenser segments can be dismantled for easier shipping and handling. This brochure describes the functions and features of the RITZ-CCVT type CVO.
+[LIST] (in 1cd068ff) Product brochure <https://ritz-international.com/wp-content/uploads/cvo-capacitor-product-brochure.pdf> | Information CVO550EM on earthquake safety in accordance with IEEE693 <https://ritz-international.com/wp-content/uploads/CVO550EM-IEEE693-High-Seismic.pdf> | CVO: Lifetime accuracy guarantee r2024 <https://ritz-international.com/wp-content/uploads/CVO-Lifetime-Accuracy-Warranty-r2024.pdf>
+[LIST] (in 1cd068ff) 3 Year Warranty Statement <https://ritz-international.com/wp-content/uploads/3-Year-Warranty-Statement.pdf> | High Voltage Type Designation Change Notice <https://ritz-international.com/wp-content/uploads/High-Voltage-Type-Designation-Change-Notice.pdf>
+[PDFS] https://ritz-international.com/wp-content/uploads/type-ivo-outdoor-oil-filled-product-brochure.pdf https://ritz-international.com/wp-content/uploads/type-ico-outdoor-oil-filled-product-brochure.pdf https://ritz-international.com/wp-content/uploads/type-cmo-outdoor-oil-filled-combined-ct-vt-product-brochure.pdf https://ritz-international.com/wp-content/uploads/cvo-capacitor-product-brochure.pdf https://ritz-international.com/wp-content/uploads/CVO550EM-IEEE693-High-Seismic.pdf https://ritz-international.com/wp-content/uploads/CVO-Lifetime-Accuracy-Warranty-r2024.pdf https://ritz-international.com/wp-content/uploads/3-Year-Warranty-Statement.pdf https://ritz-international.com/wp-content/uploads/High-Voltage-Type-Designation-Change-Notice.pdf
+[TEMPLATES] 13067 13162

@@ -1,0 +1,35 @@
+# News - RITZ
+URL: https://ritz-international.com/en/news/  status=200 lang=en kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "description": "Stay up to date about RITZ Instrument Transformers. Find out more about our latest developments, trade fair participations and awards in instrument transformer and energy technology.", "og:locale": "en_US", "og:type": "article", "og:title": "News - RITZ", "og:description": "Stay up to date about RITZ Instrument Transformers. Find out more about our latest developments, trade fair participations and awards in instrument transformer and energy technology.", "og:url": "https://ritz-internati
+canonical: https://ritz-international.com/en/latest-news/news/
+hreflang: [['en', 'https://ritz-international.com/en/news/'], ['fr', 'https://ritz-international.com/fr/actualites/'], ['de', 'https://ritz-international.com/news/'], ['hu', 'https://ritz-international.com/hu/hirek/'], ['es', 'https://ritz-international.com/es/noticias/'], ['x-default', 'https://ritz-international.com/news/']]
+
+[H H2] That should
+You know.
+[TEXT] Nothing is more constant than change. RITZ Instrument Transformers GmbH is also a dynamic company that is open to change. Here we will keep you up to date with our latest news and developments. Use this page as an information and service portal.
+[IMG] https://ritz-international.com/wp-content/uploads/2022/07/network_lines_on_white_right.svg alt=''
+[pp-posts.classic] Published on: 20. October 2026
+Customer letter about the latest developments in foreign trade and the implications of regulation (EU) 2026/2133
+Dear Valued Customers, We would like to inform you about the latest developments in foreign trade and the implications of Implementing Regulation (EU) 2026/2133, which entered into force on 25 September 2026. Customer Letter_EU_Regulation_2026_2133
+Learn more
+Published on: 29. June 2026
+RITZ Instrument Transformers GmbH achieves the IRIS Silver Quality Performance Level
+We are pleased to announce that RITZ Instrument Transformers GmbH has achieved the IRIS Silver Quality Performance Level in its most recent audit. Out of approximately 3,000 companies worldwide certified under IRIS, only 401 have reached this status so far. This result underlines the strong performance of our quality management ...
+Learn more
+Published on: 25. June 2026
+New Facility Waynesboro, USA
+RITZ Instrument Transformers, Inc. is pleased to announce the grand opening of its new state-of-the-art manufacturing and test facility located at 101 RITZ Avenue, Waynesboro GA 30830.New_facility_RITZ_Waynesboro
+Learn more
+Published on: 16. February 2026
+Overview of HVDC and applications
+We offer various solutions for HVDC applications. Product_knowledge_compact_HVDC
+Learn more
+Published on: 16. February 2026
+Construction of new high-voltage plant
+Ritz Instrument Transformers announces construction of new high voltage manufacturing facility Lavonia, Georgia, USA: Ritz Instrument Transformers, Inc. announced today that it will construct a new state-of-the-art manufacturing facility in Waynesboro, Georgia, for the production of high voltage instrument transformers. The initial investment is expected to be $28 million and ...
+Learn more
+Published on: 16. February 2026
+New products GBMW /GBMEI
+Find out more about our new products GBMW/GBMEI GBMW GBMEI
+Learn more
+Show more IMGS=https://ritz-international.com/wp-content/uploads/cropped-RTZ-LOGO-RUND-red.png https://ritz-international.com/wp-content/uploads/IRIS_Silber.png https://ritz-international.com/wp-content/uploads/RITZ-USA-HV-Waynesboro-Grand-Opening-2026-Ribbon-Cutting.jpg https://ritz-international.com/wp-content/plugins/elementor/assets/images/placeholder.png https://ritz-international.com/wp-content/plugins/elementor/assets/images/placeholder.png https://ritz-international.com/wp-content/plugins/elementor/assets/images/placeholder.png LINKS=<https://ritz-international.com/en/customer-letter-about-the-latest-developments-in-foreign-trade-and-the-implications-of-regulation-eu-2026-2133/> Customer letter about the latest developments in foreign trade and the implications of regulation (E<https://ritz-international.com/en/customer-letter-about-the-latest-developments-in-foreign-trade-and-the-implications-of-regulation-eu-2026-2133/> Learn more<https://ritz-international.com/en/customer-letter-about-the-latest-developments-in-foreign-trade-and-the-implications-of-regulation-eu-2026-2133/> <https://ritz-international.com/en/ritz-instrument-transformers-gmbh-achieves-the-iris-silver-quality-performance-level/> RITZ Instrument Transformers GmbH achieves the IRIS Silver Quality Performance Level<https://ritz-international.com/en/ritz-instrument-transformers-gmbh-achieves-the-iris-silver-quality-performance-level/> Learn more<https://ritz-international.com/en/ritz-instrument-transformers-gmbh-achieves-the-iris-silver-quality-performance-level/> <https://ritz-international.com/en/20395/> New Facility Waynesboro, USA<https://ritz-international.com/en/20395/> Learn more<https://ritz-international.com/en/20395/> <https://ritz-international.com/en/overview-of-hvdc-and-applications/> Overview of HVDC and applications<https://ritz-international.com/en/overview-of-hvdc-and-applications/> Learn more<https://ritz-international.com/en/overview-of-hvdc-and-applications/> <https://ritz-international.com/en/construction-of-new-high-voltage-plant/> Construction of new high-voltage plant<https://ritz-international.com/en/construction-of-new-high-voltage-plant/> Learn more<https://ritz-international.com/en/construction-of-new-high-voltage-plant/> <https://ritz-international.com/en/new-products-gbmw-gbmei/> New products GBMW /GBMEI<https://ritz-international.com/en/new-products-gbmw-gbmei/> Learn more<https://ritz-international.com/en/new-products-gbmw-gbmei/> Show more<javascript:void(0);>

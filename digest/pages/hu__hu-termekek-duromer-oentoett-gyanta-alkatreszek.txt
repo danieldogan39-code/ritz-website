@@ -1,0 +1,135 @@
+# Duromer öntőgyantás alkatrészek - RITZ
+URL: https://ritz-international.com/hu/termekek/duromer-oentoett-gyanta-alkatreszek/  status=200 lang=hu kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "hu_HU", "og:type": "article", "og:title": "Duromer öntőgyantás alkatrészek - RITZ", "og:description": "Kezdőoldal Duromer öntőgyantás alkatrészek Leányvállalatunk, a DUROMER az öntőgyantáknak az elektromos iparban történő felhasználására specializálódott. A DUROMER öntőgyanta-formázókeverékeket fejleszt és állít elő a kis- és középfeszültségi tartományban használatos elektromos alkalmazásokhoz, valamint az elektronika számára. Szakembereink elektromos energiatechnológiában való felhasználás
+canonical: https://ritz-international.com/produkte/giessharzteile-duromer/
+hreflang: [['en', 'https://ritz-international.com/en/products/duromer-cast-resin-parts/'], ['fr', 'https://ritz-international.com/fr/produits/pieces-en-resine-coulee-duromer/'], ['de', 'https://ritz-international.com/produkte/giessharzteile-duromer/'], ['hu', 'https://ritz-international.com/hu/termekek/duromer-oentoett-gyanta-alkatreszek/'], ['es', 'https://ritz-international.com/es/productos/piezas-de-resina-de-moldeo-duromer/'], ['x-default', 'https://ritz-international.com/produkte/giessharzteile-duromer/']]
+
+[H H2] Duromer
+öntőgyantás alkatrészek
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/introduction_image_giessharzteile_duromer-e1705680313569.jpg alt=''
+[TEXT] Leányvállalatunk, a DUROMER az öntőgyantáknak az elektromos iparban történő felhasználására specializálódott.
+ A DUROMER öntőgyanta-formázókeverékeket fejleszt és állít elő a kis- és középfeszültségi tartományban használatos elektromos alkalmazásokhoz, valamint az elektronika számára. Szakembereink elektromos energiatechnológiában való felhasználásra szánt öntőgyanta szigetelésű készülékeket és profilokat terveznek és gyártanak. A mérnöki részleg tanácsot ad az anyagok és eljárások kiválasztásában, valamint a testreszabott konstrukciók kialakításában.
+ A DUROMER fő tevékenységi területei az öntőgyanta-keverékek testreszabása és szigetelőelemekké történő feldolgozása, valamint szilárd szigetelésű elektromos eszközök gyártása.
+ A DUROMER 1998 óta rendelkezik ISO 9001 tanúsítvánnyal.
+[LIST] Termelési áttekintés <https://ritz-international.com/wp-content/uploads/produktionsuebersicht.pdf>
+[H H2] Kapcsolat
+[H H2] Gottfried Schuster
+[H H2] Fejlesztés / műszaki tervezés / értékesítés
+[LIST] gottfried.schuster@ritz-international.com <mailto:gottfried.schuster@ritz-international.com>
+[H H2] Frank Karschau
+[H H2] Application Engineer
+[LIST] frank.karschau@ritz-international.com <mailto:torsten.hilbert@ritz-international.com>
+[template] Mik azok a duromerek?
+A gyakran duromerként emlegetett, hőre keményedő műanyagok csoportjába olyan műanyagok tartoznak, amelyek kémiai reakció révén szilárdulnak meg. Általában poliaddícióval reagálnak és makromolekulák térben szorosan hálózott rácsát képező módon térhálósodnak, ami nagy mechanikai szilárdságot biztosít a hőre keményedő anyagnak. Ez a molekulaszerkezeti változás révén bekövetkező keményedés nem fordítható vissza.
+A hőre keményedő anyagoknak nincs lágyulási tartománya, az anyag magas hőmérsékleten is megőrzi szilárdságát és nagy hőállósággal rendelkezik. A hőre keményedő anyagokat keménység és merevség jellemzi. Az alacsony tágulási együttható nagyfokú méretstabilitást biztosít. A hőre keményedő műanyagok tűzvédelmi viselkedése is előnyt jelent.
+Szolgáltatások köre
+Tanácsadás az öntőgyantás alkatrészek és vegyületek gyártásával kapcsolatban
+Tanácsot adunk Önnek az öntőgyantás alkatrészek tervezésével, az elektromos szigetelő alkatrészek gyártásával és a szükséges öntőformák elkészítésével kapcsolatban.
+Gyártótól függetlenül ajánljuk a termékeihez megfelelő öntőgyantákat és azok optimális feldolgozási technikáit.
+Szakértelmünk a megfelelő megmunkálógépek kiválasztásában is az Ön rendelkezésére áll.
+Az öntőgyanta-keverékek testreszabása
+Az öntőgyanták speciális összetétele a minőségi termék kulcsát jelenti számunkra.
+A különböző öntőgyanta-rendszerek előnyeinek és hátrányainak elemzése után a különböző komponenseket a kész alkatrész követelményeinek megfelelően keverjük össze.
+A DUROMER elsősorban poliuretánból gyárt, és a Bayer Material Science AG rendszerház partnereként működik.A DUROMER által gyártott poliuretán-alapú öntőgyanta-rendszerek általános áttekintése letölthető innen. További információért kérjük, forduljon hozzánk e-mailben vagy telefonon.
+Fejlesztés a sorozatgyártásig
+Az öntőgyanta-rendszerekkel kapcsolatos különleges ismereteinket felhasználjuk profilok kifejlesztése és továbbfejlesztése során.
+Minden rendszert az elkészülte után laboratóriumunkban tesztelünk és dokumentálunk. Ez magában foglalja a szigetelőképességre, a részleges kisülésmentességre és az éghajlati követelmények teljesítésére vonatkozó fejlesztési teszteket a megfelelő tanúsítványokkal.
+A profilok gyártása során öntöttgyanta-gépeket használunk mind vákuumöntéshez, mind nyomás általi gélesítéshez.
+Berendezések és műszaki berendezések
+Berendezések
+Vákuumos öntőrendszerek
+Nyomásos zselésítési technológia
+Oldószeres technológia
+Záróegységek
+Keverési és adagolási technológia
+Laboratóriumi technológia
+Laboratóriumi technológiánkkal biztosítjuk termékeink minőségét. Többek között a következő elemzéseket és méréseket végezzük:
+Hőelemzés
+Viszkozitási mérések
+Technológiai paraméterek, mint például a zselésedési idő és az exoterm viselkedés meghatározása
+Hivatkozások
+A DUROMER öntőgyantás alkalmazások szállítója az elektrotechnika minden területén, különösen az energetika, a nagy- és középfeszültségű technika, a fény- és kábel-méréstechnika, valamint az érzék
+[ACC] (in cdf037c) <Mik azok a duromerek?> tpl=9197 A gyakran duromerként emlegetett, hőre keményedő műanyagok csoportjába olyan műanyagok tartoznak, amelyek kémiai reakció révén szilárdulnak meg. Általában poliaddícióval reagálnak és makromolekulák térben szorosan hálózott rácsát képező módon térhálósodnak, ami nagy mechanikai szilárdságot biztosít a hőre keményedő anyagnak. Ez a molekulaszerkezeti változás révén bekövetkező keményedés nem fordítható vissza.
+ A hőre keményedő anyagoknak nincs lágyulási tartománya, az anyag magas hőmérsékleten is megőrzi szilárdságát és nagy hőállósággal rendelkezik. A hőre keményedő anyagokat keménység és merevség jellemzi. Az alacsony tágulási együttható nagyfokú méretstabilitást biztosít. A hőre keményedő műanyagok tűzvédelmi viselkedése is előnyt jelent. || <Szolgáltatások köre> tpl=1195 Tanácsadás az öntőgyantás alkatrészek és vegyületek gyártásával kapcsolatban
+ Tanácsot adunk Önnek az öntőgyantás alkatrészek tervezésével, az elektromos szigetelő alkatrészek gyártásával és a szükséges öntőformák elkészítésével kapcsolatban.
+ Gyártótól függetlenül ajánljuk a termékeihez megfelelő öntőgyantákat és azok optimális feldolgozási technikáit.
+ Szakértelmünk a megfelelő megmunkálógépek kiválasztásában is az Ön rendelkezésére áll.
+ Az öntőgyanta-keverékek testreszabása
+ Az öntőgyanták speciális összetétele a minőségi termék kulcsát jelenti számunkra.
+ A különböző öntőgyanta-rendszerek előnyeinek és hátrányainak elemzése után a különböző komponenseket a kész alkatrész követelményeinek megfelelően keverjük össze.
+ A DUROMER elsősorban poliuretánból gyárt, és a Bayer Material Science AG rendszerház partnereként működik.
+A DUROMER által gyártott poliuretán-alapú öntőgyanta-rendszerek általános áttekintése letölthető innen. További információért kérjük, forduljon hozzánk e-mailben vagy telefonon.
+ Fejlesztés a sorozatgyártásig
+ Az öntőgyanta-rendszerekkel kapcsolatos különleges ismereteinket felhasználjuk profilok kifejlesztése és továbbfejlesztése során.
+ Minden rendszert az elkészülte után laboratóriumunkban tesztelünk és dokumentálunk. Ez magában foglalja a szigetelőképességre, a részleges kisülésmentességre és az éghajlati követelmények teljesítésére vonatkozó fejlesztési teszteket a megfelelő tanúsítványokkal.
+ A profilok gyártása során öntöttgyanta-gépeket használunk mind vákuumöntéshez, mind nyomás általi gélesítéshez. || <Berendezések és műszaki berendezések> tpl=1199 Berendezések
+ Vákuumos öntőrendszerek
+ Nyomásos zselésítési technológia
+ Oldószeres technológia
+ Záróegységek
+ Keverési és adagolási technológia
+ Laboratóriumi technológia
+ Laboratóriumi technológiánkkal biztosítjuk termékeink minőségét. Többek között a következő elemzéseket és méréseket végezzük:
+ Hőelemzés
+ Viszkozitási mérések
+ Technológiai paraméterek, mint például a zselésedési idő és az exoterm viselkedés meghatározása || <Hivatkozások> tpl=1202 A DUROMER öntőgyantás alkalmazások szállítója az elektrotechnika minden területén, különösen az energetika, a nagy- és középfeszültségű technika, a fény- és kábel-méréstechnika, valamint az érzékelő- és röntgentechnika területén.
+ Olyan vállalatokkal dolgozunk együtt, mint például:
+ Siemens
+ Philips
+ Megger || <Kapcsolatfelvételi cím> tpl=1205 Bergener Ring 65 – 67 D 
+01458 Ottendorf-Okrilla 
+Telefon: +49 (35205) 62 140 
+Fax: +49 (035205) 62 141 
+E-mail: info@duromer.de
+ Frank Karschau 
+Kelet-európai értékesítési vezető
+ Bergener Ring 65 – 67 D 
+01458 Ottendorf-Okrilla 
+Telefon: +49 35 205 / 62 212
+Mobil +49 173 397 1102
+E-mail: frank.karschau@ritz-international.com
+[TEXT] (in 10bab9d) A gyakran duromerként emlegetett, hőre keményedő műanyagok csoportjába olyan műanyagok tartoznak, amelyek kémiai reakció révén szilárdulnak meg. Általában poliaddícióval reagálnak és makromolekulák térben szorosan hálózott rácsát képező módon térhálósodnak, ami nagy mechanikai szilárdságot biztosít a hőre keményedő anyagnak. Ez a molekulaszerkezeti változás révén bekövetkező keményedés nem fordítható vissza.
+ A hőre keményedő anyagoknak nincs lágyulási tartománya, az anyag magas hőmérsékleten is megőrzi szilárdságát és nagy hőállósággal rendelkezik. A hőre keményedő anyagokat keménység és merevség jellemzi. Az alacsony tágulási együttható nagyfokú méretstabilitást biztosít. A hőre keményedő műanyagok tűzvédelmi viselkedése is előnyt jelent.
+[H H2] (in 10bab9d) Tanácsadás az öntőgyantás alkatrészek és vegyületek gyártásával kapcsolatban
+[TEXT] (in 10bab9d) Tanácsot adunk Önnek az öntőgyantás alkatrészek tervezésével, az elektromos szigetelő alkatrészek gyártásával és a szükséges öntőformák elkészítésével kapcsolatban.
+ Gyártótól függetlenül ajánljuk a termékeihez megfelelő öntőgyantákat és azok optimális feldolgozási technikáit.
+ Szakértelmünk a megfelelő megmunkálógépek kiválasztásában is az Ön rendelkezésére áll.
+[H H2] (in 10bab9d) Az öntőgyanta-keverékek testreszabása
+[TEXT] (in 10bab9d) Az öntőgyanták speciális összetétele a minőségi termék kulcsát jelenti számunkra.
+ A különböző öntőgyanta-rendszerek előnyeinek és hátrányainak elemzése után a különböző komponenseket a kész alkatrész követelményeinek megfelelően keverjük össze.
+ A DUROMER elsősorban poliuretánból gyárt, és a Bayer Material Science AG rendszerház partnereként működik.
+A DUROMER által gyártott poliuretán-alapú öntőgyanta-rendszerek általános áttekintése letölthető innen. További információért kérjük, forduljon hozzánk e-mailben vagy telefonon.
+[H H2] (in 10bab9d) Fejlesztés a sorozatgyártásig
+[TEXT] (in 10bab9d) Az öntőgyanta-rendszerekkel kapcsolatos különleges ismereteinket felhasználjuk profilok kifejlesztése és továbbfejlesztése során.
+ Minden rendszert az elkészülte után laboratóriumunkban tesztelünk és dokumentálunk. Ez magában foglalja a szigetelőképességre, a részleges kisülésmentességre és az éghajlati követelmények teljesítésére vonatkozó fejlesztési teszteket a megfelelő tanúsítványokkal.
+ A profilok gyártása során öntöttgyanta-gépeket használunk mind vákuumöntéshez, mind nyomás általi gélesítéshez.
+[H H2] (in 10bab9d) Berendezések
+[TEXT] (in 10bab9d) Vákuumos öntőrendszerek
+ Nyomásos zselésítési technológia
+ Oldószeres technológia
+ Záróegységek
+ Keverési és adagolási technológia
+[H H2] (in 10bab9d) Laboratóriumi technológia
+[TEXT] (in 10bab9d) Laboratóriumi technológiánkkal biztosítjuk termékeink minőségét. Többek között a következő elemzéseket és méréseket végezzük:
+ Hőelemzés
+ Viszkozitási mérések
+ Technológiai paraméterek, mint például a zselésedési idő és az exoterm viselkedés meghatározása
+[TEXT] (in 10bab9d) A DUROMER öntőgyantás alkalmazások szállítója az elektrotechnika minden területén, különösen az energetika, a nagy- és középfeszültségű technika, a fény- és kábel-méréstechnika, valamint az érzékelő- és röntgentechnika területén.
+ Olyan vállalatokkal dolgozunk együtt, mint például:
+ Siemens
+ Philips
+ Megger
+[TEXT] (in 10bab9d) Bergener Ring 65 – 67 D 
+01458 Ottendorf-Okrilla 
+Telefon: +49 (35205) 62 140 
+Fax: +49 (035205) 62 141 
+E-mail: info@duromer.de
+[TEXT] (in 10bab9d) Frank Karschau 
+Kelet-európai értékesítési vezető
+ Bergener Ring 65 – 67 D 
+01458 Ottendorf-Okrilla 
+Telefon: +49 35 205 / 62 212
+Mobil +49 173 397 1102
+E-mail: frank.karschau@ritz-international.com
+[PDFS] https://ritz-international.com/wp-content/uploads/produktionsuebersicht.pdf
+[TEMPLATES] 9197 1195 1199 1202 1205

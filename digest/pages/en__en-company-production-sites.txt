@@ -1,0 +1,104 @@
+# Production locations - RITZ
+URL: https://ritz-international.com/en/company/production-sites/  status=200 lang=en kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "en_US", "og:type": "article", "og:title": "Production locations - RITZ", "og:description": "Home   >   Company    >    Production locations    The whole world needs energy. From Hamburg to Hartwell (USA). The RITZ Group has an international position and is on a consistent growth course.  Our six production locations in Germany, Austria, Hungary, China and the USA are closely interlinked. Together with our partners, we want to […]", "og:url": "https://ritz-international.com/en/company/produc
+canonical: https://ritz-international.com/en/company/production-sites/
+hreflang: [['en', 'https://ritz-international.com/en/company/production-sites/'], ['fr', 'https://ritz-international.com/fr/entreprise/sites-de-production/'], ['de', 'https://ritz-international.com/unternehmen/produktionsstandorte/'], ['hu', 'https://ritz-international.com/hu/a-vallalat/gyartasi-helyszinek/'], ['es', 'https://ritz-international.com/es/la-empresa/centros-de-produccion/'], ['x-default', 'https://ritz-international.com/unternehmen/produktionsstandorte/']]
+
+[TEXT] Home    >    Company     >    Production locations
+[H H2] The whole world needs energy.
+[TEXT] From Hamburg to Hartwell (USA). The RITZ Group has an international position and is on a consistent growth course. 
+ Our six production locations in Germany, Austria, Hungary, China and the USA are closely interlinked. Together with our partners, we want to improve our global footprint. Step by step.
+[IMG] https://ritz-international.com/wp-content/uploads/2022/07/network_lines_on_white_right.svg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/2022/07/network_lines_on_white_right.svg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/2022/07/unternehmen_produktionsstandorte_1.jpg.jpg alt=''
+[H H2] LOCATIONS AT A GLANCE
+[H H2] Hamburg
+[TEXT] RITZ Instrument 
+Transformers GmbH, Hamburg
+[LIST] Wandsbeker Zollstrasse 92-98 22041 Hamburg Germany | +49 40 511 230
+[BTN] Route planner -> https://goo.gl/maps/5ng9TzyrJcWU8ibV9
+[BTN] Contact -> #
+[H H2] Wirges
+[TEXT] RITZ Instrument 
+Transformers GmbH, Wirges
+[LIST] Siemensstrasse 2 56422 Wirges Germany | +49 2602 6790
+[BTN] Route planner -> https://goo.gl/maps/e3Do4eB4mcXijkLeA
+[BTN] Contact -> #
+[html] Hamburg
+Function
+Company head office - Ritz Foundation
+Sales
+Controlling / accounting
+IT
+Human resources
+Development/design engineering
+Electronics IMGS=/wp-content/uploads/2022/07/icon_angle_up.svg
+[html] Wirges
+Function
+Sales
+Production
+Indoor voltage and current transformers up to 72.5 kV
+Outdoor voltage and current transformers up to 72.5 kVCast resin insulated power transformers up to 40.5 kV and 25 MVA IMGS=/wp-content/uploads/2022/07/icon_angle_up.svg
+[jet-listing-grid] Route planner
+Contact
+EMPLOYEES
+Route planner
+Contact
+EMPLOYEES
+Route planner
+Contact
+EMPLOYEES
+Route planner
+Contact
+EMPLOYEES
+Route planner
+Contact
+EMPLOYEES
+Route planner
+Contact
+EMPLOYEES
+Route planner
+Contact
+EMPLOYEES LINKS=Contact<#> Contact<#> Contact<#> Contact<#> Contact<#> Contact<#> Contact<#>
+[LIST] (in 32b1f72)  | 
+[BTN] (in 32b1f72) Route planner -> None
+[BTN] (in 32b1f72) Contact -> #
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) EMPLOYEES
+[LIST] (in 32b1f72)  | 
+[BTN] (in 32b1f72) Route planner -> None
+[BTN] (in 32b1f72) Contact -> #
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) EMPLOYEES
+[LIST] (in 32b1f72)  | 
+[BTN] (in 32b1f72) Route planner -> None
+[BTN] (in 32b1f72) Contact -> #
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) EMPLOYEES
+[LIST] (in 32b1f72)  | 
+[BTN] (in 32b1f72) Route planner -> None
+[BTN] (in 32b1f72) Contact -> #
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) EMPLOYEES
+[LIST] (in 32b1f72)  | 
+[BTN] (in 32b1f72) Route planner -> None
+[BTN] (in 32b1f72) Contact -> #
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) EMPLOYEES
+[LIST] (in 32b1f72)  | 
+[BTN] (in 32b1f72) Route planner -> None
+[BTN] (in 32b1f72) Contact -> #
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) EMPLOYEES
+[LIST] (in 32b1f72)  | 
+[BTN] (in 32b1f72) Route planner -> None
+[BTN] (in 32b1f72) Contact -> #
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) EMPLOYEES

@@ -1,0 +1,9 @@
+# Gießharzteile - RITZ
+URL: https://ritz-international.com/produktfinder/giessharzteile/  status=200 lang=de kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "Gießharzteile - RITZ", "og:description": "Home Gießharzteile Diese Kategorie ist noch in Bearbeitung und wird in Kürze zur Verfügung stehen! Weitere Kategorien: [product_categories number=“4″ columns=“5″ hide_empty=“1″ orderby=“name“ order=“desc“ ids=“168,169,173,174″]", "og:url": "https://ritz-international.com/produktfinder/giessharzteile/", "og:site_name": "RITZ"}
+canonical: https://ritz-international.com/produktfinder/giessharzteile/
+hreflang: [['de', 'https://ritz-international.com/produktfinder/giessharzteile/'], ['x-default', 'https://ritz-international.com/produktfinder/giessharzteile/']]
+
+[H H2] Gießharzteile
+[H H2] Diese Kategorie ist noch in Bearbeitung und wird in Kürze zur Verfügung stehen!
+[H H2] Weitere Kategorien:

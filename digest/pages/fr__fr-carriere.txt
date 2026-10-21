@@ -1,0 +1,26 @@
+# Carrière - RITZ
+URL: https://ritz-international.com/fr/carriere/  status=200 lang=fr kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "fr_FR", "og:type": "article", "og:title": "Carrière - RITZ", "og:description": "Accueil Plein d’énergie pour l’avenir ! Le courant est fascinant. Vous recherchez un employeur qui vous offre un environnement passionnant ? Vous souhaitez travailler dans une entreprise internationale, innovante et inspirante, qui contribue activement à la transition énergétique ? Vous vous sentez à l’aise dans le monde de l’électrotechnique ? Dans ce cas, RITZ Instrument Transformers GmbH pourrait bien […]", "
+canonical: https://ritz-international.com/en/career/
+hreflang: [['en', 'https://ritz-international.com/en/career/'], ['fr', 'https://ritz-international.com/fr/carriere/'], ['de', 'https://ritz-international.com/karriere/'], ['hu', 'https://ritz-international.com/hu/karrier/'], ['es', 'https://ritz-international.com/es/carrera-profesional/'], ['x-default', 'https://ritz-international.com/karriere/']]
+
+[H H2] Plein d’énergie pour l’avenir !
+[TEXT] Le courant est fascinant. Vous recherchez un employeur qui vous offre un environnement passionnant ? Vous souhaitez travailler dans une entreprise internationale, innovante et inspirante, qui contribue activement à la transition énergétique ? Vous vous sentez à l’aise dans le monde de l’électrotechnique ? Dans ce cas, RITZ Instrument Transformers GmbH pourrait bien être le bon choix pour vous. Nous sommes toujours à la recherche de collaborateurs/trices qualifié(e)s pour soutenir activement nos équipes. Les possibilités sont multiples : plus de 20 métiers différents peuvent être exercés au sein du groupe d’entreprises RITZ. 
+ Nous faisons beaucoup pour nos collaborateurs. En tant qu’employé, vous bénéficiez chez RITZ de nombreux avantages, tels que le régime de télétravail, l’horaire flexible, 30 jours de congé, des possibilités de formation continue (par ex. des cours de langue), une hiérarchie horizontale, une assistance en cas de relocalisation et bien plus encore. 
+ L’avenir, c’est maintenant. Le groupe d’entreprises RITZ est une entreprise industrielle d’envergure mondiale, avec des sites de production en Allemagne, en Autriche, en Hongrie, en Chine et aux États-Unis. En Europe, nous faisons même partie des principaux fabricants de certains types de transformateurs de courant, comme les transformateurs basse tension. Vous voulez jouer dans la cour des grands ? Nous comptons parmi nos clients des entreprises renommées de l’industrie électrique ainsi que de l’approvisionnement en énergie dans le monde entier. Écrivez l’histoire de votre réussite avec RITZ. 
+ RITZ est un multi-spécialiste de l’industrie électrique en pleine croissance avec des sites en Europe, en Chine et aux États-Unis. Pour les clients importants du secteur de l’approvisionnement en énergie, nous transformons ensemble des idées et des visions en solutions novatrices. Dans le monde entier.
+ Depuis plus de 70 ans, nous sommes une entreprise industrielle orientée vers le service qui incarne la qualité supérieure et l’innovation. Grâce à nos sites de production nationaux et internationaux, nous sommes le leader européen dans le domaine des transformateurs basse et moyenne tension, des systèmes de jeux de barres SIS protégés contre les contacts accidentels et des pièces en résine de coulée.
+ Nos quelque 1 200 collaborateurs garantissent la qualité la plus élevée et possèdent un grand savoir-faire et une passion commune : le développement de notre avenir électrique. Contribuez vous aussi à l’histoire de notre succès. Rejoignez RITZ.
+[H H2] Contact
+[H H2] Maria Schunk Directrice des ressources humaines du groupe
+[LIST] personal.hamburg@ritz-international.com <mailto:personal.hamburg@ritz-international.com>
+[IMG] https://ritz-international.com/wp-content/uploads/2022/07/network_lines_big_new.svg alt=''
+[H H2] Offres d’emploi  -> https://ritz-international.com/fr/portail-des-carrieres/
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] Offres d’emploi  -> https://ritz-international.com/fr/portail-des-carrieres/
+[H H2] Formation  -> https://ritz-international.com/fr/carriere/formation/
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] Formation  -> https://ritz-international.com/fr/carriere/formation/
+[H H2] STAGES/MÉMOIRE DE FIN D’ÉTUDES  -> https://ritz-international.com/fr/carriere/stages/
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] STAGES/ MÉMOIRE DE FIN D’ÉTUDES  -> https://ritz-international.com/fr/carriere/stages/

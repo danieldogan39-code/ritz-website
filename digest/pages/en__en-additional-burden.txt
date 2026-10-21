@@ -1,0 +1,13 @@
+# Additional burden - RITZ
+URL: https://ritz-international.com/en/additional-burden/  status=200 lang=en kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "en_US", "og:type": "article", "og:title": "Additional burden - RITZ", "og:description": "An additional burden is an additional device that is used to achieve sufficient burdening of measuringtransformers that have not been sufficiently burdened (e.g. when using electronic meters). Note: Measuring transformers that have not been burdened do not comply with the accuracy class. Additional burden", "og:url": "https://ritz-international.com/en/additional-burden/", "og:site_name": "RITZ", "og:ima
+canonical: https://ritz-international.com/en/additional-burden/
+hreflang: [['en', 'https://ritz-international.com/en/additional-burden/'], ['de', 'https://ritz-international.com/zusatzbuerde/'], ['x-default', 'https://ritz-international.com/zusatzbuerde/']]
+
+[POSTTITLE] Additional burden
+[POSTCONTENT] An additional burden is an additional device that is used to achieve sufficient burdening of measuring transformers that have not been sufficiently burdened (e.g. when using electronic meters).
+ Note: Measuring transformers that have not been burdened do not comply with the accuracy class. 
+ Additional burden IMGS= LINKS=Additional burden<https://ritz-international.com/wp-content/uploads/Compact_product_knowledge_additonal_burden-1.pdf>
+[BTN] Back -> https://ritz-international.com/en/?page_id=5595
+[FEATURED] https://ritz-international.com/wp-content/uploads/Zusatzbuerde.png
+[PDFS] https://ritz-international.com/wp-content/uploads/Compact_product_knowledge_additonal_burden-1.pdf

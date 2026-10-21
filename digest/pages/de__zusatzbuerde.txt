@@ -1,0 +1,13 @@
+# Zusatzbürde - RITZ
+URL: https://ritz-international.com/zusatzbuerde/  status=200 lang=de kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "Zusatzbürde - RITZ", "og:description": "Zusatzbürde ist ein Zusatzgerät, mit dem eine ausreichende Bebürdung von nicht annähernd ausgebürdeten Messwandlern (z.B. beim Einsatz von elektronischen Zählern) erzielt wird. Hinweis: Nicht ausgebürdete Messwandler halten die Genauigkeitsklasse nicht ein. Zusatzbürde", "og:url": "https://ritz-international.com/zusatzbuerde/", "og:site_name": "RITZ", "og:image": "https://ritz-international.com/wp-content/upl
+canonical: https://ritz-international.com/zusatzbuerde/
+hreflang: [['en', 'https://ritz-international.com/en/additional-burden/'], ['de', 'https://ritz-international.com/zusatzbuerde/'], ['x-default', 'https://ritz-international.com/zusatzbuerde/']]
+
+[POSTTITLE] Zusatzbürde
+[POSTCONTENT] Zusatzbürde ist ein Zusatzgerät, mit dem eine ausreichende Bebürdung von nicht annähernd ausgebürdeten Messwandlern (z.B. beim Einsatz von elektronischen Zählern) erzielt wird.
+ Hinweis: Nicht ausgebürdete Messwandler halten die Genauigkeitsklasse nicht ein. 
+ Zusatzbürde IMGS= LINKS=Zusatzbürde<https://ritz-international.com/wp-content/uploads/Produktwissen_kompakt_Zusatzbuerde.pdf>
+[BTN] Zurück -> /aktuelles/news
+[FEATURED] https://ritz-international.com/wp-content/uploads/Zusatzbuerde.png
+[PDFS] https://ritz-international.com/wp-content/uploads/Produktwissen_kompakt_Zusatzbuerde.pdf

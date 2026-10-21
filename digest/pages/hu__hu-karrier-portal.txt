@@ -1,0 +1,185 @@
+# Karrier portál - RITZ
+URL: https://ritz-international.com/hu/karrier-portal/  status=200 lang=hu kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "description": "Fedezze fel a karrierlehetőségek széles skáláját a RITZ karrierportálján. Találja meg álmai állását az elektromos iparban - a gyakornoki állásoktól a vezetői pozíciókig. Alakítsa velünk az energiatechnológia jövőjét.", "og:locale": "hu_HU", "og:type": "article", "og:title": "Karrier portál - RITZ", "og:description": "Fedezze fel a karrierlehetőségek széles skáláját a RITZ karrierportálján. Találja meg álmai állását az elektromos iparban - a gyakornoki állásoktól a vezetői pozíciókig. Alak
+canonical: https://ritz-international.com/hu/karrier-portal/
+hreflang: [['en', 'https://ritz-international.com/en/career-portal/'], ['fr', 'https://ritz-international.com/fr/portail-des-carrieres/'], ['de', 'https://ritz-international.com/karriereportal/'], ['hu', 'https://ritz-international.com/hu/karrier-portal/'], ['es', 'https://ritz-international.com/es/portal-de-empleo/'], ['x-default', 'https://ritz-international.com/karriereportal/']]
+
+[IMG] https://ritz-international.com/wp-content/uploads/arrow-red-RTZ-2048x1448.png alt='' -> #first-section
+[H H2] MINDEN BIZONNYAL JÓ DÖNTÉS
+[shortcode] Keresés
+Telephely
+Összes
+Hamburg
+Kirchaich
+Ottendorf-Okrilla
+Kategória
+Összes
+Auszubildende
+Fach- und Führungskräfte
+Gewerblich
+Kaufmännisch
+15 nyitott pozíció
+Ausbildung Fachkraft für Lagerlogistik (m/w/d)
+Ottendorf-Okrilla
+Teljes munkaidő
+Szakképzés
+Megtekintés
+(új lapon nyílik meg)
+Ausbildung Mechatroniker (m/w/d)
+Ottendorf-Okrilla
+Teljes munkaidő
+Szakképzés
+Megtekintés
+(új lapon nyílik meg)
+Elektroniker (m/w/d) Prüffeld
+Ottendorf-Okrilla
+Teljes munkaidő
+Határozatlan idejű
+Megtekintés
+(új lapon nyílik meg)
+Specialist Energy (m/w/d)
+Ottendorf-Okrilla
+Teljes munkaidő
+Határozatlan idejű
+Megtekintés
+(új lapon nyílik meg)
+Konstrukteur (m/w/d)
+Hamburg
+Teljes munkaidő
+Határozatlan idejű
+Megtekintés
+(új lapon nyílik meg)
+Group ERP Manager (m/w/d)
+Hamburg
+Teljes munkaidő
+Határozatlan idejű
+Megtekintés
+(új lapon nyílik meg)
+Lagerleiter / Manager Warehouse (m/w/d)
+Kirchaich
+Teljes munkaidő
+Határozatlan idejű
+Megtekintés
+(új lapon nyílik meg)
+HR Specialist (m/w/d)
+Ottendorf-Okrilla
+Teljes munkaidő
+Határozatlan idejű
+Megtekintés
+(új lapon nyílik meg)
+Leitung Prüffeld / Manager Testing (m/w/d)
+Kirchaich
+Teljes munkaidő
+Határozatlan idejű
+Megtekintés
+(új lapon nyílik meg)
+Leitung Prüffeld / Manager Testing (m/w/d)
+Ottendorf-Okrilla
+Teljes munkaidő
+Határozatlan idejű
+Megtekintés
+(új lapon nyílik meg)
+Mitarbeiter Instandhaltung (m/w/d)
+Ottendorf-Okrilla
+Teljes munkaidő
+Határozatlan idejű
+Megtekintés
+(új lapon nyílik meg)
+Specialist Engineering (m/w/d)
+Kirchaich
+Teljes munkaidő
+Határozatlan idejű
+Megtekintés
+(új lapon nyílik meg)
+Konstrukteur (m/w/d)
+Ottendorf-Okrilla
+Teljes munkaidő
+Határozatlan idejű
+Megtekintés
+(új lapon nyílik meg)
+Teamleitung Zuschnitt- und Schweißzentrum (m/w/d)
+Kirchaich
+Teljes munkaidő
+Határozatlan idejű
+Megtekintés
+(új lapon nyílik meg)
+Produktionsmitarbeiter (m/w/d)
+Ottendorf-Okrilla
+Teljes munkaidő
+Határozatlan idejű
+Megtekintés
+(új lapon nyílik meg)
+Jelenleg nincs a kiválasztásnak megfelelő nyitott pozíció. LINKS=Ausbildung Fachkraft für Lagerlogistik (m/w/d)
+Ottendorf-Okrilla
+Teljes munkaidő
+Szakképzés
+Megtekin<https://ritz.jobs.personio.de/job/2835088> Ausbildung Mechatroniker (m/w/d)
+Ottendorf-Okrilla
+Teljes munkaidő
+Szakképzés
+Megtekintés
+(új lapon <https://ritz.jobs.personio.de/job/2834291> Elektroniker (m/w/d) Prüffeld
+Ottendorf-Okrilla
+Teljes munkaidő
+Határozatlan idejű
+Megtekintés
+(új l<https://ritz.jobs.personio.de/job/2800669> Specialist Energy (m/w/d)
+Ottendorf-Okrilla
+Teljes munkaidő
+Határozatlan idejű
+Megtekintés
+(új lapon<https://ritz.jobs.personio.de/job/2775247> Konstrukteur (m/w/d)
+Hamburg
+Teljes munkaidő
+Határozatlan idejű
+Megtekintés
+(új lapon nyílik meg)<https://ritz.jobs.personio.de/job/2749868> Group ERP Manager (m/w/d)
+Hamburg
+Teljes munkaidő
+Határozatlan idejű
+Megtekintés
+(új lapon nyílik me<https://ritz.jobs.personio.de/job/2740479> Lagerleiter / Manager Warehouse (m/w/d)
+Kirchaich
+Teljes munkaidő
+Határozatlan idejű
+Megtekintés
+(új<https://ritz.jobs.personio.de/job/2676193> HR Specialist (m/w/d)
+Ottendorf-Okrilla
+Teljes munkaidő
+Határozatlan idejű
+Megtekintés
+(új lapon nyí<https://ritz.jobs.personio.de/job/2573686> Leitung Prüffeld / Manager Testing (m/w/d)
+Kirchaich
+Teljes munkaidő
+Határozatlan idejű
+Megtekintés
+<https://ritz.jobs.personio.de/job/2556201> Leitung Prüffeld / Manager Testing (m/w/d)
+Ottendorf-Okrilla
+Teljes munkaidő
+Határozatlan idejű
+Megt<https://ritz.jobs.personio.de/job/2527864> Mitarbeiter Instandhaltung (m/w/d)
+Ottendorf-Okrilla
+Teljes munkaidő
+Határozatlan idejű
+Megtekintés
+<https://ritz.jobs.personio.de/job/2469114> Specialist Engineering (m/w/d)
+Kirchaich
+Teljes munkaidő
+Határozatlan idejű
+Megtekintés
+(új lapon ny<https://ritz.jobs.personio.de/job/2455915> Konstrukteur (m/w/d)
+Ottendorf-Okrilla
+Teljes munkaidő
+Határozatlan idejű
+Megtekintés
+(új lapon nyíl<https://ritz.jobs.personio.de/job/2433976> Teamleitung Zuschnitt- und Schweißzentrum (m/w/d)
+Kirchaich
+Teljes munkaidő
+Határozatlan idejű
+Megte<https://ritz.jobs.personio.de/job/2415773> Produktionsmitarbeiter (m/w/d)
+Ottendorf-Okrilla
+Teljes munkaidő
+Határozatlan idejű
+Megtekintés
+(új <https://ritz.jobs.personio.de/job/2028868>
+[SECTIONS-BG] [{"id": "7879c1a", "settings": "{\"jet_parallax_layout_list\":[],\"background_background\":\"slideshow\",\"background_slideshow_gallery\":[{\"id\":1405,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/2022\\/11\\/intro_home_slider_1.webp\"},{\"id\":2787,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/stellenangebote_intro_slider_2_Produktion.webp\"},{\"id\":2790,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/stellenangebote_intro_slider_5_Logistik.webp\"},{\"id\":2789,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/stellenangebote_intro_slider_4_International.webp\"},{\"id\":1406,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/2022\\/11\\/intro_home_slider_2.webp\"}],\"background_slideshow_ken_burns\":\"yes\",\"background_slideshow_loop\":\"yes\",\"background_slideshow_slide_duration\":5000,\"background_slideshow_slide_transition\":\"fade\",\"background_slideshow_transition_duration\":500,\"background_slideshow_ken_burns_zoom_direction\":\"in\"}"}]

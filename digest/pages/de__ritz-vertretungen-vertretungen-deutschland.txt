@@ -1,0 +1,11 @@
+# Vertretungen Deutschland Archive - RITZ
+URL: https://ritz-international.com/ritz-vertretungen/vertretungen-deutschland/  status=200 lang=de kind=extra
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "Vertretungen Deutschland Archive - RITZ", "og:url": "https://ritz-international.com/ritz-vertretungen/vertretungen-deutschland/", "og:site_name": "RITZ"}
+canonical: https://ritz-international.com/ritz-vertretungen/vertretungen-deutschland/
+hreflang: [['en', 'https://ritz-international.com/en/ritz-vertretungen/german-agencies/'], ['fr', 'https://ritz-international.com/fr/ritz-vertretungen/representations-allemagne/'], ['de', 'https://ritz-international.com/ritz-vertretungen/vertretungen-deutschland/'], ['hu', 'https://ritz-international.com/hu/ritz-vertretungen/uegynoeksegek-nemetorszag/'], ['es', 'https://ritz-international.com/es/ritz-vertretungen/agencias-alemania/'], ['x-default', 'https://ritz-international.com/ritz-vertretungen/vertretungen-deutschland/']]
+
+[MAINHTML] RITZ Vertretungen: Vertretungen Deutschland 
+ Vertretungen Marc Eislechner Industrievertretungen 
+ Vertretungen RITZ Instrument Transformers GmbH 
+ Vertretungen Hentges GmbH 
+ Vertretungen Eidt GmbH

@@ -1,0 +1,10 @@
+# RITZ Ungarn ist „Unternehmen des Jahres 2017“ in Ungarn - RITZ
+URL: https://ritz-international.com/lorem-ipsum-news-3/  status=200 lang=de kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "RITZ Ungarn ist „Unternehmen des Jahres 2017“ in Ungarn - RITZ", "og:description": "Die RITZ Mérötranszformátor Kft. wurde in Ungarn vom Landesverband ungarischer Unternehmer und Arbeitgeber (VOSZ) zum „Unternehmen des Jahres 2017“ gewählt. Ausgezeichnet hat Ritz sich durch die starke Entwicklung in den letzten Jahrzehnten. Die Anzahl der Mitarbeiter hat sich stetig erhöht und die Investition in Form des neuen Werkes hat zur Stadtentwicklung von Ke
+canonical: https://ritz-international.com/lorem-ipsum-news-3/
+hreflang: [['en', 'https://ritz-international.com/en/ritz-hungary-is-company-of-the-year-2017-in-hungary/'], ['fr', 'https://ritz-international.com/fr/ritz-hongrie-est-entreprise-de-lannee-2017-en-hongrie/'], ['de', 'https://ritz-international.com/lorem-ipsum-news-3/'], ['hu', 'https://ritz-international.com/hu/a-ritz-magyarorszag-az-ev-vallalata-2017-magyarorszagon/'], ['es', 'https://ritz-international.com/es/ritz-hungria-es-la-empresa-del-ano-2017-en-hungria/'], ['x-default', 'https://ritz-international.com/lorem-ipsum-news-3/']]
+
+[POSTTITLE] RITZ Ungarn ist „Unternehmen des Jahres 2017“ in Ungarn
+[POSTCONTENT] Die RITZ Mérötranszformátor Kft. wurde in Ungarn vom Landesverband ungarischer Unternehmer und Arbeitgeber (VOSZ) zum „Unternehmen des Jahres 2017“ gewählt. Ausgezeichnet hat Ritz sich durch die starke Entwicklung in den letzten Jahrzehnten. Die Anzahl der Mitarbeiter hat sich stetig erhöht und die Investition in Form des neuen Werkes hat zur Stadtentwicklung von Kecskemét beigetragen. IMGS= LINKS=
+[BTN] Zurück -> /aktuelles/news
+[FEATURED] https://ritz-international.com/wp-content/uploads/P1030113_retusalt-768x432-1.jpg

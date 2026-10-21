@@ -1,0 +1,14 @@
+# 25 ans de mesure DC de haute précision - RITZ
+URL: https://ritz-international.com/fr/25-ans-de-mesure-dc-de-haute-precision/  status=200 lang=fr kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "fr_FR", "og:type": "article", "og:title": "25 ans de mesure DC de haute précision - RITZ", "og:description": "RITZ de nouveau récompensé par son partenaire suédois dans les projets CCHT avec une commande de 96 DC – Systèmes de mesure La technologie High Voltage Direct Current (HVDC) permet depuis près de 25 ans l’échange d’énergie électrique propre et renouvelable entre le Québec et la Nouvelle-Angleterre. Dès le début, la métrologie DC de haute […]", "og:url": "https://ritz-international.c
+canonical: https://ritz-international.com/fr/25-ans-de-mesure-dc-de-haute-precision/
+hreflang: [['en', 'https://ritz-international.com/en/25-years-of-high-precision-dc-measurement/'], ['fr', 'https://ritz-international.com/fr/25-ans-de-mesure-dc-de-haute-precision/'], ['de', 'https://ritz-international.com/lorem-ipsum-news-1/'], ['hu', 'https://ritz-international.com/hu/25-ev-nagy-pontossagu-dc-meres/'], ['es', 'https://ritz-international.com/es/25-anos-de-medicion-de-cc-de-alta-precision/'], ['x-default', 'https://ritz-international.com/lorem-ipsum-news-1/']]
+
+[POSTTITLE] 25 ans de mesure DC de haute précision
+[POSTCONTENT] RITZ de nouveau récompensé par son partenaire suédois dans les projets CCHT avec une commande de 96 DC – Systèmes de mesure
+ La technologie High Voltage Direct Current (HVDC) permet depuis près de 25 ans l’échange d’énergie électrique propre et renouvelable entre le Québec et la Nouvelle-Angleterre.
+ Dès le début, la métrologie DC de haute précision de Ritz Instrument Transformers GmbH a été impliquée.
+ Après 25 ans de fonctionnement sans problème, le remplacement des composants électroniques des systèmes de mesure DC est désormais programmé dans le cadre d’une mise à niveau du projet. L’entrepreneur exécutif suédois pour Hydro Québec (HD) et National Grid (NG)) a de nouveau passé une commande à Ritz pour la fourniture de 96 unités de composants électroniques de type EMVI. En raison de leur qualité durable, les têtes de capteurs associées (CT) restent dans la station, ce qui entraîne une réduction significative des coûts pour l’opérateur du système.
+ Le système de mesure DC et AC de haute précision de type EMVI est utilisé dans le monde entier depuis 1985 dans presque tous les équipements CCHT, SVC et GKK pour mesurer les courants DC et AC jusqu’à 24kA à tous les niveaux de tension à des fins de mesure, de protection et de facturation. IMGS= LINKS=
+[BTN] Retour -> https://ritz-international.com/fr/?page_id=5615
+[FEATURED] https://ritz-international.com/wp-content/uploads/ritz-emvi_01-212x300-1.png

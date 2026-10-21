@@ -1,0 +1,12 @@
+# Contact - RITZ
+URL: https://ritz-international.com/fr/contact/  status=200 lang=fr kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "fr_FR", "og:type": "article", "og:title": "Contact - RITZ", "og:description": "Accueil nous sommes là pour vous. De nombreux chemins mènent à RITZ. Vous avez encore des questions, des souhaits, des suggestions ou vous avez besoin d’une assistance technique ? Nos experts vous conseillent personnellement à tout moment et se font un plaisir de partager leurs connaissances approfondies avec vous. Prenez contact avec nous. Nous avons dressé […]", "og:url": "https://ritz-international.com/fr/cont
+canonical: https://ritz-international.com/fr/contact/
+hreflang: [['en', 'https://ritz-international.com/en/contact-us/'], ['fr', 'https://ritz-international.com/fr/contact/'], ['de', 'https://ritz-international.com/kontakt/'], ['hu', 'https://ritz-international.com/hu/kapcsolatfelvetel/'], ['es', 'https://ritz-international.com/es/contacto/'], ['x-default', 'https://ritz-international.com/kontakt/']]
+
+[H H2] nous sommes là pour vous.
+[TEXT] De nombreux chemins mènent à RITZ. Vous avez encore des questions, des souhaits, des suggestions ou vous avez besoin d’une assistance technique ? Nos experts vous conseillent personnellement à tout moment et se font un plaisir de partager leurs connaissances approfondies avec vous. Prenez contact avec nous. Nous avons dressé pour vous une liste claire des principaux interlocuteurs.
+[IMG] https://ritz-international.com/wp-content/uploads/Kontakt_intro_bild.webp alt=''
+[template] Sites de productionSitesSecteurs de produitsReprésentations
+[TABS] (in f45ef3c) Sites de production#2279 | Sites#1368 | Secteurs de produits#1609 | Représentations#1621 contents: 
+[TEMPLATES] 2279 1368 1609 1621

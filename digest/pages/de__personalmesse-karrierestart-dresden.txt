@@ -1,0 +1,11 @@
+# Personalmesse Karrierestart Dresden - RITZ
+URL: https://ritz-international.com/personalmesse-karrierestart-dresden/  status=200 lang=de kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "Personalmesse Karrierestart Dresden - RITZ", "og:description": "RITZ nimmt teil auf der Personalmesse Karrierestart in der Dresden Messe Halle 1 Stand L 24 vom 19.- 21.01. 2024. Wir freuen uns auf Sie! Ihr RITZ Messe Team", "og:url": "https://ritz-international.com/personalmesse-karrierestart-dresden/", "og:site_name": "RITZ", "og:image": "https://ritz-international.com/wp-content/uploads/IMG-20240119-WA0003.jpg", "og:image:width": "1024", "og:imag
+canonical: https://ritz-international.com/personalmesse-karrierestart-dresden/
+hreflang: [['en', 'https://ritz-international.com/en/personnel-fair-karrierestart-dresden/'], ['fr', 'https://ritz-international.com/fr/salon-du-personnel-karrierestart-dresden/'], ['de', 'https://ritz-international.com/personalmesse-karrierestart-dresden/'], ['hu', 'https://ritz-international.com/hu/szemelyzeti-vasar-karrierestart-dresden/'], ['es', 'https://ritz-international.com/es/feria-de-personal-karrierestart-dresde/'], ['x-default', 'https://ritz-international.com/personalmesse-karrierestart-dresden/']]
+
+[POSTTITLE] Personalmesse Karrierestart Dresden
+[POSTCONTENT] RITZ nimmt teil auf der Personalmesse Karrierestart in der Dresden Messe Halle 1 Stand L 24 vom 19.- 21.01. 2024. 
+ Wir freuen uns auf Sie! Ihr RITZ Messe Team IMGS= LINKS=
+[BTN] Zurück -> /aktuelles/news
+[FEATURED] https://ritz-international.com/wp-content/uploads/IMG-20240119-WA0003.jpg

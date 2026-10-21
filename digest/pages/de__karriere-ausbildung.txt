@@ -1,0 +1,25 @@
+# Ausbildung - RITZ
+URL: https://ritz-international.com/karriere/ausbildung/  status=200 lang=de kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "description": "RITZ bietet vielfältige Ausbildungsmöglichkeiten: vom Industriemechaniker bis zur Fachkraft für Lagerlogistik. Gestalte die Zukunft der Energieversorgung in einem internationalen Umfeld mit.", "og:locale": "de_DE", "og:type": "article", "og:title": "Ausbildung - RITZ", "og:description": "RITZ bietet vielfältige Ausbildungsmöglichkeiten: vom Industriemechaniker bis zur Fachkraft für Lagerlogistik. Gestalte die Zukunft der Energieversorgung in einem internationalen Umfeld mit.", "og:url": "
+canonical: https://ritz-international.com/karriere/ausbildung/
+hreflang: [['en', 'https://ritz-international.com/en/career/education/'], ['fr', 'https://ritz-international.com/fr/carriere/formation/'], ['de', 'https://ritz-international.com/karriere/ausbildung/'], ['hu', 'https://ritz-international.com/hu/karrier/oktatas/'], ['es', 'https://ritz-international.com/es/carrera-profesional/educacion/'], ['x-default', 'https://ritz-international.com/karriere/ausbildung/']]
+
+[H H2] Empower your career!
+[H H2] Ausbildungsplätze
+mit Power!
+[TEXT] Deine Energie ist gefragt! Lass sie fließen. Du hast Interesse an einer hochspannenden Ausbildung, die dir echte Zunkunftsperspektiven bietet? Dann bist du bei der internationalen RITZ-Firmengruppe genau richtig! Unser weitreichendes Ausbildungsangebot variiert je nach Standort und Ausbildungsjahr. Welche vielfältigen  Ausbildungsmöglichkeiten es gibt, siehst du unten. Bei allgemeinen Fragen wende dich gerne an den jeweiligen Standort.
+ Sende uns deine Bewerbung bitte per E-Mail als PDF-Dokument und richte sie an die jeweilige Adresse deines gewünschten Standorts. Dann erreicht uns deine Bewerbung auf dem schnellsten Wege.
+[H H2] HAMBURG
+[LIST] Hamburg/Fachinformatiker Systemintegration (w/m/d) <https://ritz-international.com/wp-content/uploads/2023/03/Azubis_IT_RGH.pdf> | Hamburg/Industriekaufmann / -frau (m/w/d) <https://ritz-international.com/wp-content/uploads/2023/03/Azubis_Industriekaufmann_RGH.pdf>
+[H H2] KIRCHAICH
+[LIST] Kirchaich/Industriekaufmann / -frau (m/w/d) <https://ritz-international.com/wp-content/uploads/2023/03/Azubis_Industriekaufmann_RGK.pdf> | Kirchaich/Fachkraft für Lagerlogistik (w/m/d) <https://ritz-international.com/wp-content/uploads/2023/03/Azubis_Fachkraft_Lagerlogistik_RGK.pdf> | Kirchaich/Industriemechaniker (m/w/d) <https://ritz-international.com/wp-content/uploads/2023/03/Azubis_Industriemechaniker_RGK.pdf>
+[H H2] OTTENDORF-OKRILLA
+[LIST] Ottendorf-Okrilla/Elektroanlagenmonteur (w/m/d) <https://ritz-international.com/wp-content/uploads/2023/03/Azubis_Elektroanlangenmonteur_RGD.pdf> | Ottendorf-Okrilla/Industriekaufmann / -frau (m/w/d) <https://ritz-international.com/wp-content/uploads/2023/03/Azubis_Industriekaufmann_RGD.pdf>
+[H H2] Kontakt
+[H H2] Hamburg
+[LIST] personal.hamburg@ritz-international.com <mailto:personal.hamburg@ritz-international.com>
+[H H2] KIRCHAICH
+[LIST] personal.kirchaich@ritz-international.com <mailto:personal.kirchaich@ritz-international.com>
+[H H2] DRESDEN
+[LIST] personal.dresden@ritz-international.com <mailto:personal.dresden@ritz-international.com>
+[PDFS] https://ritz-international.com/wp-content/uploads/2023/03/Azubis_IT_RGH.pdf https://ritz-international.com/wp-content/uploads/2023/03/Azubis_Industriekaufmann_RGH.pdf https://ritz-international.com/wp-content/uploads/2023/03/Azubis_Industriekaufmann_RGK.pdf https://ritz-international.com/wp-content/uploads/2023/03/Azubis_Fachkraft_Lagerlogistik_RGK.pdf https://ritz-international.com/wp-content/uploads/2023/03/Azubis_Industriemechaniker_RGK.pdf https://ritz-international.com/wp-content/uploads/2023/03/Azubis_Elektroanlangenmonteur_RGD.pdf https://ritz-international.com/wp-content/uploads/2023/03/Azubis_Industriekaufmann_RGD.pdf

@@ -1,0 +1,11 @@
+# RITZ Deutschland Archive - RITZ
+URL: https://ritz-international.com/ritz-standorte/ritz-deutschland/  status=200 lang=de kind=extra
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "RITZ Deutschland Archive - RITZ", "og:url": "https://ritz-international.com/ritz-standorte/ritz-deutschland/", "og:site_name": "RITZ"}
+canonical: https://ritz-international.com/ritz-standorte/ritz-deutschland/
+hreflang: [['en', 'https://ritz-international.com/en/ritz-standorte/ritz-germany/'], ['fr', 'https://ritz-international.com/fr/ritz-standorte/ritz-allemagne/'], ['de', 'https://ritz-international.com/ritz-standorte/ritz-deutschland/'], ['hu', 'https://ritz-international.com/hu/ritz-standorte/ritz-nemetorszag/'], ['es', 'https://ritz-international.com/es/ritz-standorte/ritz-alemania/'], ['x-default', 'https://ritz-international.com/ritz-standorte/ritz-deutschland/']]
+
+[MAINHTML] RITZ Standorte: RITZ Deutschland 
+ Standort Deutschland Dresden 
+ Standort Deutschland Kirchaich 
+ Standort Deutschland Wirges 
+ Standort Deutschland Hamburg

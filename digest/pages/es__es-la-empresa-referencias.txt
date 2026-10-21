@@ -1,0 +1,10 @@
+# Referencias - RITZ
+URL: https://ritz-international.com/es/la-empresa/referencias/  status=200 lang=es kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "es_ES", "og:type": "article", "og:title": "Referencias - RITZ", "og:description": "Inicio Productos de primera para clientes de renombre. Un indicador del éxito empresarial. La satisfacción de nuestros clientes es nuestra absoluta prioridad. Nuestras estrechas relaciones con los clientes, que mantenemos desde hace décadas, hablan por sí solas de la excelente calidad de nuestros productos, el alto nivel de asesoramiento y el buen servicio de asistencia […]", "og:url": "https://ritz-internati
+canonical: https://ritz-international.com/es/la-empresa/referencias/
+hreflang: [['en', 'https://ritz-international.com/en/company/references/'], ['fr', 'https://ritz-international.com/fr/entreprise/references/'], ['de', 'https://ritz-international.com/unternehmen/referenzen/'], ['hu', 'https://ritz-international.com/hu/a-vallalat/hivatkozasok/'], ['es', 'https://ritz-international.com/es/la-empresa/referencias/'], ['x-default', 'https://ritz-international.com/unternehmen/referenzen/']]
+
+[H H2] Productos de primera para clientes de renombre.
+[TEXT] Un indicador del éxito empresarial. La satisfacción de nuestros clientes es nuestra absoluta prioridad. Nuestras estrechas relaciones con los clientes, que mantenemos desde hace décadas, hablan por sí solas de la excelente calidad de nuestros productos, el alto nivel de asesoramiento y el buen servicio de asistencia técnica.   
+ Estaremos encantados de presentarle casos prácticos detallados en una reunión en persona. Póngase en contacto con nosotros para reservar una cita.
+[IMG] https://ritz-international.com/wp-content/uploads/2022/07/unternehmen_referenzen_1.jpg alt=''

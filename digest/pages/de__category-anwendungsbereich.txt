@@ -1,0 +1,9 @@
+# Anwendungsbereich Archive - RITZ
+URL: https://ritz-international.com/category/anwendungsbereich/  status=200 lang=de kind=extra
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "Anwendungsbereich Archive - RITZ", "og:url": "https://ritz-international.com/category/anwendungsbereich/", "og:site_name": "RITZ"}
+canonical: https://ritz-international.com/category/anwendungsbereich/
+hreflang: [['en', 'https://ritz-international.com/en/category/area-of-application/'], ['de', 'https://ritz-international.com/category/anwendungsbereich/'], ['x-default', 'https://ritz-international.com/category/anwendungsbereich/']]
+
+[MAINHTML] Kategorie: Anwendungsbereich 
+ Gießharzanwendungen in der Elektrotechnik und mehr 
+ Duromer_Harzlösungen

@@ -1,0 +1,51 @@
+# Home - RITZ
+URL: https://ritz-international.com/fr/  status=200 lang=fr kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "description": "RITZ Instrument Transformers : spécialiste leader des transformateurs de mesure, des barres conductrices isolées par de la résine moulée et des transformateurs de puissance. Des solutions innovantes pour l'approvisionnement énergétique mondial depuis 1945.", "og:locale": "fr_FR", "og:type": "website", "og:title": "Home - RITZ", "og:description": "RITZ Instrument Transformers : spécialiste leader des transformateurs de mesure, des barres conductrices isolées par de la résine moulée et des 
+canonical: https://ritz-international.com/fr/
+hreflang: [['en', 'https://ritz-international.com/en/'], ['fr', 'https://ritz-international.com/fr/'], ['de', 'https://ritz-international.com/'], ['hu', 'https://ritz-international.com/hu/'], ['es', 'https://ritz-international.com/es/'], ['x-default', 'https://ritz-international.com/']]
+
+[IMG] https://ritz-international.com/wp-content/uploads/arrow-red-RTZ-2048x1448.png alt='' -> #empowering-our-electrical-future
+[IMG] https://ritz-international.com/wp-content/uploads/2022/06/image_empowering_the_future.jpg alt=''
+[H H2] Empowering Our Electrical Future
+[TEXT] Depuis plus de 75 ans, le nom de RITZ est synonyme de transformateurs de mesure de première qualité et de solutions innovantes dans l’industrie électrique.
+ Plus de 1.300 personnes travaillent dans nos huit sites en Europe, en Chine et aux Etats-Unis.
+ En collaboration avec nos clients, nous développons des solutions sur mesure et concevons des produits durables pour renforcer et développer nos réseaux d’énergie électrique pour un avenir durable.
+[H H2] Nos produits
+[pp-info-box-carousel] Transformateurs moyenne tension
+Découvrez nos transformateurs moyenne tension pour l’intérieur, l’extérieur et d’autres types de transformateurs.
+En apprendre plus
+Transformateurs basse tension
+Découvrez nos transformateurs basse tension.
+En apprendre plus
+Transformateurs haute tension
+Découvrez nos transformateurs haute tension.
+En apprendre plus
+Barres conductrices SIS
+Découvrez nos barres conductrices.
+En apprendre plus
+Pièces en résine de coulée de Duromer
+Découvrez nos pièces en résine moulée de Duromer.
+En apprendre plus
+Transformateurs de mesure électroniques et capteurs
+Découvrez notre site Transducteurs et capteurs électroniques.
+En apprendre plus
+Showing Slide 1 of 6 IMGS=https://ritz-international.com/wp-content/uploads/2022/09/introduction_image_mittelspannungswandler-e1705680173177.jpg https://ritz-international.com/wp-content/uploads/2022/09/introduction_image_niederspannungswandler-e1705680245358.jpg https://ritz-international.com/wp-content/uploads/home_teaser_image_hochspannungswandler.jpg https://ritz-international.com/wp-content/uploads/2022/09/introduction_image_stromschienen-e1705680286556.jpg https://ritz-international.com/wp-content/uploads/2022/09/introduction_image_giessharzteile_duromer-e1705680313569.jpg https://ritz-international.com/wp-content/uploads/2022/09/introduction_image_elektronische_messwandler_und_sensoren-e1705680342912.jpg LINKS=En apprendre plus<https://ritz-international.com/fr/produits/transformateurs-moyenne-tension/> En apprendre plus<https://ritz-international.com/fr/produits/transformateurs-basse-tension/> En apprendre plus<https://ritz-international.com/fr/produits/transformateurs-haute-tension/> En apprendre plus<https://ritz-international.com/fr/produits/fils-electriques/> En apprendre plus<https://ritz-international.com/fr/produits/pieces-en-resine-coulee-duromer/> En apprendre plus<https://ritz-international.com/fr/produits/transformateurs-de-mesure-electroniques-et-capteurs/>
+[IMG] https://ritz-international.com/wp-content/uploads/2022/06/stellenangebote_ausbildung_images_1.jpg alt=''
+[H H2] Offres d'emploi
+[TEXT] Nous sommes toujours à la recherche de personnel qualifié. Découvrez les postes que nous avons actuellement à pourvoir.
+[BTN] En apprendre plus -> https://ritz-international.com/fr/portail-des-carrieres/
+[IMG] https://ritz-international.com/wp-content/uploads/Stellenangebote_image_RTZ-1.jpg alt=''
+[H H2] Places de formation
+[TEXT] Le groupe RITZ t’offre de nombreuses possibilités de formation passionnantes et des perspectives d’avenir. Découvre-les.
+[BTN] En apprendre plus -> https://ritz-international.com/fr/carriere/formation/
+[H H2] Sites
+[TEXT] Le groupe d’entreprises RITZ est représenté dans le monde entier. Apprenez-en plus sur nos sites de production.
+[H H2] Nouveautés
+[TEXT] En tant qu’entreprise dynamique, nous sommes ouverts au changement. Découvrez les nouveautés de RITZ Instrument Transformers GmbH.
+[H H2] Gestion de la qualité
+[TEXT] Le système de qualité de RITZ respecte des normes internationales strictes. Découvrez comment la gestion de la qualité est organisée et quels contrôles électriques nous effectuons.
+[H H2] Votre lien personnel avec RITZ
+[TEXT] Nos experts sont à votre disposition. Ils vous donnent des conseils, vous aident et vous apportent des solutions innovantes. Contactez-nous si vous avez des questions, des souhaits ou des suggestions, ou si vous avez besoin d’une assistance technique. Vous découvrirez ici qui est l’interlocuteur compétent pour répondre à votre demande.
+[BTN] Contact -> https://ritz-international.com/fr/contact/
+[IMG] https://ritz-international.com/wp-content/uploads/2022/06/ihr_persoenlicher_draht_zu_ritz.jpg alt=''
+[SECTIONS-BG] [{"id": "c3010e0", "settings": "{\"background_background\":\"slideshow\",\"background_motion_fx_scale_effect\":\"yes\",\"background_motion_fx_scale_speed\":{\"unit\":\"px\",\"size\":1,\"sizes\":[]},\"background_motion_fx_scale_range\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":{\"start\":50,\"end\":100}},\"jet_parallax_layout_list\":[],\"background_slideshow_gallery\":[{\"id\":1405,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/2022\\/11\\/intro_home_slider_1.webp\"},{\"id\":13962,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/RTZ_Website-slider-2-neu2.jpg\"},{\"id\":1634,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/intro_home_slider_4.webp\"},{\"id\":1635,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/intro_home_slider_5.webp\"},{\"id\":1636,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/intro_home_slider_6.webp\"},{\"id\":1637,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/intro_home_slider_7.webp\"},{\"id\":1638,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/intro_home_slider_8.webp\"}],\"background_slideshow_transition_duration\":1000,\"background_slideshow_ken_burns\":\"yes\",\"background_slideshow_loop\":\"yes\",\"background_slideshow_slide_duration\":5000,\"background_slideshow_slide_transition\":\"fade\",\"background_slideshow_ken_burns_zoom_direction\":\"in\",\"background_motion_fx_scale_direction\":\"out-in\",\"background_motion_fx_devices\":[\"desktop\",\"tablet\",\"mobile\"]}"}, {"id": "35f3476", "settings": "{\"motion_fx_motion_fx_scrolling\":\"yes\",\"motion_fx_translateX_effect\":\"yes\",\"motion_fx_translateX_direction\":\"negative\",\"motion_fx_translateX_affectedRange\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":{\"start\":0,\"end\":50}},\"motion_fx_opacity_effect\":\"yes\",\"motion_fx_opacity_range\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":{\"start\":0,\"end\":40}},\"motion_fx_devices\":[\"desktop\"],\"motion_fx_translateX_speed\":{\"unit\":\"px\",\"size\":4,\"sizes\":[]},\"motion_fx_opacity_direction\":\"out-in\",\"motion_fx_opacity_level\":{\"unit\":\"px\",\"size\":10,\"sizes\":[]}}"}, {"id": "37f7d9f", "settings": "{\"motion_fx_motion_fx_scrolling\":\"yes\",\"motion_fx_translateX_effect\":\"yes\",\"motion_fx_translateX_affectedRange\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":{\"start\":0,\"end\":50}},\"motion_fx_opacity_effect\":\"yes\",\"motion_fx_opacity_range\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":{\"start\":0,\"end\":40}},\"motion_fx_devices\":[\"desktop\"],\"motion_fx_translateX_speed\":{\"unit\":\"px\",\"size\":4,\"sizes\":[]},\"motion_fx_opacity_direction\":\"out-in\",\"motion_fx_opacity_level\":{\"unit\":\"px\",\"size\":10,\"sizes\":[]}}"}, {"id": "aea46fe", "settings": "{\"jet_parallax_layout_list\":[],\"motion_fx_motion_fx_scrolling\":\"yes\",\"motion_fx_translateX_effect\":\"yes\",\"motion_fx_translateX_direction\":\"negative\",\"motion_fx_translateX_affecte

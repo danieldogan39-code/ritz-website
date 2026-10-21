@@ -1,0 +1,10 @@
+# EM-POWER EUROPE - RITZ
+URL: https://ritz-international.com/fr/em-power-europe/  status=200 lang=fr kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "fr_FR", "og:type": "article", "og:title": "EM-POWER EUROPE - RITZ", "og:description": "Renforcer notre avenir électrique ! Du 14 au 16 juin 2023, nous avons présenté nos produits au salon Intersolar de Munich. Nous avons été très heureux de recevoir toutes ces questions et d’échanger activement avec vous. Merci d’avoir participé !    ", "og:url": "https://ritz-international.com/fr/em-power-europe/", "og:site_name": "RITZ", "og:image": "https://ritz-international.com/wp-content/uploads/IMG-2
+canonical: https://ritz-international.com/fr/em-power-europe/
+hreflang: [['en', 'https://ritz-international.com/en/em-power-europe/'], ['fr', 'https://ritz-international.com/fr/em-power-europe/'], ['de', 'https://ritz-international.com/em-power-europe/'], ['hu', 'https://ritz-international.com/hu/em-power-europe/'], ['es', 'https://ritz-international.com/es/em-power-europa/'], ['x-default', 'https://ritz-international.com/em-power-europe/']]
+
+[POSTTITLE] EM-POWER EUROPE
+[POSTCONTENT] Renforcer notre avenir électrique ! Du 14 au 16 juin 2023, nous avons présenté nos produits au salon Intersolar de Munich. Nous avons été très heureux de recevoir toutes ces questions et d’échanger activement avec vous. Merci d’avoir participé ! IMGS=https://ritz-international.com/wp-content/uploads/IMG-20230614-WA0005.jpg LINKS=
+[BTN] Retour -> https://ritz-international.com/fr/?page_id=5615
+[FEATURED] https://ritz-international.com/wp-content/uploads/IMG-20230614-WA0003.jpg

@@ -1,0 +1,13 @@
+# Responsibility - RITZ
+URL: https://ritz-international.com/es/la-empresa/responsibility/  status=200 lang=es kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "es_ES", "og:type": "article", "og:title": "Responsibility - RITZ", "og:description": "Home LA RESPONSABILIDAD COMO MISIÓN RITZ y la Fundación RITZ son sinónimo de seguridad, fiabilidad y responsabilidad intergeneracional. Las personas están en el centro de todo lo que hacemos. Download Whistleblower System ZVEI-VDMA Code of Conduct", "og:url": "https://ritz-international.com/unternehmen/verantwortung/", "og:site_name": "RITZ", "og:image": "https://ritz-international.com/wp-content/uploads/w
+canonical: https://ritz-international.com/unternehmen/verantwortung/
+hreflang: [['en', 'https://ritz-international.com/en/company/responsibility/'], ['fr', 'https://ritz-international.com/fr/entreprise/responsibility/'], ['de', 'https://ritz-international.com/unternehmen/verantwortung/'], ['hu', 'https://ritz-international.com/hu/a-vallalat/felelosseg/'], ['es', 'https://ritz-international.com/es/la-empresa/responsibility/'], ['x-default', 'https://ritz-international.com/unternehmen/verantwortung/']]
+
+[H H2] LA RESPONSABILIDAD COMO MISIÓN
+[TEXT] RITZ y la Fundación RITZ son sinónimo de seguridad, fiabilidad y responsabilidad intergeneracional.
+ Las personas están en el centro de todo lo que hacemos.
+[IMG] https://ritz-international.com/wp-content/uploads/wind-energy-sq.jpg alt=''
+[H H2] Download
+[LIST] Whistleblower System <https://ritz-international.com/wp-content/uploads/EN-Hinweisgebersystem.pdf> | ZVEI-VDMA Code of Conduct <https://ritz-international.com/wp-content/uploads/ZVEI-VDMA-Code-of-Conduct-RITZ-EN.pdf>
+[PDFS] https://ritz-international.com/wp-content/uploads/EN-Hinweisgebersystem.pdf https://ritz-international.com/wp-content/uploads/ZVEI-VDMA-Code-of-Conduct-RITZ-EN.pdf

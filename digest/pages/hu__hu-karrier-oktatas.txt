@@ -1,0 +1,24 @@
+# Szakmai gyakorlat - RITZ
+URL: https://ritz-international.com/hu/karrier/oktatas/  status=200 lang=hu kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "hu_HU", "og:type": "article", "og:title": "Szakmai gyakorlat - RITZ", "og:description": "Állítsa sínre karrierjét! Kezdőoldal Felvillanyozó tanulószerződéses álláshelyek! Az energiádra van kereslet! Termeld nyugodtan! Érdekel egy izgalmas gyakornoki állás, amely valódi perspektívát kínál neked a jövőre nézve? Akkor a nemzetközi RITZ-csoport a megfelelő hely a számodra! Kiterjedt képzési programunk a telephelytől és a képzési évtől függően változik. A képzési lehetőségek széles skáláját az a
+canonical: https://ritz-international.com/en/career/education/
+hreflang: [['en', 'https://ritz-international.com/en/career/education/'], ['fr', 'https://ritz-international.com/fr/carriere/formation/'], ['de', 'https://ritz-international.com/karriere/ausbildung/'], ['hu', 'https://ritz-international.com/hu/karrier/oktatas/'], ['es', 'https://ritz-international.com/es/carrera-profesional/educacion/'], ['x-default', 'https://ritz-international.com/karriere/ausbildung/']]
+
+[H H2] Állítsa sínre karrierjét!
+[H H2] Felvillanyozó tanulószerződéses álláshelyek!
+[TEXT] Az energiádra van kereslet! Termeld nyugodtan! Érdekel egy izgalmas gyakornoki állás, amely valódi perspektívát kínál neked a jövőre nézve? Akkor a nemzetközi RITZ-csoport a megfelelő hely a számodra! Kiterjedt képzési programunk a telephelytől és a képzési évtől függően változik. A képzési lehetőségek széles skáláját az alábbiakban tekintheted meg. Ha bármilyen általános kérdésed van, kérjük, fordulj az adott telephelyhez.
+ Jelentkezésedet, kérjük, a kiválasztott helyszín e-mail-címére küldd el nekünk PDF formátumban. Jelentkezésed így a lehető leggyorsabban eljut hozzánk.
+[H H2] HAMBURG
+[LIST] Hamburg / Rendszerintegrációért felelős informatikai szakember (f/m/d) <https://ritz-international.com/wp-content/uploads/2023/03/Azubis_IT_RGH.pdf> | Hamburg / Ipari ügyintéző (férfi/nő/más) <https://ritz-international.com/wp-content/uploads/2023/03/Azubis_Industriekaufmann_RGH.pdf>
+[H H2] KIRCHAICH
+[LIST] Kirchaich / Ipari ügyintéző (férfi/nő/más) <https://ritz-international.com/wp-content/uploads/2023/03/Azubis_Industriekaufmann_RGK.pdf> | Kirchaich/ Raktárlogisztikai szakember (m/f/d) <https://ritz-international.com/wp-content/uploads/2023/03/Azubis_Fachkraft_Lagerlogistik_RGK.pdf> | Kirchaich / Ipari gépész (férfi/nő/más) <https://ritz-international.com/wp-content/uploads/2023/03/Azubis_Industriemechaniker_RGK.pdf>
+[H H2] OTTENDORF-OKRILLA
+[LIST] Ottendorf-Okrilla / Elektroműszerész (m/f/d) <https://ritz-international.com/wp-content/uploads/2023/03/Azubis_Elektroanlangenmonteur_RGD.pdf> | Ottendorf-Okrilla / Ipari ügyintéző (férfi/nő/más) <https://ritz-international.com/wp-content/uploads/2023/03/Azubis_Industriekaufmann_RGD.pdf>
+[H H2] Kapcsolat
+[H H2] Hamburg
+[LIST] personal.hamburg@ritz-international.com <mailto:personal.hamburg@ritz-international.com>
+[H H2] KIRCHAICH
+[LIST] personal.kirchaich@ritz-international.com <mailto:personal.kirchaich@ritz-international.com>
+[H H2] DREZDA
+[LIST] personal.dresden@ritz-international.com <mailto:personal.dresden@ritz-international.com>
+[PDFS] https://ritz-international.com/wp-content/uploads/2023/03/Azubis_IT_RGH.pdf https://ritz-international.com/wp-content/uploads/2023/03/Azubis_Industriekaufmann_RGH.pdf https://ritz-international.com/wp-content/uploads/2023/03/Azubis_Industriekaufmann_RGK.pdf https://ritz-international.com/wp-content/uploads/2023/03/Azubis_Fachkraft_Lagerlogistik_RGK.pdf https://ritz-international.com/wp-content/uploads/2023/03/Azubis_Industriemechaniker_RGK.pdf https://ritz-international.com/wp-content/uploads/2023/03/Azubis_Elektroanlangenmonteur_RGD.pdf https://ritz-international.com/wp-content/uploads/2023/03/Azubis_Industriekaufmann_RGD.pdf

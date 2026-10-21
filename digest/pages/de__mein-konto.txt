@@ -1,0 +1,8 @@
+# Mein Konto - RITZ
+URL: https://ritz-international.com/mein-konto/  status=200 lang=de kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "Mein Konto - RITZ", "og:url": "https://ritz-international.com/mein-konto/", "og:site_name": "RITZ"}
+canonical: https://ritz-international.com/mein-konto/
+hreflang: [['de', 'https://ritz-international.com/mein-konto/'], ['x-default', 'https://ritz-international.com/mein-konto/']]
+
+[MAINHTML] Mein Konto
+ [woocommerce_my_account]

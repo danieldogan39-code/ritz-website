@@ -1,0 +1,5 @@
+# Legfrissebb hírek - RITZ
+URL: https://ritz-international.com/hu/legfrissebb-hirek/  status=200 lang=hu kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "description": "Maradjon naprakész a RITZ műszeres transzformátorokkal kapcsolatban. Tudjon meg többet legújabb fejlesztéseinkről, vásáron való részvételünkről és díjainkról a műszeres transzformátor- és energiatechnológia területén.", "og:locale": "hu_HU", "og:type": "article", "og:title": "Legfrissebb hírek - RITZ", "og:description": "Maradjon naprakész a RITZ műszeres transzformátorokkal kapcsolatban. Tudjon meg többet legújabb fejlesztéseinkről, vásáron való részvételünkről és díjainkról a műszeres t
+canonical: https://ritz-international.com/hu/legfrissebb-hirek/
+hreflang: [['en', 'https://ritz-international.com/en/latest-news/'], ['fr', 'https://ritz-international.com/fr/actualites/'], ['hu', 'https://ritz-international.com/hu/legfrissebb-hirek/'], ['es', 'https://ritz-international.com/es/ultimas-noticias/']]

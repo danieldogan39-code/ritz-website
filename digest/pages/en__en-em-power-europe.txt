@@ -1,0 +1,13 @@
+# EM-POWER EUROPE - RITZ
+URL: https://ritz-international.com/en/em-power-europe/  status=200 lang=en kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "en_US", "og:type": "article", "og:title": "EM-POWER EUROPE - RITZ", "og:description": "Empower our electrical future! From 14.06. to 16.06.2023, we presented our products at the solar trade fair in Munich. We were very happy about all the questions and the active exchange with you. Thank you very much for being there!    ", "og:url": "https://ritz-international.com/en/em-power-europe/", "og:site_name": "RITZ", "og:image": "https://ritz-international.com/wp-content/uploads/IMG-20230614-WA000
+canonical: https://ritz-international.com/en/em-power-europe/
+hreflang: [['en', 'https://ritz-international.com/en/em-power-europe/'], ['fr', 'https://ritz-international.com/fr/em-power-europe/'], ['de', 'https://ritz-international.com/em-power-europe/'], ['hu', 'https://ritz-international.com/hu/em-power-europe/'], ['es', 'https://ritz-international.com/es/em-power-europa/'], ['x-default', 'https://ritz-international.com/em-power-europe/']]
+
+[POSTTITLE] EM-POWER EUROPE
+[POSTCONTENT] Empower our electrical future!
+ From 14.06. to 16.06.2023, we presented our products at the solar trade fair in Munich.
+ We were very happy about all the questions and the active exchange with you.
+ Thank you very much for being there! IMGS=https://ritz-international.com/wp-content/uploads/IMG-20230614-WA0005.jpg LINKS=
+[BTN] Back -> https://ritz-international.com/en/?page_id=5595
+[FEATURED] https://ritz-international.com/wp-content/uploads/IMG-20230614-WA0003.jpg

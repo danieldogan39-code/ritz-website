@@ -1,0 +1,28 @@
+# IRBT: Generatorwandler mit optimiertem Design - RITZ
+URL: https://ritz-international.com/irbt-generatorwandler-mit-optimiertem-design/  status=200 lang=de kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "IRBT: Generatorwandler mit optimiertem Design - RITZ", "og:description": "Der IRBT-Generatorstromwandler ist seit vielen Jahren ein fester Bestandteil des RITZ-Produktportfolios und bietet eine zuverlässige Lösung für die speziellen Anforderungen im Umfeld von Generatoren. Besonders die extrem hohen Ströme – bis zu 50.000 A – stellen hohe technische Ansprüche. Um trotz geringer Phasenmittenabstände eine präzise Messung zu gewährleisten, werden gezi
+canonical: https://ritz-international.com/irbt-generatorwandler-mit-optimiertem-design/
+hreflang: [['en', 'https://ritz-international.com/en/irbt-generator-converter-with-optimized-design/'], ['de', 'https://ritz-international.com/irbt-generatorwandler-mit-optimiertem-design/'], ['x-default', 'https://ritz-international.com/irbt-generatorwandler-mit-optimiertem-design/']]
+
+[POSTTITLE] IRBT: Generatorwandler mit optimiertem Design
+[POSTCONTENT] Der IRBT-Generatorstromwandler ist seit vielen Jahren ein fester Bestandteil des
+ RITZ-Produktportfolios und bietet eine zuverlässige Lösung für die speziellen
+ Anforderungen im Umfeld von Generatoren. Besonders die extrem hohen Ströme –
+ bis zu 50.000 A – stellen hohe technische Ansprüche. Um trotz geringer
+ Phasenmittenabstände eine präzise Messung zu gewährleisten, werden gezielte
+ Ausgleichswicklungen eingesetzt, die störende Fremdfeldeinflüsse effektiv
+ kompensieren.
+ Mit unserem verbesserten Design ist es uns zusätzlich gelungen, den Wandler für den
+ Einsatz bei Umgebungstemperaturen von bis zu 80°C auszulegen und trotzdem die
+ Höhe des Stromwandlers um ca. 15% zu reduzieren.
+ Durch das neue Design sind die Wandler nicht nur kompakter, sondern auch das
+ Gewicht konnte um 5 bis 10%, je nach Auslegung, reduziert werden. Diese
+ Änderungen bieten Vorteile in der Handhabung der Wandler. Zudem wurde ein
+ Klemmkasten ergänzt, um den Kunden eine verbesserte sekundäre Anschlusstechnik
+ zur Verfügung zu stellen. All diese Anpassungen ermöglichen es den Kunden
+ bewährte Qualität und Technik mit einer verbesserten Nutzerfreundlichkeit zu erhalten.
+ Weitere Informationen können Sie in unseren aktualisierten Datenblättern nachlesen.
+ Redesign Generatorwandler IMGS= LINKS=Redesign Generatorwandler<https://ritz-international.com/wp-content/uploads/IRBT_Generatorwandler_optimiertes_Design.pdf>
+[BTN] Zurück -> /aktuelles/news
+[FEATURED] https://ritz-international.com/wp-content/uploads/IRBT-1.png
+[PDFS] https://ritz-international.com/wp-content/uploads/IRBT_Generatorwandler_optimiertes_Design.pdf

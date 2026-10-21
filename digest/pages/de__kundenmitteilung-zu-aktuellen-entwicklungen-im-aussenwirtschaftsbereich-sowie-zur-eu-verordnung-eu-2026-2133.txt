@@ -1,0 +1,13 @@
+# Kundenmitteilung zu aktuellen Entwicklungen im Außenwirtschaftsbereich sowie zur EU Verordnung (EU) 2026/2133 - RITZ
+URL: https://ritz-international.com/kundenmitteilung-zu-aktuellen-entwicklungen-im-aussenwirtschaftsbereich-sowie-zur-eu-verordnung-eu-2026-2133/  status=200 lang=de kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "Kundenmitteilung zu aktuellen Entwicklungen im Außenwirtschaftsbereich sowie zur EU Verordnung (EU) 2026/2133 - RITZ", "og:description": "Sehr geehrte Kundinnen und Kunden, wir möchten Sie über die aktuellen Entwicklungen im Außenwirtschaftsbereich sowie über die Auswirkungen der am 25.09.2026 in Kraft getretenen Durchführungsverordnung (EU) 2026/2133 informieren.   Kundenmitteilung_EU_Verordnung_2026_2133", "og:url": "https://ritz-international.co
+canonical: https://ritz-international.com/kundenmitteilung-zu-aktuellen-entwicklungen-im-aussenwirtschaftsbereich-sowie-zur-eu-verordnung-eu-2026-2133/
+hreflang: [['de', 'https://ritz-international.com/kundenmitteilung-zu-aktuellen-entwicklungen-im-aussenwirtschaftsbereich-sowie-zur-eu-verordnung-eu-2026-2133/'], ['x-default', 'https://ritz-international.com/kundenmitteilung-zu-aktuellen-entwicklungen-im-aussenwirtschaftsbereich-sowie-zur-eu-verordnung-eu-2026-2133/']]
+
+[POSTTITLE] Kundenmitteilung zu aktuellen Entwicklungen im Außenwirtschaftsbereich sowie zur EU Verordnung (EU) 2026/2133
+[POSTCONTENT] Sehr geehrte Kundinnen und Kunden,
+ wir möchten Sie über die aktuellen Entwicklungen im Außenwirtschaftsbereich sowie über die Auswirkungen der am 25.09.2026 in Kraft getretenen Durchführungsverordnung (EU) 2026/2133 informieren.
+ Kundenmitteilung_EU_Verordnung_2026_2133 IMGS= LINKS=Kundenmitteilung_EU_Verordnung_2026_2133<https://ritz-international.com/wp-content/uploads/Kundenmitteilung_EU_Verordnung_2026_2133.pdf>
+[BTN] Zurück -> /aktuelles/news
+[FEATURED] https://ritz-international.com/wp-content/uploads/cropped-RTZ-LOGO-RUND-red.png
+[PDFS] https://ritz-international.com/wp-content/uploads/Kundenmitteilung_EU_Verordnung_2026_2133.pdf

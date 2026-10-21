@@ -1,0 +1,10 @@
+# RITZ Hongrie est "Entreprise de l'année 2017" en Hongrie - RITZ
+URL: https://ritz-international.com/fr/ritz-hongrie-est-entreprise-de-lannee-2017-en-hongrie/  status=200 lang=fr kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "fr_FR", "og:type": "article", "og:title": "RITZ Hongrie est \"Entreprise de l'année 2017\" en Hongrie - RITZ", "og:description": "\r La société RITZ Mérötranszformátor Kft. a été élue « Entreprise de l’année 2017 » en Hongrie par la Fédération nationale des entrepreneurs et employeurs hongrois (VOSZ). Le Ritz s’est distingué par son fort développement au cours des dernières décennies. Le nombre d’employés n’a cessé d’augmenter et l’investissement sous la forme de la nouvelle usine a contrib
+canonical: https://ritz-international.com/fr/ritz-hongrie-est-entreprise-de-lannee-2017-en-hongrie/
+hreflang: [['en', 'https://ritz-international.com/en/ritz-hungary-is-company-of-the-year-2017-in-hungary/'], ['fr', 'https://ritz-international.com/fr/ritz-hongrie-est-entreprise-de-lannee-2017-en-hongrie/'], ['de', 'https://ritz-international.com/lorem-ipsum-news-3/'], ['hu', 'https://ritz-international.com/hu/a-ritz-magyarorszag-az-ev-vallalata-2017-magyarorszagon/'], ['es', 'https://ritz-international.com/es/ritz-hungria-es-la-empresa-del-ano-2017-en-hungria/'], ['x-default', 'https://ritz-international.com/lorem-ipsum-news-3/']]
+
+[POSTTITLE] RITZ Hongrie est « Entreprise de l’année 2017 » en Hongrie
+[POSTCONTENT] La société RITZ Mérötranszformátor Kft. a été élue « Entreprise de l’année 2017 » en Hongrie par la Fédération nationale des entrepreneurs et employeurs hongrois (VOSZ). Le Ritz s’est distingué par son fort développement au cours des dernières décennies. Le nombre d’employés n’a cessé d’augmenter et l’investissement sous la forme de la nouvelle usine a contribué au développement urbain de Kecskemét. IMGS= LINKS=
+[BTN] Retour -> https://ritz-international.com/fr/?page_id=5615
+[FEATURED] https://ritz-international.com/wp-content/uploads/P1030113_retusalt-768x432-1.jpg

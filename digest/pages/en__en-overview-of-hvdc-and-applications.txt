@@ -1,0 +1,11 @@
+# Overview of HVDC and applications - RITZ
+URL: https://ritz-international.com/en/overview-of-hvdc-and-applications/  status=200 lang=en kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "en_US", "og:type": "article", "og:title": "Overview of HVDC and applications - RITZ", "og:description": "We offer various solutions for HVDC applications. Product_knowledge_compact_HVDC", "og:url": "https://ritz-international.com/en/overview-of-hvdc-and-applications/", "og:site_name": "RITZ"}
+canonical: https://ritz-international.com/en/overview-of-hvdc-and-applications/
+hreflang: [['en', 'https://ritz-international.com/en/overview-of-hvdc-and-applications/'], ['de', 'https://ritz-international.com/uebersicht-hvdc-und-anwendungen/'], ['x-default', 'https://ritz-international.com/uebersicht-hvdc-und-anwendungen/']]
+
+[POSTTITLE] Overview of HVDC and applications
+[POSTCONTENT] We offer various solutions for HVDC applications.
+ Product_knowledge_compact_HVDC IMGS= LINKS=Product_knowledge_compact_HVDC<https://ritz-international.com/wp-content/uploads/Product_knowledge_compact_HVDC.pdf>
+[BTN] Back -> https://ritz-international.com/en/?page_id=5595
+[PDFS] https://ritz-international.com/wp-content/uploads/Product_knowledge_compact_HVDC.pdf

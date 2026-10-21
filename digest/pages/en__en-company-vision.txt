@@ -1,0 +1,93 @@
+# Vision - RITZ
+URL: https://ritz-international.com/en/company/vision/  status=200 lang=en kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "en_US", "og:type": "article", "og:title": "Vision - RITZ", "og:description": "Home RITZ – Empowering our electrical future Experience is what counts. We have been active in the electrical energy technology market with our solutions for over 75 years. We have always been able to adapt to changing market conditions. With our global manufacturing footprint and the corresponding sales network, we can support our customers worldwide […]", "og:url": "https://ritz-international.com/en/company/visi
+canonical: https://ritz-international.com/en/company/vision/
+hreflang: [['en', 'https://ritz-international.com/en/company/vision/'], ['fr', 'https://ritz-international.com/fr/entreprise/vision/'], ['de', 'https://ritz-international.com/unternehmen/vision/'], ['hu', 'https://ritz-international.com/hu/a-vallalat/vision/'], ['es', 'https://ritz-international.com/es/la-empresa/vision/'], ['x-default', 'https://ritz-international.com/unternehmen/vision/']]
+
+[IMG] https://ritz-international.com/wp-content/uploads/2022/07/unternehmen_historie_1.jpg alt=''
+[H H2] RITZ - Empowering our electrical future
+[TEXT] Experience is what counts. We have been active in the electrical energy technology market with our solutions for over 75 years. We have always been able to adapt to changing market conditions. With our global manufacturing footprint and the corresponding sales network, we can support our customers worldwide from the respective region. We have very high standards of quality and service – this is what the RITZ Group stands for.
+ Our vision: 
+Electricity is the most important form of energy of the future. We will continue to develop and become a leading and profitable global specialist and provider of electrical energy technology solutions!
+ Ritz and the Ritz Foundation stand for safety, reliability and cross-generational responsibility. People are at the centre of everything we do.
+[IMG] https://ritz-international.com/wp-content/uploads/2022/07/network_lines_new.svg alt=''
+[H H2] Vision
+[IMG] https://ritz-international.com/wp-content/uploads/unternehmen_vision_raute_transparent.svg alt=''
+[H H2] 2024
+[IMG] https://ritz-international.com/wp-content/uploads/raute_verlauf_blanko_right.svg alt=''
+[TEXT] First year with more than 200 million € expected sales volume Decision for a new factory for high voltage products in Waynesboro, Georgia, USA.
+[TEXT] RITZ Group increases turnover 
+to 150 million due to global demand, reopening of the plant in Waynesboro for High Voltage
+[H H2] 2022
+[IMG] https://ritz-international.com/wp-content/uploads/raute_grey_blanko_left.svg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/image17.jpeg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/image16.jpeg alt=''
+[H H2] 2020
+[IMG] https://ritz-international.com/wp-content/uploads/raute_verlauf_blanko_right.svg alt=''
+[TEXT] Divestment of 
+Power Transformers division
+[TEXT] Distribution of the transformer production 
+from Wirges to the worldwide RITZ locations
+[H H2] 2018
+[IMG] https://ritz-international.com/wp-content/uploads/raute_grey_blanko_left.svg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/image15.jpeg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/image14.jpeg alt=''
+[H H2] 2015
+[IMG] https://ritz-international.com/wp-content/uploads/raute_verlauf_blanko_right.svg alt=''
+[TEXT] RITZ Kecskemét, 
+new factory building;
+First activities for a new high voltage division are started
+[TEXT] RITZ Hartwell, USA, 
+ established with medium and low voltage transformers
+[H H2] 2008
+[IMG] https://ritz-international.com/wp-content/uploads/raute_grey_blanko_left.svg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/image13.jpeg alt=''
+[H H2] 2006
+[IMG] https://ritz-international.com/wp-content/uploads/raute_verlauf_blanko_right.svg alt=''
+[TEXT] Sales of the high voltage division 
+ to the AREVA company
+[TEXT] RITZ Shanghai produces in its own factory
+[H H2] 2003
+[IMG] https://ritz-international.com/wp-content/uploads/raute_grey_blanko_left.svg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/image12.jpeg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/Luftbild_Kirchaich_2014_klein.jpg alt=''
+[H H2] 1999
+[IMG] https://ritz-international.com/wp-content/uploads/raute_verlauf_blanko_right.svg alt=''
+[TEXT] Acquisition of middle voltage division and therefore the solid insulated busbar division of MWB, Bamberg Messwandlerbau Bamberg
+[TEXT] First activities to set up a production
+in Hungary as well as in China
+[H H2] 1996
+[IMG] https://ritz-international.com/wp-content/uploads/raute_grey_blanko_left.svg alt=''
+[gallery]  LINKS=<https://ritz-international.com/wp-content/uploads/image8.jpeg> <https://ritz-international.com/wp-content/uploads/image9.jpeg>
+[IMG] https://ritz-international.com/wp-content/uploads/image4.png alt=''
+[H H2] 1994
+[IMG] https://ritz-international.com/wp-content/uploads/raute_verlauf_blanko_right.svg alt=''
+[TEXT] Acquisition of Duromer 
+ Enlarging the portfolio with cast resin products
+[TEXT] Acquisition of Instrument Transformer Division of TuR, Transformatoren- und Röntgenwerk Dresden; 
+ Factory for high voltage products in Waynesboro
+[H H2] 1991
+[IMG] https://ritz-international.com/wp-content/uploads/raute_grey_blanko_left.svg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/image5.png alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/image4.jpeg alt=''
+[H H2] 1989
+[IMG] https://ritz-international.com/wp-content/uploads/raute_verlauf_blanko_right.svg alt=''
+[TEXT] Acquisition of WTW, Wirges 
+ Wirges converter and transformer plant
+[TEXT] RITZ Foundation By Liselotte Ritz. 
+ Purpose: To support research on Alzheimer’s Disease
+[H H2] 1986
+[IMG] https://ritz-international.com/wp-content/uploads/raute_grey_blanko_left.svg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/image3.jpeg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/image2-1.png alt=''
+[H H2] 1956
+[IMG] https://ritz-international.com/wp-content/uploads/raute_verlauf_blanko_right.svg alt=''
+[TEXT] RITZ Marchtrenk, 
+Austria
+[TEXT] RITZ instrument transformers, in Hamburg 
+ By Dr. Hans Ritz
+[H H2] 1945
+[IMG] https://ritz-international.com/wp-content/uploads/raute_grey_blanko_left.svg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/unternehmen_vision_timeline_image_5.jpg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/2022/07/network_lines_big_new.svg alt=''
+[SECTIONS-BG] [{"id": "4ea011a", "settings": "{\"background_background\":\"slideshow\",\"background_slideshow_gallery\":[],\"background_slideshow_loop\":\"yes\",\"background_slideshow_slide_duration\":5000,\"background_slideshow_slide_transition\":\"fade\",\"background_slideshow_transition_duration\":500}"}]

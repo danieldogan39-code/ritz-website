@@ -1,0 +1,7 @@
+# Stromwandler - RITZ
+URL: https://ritz-international.com/produktfinder/mittelspannung/innenraumanwendung/stromwandler/  status=200 lang=de kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "Stromwandler - RITZ", "og:description": "Home Stromwandler", "og:url": "https://ritz-international.com/produktfinder/mittelspannung/innenraumanwendung/stromwandler/", "og:site_name": "RITZ"}
+canonical: https://ritz-international.com/produktfinder/mittelspannung/innenraumanwendung/stromwandler/
+hreflang: [['de', 'https://ritz-international.com/produktfinder/mittelspannung/innenraumanwendung/stromwandler/'], ['x-default', 'https://ritz-international.com/produktfinder/mittelspannung/innenraumanwendung/stromwandler/']]
+
+[H H2] Stromwandler

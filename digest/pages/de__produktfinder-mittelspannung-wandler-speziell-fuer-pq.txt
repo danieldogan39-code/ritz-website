@@ -1,0 +1,7 @@
+# Wandler speziell für PQ - RITZ
+URL: https://ritz-international.com/produktfinder/mittelspannung/wandler-speziell-fuer-pq/  status=200 lang=de kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "Wandler speziell für PQ - RITZ", "og:description": "Home Wandler speziell für pq", "og:url": "https://ritz-international.com/produktfinder/mittelspannung/wandler-speziell-fuer-pq/", "og:site_name": "RITZ"}
+canonical: https://ritz-international.com/produktfinder/mittelspannung/wandler-speziell-fuer-pq/
+hreflang: [['de', 'https://ritz-international.com/produktfinder/mittelspannung/wandler-speziell-fuer-pq/'], ['x-default', 'https://ritz-international.com/produktfinder/mittelspannung/wandler-speziell-fuer-pq/']]
+
+[H H2] Wandler speziell für pq

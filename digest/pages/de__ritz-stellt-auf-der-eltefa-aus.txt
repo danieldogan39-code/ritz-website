@@ -1,0 +1,10 @@
+# RITZ stellt auf der eltefa aus - RITZ
+URL: https://ritz-international.com/ritz-stellt-auf-der-eltefa-aus/  status=200 lang=de kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "RITZ stellt auf der eltefa aus - RITZ", "og:url": "https://ritz-international.com/ritz-stellt-auf-der-eltefa-aus/", "og:site_name": "RITZ", "og:image": "https://ritz-international.com/wp-content/uploads/Banner-Eltefa-Final-21x8-1.jpg", "og:image:width": "1241", "og:image:height": "471", "og:image:type": "image/jpeg"}
+canonical: https://ritz-international.com/ritz-stellt-auf-der-eltefa-aus/
+hreflang: [['de', 'https://ritz-international.com/ritz-stellt-auf-der-eltefa-aus/'], ['x-default', 'https://ritz-international.com/ritz-stellt-auf-der-eltefa-aus/']]
+
+[POSTTITLE] RITZ stellt auf der eltefa aus
+[POSTCONTENT]  IMGS=https://ritz-international.com/wp-content/uploads/Banner-Eltefa-Final-21x8-1.jpg LINKS=
+[BTN] Zurück -> /aktuelles/news
+[FEATURED] https://ritz-international.com/wp-content/uploads/Banner-Eltefa-Final-21x8-1.jpg

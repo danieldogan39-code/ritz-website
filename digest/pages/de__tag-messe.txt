@@ -1,0 +1,9 @@
+# Messe Archive - RITZ
+URL: https://ritz-international.com/tag/messe/  status=200 lang=de kind=extra
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "Messe Archive - RITZ", "og:url": "https://ritz-international.com/tag/messe/", "og:site_name": "RITZ"}
+canonical: https://ritz-international.com/tag/messe/
+hreflang: [['en', 'https://ritz-international.com/en/tag/trade-fair/'], ['fr', 'https://ritz-international.com/fr/tag/salon/'], ['de', 'https://ritz-international.com/tag/messe/'], ['hu', 'https://ritz-international.com/hu/tag/vasar/'], ['es', 'https://ritz-international.com/es/tag/feria-de-muestras/'], ['x-default', 'https://ritz-international.com/tag/messe/']]
+
+[MAINHTML] Schlagwort: Messe 
+ Personalmesse Karrierestart Dresden 
+ RITZ nimmt teil auf der Personalmesse Karrierestart in der Dresden Messe Halle 1 Stand L 24 vom 19.- 21.01. 2024. Wir freuen uns auf Sie! Ihr RITZ Messe Team

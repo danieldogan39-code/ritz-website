@@ -1,0 +1,17 @@
+# A RITZ KIÁLLÍTÓKÉNT VESZ RÉSZT A STUTTGARTI ELTEFÁN. LEGYEN OTT ÖN IS! - RITZ
+URL: https://ritz-international.com/hu/a-ritz-kiallitokent-vesz-reszt-a-stuttgarti-eltefan-legy-a-reszese/  status=200 lang=hu kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "hu_HU", "og:type": "article", "og:title": "A RITZ KIÁLLÍTÓKÉNT VESZ RÉSZT A STUTTGARTI ELTEFÁN. LEGYEN OTT ÖN IS! - RITZ", "og:description": "Szeretettel várjuk Önt 9.00-17.00 óra között a 10-es pavilon E44-es standján!", "og:url": "https://ritz-international.com/hu/a-ritz-kiallitokent-vesz-reszt-a-stuttgarti-eltefan-legy-a-reszese/", "og:site_name": "RITZ", "og:image": "https://ritz-international.com/wp-content/uploads/IMG-20230328-WA0002-2.jpg", "og:image:width": "1024", "og:image:height"
+canonical: https://ritz-international.com/hu/a-ritz-kiallitokent-vesz-reszt-a-stuttgarti-eltefan-legy-a-reszese/
+hreflang: [['en', 'https://ritz-international.com/en/ritz-is-an-exhibitor-at-eltefa-in-stuttgart-be-part-of-it/'], ['fr', 'https://ritz-international.com/fr/ritz-est-exposant-au-salon-eltefa-de-stuttgart-soyez-present/'], ['de', 'https://ritz-international.com/ritz-ist-aussteller-auf-der-eltefa-in-stuttgart-seien-sie-dabei/'], ['hu', 'https://ritz-international.com/hu/a-ritz-kiallitokent-vesz-reszt-a-stuttgarti-eltefan-legy-a-reszese/'], ['es', 'https://ritz-international.com/es/ritz-participa-como-expositor-en-la-feria-eltefa-de-stuttgart-participa/'], ['x-default', 'https://ritz-international.com/ritz-ist-aussteller-auf-der-eltefa-in-stuttgart-seien-sie-dabei/']]
+
+[POSTTITLE] A RITZ KIÁLLÍTÓKÉNT VESZ RÉSZT A STUTTGARTI ELTEFÁN. LEGYEN OTT ÖN IS!
+[POSTCONTENT] Szeretettel várjuk Önt 9.00-17.00 óra között a 10-es pavilon E44-es standján! IMGS=https://ritz-international.com/wp-content/uploads/JKI1013-2048x1366.png https://ritz-international.com/wp-content/uploads/IMG-20230328-WA0002-2.jpg https://ritz-international.com/wp-content/uploads/JKI1069-2048x1366.png https://ritz-international.com/wp-content/uploads/JKI1023-2.png https://ritz-international.com/wp-content/uploads/JKI1058-2.png https://ritz-international.com/wp-content/uploads/JKI0984-2-2048x1366.png LINKS=
+[H H2] (in a71c4dd) Szeretettel várjuk Önt 9.00-17.00 óra között a 10-es pavilon E44-es standján!
+[IMG] (in a71c4dd) https://ritz-international.com/wp-content/uploads/JKI1013-2048x1366.png alt=''
+[IMG] (in a71c4dd) https://ritz-international.com/wp-content/uploads/IMG-20230328-WA0002-2.jpg alt=''
+[IMG] (in a71c4dd) https://ritz-international.com/wp-content/uploads/JKI1069-2048x1366.png alt=''
+[IMG] (in a71c4dd) https://ritz-international.com/wp-content/uploads/JKI1023-2.png alt=''
+[IMG] (in a71c4dd) https://ritz-international.com/wp-content/uploads/JKI1058-2.png alt=''
+[IMG] (in a71c4dd) https://ritz-international.com/wp-content/uploads/JKI0984-2-2048x1366.png alt=''
+[BTN] Vissza -> https://ritz-international.com/hu/?page_id=5606
+[FEATURED] https://ritz-international.com/wp-content/uploads/IMG-20230328-WA0002-2.jpg

@@ -1,0 +1,10 @@
+# Drezdai Karrierestart állásbörze - RITZ
+URL: https://ritz-international.com/hu/szemelyzeti-vasar-karrierestart-dresden/  status=200 lang=hu kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "hu_HU", "og:type": "article", "og:title": "Drezdai Karrierestart állásbörze - RITZ", "og:description": "A RITZ részt vesz a Karrierestart állásbörzén a drezdai vásárcsarnok 1. pavilon L24-es standján, január 19–21. között 2024. Várjuk Önt! A RITZ vásárcsapata", "og:url": "https://ritz-international.com/hu/szemelyzeti-vasar-karrierestart-dresden/", "og:site_name": "RITZ", "og:image": "https://ritz-international.com/wp-content/uploads/IMG-20240119-WA0003.jpg", "og:image:width": "1024", "og:im
+canonical: https://ritz-international.com/hu/szemelyzeti-vasar-karrierestart-dresden/
+hreflang: [['en', 'https://ritz-international.com/en/personnel-fair-karrierestart-dresden/'], ['fr', 'https://ritz-international.com/fr/salon-du-personnel-karrierestart-dresden/'], ['de', 'https://ritz-international.com/personalmesse-karrierestart-dresden/'], ['hu', 'https://ritz-international.com/hu/szemelyzeti-vasar-karrierestart-dresden/'], ['es', 'https://ritz-international.com/es/feria-de-personal-karrierestart-dresde/'], ['x-default', 'https://ritz-international.com/personalmesse-karrierestart-dresden/']]
+
+[POSTTITLE] Drezdai Karrierestart állásbörze
+[POSTCONTENT] A RITZ részt vesz a Karrierestart állásbörzén a drezdai vásárcsarnok 1. pavilon L24-es standján, január 19–21. között 2024. Várjuk Önt! A RITZ vásárcsapata IMGS= LINKS=
+[BTN] Vissza -> https://ritz-international.com/hu/?page_id=5606
+[FEATURED] https://ritz-international.com/wp-content/uploads/IMG-20240119-WA0003.jpg

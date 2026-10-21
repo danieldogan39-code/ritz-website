@@ -1,0 +1,16 @@
+# GE HYPACT-Anlage mit RITZ Wandlern - RITZ
+URL: https://ritz-international.com/ge-hypact-anlage-mit-ritz-wandlern/  status=200 lang=de kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "GE HYPACT-Anlage mit RITZ Wandlern - RITZ", "og:description": "Projektüberblick Im Jahr 2025 erhielt die RITZ Instrument Transformers GmbH von GE Vernova eine Anfrage zur Lieferung von Stromwandlern für die von GE entwickelte HYpact- Schaltanlagen. In Kooperation mit GE Vernova entwickelten das Sales Team sowie das Application Engineering bei RITZ Stromwandler, die den spezifischen Anforderungen dieser Anlage entsprechen. Weiterlesen", "og:url": "h
+canonical: https://ritz-international.com/ge-hypact-anlage-mit-ritz-wandlern/
+hreflang: [['en', 'https://ritz-international.com/en/ge-hypact-system-with-ritz-converters/'], ['de', 'https://ritz-international.com/ge-hypact-anlage-mit-ritz-wandlern/'], ['x-default', 'https://ritz-international.com/ge-hypact-anlage-mit-ritz-wandlern/']]
+
+[POSTTITLE] GE HYPACT-Anlage mit RITZ Wandlern
+[POSTCONTENT] Projektüberblick 
+Im Jahr 2025 erhielt die RITZ Instrument Transformers GmbH von GE Vernova eine Anfrage zur Lieferung von Stromwandlern für die von GE entwickelte HYpact- Schaltanlagen. In Kooperation mit GE Vernova entwickelten das Sales Team sowie das Application Engineering bei RITZ Stromwandler, die den spezifischen Anforderungen dieser Anlage entsprechen.
+ Weiterlesen IMGS= LINKS=Weiterlesen<https://ritz-international.com/wp-content/uploads/RITZ_Solution_GE_HYpact-1.pdf>
+[TEXT] (in a71c4dd) Projektüberblick 
+Im Jahr 2025 erhielt die RITZ Instrument Transformers GmbH von GE Vernova eine Anfrage zur Lieferung von Stromwandlern für die von GE entwickelte HYpact- Schaltanlagen. In Kooperation mit GE Vernova entwickelten das Sales Team sowie das Application Engineering bei RITZ Stromwandler, die den spezifischen Anforderungen dieser Anlage entsprechen.
+ Weiterlesen
+[BTN] Zurück -> /aktuelles/news
+[FEATURED] https://ritz-international.com/wp-content/uploads/HYpact-Anlage.png
+[PDFS] https://ritz-international.com/wp-content/uploads/RITZ_Solution_GE_HYpact-1.pdf

@@ -1,0 +1,12 @@
+# Visit us at the German Pavilion - RITZ
+URL: https://ritz-international.com/visit-us-at-the-german-pavilion/  status=200 lang=de kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "Visit us at the German Pavilion - RITZ", "og:description": "🌍 We’re excited to announce that RITZ will be exhibiting at the German Pavilion during the upcoming energy week in the CAEx – Central Asian Expocenter in Tashkent, Uzbekistan, from May 13–15, 2025! As part of the German Pavilion, we’re proud to showcase our portfolio of instrument transformers and other solutions for the electric industry. […]", "og:url": "https://ritz-international.com/vi
+canonical: https://ritz-international.com/visit-us-at-the-german-pavilion/
+hreflang: [['de', 'https://ritz-international.com/visit-us-at-the-german-pavilion/'], ['x-default', 'https://ritz-international.com/visit-us-at-the-german-pavilion/']]
+
+[POSTTITLE] Visit us at the German Pavilion
+[POSTCONTENT] 🌍 We’re excited to announce that RITZ will be exhibiting at the German Pavilion during the upcoming energy week in the CAEx – Central Asian Expocenter in Tashkent, Uzbekistan, from May 13–15, 2025!
+ As part of the German Pavilion, we’re proud to showcase our portfolio of instrument transformers and other solutions for the electric industry. This is a great opportunity to connect, exchange ideas, and explore new partnerships in the Central Asian market.
+ 📍 Come visit us at the German Pavilion – we look forward to meeting you in Tashkent! IMGS= LINKS=
+[BTN] Zurück -> /aktuelles/news
+[FEATURED] https://ritz-international.com/wp-content/uploads/Beitragsbild_1-2.png

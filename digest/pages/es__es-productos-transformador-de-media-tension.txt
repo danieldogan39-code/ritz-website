@@ -1,0 +1,285 @@
+# Transformadores de media tensión - RITZ
+URL: https://ritz-international.com/es/productos/transformador-de-media-tension/  status=200 lang=es kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "es_ES", "og:type": "article", "og:title": "Transformadores de media tensión - RITZ", "og:description": "Inicio Transformadores de media tensión Los transformadores de medida son transformadores que convierten las corrientes y tensiones de forma proporcional y fiel a la fase en corrientes y tensiones medibles y normalizadas. Pueden alimentar instrumentos de medida, contadores y/o relés de protección. Además, los dispositivos de medición y protección conectados están aislados eléctricamente d
+canonical: https://ritz-international.com/es/productos/transformador-de-media-tension/
+hreflang: [['en', 'https://ritz-international.com/en/products/medium-voltage-transformer/'], ['fr', 'https://ritz-international.com/fr/produits/transformateurs-moyenne-tension/'], ['de', 'https://ritz-international.com/produkte/mittelspannungswandler/'], ['hu', 'https://ritz-international.com/hu/termekek/koezepfeszueltsegu-transzformator/'], ['es', 'https://ritz-international.com/es/productos/transformador-de-media-tension/'], ['x-default', 'https://ritz-international.com/produkte/mittelspannungswandler/']]
+
+[H H2] Transformadores
+de media tensión
+[IMG] https://ritz-international.com/wp-content/uploads/2022/07/produkte_mittelspannungswandler_image_1.jpg alt=''
+[TEXT] Los transformadores de medida son transformadores que convierten las corrientes y tensiones de forma proporcional y fiel a la fase en corrientes y tensiones medibles y normalizadas. 
+ Pueden alimentar instrumentos de medida, contadores y/o relés de protección. Además, los dispositivos de medición y protección conectados están aislados eléctricamente de los componentes energizados del sistema.
+[H H2] Contacto
+[H H2] Kay Leschick
+[LIST] +49 35205 62 - 219 <tel:+493520562219> | kay.leschick@ritz-international.com <mailto:kay.leschick@ritz-international.com>
+[H H2] Descargar catálogos
+[LIST] Transformadores de media tensión <https://ritz-international.com/wp-content/uploads/RITZ-Medium_Voltage_Instrument_Transformers_Standard_ENG_2014_01-1.pdf> | Transformadores de medida encapsulados en metal <https://ritz-international.com/wp-content/uploads/RITZ-Metal_Clad_Instrument_Transformers_ENG_2013-02-1.pdf> | Análisis PQ <https://ritz-international.com/wp-content/uploads/PQ_Analysis_EN-1.pdf>
+[H H2] REFERENCIAS
+[LIST] Uso de los convertidores de banda ancha RITZ - julio de 2017 <https://ritz-international.com/wp-content/uploads/2302-AM-Offenbach-v6.pdf>
+[template] Aplicación en interiores
+Transformadores de corriente para aplicaciones interiores de hasta 72,5 kV
+TRANSFORMADOR DE CORRIENTE
+ASS 12 | 17,5 | 24 | 36 Transformador de corriente de soporteDiseño en bloque; modelo estrecho DIN 42600, Parte 8; Disponibles en tamaño 1, 2, 3
+Ficha de datos
+GSW 12/0 3,6 | 7,2 | 12 Transformador de corriente de soporteDiseño en bloque; modelo pequeño DIN 42600, Parte 4
+Ficha de datos
+ASN 12 | 17,5 | 24 | 36 Transformador de corriente de soporteDiseño en bloque; modelo grande DIN 42600, Parte 5
+Ficha de datos
+GI 52 | 72,5 Transformador de corriente de soporteDIN 42600, Parte 1
+Ficha de datos
+TRANSFORMADOR DE TENSIÓN
+VES 12|17,5|24 Transformador de tensiónUnipolar, modelo estrecho DIN 42600, Parte 9
+Ficha de datos
+GSE 12/0 3,6|7,2|12 Transformador de tensión Unipolar, modelo pequeño, DIN 42600, Parte 7
+Ficha de datos
+VEN 12|17,5|24|36|52|72,5 Transformador de tensiónUnipolar, modelo grande / de soporte DIN 42600, Parte 3
+Ficha de datos
+VZS 12|17,5|24 Transformador de tensiónBipolar, modelo estrecho DIN 42600, Parte 9
+Ficha de datos
+GSZ 12/0 3,6|7,2|12 Transformador de tensión Bipolar, modelo pequeño, DIN 42600, Parte 7
+Ficha de datos
+VZN 12|17,5|24|36 Transformador de tensiónBipolar, modelo grande, DIN 42600, Parte 3
+Ficha de datos
+Aplicación en exteriores
+TRANSFORMADOR DE CORRIENTE
+GIFK 12 | 17,5 | 24 | 36 Transformador de corriente de soporteDiseño compacto
+Ficha de datos
+GIFS 12 | 17,5 | 24 | 36 Transformador de corriente de soporteDiseño estándar
+Ficha de datos
+GIF 10 | 17,5 | 20 | 30 | 36 | 52 | 72,5 Modelo de cabeza, disponible con GOST
+Ficha de datos
+TRANSFORMADOR DE TENSIÓN
+VEF 12 | 17,5 | 24 | 36 Transformador de tensiónUnipolar, modelo estrecho DIN 42600, Parte 9
+Ficha de datos
+VEF 52 | 72,5 Unipolar, modelo pequeño, DIN 42600, Parte 7
+Ficha de datos
+VZF 12 | 17,5 | 24 | 36 Transformador de tensiónBipolar, modelo grande / de soporte DIN 42600, Parte 3
+Ficha de datos
+Transformadores con seguridad al contacto
+TRANSFORMADOR DE CORRIENTE
+GBWTransformador de corriente encapsulado en metal, 12 – 36 kV
+Ficha de datos
+TRANSFORMADOR DE TENSIÓN
+GBEIN, GBEANTransformador de tensión encapsulado en metal, 12 – 52 kV
+Ficha de datos
+TRANSFORMADOR COMBINADO
+KGBEI/KGBEATransformador combinado encapsulado en metal, 12 – 36 kV
+Ficha de datos
+Transformadores especiales
+Transformador ferroviario
+GSEFBEl transformador de tensión exterior GSEFB se ha diseñado como transformador de tensión máxima para vehículos ferroviarios eléctricos. El aislamiento está hecho de resina epóxica cicloalifática resistente a la intemperie, con unas propiedades mecánicas y eléctricas excepcionalmente buenas. El GSEFBC está, además, integrado en un aislante de compuesto de silicona y dispone de una cubierta de descarga de presión en la parte superior, todo lo cual sirve como protección contra daños o el caso improbable de un estallido. Todas las piezas exteriores están hechas de materiales resistentes a la corrosión y los aparatos no requieren mantenimien IMGS=https://ritz-international.com/wp-content/uploads/2022/07/produkte_stromwandler_ASS_12_1_7_5_24_36_stuetzerstromwandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/produkte_stromwandler_GSW_12_0_3_6_7_2_12_Stuetzerstromwandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_stromwandler_asn_12_17_5_24_36_stuetzerstromwandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_stromwandler_gi_52_72_5_stuetzerstromwandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_spannungswandler_ves_12_17_5_24_spannungswandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_spannungswandler_gse_12_0_3_6_7_2_12_spannungswandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_spannungswandler_ven_12_17_5_24_36_52_72_5_spannungswandler.jpg https://ritz-international.com/wp-content/uploads/VZS-12_175_24-Spannungswandler-Zweipolig.jpg https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_spannungswandler_gsz_12_0_3_6_7_2_12_spannungswandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_spannungswandler_vzn_12_17_5_24_36_spannungswandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_stromwandler_gifk_12_17_5_24_36_stuetzerstromwandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_stromwandler_GIFS-12-17-5-24-36-Stützerstromwandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_stromwandler_gif_10_17_5_20_30_36_52_72_5.jpg https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_spannungswandler_ves_12_17_5_24_spannungswandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_spannungswandler_gse_12_0_3_6_7_2_12_spannungswandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_spannungswandler_ven_12_17_5_24_36_52_72_5_spannungswandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/beruehrungssichere_wandler_stromwandler_gbw.jpg https://ritz-international.com/wp-content/uploads/2022/07/beruehrungssichere_wandler_spannungswandler_gbein_gbean.jpg https://ritz-international.com/wp-content/uploads/2022/07/beruehrungssichere_wandler_kombiwandler_kgbei_kgbea.jpg https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_bahnwandler_gsefb.jpg https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_durchfuehrungsstabstromwandler_gds_127c_7_5_24_36_durchfuehrungsstromwandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_stuetzerstromwandler_gsso_12_17_5_24_hochstromwandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_metallgekapselte_kombiwandler_12-36_kv_kgbea_36_kgbei_36_ausgefuehrt_als_breitbandwandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_stuetzerstromwandler_gsws24_mit_optional_erweitertem_frequenzbereich.jpg https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_induktiver_einpoliger_spannungswandler_gses24d_mit_optional_erweitertem_frequenzbereich.jpg LINKS=Ficha de datos<https://ritz-international.com/wp-content/uploads/TDB20260015_REV01.pdf> Ficha de datos<https://ritz-international.com/wp-content/uploads/De_GSW_12_03_6_Stuetzenstromwandler.pdf> Ficha de datos<https://ritz-international.com/wp-content/uploads/De_ASN_12_17_5_Stuetzerstromwandler.pdf> Ficha de datos<https://ritz-international.com/wp-content/uploads/De_GI_52-72_5_Stuetzerstromwandler.pdf> Ficha de datos<https://ritz-international.com/wp-content/uploads/De_VES_12_17_5_Spannungswandler.pdf> Ficha de datos<https://ritz-international.com/wp-content/uploads/De_GSE_12_Spannungswandler.pdf> Ficha de datos<https://ritz-international.com/wp-content/uploads/De_VEN_12_17_5_24_36_52_72_5_Spannungswandler.pdf> Ficha de datos<https://ritz-international.com/wp-content/uploads/De_VZS_12_17_5_25_Spannungswandler.pdf> Ficha de datos<https://ritz-international.com/wp-content/uploads/De_GSZ_12_03_6_7_2_12_Spannungswandler.pdf> Ficha de datos<https://ritz-international.com/wp-content/uploads/De_VZN_12_17_5_24_36_Spannungswandler.pdf> Ficha de datos<https://ritz-international.com/wp-content/uploads/De_GIFK_Stuetzerstromwandler.pdf> Ficha de datos<https://ritz-international.com/wp-content/uploads/De_GIFS_Stuetzerstromwandler.pdf> Ficha de datos<https://ritz-international.com/wp-content/uploads/De_GIF.pdf> Ficha de datos<https://ritz-international.com/wp-content/uploads/De_VES_12_24_Spannungswandler.pdf> Ficha de datos<https://ritz-international.com/wp-content/uploads/De_GSE_12_0_12_Spannungswandler.pdf> Ficha de datos<https://ritz-international.com/wp-content/uploads/De_VEN_12_72_5_Spannungswandler.pdf> Ficha de datos<https://ritz-international.com/wp-content/uploads/DE_GBW.pdf> Ficha de datos<https://ritz-international.com/wp-content/uploads/DE_GBEIN_GBEAN.pdf> Ficha de datos<https://ritz-international.com/wp-content/uploads/DE_KGBEIKGBEA.pdf> Ficha de datos<https://ritz-international.com/wp-content/uploads/De_GDS.pdf> Ficha de datos<https://ritz-international.com/wp-content/uploads/De_GSSO.pdf> Ficha de datos<https://ritz-international.com/wp-content/uploads/Datenblatt-KGBEA36-KGBEI36-ausgefuehrt-als-Breitbandwandler.pdf> Ficha de datos<https://ritz-international.com/wp-content/uploads/Datenblatt_GSWS24_Breitband_Index_01.pdf> Ficha de datos<https://ritz-international.com/wp-content/uploads/Datenblatt_GSES24D_Breitband_Index_02.pdf>
+[ACC] (in 4eb3cf4) <Aplicación en interiores> tpl=370 Transformadores de corriente para aplicaciones interiores de hasta 72,5 kV
+ TRANSFORMADOR DE CORRIENTE
+ ASS 12 | 17,5 | 24 | 36 Transformador de corriente de soporte
+ Diseño en bloque; modelo estrecho DIN 42600, Parte 8; 
+Disponibles en tamaño 1, 2, 3
+ Ficha de datos 
+ GSW 12/0 3,6 | 7,2 | 12 Transformador de corriente de soporte
+ Diseño en bloque; modelo pequeño DIN 42600, Parte 4 
+ Ficha de datos 
+ ASN 12 | 17,5 | 24 | 36 Transformador de corriente de soporte
+ Diseño en bloque; modelo grande DIN 42600, Parte 5
+ Ficha de datos 
+ GI 52 | 72,5 Transformador de corriente de soporte
+ DIN 42600, Parte 1
+ Ficha de datos 
+ TRANSFORMADOR DE TENSIÓN
+ VES 12|17,5|24 Transformador de tensión
+ Unipolar, modelo estrecho DIN 42600, Parte 9
+ Ficha de datos 
+ GSE 12/0 3,6|7,2|12 Transformador de tensión 
+ Unipolar, modelo pequeño, DIN 42600, Parte 7  
+ Ficha de datos 
+ VEN 12|17,5|24|36|52|72,5 Transformador de tensión
+ Unipolar, modelo grande / de soporte DIN 42600, Parte 3
+ Ficha de datos 
+ VZS 12|17,5|24 Transformador de tensión
+ Bipolar, modelo estrecho DIN 42600, Parte 9
+ Ficha de datos 
+ GSZ 12/0 3,6|7,2|12 Transformador de tensión 
+ Bipolar, modelo pequeño, DIN 42600, Parte 7
+ Ficha de datos 
+ VZN 12|17,5|24|36 Transformador de tensión
+ Bipolar, modelo grande, DIN 42600, Parte 3
+ Ficha de datos || <Aplicación en exteriores> tpl=1013 TRANSFORMADOR DE CORRIENTE
+ GIFK 12 | 17,5 | 24 | 36 Transformador de corriente de soporte
+ Diseño compacto
+ Ficha de datos 
+ GIFS 12 | 17,5 | 24 | 36 Transformador de corriente de soporte
+ Diseño estándar
+ Ficha de datos 
+ GIF 10 | 17,5 | 20 | 30 | 36 | 52 | 72,5 
+ Modelo de cabeza, disponible con GOST
+ Ficha de datos 
+ TRANSFORMADOR DE TENSIÓN
+ VEF 12 | 17,5 | 24 | 36 Transformador de tensión
+ Unipolar, modelo estrecho DIN 42600, Parte 9
+ Ficha de datos 
+ VEF 52 | 72,5 
+ Unipolar, modelo pequeño, DIN 42600, Parte 7
+ Ficha de datos 
+ VZF 12 | 17,5 | 24 | 36 Transformador de tensión
+ Bipolar, modelo grande / de soporte DIN 42600, Parte 3
+ Ficha de datos || <Transformadores con seguridad al contacto> tpl=1017 TRANSFORMADOR DE CORRIENTE
+ GBW
+ Transformador de corriente encapsulado en metal, 12 – 36 kV
+ Ficha de datos 
+ TRANSFORMADOR DE TENSIÓN
+ GBEIN, GBEAN
+ Transformador de tensión encapsulado en metal, 12 – 52 kV
+ Ficha de datos 
+ TRANSFORMADOR COMBINADO
+ KGBEI/KGBEA
+ Transformador combinado encapsulado en metal, 12 – 36 kV
+ Ficha de datos || <Transformadores especiales> tpl=1020 Transformador ferroviario
+ GSEFB
+ El transformador de tensión exterior GSEFB se ha diseñado como transformador de tensión máxima para vehículos ferroviarios eléctricos. El aislamiento está hecho de resina epóxica cicloalifática resistente a la intemperie, con unas propiedades mecánicas y eléctricas excepcionalmente buenas. El GSEFBC está, además, integrado en un aislante de compuesto de silicona y dispone de una cubierta de descarga de presión en la parte superior, todo lo cual sirve como protección contra daños o el caso improbable de un estallido. Todas las piezas exteriores están hechas de materiales resistentes a la corrosión y los aparatos no requieren mantenimiento.
+ Los transformadores de tensión ferroviarios se utilizan para tensiones de aislamiento de hasta 40,5 kV, son conformes a las normas europeas e internacionales, y se producen en una fábrica con certificación IRIS.
+ Los transformadores son conformes a EN50463, cumplen los requisitos de la especificación TSI LOC&PAS actual y, por lo tanto, son aptos para la medición de energía en el vehículo. En relación con ello, para muchos de los transformadores puede expedirse ya una certificación provisional de inspección intermedia de la CE.
+ GSO(F)B 
+ El GSO(F)B es un transformador de corriente monofásico acoplable, Um = 0,8 kV, con aislamiento de resina, que sirve como transformador de corriente máxima o inversa en o sobre vehículos ferroviarios eléctricos.
+ El cliente suministra el conductor principal mediante un cable aislado o un raíl y lo guía a través del transformador. Gracias a su aislamiento con resina epóxica cicloalifática resistente a la intemperie, cumple los requisitos para utilizarse en el techo del vagón. Los transformadores son conformes a distintas normas europeas e internacionales, y se producen en una fábrica con certificación IRIS.
+ Los transformadores son conformes a EN50463, cumplen los requisitos de la especificación TSI LOC&PAS actual y, por lo tanto, son aptos para la medición de energía en el vehículo. En relación con ello, para muchos de los transformadores puede expedirse ya una certificación provisional de inspección intermedia de la CE.
+ En caso necesario, todos los transformadores ferroviarios de corriente y tensión están también disponibles en otros modelos.
+ Transformador de corriente de barra pasante
+ GDS 12|17,5|24|36 Transformador de corriente de barra pasante
+ con conductor fijo
+ Ficha de datos 
+ Transformador de corriente de soporte
+ GSSO 12 | 17,5 | 24 Transformador de alta corriente 
+ Transformador de alta corriente
+ Ficha de datos || <Transformadores especiales para Power Quality> tpl=1023 Transformador combinado encapsulado en metal, 12 - 36 kV
+ KGBEA 36 / KGBEI 36 como transformador de banda ancha 
+ Transformador combinado encapsulado en metal
+ Ficha de datos 
+ Transformador de corriente de soporte
+ GSWS 24 con rango de frecuencia ampliado opcional 
+ Transformador de corriente de soporte
+ Ficha de datos 
+ Transformador de tensión unipolar inductivo
+ GSES 24D con rango de frecuencia ampliado opcional 
+ Transformador de tensión unipolar inductivo
+ Ficha de datos
+[TEXT] (in e931b90) Transformadores de corriente para aplicaciones interiores de hasta 72,5 kV
+[H H2] (in e931b90) TRANSFORMADOR DE CORRIENTE
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/produkte_stromwandler_ASS_12_1_7_5_24_36_stuetzerstromwandler.jpg alt=''
+[TEXT] (in e931b90) ASS 12 | 17,5 | 24 | 36 Transformador de corriente de soporte
+ Diseño en bloque; modelo estrecho DIN 42600, Parte 8; 
+Disponibles en tamaño 1, 2, 3
+[LIST] (in e931b90) Ficha de datos <https://ritz-international.com/wp-content/uploads/TDB20260015_REV01.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/produkte_stromwandler_GSW_12_0_3_6_7_2_12_Stuetzerstromwandler.jpg alt=''
+[TEXT] (in e931b90) GSW 12/0 3,6 | 7,2 | 12 Transformador de corriente de soporte
+ Diseño en bloque; modelo pequeño DIN 42600, Parte 4
+[LIST] (in e931b90) Ficha de datos <https://ritz-international.com/wp-content/uploads/De_GSW_12_03_6_Stuetzenstromwandler.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_stromwandler_asn_12_17_5_24_36_stuetzerstromwandler.jpg alt=''
+[TEXT] (in e931b90) ASN 12 | 17,5 | 24 | 36 Transformador de corriente de soporte
+ Diseño en bloque; modelo grande DIN 42600, Parte 5
+[LIST] (in e931b90) Ficha de datos <https://ritz-international.com/wp-content/uploads/De_ASN_12_17_5_Stuetzerstromwandler.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_stromwandler_gi_52_72_5_stuetzerstromwandler.jpg alt=''
+[TEXT] (in e931b90) GI 52 | 72,5 Transformador de corriente de soporte
+ DIN 42600, Parte 1
+[LIST] (in e931b90) Ficha de datos <https://ritz-international.com/wp-content/uploads/De_GI_52-72_5_Stuetzerstromwandler.pdf>
+[H H2] (in e931b90) TRANSFORMADOR DE TENSIÓN
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_spannungswandler_ves_12_17_5_24_spannungswandler.jpg alt=''
+[TEXT] (in e931b90) VES 12|17,5|24 Transformador de tensión
+ Unipolar, modelo estrecho DIN 42600, Parte 9
+[LIST] (in e931b90) Ficha de datos <https://ritz-international.com/wp-content/uploads/De_VES_12_17_5_Spannungswandler.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_spannungswandler_gse_12_0_3_6_7_2_12_spannungswandler.jpg alt=''
+[TEXT] (in e931b90) GSE 12/0 3,6|7,2|12 Transformador de tensión 
+ Unipolar, modelo pequeño, DIN 42600, Parte 7
+[LIST] (in e931b90) Ficha de datos <https://ritz-international.com/wp-content/uploads/De_GSE_12_Spannungswandler.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_spannungswandler_ven_12_17_5_24_36_52_72_5_spannungswandler.jpg alt=''
+[TEXT] (in e931b90) VEN 12|17,5|24|36|52|72,5 Transformador de tensión
+ Unipolar, modelo grande / de soporte DIN 42600, Parte 3
+[LIST] (in e931b90) Ficha de datos <https://ritz-international.com/wp-content/uploads/De_VEN_12_17_5_24_36_52_72_5_Spannungswandler.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/VZS-12_175_24-Spannungswandler-Zweipolig.jpg alt=''
+[TEXT] (in e931b90) VZS 12|17,5|24 Transformador de tensión
+ Bipolar, modelo estrecho DIN 42600, Parte 9
+[LIST] (in e931b90) Ficha de datos <https://ritz-international.com/wp-content/uploads/De_VZS_12_17_5_25_Spannungswandler.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_spannungswandler_gsz_12_0_3_6_7_2_12_spannungswandler.jpg alt=''
+[TEXT] (in e931b90) GSZ 12/0 3,6|7,2|12 Transformador de tensión 
+ Bipolar, modelo pequeño, DIN 42600, Parte 7
+[LIST] (in e931b90) Ficha de datos <https://ritz-international.com/wp-content/uploads/De_GSZ_12_03_6_7_2_12_Spannungswandler.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_spannungswandler_vzn_12_17_5_24_36_spannungswandler.jpg alt=''
+[TEXT] (in e931b90) VZN 12|17,5|24|36 Transformador de tensión
+ Bipolar, modelo grande, DIN 42600, Parte 3
+[LIST] (in e931b90) Ficha de datos <https://ritz-international.com/wp-content/uploads/De_VZN_12_17_5_24_36_Spannungswandler.pdf>
+[H H2] (in e931b90) TRANSFORMADOR DE CORRIENTE
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_stromwandler_gifk_12_17_5_24_36_stuetzerstromwandler.jpg alt=''
+[TEXT] (in e931b90) GIFK 12 | 17,5 | 24 | 36 Transformador de corriente de soporte
+ Diseño compacto
+[LIST] (in e931b90) Ficha de datos <https://ritz-international.com/wp-content/uploads/De_GIFK_Stuetzerstromwandler.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_stromwandler_GIFS-12-17-5-24-36-Stützerstromwandler.jpg alt=''
+[TEXT] (in e931b90) GIFS 12 | 17,5 | 24 | 36 Transformador de corriente de soporte
+ Diseño estándar
+[LIST] (in e931b90) Ficha de datos <https://ritz-international.com/wp-content/uploads/De_GIFS_Stuetzerstromwandler.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_stromwandler_gif_10_17_5_20_30_36_52_72_5.jpg alt=''
+[TEXT] (in e931b90) GIF 10 | 17,5 | 20 | 30 | 36 | 52 | 72,5 
+ Modelo de cabeza, disponible con GOST
+[LIST] (in e931b90) Ficha de datos <https://ritz-international.com/wp-content/uploads/De_GIF.pdf>
+[H H2] (in e931b90) TRANSFORMADOR DE TENSIÓN
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_spannungswandler_ves_12_17_5_24_spannungswandler.jpg alt=''
+[TEXT] (in e931b90) VEF 12 | 17,5 | 24 | 36 Transformador de tensión
+ Unipolar, modelo estrecho DIN 42600, Parte 9
+[LIST] (in e931b90) Ficha de datos <https://ritz-international.com/wp-content/uploads/De_VES_12_24_Spannungswandler.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_spannungswandler_gse_12_0_3_6_7_2_12_spannungswandler.jpg alt=''
+[TEXT] (in e931b90) VEF 52 | 72,5 
+ Unipolar, modelo pequeño, DIN 42600, Parte 7
+[LIST] (in e931b90) Ficha de datos <https://ritz-international.com/wp-content/uploads/De_GSE_12_0_12_Spannungswandler.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_spannungswandler_ven_12_17_5_24_36_52_72_5_spannungswandler.jpg alt=''
+[TEXT] (in e931b90) VZF 12 | 17,5 | 24 | 36 Transformador de tensión
+ Bipolar, modelo grande / de soporte DIN 42600, Parte 3
+[LIST] (in e931b90) Ficha de datos <https://ritz-international.com/wp-content/uploads/De_VEN_12_72_5_Spannungswandler.pdf>
+[H H2] (in e931b90) TRANSFORMADOR DE CORRIENTE
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/beruehrungssichere_wandler_stromwandler_gbw.jpg alt=''
+[TEXT] (in e931b90) GBW
+ Transformador de corriente encapsulado en metal, 12 – 36 kV
+[LIST] (in e931b90) Ficha de datos <https://ritz-international.com/wp-content/uploads/DE_GBW.pdf>
+[H H2] (in e931b90) TRANSFORMADOR DE TENSIÓN
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/beruehrungssichere_wandler_spannungswandler_gbein_gbean.jpg alt=''
+[TEXT] (in e931b90) GBEIN, GBEAN
+ Transformador de tensión encapsulado en metal, 12 – 52 kV
+[LIST] (in e931b90) Ficha de datos <https://ritz-international.com/wp-content/uploads/DE_GBEIN_GBEAN.pdf>
+[H H2] (in e931b90) TRANSFORMADOR COMBINADO
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/beruehrungssichere_wandler_kombiwandler_kgbei_kgbea.jpg alt=''
+[TEXT] (in e931b90) KGBEI/KGBEA
+ Transformador combinado encapsulado en metal, 12 – 36 kV
+[LIST] (in e931b90) Ficha de datos <https://ritz-international.com/wp-content/uploads/DE_KGBEIKGBEA.pdf>
+[H H2] (in e931b90) Transformador ferroviario
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_bahnwandler_gsefb.jpg alt=''
+[TEXT] (in e931b90) GSEFB
+ El transformador de tensión exterior GSEFB se ha diseñado como transformador de tensión máxima para vehículos ferroviarios eléctricos. El aislamiento está hecho de resina epóxica cicloalifática resistente a la intemperie, con unas propiedades mecánicas y eléctricas excepcionalmente buenas. El GSEFBC está, además, integrado en un aislante de compuesto de silicona y dispone de una cubierta de descarga de presión en la parte superior, todo lo cual sirve como protección contra daños o el caso improbable de un estallido. Todas las piezas exteriores están hechas de materiales resistentes a la corrosión y los aparatos no requieren mantenimiento.
+ Los transformadores de tensión ferroviarios se utilizan para tensiones de aislamiento de hasta 40,5 kV, son conformes a las normas europeas e internacionales, y se producen en una fábrica con certificación IRIS.
+ Los transformadores son conformes a EN50463, cumplen los requisitos de la especificación TSI LOC&PAS actual y, por lo tanto, son aptos para la medición de energía en el vehículo. En relación con ello, para muchos de los transformadores puede expedirse ya una certificación provisional de inspección intermedia de la CE.
+[TEXT] (in e931b90) GSO(F)B 
+ El GSO(F)B es un transformador de corriente monofásico acoplable, Um = 0,8 kV, con aislamiento de resina, que sirve como transformador de corriente máxima o inversa en o sobre vehículos ferroviarios eléctricos.
+ El cliente suministra el conductor principal mediante un cable aislado o un raíl y lo guía a través del transformador. Gracias a su aislamiento con resina epóxica cicloalifática resistente a la intemperie, cumple los requisitos para utilizarse en el techo del vagón. Los transformadores son conformes a distintas normas europeas e internacionales, y se producen en una fábrica con certificación IRIS.
+ Los transformadores son conformes a EN50463, cumplen los requisitos de la especificación TSI LOC&PAS actual y, por lo tanto, son aptos para la medición de energía en el vehículo. En relación con ello, para muchos de los transformadores puede expedirse ya una certificación provisional de inspección intermedia de la CE.
+ En caso necesario, todos los transformadores ferroviarios de corriente y tensión están también disponibles en otros modelos.
+[H H2] (in e931b90) Transformador de corriente de barra pasante
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_durchfuehrungsstabstromwandler_gds_127c_7_5_24_36_durchfuehrungsstromwandler.jpg alt=''
+[TEXT] (in e931b90) GDS 12|17,5|24|36 Transformador de corriente de barra pasante
+ con conductor fijo
+[LIST] (in e931b90) Ficha de datos <https://ritz-international.com/wp-content/uploads/De_GDS.pdf>
+[H H2] (in e931b90) Transformador de corriente de soporte
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_stuetzerstromwandler_gsso_12_17_5_24_hochstromwandler.jpg alt=''
+[TEXT] (in e931b90) GSSO 12 | 17,5 | 24 Transformador de alta corriente 
+ Transformador de alta corriente
+[LIST] (in e931b90) Ficha de datos <https://ritz-international.com/wp-content/uploads/De_GSSO.pdf>
+[H H2] (in e931b90) Transformador combinado encapsulado en metal, 12 - 36 kV
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_metallgekapselte_kombiwandler_12-36_kv_kgbea_36_kgbei_36_ausgefuehrt_als_breitbandwandler.jpg alt=''
+[TEXT] (in e931b90) KGBEA 36 / KGBEI 36 como transformador de banda ancha 
+ Transformador combinado encapsulado en metal
+[LIST] (in e931b90) Ficha de datos <https://ritz-international.com/wp-content/uploads/Datenblatt-KGBEA36-KGBEI36-ausgefuehrt-als-Breitbandwandler.pdf>
+[H H2] (in e931b90) Transformador de corriente de soporte
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_stuetzerstromwandler_gsws24_mit_optional_erweitertem_frequenzbereich.jpg alt=''
+[TEXT] (in e931b90) GSWS 24 con rango de frecuencia ampliado opcional 
+ Transformador de corriente de soporte
+[LIST] (in e931b90) Ficha de datos <https://ritz-international.com/wp-content/uploads/Datenblatt_GSWS24_Breitband_Index_01.pdf>
+[H H2] (in e931b90) Transformador de tensión unipolar inductivo
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_induktiver_einpoliger_spannungswandler_gses24d_mit_optional_erweitertem_frequenzbereich.jpg alt=''
+[TEXT] (in e931b90) GSES 24D con rango de frecuencia ampliado opcional 
+ Transformador de tensión unipolar inductivo
+[LIST] (in e931b90) Ficha de datos <https://ritz-international.com/wp-content/uploads/Datenblatt_GSES24D_Breitband_Index_02.pdf>
+[PDFS] https://ritz-international.com/wp-content/uploads/RITZ-Medium_Voltage_Instrument_Transformers_Standard_ENG_2014_01-1.pdf https://ritz-international.com/wp-content/uploads/RITZ-Metal_Clad_Instrument_Transformers_ENG_2013-02-1.pdf https://ritz-international.com/wp-content/uploads/PQ_Analysis_EN-1.pdf https://ritz-international.com/wp-content/uploads/2302-AM-Offenbach-v6.pdf https://ritz-international.com/wp-content/uploads/TDB20260015_REV01.pdf https://ritz-international.com/wp-content/uploads/De_GSW_12_03_6_Stuetzenstromwandler.pdf https://ritz-international.com/wp-content/uploads/De_ASN_12_17_5_Stuetzerstromwandler.pdf https://ritz-international.com/wp-content/uploads/De_GI_52-72_5_Stuetzerstromwandler.pdf https://ritz-international.com/wp-content/uploads/De_VES_12_17_5_Spannungswandler.pdf https://ritz-international.com/wp-content/uploads/De_GSE_12_Spannungswandler.pdf https://ritz-international.com/wp-content/uploads/De_VEN_12_17_5_24_36_52_72_5_Spannungswandler.pdf https://ritz-international.com/wp-content/uploads/De_VZS_12_17_5_25_Spannungswandler.pdf https://ritz-international.com/wp-content/uploads/De_GSZ_12_03_6_7_2_12_Spannungswandler.pdf https://ritz-international.com/wp-content/uploads/De_VZN_12_17_5_24_36_Spannungswandler.pdf https://ritz-international.com/wp-content/uploads/De_GIFK_Stuetzerstromwandler.pdf https://ritz-international.com/wp-content/uploads/De_GIFS_Stuetzerstromwandler.pdf https://ritz-international.com/wp-content/uploads/De_GIF.pdf https://ritz-international.com/wp-content/uploads/De_VES_12_24_Spannungswandler.pdf https://ritz-international.com/wp-content/uploads/De_GSE_12_0_12_Spannungswandler.pdf https://ritz-international.com/wp-content/uploads/De_VEN_12_72_5_Spannungswandler.pdf https://ritz-international.com/wp-content/uploads/DE_GBW.pdf https://ritz-international.com/wp-content/uploads/DE_GBEIN_GBEAN.pdf https://ritz-international.com/wp-content/uploads/DE_KGBEIKGBEA.pdf https://ritz-international.com/wp-content/uploads/De_GDS.pdf https://ritz-international.com/wp-content/uploads/De_GSSO.pdf https://ritz-international.com/wp-content/uploads/Datenblatt-KGBEA36-KGBEI36-ausgefuehrt-als-Breitbandwandler.pdf https://ritz-international.com/wp-content/uploads/Datenblatt_GSWS24_Breitband_Index_01.pdf https://ritz-international.com/wp-content/uploads/Datenblatt_GSES24D_Breitband_Index_02.pdf
+[TEMPLATES] 370 1013 1017 1020 1023

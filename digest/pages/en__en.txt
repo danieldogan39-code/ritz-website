@@ -1,0 +1,133 @@
+# Home - RITZ
+URL: https://ritz-international.com/en/  status=200 lang=en kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "description": "RITZ Instrument Transformers: Leading specialist for instrument transformers, cast-resin insulated busbars and power transformers. Innovative solutions for the global energy supply since 1945.", "og:locale": "en_US", "og:type": "website", "og:title": "Home - RITZ", "og:description": "RITZ Instrument Transformers: Leading specialist for instrument transformers, cast-resin insulated busbars and power transformers. Innovative solutions for the global energy supply since 1945.", "og:url": "ht
+canonical: https://ritz-international.com/
+hreflang: [['en', 'https://ritz-international.com/en/'], ['fr', 'https://ritz-international.com/fr/'], ['de', 'https://ritz-international.com/'], ['hu', 'https://ritz-international.com/hu/'], ['es', 'https://ritz-international.com/es/'], ['x-default', 'https://ritz-international.com/']]
+
+[IMG] https://ritz-international.com/wp-content/uploads/arrow-red-RTZ-2048x1448.png alt='' -> #empowering-our-electrical-future
+[IMG] https://ritz-international.com/wp-content/uploads/2022/06/image_empowering_the_future.jpg alt=''
+[H H2] Empowering Our Electrical Future
+[TEXT] For over 80 years, the name RITZ has stood for first-class instrument transformers and innovative solutions in the electrical industry. More than 1,500 employees work at our nine locations in Europe, China and the USA. Together with our customers, we develop customized solutions and design durable products to strengthen and expand our electrical energy networks for a sustainable future.
+[ucaddon_ue_buttons_post_filter] 
+[ucaddon_ue_buttons_post_filter] 
+[ucaddon_ue_google_maps] Overview of HVDC and applications
+Construction of new high-voltage plant
+New products GBMW /GBMEI
+Additional burden
+Combination converter Space saving
+EMVI product innovation
+Cast resin applications in electrical engineering and more
+IRBT: Generator converter with optimized design
+Customer reference SIS - Project BSW
+Location Waynesboro, Georgia
+Middle East location
+Location USA Hartwell
+Location China Shanghai
+Location Hungary Kecskemét
+Location Austria Marchtrenk
+Location Germany Dresden
+Location Germany Kirchaich
+Location Germany Wirges
+Location Germany Hamburg
+Show Places
+Overview of HVDC and applications
+We offer various solutions for HVDC applications.
+Product_knowledge_compact_HVDC
+Learn more
+Construction of new high-voltage plant
+Ritz Instrument Transformers announces construction of new high voltage manufacturing facility
+Lavonia,...
+Learn more
+New products GBMW /GBMEI
+Find out more about our new products GBMW/GBMEI
+GBMW
+GBMEI
+Learn more
+Additional burden
+An additional burden is an additional device that is used to achieve sufficient burdening of measuringtransformers...
+Learn more
+Combination converter Space saving
+Focus on metal-encapsulated combi converters
+Cost savings of approx. 12,000€ when using combi-transducers...
+Learn more
+EMVI product innovation
+ELECTRONIC CURRENT TRANSFORMER EMVI 4005
+HIGH-PRECISION MEASUREMENT OF DC AND AC CURRENTS
+APPLICATION
+In...
+Learn more
+Cast resin applications in electrical engineering and more
+Duromer_resin solutions
+Learn more
+IRBT: Generator converter with optimized design
+The IRBT generator current transformer has been an integral part of the
+RITZ product portfolio for many...
+Learn more
+Customer reference SIS - Project BSW
+Whenever high currents need to be transmitted in confined spaces, RITZ’s fully insulated bus bar...
+Learn more
+Location Waynesboro, Georgia
+Learn more
+Middle East location
+Learn more
+Location USA Hartwell
+Learn more
+Location China Shanghai
+Learn more
+Location Hungary Kecskemét
+Learn more
+Location Austria Marchtrenk
+Learn more
+Location Germany Dresden
+Learn more
+Location Germany Kirchaich
+Learn more
+Location Germany Wirges
+Learn more
+Location Germany Hamburg
+Learn more
+×
+Geocoding Error Occured.
+Tried to Geocode:
+Error Type:
+Please be sure to follow the tutorial on how to setup the Google APIs required for the Advanced Google Map Widget.
+Google Map API Key Tutorial
+[H H2] Our products
+[pp-info-box-carousel] Medium-voltage transformer
+Get to know our medium voltage transformers for indoor and outdoor applications, as well as our other types of transformers.
+Learn more
+Low-voltage transformer
+Get to know our low voltage transformers.
+Learn more
+High-voltage transformers
+Get to know our high-voltage transformers.
+Learn more
+Bus bars SIS
+Get to know our bus bars.
+Learn more
+Cast resin parts from Duromer
+Get to know our cast resin parts from Duromer.
+Learn more
+Electronic instrument transformers and sensors
+Get to know our Electronic measuring transducers and sensors.
+Learn more
+Showing Slide 1 of 6 IMGS=https://ritz-international.com/wp-content/uploads/2022/09/introduction_image_mittelspannungswandler-e1705680173177.jpg https://ritz-international.com/wp-content/uploads/2022/09/introduction_image_niederspannungswandler-e1705680245358.jpg https://ritz-international.com/wp-content/uploads/home_teaser_image_hochspannungswandler.jpg https://ritz-international.com/wp-content/uploads/2022/09/introduction_image_stromschienen-e1705680286556.jpg https://ritz-international.com/wp-content/uploads/2022/09/introduction_image_giessharzteile_duromer-e1705680313569.jpg https://ritz-international.com/wp-content/uploads/2022/09/introduction_image_elektronische_messwandler_und_sensoren-e1705680342912.jpg LINKS=Learn more<https://ritz-international.com/en/products/medium-voltage-transformer/> Learn more<https://ritz-international.com/en/products/low-voltage-transformer/> Learn more<https://ritz-international.com/en/products/high-voltage-transformer/> Learn more<https://ritz-international.com/en/products/current-rails/> Learn more<https://ritz-international.com/en/products/duromer-cast-resin-parts/> Learn more<https://ritz-international.com/en/products/electronic-transducers-and-sensors/>
+[IMG] https://ritz-international.com/wp-content/uploads/2022/06/stellenangebote_ausbildung_images_1.jpg alt=''
+[H H2] Vacancies
+[TEXT] We are always looking for qualified employees. Find out which positions we currently have to fill.
+[BTN] Learn more -> https://ritz-international.com/en/career-portal/
+[IMG] https://ritz-international.com/wp-content/uploads/Stellenangebote_image_RTZ-1.jpg alt=''
+[H H2] Apprenticeships
+[TEXT] The RITZ Group offers you exciting training opportunities and future prospects. Find out more details.
+[BTN] Learn more -> https://ritz-international.com/en/career/education/
+[H H2] Locations
+[TEXT] The RITZ Group is represented worldwide. Find out more about our production locations.
+[H H2] News
+[TEXT] As a dynamic company, we are open to change. Find out what’s new at RITZ Instrument Transformers GmbH.
+[H H2] Quality management
+[TEXT] RITZ quality control complies with strict international standards. Find out how quality management is organised and which electrical tests we carry out.
+[H H2] Your personal line to RITZ
+[TEXT] Our experts will be happy to help you – with good advice, practical assistance and innovative solutions. Contact us if you have any questions, requests or suggestions, or if you need technical support. Here you can find out who to contact with your enquiry.
+[BTN] Contact us -> https://ritz-international.com/en/contact-us/
+[IMG] https://ritz-international.com/wp-content/uploads/2022/06/ihr_persoenlicher_draht_zu_ritz.jpg alt=''
+[SECTIONS-BG] [{"id": "c3010e0", "settings": "{\"background_background\":\"slideshow\",\"background_motion_fx_scale_effect\":\"yes\",\"background_motion_fx_scale_speed\":{\"unit\":\"px\",\"size\":1,\"sizes\":[]},\"background_motion_fx_scale_range\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":{\"start\":50,\"end\":100}},\"jet_parallax_layout_list\":[],\"background_slideshow_gallery\":[{\"id\":4364,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/2022\\/11\\/intro_home_slider_1.webp\"},{\"id\":13963,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/RTZ_Website-slider-2-neu2.jpg\"},{\"id\":4376,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/intro_home_slider_4.webp\"},{\"id\":4380,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/intro_home_slider_5.webp\"},{\"id\":4384,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/intro_home_slider_6.webp\"},{\"id\":4388,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/intro_home_slider_7.webp\"},{\"id\":4392,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/intro_home_slider_8.webp\"}],\"background_slideshow_transition_duration\":1000,\"background_slideshow_ken_burns\":\"yes\",\"background_slideshow_loop\":\"yes\",\"background_slideshow_slide_duration\":5000,\"background_slideshow_slide_transition\":\"fade\",\"background_slideshow_ken_burns_zoom_direction\":\"in\",\"background_motion_fx_scale_direction\":\"out-in\",\"background_motion_fx_devices\":[\"desktop\",\"tablet\",\"mobile\"]}"}, {"id": "35f3476", "settings": "{\"motion_fx_motion_fx_scrolling\":\"yes\",\"motion_fx_translateX_effect\":\"yes\",\"motion_fx_translateX_direction\":\"negative\",\"motion_fx_translateX_affectedRange\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":{\"start\":0,\"end\":50}},\"motion_fx_opacity_effect\":\"yes\",\"motion_fx_opacity_range\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":{\"start\":0,\"end\":40}},\"motion_fx_devices\":[\"desktop\"],\"motion_fx_translateX_speed\":{\"unit\":\"px\",\"size\":4,\"sizes\":[]},\"motion_fx_opacity_direction\":\"out-in\",\"motion_fx_opacity_level\":{\"unit\":\"px\",\"size\":10,\"sizes\":[]}}"}, {"id": "37f7d9f", "settings": "{\"motion_fx_motion_fx_scrolling\":\"yes\",\"motion_fx_translateX_effect\":\"yes\",\"motion_fx_translateX_affectedRange\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":{\"start\":0,\"end\":50}},\"motion_fx_opacity_effect\":\"yes\",\"motion_fx_opacity_range\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":{\"start\":0,\"end\":40}},\"motion_fx_devices\":[\"desktop\"],\"motion_fx_translateX_speed\":{\"unit\":\"px\",\"size\":4,\"sizes\":[]},\"motion_fx_opacity_direction\":\"out-in\",\"motion_fx_opacity_level\":{\"unit\":\"px\",\"size\":10,\"sizes\":[]}}"}, {"id": "aea46fe", "settings": "{\"jet_parallax_layout_list\":[],\"motion_fx_motion_fx_scrolling\":\"yes\",\"motion_fx_translateX_effect\":\"yes\",\"motion_fx_translateX_direction\":\"negative\",\"motion_fx_translateX_affecte

@@ -1,0 +1,12 @@
+# Konstruktion neues Hochspannungswerk - RITZ
+URL: https://ritz-international.com/konstruktion-neues-hochspannungswerk/  status=200 lang=de kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "Konstruktion neues Hochspannungswerk - RITZ", "og:description": "Ritz Instrument Transformers kündigt Bau einer neuen Hochspannungsfabrik an Lavonia, Georgia, USA: Ritz Instrument Transformers, Inc. gab heute bekannt, dass es in Waynesboro, Georgia, eine neue hochmoderne Produktionsstätte für die Herstellung von Hochspannungs-Messwandlern errichten wird. Die Anfangsinvestition wird voraussichtlich 28 Millionen US-Dollar betragen, und das Projekt wi
+canonical: https://ritz-international.com/konstruktion-neues-hochspannungswerk/
+hreflang: [['en', 'https://ritz-international.com/en/construction-of-new-high-voltage-plant/'], ['de', 'https://ritz-international.com/konstruktion-neues-hochspannungswerk/'], ['x-default', 'https://ritz-international.com/konstruktion-neues-hochspannungswerk/']]
+
+[POSTTITLE] Konstruktion neues Hochspannungswerk
+[POSTCONTENT] Ritz Instrument Transformers kündigt Bau einer neuen Hochspannungsfabrik an
+ Lavonia, Georgia, USA: Ritz Instrument Transformers, Inc. gab heute bekannt, dass es in Waynesboro, Georgia, eine neue hochmoderne Produktionsstätte für die Herstellung von Hochspannungs-Messwandlern errichten wird. Die Anfangsinvestition wird voraussichtlich 28 Millionen US-Dollar betragen, und das Projekt wird 130 Arbeitsplätze in der Fertigung und im Fachbereich schaffen. Der Baubeginn ist für Oktober 2024 geplant.
+ Konstruktion neues Hochspannungswerk in USA IMGS= LINKS=Konstruktion neues Hochspannungswerk in USA<https://www.ritzusa.com/wp-content/uploads/2024/07/RitzUSA-Announces-New-High-Voltage-Factory-JUL-23-2024.pdf>
+[BTN] Zurück -> /aktuelles/news
+[PDFS] https://www.ritzusa.com/wp-content/uploads/2024/07/RitzUSA-Announces-New-High-Voltage-Factory-JUL-23-2024.pdf

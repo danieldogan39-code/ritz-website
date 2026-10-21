@@ -1,0 +1,28 @@
+# IRBT: Generator converter with optimized design - RITZ
+URL: https://ritz-international.com/en/irbt-generator-converter-with-optimized-design/  status=200 lang=en kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "en_US", "og:type": "article", "og:title": "IRBT: Generator converter with optimized design - RITZ", "og:description": "The IRBT generator current transformer has been an integral part of the RITZ product portfolio for many years and offers a reliable solution for the special requirements in the generator environment. The extremely high currents in particular – up to 50,000 A – place high technical demands. In order to ensure precise measurement despite low […]", "og:url": "https://ritz-inte
+canonical: https://ritz-international.com/en/irbt-generator-converter-with-optimized-design/
+hreflang: [['en', 'https://ritz-international.com/en/irbt-generator-converter-with-optimized-design/'], ['de', 'https://ritz-international.com/irbt-generatorwandler-mit-optimiertem-design/'], ['x-default', 'https://ritz-international.com/irbt-generatorwandler-mit-optimiertem-design/']]
+
+[POSTTITLE] IRBT: Generator converter with optimized design
+[POSTCONTENT] The IRBT generator current transformer has been an integral part of the
+ RITZ product portfolio for many years and offers a reliable solution for the special
+ requirements in the generator environment. The extremely high currents in particular –
+ up to 50,000 A – place high technical demands. In order to ensure precise measurement despite low
+ phase center distances, specific
+ compensation windings are used to effectively
+ compensate for interfering external field influences. 
+ With our improved design, we have also succeeded in making the transformer suitable for
+ use at ambient temperatures of up to 80°C while still reducing the
+ height of the current transformer by approx. 15%.
+ Thanks to the new design, the converters are not only more compact, but the
+ weight has also been reduced by 5 to 10%, depending on the design. These
+ changes offer advantages in the handling of the converters. In addition, a
+ terminal box has been added to provide customers with improved secondary connection technology
+ . All these adaptations enable customers to obtain
+ proven quality and technology with improved user-friendliness.
+ Further information can be found in our updated data sheets. 
+ Redesign generator converter IMGS= LINKS=Redesign generator converter<https://ritz-international.com/wp-content/uploads/IRBT_generator_transformer_optimized_design.pdf>
+[BTN] Back -> https://ritz-international.com/en/?page_id=5595
+[FEATURED] https://ritz-international.com/wp-content/uploads/IRBT-1.png
+[PDFS] https://ritz-international.com/wp-content/uploads/IRBT_generator_transformer_optimized_design.pdf

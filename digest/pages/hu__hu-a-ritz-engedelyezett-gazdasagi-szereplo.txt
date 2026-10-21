@@ -1,0 +1,13 @@
+# A RITZ engedélyezett gazdasági szereplő - RITZ
+URL: https://ritz-international.com/hu/a-ritz-engedelyezett-gazdasagi-szereplo/  status=200 lang=hu kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "hu_HU", "og:type": "article", "og:title": "A RITZ engedélyezett gazdasági szereplő - RITZ", "og:description": "A RITZ Instrument Transformers GmbH 2015 szeptemberében hivatalosan is megkapta az Európai Unió „engedélyezett gazdálkodó” (AEO-Authorised Economic Operator) minősítését a „vámügyi egyszerűsítés/biztonság” (AEO-F) területén.Ez lehetővé teszi a vállalat számára, hogy gyorsabban és hatékonyabban intézze az EU-n belüli ipari és kereskedelmi ügyfelek összes vámalakiságát. A Ritz Instru
+canonical: https://ritz-international.com/hu/a-ritz-engedelyezett-gazdasagi-szereplo/
+hreflang: [['en', 'https://ritz-international.com/en/ritz-is-an-authorized-economic-operator/'], ['fr', 'https://ritz-international.com/fr/ritz-est-un-operateur-economique-agree/'], ['de', 'https://ritz-international.com/ritz-ist-zugelassener-wirtschaftsbeteiligter/'], ['hu', 'https://ritz-international.com/hu/a-ritz-engedelyezett-gazdasagi-szereplo/'], ['es', 'https://ritz-international.com/es/ritz-es-un-operador-economico-autorizado/'], ['x-default', 'https://ritz-international.com/ritz-ist-zugelassener-wirtschaftsbeteiligter/']]
+
+[POSTTITLE] A RITZ engedélyezett gazdasági szereplő
+[POSTCONTENT] A RITZ Instrument Transformers GmbH 2015 szeptemberében hivatalosan is megkapta az Európai Unió „engedélyezett gazdálkodó” (AEO-Authorised Economic Operator) minősítését a „vámügyi egyszerűsítés/biztonság” (AEO-F) területén.
+Ez lehetővé teszi a vállalat számára, hogy gyorsabban és hatékonyabban intézze az EU-n belüli ipari és kereskedelmi ügyfelek összes vámalakiságát.
+ A Ritz Instrument Transformers GmbH már évek óta teljesíti a tanúsításhoz kapcsolódó feltételeket, mint például a megbízhatóság, a fizetőképesség, valamint a jogi és biztonsági előírások teljesítése. Ezt most a hivatalos AEO-F tanúsítvány is megerősítette.
+ A tanúsítványt itt töltheti le. IMGS= LINKS=itt<https://ritz-international.com/?page_id=673>
+[BTN] Vissza -> https://ritz-international.com/hu/?page_id=5606
+[FEATURED] https://ritz-international.com/wp-content/uploads/ritz_header-unternehmen.jpg

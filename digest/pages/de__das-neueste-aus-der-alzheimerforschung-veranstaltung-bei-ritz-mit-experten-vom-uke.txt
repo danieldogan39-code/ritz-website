@@ -1,0 +1,18 @@
+# Das Neueste aus der Alzheimerforschung – Veranstaltung bei RITZ mit Experten vom UKE - RITZ
+URL: https://ritz-international.com/das-neueste-aus-der-alzheimerforschung-veranstaltung-bei-ritz-mit-experten-vom-uke/  status=200 lang=de kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "Das Neueste aus der Alzheimerforschung – Veranstaltung bei RITZ mit Experten vom UKE - RITZ", "og:description": "Experten auf dem Gebiet der Alzheimer’schen Krankheit präsentierten bei RITZ ihre aktuellen Forschungsergebnisse Seit über drei Jahrzehnten unterstützt die RITZ-Stiftung, Eigentümerin der RITZ-Gruppe, die Alzheimerforschung am Institut für molekulare Neurogenetik am Universitätsklinikum Hamburg Eppendorf (UKE). Diese langjährige Partners
+canonical: https://ritz-international.com/das-neueste-aus-der-alzheimerforschung-veranstaltung-bei-ritz-mit-experten-vom-uke/
+hreflang: [['de', 'https://ritz-international.com/das-neueste-aus-der-alzheimerforschung-veranstaltung-bei-ritz-mit-experten-vom-uke/'], ['x-default', 'https://ritz-international.com/das-neueste-aus-der-alzheimerforschung-veranstaltung-bei-ritz-mit-experten-vom-uke/']]
+
+[POSTTITLE] Das Neueste aus der Alzheimerforschung – Veranstaltung bei RITZ mit Experten vom UKE
+[POSTCONTENT] Experten auf dem Gebiet der Alzheimer’schen Krankheit präsentierten bei RITZ ihre aktuellen Forschungsergebnisse 
+ Seit über drei Jahrzehnten unterstützt die RITZ-Stiftung, Eigentümerin der RITZ-Gruppe, die Alzheimerforschung am Institut für molekulare Neurogenetik am Universitätsklinikum Hamburg Eppendorf (UKE). Diese langjährige Partnerschaft ermöglicht nicht nur wertvolle wissenschaftliche Fortschritte, sondern uns auch regelmäßige Einblicke in den aktuellen Stand der Forschung.
+ So hatte RITZ am 15. Mai 2025 erneut die Ehre, renommierte Wissenschaftler des UKE in unserer Firmenzentrale in Hamburg begrüßen zu dürfen. Im Rahmen einer internen Vortragsreihe stellten die Forscher aktuelle Erkenntnisse und Forschungsansätze in der Bekämpfung der Alzheimer’schen Erkrankung vor.
+ Weiterlesen IMGS= LINKS=Weiterlesen<https://ritz-international.com/wp-content/uploads/RITZ_Praesentation_UKE_2025-1.pdf>
+[TEXT] (in a71c4dd) Experten auf dem Gebiet der Alzheimer’schen Krankheit präsentierten bei RITZ ihre aktuellen Forschungsergebnisse 
+ Seit über drei Jahrzehnten unterstützt die RITZ-Stiftung, Eigentümerin der RITZ-Gruppe, die Alzheimerforschung am Institut für molekulare Neurogenetik am Universitätsklinikum Hamburg Eppendorf (UKE). Diese langjährige Partnerschaft ermöglicht nicht nur wertvolle wissenschaftliche Fortschritte, sondern uns auch regelmäßige Einblicke in den aktuellen Stand der Forschung.
+ So hatte RITZ am 15. Mai 2025 erneut die Ehre, renommierte Wissenschaftler des UKE in unserer Firmenzentrale in Hamburg begrüßen zu dürfen. Im Rahmen einer internen Vortragsreihe stellten die Forscher aktuelle Erkenntnisse und Forschungsansätze in der Bekämpfung der Alzheimer’schen Erkrankung vor.
+ Weiterlesen
+[BTN] Zurück -> /aktuelles/news
+[FEATURED] https://ritz-international.com/wp-content/uploads/Screenshot-2025-06-26-183902.png
+[PDFS] https://ritz-international.com/wp-content/uploads/RITZ_Praesentation_UKE_2025-1.pdf

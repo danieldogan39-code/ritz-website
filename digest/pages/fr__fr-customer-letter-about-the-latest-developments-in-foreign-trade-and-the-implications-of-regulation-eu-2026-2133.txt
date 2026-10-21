@@ -1,0 +1,13 @@
+# Customer letter about the latest developments in foreign trade and the implications of regulation (EU) 2026/2133 - RITZ
+URL: https://ritz-international.com/fr/customer-letter-about-the-latest-developments-in-foreign-trade-and-the-implications-of-regulation-eu-2026-2133/  status=200 lang=fr kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "fr_FR", "og:type": "article", "og:title": "Customer letter about the latest developments in foreign trade and the implications of regulation (EU) 2026/2133 - RITZ", "og:description": "Dear Valued Customers, We would like to inform you about the latest developments in foreign trade and the implications of Implementing Regulation (EU) 2026/2133, which entered into force on 25 September 2026. Customer Letter_EU_Regulation_2026_2133", "og:url": "https://ritz-international.com/fr/customer-letter
+canonical: https://ritz-international.com/fr/customer-letter-about-the-latest-developments-in-foreign-trade-and-the-implications-of-regulation-eu-2026-2133/
+hreflang: [['fr', 'https://ritz-international.com/fr/customer-letter-about-the-latest-developments-in-foreign-trade-and-the-implications-of-regulation-eu-2026-2133/']]
+
+[POSTTITLE] Customer letter about the latest developments in foreign trade and the implications of regulation (EU) 2026/2133
+[POSTCONTENT] Dear Valued Customers,
+ We would like to inform you about the latest developments in foreign trade and the implications of Implementing Regulation (EU) 2026/2133, which entered into force on 25 September 2026.
+ Customer Letter_EU_Regulation_2026_2133 IMGS= LINKS=Customer Letter_EU_Regulation_2026_2133<https://ritz-international.com/wp-content/uploads/Customer-Letter_EU_Regulation_2026_2133.pdf>
+[BTN] Retour -> https://ritz-international.com/fr/?page_id=5615
+[FEATURED] https://ritz-international.com/wp-content/uploads/cropped-RTZ-LOGO-RUND-red.png
+[PDFS] https://ritz-international.com/wp-content/uploads/Customer-Letter_EU_Regulation_2026_2133.pdf

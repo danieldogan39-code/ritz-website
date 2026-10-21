@@ -1,0 +1,7 @@
+# Berührungssichere Wandler - RITZ
+URL: https://ritz-international.com/produktfinder/mittelspannung/beruehrungssichere-wandler/  status=200 lang=de kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "Berührungssichere Wandler - RITZ", "og:description": "Home Berührungssichere Wandler", "og:url": "https://ritz-international.com/produktfinder/mittelspannung/beruehrungssichere-wandler/", "og:site_name": "RITZ"}
+canonical: https://ritz-international.com/produktfinder/mittelspannung/beruehrungssichere-wandler/
+hreflang: [['de', 'https://ritz-international.com/produktfinder/mittelspannung/beruehrungssichere-wandler/'], ['x-default', 'https://ritz-international.com/produktfinder/mittelspannung/beruehrungssichere-wandler/']]
+
+[H H2] Berührungssichere Wandler

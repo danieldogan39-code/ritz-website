@@ -1,0 +1,12 @@
+# Kapcsolat - RITZ
+URL: https://ritz-international.com/hu/kapcsolatfelvetel/  status=200 lang=hu kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "hu_HU", "og:type": "article", "og:title": "Kapcsolat - RITZ", "og:description": "Kezdőoldal Önért vagyunk. Számos út vezet a RITZ-hez. Kérdése, kérése, javaslata van, vagy műszaki támogatásra van szüksége? Szakértőink bármikor szívesen adnak Önnek személyesen tanácsot, és megosztják Önnel alapos ismereteiket. Vegye fel velünk a kapcsolatot. Összefoglaltuk Önnek a legfontosabb elérhetőségeket.", "og:url": "https://ritz-international.com/hu/kapcsolatfelvetel/", "og:site_name": "RITZ", "og:ima
+canonical: https://ritz-international.com/hu/kapcsolatfelvetel/
+hreflang: [['en', 'https://ritz-international.com/en/contact-us/'], ['fr', 'https://ritz-international.com/fr/contact/'], ['de', 'https://ritz-international.com/kontakt/'], ['hu', 'https://ritz-international.com/hu/kapcsolatfelvetel/'], ['es', 'https://ritz-international.com/es/contacto/'], ['x-default', 'https://ritz-international.com/kontakt/']]
+
+[H H2] Önért vagyunk.
+[TEXT] Számos út vezet a RITZ-hez. Kérdése, kérése, javaslata van, vagy műszaki támogatásra van szüksége? Szakértőink bármikor szívesen adnak Önnek személyesen tanácsot, és megosztják Önnel alapos ismereteiket. Vegye fel velünk a kapcsolatot. Összefoglaltuk Önnek a legfontosabb elérhetőségeket.
+[IMG] https://ritz-international.com/wp-content/uploads/Kontakt_intro_bild.webp alt=''
+[template] Gyártási helyszínekTelephelyekTermékterületekÜgynökségek
+[TABS] (in f45ef3c) Gyártási helyszínek#2279 | Telephelyek#1368 | Termékterületek#1609 | Ügynökségek#1621 contents: 
+[TEMPLATES] 2279 1368 1609 1621

@@ -1,0 +1,40 @@
+# Empresa - RITZ
+URL: https://ritz-international.com/es/la-empresa/  status=200 lang=es kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "description": "Descubra más sobre RITZ Instrument Transformers, un fabricante líder de transformadores de medida y soluciones aisladas con resina de colada. Con sede en Hamburgo desde 1945, ofrecemos productos innovadores para la industria eléctrica a nivel mundial.", "og:locale": "es_ES", "og:type": "article", "og:title": "Empresa - RITZ", "og:description": "Descubra más sobre RITZ Instrument Transformers, un fabricante líder de transformadores de medida y soluciones aisladas con resina de colada. Con 
+canonical: https://ritz-international.com/es/la-empresa/
+hreflang: [['en', 'https://ritz-international.com/en/company/'], ['fr', 'https://ritz-international.com/fr/entreprise/'], ['de', 'https://ritz-international.com/unternehmen/'], ['hu', 'https://ritz-international.com/hu/a-vallalat/'], ['es', 'https://ritz-international.com/es/la-empresa/'], ['x-default', 'https://ritz-international.com/unternehmen/']]
+
+[H H2] NUESTRO EQUIPO DIRECTIVO
+[IMG] https://ritz-international.com/wp-content/uploads/unternehmen_geschaeftsfuehrer_christian_henze.jpg alt=''
+[H H2] Dr. Christian Henze Director general, CTO
+[IMG] https://ritz-international.com/wp-content/uploads/unternehmen_geschaeftsfuehrer_andreas_grambow-e1704732643652.jpg alt=''
+[H H2] Dr. Andreas Grambow Director general, CSO
+[IMG] https://ritz-international.com/wp-content/uploads/unternehmen_geschaeftsleitung_marcel_rosin.jpg alt=''
+[H H3] Marcel Rosin
+COO, miembro de la Junta
+[IMG] https://ritz-international.com/wp-content/uploads/unternehmen_geschaeftsleitung_katrin_pras_eberenz.jpg alt=''
+[H H3] Katrin
+Pras-Eberenz
+CFO, miembro de la Junta
+[H H2] Nuestra junta directiva
+[IMG] https://ritz-international.com/wp-content/uploads/unternehmen_geschaeftsleitung_ingmar_grambow.jpg alt=''
+[H H2] PROF. DR. INGMARGRAMBOW
+[H H2] Presidente de la Fundación
+[IMG] https://ritz-international.com/wp-content/uploads/Managment_intro_4_bild_dr.Andreas_Grambow.webp alt=''
+[H H2] Dr. Andreas Grambow
+[IMG] https://ritz-international.com/wp-content/uploads/unternehmen_geschaeftsleitung_johann_spreitzer.jpg alt=''
+[H H2] Johann Spreitzer
+[IMG] https://ritz-international.com/wp-content/uploads/unternehmen_geschaeftsleitung_dirk_bloemer.jpg alt=''
+[H H2] Dr. Dirk Blömer
+[IMG] https://ritz-international.com/wp-content/uploads/unternehmen_geschaeftsleitung_wolfgang_wawrzinek.jpg alt=''
+[H H2] Dr. Wolfgang Wawrzinek
+[IMG] https://ritz-international.com/wp-content/uploads/Ritz_0050_5.jpeg alt=''
+[H H2] Prof. Dr. Klaus Heuck
+[H H2] Miembro honorífico
+[IMG] https://ritz-international.com/wp-content/uploads/unternehmen_geschaeftsleitung_gernot_kugler.jpg alt=''
+[H H2] Gernot Kugler
+[H H2] Miembro honorífico
+[H H2] sitio web de la empresa
+[IMG] https://ritz-international.com/wp-content/uploads/RTZ_Group-Organisation_grafik_V3-scaled_v2.png alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/RTZ_logo-anordnung-scaled.png alt=''
+[SECTIONS-BG] [{"id": "1e85d06", "settings": "{\"background_background\":\"slideshow\",\"background_slideshow_gallery\":[{\"id\":3927,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/network_lines_on_white_right.svg\"}],\"jet_parallax_layout_list\":[],\"background_slideshow_loop\":\"yes\",\"background_slideshow_slide_duration\":5000,\"background_slideshow_slide_transition\":\"fade\",\"background_slideshow_transition_duration\":500}"}]

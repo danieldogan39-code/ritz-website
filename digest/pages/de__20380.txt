@@ -1,0 +1,11 @@
+# Neues Werk in Waynesboro, USA - RITZ
+URL: https://ritz-international.com/20380/  status=200 lang=de kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "Neues Werk in Waynesboro, USA - RITZ", "og:description": "RITZ Instrument Transformers, Inc., freut sich, die offizielle Eröffnung seines neuen hochmodernen Produktions- und Prüfzentrums in der 101 RITZ Avenue, Waynesboro, GA 30830, bekannt zu geben.New_facility_RITZ_Waynesboro", "og:url": "https://ritz-international.com/20380/", "og:site_name": "RITZ", "og:image": "https://ritz-international.com/wp-content/uploads/RITZ-USA-HV-Waynesboro-Grand-Open
+canonical: https://ritz-international.com/20380/
+hreflang: [['de', 'https://ritz-international.com/20380/'], ['x-default', 'https://ritz-international.com/20380/']]
+
+[POSTTITLE] Neues Werk in Waynesboro, USA
+[POSTCONTENT] RITZ Instrument Transformers, Inc., freut sich, die offizielle Eröffnung seines neuen hochmodernen Produktions- und Prüfzentrums in der 101 RITZ Avenue, Waynesboro, GA 30830, bekannt zu geben. New_facility_RITZ_Waynesboro IMGS=https://ritz-international.com/wp-content/uploads/RITZ-USA-HV-Waynesboro-Grand-Opening-2026-Ribbon-Cutting.jpg LINKS=New_facility_RITZ_Waynesboro<https://ritz-international.com/wp-content/uploads/New_facility_RITZ_Waynesboro.pdf>
+[BTN] Zurück -> /aktuelles/news
+[FEATURED] https://ritz-international.com/wp-content/uploads/RITZ-USA-HV-Waynesboro-Grand-Opening-2026-Ribbon-Cutting.jpg
+[PDFS] https://ritz-international.com/wp-content/uploads/New_facility_RITZ_Waynesboro.pdf

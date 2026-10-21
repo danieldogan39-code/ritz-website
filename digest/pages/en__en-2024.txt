@@ -1,0 +1,9 @@
+# RITZ trade fair dates 2024 - RITZ
+URL: https://ritz-international.com/en/2024/  status=200 lang=en kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "en_US", "og:type": "article", "og:title": "RITZ trade fair dates 2024 - RITZ", "og:url": "https://ritz-international.com/en/2024/", "og:site_name": "RITZ", "og:image": "https://ritz-international.com/wp-content/uploads/RITZ-MESSETERMINE-2024-fuer-Webseite.png", "og:image:width": "885", "og:image:height": "1238", "og:image:type": "image/png"}
+canonical: https://ritz-international.com/en/2024/
+hreflang: [['en', 'https://ritz-international.com/en/2024/'], ['fr', 'https://ritz-international.com/fr/dates-des-salons-ritz-en-2024/'], ['de', 'https://ritz-international.com/ritz-messetermine-2024/'], ['hu', 'https://ritz-international.com/hu/2024/'], ['es', 'https://ritz-international.com/es/calendario-de-ferias-ritz-2024/'], ['x-default', 'https://ritz-international.com/ritz-messetermine-2024/']]
+
+[POSTTITLE] RITZ trade fair dates 2024
+[BTN] Back -> https://ritz-international.com/en/?page_id=5595
+[FEATURED] https://ritz-international.com/wp-content/uploads/RITZ-MESSETERMINE-2024-fuer-Webseite.png

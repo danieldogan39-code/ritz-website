@@ -1,0 +1,129 @@
+# Pièces en résine de coulée Duromer - RITZ
+URL: https://ritz-international.com/fr/produits/pieces-en-resine-coulee-duromer/  status=200 lang=fr kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "fr_FR", "og:type": "article", "og:title": "Pièces en résine de coulée Duromer - RITZ", "og:description": "Accueil Pièces en résine de coulée Duromer Notre filiale DUROMER s’est spécialisée dans l’application de résines de coulée dans l’industrie électrique. DUROMER développe et formule des masses à mouler à base de résine de coulée pour les applications électriques dans le domaine de la basse et moyenne tension et pour l’électronique. Nos spécialistes conçoivent et […]", "og:url": "https://
+canonical: https://ritz-international.com/produkte/giessharzteile-duromer/
+hreflang: [['en', 'https://ritz-international.com/en/products/duromer-cast-resin-parts/'], ['fr', 'https://ritz-international.com/fr/produits/pieces-en-resine-coulee-duromer/'], ['de', 'https://ritz-international.com/produkte/giessharzteile-duromer/'], ['hu', 'https://ritz-international.com/hu/termekek/duromer-oentoett-gyanta-alkatreszek/'], ['es', 'https://ritz-international.com/es/productos/piezas-de-resina-de-moldeo-duromer/'], ['x-default', 'https://ritz-international.com/produkte/giessharzteile-duromer/']]
+
+[H H2] Pièces en résine de coulée Duromer
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/introduction_image_giessharzteile_duromer-e1705680313569.jpg alt=''
+[TEXT] Notre filiale DUROMER s’est spécialisée dans l’application de résines de coulée dans l’industrie électrique.
+ DUROMER développe et formule des masses à mouler à base de résine de coulée pour les applications électriques dans le domaine de la basse et moyenne tension et pour l’électronique. Nos spécialistes conçoivent et produisent des appareils et des pièces moulées isolés par de la résine de coulée et destinés à être utilisés dans le domaine de l’énergie électrique. Dans le domaine de l’ingénierie, vous serez conseillé(e) sur le choix des matériaux et des procédés ainsi que sur les constructions spécifiques aux clients.
+ Les principaux domaines de production de DUROMER sont la confection de masses de résine de coulée et leur transformation en pièces isolantes ainsi que la fabrication d’appareils électriques à isolation solide.
+ DUROMER est certifié ISO 9001 depuis 1998.
+[LIST] Aperçu de la production <https://ritz-international.com/wp-content/uploads/produktionsuebersicht.pdf>
+[H H2] Contact
+[H H2] Gottfried Schuster
+[H H2] Développement / Ingénierie technique / Ventes
+[LIST] gottfried.schuster@ritz-international.com <mailto:gottfried.schuster@ritz-international.com>
+[H H2] Frank Karschau
+[H H2] Application Engineer
+[LIST] frank.karschau@ritz-international.com <mailto:torsten.hilbert@ritz-international.com>
+[template] Que sont les duromères ?
+Le groupe des thermodurcissables, souvent appelés duromères, comprend les plastiques qui se solidifient par réaction chimique. Ils réagissent généralement par une polyaddition et se réticulent pour former un réseau de macromolécules à mailles spatialement serrées, qui confère aux résines thermodurcissables leur grande résistance mécanique. Ce durcissement par modification de la structure de la molécule est irréversible.
+Les thermodurcissables n’ont pas de plage de ramollissement, le matériau conserve sa solidité même à haute température et dispose d’une grande résistance à la déformation thermique. Les thermodurcissables se distinguent par leur dureté et leur rigidité. Le faible coefficient de dilatation apporte une grande stabilité dimensionnelle. Le comportement au feu des thermodurcissables est également avantageux.
+Gamme de services
+Conseils pour la fabrication de pièces et de masses en résine de coulée
+Nous sommes à vos côtés pour vous conseiller dans la conception de pièces en résine de coulée, la construction de pièces d’isolation électrique et la fabrication des outils nécessaires.
+Indépendamment des fabricants, nous recommandons les résines de coulée adaptées à vos produits et leurs techniques de traitement optimales.
+Nous mettons également nos connaissances à votre disposition pour vous aider à choisir les machines de transformation adaptées à vos besoins.
+Confection de masses de résine de coulée
+La recette spéciale des résines de coulée est notre clé pour obtenir un produit de qualité.
+En considérant les avantages et inconvénients respectifs des systèmes de résine de coulée les plus divers, les différents composants sont mélangés en fonction des exigences imposées à la pièce finie.
+DUROMER confectionne principalement des produits à base de polyuréthane et agit en tant que partenaire fournisseur système de Bayer Material Science AG.Un aperçu général des systèmes de résine de coulée à base de polyuréthane produits par DUROMER est disponible au téléchargement ici. Pour de plus amples informations, veuillez nous contacter par e-mail ou téléphone.
+Développement jusqu’à la production en série
+Lors de la conception et du développement de pièces moulées, nous mettons à profit nos connaissances spécialisées en matière de systèmes de résine de coulée.
+Après avoir été fabriqués, tous les systèmes sont vérifiés et documentés dans notre laboratoire. Il s’agit notamment d’essais de développement concernant le pouvoir isolant, l’absence de décharges partielles et le respect des exigences climatiques, avec les justificatifs correspondants.
+Lors de la fabrication des pièces moulées, des machines à résine de coulée sont utilisées aussi bien pour la coulée sous vide que pour la gélification sous pression.
+Équipement et matériel technique
+Équipement
+Installations de coulée sous vide
+Technique de gélification sous pression
+Technique du dissolveur
+Unités de fermeture
+Technique de mélange et de dosage
+Technique de laboratoire
+Nous as
+[ACC] (in cdf037c) <Que sont les duromères ?> tpl=9197 Le groupe des thermodurcissables, souvent appelés duromères, comprend les plastiques qui se solidifient par réaction chimique. Ils réagissent généralement par une polyaddition et se réticulent pour former un réseau de macromolécules à mailles spatialement serrées, qui confère aux résines thermodurcissables leur grande résistance mécanique. Ce durcissement par modification de la structure de la molécule est irréversible.
+ Les thermodurcissables n’ont pas de plage de ramollissement, le matériau conserve sa solidité même à haute température et dispose d’une grande résistance à la déformation thermique. Les thermodurcissables se distinguent par leur dureté et leur rigidité. Le faible coefficient de dilatation apporte une grande stabilité dimensionnelle. Le comportement au feu des thermodurcissables est également avantageux. || <Gamme de services> tpl=1195 Conseils pour la fabrication de pièces et de masses en résine de coulée
+ Nous sommes à vos côtés pour vous conseiller dans la conception de pièces en résine de coulée, la construction de pièces d’isolation électrique et la fabrication des outils nécessaires.
+ Indépendamment des fabricants, nous recommandons les résines de coulée adaptées à vos produits et leurs techniques de traitement optimales.
+ Nous mettons également nos connaissances à votre disposition pour vous aider à choisir les machines de transformation adaptées à vos besoins.
+ Confection de masses de résine de coulée
+ La recette spéciale des résines de coulée est notre clé pour obtenir un produit de qualité.
+ En considérant les avantages et inconvénients respectifs des systèmes de résine de coulée les plus divers, les différents composants sont mélangés en fonction des exigences imposées à la pièce finie.
+ DUROMER confectionne principalement des produits à base de polyuréthane et agit en tant que partenaire fournisseur système de Bayer Material Science AG.
+Un aperçu général des systèmes de résine de coulée à base de polyuréthane produits par DUROMER est disponible au téléchargement ici. Pour de plus amples informations, veuillez nous contacter par e-mail ou téléphone.
+ Développement jusqu’à la production en série
+ Lors de la conception et du développement de pièces moulées, nous mettons à profit nos connaissances spécialisées en matière de systèmes de résine de coulée.
+ Après avoir été fabriqués, tous les systèmes sont vérifiés et documentés dans notre laboratoire. Il s’agit notamment d’essais de développement concernant le pouvoir isolant, l’absence de décharges partielles et le respect des exigences climatiques, avec les justificatifs correspondants.
+ Lors de la fabrication des pièces moulées, des machines à résine de coulée sont utilisées aussi bien pour la coulée sous vide que pour la gélification sous pression. || <Équipement et matériel technique> tpl=1199 Équipement
+ Installations de coulée sous vide
+ Technique de gélification sous pression
+ Technique du dissolveur
+ Unités de fermeture
+ Technique de mélange et de dosage
+ Technique de laboratoire
+ Nous assurons la qualité des produits à l’aide de notre technique de laboratoire. Nous effectuons entre autres les analyses et les mesures suivantes :
+ Analyse thermique
+ Mesures de la viscosité
+ Détermination de paramètres technologiques tels que le temps de gélification et l’évolution de l’exothermie || <Références> tpl=1202 DUROMER est fournisseur d’applications de résine de coulée dans tous les domaines de l’électrotechnique, notamment dans les techniques de l’énergie, de la haute et de la moyenne tension, de l’éclairage et de la mesure des câbles, ainsi que dans les techniques de capteurs et de radiographie.
+ Nous travaillons entre autres avec les entreprises suivantes :
+ Siemens
+ Philips
+ Megger || <Adresses de contact> tpl=1205 Bergener Ring 65 – 67 D 
+01458 Ottendorf-Okrilla 
+Téléphone : +49 (35205) 62 140 
+Télécopieur : +49 (035205) 62 141 
+Courrier électronique : info@duromer.de
+ Frank Karschau 
+Directeur des ventes Europe de l’Est
+ Bergener Ring 65 – 67 D 
+01458 Ottendorf-Okrilla 
+Téléphone : +49 35 205 / 62 212
+Mobile +49 173 397 1102
+Courrier électronique : frank.karschau@ritz-international.com
+[TEXT] (in 10bab9d) Le groupe des thermodurcissables, souvent appelés duromères, comprend les plastiques qui se solidifient par réaction chimique. Ils réagissent généralement par une polyaddition et se réticulent pour former un réseau de macromolécules à mailles spatialement serrées, qui confère aux résines thermodurcissables leur grande résistance mécanique. Ce durcissement par modification de la structure de la molécule est irréversible.
+ Les thermodurcissables n’ont pas de plage de ramollissement, le matériau conserve sa solidité même à haute température et dispose d’une grande résistance à la déformation thermique. Les thermodurcissables se distinguent par leur dureté et leur rigidité. Le faible coefficient de dilatation apporte une grande stabilité dimensionnelle. Le comportement au feu des thermodurcissables est également avantageux.
+[H H2] (in 10bab9d) Conseils pour la fabrication de pièces et de masses en résine de coulée
+[TEXT] (in 10bab9d) Nous sommes à vos côtés pour vous conseiller dans la conception de pièces en résine de coulée, la construction de pièces d’isolation électrique et la fabrication des outils nécessaires.
+ Indépendamment des fabricants, nous recommandons les résines de coulée adaptées à vos produits et leurs techniques de traitement optimales.
+ Nous mettons également nos connaissances à votre disposition pour vous aider à choisir les machines de transformation adaptées à vos besoins.
+[H H2] (in 10bab9d) Confection de masses de résine de coulée
+[TEXT] (in 10bab9d) La recette spéciale des résines de coulée est notre clé pour obtenir un produit de qualité.
+ En considérant les avantages et inconvénients respectifs des systèmes de résine de coulée les plus divers, les différents composants sont mélangés en fonction des exigences imposées à la pièce finie.
+ DUROMER confectionne principalement des produits à base de polyuréthane et agit en tant que partenaire fournisseur système de Bayer Material Science AG.
+Un aperçu général des systèmes de résine de coulée à base de polyuréthane produits par DUROMER est disponible au téléchargement ici. Pour de plus amples informations, veuillez nous contacter par e-mail ou téléphone.
+[H H2] (in 10bab9d) Développement jusqu’à la production en série
+[TEXT] (in 10bab9d) Lors de la conception et du développement de pièces moulées, nous mettons à profit nos connaissances spécialisées en matière de systèmes de résine de coulée.
+ Après avoir été fabriqués, tous les systèmes sont vérifiés et documentés dans notre laboratoire. Il s’agit notamment d’essais de développement concernant le pouvoir isolant, l’absence de décharges partielles et le respect des exigences climatiques, avec les justificatifs correspondants.
+ Lors de la fabrication des pièces moulées, des machines à résine de coulée sont utilisées aussi bien pour la coulée sous vide que pour la gélification sous pression.
+[H H2] (in 10bab9d) Équipement
+[TEXT] (in 10bab9d) Installations de coulée sous vide
+ Technique de gélification sous pression
+ Technique du dissolveur
+ Unités de fermeture
+ Technique de mélange et de dosage
+[H H2] (in 10bab9d) Technique de laboratoire
+[TEXT] (in 10bab9d) Nous assurons la qualité des produits à l’aide de notre technique de laboratoire. Nous effectuons entre autres les analyses et les mesures suivantes :
+ Analyse thermique
+ Mesures de la viscosité
+ Détermination de paramètres technologiques tels que le temps de gélification et l’évolution de l’exothermie
+[TEXT] (in 10bab9d) DUROMER est fournisseur d’applications de résine de coulée dans tous les domaines de l’électrotechnique, notamment dans les techniques de l’énergie, de la haute et de la moyenne tension, de l’éclairage et de la mesure des câbles, ainsi que dans les techniques de capteurs et de radiographie.
+ Nous travaillons entre autres avec les entreprises suivantes :
+ Siemens
+ Philips
+ Megger
+[TEXT] (in 10bab9d) Bergener Ring 65 – 67 D 
+01458 Ottendorf-Okrilla 
+Téléphone : +49 (35205) 62 140 
+Télécopieur : +49 (035205) 62 141 
+Courrier électronique : info@duromer.de
+[TEXT] (in 10bab9d) Frank Karschau 
+Directeur des ventes Europe de l’Est
+ Bergener Ring 65 – 67 D 
+01458 Ottendorf-Okrilla 
+Téléphone : +49 35 205 / 62 212
+Mobile +49 173 397 1102
+Courrier électronique : frank.karschau@ritz-international.com
+[PDFS] https://ritz-international.com/wp-content/uploads/produktionsuebersicht.pdf
+[TEMPLATES] 9197 1195 1199 1202 1205

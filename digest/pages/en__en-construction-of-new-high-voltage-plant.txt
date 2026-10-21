@@ -1,0 +1,12 @@
+# Construction of new high-voltage plant - RITZ
+URL: https://ritz-international.com/en/construction-of-new-high-voltage-plant/  status=200 lang=en kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "en_US", "og:type": "article", "og:title": "Construction of new high-voltage plant - RITZ", "og:description": "Ritz Instrument Transformers announces construction of new high voltage manufacturing facility Lavonia, Georgia, USA: Ritz Instrument Transformers, Inc. announced today that it will construct a new state-of-the-art manufacturing facility in Waynesboro, Georgia, for the production of high voltage instrument transformers. The initial investment is expected to be $28 million and the pr
+canonical: https://ritz-international.com/en/construction-of-new-high-voltage-plant/
+hreflang: [['en', 'https://ritz-international.com/en/construction-of-new-high-voltage-plant/'], ['de', 'https://ritz-international.com/konstruktion-neues-hochspannungswerk/'], ['x-default', 'https://ritz-international.com/konstruktion-neues-hochspannungswerk/']]
+
+[POSTTITLE] Construction of new high-voltage plant
+[POSTCONTENT] Ritz Instrument Transformers announces construction of new high voltage manufacturing facility
+ Lavonia, Georgia, USA: Ritz Instrument Transformers, Inc. announced today that it will construct a new state-of-the-art manufacturing facility in Waynesboro, Georgia, for the production of high voltage instrument transformers. The initial investment is expected to be $28 million and the project will create 130 manufacturing and professional jobs. Construction is scheduled to begin in October 2024. 
+ Construction of new high-voltage plant in USA IMGS= LINKS=Construction of new high-voltage plant in USA<https://www.ritzusa.com/wp-content/uploads/2024/07/RitzUSA-Announces-New-High-Voltage-Factory-JUL-23-2024.pdf>
+[BTN] Back -> https://ritz-international.com/en/?page_id=5595
+[PDFS] https://www.ritzusa.com/wp-content/uploads/2024/07/RitzUSA-Announces-New-High-Voltage-Factory-JUL-23-2024.pdf

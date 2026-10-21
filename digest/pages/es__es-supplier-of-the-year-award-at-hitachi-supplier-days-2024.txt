@@ -1,0 +1,12 @@
+# Supplier of the Year Award at Hitachi Supplier Days 2024 - RITZ
+URL: https://ritz-international.com/es/supplier-of-the-year-award-at-hitachi-supplier-days-2024/  status=200 lang=es kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "es_ES", "og:type": "article", "og:title": "Supplier of the Year Award at Hitachi Supplier Days 2024 - RITZ", "og:description": "Ritz Instrument Transformers was named Technology Supplier of the Year by Hitachi Energy Sweden in April. The continuous development of our DC converter EMVI has led to its recognition as an optimal solution for Hitachi Energy’s next-generation SVC Light portfolio. This technology contributes significantly to the integration of renewable energy and supports a wide 
+canonical: https://ritz-international.com/auszeichnung-zum-lieferanten-des-jahres-bei-den-hitachi-supplier-days-2024/
+hreflang: [['en', 'https://ritz-international.com/en/supplier-of-the-year-award-at-hitachi-supplier-days-2024/'], ['fr', 'https://ritz-international.com/fr/supplier-of-the-year-award-at-hitachi-supplier-days-2024/'], ['de', 'https://ritz-international.com/auszeichnung-zum-lieferanten-des-jahres-bei-den-hitachi-supplier-days-2024/'], ['hu', 'https://ritz-international.com/hu/supplier-of-the-year-award-at-hitachi-supplier-days-2024/'], ['es', 'https://ritz-international.com/es/supplier-of-the-year-award-at-hitachi-supplier-days-2024/'], ['x-default', 'https://ritz-international.com/auszeichnung-zum-lieferanten-des-jahres-bei-den-hitachi-supplier-days-2024/']]
+
+[POSTTITLE] Supplier of the Year Award at Hitachi Supplier Days 2024
+[POSTCONTENT] Ritz Instrument Transformers was named Technology Supplier of the Year by Hitachi Energy Sweden in April.
+ The continuous development of our DC converter EMVI has led to its recognition as an optimal solution for Hitachi Energy’s next-generation SVC Light portfolio. This technology contributes significantly to the integration of renewable energy and supports a wide range of applications, from data centers to sustainable mobility.
+ Our enhanced product has facilitated the successful combination of two power quality and grid stabilization technologies into a single, compact system. IMGS=https://ritz-international.com/wp-content/uploads/Ritz-Lieferanten-auszeichnung.png.jpeg LINKS=
+[BTN] Volver -> https://ritz-international.com/es/?page_id=5592
+[FEATURED] https://ritz-international.com/wp-content/uploads/Ritz-Lieferanten-auszeichnung_Ausgeschnitten-1.jpg

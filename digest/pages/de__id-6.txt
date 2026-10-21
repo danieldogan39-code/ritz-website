@@ -1,0 +1,135 @@
+# Home - RITZ
+URL: https://ritz-international.com/?id=6  status=200 lang=de kind=extra
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "description": "RITZ Instrument Transformers: Führender Spezialist für Messwandler, gießharzisolierte Stromschienen und Leistungstransformatoren. Innovative Lösungen für die globale Energieversorgung seit 1945.", "og:locale": "de_DE", "og:type": "website", "og:title": "Home - RITZ", "og:description": "RITZ Instrument Transformers: Führender Spezialist für Messwandler, gießharzisolierte Stromschienen und Leistungstransformatoren. Innovative Lösungen für die globale Energieversorgung seit 1945.", "og:url":
+canonical: https://ritz-international.com/
+hreflang: [['en', 'https://ritz-international.com/en/'], ['fr', 'https://ritz-international.com/fr/'], ['de', 'https://ritz-international.com/'], ['hu', 'https://ritz-international.com/hu/'], ['es', 'https://ritz-international.com/es/'], ['x-default', 'https://ritz-international.com/']]
+
+[IMG] https://ritz-international.com/wp-content/uploads/arrow-red-RTZ-2048x1448.png alt='' -> #empowering-our-electrical-future
+[IMG] https://ritz-international.com/wp-content/uploads/2022/06/image_empowering_the_future.jpg alt=''
+[H H2] Empowering Our Electrical Future
+[TEXT] Seit über 80 Jahren steht der Name RITZ für erstklassige Messwandler und innovative Lösungen in der Elektroindustrie. In unseren neun Standorten in Europa, China und den USA arbeiten weltweit über 1.500 Mitarbeiter. Gemeinsam mit unseren Kunden entwickeln wir maßgeschneiderte Lösungen und gestalten langlebige Produkte für die Stärkung und den Ausbau unserer elektrischen Energienetze für eine nachhaltige Zukunft.
+[ucaddon_ue_buttons_post_filter] 
+[ucaddon_ue_buttons_post_filter] 
+[ucaddon_ue_google_maps] Übersicht HVDC und Anwendungen
+Konstruktion neues Hochspannungswerk
+Neue Produkte GBMW /GBMEI
+Zusatzbürde
+Kombiwandler Platzersparnis
+EMVI Produktneuheit
+Gießharzanwendungen in der Elektrotechnik und mehr
+IRBT: Generatorwandler mit optimiertem Design
+Auszeichnung zum Lieferanten des Jahres bei den Hitachi Supplier Days 2024
+Kundenreferenz SIS - Projekt BSW
+Standort Waynesboro, Georgia
+Ritz Ave Waynesboro, Georgia 30830, USA
+Standort Naher Osten
+Office no. 1806,18th Floor Jafza View 18 , Jebel Ali Free Zone P.O. Box 261469 Dubai, UAE
+Standort USA Hartwell
+25 Hamburg Avenue Lavonia, Georgia 30553
+Standort China Shanghai
+No.99 Huajia Road, Songjiang Industrial Zone N0.1-3 building Huabin Industrial Zone 201613 Shanghai China
+Standort Ungarn Kecskemét
+H-6000 Kecskemét Gábor Dénes utca 1. Ungarn
+Standort Österreich Marchtrenk
+Linzer Straße 79 4614 Marchtrenk Österreich
+Standort Deutschland Dresden
+Bergener Ring 65-67 01458 Ottendorf-Okrilla Deutschland
+Standort Deutschland Kirchaich
+Mühlberg 1 97514 Oberaurach-Kirchaich Deutschland
+Standort Deutschland Wirges
+Siemensstraße 2 56422 Wirges Deutschland
+Standort Deutschland Hamburg
+Wandsbeker Zollstraße 92-98 22041 Hamburg Deutschland
+Show Places
+Übersicht HVDC und Anwendungen
+Wir bieten verschiedene Lösungen zu HVDC Anwendungen.
+Produktwissen_kompakt_HVDC
+Mehr erfahren
+Konstruktion neues Hochspannungswerk
+Ritz Instrument Transformers kündigt Bau einer neuen Hochspannungsfabrik an
+Lavonia, Georgia, USA: Ritz...
+Mehr erfahren
+Neue Produkte GBMW /GBMEI
+Erfahren Sie mehr über unsere neuen Produkte GBMW/GBMEI
+GBMW
+GBMEI
+Mehr erfahren
+Zusatzbürde
+Zusatzbürde ist ein Zusatzgerät, mit dem eine ausreichende Bebürdung von nicht annähernd ausgebürdeten...
+Mehr erfahren
+Kombiwandler Platzersparnis
+Metallgekapselte Kombiwandler im Fokus
+Kostenersparnis von ca. 12.000€ bei Einsatz von Kombiwandlern...
+Mehr erfahren
+EMVI Produktneuheit
+ELEKTRONISCHER STROMWANDLER EMVI 4005
+HOCHGENAUE MESSUNG VON DC- UND AC-STRÖMEN
+ANWENDUNG
+In Mittelspannungsanwendungen...
+Mehr erfahren
+Gießharzanwendungen in der Elektrotechnik und mehr
+Duromer_Harzlösungen
+Mehr erfahren
+IRBT: Generatorwandler mit optimiertem Design
+Der IRBT-Generatorstromwandler ist seit vielen Jahren ein fester Bestandteil des
+RITZ-Produktportfolios...
+Mehr erfahren
+Auszeichnung zum Lieferanten des Jahres bei den Hitachi Supplier Days 2024
+Ritz Instrument Transformers wurde im April von Hitachi Energy Schweden zum Technologielieferanten des...
+Mehr erfahren
+Kundenreferenz SIS - Projekt BSW
+Immer wenn bei begrenzten Platzangebot hohe Ströme übertragen werden sollen, sind die vollisolierten...
+Mehr erfahren
+Standort Waynesboro, Georgia
+Ritz Ave Waynesboro, Georgia 30830, USA
+Mehr erfahren
+Standort Naher Osten
+Office no. 1806,18th Floor Jafza View 18 , Jebel Ali Free Zone P.O. Box 261469 Dubai, UAE
++971 48 87 66 91
+Mehr erfahren
+Standort USA Hartwell
+25 Hamburg Avenue Lavonia, Georgia 30553
++1 706 35 67 180
+Mehr erfahren
+Standort China Shanghai
+No.99 Huajia Road, Songj
+[H H2] Unsere Produkte
+[pp-info-box-carousel] Mittelspannungswandler
+Lernen Sie unsere Mittelspannungswandler für Innenraum, Freiluft und weitere Wandlerarten kennen.
+Mehr erfahren
+Niederspannungswandler
+Lernen Sie unsere Niederspannungswandler kennen.
+Mehr erfahren
+Hochspannungswandler
+Lernen Sie unsere Hochspannungswandler kennen.
+Mehr erfahren
+Stromschienen SIS
+Lernen Sie unsere Stromschienen kennen.
+Mehr erfahren
+Gießharzteile von Duromer
+Lernen Sie unsere Gießharzteile von Duromer kennen.
+Mehr erfahren
+Elektronische Messwandler und Sensoren
+Lernen Sie unsere Elektronische Messwandler und Sensoren kennen.
+Mehr erfahren
+Showing Slide 1 of 6 IMGS=https://ritz-international.com/wp-content/uploads/2022/09/introduction_image_mittelspannungswandler-e1705680173177.jpg https://ritz-international.com/wp-content/uploads/2022/09/introduction_image_niederspannungswandler-e1705680245358.jpg https://ritz-international.com/wp-content/uploads/home_teaser_image_hochspannungswandler.jpg https://ritz-international.com/wp-content/uploads/2022/09/introduction_image_stromschienen-e1705680286556.jpg https://ritz-international.com/wp-content/uploads/2022/09/introduction_image_giessharzteile_duromer-e1705680313569.jpg https://ritz-international.com/wp-content/uploads/2022/09/introduction_image_elektronische_messwandler_und_sensoren-e1705680342912.jpg LINKS=Mehr erfahren</produkte/mittelspannungswandler/> Mehr erfahren</produkte/niederspannungswandler/> Mehr erfahren<https://ritz-international.com/produkte/hochspannungswandler/> Mehr erfahren</produkte/stromschienen/> Mehr erfahren</produkte/giessharzteile-duromer/> Mehr erfahren</produkte/elektronische-messwandler-und-sensoren/>
+[IMG] https://ritz-international.com/wp-content/uploads/2022/06/stellenangebote_ausbildung_images_1.jpg alt=''
+[H H2] Stellenangebote
+[TEXT] Wir suchen ständig nach qualifizierten Mitarbeiter:Innen. Erfahren Sie, welche Stellen wir aktuell zu besetzen haben.
+[BTN] Mehr erfahren -> https://ritz-international.com/karriereportal/
+[IMG] https://ritz-international.com/wp-content/uploads/Stellenangebote_image_RTZ-1.jpg alt=''
+[H H2] Ausbildungsplätze
+[TEXT] Die RITZ Firmengruppe bietet dir viele spannende Ausbildungsmöglichkeiten und Zukunftsperpektiven. Erfahre, welche das sind.
+[BTN] Mehr erfahren -> https://ritz-international.com/karriere/ausbildung/
+[H H2] Standorte
+[TEXT] Die RITZ Unternehmensgruppe ist weltweit vertreten. Erfahren Sie mehr über unsere Produktionsstandorte.
+[H H2] News
+[TEXT] Als dynamisches Unternehmen sind wir offen für Veränderungen. Erfahren Sie, was es über die RITZ Instrument Transformers GmbH Neues zu berichten gibt.
+[H H2] Qualitäts- management
+[TEXT] Das RITZ-Qualitätswesen hält strenge internationale Standards ein. Erfahren Sie, wie das Qualitätsmanagement organisiert ist und welche elektrischen Prüfungen wir vornehmen.
+[H H2] Ihr persönlicher
+Draht zu RITZ
+[TEXT] Unsere Experten sind gerne für Sie da. Mit Rat, Tat und innovativen Lösungen. Kontaktieren Sie uns, wenn Sie Fragen, Wünsche oder Anregungen haben oder technischen Support brauchen. Hier erfahren Sie, welcher Ansprechpartner für Ihr Anliegen zuständig ist.
+[BTN] Kontakt -> https://ritz-international.com/kontakt/
+[IMG] https://ritz-international.com/wp-content/uploads/2022/06/ihr_persoenlicher_draht_zu_ritz.jpg alt=''
+[SECTIONS-BG] [{"id": "c3010e0", "settings": "{\"background_background\":\"slideshow\",\"background_motion_fx_scale_effect\":\"yes\",\"background_motion_fx_scale_speed\":{\"unit\":\"px\",\"size\":1,\"sizes\":[]},\"background_motion_fx_scale_range\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":{\"start\":50,\"end\":100}},\"jet_parallax_layout_list\":[],\"background_slideshow_gallery\":[{\"id\":1405,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/2022\\/11\\/intro_home_slider_1.webp\"},{\"id\":13962,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/RTZ_Website-slider-2-neu2.jpg\"},{\"id\":1634,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/intro_home_slider_4.webp\"},{\"id\":1635,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/intro_home_slider_5.webp\"},{\"id\":1636,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/intro_home_slider_6.webp\"},{\"id\":1637,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/intro_home_slider_7.webp\"},{\"id\":1638,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/intro_home_slider_8.webp\"}],\"background_slideshow_transition_duration\":1000,\"background_slideshow_ken_burns\":\"yes\",\"background_slideshow_loop\":\"yes\",\"background_slideshow_slide_duration\":5000,\"background_slideshow_slide_transition\":\"fade\",\"background_slideshow_ken_burns_zoom_direction\":\"in\",\"background_motion_fx_scale_direction\":\"out-in\",\"background_motion_fx_devices\":[\"desktop\",\"tablet\",\"mobile\"]}"}, {"id": "35f3476", "settings": "{\"motion_fx_motion_fx_scrolling\":\"yes\",\"motion_fx_translateX_effect\":\"yes\",\"motion_fx_translateX_direction\":\"negative\",\"motion_fx_translateX_affectedRange\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":{\"start\":0,\"end\":50}},\"motion_fx_opacity_effect\":\"yes\",\"motion_fx_opacity_range\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":{\"start\":0,\"end\":40}},\"motion_fx_devices\":[\"desktop\"],\"motion_fx_translateX_speed\":{\"unit\":\"px\",\"size\":4,\"sizes\":[]},\"motion_fx_opacity_direction\":\"out-in\",\"motion_fx_opacity_level\":{\"unit\":\"px\",\"size\":10,\"sizes\":[]}}"}, {"id": "37f7d9f", "settings": "{\"motion_fx_motion_fx_scrolling\":\"yes\",\"motion_fx_translateX_effect\":\"yes\",\"motion_fx_translateX_affectedRange\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":{\"start\":0,\"end\":50}},\"motion_fx_opacity_effect\":\"yes\",\"motion_fx_opacity_range\":{\"unit\":\"%\",\"size\":\"\",\"sizes\":{\"start\":0,\"end\":40}},\"motion_fx_devices\":[\"desktop\"],\"motion_fx_translateX_speed\":{\"unit\":\"px\",\"size\":4,\"sizes\":[]},\"motion_fx_opacity_direction\":\"out-in\",\"motion_fx_opacity_level\":{\"unit\":\"px\",\"size\":10,\"sizes\":[]}}"}, {"id": "aea46fe", "settings": "{\"jet_parallax_layout_list\":[],\"motion_fx_motion_fx_scrolling\":\"yes\",\"motion_fx_translateX_effect\":\"yes\",\"motion_fx_translateX_direction\":\"negative\",\"motion_fx_translateX_affecte

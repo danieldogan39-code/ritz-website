@@ -1,0 +1,286 @@
+# Mittelspannungswandler - RITZ
+URL: https://ritz-international.com/produkte/mittelspannungswandler/  status=200 lang=de kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "description": "Entdecken Sie die hochpräzisen Mittelspannungswandler von RITZ Instrument Transformers. Unsere Produkte bieten zuverlässige Messungen und optimale Leistung für moderne Energienetze und Anwendungen in der Elektroindustrie.", "og:locale": "de_DE", "og:type": "article", "og:title": "Mittelspannungswandler - RITZ", "og:description": "Entdecken Sie die hochpräzisen Mittelspannungswandler von RITZ Instrument Transformers. Unsere Produkte bieten zuverlässige Messungen und optimale Leistung für m
+canonical: https://ritz-international.com/produkte/mittelspannungswandler/
+hreflang: [['en', 'https://ritz-international.com/en/products/medium-voltage-transformer/'], ['fr', 'https://ritz-international.com/fr/produits/transformateurs-moyenne-tension/'], ['de', 'https://ritz-international.com/produkte/mittelspannungswandler/'], ['hu', 'https://ritz-international.com/hu/termekek/koezepfeszueltsegu-transzformator/'], ['es', 'https://ritz-international.com/es/productos/transformador-de-media-tension/'], ['x-default', 'https://ritz-international.com/produkte/mittelspannungswandler/']]
+
+[H H2] Mittelspannungs-
+wandler
+[IMG] https://ritz-international.com/wp-content/uploads/2022/07/produkte_mittelspannungswandler_image_1.jpg alt=''
+[TEXT] Messwandler sind Transformatoren, die Ströme und Spannungen proportional und phasengetreu in messbare und genormte Ströme und Spannungen übertragen. 
+ Diese können Messinstrumente, Zähler und/oder Schutzrelais speisen. Darüber hinaus werden die angeschlossenen Mess- und Schutzeinrichtungen gegen die unter Spannung stehenden Anlagenteile elektrisch isoliert.
+[H H2] Kontakt
+[H H2] Kay Leschick
+[LIST] +49 35205 62 – 219 <tel:+493520562219> | kay.leschick@ritz-international.com <mailto:kay.leschick@ritz-international.com>
+[H H2] Download Kataloge
+[LIST] Mittelspannungswandler <https://ritz-international.com/wp-content/uploads/RITZ-Mittelspannungswandler_Standard_GER_2014_01-2-1.pdf> | Metallgekapselte Messwandler <https://ritz-international.com/wp-content/uploads/RITZ-Metallgekapselte_Messwandler_GER_2013-02.pdf> | PQ-Analyse <https://ritz-international.com/wp-content/uploads/PQ_Analyse_DE.pdf>
+[H H2] REFERENZEN
+[LIST] Einsatz von RITZ Breitbandwandlern – Juli 2017 <https://ritz-international.com/wp-content/uploads/2302-AM-Offenbach-v6.pdf>
+[template] INNENRAUMANWENDUNG
+Stromwandler Innenraumanwendung bis 72,5 kV
+STROMWANDLER
+ASS 12 | 17,5 | 24 | 36 StützerstromwandlerBlockausführung; schmale Bauform DIN 42600, Teil 8; Erhältlich als Gr. 1, 2, 3
+Datenblatt
+GSW 12/0 3,6 | 7,2 | 12 StützerstromwandlerBlockausführung , kleine Bauform DIN 42600, Teil 4
+Datenblatt
+ASN 12 | 17,5 | 24 | 36 StützerstromwandlerBlockausführung, große Bauform DIN 42600, Teil 5
+Datenblatt
+GI 52 | 72,5 StützerstromwandlerDIN 42600, Teil 1
+Datenblatt
+SPANNUNGSWANDLER
+VES 12|17,5|24 SpannungswandlerEinpolig, schmale Bauform DIN 42600, Teil 9
+Datenblatt
+GSE 12/0 3,6|7,2|12 Spannungswandler Einpolig, kleine Bauform, DIN 42600, Teil 7
+Datenblatt
+VEN 12|17,5|24|36|52|72,5 Spannungswandler Einpolig, große Bauform/Stützerbauform DIN 42600, Teil 3
+Datenblatt
+VZS 12|17,5|24 Spannungswandler Zweipolig, schmale Bauform, DIN 42600, Teil 9
+Datenblatt
+GSZ 12/0 3,6|7,2|12 Spannungswandler Zweipolig, kleine Bauform, DIN 42600, Teil 7
+Datenblatt
+VZN 12|17,5|24|36 Spannungswandler Zweipolig, große Bauform, DIN 42600, Teil 3
+Datenblatt
+FREILUFTANWENDUNG
+STROMWANDLER
+GIFK 12 | 17,5 | 24 | 36 StützerstromwandlerKompaktbauweise
+Datenblatt
+GIFS 12 | 17,5 | 24 | 36 StützerstromwandlerStandardbauweise
+Datenblatt
+GIF 10 | 17,5 | 20 | 30 | 36 | 52 | 72,5 Kopfbauform, mit GOST erhältlich
+Datenblatt
+SPANNUNGSWANDLER
+VEF 12 | 17,5 | 24 | 36 SpannungswandlerEinpolig, schmale Bauform DIN 42600, Teil 9
+Datenblatt
+VEF 52 | 72,5 Einpolig, kleine Bauform, DIN 42600, Teil 7
+Datenblatt
+VZF 12 | 17,5 | 24 | 36 SpannungswandlerZweipolig, große Bauform/Stützerbauform DIN 42600, Teil 3
+Datenblatt
+Berührungssichere Wandler
+STROMWANDLER
+GBWMetallgekapselte Stromwandler, 12 – 36 kV
+Datenblatt
+SPANNUNGSWANDLER
+GBEIN, GBEANMetallgekapselter Spannungswandler, 12 – 52 kV
+Datenblatt
+KOMBIWANDLER
+KGBEI/KGBEAMetallgekapselte Kombiwandler, 12-36 kV
+Datenblatt
+Sonderwandler
+Bahnwandler
+GSEFBDer Freiluftspannungswandler GSEFB ist für den Einsatz als Ober-Spannungswandler auf elektrischen Bahnfahrzeugen vorgesehen. Die Isolation besteht aus freiluftbeständigem cycloaliphatischem Epoxidharz mit außerordentlich guten mechanischen und elektrischen Eigenschaften. Der GSEFBC ist zusätzlich zum Schutz gegen Beschädigung oder dem unwahrscheinlichen Fall des Berstens, in einen Silikonverbundisolator eingebettet und an der Oberseite mit einer Druckentlastungshaube versehen. Alle Freiluftteile bestehen aus korrosionsbeständigen Materialien und die Geräte sind wartungsfrei.Die Bahnspannungswandler werden für Isolationsspannungen bis 40,5 kV eingesetzt, entsprechen europäischen und internationalen Normen und werden in einem IRIS zertifizierten Werk gefertigt.Die Wandler sind konform zu EN50463, erfüllen die Vorgaben der aktuellen TSI LOC&PAS und sind damit zur Energiemessung auf dem Fahrzeug geeignet. Für viele Wandler kann zu diesem Zweck bereits eine vorläufige EG-Zwischenprüfbescheinigung ausgestellt werden.
+GSO(F)B Der GSO(F)B ist ein Einphasen-Aufsteck-Stromwandler, Um = 0,8 kV, mit Gi IMGS=https://ritz-international.com/wp-content/uploads/2022/07/produkte_stromwandler_ASS_12_1_7_5_24_36_stuetzerstromwandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/produkte_stromwandler_GSW_12_0_3_6_7_2_12_Stuetzerstromwandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_stromwandler_asn_12_17_5_24_36_stuetzerstromwandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_stromwandler_gi_52_72_5_stuetzerstromwandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_spannungswandler_ves_12_17_5_24_spannungswandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_spannungswandler_gse_12_0_3_6_7_2_12_spannungswandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_spannungswandler_ven_12_17_5_24_36_52_72_5_spannungswandler.jpg https://ritz-international.com/wp-content/uploads/VZS-12_175_24-Spannungswandler-Zweipolig.jpg https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_spannungswandler_gsz_12_0_3_6_7_2_12_spannungswandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_spannungswandler_vzn_12_17_5_24_36_spannungswandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_stromwandler_gifk_12_17_5_24_36_stuetzerstromwandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_stromwandler_GIFS-12-17-5-24-36-Stützerstromwandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_stromwandler_gif_10_17_5_20_30_36_52_72_5.jpg https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_spannungswandler_ves_12_17_5_24_spannungswandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_spannungswandler_gse_12_0_3_6_7_2_12_spannungswandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_spannungswandler_ven_12_17_5_24_36_52_72_5_spannungswandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/beruehrungssichere_wandler_stromwandler_gbw.jpg https://ritz-international.com/wp-content/uploads/2022/07/beruehrungssichere_wandler_spannungswandler_gbein_gbean.jpg https://ritz-international.com/wp-content/uploads/2022/07/beruehrungssichere_wandler_kombiwandler_kgbei_kgbea.jpg https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_bahnwandler_gsefb.jpg https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_durchfuehrungsstabstromwandler_gds_127c_7_5_24_36_durchfuehrungsstromwandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_stuetzerstromwandler_gsso_12_17_5_24_hochstromwandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_metallgekapselte_kombiwandler_12-36_kv_kgbea_36_kgbei_36_ausgefuehrt_als_breitbandwandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_stuetzerstromwandler_gsws24_mit_optional_erweitertem_frequenzbereich.jpg https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_induktiver_einpoliger_spannungswandler_gses24d_mit_optional_erweitertem_frequenzbereich.jpg LINKS=Datenblatt<https://ritz-international.com/wp-content/uploads/TDB20260012_REV01.pdf> Datenblatt<https://ritz-international.com/wp-content/uploads/De_GSW_12_03_6_Stuetzenstromwandler.pdf> Datenblatt<https://ritz-international.com/wp-content/uploads/De_ASN_12_17_5_Stuetzerstromwandler.pdf> Datenblatt<https://ritz-international.com/wp-content/uploads/De_GI_52-72_5_Stuetzerstromwandler.pdf> Datenblatt<https://ritz-international.com/wp-content/uploads/De_VES_12_17_5_Spannungswandler.pdf> Datenblatt<https://ritz-international.com/wp-content/uploads/De_GSE_12_Spannungswandler.pdf> Datenblatt<https://ritz-international.com/wp-content/uploads/De_VEN_12_17_5_24_36_52_72_5_Spannungswandler.pdf> Datenblatt<https://ritz-international.com/wp-content/uploads/De_VZS_12_17_5_25_Spannungswandler.pdf> Datenblatt<https://ritz-international.com/wp-content/uploads/De_GSZ_12_03_6_7_2_12_Spannungswandler.pdf> Datenblatt<https://ritz-international.com/wp-content/uploads/De_VZN_12_17_5_24_36_Spannungswandler.pdf> Datenblatt<https://ritz-international.com/wp-content/uploads/De_GIFK_Stuetzerstromwandler.pdf> Datenblatt<https://ritz-international.com/wp-content/uploads/De_GIFS_Stuetzerstromwandler.pdf> Datenblatt<https://ritz-international.com/wp-content/uploads/De_GIF.pdf> Datenblatt<https://ritz-international.com/wp-content/uploads/De_VES_12_24_Spannungswandler.pdf> Datenblatt<https://ritz-international.com/wp-content/uploads/De_GSE_12_0_12_Spannungswandler.pdf> Datenblatt<https://ritz-international.com/wp-content/uploads/De_VEN_12_72_5_Spannungswandler.pdf> Datenblatt<https://ritz-international.com/wp-content/uploads/DE_GBW.pdf> Datenblatt<https://ritz-international.com/wp-content/uploads/DE_GBEIN_GBEAN.pdf> Datenblatt<https://ritz-international.com/wp-content/uploads/DE_KGBEIKGBEA.pdf> Datenblatt<https://ritz-international.com/wp-content/uploads/De_GDS.pdf> Datenblatt<https://ritz-international.com/wp-content/uploads/De_GSSO.pdf> Datenblatt<https://ritz-international.com/wp-content/uploads/Datenblatt-KGBEA36-KGBEI36-ausgefuehrt-als-Breitbandwandler.pdf> Datenblatt<https://ritz-international.com/wp-content/uploads/Datenblatt_GSWS24_Breitband_Index_01.pdf> Datenblatt<https://ritz-international.com/wp-content/uploads/Datenblatt_GSES24D_Breitband_Index_02.pdf>
+[ACC] (in 4eb3cf4) <INNENRAUMANWENDUNG> tpl=370 Stromwandler Innenraumanwendung bis 72,5 kV
+ STROMWANDLER
+ ASS 12 | 17,5 | 24 | 36 Stützerstromwandler
+ Blockausführung; schmale Bauform DIN 42600, Teil 8; 
+Erhältlich als Gr. 1, 2, 3
+ Datenblatt 
+ GSW 12/0 3,6 | 7,2 | 12 Stützerstromwandler
+ Blockausführung , kleine Bauform DIN 42600, Teil 4 
+ Datenblatt 
+ ASN 12 | 17,5 | 24 | 36 Stützerstromwandler 
+Blockausführung, große Bauform DIN 42600, Teil 5
+ Datenblatt 
+ GI 52 | 72,5 Stützerstromwandler
+ DIN 42600, Teil 1 
+ Datenblatt 
+ SPANNUNGSWANDLER
+ VES 12|17,5|24 Spannungswandler
+ Einpolig, schmale Bauform DIN 42600, Teil 9 
+ Datenblatt 
+ GSE 12/0 3,6|7,2|12 Spannungswandler 
+ Einpolig, kleine Bauform, DIN 42600, Teil 7  
+ Datenblatt 
+ VEN 12|17,5|24|36|52|72,5 Spannungswandler 
+ Einpolig, große Bauform/Stützerbauform DIN 42600, Teil 3 
+ Datenblatt 
+ VZS 12|17,5|24 Spannungswandler 
+ Zweipolig, schmale Bauform, DIN 42600, Teil 9 
+ Datenblatt 
+ GSZ 12/0 3,6|7,2|12 Spannungswandler 
+ Zweipolig, kleine Bauform, DIN 42600, Teil 7 
+ Datenblatt 
+ VZN 12|17,5|24|36 Spannungswandler 
+ Zweipolig, große Bauform, DIN 42600, Teil 3 
+ Datenblatt || <FREILUFTANWENDUNG> tpl=1013 STROMWANDLER
+ GIFK 12 | 17,5 | 24 | 36 Stützerstromwandler
+ Kompaktbauweise
+ Datenblatt 
+ GIFS 12 | 17,5 | 24 | 36 Stützerstromwandler
+ Standardbauweise
+ Datenblatt 
+ GIF 10 | 17,5 | 20 | 30 | 36 | 52 | 72,5 
+ Kopfbauform, mit GOST erhältlich 
+ Datenblatt 
+ SPANNUNGSWANDLER
+ VEF 12 | 17,5 | 24 | 36 Spannungswandler
+ Einpolig, schmale Bauform DIN 42600, Teil 9
+ Datenblatt 
+ VEF 52 | 72,5 
+ Einpolig, kleine Bauform, DIN 42600, Teil 7
+ Datenblatt 
+ VZF 12 | 17,5 | 24 | 36 Spannungswandler
+ Zweipolig, große Bauform/Stützerbauform DIN 42600, Teil 3
+ Datenblatt || <Berührungssichere Wandler> tpl=1017 STROMWANDLER
+ GBW
+ Metallgekapselte Stromwandler, 12 – 36 kV 
+ Datenblatt 
+ SPANNUNGSWANDLER
+ GBEIN, GBEAN
+ Metallgekapselter Spannungswandler, 12 – 52 kV
+ Datenblatt 
+ KOMBIWANDLER
+ KGBEI/KGBEA
+ Metallgekapselte Kombiwandler, 12-36 kV
+ Datenblatt || <Sonderwandler> tpl=1020 Bahnwandler
+ GSEFB
+ Der Freiluftspannungswandler GSEFB ist für den Einsatz als Ober-Spannungswandler auf elektrischen Bahnfahrzeugen vorgesehen. Die Isolation besteht aus freiluftbeständigem cycloaliphatischem Epoxidharz mit außerordentlich guten mechanischen und elektrischen Eigenschaften. Der GSEFBC ist zusätzlich zum Schutz gegen Beschädigung oder dem unwahrscheinlichen Fall des Berstens, in einen Silikonverbundisolator eingebettet und an der Oberseite mit einer Druckentlastungshaube versehen. Alle Freiluftteile bestehen aus korrosionsbeständigen Materialien und die Geräte sind wartungsfrei.
+ Die Bahnspannungswandler werden für Isolationsspannungen bis 40,5 kV eingesetzt, entsprechen europäischen und internationalen Normen und werden in einem IRIS zertifizierten Werk gefertigt.
+ Die Wandler sind konform zu EN50463, erfüllen die Vorgaben der aktuellen TSI LOC&PAS und sind damit zur Energiemessung auf dem Fahrzeug geeignet. Für viele Wandler kann zu diesem Zweck bereits eine vorläufige EG-Zwischenprüfbescheinigung ausgestellt werden. 
+ GSO(F)B 
+ Der GSO(F)B ist ein Einphasen-Aufsteck-Stromwandler, Um = 0,8 kV, mit Gießharzisolierung zur Verwendung als Oberstrom- oder Rückstromwandler in oder auf elektrischen Bahnfahrzeugen.
+ Der Primärleiter wird kundenseitig von einem isolierten Kabel oder einer Schiene gebildet und vom Kunden durch den Wandler geführt. Durch die Isolation mit freiluftbeständigen cycloaliphatischem Epoxidharz, erfüllt er alle Anforderungen für den Einsatz auf dem Wagendach. Die Wandler entsprechen europäischen und internationalen Normen und werden in einem IRIS zertifizierten Werk gefertigt.
+ Die Wandler sind konform zu EN50463, erfüllen die Vorgaben der aktuellen TSI LOC&PAS und sind damit zur Energiemessung auf dem Fahrzeug geeignet. Für viele Wandler kann zu diesem Zweck bereits eine vorläufige EG-Zwischenprüfbescheinigung ausgestellt werden.
+ Alle Bahnstrom- und Spannungswandler sind, falls erforderlich, auch in anderen Bauformen verfügbar.
+ Durchführungsstabstromwandler
+ GDS 12|17,5|24|36 Durchführungsstromwandler 
+ mit Festleiter 
+ Datenblatt 
+ Stützerstromwandler
+ GSSO 12 | 17,5 | 24 Hochstromwandler 
+ Hochstromwandler
+ Datenblatt || <WANDLER SPEZIELL FÜR Power Quality> tpl=1023 Metallgekapselte Kombiwandler, 12-36 kV
+ KGBEA 36 / KGBEI 36 ausgeführt als Breitbandwandler 
+ Metallgekapselter Kombiwandler 
+ Datenblatt 
+ Stützerstromwandler
+ GSWS 24 mit optional erweitertem Frequenzbereich 
+ Stützerstromwandler
+ Datenblatt 
+ Induktiver, einpoliger Spannungswandler
+ GSES 24D mit optional erweitertem Frequenzbereich 
+ Induktiver, einpoliger Spannungswandler
+ Datenblatt
+[TEXT] (in e931b90) Stromwandler Innenraumanwendung bis 72,5 kV
+[H H2] (in e931b90) STROMWANDLER
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/produkte_stromwandler_ASS_12_1_7_5_24_36_stuetzerstromwandler.jpg alt=''
+[TEXT] (in e931b90) ASS 12 | 17,5 | 24 | 36 Stützerstromwandler
+ Blockausführung; schmale Bauform DIN 42600, Teil 8; 
+Erhältlich als Gr. 1, 2, 3
+[LIST] (in e931b90) Datenblatt <https://ritz-international.com/wp-content/uploads/TDB20260012_REV01.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/produkte_stromwandler_GSW_12_0_3_6_7_2_12_Stuetzerstromwandler.jpg alt=''
+[TEXT] (in e931b90) GSW 12/0 3,6 | 7,2 | 12 Stützerstromwandler
+ Blockausführung , kleine Bauform DIN 42600, Teil 4
+[LIST] (in e931b90) Datenblatt <https://ritz-international.com/wp-content/uploads/De_GSW_12_03_6_Stuetzenstromwandler.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_stromwandler_asn_12_17_5_24_36_stuetzerstromwandler.jpg alt=''
+[TEXT] (in e931b90) ASN 12 | 17,5 | 24 | 36 Stützerstromwandler 
+Blockausführung, große Bauform DIN 42600, Teil 5
+[LIST] (in e931b90) Datenblatt <https://ritz-international.com/wp-content/uploads/De_ASN_12_17_5_Stuetzerstromwandler.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_stromwandler_gi_52_72_5_stuetzerstromwandler.jpg alt=''
+[TEXT] (in e931b90) GI 52 | 72,5 Stützerstromwandler
+ DIN 42600, Teil 1
+[LIST] (in e931b90) Datenblatt <https://ritz-international.com/wp-content/uploads/De_GI_52-72_5_Stuetzerstromwandler.pdf>
+[H H2] (in e931b90) SPANNUNGSWANDLER
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_spannungswandler_ves_12_17_5_24_spannungswandler.jpg alt=''
+[TEXT] (in e931b90) VES 12|17,5|24 Spannungswandler
+ Einpolig, schmale Bauform DIN 42600, Teil 9
+[LIST] (in e931b90) Datenblatt <https://ritz-international.com/wp-content/uploads/De_VES_12_17_5_Spannungswandler.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_spannungswandler_gse_12_0_3_6_7_2_12_spannungswandler.jpg alt=''
+[TEXT] (in e931b90) GSE 12/0 3,6|7,2|12 Spannungswandler 
+ Einpolig, kleine Bauform, DIN 42600, Teil 7
+[LIST] (in e931b90) Datenblatt <https://ritz-international.com/wp-content/uploads/De_GSE_12_Spannungswandler.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_spannungswandler_ven_12_17_5_24_36_52_72_5_spannungswandler.jpg alt=''
+[TEXT] (in e931b90) VEN 12|17,5|24|36|52|72,5 Spannungswandler 
+ Einpolig, große Bauform/Stützerbauform DIN 42600, Teil 3
+[LIST] (in e931b90) Datenblatt <https://ritz-international.com/wp-content/uploads/De_VEN_12_17_5_24_36_52_72_5_Spannungswandler.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/VZS-12_175_24-Spannungswandler-Zweipolig.jpg alt=''
+[TEXT] (in e931b90) VZS 12|17,5|24 Spannungswandler 
+ Zweipolig, schmale Bauform, DIN 42600, Teil 9
+[LIST] (in e931b90) Datenblatt <https://ritz-international.com/wp-content/uploads/De_VZS_12_17_5_25_Spannungswandler.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_spannungswandler_gsz_12_0_3_6_7_2_12_spannungswandler.jpg alt=''
+[TEXT] (in e931b90) GSZ 12/0 3,6|7,2|12 Spannungswandler 
+ Zweipolig, kleine Bauform, DIN 42600, Teil 7
+[LIST] (in e931b90) Datenblatt <https://ritz-international.com/wp-content/uploads/De_GSZ_12_03_6_7_2_12_Spannungswandler.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_spannungswandler_vzn_12_17_5_24_36_spannungswandler.jpg alt=''
+[TEXT] (in e931b90) VZN 12|17,5|24|36 Spannungswandler 
+ Zweipolig, große Bauform, DIN 42600, Teil 3
+[LIST] (in e931b90) Datenblatt <https://ritz-international.com/wp-content/uploads/De_VZN_12_17_5_24_36_Spannungswandler.pdf>
+[H H2] (in e931b90) STROMWANDLER
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_stromwandler_gifk_12_17_5_24_36_stuetzerstromwandler.jpg alt=''
+[TEXT] (in e931b90) GIFK 12 | 17,5 | 24 | 36 Stützerstromwandler
+ Kompaktbauweise
+[LIST] (in e931b90) Datenblatt <https://ritz-international.com/wp-content/uploads/De_GIFK_Stuetzerstromwandler.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_stromwandler_GIFS-12-17-5-24-36-Stützerstromwandler.jpg alt=''
+[TEXT] (in e931b90) GIFS 12 | 17,5 | 24 | 36 Stützerstromwandler
+ Standardbauweise
+[LIST] (in e931b90) Datenblatt <https://ritz-international.com/wp-content/uploads/De_GIFS_Stuetzerstromwandler.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_stromwandler_gif_10_17_5_20_30_36_52_72_5.jpg alt=''
+[TEXT] (in e931b90) GIF 10 | 17,5 | 20 | 30 | 36 | 52 | 72,5 
+ Kopfbauform, mit GOST erhältlich
+[LIST] (in e931b90) Datenblatt <https://ritz-international.com/wp-content/uploads/De_GIF.pdf>
+[H H2] (in e931b90) SPANNUNGSWANDLER
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_spannungswandler_ves_12_17_5_24_spannungswandler.jpg alt=''
+[TEXT] (in e931b90) VEF 12 | 17,5 | 24 | 36 Spannungswandler
+ Einpolig, schmale Bauform DIN 42600, Teil 9
+[LIST] (in e931b90) Datenblatt <https://ritz-international.com/wp-content/uploads/De_VES_12_24_Spannungswandler.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_spannungswandler_gse_12_0_3_6_7_2_12_spannungswandler.jpg alt=''
+[TEXT] (in e931b90) VEF 52 | 72,5 
+ Einpolig, kleine Bauform, DIN 42600, Teil 7
+[LIST] (in e931b90) Datenblatt <https://ritz-international.com/wp-content/uploads/De_GSE_12_0_12_Spannungswandler.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_spannungswandler_ven_12_17_5_24_36_52_72_5_spannungswandler.jpg alt=''
+[TEXT] (in e931b90) VZF 12 | 17,5 | 24 | 36 Spannungswandler
+ Zweipolig, große Bauform/Stützerbauform DIN 42600, Teil 3
+[LIST] (in e931b90) Datenblatt <https://ritz-international.com/wp-content/uploads/De_VEN_12_72_5_Spannungswandler.pdf>
+[H H2] (in e931b90) STROMWANDLER
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/beruehrungssichere_wandler_stromwandler_gbw.jpg alt=''
+[TEXT] (in e931b90) GBW
+ Metallgekapselte Stromwandler, 12 – 36 kV
+[LIST] (in e931b90) Datenblatt <https://ritz-international.com/wp-content/uploads/DE_GBW.pdf>
+[H H2] (in e931b90) SPANNUNGSWANDLER
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/beruehrungssichere_wandler_spannungswandler_gbein_gbean.jpg alt=''
+[TEXT] (in e931b90) GBEIN, GBEAN
+ Metallgekapselter Spannungswandler, 12 – 52 kV
+[LIST] (in e931b90) Datenblatt <https://ritz-international.com/wp-content/uploads/DE_GBEIN_GBEAN.pdf>
+[H H2] (in e931b90) KOMBIWANDLER
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/beruehrungssichere_wandler_kombiwandler_kgbei_kgbea.jpg alt=''
+[TEXT] (in e931b90) KGBEI/KGBEA
+ Metallgekapselte Kombiwandler, 12-36 kV
+[LIST] (in e931b90) Datenblatt <https://ritz-international.com/wp-content/uploads/DE_KGBEIKGBEA.pdf>
+[H H2] (in e931b90) Bahnwandler
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_bahnwandler_gsefb.jpg alt=''
+[TEXT] (in e931b90) GSEFB
+ Der Freiluftspannungswandler GSEFB ist für den Einsatz als Ober-Spannungswandler auf elektrischen Bahnfahrzeugen vorgesehen. Die Isolation besteht aus freiluftbeständigem cycloaliphatischem Epoxidharz mit außerordentlich guten mechanischen und elektrischen Eigenschaften. Der GSEFBC ist zusätzlich zum Schutz gegen Beschädigung oder dem unwahrscheinlichen Fall des Berstens, in einen Silikonverbundisolator eingebettet und an der Oberseite mit einer Druckentlastungshaube versehen. Alle Freiluftteile bestehen aus korrosionsbeständigen Materialien und die Geräte sind wartungsfrei.
+ Die Bahnspannungswandler werden für Isolationsspannungen bis 40,5 kV eingesetzt, entsprechen europäischen und internationalen Normen und werden in einem IRIS zertifizierten Werk gefertigt.
+ Die Wandler sind konform zu EN50463, erfüllen die Vorgaben der aktuellen TSI LOC&PAS und sind damit zur Energiemessung auf dem Fahrzeug geeignet. Für viele Wandler kann zu diesem Zweck bereits eine vorläufige EG-Zwischenprüfbescheinigung ausgestellt werden.
+[TEXT] (in e931b90) GSO(F)B 
+ Der GSO(F)B ist ein Einphasen-Aufsteck-Stromwandler, Um = 0,8 kV, mit Gießharzisolierung zur Verwendung als Oberstrom- oder Rückstromwandler in oder auf elektrischen Bahnfahrzeugen.
+ Der Primärleiter wird kundenseitig von einem isolierten Kabel oder einer Schiene gebildet und vom Kunden durch den Wandler geführt. Durch die Isolation mit freiluftbeständigen cycloaliphatischem Epoxidharz, erfüllt er alle Anforderungen für den Einsatz auf dem Wagendach. Die Wandler entsprechen europäischen und internationalen Normen und werden in einem IRIS zertifizierten Werk gefertigt.
+ Die Wandler sind konform zu EN50463, erfüllen die Vorgaben der aktuellen TSI LOC&PAS und sind damit zur Energiemessung auf dem Fahrzeug geeignet. Für viele Wandler kann zu diesem Zweck bereits eine vorläufige EG-Zwischenprüfbescheinigung ausgestellt werden.
+ Alle Bahnstrom- und Spannungswandler sind, falls erforderlich, auch in anderen Bauformen verfügbar.
+[H H2] (in e931b90) Durchführungsstabstromwandler
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_durchfuehrungsstabstromwandler_gds_127c_7_5_24_36_durchfuehrungsstromwandler.jpg alt=''
+[TEXT] (in e931b90) GDS 12|17,5|24|36 Durchführungsstromwandler 
+ mit Festleiter
+[LIST] (in e931b90) Datenblatt <https://ritz-international.com/wp-content/uploads/De_GDS.pdf>
+[H H2] (in e931b90) Stützerstromwandler
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_stuetzerstromwandler_gsso_12_17_5_24_hochstromwandler.jpg alt=''
+[TEXT] (in e931b90) GSSO 12 | 17,5 | 24 Hochstromwandler 
+ Hochstromwandler
+[LIST] (in e931b90) Datenblatt <https://ritz-international.com/wp-content/uploads/De_GSSO.pdf>
+[H H2] (in e931b90) Metallgekapselte Kombiwandler, 12-36 kV
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_metallgekapselte_kombiwandler_12-36_kv_kgbea_36_kgbei_36_ausgefuehrt_als_breitbandwandler.jpg alt=''
+[TEXT] (in e931b90) KGBEA 36 / KGBEI 36 ausgeführt als Breitbandwandler 
+ Metallgekapselter Kombiwandler
+[LIST] (in e931b90) Datenblatt <https://ritz-international.com/wp-content/uploads/Datenblatt-KGBEA36-KGBEI36-ausgefuehrt-als-Breitbandwandler.pdf>
+[H H2] (in e931b90) Stützerstromwandler
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_stuetzerstromwandler_gsws24_mit_optional_erweitertem_frequenzbereich.jpg alt=''
+[TEXT] (in e931b90) GSWS 24 mit optional erweitertem Frequenzbereich 
+ Stützerstromwandler
+[LIST] (in e931b90) Datenblatt <https://ritz-international.com/wp-content/uploads/Datenblatt_GSWS24_Breitband_Index_01.pdf>
+[H H2] (in e931b90) Induktiver, einpoliger Spannungswandler
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_induktiver_einpoliger_spannungswandler_gses24d_mit_optional_erweitertem_frequenzbereich.jpg alt=''
+[TEXT] (in e931b90) GSES 24D mit optional erweitertem Frequenzbereich 
+ Induktiver, einpoliger Spannungswandler
+[LIST] (in e931b90) Datenblatt <https://ritz-international.com/wp-content/uploads/Datenblatt_GSES24D_Breitband_Index_02.pdf>
+[PDFS] https://ritz-international.com/wp-content/uploads/RITZ-Mittelspannungswandler_Standard_GER_2014_01-2-1.pdf https://ritz-international.com/wp-content/uploads/RITZ-Metallgekapselte_Messwandler_GER_2013-02.pdf https://ritz-international.com/wp-content/uploads/PQ_Analyse_DE.pdf https://ritz-international.com/wp-content/uploads/2302-AM-Offenbach-v6.pdf https://ritz-international.com/wp-content/uploads/TDB20260012_REV01.pdf https://ritz-international.com/wp-content/uploads/De_GSW_12_03_6_Stuetzenstromwandler.pdf https://ritz-international.com/wp-content/uploads/De_ASN_12_17_5_Stuetzerstromwandler.pdf https://ritz-international.com/wp-content/uploads/De_GI_52-72_5_Stuetzerstromwandler.pdf https://ritz-international.com/wp-content/uploads/De_VES_12_17_5_Spannungswandler.pdf https://ritz-international.com/wp-content/uploads/De_GSE_12_Spannungswandler.pdf https://ritz-international.com/wp-content/uploads/De_VEN_12_17_5_24_36_52_72_5_Spannungswandler.pdf https://ritz-international.com/wp-content/uploads/De_VZS_12_17_5_25_Spannungswandler.pdf https://ritz-international.com/wp-content/uploads/De_GSZ_12_03_6_7_2_12_Spannungswandler.pdf https://ritz-international.com/wp-content/uploads/De_VZN_12_17_5_24_36_Spannungswandler.pdf https://ritz-international.com/wp-content/uploads/De_GIFK_Stuetzerstromwandler.pdf https://ritz-international.com/wp-content/uploads/De_GIFS_Stuetzerstromwandler.pdf https://ritz-international.com/wp-content/uploads/De_GIF.pdf https://ritz-international.com/wp-content/uploads/De_VES_12_24_Spannungswandler.pdf https://ritz-international.com/wp-content/uploads/De_GSE_12_0_12_Spannungswandler.pdf https://ritz-international.com/wp-content/uploads/De_VEN_12_72_5_Spannungswandler.pdf https://ritz-international.com/wp-content/uploads/DE_GBW.pdf https://ritz-international.com/wp-content/uploads/DE_GBEIN_GBEAN.pdf https://ritz-international.com/wp-content/uploads/DE_KGBEIKGBEA.pdf https://ritz-international.com/wp-content/uploads/De_GDS.pdf https://ritz-international.com/wp-content/uploads/De_GSSO.pdf https://ritz-international.com/wp-content/uploads/Datenblatt-KGBEA36-KGBEI36-ausgefuehrt-als-Breitbandwandler.pdf https://ritz-international.com/wp-content/uploads/Datenblatt_GSWS24_Breitband_Index_01.pdf https://ritz-international.com/wp-content/uploads/Datenblatt_GSES24D_Breitband_Index_02.pdf
+[TEMPLATES] 370 1013 1017 1020 1023

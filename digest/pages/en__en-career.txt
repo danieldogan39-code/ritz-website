@@ -1,0 +1,27 @@
+# Career - RITZ
+URL: https://ritz-international.com/en/career/  status=200 lang=en kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "en_US", "og:type": "article", "og:title": "Career - RITZ", "og:description": "Home Full of energy in the future! Electricity is exciting. Are you looking for an employer that offers you an exciting environment? Do you want to work in an international, innovative and inspiring company that is actively driving forward the energy transition? Do you feel at home in the world of electrical engineering? Then RITZ […]", "og:url": "https://ritz-international.com/en/career/", "og:site_name": "RITZ"}
+canonical: https://ritz-international.com/en/career/
+hreflang: [['en', 'https://ritz-international.com/en/career/'], ['fr', 'https://ritz-international.com/fr/carriere/'], ['de', 'https://ritz-international.com/karriere/'], ['hu', 'https://ritz-international.com/hu/karrier/'], ['es', 'https://ritz-international.com/es/carrera-profesional/'], ['x-default', 'https://ritz-international.com/karriere/']]
+
+[H H2] Full of energy in the future!
+[TEXT] Electricity is exciting. Are you looking for an employer that offers you an exciting environment? Do you want to work in an international, innovative and inspiring company that is actively driving forward the energy transition? Do you feel at home in the world of electrical engineering? Then RITZ Instrument Transformers GmbH could be just the right address for you. We are always looking for qualified employees to actively support our teams. The opportunities are many and varied: over 20 different professions can be practiced at the RITZ Group. 
+ We do a lot for our employees. As an employee at RITZ , you enjoy numerous benefits, such as home office arrangements, flexitime, 30 days’ vacation, training opportunities (e.g. language courses), flat hierarchies, relocation support and much more. 
+ The future is now. The RITZ Group is a global industrial company – with production facilities in Germany, Austria, Hungary, China and the USA. In Europe, we are even one of the leading manufacturers of certain types of current transformers, such as low-voltage transformers. Do you want to join the big players? Our customers include well-known companies in the electrical industry and the energy supply sector all over the world. Write a success story together with RITZ. 
+ RITZ is a growing multi-specialist in the electrical industry with locations in Europe, China and the USA. Together, we transform ideas and visions into pioneering solutions for renowned customers in the energy supply sector. Worldwide.
+ As a service-oriented industrial company, we have stood for the highest quality and innovation for over 70 years. With our national and international production facilities, we are a European leader in the field of low- and medium-voltage transformers, touch-safe SIS busbar systems and cast resin lines.
+ Our approximately 1,200 employees stand for the highest quality with a great deal of expertise and a shared passion: the development of our electrical future. You too can become part of our success story. Become a part of RITZ.
+[H H2] Contact us
+[H H2] Maria Schunk
+Group Director Human Resources
+[LIST] personal.hamburg@ritz-international.com <mailto:personal.hamburg@ritz-international.com>
+[IMG] https://ritz-international.com/wp-content/uploads/2022/07/network_lines_big_new.svg alt=''
+[H H2] Vacancies  -> https://ritz-international.com/en/career-portal/
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] Vacancies  -> https://ritz-international.com/en/career-portal/
+[H H2] Education  -> https://ritz-international.com/en/career/education/
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] Education  -> https://ritz-international.com/en/career/education/
+[H H2] INTERNSHIPS/THESIS  -> https://ritz-international.com/en/career/internships/
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] PRACTICES/ DIPLOM WORK  -> https://ritz-international.com/en/career/internships/

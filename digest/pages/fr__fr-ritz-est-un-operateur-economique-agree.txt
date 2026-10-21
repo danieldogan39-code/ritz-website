@@ -1,0 +1,13 @@
+# RITZ est un opérateur économique agréé - RITZ
+URL: https://ritz-international.com/fr/ritz-est-un-operateur-economique-agree/  status=200 lang=fr kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "fr_FR", "og:type": "article", "og:title": "RITZ est un opérateur économique agréé - RITZ", "og:description": "En septembre 2015, la société RITZ Instrument Transformers GmbH a été officiellement certifiée comme « opérateur économique agréé » (AEO-Authorised Economic Operator) de l’Union européenne pour la « simplification douanière/sécurité » (AEO-F).L’entreprise peut ainsi traiter plus rapidement et plus efficacement toutes les formalités douanières pour les clients de l’industrie et du co
+canonical: https://ritz-international.com/fr/ritz-est-un-operateur-economique-agree/
+hreflang: [['en', 'https://ritz-international.com/en/ritz-is-an-authorized-economic-operator/'], ['fr', 'https://ritz-international.com/fr/ritz-est-un-operateur-economique-agree/'], ['de', 'https://ritz-international.com/ritz-ist-zugelassener-wirtschaftsbeteiligter/'], ['hu', 'https://ritz-international.com/hu/a-ritz-engedelyezett-gazdasagi-szereplo/'], ['es', 'https://ritz-international.com/es/ritz-es-un-operador-economico-autorizado/'], ['x-default', 'https://ritz-international.com/ritz-ist-zugelassener-wirtschaftsbeteiligter/']]
+
+[POSTTITLE] RITZ est un opérateur économique agréé
+[POSTCONTENT] En septembre 2015, la société RITZ Instrument Transformers GmbH a été officiellement certifiée comme « opérateur économique agréé » (AEO-Authorised Economic Operator) de l’Union européenne pour la « simplification douanière/sécurité » (AEO-F).
+L’entreprise peut ainsi traiter plus rapidement et plus efficacement toutes les formalités douanières pour les clients de l’industrie et du commerce au sein de l’UE.
+ Ritz Instrument Transformers GmbH remplit depuis des années les conditions liées à la certification, comme la fiabilité, la solvabilité et le respect des normes juridiques et de sécurité. Désormais, le certificat officiel AEO-F en atteste.
+ Vous pouvez télécharger le certificat ici . IMGS= LINKS=ici<https://ritz-international.com/?page_id=673>
+[BTN] Retour -> https://ritz-international.com/fr/?page_id=5615
+[FEATURED] https://ritz-international.com/wp-content/uploads/ritz_header-unternehmen.jpg

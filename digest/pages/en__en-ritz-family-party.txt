@@ -1,0 +1,16 @@
+# RITZ FAMILY PARTY - RITZ
+URL: https://ritz-international.com/en/ritz-family-party/  status=200 lang=en kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "en_US", "og:type": "article", "og:title": "RITZ FAMILY PARTY - RITZ", "og:description": "What do a bobby car track, face painting for children and a bouncy castle have to do with RITZ? They were all part of this year’s summer party at our Ottendorf-Okrilla site! Under the motto “Family joy”, our employees celebrated the inauguration of our newly built dispatch hall together with their families. With delicious food […]", "og:url": "https://ritz-international.com/en/ritz-family-party/", "og:s
+canonical: https://ritz-international.com/en/ritz-family-party/
+hreflang: [['en', 'https://ritz-international.com/en/ritz-family-party/'], ['fr', 'https://ritz-international.com/fr/ritz-fete-de-famille/'], ['de', 'https://ritz-international.com/ritz-familienfest/'], ['hu', 'https://ritz-international.com/hu/ritz-csaladi-party/'], ['es', 'https://ritz-international.com/es/fiesta-familiar-ritz/'], ['x-default', 'https://ritz-international.com/ritz-familienfest/']]
+
+[POSTTITLE] RITZ FAMILY PARTY
+[POSTCONTENT] What do a bobby car track, face painting for children and a bouncy castle have to do with RITZ?
+ They were all part of this year’s summer party at our Ottendorf-Okrilla site!
+ Under the motto “Family joy”, our employees celebrated the inauguration of our newly built dispatch hall together with their families.
+ With delicious food and drink, good music and children’s attractions, we would like to say THANK YOU to our employees!
+ Thank you very much for your active support and for making the family party so special! It was very nice to spend the day together with you and your family!
+ Would you like to be there next time? Then take a quick look at the job portal in our.
+ We look forward to receiving your application! IMGS=https://ritz-international.com/wp-content/uploads/20230624_153724.jpg https://ritz-international.com/wp-content/uploads/20230624_160153.jpg https://ritz-international.com/wp-content/uploads/20230624_171355.jpg https://ritz-international.com/wp-content/uploads/20230624_172404.jpg LINKS=
+[BTN] Back -> https://ritz-international.com/en/?page_id=5595
+[FEATURED] https://ritz-international.com/wp-content/uploads/20230624_180218-rotated_zugeschnitten.png

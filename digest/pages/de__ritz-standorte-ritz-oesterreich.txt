@@ -1,0 +1,8 @@
+# RITZ Österreich Archive - RITZ
+URL: https://ritz-international.com/ritz-standorte/ritz-oesterreich/  status=200 lang=de kind=extra
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "RITZ Österreich Archive - RITZ", "og:url": "https://ritz-international.com/ritz-standorte/ritz-oesterreich/", "og:site_name": "RITZ"}
+canonical: https://ritz-international.com/ritz-standorte/ritz-oesterreich/
+hreflang: [['en', 'https://ritz-international.com/en/ritz-standorte/ritz-austria/'], ['fr', 'https://ritz-international.com/fr/ritz-standorte/ritz-autriche/'], ['de', 'https://ritz-international.com/ritz-standorte/ritz-oesterreich/'], ['hu', 'https://ritz-international.com/hu/ritz-standorte/ritz-ausztria/'], ['es', 'https://ritz-international.com/es/ritz-standorte/ritz-austria-es/'], ['x-default', 'https://ritz-international.com/ritz-standorte/ritz-oesterreich/']]
+
+[MAINHTML] RITZ Standorte: RITZ Österreich 
+ Standort Österreich Marchtrenk

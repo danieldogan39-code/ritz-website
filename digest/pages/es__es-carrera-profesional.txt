@@ -1,0 +1,27 @@
+# Carrera profesional - RITZ
+URL: https://ritz-international.com/es/carrera-profesional/  status=200 lang=es kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "es_ES", "og:type": "article", "og:title": "Carrera profesional - RITZ", "og:description": "Inicio ¡A plena energía hacia el futuro! La electricidad es fascinante. ¿Busca un empleador que le ofrezca un entorno de trabajo apasionante? ¿Quiere trabajar en una empresa internacional, innovadora e inspiradora que impulse activamente la transición energética? ¿Se siente en su salsa en el mundo de la ingeniería eléctrica? Si es así, RITZ Instrument Transformers […]", "og:url": "https://ritz-interna
+canonical: https://ritz-international.com/en/career/
+hreflang: [['en', 'https://ritz-international.com/en/career/'], ['fr', 'https://ritz-international.com/fr/carriere/'], ['de', 'https://ritz-international.com/karriere/'], ['hu', 'https://ritz-international.com/hu/karrier/'], ['es', 'https://ritz-international.com/es/carrera-profesional/'], ['x-default', 'https://ritz-international.com/karriere/']]
+
+[H H2] ¡A plena energía hacia el futuro!
+[TEXT] La electricidad es fascinante. ¿Busca un empleador que le ofrezca un entorno de trabajo apasionante? ¿Quiere trabajar en una empresa internacional, innovadora e inspiradora que impulse activamente la transición energética? ¿Se siente en su salsa en el mundo de la ingeniería eléctrica? Si es así, RITZ Instrument Transformers GmbH podría ser la dirección adecuada para usted. Siempre buscamos personal cualificado para apoyar activamente a nuestros equipos. Las oportunidades son muchas y variadas: en el Grupo RITZ se pueden ejercer más de 20 profesiones diferentes. 
+ Hacemos mucho por nuestro personal. Como persona empleada de RITZ , disfrutará de numerosas ventajas, como la posibilidad de trabajar desde casa, un horario flexible, 30 días de vacaciones, oportunidades de formación continua (p. ej., cursos de idiomas), jerarquías planas, ayuda para el traslado y mucho más. 
+ El futuro es ahora. El Grupo RITZ es una empresa industrial internacional con centros de producción en Alemania, Austria, Hungría, China y Estados Unidos. En Europa, somos incluso uno de los principales fabricantes de determinados tipos de transformadores de corriente, como los de baja tensión. ¿Quiere trabajar con grandes empresas? Entre nuestros clientes figuran conocidas empresas de la industria eléctrica y el sector de suministro energético de todo el mundo. Escriba una historia de éxito junto con RITZ. 
+ RITZ es una empresa multiespecialista en expansión dentro de la industria eléctrica que cuenta con sedes en Europa, China y Estados Unidos. Juntos, transformamos ideas y visiones en soluciones pioneras para clientes de renombre en el sector del suministro energético. En todo el mundo.
+ Como empresa industrial orientada al servicio, somos sinónimo de máxima calidad e innovación desde hace más de 70 años. Con nuestras instalaciones de producción nacionales e internacionales, somos líderes europeos en el campo de los transformadores de baja y media tensión, sistemas de barras SIS con seguridad al contacto y componentes de resina de moldeo.
+ Nuestros aprox. 1 200 empleados son sinónimo de la máxima calidad y cuentan con una gran experiencia y una pasión compartida: el desarrollo de nuestro futuro eléctrico. Únase a nuestra historia de éxito. Únase a RITZ.
+[H H2] Contacto
+[H H2] Maria Schunk
+Director de Recursos Humanos del Grupo
+[LIST] personal.hamburg@ritz-international.com <mailto:personal.hamburg@ritz-international.com>
+[IMG] https://ritz-international.com/wp-content/uploads/2022/07/network_lines_big_new.svg alt=''
+[H H2] Ofertas de empleo  -> https://ritz-international.com/es/portal-de-empleo/
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] Ofertas de empleo  -> https://ritz-international.com/es/portal-de-empleo/
+[H H2] Formación  -> https://ritz-international.com/es/carrera-profesional/educacion/
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] Formación  -> https://ritz-international.com/es/carrera-profesional/educacion/
+[H H2] PRÁCTICAS/TESIS DE GRADO  -> https://ritz-international.com/es/carrera-profesional/practicas/
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] PRÁCTICAS/ TESIS DE GRADO  -> https://ritz-international.com/es/carrera-profesional/practicas/

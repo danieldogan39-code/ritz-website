@@ -1,0 +1,39 @@
+# Customer reference SIS - Project BSW - RITZ
+URL: https://ritz-international.com/en/customer-reference-sis-project-bsw/  status=200 lang=en kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "en_US", "og:type": "article", "og:title": "Customer reference SIS - Project BSW - RITZ", "og:description": "Whenever high currents need to be transmitted in confined spaces, RITZ’s fully insulated bus bar systems are the solution of choice. They serve as a cost-effective alternative to parallel cable connections, metal-encapsulated bus bars, or other cable connections. RITZ busbars were also chosen for the project carried out by ELATEC POWER DISTRIBUTION GmbH (https://elatec.net) for […]", 
+canonical: https://ritz-international.com/en/customer-reference-sis-project-bsw/
+hreflang: [['en', 'https://ritz-international.com/en/customer-reference-sis-project-bsw/'], ['de', 'https://ritz-international.com/kundenreferenz-sis-projekt-bsw/'], ['x-default', 'https://ritz-international.com/kundenreferenz-sis-projekt-bsw/']]
+
+[POSTTITLE] Customer reference SIS – Project BSW
+[POSTCONTENT] Whenever high currents need to be transmitted in confined spaces, RITZ’s fully insulated bus bar systems are the solution of choice. They serve as a cost-effective alternative to parallel cable connections, metal-encapsulated bus bars, or other cable connections. RITZ busbars were also chosen for the project carried out by ELATEC POWER DISTRIBUTION GmbH (https://elatec.net) for Badische Stahlwerke GmbH (BSW). 
+ Badische Stahlwerke operates the only steel mill in Baden-Württemberg and one of the largest and most technologically advanced electric steel mills in the world.
+Problem definition:
+After intensive preparatory work and the creation of technical specifications in collaboration with BSW, ELATEC POWER DISTRIBUTION GmbH received an order from BSW – Badische Stahlwerke GmbH in December 2021 to supply the new main switchgear, including all necessary ancillary equipment and activities for supplying the electric arc furnaces (EAF), ladle furnaces (LF), and the static var compensation (SVC) system. 
+ Special challenges in the project included:
+– Implementation of the entire project as a turnkey project, taking into account the spatial conditions of the existing plant.
+– In order to accommodate the spatial conditions, a 6000 A solid-insulated busbar manufactured by Ritz was delivered, installed, and commissioned for the high-current connection of two plant sections, which were constructed in a front-to-front configuration.
+– This is the world’s first air-insulated switchgear of type M17–24 HD with 24 kV/6000 A in plug-in technology and operating availability class LSC 2B.
+– Design, manufacture, delivery, installation, commissioning, new basement rooms for connecting all external cables to the M17–24 HD.
+This was preceded by detailed planning of the entire construction project, which began on December 7, 2023 and ran over the holidays until the beginning of January.
+ RITZ was the only supplier able to offer a solution for the limited space and high currents. We are delighted that we were able to successfully support the customer in this project with our technology and consulting services. 
+The old facility:
+was replaced with the new system:
+ Best regards,
+The SIS Sales Team at Ritz IMGS=https://ritz-international.com/wp-content/uploads/Kundenreferenz-SIS-Projekt-BSW-4.jpg https://ritz-international.com/wp-content/uploads/Kundenreferenz-SIS-Projekt-BSW-5.jpg https://ritz-international.com/wp-content/uploads/Kundenreferenz-SIS-Projekt-BSW-2.jpg https://ritz-international.com/wp-content/uploads/Kundenreferenz-SIS-Projekt-BSW.jpg https://ritz-international.com/wp-content/uploads/Kundenreferenz-SIS-Projekt-BSW-3.jpg LINKS=
+[TEXT] (in a71c4dd) Whenever high currents need to be transmitted in confined spaces, RITZ’s fully insulated bus bar systems are the solution of choice. They serve as a cost-effective alternative to parallel cable connections, metal-encapsulated bus bars, or other cable connections. RITZ busbars were also chosen for the project carried out by ELATEC POWER DISTRIBUTION GmbH (https://elatec.net) for Badische Stahlwerke GmbH (BSW). 
+ Badische Stahlwerke operates the only steel mill in Baden-Württemberg and one of the largest and most technologically advanced electric steel mills in the world.
+Problem definition:
+After intensive preparatory work and the creation of technical specifications in collaboration with BSW, ELATEC POWER DISTRIBUTION GmbH received an order from BSW – Badische Stahlwerke GmbH in December 2021 to supply the new main switchgear, including all necessary ancillary equipment and activities for supplying the electric arc furnaces (EAF), ladle furnaces (LF), and the static var compensation (SVC) system. 
+ Special challenges in the project included:
+– Implementation of the entire project as a turnkey project, taking into account the spatial conditions of the existing plant.
+– In order to accommodate the spatial conditions, a 6000 A solid-insulated busbar manufactured by Ritz was delivered, installed, and commissioned for the high-current connection of two plant sections, which were constructed in a front-to-front configuration.
+– This is the world’s first air-insulated switchgear of type M17–24 HD with 24 kV/6000 A in plug-in technology and operating availability class LSC 2B.
+– Design, manufacture, delivery, installation, commissioning, new basement rooms for connecting all external cables to the M17–24 HD.
+This was preceded by detailed planning of the entire construction project, which began on December 7, 2023 and ran over the holidays until the beginning of January.
+ RITZ was the only supplier able to offer a solution for the limited space and high currents. We are delighted that we were able to successfully support the customer in this project with our technology and consulting services. 
+The old facility:
+was replaced with the new system:
+ Best regards,
+The SIS Sales Team at Ritz
+[BTN] Back -> https://ritz-international.com/en/?page_id=5595
+[FEATURED] https://ritz-international.com/wp-content/uploads/Kundenreferenz-SIS-Projekt-BSW-3.jpg

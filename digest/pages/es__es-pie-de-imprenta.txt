@@ -1,0 +1,49 @@
+# Aviso legal - RITZ
+URL: https://ritz-international.com/es/pie-de-imprenta/  status=200 lang=es kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "es_ES", "og:type": "article", "og:title": "Aviso legal - RITZ", "og:description": "Aviso legal de RITZ RITZ Instrument Transformers GmbHWandsbeker Zollstraße 92-9822041 HamburgTeléfono: +49 40 51123 – 0Fax: +49 40 51123 – 322Correo electrónico: info@ritz-international.comInternet: www.ritz-international.com Directores ejecutivos autorizados como representantes:Dr. Andreas Grambow, Dr. Christian Henze Tribunal de registro:Juzgado de Primera Instancia de Hamburgo Número de registro:HR B 10248
+canonical: https://ritz-international.com/impressum/
+hreflang: [['en', 'https://ritz-international.com/en/imprint/'], ['fr', 'https://ritz-international.com/fr/mentions-legales/'], ['de', 'https://ritz-international.com/impressum/'], ['hu', 'https://ritz-international.com/hu/impresszum/'], ['es', 'https://ritz-international.com/es/pie-de-imprenta/'], ['x-default', 'https://ritz-international.com/impressum/']]
+
+[H H2] Aviso legal de RITZ
+[TEXT] RITZ Instrument Transformers GmbH 
+Wandsbeker Zollstraße 92-98
+22041 Hamburg
+Teléfono: +49 40 51123 – 0
+Fax: +49 40 51123 – 322
+Correo electrónico:  info@ritz-international.com 
+Internet:  www.ritz-international.com 
+ Directores ejecutivos autorizados como representantes: 
+Dr. Andreas Grambow, Dr. Christian Henze
+ Tribunal de registro: 
+Juzgado de Primera Instancia de Hamburgo
+ Número de registro: 
+HR B 102486
+ Número de identificación fiscal de IVA según el artículo 27 de la Ley alemana del Impuesto sobre el Valor Añadido: 
+DE 140 211 002
+ Número de identificación fiscal: 
+51/780/04184
+ Responsable del contenido según el artículo 55 apartado 2 del RStV (Tratado interestatal sobre radiodifusión alemán): Aviso legal: 
+A pesar de realizar un control cuidadoso del contenido, no asumimos ninguna responsabilidad por el contenido de los enlaces externos. Los operadores de las páginas enlazadas son los únicos responsables de su contenido.
+ Concepción, diseño y realización: 
+SERIOUS GmbH
+Jungfernstieg 38
+20354 Hamburg
+Internet: www.serious.de 
+ INFORMACIÓN LEGAL
+ Responsabilidad por el contenido
+ El contenido de nuestro sitio web ha sido creado con el mayor cuidado. Sin embargo, no podemos asumir ninguna responsabilidad por la exactitud, integridad y actualidad de los contenidos.
+ Como proveedores de servicios, somos responsables de nuestros propios contenidos en estas páginas de acuerdo con el artículo 7, apartado 1, de la TMG (Ley alemana de telecomunicaciones) y las leyes generales. Sin embargo, según los artículos 8 a 10 de la TMG, como proveedores de servicios no estamos obligados a supervisar la información ajena transmitida o almacenada ni a investigar circunstancias que indiquen una actividad ilegal. Esto no afecta a las obligaciones de eliminar o bloquear el uso de información de conformidad con la legislación general. Sin embargo, la responsabilidad a este respecto solo es posible a partir del momento en que se tiene conocimiento de una infracción concreta. Si tenemos conocimiento de tales infracciones, eliminaremos inmediatamente dichos contenidos.
+ Responsabilidad por los enlaces
+ Nuestro sitio web contiene enlaces a sitios web externos de terceros sobre cuyo contenido no tenemos ninguna influencia. Por lo tanto, no podemos ofrecer ninguna garantía por dicho contenido de terceros. El respectivo proveedor u operador de las páginas enlazadas es siempre responsable del contenido de estas. En el momento de establecer el enlace, se comprobó que las páginas enlazadas no infringieran la ley. No se identificaron contenidos ilegales en el momento de establecer el enlace. Sin embargo, un control permanente del contenido de las páginas enlazadas no es razonable sin pruebas concretas de una infracción legal. Si tenemos conocimiento de alguna infracción legal, eliminaremos dichos enlaces inmediatamente.
+ Propiedad intelectual
+ Los contenidos y obras creados por los operadores del sitio en estas páginas están sujetos a la legislación alemana sobre derechos de autor. Las contribuciones de terceros se etiquetan como tales. La reproducción, edición, distribución y cualquier tipo de explotación fuera de los límites de la propiedad intelectual requieren el consentimiento por escrito del respectivo autor o creador. Las descargas y copias de este sitio solo se permiten para uso privado y no comercial.
+ Los operadores del sitio procuran respetar en todo momento los derechos de autor de terceros, o recurrir a obras propias o libres de licencia.
+ Protección de datos
+ En la medida en que en nuestro sitio web se recopilen datos personales (p. ej., nombre, dirección o direcciones de correo electrónico), siempre se hará de forma voluntaria en la medida de lo posible. En la medida de lo posible, siempre es posible utilizar las ofertas y los servicios sin necesidad de facilitar datos personales.
+ Nos gustaría señalar que la transmisión de datos por Internet (p. ej., cuando se comunica por correo electrónico) puede tener lagunas de seguridad. No es posible proteger completamente los datos contra el acceso de terceros.
+ Por la presente, prohibimos expresamente el uso de los datos de contacto publicados en el marco de la obligación del aviso legal por parte de terceros para el envío de publicidad y material informativo no solicitados. Los operadores del sitio web se reservan expresamente el derecho a emprender acciones legales en caso de envío no solicitado de información publicitaria, como correos electrónicos no deseados.
+ Google Analytics
+ Este sitio web utiliza Google Analytics, un servicio de análisis web prestado por Google Inc. («Google»). Google Analytics utiliza «cookies», que son archivos de texto ubicados en su ordenador, para ayudar al sitio web a analizar el uso que hacen los usuarios del mismo. La información que genera la cookie acerca del uso que usted hace de este sitio web generalmente se transmite a un servidor de Google en los EE. UU. y se almacena allí.
+ Sin embargo, si la anonimización de IP está activada en este sitio web, su dirección IP será primero truncada por Google dentro de los estados miembros de la Unión Europea o en otros estados signatarios del Acuerdo sobre el Espacio Económico Europeo. Solo en casos excepcionales se transmitirá la dirección IP completa a un servidor de Google en EE. UU. y se acortará allí En nombre del operador de este sitio web, Google utilizará esta información para analizar su uso del sitio web, compilar informes sobre la actividad del sitio web y proporcionar al operador del sitio web otros servicios relacionados con la actividad del sitio web y el uso de Internet. La dirección IP transmitida por su navegador como parte de Google Analytics no se combinará con otros datos de Google.
+ Puede rechazar el uso de cookies mediante la configuración correspondiente en su navegador; no obstante, tenga en cuenta que, si lo hace, es posible que no pueda utilizar todas las funciones de este sitio web. También puede evitar que Google recopile y procese los datos generados por la cookie y relacionados con su uso del sitio web (incluida su dirección IP) descargando e instalando el complemento del navegador disponible en el siguiente enlace: http://tools.google.com/dlpage/gaoptout?hl=es .
+ Fuentes: Descargo de responsabilidad de eRecht24 , Descargo de responsabilidad de Google Analytics

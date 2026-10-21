@@ -1,0 +1,45 @@
+# Kundenreferenz SIS - Projekt BSW - RITZ
+URL: https://ritz-international.com/kundenreferenz-sis-projekt-bsw/  status=200 lang=de kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "Kundenreferenz SIS - Projekt BSW - RITZ", "og:description": "Immer wenn bei begrenzten Platzangebot hohe Ströme übertragen werden sollen, sind die vollisolierten Stromschienensysteme von RITZ das Mittel der Wahl. Sie dienen dabei als kostengünstige Alternative zu parallel verlegten Kabelverbindungen, metallgekapselten Stromschienen oder anderen Kabelverbindungen. Auch bei dem Projekt von ELATEC POWER DISTRIBUTION GmbH (https://elatec.net) für di
+canonical: https://ritz-international.com/kundenreferenz-sis-projekt-bsw/
+hreflang: [['en', 'https://ritz-international.com/en/customer-reference-sis-project-bsw/'], ['de', 'https://ritz-international.com/kundenreferenz-sis-projekt-bsw/'], ['x-default', 'https://ritz-international.com/kundenreferenz-sis-projekt-bsw/']]
+
+[POSTTITLE] Kundenreferenz SIS – Projekt BSW
+[POSTCONTENT] Immer wenn bei begrenzten Platzangebot hohe Ströme übertragen werden sollen, sind die vollisolierten Stromschienensysteme von RITZ das Mittel der Wahl. Sie dienen dabei als kostengünstige Alternative 
+zu parallel verlegten Kabelverbindungen, metallgekapselten Stromschienen oder anderen Kabelverbindungen. Auch bei dem Projekt von ELATEC POWER DISTRIBUTION GmbH (https://elatec.net) für die Badische Stahlwerke GmbH (BSW) fiel die Wahl auf die Stromschienen von Ritz.
+ Die Badischen Stahlwerke betreiben das einzige Stahlwerk in 
+Baden-Württemberg und eines der größten, produktivsten sowie technologisch modernsten Elektrostahlwerke weltweit.
+Problemstellung:
+Nach intensiven Vorarbeiten und dem Erstellen eines technischen Lastenheftes in Zusammenarbeit mit BSW hat ELATEC POWER DISTRIBUTION GmbH im Dezember 2021 von BSW – Badische Stahlwerke GmbH den Auftrag erhalten, die neue Hauptschaltanlage inkl. aller notwendigen Nebeneinrichtungen und -Tätigkeiten zur Versorgung der Elektrolichtbogenöfen (EAF – electric arc furnace), Pfannenöfen (LF -ladle furnace) und der Kompensationsanlage 
+(SVC – static var compensation) zu liefern.
+ Besondere Herausforderungen bei dem Projekt waren unter anderem:
+• Durchführung des Gesamtprojektes als Turn-Key Projekt unter Beachtung der räumlichen Gegebenheiten der Bestandanlage.
+• Um den räumlichen Gegebenheiten Rechnung zu tragen, erfolgte die Lieferung, Montage und Inbetriebnahme einer von der Firma Ritz gefertigten 6000 A feststoffisolierten Sammelschiene zur Hochstromverbindung von zwei Anlagenteilen, die in einer Front-Front Aufstellung errichtet wurden.
+• Es handelt sich um die weltweit erste luftisolierte Schaltanlage von Typ M17 – 24 HD mit 24 kV / 6000 A in Einschubtechnik und der Betriebsverfügbarkeitsklasse LSC 2B.
+• Konstruktion, Fertigung, Lieferung, Montage, IBN, neue Kellerzellen zum Anschluss aller externen Kabel an die M17 – 24 HD.
+Dem vorausgegangen war eine detaillierte Planung der gesamten Baumaßnahme, die am 07.12.2023 begann und über die Feiertage bis Anfang Januar lief.
+ Ritz konnte als einziger Anbieter eine Lösung für die engen Platzverhältnisse und die hohen Ströme anbieten. Wir freuen uns, dass wir den Kunden erfolgreich mit unserer Technik und unserer Beratung bei dem Projekt begleiten durften.
+Die alte Anlage:
+wird gegen die neue Anlage getauscht:
+ Mit freundlichen Grüßen,
+Das Sales-Team SIS der Firma Ritz IMGS=https://ritz-international.com/wp-content/uploads/Kundenreferenz-SIS-Projekt-BSW-4.jpg https://ritz-international.com/wp-content/uploads/Kundenreferenz-SIS-Projekt-BSW-5.jpg https://ritz-international.com/wp-content/uploads/Kundenreferenz-SIS-Projekt-BSW-2.jpg https://ritz-international.com/wp-content/uploads/Kundenreferenz-SIS-Projekt-BSW.jpg https://ritz-international.com/wp-content/uploads/Kundenreferenz-SIS-Projekt-BSW-3.jpg LINKS=
+[TEXT] (in a71c4dd) Immer wenn bei begrenzten Platzangebot hohe Ströme übertragen werden sollen, sind die vollisolierten Stromschienensysteme von RITZ das Mittel der Wahl. Sie dienen dabei als kostengünstige Alternative 
+zu parallel verlegten Kabelverbindungen, metallgekapselten Stromschienen oder anderen Kabelverbindungen. Auch bei dem Projekt von ELATEC POWER DISTRIBUTION GmbH (https://elatec.net) für die Badische Stahlwerke GmbH (BSW) fiel die Wahl auf die Stromschienen von Ritz.
+ Die Badischen Stahlwerke betreiben das einzige Stahlwerk in 
+Baden-Württemberg und eines der größten, produktivsten sowie technologisch modernsten Elektrostahlwerke weltweit.
+Problemstellung:
+Nach intensiven Vorarbeiten und dem Erstellen eines technischen Lastenheftes in Zusammenarbeit mit BSW hat ELATEC POWER DISTRIBUTION GmbH im Dezember 2021 von BSW – Badische Stahlwerke GmbH den Auftrag erhalten, die neue Hauptschaltanlage inkl. aller notwendigen Nebeneinrichtungen und -Tätigkeiten zur Versorgung der Elektrolichtbogenöfen (EAF – electric arc furnace), Pfannenöfen (LF -ladle furnace) und der Kompensationsanlage 
+(SVC – static var compensation) zu liefern.
+ Besondere Herausforderungen bei dem Projekt waren unter anderem:
+• Durchführung des Gesamtprojektes als Turn-Key Projekt unter Beachtung der räumlichen Gegebenheiten der Bestandanlage.
+• Um den räumlichen Gegebenheiten Rechnung zu tragen, erfolgte die Lieferung, Montage und Inbetriebnahme einer von der Firma Ritz gefertigten 6000 A feststoffisolierten Sammelschiene zur Hochstromverbindung von zwei Anlagenteilen, die in einer Front-Front Aufstellung errichtet wurden.
+• Es handelt sich um die weltweit erste luftisolierte Schaltanlage von Typ M17 – 24 HD mit 24 kV / 6000 A in Einschubtechnik und der Betriebsverfügbarkeitsklasse LSC 2B.
+• Konstruktion, Fertigung, Lieferung, Montage, IBN, neue Kellerzellen zum Anschluss aller externen Kabel an die M17 – 24 HD.
+Dem vorausgegangen war eine detaillierte Planung der gesamten Baumaßnahme, die am 07.12.2023 begann und über die Feiertage bis Anfang Januar lief.
+ Ritz konnte als einziger Anbieter eine Lösung für die engen Platzverhältnisse und die hohen Ströme anbieten. Wir freuen uns, dass wir den Kunden erfolgreich mit unserer Technik und unserer Beratung bei dem Projekt begleiten durften.
+Die alte Anlage:
+wird gegen die neue Anlage getauscht:
+ Mit freundlichen Grüßen,
+Das Sales-Team SIS der Firma Ritz
+[BTN] Zurück -> /aktuelles/news
+[FEATURED] https://ritz-international.com/wp-content/uploads/Kundenreferenz-SIS-Projekt-BSW-3.jpg

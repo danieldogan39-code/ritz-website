@@ -1,0 +1,14 @@
+# More safety for people and systems - the new EOSS open-circuit voltage protection! - RITZ
+URL: https://ritz-international.com/en/more-safety-for-people-and-systems-the-new-eoss-open-circuit-voltage-protection/  status=200 lang=en kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "en_US", "og:type": "article", "og:title": "More safety for people and systems - the new EOSS open-circuit voltage protection! - RITZ", "og:description": "\r The newly developed open-circuit voltage protection type EOSS 112 ZZ for current transformers with 1A secondary current by Ritz Instrument Transformers ensures greater safety. \r \r During installation, commissioning, repair and maintenance work in the system or in the event of an installation fault, the EOSS protects against electric s
+canonical: https://ritz-international.com/en/more-safety-for-people-and-systems-the-new-eoss-open-circuit-voltage-protection/
+hreflang: [['en', 'https://ritz-international.com/en/more-safety-for-people-and-systems-the-new-eoss-open-circuit-voltage-protection/'], ['fr', 'https://ritz-international.com/fr/plus-de-securite-pour-les-personnes-et-les-installations-la-nouvelle-protection-contre-la-tension-en-circuit-ouvert-eoss/'], ['de', 'https://ritz-international.com/mehr-sicherheit-fuer-mensch-und-anlage-der-neue-offenspannungsschutz-eoss/'], ['hu', 'https://ritz-international.com/hu/nagyobb-biztonsag-az-emberek-es-a-rendszerek-szamara-az-uj-eoss-nyitott-aramkoeru-feszueltsegvedelem/'], ['es', 'https://ritz-international.com/es/mas-seguridad-para-las-personas-y-los-sistemas-la-nueva-proteccion-contra-tension-de-circuito-abierto-eoss/'], ['x-default', 'https://ritz-international.com/mehr-sicherheit-fuer-mensch-und-anlage-der-neue-offenspannungsschutz-eoss/']]
+
+[POSTTITLE] More safety for people and systems – the new EOSS open-circuit voltage protection!
+[POSTCONTENT] The newly developed open-circuit voltage protection type EOSS 112 ZZ for current transformers with 1A secondary current by Ritz Instrument Transformers ensures greater safety.
+ During installation, commissioning, repair and maintenance work in the system or in the event of an installation fault, the EOSS protects against electric shock and damage to or destruction of systems. The open-circuit voltage protection is integrated directly in the transformer. Now available in almost all low- and medium-voltage current transformers on request.
+ Further information can be found here .
+ Ritz – Experience and Solutions | Together! IMGS= LINKS=here<https://ritz-international.com/wp-content/uploads/2018/01/TE146-93.006i01_Produktinformation.pdf>
+[BTN] Back -> https://ritz-international.com/en/?page_id=5595
+[FEATURED] https://ritz-international.com/wp-content/uploads/EOSS-768x378-1.jpg
+[PDFS] https://ritz-international.com/wp-content/uploads/2018/01/TE146-93.006i01_Produktinformation.pdf

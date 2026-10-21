@@ -1,0 +1,5 @@
+# Últimas noticias - RITZ
+URL: https://ritz-international.com/es/ultimas-noticias/  status=200 lang=es kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "description": "Manténgase al día sobre los transformadores de medida RITZ. Obtenga más información sobre nuestros últimos desarrollos, participaciones en ferias y premios en transformadores de medida y tecnología energética.", "og:locale": "es_ES", "og:type": "article", "og:title": "Últimas noticias - RITZ", "og:description": "Manténgase al día sobre los transformadores de medida RITZ. Obtenga más información sobre nuestros últimos desarrollos, participaciones en ferias y premios en transformadores de m
+canonical: https://ritz-international.com/es/ultimas-noticias/
+hreflang: [['en', 'https://ritz-international.com/en/latest-news/'], ['fr', 'https://ritz-international.com/fr/actualites/'], ['hu', 'https://ritz-international.com/hu/legfrissebb-hirek/'], ['es', 'https://ritz-international.com/es/ultimas-noticias/']]

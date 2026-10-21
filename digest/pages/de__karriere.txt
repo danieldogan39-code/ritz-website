@@ -1,0 +1,27 @@
+# Karriere - RITZ
+URL: https://ritz-international.com/karriere/  status=200 lang=de kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "description": "Entdecken Sie vielfältige Karrieremöglichkeiten bei RITZ Instrument Transformers. Werden Sie Teil unseres innovativen Teams an einem unserer globalen Standorte und gestalten Sie die Zukunft der Elektroindustrie mit.", "og:locale": "de_DE", "og:type": "article", "og:title": "Karriere - RITZ", "og:description": "Entdecken Sie vielfältige Karrieremöglichkeiten bei RITZ Instrument Transformers. Werden Sie Teil unseres innovativen Teams an einem unserer globalen Standorte und gestalten Sie die
+canonical: https://ritz-international.com/karriere/
+hreflang: [['en', 'https://ritz-international.com/en/career/'], ['fr', 'https://ritz-international.com/fr/carriere/'], ['de', 'https://ritz-international.com/karriere/'], ['hu', 'https://ritz-international.com/hu/karrier/'], ['es', 'https://ritz-international.com/es/carrera-profesional/'], ['x-default', 'https://ritz-international.com/karriere/']]
+
+[H H2] Voller Energie in die Zukunft!
+[TEXT] Strom ist spannend. Sie suchen nach einem Arbeitgeber, der Ihnen ein aufregendes Umfeld bietet? Sie wollen in einem internationalen, innovativen und inspirierenden Unternehmen arbeiten, das die Energiewende aktiv mit vorantreibt? Sie fühlen sich in der Welt der Elektrotechnik zu Hause? Dann könnte die RITZ Instrument Transformers GmbH genau die richtige Adresse für Sie sein. Wir suchen ständig qualifizierte Mitarbeitende, die unsere Teams tatkräftig unterstützen. Die Möglichkeiten sind vielfältig: Über 20 unterschiedliche Berufe können bei der Firmengruppe RITZ ausgeübt werden. 
+ Wir tun viel für unsere Mitarbeitenden. Als Arbeitnehmer genießen Sie bei RITZ  zahlreiche Vorteile, wie z.B. Home-Office-Regelung, Gleitzeit, 30 Tage Urlaub, Weiterbildungsmöglichkeiten, eine Auswahl an Benefits, flache Hierarchien, Unterstützung bei Relocation und vieles mehr. 
+ Die Zukunft ist jetzt. Die RITZ-Firmengruppe ist ein global aufgestelltes Industrieunternehmen – mit Produktionsstätten in Deutschland, Österreich, Ungarn, China und den USA. In Europa gehören wir sogar zu den führenden Herstellern von bestimmten Stromwandler-Typen, wie z.B. Niederspannungswandler. Zu unseren Kunden zählen namhafte Unternehmen der Elektroindustrie sowie der Energieversorgung in der ganzen Welt. Schreiben Sie gemeinsam mit RITZ Erfolgsgeschichte. 
+ RITZ ist ein wachsender Multispezialist der Elektroindustrie mit Standorten in Europa, China und den USA. Für namhafte Kunden aus dem Bereich der Energieversorgung verwandeln wir gemeinsam Ideen und Visionen in wegweisende Lösungen. Weltweit.
+ Seit über 70 Jahren stehen wie als serviceorientiertes Industrieunternehmen für höchste Qualität und Innovation. Mit unseren nationalen und internationalen Produktionsstätten sind wir europaweit führend im Bereich der Nieder- und Mittelspannungswandler, berührungssichere SIS-Stromschienensysteme und Grießharzeile.
+ Für höchste Qualität stehen unsere rund 1.300 Mitarbeiter mit viel Know-how und einer gemeinsamen Leidenschaft: Die Entwicklung unserer elektrischen Zukunft. Werden auch Sie ein Teil unserer Erfolgsgeschichte. Werden Sie ein Teil von RITZ.
+[H H2] Kontakt
+[H H2] Maria Schunk
+Group Director Human Resources
+[LIST] personal.hamburg@ritz-international.com <mailto:personal.hamburg@ritz-international.com>
+[IMG] https://ritz-international.com/wp-content/uploads/2022/07/network_lines_big_new.svg alt=''
+[H H2] Stellenangebote  -> /karriereportal/
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] Stellenangebote  -> /karriereportal/
+[H H2] Ausbildung  -> /karriere/ausbildung/
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] Ausbildung  -> /karriere/ausbildung/
+[H H2] PRAKTIKA/DIPLOMARBEIT  -> /karriere/praktika/
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] PRAKTIKA/ DIPLOMARBEIT  -> /karriere/praktika/

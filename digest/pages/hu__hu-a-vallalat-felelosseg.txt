@@ -1,0 +1,25 @@
+# Felelősségvállalás - RITZ
+URL: https://ritz-international.com/hu/a-vallalat/felelosseg/  status=200 lang=hu kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "hu_HU", "og:type": "article", "og:title": "Felelősségvállalás - RITZ", "og:description": "Kezdőoldal Az Innováció egyet jelent a Felelősségvállalással:Együtt, egy jobb Jövőért. ENVIRONMENT SOCIAL GOVERNANCE Társadalmi felelősségvállalás A RITZ név több, mint 80 év alatt egybeforrt az első osztályú mérőtranszformátorokkal és a villamosenergia-ipar innovatív megoldásaival. Már a vállalat alapítása óta a legmagasabb minőség szinonímája a mérőtranszformátorok gyártásában a RITZ, és szorosan öss
+canonical: https://ritz-international.com/unternehmen/verantwortung/
+hreflang: [['en', 'https://ritz-international.com/en/company/responsibility/'], ['fr', 'https://ritz-international.com/fr/entreprise/responsibility/'], ['de', 'https://ritz-international.com/unternehmen/verantwortung/'], ['hu', 'https://ritz-international.com/hu/a-vallalat/felelosseg/'], ['es', 'https://ritz-international.com/es/la-empresa/responsibility/'], ['x-default', 'https://ritz-international.com/unternehmen/verantwortung/']]
+
+[html] 
+[H H1] Az Innováció egyet jelent a Felelősségvállalással:Együtt, egy jobb Jövőért.
+[html] 
+[H H3] ENVIRONMENT
+[H H3] SOCIAL
+[H H3] GOVERNANCE
+[H H2] Társadalmi felelősségvállalás
+[TEXT] A RITZ név több, mint 80 év alatt egybeforrt az első osztályú mérőtranszformátorokkal és a villamosenergia-ipar innovatív megoldásaival. Már a vállalat alapítása óta a legmagasabb minőség szinonímája a mérőtranszformátorok gyártásában a RITZ, és szorosan összefonódik a RITZ Alapítvánnyal.
+ Európában, Kínában és az Egyesült Államokban található kilenc telephelyünkön több, mint 1500 munkatárs dolgozik. Ügyfeleinkkel együttműködve személyre szabott, egyedi megoldásokat fejlesztünk, valamint tartós termékeket tervezünk annak érdekében, hogy megerősítsük és bővítsük a villamosenergia-hálózatokat a fenntartható jövő érdekében.
+[TEXT] Vállalati filozófiánk számos fenntartható megközelítést foglal magában, mind a vállalaton belül, mind azon kívül, melyeket folyamatosan továbbfejlesztünk és bővítünk. Komolyan vesszük közösségi és a társadalom egészét érintő felelősségünket, és azt átfogó szemlélettel érvényesítjük.
+ Fenntarthatósági elkötelezettségünk részeként kiemelt figyelmet fordítunk a környezeti, társadalmi és vállalatirányítási (ESG) szempontokra. A RITZ és a RITZ Alapítvány a biztonságot, a megbízhatóságot és a nemzedékeken átívelő felelősségvállalást képviseli. Működésünk középpontjában mindig az emberek állnak.
+[H H2] Víziónk
+[TEXT] A villamos energia a jövő legfontosabb energiaformája. Ezért folyamatosan és proaktív módon fejlődünk a villamosenergia-ipar területének eredményes szakértőjeként és megoldások kidolgozójaként egyaránt.
+ A RITZ és a RITZ Alapítvány a biztonságot, a megbízhatóságot és a nemzedékeken átívelő felelősségvállalást képviseli, működésünk középpontjában pedig mindig az ember áll.
+[H H2] További információ
+[TEXT] A Letöltések menüpontban a felelősségvállalással kapcsolatos releváns témákat bemutató, átfogó dokumentumok folyamatosan bővülő gyűjteménye található.
+[H H3] LETÖLTÉSEK
+[LIST] Bejelentő rendszer <https://ritz-international.com/wp-content/uploads/HU-Hinweisgebersystem.pdf> | Beszállítói magatartási kódex <https://ritz-international.com/wp-content/uploads/Supplier-Code-of-Conduct-.pdf> | ZVEI-VDMA Code of Conduct <https://ritz-international.com/wp-content/uploads/ZVEI-VDMA-Code-of-Conduct-RITZ-HU.pdf>
+[PDFS] https://ritz-international.com/wp-content/uploads/HU-Hinweisgebersystem.pdf https://ritz-international.com/wp-content/uploads/Supplier-Code-of-Conduct-.pdf https://ritz-international.com/wp-content/uploads/ZVEI-VDMA-Code-of-Conduct-RITZ-HU.pdf

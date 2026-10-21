@@ -1,0 +1,11 @@
+# Cast resin applications in electrical engineering and more - RITZ
+URL: https://ritz-international.com/en/cast-resin-applications-in-electrical-engineering-and-more/  status=200 lang=en kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "en_US", "og:type": "article", "og:title": "Cast resin applications in electrical engineering and more - RITZ", "og:description": "Duromer_resin solutions", "og:url": "https://ritz-international.com/en/cast-resin-applications-in-electrical-engineering-and-more/", "og:site_name": "RITZ", "og:image": "https://ritz-international.com/wp-content/uploads/Giessharzanwendungen.png", "og:image:width": "808", "og:image:height": "606", "og:image:type": "image/png"}
+canonical: https://ritz-international.com/en/cast-resin-applications-in-electrical-engineering-and-more/
+hreflang: [['en', 'https://ritz-international.com/en/cast-resin-applications-in-electrical-engineering-and-more/'], ['de', 'https://ritz-international.com/giessharzanwendungen-in-der-elektrotechnik-und-mehr/'], ['x-default', 'https://ritz-international.com/giessharzanwendungen-in-der-elektrotechnik-und-mehr/']]
+
+[POSTTITLE] Cast resin applications in electrical engineering and more
+[POSTCONTENT] Duromer_resin solutions IMGS= LINKS=Duromer_resin solutions<https://ritz-international.com/wp-content/uploads/Duromer_Resin-solutions-1.pdf>
+[BTN] Back -> https://ritz-international.com/en/?page_id=5595
+[FEATURED] https://ritz-international.com/wp-content/uploads/Giessharzanwendungen.png
+[PDFS] https://ritz-international.com/wp-content/uploads/Duromer_Resin-solutions-1.pdf

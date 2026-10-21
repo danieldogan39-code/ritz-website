@@ -1,0 +1,279 @@
+# Transductores electrónicos y sensores - RITZ
+URL: https://ritz-international.com/es/productos/transductores-y-sensores-electronicos-de-medicion/  status=200 lang=es kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "es_ES", "og:type": "article", "og:title": "Transductores electrónicos y sensores - RITZ", "og:description": "Inicio Transformadores electrónicos y sensores Experiencia en soluciones innovadoras para sus tareas de medición Más de 40 años de experiencia en el uso de la electrónica en la tecnología energética Sofisticada tecnología de aislamiento combinada con una gran precisión de medición y calidad de fabricación Técnicas no convencionales para una alta fiabilidad incluso en entornos […]", "
+canonical: https://ritz-international.com/produkte/elektronische-messwandler-und-sensoren/
+hreflang: [['en', 'https://ritz-international.com/en/products/electronic-transducers-and-sensors/'], ['fr', 'https://ritz-international.com/fr/produits/transformateurs-de-mesure-electroniques-et-capteurs/'], ['de', 'https://ritz-international.com/produkte/elektronische-messwandler-und-sensoren/'], ['hu', 'https://ritz-international.com/hu/termekek/elektronikus-meroatalakitok-es-erzekelok/'], ['es', 'https://ritz-international.com/es/productos/transductores-y-sensores-electronicos-de-medicion/'], ['x-default', 'https://ritz-international.com/produkte/elektronische-messwandler-und-sensoren/']]
+
+[H H2] Transformadores electrónicos y sensores
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/introduction_image_elektronische_messwandler_und_sensoren-e1705680342912.jpg alt=''
+[TEXT] Experiencia en soluciones innovadoras para sus tareas de medición
+ Más de 40 años de experiencia en el uso de la electrónica en la tecnología energética
+ Sofisticada tecnología de aislamiento combinada con una gran precisión de medición y calidad de fabricación
+ Técnicas no convencionales para una alta fiabilidad incluso en entornos con un elevado nivel de interferencias
+ Certificación DIN/EN/ISO 9001
+[H H2] Contacto
+[H H2] Gregor Pohl
+[LIST] +49 40 51123 - 260 | gregor.pohl@ritz-international.com <mailto:gregor.pohl@ritz-international.com>
+[H H2] Descargar Documentación
+[LIST] Electrónica <https://ritz-international.com/wp-content/uploads/ELEKTRONIK.pdf> | Sensores <https://ritz-international.com/wp-content/uploads/Sensors-2.pdf>
+[template] Características, técnicas y aplicaciones
+Medición de corrientes
+Corrientes hasta 24 kA
+Frecuencias de 0 a 10 kHz
+Precisiones desde 0,1 %
+Técnicas
+Método de modulación
+Tecnología de fibra óptica y láser
+Autoalimentación
+Principio de los transformadores
+Método de compensación
+Bobinas de Rogowski
+Transformadores Krämer
+Divisor de tensión R y C
+Medición de tensiones
+Tensiones hasta 90 kV
+Frecuencias de 0 a 150 kHz
+Precisiones desde 0,1 %
+Aplicaciones
+Tecnología energética
+Tecnología ferroviaria
+Electroquímica
+Tecnología medioambiental
+Investigación
+Industria automovilística
+PRODUCTOS
+SENSORES DE CORRIENTE PARA INTERIORES
+Sensor de corriente KSOH-S 1082 Transformador de corriente pasivo de señal baja
+Catálogo de sensores
+Sensor de corriente MKSOH-S 1384 Transformador de corriente pasivo de señal baja
+Catálogo de sensores
+Sensor de corriente UGSS-S 104 tam. 1 Transformador pasivo de corriente de señal baja
+Catálogo de sensores
+Sensor actual RKU-S 2012 Transformador pasivo de corriente de pequeña señal
+Catálogo de sensores
+Sensores de tensión para interiores
+Sensor de tensión GBERA 12 | 24 | 36 Transformador de tensión pasivo de señal baja
+Catálogo de sensores
+Sensor de tensión GSER 3Transformador de tensión pasivo de señal baja
+Catálogo de sensores
+Sensor de tensión MGTK 12 | 17,5 | 24Transformador de tensión pasivo de señal baja
+Catálogo de sensores
+Sensor de tensión MGTK-V 12 | 17,5 | 24 Transformador de tensión pasivo de señal baja
+Catálogo de sensores
+Sensores de tensión para exteriores
+GSER(F) 16 Transformador de tensión pasivo de señal baja
+Catálogo de sensores
+GSER(F) 52 Transformador de tensión pasivo de señal baja
+Catálogo de sensores
+GSR 27 | 38 Transformador de tensión pasivo de señal baja
+Catálogo de sensores
+Sensores combinados para interiores
+Sensor combinado ABS 12 | 17,5 | 24 | 36 Modelo de soporte para el montaje en instalaciones de conmutación aisladas en aire
+Ficha de datos
+Transformadores de tensión electrónicos
+Transformador de tensión electrónico EGIW x64 Sistema de medición de corriente continua y alterna con transmisión de datos óptica
+Ficha de datos (inglés)
+Transformador de tensión electrónico EGIW x45Sistema de medición de CC y CA con amplificador tampón
+Ficha de datos (inglés)
+Transformador de tensión electrónico EVBA x06 Sistema de medición de CC y CA con amplificador tampón
+Ficha de datos (inglés)
+Transformadores de corriente electrónicos
+Transformador de corriente electrónico EMVI 7xx Sistema de medición de CC y CA basado en el principio de flujo cero
+Ficha de datos (inglés)
+Electrónica independiente
+Amplificador tampón EVBA 06 Complemento para los sensores de tensión existentes
+Ficha de datos (inglés)
+Accesorios para transformadores de medición
+Protección contra tensiones abiertas EOSS 122 Dispositivo de protección para transformadores de corriente
+Ficha de datos IMGS=https://ritz-international.com/wp-content/uploads/2022/10/produkte_stromsensoren_innenraum_stromsensor_ksoh-s_1082.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_stromsensoren_innenraum_stromsensor_mksoh-s_1384.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_stromsensoren_innenraum_stromsensor_ugss-s_104_gr_1.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_stromsensoren_innenraum_stromsensor_rku-s_2012.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_innenraum_spannungssensor_gbera_12_24_36.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_innenraum_spannungssensor_gser_3.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_innenraum_spannungssensor_mgtk_12_17_5_24.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_innenraum_spannungssensor_mgtk-v_12_17_5_24.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_freiluft_gserf_16.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_freiluft_gserf_52.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_freiluft_gsr_27_38.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_kombisensoren_innenraum_kombisensor_abs_12_17_5_24_36.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_elektronische_spannungwandler_elektronischer_spannungswandler_egiw_x64.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_elektronische_spannungwandler_elektronischer_spannungswandler_egiw_x85.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_elektronische_spannungwandler_elektronischer_spannungswandler_evba_x06.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_elektronische_stromwandler_elektronischer_stromwandler_emvi_7xx.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_stand-alone_elektronik_pufferverstaerker_evba_006.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_messwandlerzubehoer_offenspannungsschutz_eoss_122.jpg LINKS=Catálogo de sensores<https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf> Catálogo de sensores<https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf> Catálogo de sensores<https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf> Catálogo de sensores<https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf> Catálogo de sensores<https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf> Catálogo de sensores<https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf> Catálogo de sensores<https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf> Catálogo de sensores<https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf> Catálogo de sensores<https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf> Catálogo de sensores<https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf> Catálogo de sensores<https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf> Ficha de datos<https://ritz-international.com/wp-content/uploads/DE_T.Data-Sheet_ABS-12_17.5_24_36.pdf> Ficha de datos (inglés)<https://ritz-international.com/wp-content/uploads/2018-08_EGIW_x64_datasheet-2.pdf> Ficha de datos (inglés)<https://ritz-international.com/wp-content/uploads/EGIW_x45_Data_Sheet.pdf> Ficha de datos (inglés)<https://ritz-international.com/wp-content/uploads/2018-08_EVBA_x06_datasheet-3.pdf> Ficha de datos (inglés)<https://ritz-international.com/wp-content/uploads/2018-08_EMVI_7xx_datasheet-2.pdf> Ficha de datos (inglés)<https://ritz-international.com/wp-content/uploads/2018-08_EVBA_x06_datasheet-2.pdf> Ficha de datos<https://ritz-international.com/wp-content/uploads/201808_EOSS_122_datasheet.pdf>
+[ACC] (in 2556fde) <Características, técnicas y aplicaciones> tpl=1220 Medición de corrientes
+ Corrientes hasta 24 kA
+ Frecuencias de 0 a 10 kHz
+ Precisiones desde 0,1 %
+ Técnicas
+ Método de modulación
+ Tecnología de fibra óptica y láser
+ Autoalimentación
+ Principio de los transformadores
+ Método de compensación
+ Bobinas de Rogowski
+ Transformadores Krämer
+ Divisor de tensión R y C
+ Medición de tensiones
+ Tensiones hasta 90 kV
+ Frecuencias de 0 a 150 kHz
+ Precisiones desde 0,1 %
+ Aplicaciones
+ Tecnología energética
+ Tecnología ferroviaria
+ Electroquímica
+ Tecnología medioambiental
+ Investigación
+ Industria automovilística || <PRODUCTOS> tpl=1224 SENSORES DE CORRIENTE PARA INTERIORES
+ Sensor de corriente KSOH-S 1082 
+ Transformador de corriente pasivo de señal baja 
+ Catálogo de sensores 
+ Sensor de corriente MKSOH-S 1384 
+ Transformador de corriente pasivo de señal baja 
+ Catálogo de sensores 
+ Sensor de corriente UGSS-S 104 tam. 1 
+Transformador pasivo de corriente de señal baja
+ Catálogo de sensores 
+ Sensor actual RKU-S 2012 
+Transformador pasivo de corriente de pequeña señal 
+ Catálogo de sensores 
+ Sensores de tensión para interiores
+ Sensor de tensión GBERA 12 | 24 | 36 
+Transformador de tensión pasivo de señal baja 
+ Catálogo de sensores 
+ Sensor de tensión GSER 3
+ Transformador de tensión pasivo de señal baja 
+ Catálogo de sensores 
+ Sensor de tensión MGTK 12 | 17,5 | 24 
+Transformador de tensión pasivo de señal baja 
+ Catálogo de sensores 
+ Sensor de tensión MGTK-V 12 | 17,5 | 24 
+Transformador de tensión pasivo de señal baja 
+ Catálogo de sensores 
+ Sensores de tensión para exteriores
+ GSER(F) 16 
+Transformador de tensión pasivo de señal baja 
+ Catálogo de sensores 
+ GSER(F) 52 
+Transformador de tensión pasivo de señal baja 
+ Catálogo de sensores 
+ GSR 27 | 38 
+Transformador de tensión pasivo de señal baja 
+ Catálogo de sensores 
+ Sensores combinados para interiores 
+ Sensor combinado ABS 12 | 17,5 | 24 | 36 
+Modelo de soporte para el montaje en instalaciones de conmutación aisladas en aire 
+ Ficha de datos 
+ Transformadores de tensión electrónicos
+ Transformador de tensión electrónico EGIW x64 
+Sistema de medición de corriente continua y alterna con transmisión de datos óptica 
+ Ficha de datos (inglés) 
+ Transformador de tensión electrónico EGIW x45 
+Sistema de medición de CC y CA con amplificador tampón 
+ Ficha de datos (inglés) 
+ Transformador de tensión electrónico EVBA x06 
+Sistema de medición de CC y CA con amplificador tampón 
+ Ficha de datos (inglés) 
+ Transformadores de corriente electrónicos
+ Transformador de corriente electrónico EMVI 7xx 
+Sistema de medición de CC y CA basado en el principio de flujo cero
+ Ficha de datos (inglés) 
+ Electrónica independiente
+ Amplificador tampón EVBA 06 
+Complemento para los sensores de tensión existentes
+ Ficha de datos (inglés) 
+ Accesorios para transformadores de medición
+ Protección contra tensiones abiertas EOSS 122 
+Dispositivo de protección para transformadores de corriente 
+ Ficha de datos
+[H H2] (in 00c4c7b) Medición de corrientes
+[TEXT] (in 00c4c7b) Corrientes hasta 24 kA
+ Frecuencias de 0 a 10 kHz
+ Precisiones desde 0,1 %
+[H H2] (in 00c4c7b) Técnicas
+[TEXT] (in 00c4c7b) Método de modulación
+ Tecnología de fibra óptica y láser
+ Autoalimentación
+ Principio de los transformadores
+ Método de compensación
+ Bobinas de Rogowski
+ Transformadores Krämer
+ Divisor de tensión R y C
+[H H2] (in 00c4c7b) Medición de tensiones
+[TEXT] (in 00c4c7b) Tensiones hasta 90 kV
+ Frecuencias de 0 a 150 kHz
+ Precisiones desde 0,1 %
+[H H2] (in 00c4c7b) Aplicaciones
+[TEXT] (in 00c4c7b) Tecnología energética
+ Tecnología ferroviaria
+ Electroquímica
+ Tecnología medioambiental
+ Investigación
+ Industria automovilística
+[H H2] (in 00c4c7b) SENSORES DE CORRIENTE PARA INTERIORES
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_stromsensoren_innenraum_stromsensor_ksoh-s_1082.jpg alt=''
+[TEXT] (in 00c4c7b) Sensor de corriente KSOH-S 1082 
+ Transformador de corriente pasivo de señal baja
+[LIST] (in 00c4c7b) Catálogo de sensores <https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_stromsensoren_innenraum_stromsensor_mksoh-s_1384.jpg alt=''
+[TEXT] (in 00c4c7b) Sensor de corriente MKSOH-S 1384 
+ Transformador de corriente pasivo de señal baja
+[LIST] (in 00c4c7b) Catálogo de sensores <https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_stromsensoren_innenraum_stromsensor_ugss-s_104_gr_1.jpg alt=''
+[TEXT] (in 00c4c7b) Sensor de corriente UGSS-S 104 tam. 1 
+Transformador pasivo de corriente de señal baja
+[LIST] (in 00c4c7b) Catálogo de sensores <https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_stromsensoren_innenraum_stromsensor_rku-s_2012.jpg alt=''
+[TEXT] (in 00c4c7b) Sensor actual RKU-S 2012 
+Transformador pasivo de corriente de pequeña señal
+[LIST] (in 00c4c7b) Catálogo de sensores <https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf>
+[H H2] (in 00c4c7b) Sensores de tensión para interiores
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_innenraum_spannungssensor_gbera_12_24_36.jpg alt=''
+[TEXT] (in 00c4c7b) Sensor de tensión GBERA 12 | 24 | 36 
+Transformador de tensión pasivo de señal baja
+[LIST] (in 00c4c7b) Catálogo de sensores <https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_innenraum_spannungssensor_gser_3.jpg alt=''
+[TEXT] (in 00c4c7b) Sensor de tensión GSER 3
+ Transformador de tensión pasivo de señal baja
+[LIST] (in 00c4c7b) Catálogo de sensores <https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_innenraum_spannungssensor_mgtk_12_17_5_24.jpg alt=''
+[TEXT] (in 00c4c7b) Sensor de tensión MGTK 12 | 17,5 | 24 
+Transformador de tensión pasivo de señal baja
+[LIST] (in 00c4c7b) Catálogo de sensores <https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_innenraum_spannungssensor_mgtk-v_12_17_5_24.jpg alt=''
+[TEXT] (in 00c4c7b) Sensor de tensión MGTK-V 12 | 17,5 | 24 
+Transformador de tensión pasivo de señal baja
+[LIST] (in 00c4c7b) Catálogo de sensores <https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf>
+[H H2] (in 00c4c7b) Sensores de tensión para exteriores
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_freiluft_gserf_16.jpg alt=''
+[TEXT] (in 00c4c7b) GSER(F) 16 
+Transformador de tensión pasivo de señal baja
+[LIST] (in 00c4c7b) Catálogo de sensores <https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_freiluft_gserf_52.jpg alt=''
+[TEXT] (in 00c4c7b) GSER(F) 52 
+Transformador de tensión pasivo de señal baja
+[LIST] (in 00c4c7b) Catálogo de sensores <https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_freiluft_gsr_27_38.jpg alt=''
+[TEXT] (in 00c4c7b) GSR 27 | 38 
+Transformador de tensión pasivo de señal baja
+[LIST] (in 00c4c7b) Catálogo de sensores <https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf>
+[H H2] (in 00c4c7b) Sensores combinados para interiores
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_kombisensoren_innenraum_kombisensor_abs_12_17_5_24_36.jpg alt=''
+[TEXT] (in 00c4c7b) Sensor combinado ABS 12 | 17,5 | 24 | 36 
+Modelo de soporte para el montaje en instalaciones de conmutación aisladas en aire
+[LIST] (in 00c4c7b) Ficha de datos <https://ritz-international.com/wp-content/uploads/DE_T.Data-Sheet_ABS-12_17.5_24_36.pdf>
+[H H2] (in 00c4c7b) Transformadores de tensión electrónicos
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_elektronische_spannungwandler_elektronischer_spannungswandler_egiw_x64.jpg alt=''
+[TEXT] (in 00c4c7b) Transformador de tensión electrónico EGIW x64 
+Sistema de medición de corriente continua y alterna con transmisión de datos óptica
+[LIST] (in 00c4c7b) Ficha de datos (inglés) <https://ritz-international.com/wp-content/uploads/2018-08_EGIW_x64_datasheet-2.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_elektronische_spannungwandler_elektronischer_spannungswandler_egiw_x85.jpg alt=''
+[TEXT] (in 00c4c7b) Transformador de tensión electrónico EGIW x45 
+Sistema de medición de CC y CA con amplificador tampón
+[LIST] (in 00c4c7b) Ficha de datos (inglés) <https://ritz-international.com/wp-content/uploads/EGIW_x45_Data_Sheet.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_elektronische_spannungwandler_elektronischer_spannungswandler_evba_x06.jpg alt=''
+[TEXT] (in 00c4c7b) Transformador de tensión electrónico EVBA x06 
+Sistema de medición de CC y CA con amplificador tampón
+[LIST] (in 00c4c7b) Ficha de datos (inglés) <https://ritz-international.com/wp-content/uploads/2018-08_EVBA_x06_datasheet-3.pdf>
+[H H2] (in 00c4c7b) Transformadores de corriente electrónicos
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_elektronische_stromwandler_elektronischer_stromwandler_emvi_7xx.jpg alt=''
+[TEXT] (in 00c4c7b) Transformador de corriente electrónico EMVI 7xx 
+Sistema de medición de CC y CA basado en el principio de flujo cero
+[LIST] (in 00c4c7b) Ficha de datos (inglés) <https://ritz-international.com/wp-content/uploads/2018-08_EMVI_7xx_datasheet-2.pdf>
+[H H2] (in 00c4c7b) Electrónica independiente
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_stand-alone_elektronik_pufferverstaerker_evba_006.jpg alt=''
+[TEXT] (in 00c4c7b) Amplificador tampón EVBA 06 
+Complemento para los sensores de tensión existentes
+[LIST] (in 00c4c7b) Ficha de datos (inglés) <https://ritz-international.com/wp-content/uploads/2018-08_EVBA_x06_datasheet-2.pdf>
+[H H2] (in 00c4c7b) Accesorios para transformadores de medición
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_messwandlerzubehoer_offenspannungsschutz_eoss_122.jpg alt=''
+[TEXT] (in 00c4c7b) Protección contra tensiones abiertas EOSS 122 
+Dispositivo de protección para transformadores de corriente
+[LIST] (in 00c4c7b) Ficha de datos <https://ritz-international.com/wp-content/uploads/201808_EOSS_122_datasheet.pdf>
+[PDFS] https://ritz-international.com/wp-content/uploads/ELEKTRONIK.pdf https://ritz-international.com/wp-content/uploads/Sensors-2.pdf https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf https://ritz-international.com/wp-content/uploads/DE_T.Data-Sheet_ABS-12_17.5_24_36.pdf https://ritz-international.com/wp-content/uploads/2018-08_EGIW_x64_datasheet-2.pdf https://ritz-international.com/wp-content/uploads/EGIW_x45_Data_Sheet.pdf https://ritz-international.com/wp-content/uploads/2018-08_EVBA_x06_datasheet-3.pdf https://ritz-international.com/wp-content/uploads/2018-08_EMVI_7xx_datasheet-2.pdf https://ritz-international.com/wp-content/uploads/2018-08_EVBA_x06_datasheet-2.pdf https://ritz-international.com/wp-content/uploads/201808_EOSS_122_datasheet.pdf
+[TEMPLATES] 1220 1224

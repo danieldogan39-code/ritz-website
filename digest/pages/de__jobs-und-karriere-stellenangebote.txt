@@ -1,0 +1,188 @@
+# Karriereportal - RITZ
+URL: https://ritz-international.com/jobs-und-karriere/stellenangebote/  status=200 lang=de kind=extra
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "description": "Entdecke vielfältige Karrieremöglichkeiten im RITZ Karriereportal. Finde deinen Traumjob in der Elektroindustrie - von Ausbildung bis Führungsposition. Gestalte mit uns die Zukunft der Energietechnik.", "og:locale": "de_DE", "og:type": "article", "og:title": "Karriereportal - RITZ", "og:description": "Entdecke vielfältige Karrieremöglichkeiten im RITZ Karriereportal. Finde deinen Traumjob in der Elektroindustrie - von Ausbildung bis Führungsposition. Gestalte mit uns die Zukunft der Energ
+canonical: https://ritz-international.com/karriereportal/
+hreflang: [['en', 'https://ritz-international.com/en/career-portal/'], ['fr', 'https://ritz-international.com/fr/portail-des-carrieres/'], ['de', 'https://ritz-international.com/karriereportal/'], ['hu', 'https://ritz-international.com/hu/karrier-portal/'], ['es', 'https://ritz-international.com/es/portal-de-empleo/'], ['x-default', 'https://ritz-international.com/karriereportal/']]
+
+[IMG] https://ritz-international.com/wp-content/uploads/arrow-red-RTZ-2048x1448.png alt='' -> #first-section
+[H H2] MIT SICHERHEIT EINE GUTE ENTSCHEIDUNG
+[shortcode] Suche
+Standort
+Alle
+Hamburg
+Kirchaich
+Ottendorf-Okrilla
+Bereich
+Alle
+Auszubildende
+Fach- und Führungskräfte
+Gewerblich
+Kaufmännisch
+15 offene Stellen
+Ausbildung Fachkraft für Lagerlogistik (m/w/d)
+Ottendorf-Okrilla
+Vollzeit
+Ausbildung
+Zur Stelle
+(öffnet in neuem Tab)
+Ausbildung Mechatroniker (m/w/d)
+Ottendorf-Okrilla
+Vollzeit
+Ausbildung
+Zur Stelle
+(öffnet in neuem Tab)
+Elektroniker (m/w/d) Prüffeld
+Ottendorf-Okrilla
+Vollzeit
+Festanstellung
+Zur Stelle
+(öffnet in neuem Tab)
+Specialist Energy (m/w/d)
+Ottendorf-Okrilla
+Vollzeit
+Festanstellung
+Zur Stelle
+(öffnet in neuem Tab)
+Konstrukteur (m/w/d)
+Hamburg
+Vollzeit
+Festanstellung
+Zur Stelle
+(öffnet in neuem Tab)
+Group ERP Manager (m/w/d)
+Hamburg
+Vollzeit
+Festanstellung
+Zur Stelle
+(öffnet in neuem Tab)
+Lagerleiter / Manager Warehouse (m/w/d)
+Kirchaich
+Vollzeit
+Festanstellung
+Zur Stelle
+(öffnet in neuem Tab)
+HR Specialist (m/w/d)
+Ottendorf-Okrilla
+Vollzeit
+Festanstellung
+Zur Stelle
+(öffnet in neuem Tab)
+Leitung Prüffeld / Manager Testing (m/w/d)
+Kirchaich
+Vollzeit
+Festanstellung
+Zur Stelle
+(öffnet in neuem Tab)
+Leitung Prüffeld / Manager Testing (m/w/d)
+Ottendorf-Okrilla
+Vollzeit
+Festanstellung
+Zur Stelle
+(öffnet in neuem Tab)
+Mitarbeiter Instandhaltung (m/w/d)
+Ottendorf-Okrilla
+Vollzeit
+Festanstellung
+Zur Stelle
+(öffnet in neuem Tab)
+Specialist Engineering (m/w/d)
+Kirchaich
+Vollzeit
+Festanstellung
+Zur Stelle
+(öffnet in neuem Tab)
+Konstrukteur (m/w/d)
+Ottendorf-Okrilla
+Vollzeit
+Festanstellung
+Zur Stelle
+(öffnet in neuem Tab)
+Teamleitung Zuschnitt- und Schweißzentrum (m/w/d)
+Kirchaich
+Vollzeit
+Festanstellung
+Zur Stelle
+(öffnet in neuem Tab)
+Produktionsmitarbeiter (m/w/d)
+Ottendorf-Okrilla
+Vollzeit
+Festanstellung
+Zur Stelle
+(öffnet in neuem Tab)
+Für diese Auswahl gibt es derzeit keine offenen Stellen. LINKS=Ausbildung Fachkraft für Lagerlogistik (m/w/d)
+Ottendorf-Okrilla
+Vollzeit
+Ausbildung
+Zur Stelle
+(öff<https://ritz.jobs.personio.de/job/2835088> Ausbildung Mechatroniker (m/w/d)
+Ottendorf-Okrilla
+Vollzeit
+Ausbildung
+Zur Stelle
+(öffnet in neuem T<https://ritz.jobs.personio.de/job/2834291> Elektroniker (m/w/d) Prüffeld
+Ottendorf-Okrilla
+Vollzeit
+Festanstellung
+Zur Stelle
+(öffnet in neuem <https://ritz.jobs.personio.de/job/2800669> Specialist Energy (m/w/d)
+Ottendorf-Okrilla
+Vollzeit
+Festanstellung
+Zur Stelle
+(öffnet in neuem Tab)<https://ritz.jobs.personio.de/job/2775247> Konstrukteur (m/w/d)
+Hamburg
+Vollzeit
+Festanstellung
+Zur Stelle
+(öffnet in neuem Tab)<https://ritz.jobs.personio.de/job/2749868> Group ERP Manager (m/w/d)
+Hamburg
+Vollzeit
+Festanstellung
+Zur Stelle
+(öffnet in neuem Tab)<https://ritz.jobs.personio.de/job/2740479> Lagerleiter / Manager Warehouse (m/w/d)
+Kirchaich
+Vollzeit
+Festanstellung
+Zur Stelle
+(öffnet in neue<https://ritz.jobs.personio.de/job/2676193> HR Specialist (m/w/d)
+Ottendorf-Okrilla
+Vollzeit
+Festanstellung
+Zur Stelle
+(öffnet in neuem Tab)<https://ritz.jobs.personio.de/job/2573686> Leitung Prüffeld / Manager Testing (m/w/d)
+Kirchaich
+Vollzeit
+Festanstellung
+Zur Stelle
+(öffnet in n<https://ritz.jobs.personio.de/job/2556201> Leitung Prüffeld / Manager Testing (m/w/d)
+Ottendorf-Okrilla
+Vollzeit
+Festanstellung
+Zur Stelle
+(öff<https://ritz.jobs.personio.de/job/2527864> Mitarbeiter Instandhaltung (m/w/d)
+Ottendorf-Okrilla
+Vollzeit
+Festanstellung
+Zur Stelle
+(öffnet in n<https://ritz.jobs.personio.de/job/2469114> Specialist Engineering (m/w/d)
+Kirchaich
+Vollzeit
+Festanstellung
+Zur Stelle
+(öffnet in neuem Tab)<https://ritz.jobs.personio.de/job/2455915> Konstrukteur (m/w/d)
+Ottendorf-Okrilla
+Vollzeit
+Festanstellung
+Zur Stelle
+(öffnet in neuem Tab)<https://ritz.jobs.personio.de/job/2433976> Teamleitung Zuschnitt- und Schweißzentrum (m/w/d)
+Kirchaich
+Vollzeit
+Festanstellung
+Zur Stelle
+(öffn<https://ritz.jobs.personio.de/job/2415773> Produktionsmitarbeiter (m/w/d)
+Ottendorf-Okrilla
+Vollzeit
+Festanstellung
+Zur Stelle
+(öffnet in neuem<https://ritz.jobs.personio.de/job/2028868>
+[SECTIONS-BG] [{"id": "7879c1a", "settings": "{\"jet_parallax_layout_list\":[],\"background_background\":\"slideshow\",\"background_slideshow_gallery\":[{\"id\":1405,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/2022\\/11\\/intro_home_slider_1.webp\"},{\"id\":2787,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/stellenangebote_intro_slider_2_Produktion.webp\"},{\"id\":2790,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/stellenangebote_intro_slider_5_Logistik.webp\"},{\"id\":2789,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/stellenangebote_intro_slider_4_International.webp\"},{\"id\":1406,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/2022\\/11\\/intro_home_slider_2.webp\"}],\"background_slideshow_ken_burns\":\"yes\",\"background_slideshow_loop\":\"yes\",\"background_slideshow_slide_duration\":5000,\"background_slideshow_slide_transition\":\"fade\",\"background_slideshow_transition_duration\":500,\"background_slideshow_ken_burns_zoom_direction\":\"in\"}"}]

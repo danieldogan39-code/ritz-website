@@ -1,0 +1,11 @@
+# Einsatzgebiet Archive - RITZ
+URL: https://ritz-international.com/category/einsatzgebiet/  status=200 lang=de kind=extra
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "Einsatzgebiet Archive - RITZ", "og:url": "https://ritz-international.com/category/einsatzgebiet/", "og:site_name": "RITZ"}
+canonical: https://ritz-international.com/category/einsatzgebiet/
+hreflang: [['en', 'https://ritz-international.com/en/category/field-of-application/'], ['de', 'https://ritz-international.com/category/einsatzgebiet/'], ['x-default', 'https://ritz-international.com/category/einsatzgebiet/']]
+
+[MAINHTML] Kategorie: Einsatzgebiet 
+ Übersicht HVDC und Anwendungen 
+ Wir bieten verschiedene Lösungen zu HVDC Anwendungen. Produktwissen_kompakt_HVDC
+ Kombiwandler Platzersparnis 
+ Metallgekapselte Kombiwandler im Fokus Kostenersparnis von ca. 12.000€ bei Einsatz von Kombiwandlern gegenüber Messfeld mit Kabeleingangsfeld. Kostenersparnis von ca. 12.000€ bei Einsatz von Kombiwandlern gegenüber Messfeld mit Kabeleingangsfeld Beispiel: Kosten für 3 Stück 20kV-Kombiwandler = ca. 10.000€ Kosten für luftisoliertes 20kV-Schaltanlage mit Kabeleingangsfeld und Messfeld = 22.000€ Platzsparend durch Nutzung des Kabelkellers und damit keine […]

@@ -1,0 +1,7 @@
+# Niederspannung - RITZ
+URL: https://ritz-international.com/produktfinder/niederspannung/  status=200 lang=de kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "Niederspannung - RITZ", "og:description": "Home Niederspannung", "og:url": "https://ritz-international.com/produktfinder/niederspannung/", "og:site_name": "RITZ"}
+canonical: https://ritz-international.com/produktfinder/niederspannung/
+hreflang: [['de', 'https://ritz-international.com/produktfinder/niederspannung/'], ['x-default', 'https://ritz-international.com/produktfinder/niederspannung/']]
+
+[H H2] Niederspannung

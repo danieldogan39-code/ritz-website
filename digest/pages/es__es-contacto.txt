@@ -1,0 +1,12 @@
+# Contacto - RITZ
+URL: https://ritz-international.com/es/contacto/  status=200 lang=es kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "es_ES", "og:type": "article", "og:title": "Contacto - RITZ", "og:description": "Inicio Estamos a su disposición. Muchos caminos llevan a RITZ. ¿Tiene alguna pregunta, petición o sugerencia? ¿Necesita asistencia técnica? Nuestro personal experto estará encantando de asesorarle personalmente en cualquier momento y de compartir sus conocimientos especializados con usted. Contáctenos. A continuación tiene una lista con los datos de contacto más importantes.", "og:url": "https://ritz-internation
+canonical: https://ritz-international.com/es/contacto/
+hreflang: [['en', 'https://ritz-international.com/en/contact-us/'], ['fr', 'https://ritz-international.com/fr/contact/'], ['de', 'https://ritz-international.com/kontakt/'], ['hu', 'https://ritz-international.com/hu/kapcsolatfelvetel/'], ['es', 'https://ritz-international.com/es/contacto/'], ['x-default', 'https://ritz-international.com/kontakt/']]
+
+[H H2] Estamos a su disposición.
+[TEXT] Muchos caminos llevan a RITZ. ¿Tiene alguna pregunta, petición o sugerencia? ¿Necesita asistencia técnica? Nuestro personal experto estará encantando de asesorarle personalmente en cualquier momento y de compartir sus conocimientos especializados con usted. Contáctenos. A continuación tiene una lista con los datos de contacto más importantes.
+[IMG] https://ritz-international.com/wp-content/uploads/Kontakt_intro_bild.webp alt=''
+[template] Centros de producciónSedesÁreas de productosAgencias
+[TABS] (in f45ef3c) Centros de producción#2279 | Sedes#1368 | Áreas de productos#1609 | Agencias#1621 contents: 
+[TEMPLATES] 2279 1368 1609 1621

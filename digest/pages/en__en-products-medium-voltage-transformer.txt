@@ -1,0 +1,287 @@
+# Medium voltage transformers - RITZ
+URL: https://ritz-international.com/en/products/medium-voltage-transformer/  status=200 lang=en kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "en_US", "og:type": "article", "og:title": "Medium voltage transformers - RITZ", "og:description": "Home Medium voltage transformers Instrument transformers are transformers that transform currents and voltages proportionally and in phase into measurable and standardised currents and voltages. These can supply measuring instruments, meters and/or protective relays. In addition, the connected measuring and protective devices are electrically insulated from the live parts of the system. Contac
+canonical: https://ritz-international.com/produkte/mittelspannungswandler/
+hreflang: [['en', 'https://ritz-international.com/en/products/medium-voltage-transformer/'], ['fr', 'https://ritz-international.com/fr/produits/transformateurs-moyenne-tension/'], ['de', 'https://ritz-international.com/produkte/mittelspannungswandler/'], ['hu', 'https://ritz-international.com/hu/termekek/koezepfeszueltsegu-transzformator/'], ['es', 'https://ritz-international.com/es/productos/transformador-de-media-tension/'], ['x-default', 'https://ritz-international.com/produkte/mittelspannungswandler/']]
+
+[H H2] Medium voltage
+transformers
+[IMG] https://ritz-international.com/wp-content/uploads/2022/07/produkte_mittelspannungswandler_image_1.jpg alt=''
+[TEXT] Instrument transformers are transformers that transform currents and voltages proportionally and in phase into measurable and standardised currents and voltages. 
+ These can supply measuring instruments, meters and/or protective relays. In addition, the connected measuring and protective devices are electrically insulated from the live parts of the system.
+[H H2] Contact us
+[H H2] Kay Leschick
+[LIST] +49 35205 62 - 219 <tel:+493520562219> | kay.leschick@ritz-international.com <mailto:kay.leschick@ritz-international.com>
+[H H2] Download catalogs
+[LIST] Medium-voltage transformer <https://ritz-international.com/wp-content/uploads/RITZ-medium_voltage_instrument_transformers_standard_EN-1-1.pdf> | Metal-encapsulated measuring transducers <https://ritz-international.com/wp-content/uploads/RITZ-Metal_Clad_Instrument_Transformers_ENG_2013-02-1.pdf> | PQ analysis <https://ritz-international.com/wp-content/uploads/PQ_Analysis_EN-1.pdf>
+[H H2] REFERENCES
+[LIST] Use of RITZ broadband converters - July 2017 <https://ritz-international.com/wp-content/uploads/2302-AM-Offenbach-v6.pdf>
+[template] INDOOR APPLICATIONS
+Current transformers for indoor applications up to 72.5 kV
+CURRENT TRANSFORMERS
+ASS 12 | 17.5 | 24 | 36 Support current transformer Block version; narrow design, DIN 42600, Part 8; available as size 1, 2, 3
+Data sheet
+GSW 12/0 3.6 | 7.2 | 12 Support current transformer Block version, small design, DIN 42600, Part 4
+Data sheet
+ASN 12 | 17.5 | 24 | 36 Support current transformerBlock version, large design, DIN 42600, part 5
+Data sheet
+GI 52 | 72.5 Support current transformer DIN 42600, Part 1
+Data sheet
+VOLTAGE TRANSFORMERS
+VES 12|17.5|24 Voltage transformer Single-pole, narrow design DIN 42600, Part 9
+Data sheet
+GSE 12/0 3.6|7.2|12 Voltage transformer Single-pole, small design, DIN 42600, Part 7
+Data sheet
+VEN 12|17.5|24|36|52|72.5 Voltage transformer Single-pole, large design/support design, DIN 42600, Part 3
+Data sheet
+VZS 12|17.5|24 Voltage transformer Two-pole, narrow design, DIN 42600, Part 9
+Data sheet
+GSZ 12/0 3.6|7.2|12 Voltage transformer Two-pole, small design, DIN 42600, Part 7
+Data sheet
+VZN 12|17.5|24|36 Voltage transformer Two-pole, large design, DIN 42600, Part 3
+Data sheet
+OUTDOOR APPLICATIONS
+CURRENT TRANSFORMERS
+GIFK 12 | 17.5 | 24 | 36 Support current transformerCompact design
+Data sheet
+GIFS 12 | 17.5 | 24 | 36 Support current transformerStandard design
+Data sheet
+GIF 10 | 17.5 | 20 | 30 | 36 | 52 | 72.5 Head design, available with GOST
+Data sheet
+VOLTAGE TRANSFORMERS
+VEF 12 | 17.5 | 24 | 36 Voltage transformerSingle-pole, narrow design, DIN 42600, Part 9
+Data sheet
+VEF 52 | 72.5 Voltage transformerSingle-pole, small design, DIN 42600, Part 7
+Data sheet
+VZF 12 | 17,5 | 24 | 36 Voltage transformerTwo-pole, large design/support design, DIN 42600, Part 3
+Data sheet
+CONTACT PROTECTED TRANSFORMERS
+CURRENT TRANSFORMERS
+GBWMetal-clad current transformers, 12 – 36 kV
+Data sheet
+VOLTAGE TRANSFORMERS
+GBEIN, GBEANMetal-clad voltage transformers, 12 – 52 kV
+Data sheet
+COMBINED TRANSFORMERS
+KGBEI/KGBEAMetal-clad combined transformers, 12-36 kV
+Data sheet
+SPECIAL TRANSFORMERS
+Railway transformers
+GSEFBThe GSEFB outdoor voltage transformer is designed for use as a high voltage transformer on electric railway vehicles. The insulation is made from outdoor air-resistant cycloaliphatic epoxy resin, with outstanding mechanical and electrical properties. The GSEFBC is additionally enclosed in an insulating silicone compound and the top is fitted with a pressure-relief cover to protect against damage or the unlikely event of a rupture. All parts exposed to the open air are made from corrosion-resistant materials and the devices are maintenance-free.
+The railway transformers are used for insulation voltages up to 40.5 kV, comply with European and international standards, and are manufactured in an IRIS-certified plant.
+The transformers are compliant to EN 50463, meet the requirements of the current LOC&PAS TSI and are thus suitable for on-board energy measurement. For this purpose, many transformers are already eligible for the is IMGS=https://ritz-international.com/wp-content/uploads/2022/07/produkte_stromwandler_ASS_12_1_7_5_24_36_stuetzerstromwandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/produkte_stromwandler_GSW_12_0_3_6_7_2_12_Stuetzerstromwandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_stromwandler_asn_12_17_5_24_36_stuetzerstromwandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_stromwandler_gi_52_72_5_stuetzerstromwandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_spannungswandler_ves_12_17_5_24_spannungswandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_spannungswandler_gse_12_0_3_6_7_2_12_spannungswandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_spannungswandler_ven_12_17_5_24_36_52_72_5_spannungswandler.jpg https://ritz-international.com/wp-content/uploads/VZS-12_175_24-Spannungswandler-Zweipolig.jpg https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_spannungswandler_gsz_12_0_3_6_7_2_12_spannungswandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_spannungswandler_vzn_12_17_5_24_36_spannungswandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_stromwandler_gifk_12_17_5_24_36_stuetzerstromwandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_stromwandler_GIFS-12-17-5-24-36-Stützerstromwandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_stromwandler_gif_10_17_5_20_30_36_52_72_5.jpg https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_spannungswandler_ves_12_17_5_24_spannungswandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_spannungswandler_gse_12_0_3_6_7_2_12_spannungswandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_spannungswandler_ven_12_17_5_24_36_52_72_5_spannungswandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/beruehrungssichere_wandler_stromwandler_gbw.jpg https://ritz-international.com/wp-content/uploads/2022/07/beruehrungssichere_wandler_spannungswandler_gbein_gbean.jpg https://ritz-international.com/wp-content/uploads/2022/07/beruehrungssichere_wandler_kombiwandler_kgbei_kgbea.jpg https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_bahnwandler_gsefb.jpg https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_durchfuehrungsstabstromwandler_gds_127c_7_5_24_36_durchfuehrungsstromwandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_stuetzerstromwandler_gsso_12_17_5_24_hochstromwandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_metallgekapselte_kombiwandler_12-36_kv_kgbea_36_kgbei_36_ausgefuehrt_als_breitbandwandler.jpg https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_stuetzerstromwandler_gsws24_mit_optional_erweitertem_frequenzbereich.jpg https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_induktiver_einpoliger_spannungswandler_gses24d_mit_optional_erweitertem_frequenzbereich.jpg LINKS=Data sheet<https://ritz-international.com/wp-content/uploads/TDB20260015_REV01.pdf> Data sheet<https://ritz-international.com/wp-content/uploads/En_GSW.pdf> Data sheet<https://ritz-international.com/wp-content/uploads/En_ASN.pdf> Data sheet<https://ritz-international.com/wp-content/uploads/En_GI.pdf> Data sheet<https://ritz-international.com/wp-content/uploads/En_VES.pdf> Data sheet<https://ritz-international.com/wp-content/uploads/En_GSE.pdf> Data sheet<https://ritz-international.com/wp-content/uploads/En_VEN.pdf> Data sheet<https://ritz-international.com/wp-content/uploads/En_VZS.pdf> Data sheet<https://ritz-international.com/wp-content/uploads/En_GSZ.pdf> Data sheet<https://ritz-international.com/wp-content/uploads/En_VZN.pdf> Data sheet<https://ritz-international.com/wp-content/uploads/En_GIFK.pdf> Data sheet<https://ritz-international.com/wp-content/uploads/En_GIFS.pdf> Data sheet<https://ritz-international.com/wp-content/uploads/EN_GIF.pdf> Data sheet<https://ritz-international.com/wp-content/uploads/En_VEF_36_.pdf> Data sheet<https://ritz-international.com/wp-content/uploads/En_VEF_72.5.pdf> Data sheet<https://ritz-international.com/wp-content/uploads/En_VZF.pdf> Data sheet<https://ritz-international.com/wp-content/uploads/En_RITZ-Metal_Clad_Instrument_Transformers_ENG_2013-02-2.pdf> Data sheet<https://ritz-international.com/wp-content/uploads/En_RITZ-Metal_Clad_Instrument_Transformers_ENG_2013-02-3.pdf> Data sheet<https://ritz-international.com/wp-content/uploads/En_RITZ-Metal_Clad_Instrument_Transformers_ENG_2013-02-1.pdf> Data sheet<https://ritz-international.com/wp-content/uploads/En_GDS.pdf> Data sheet<https://ritz-international.com/wp-content/uploads/En_GSSO.pdf> Data sheet<https://ritz-international.com/wp-content/uploads/Datenblatt_KGBEA36_Breitband_Index_05_de-DE_en-GB.pdf> Data sheet<https://ritz-international.com/wp-content/uploads/Datenblatt_GSWS24_Breitband_Index_01_de-DE_en-GB.pdf> Data sheet<https://ritz-international.com/wp-content/uploads/Datenblatt_GSES24D_Breitband_Index_01_de-DE_en-GB.pdf>
+[ACC] (in 4eb3cf4) <INDOOR APPLICATIONS> tpl=370 Current transformers for indoor applications up to 72.5 kV
+ CURRENT TRANSFORMERS
+ ASS 12 | 17.5 | 24 | 36 Support current transformer 
+ Block version; narrow design, DIN 42600, Part 8; 
+available as size 1, 2, 3
+ Data sheet 
+ GSW 12/0 3.6 | 7.2 | 12 Support current transformer 
+ Block version, small design, DIN 42600, Part 4 
+ Data sheet 
+ ASN 12 | 17.5 | 24 | 36 Support current transformer 
+Block version, large design, DIN 42600, part 5
+ Data sheet 
+ GI 52 | 72.5 Support current transformer 
+ DIN 42600, Part 1 
+ Data sheet 
+ VOLTAGE TRANSFORMERS
+ VES 12|17.5|24 Voltage transformer 
+ Single-pole, narrow design DIN 42600, Part 9 
+ Data sheet 
+ GSE 12/0 3.6|7.2|12 Voltage transformer 
+ Single-pole, small design, DIN 42600, Part 7 
+ Data sheet 
+ VEN 12|17.5|24|36|52|72.5 Voltage transformer 
+ Single-pole, large design/support design, DIN 42600, Part 3 
+ Data sheet 
+ VZS 12|17.5|24 Voltage transformer 
+ Two-pole, narrow design, DIN 42600, Part 9 
+ Data sheet 
+ GSZ 12/0 3.6|7.2|12 Voltage transformer 
+ Two-pole, small design, DIN 42600, Part 7 
+ Data sheet 
+ VZN 12|17.5|24|36 Voltage transformer 
+ Two-pole, large design, DIN 42600, Part 3 
+ Data sheet || <OUTDOOR APPLICATIONS> tpl=1013 CURRENT TRANSFORMERS
+ GIFK 12 | 17.5 | 24 | 36 Support current transformer
+ Compact design
+ Data sheet 
+ GIFS 12 | 17.5 | 24 | 36 Support current transformer
+ Standard design
+ Data sheet 
+ GIF 10 | 17.5 | 20 | 30 | 36 | 52 | 72.5 
+ Head design, available with GOST 
+ Data sheet 
+ VOLTAGE TRANSFORMERS
+ VEF 12 | 17.5 | 24 | 36 Voltage transformer
+ Single-pole, narrow design, DIN 42600, Part 9
+ Data sheet 
+ VEF 52 | 72.5 Voltage transformer
+ Single-pole, small design, DIN 42600, Part 7
+ Data sheet 
+ VZF 12 | 17,5 | 24 | 36 Voltage transformer
+ Two-pole, large design/support design, DIN 42600, Part 3
+ Data sheet || <CONTACT PROTECTED TRANSFORMERS> tpl=1017 CURRENT TRANSFORMERS
+ GBW
+ Metal-clad current transformers, 12 – 36 kV 
+ Data sheet 
+ VOLTAGE TRANSFORMERS
+ GBEIN, GBEAN
+ Metal-clad voltage transformers, 12 – 52 kV
+ Data sheet 
+ COMBINED TRANSFORMERS
+ KGBEI/KGBEA
+ Metal-clad combined transformers, 12-36 kV
+ Data sheet || <SPECIAL TRANSFORMERS> tpl=1020 Railway transformers
+ GSEFB
+ The GSEFB outdoor voltage transformer is designed for use as a high voltage transformer on electric railway vehicles. The insulation is made from outdoor air-resistant cycloaliphatic epoxy resin, with outstanding mechanical and electrical properties. The GSEFBC is additionally enclosed in an insulating silicone compound and the top is fitted with a pressure-relief cover to protect against damage or the unlikely event of a rupture. All parts exposed to the open air are made from corrosion-resistant materials and the devices are maintenance-free.
+ The railway transformers are used for insulation voltages up to 40.5 kV, comply with European and international standards, and are manufactured in an IRIS-certified plant.
+ The transformers are compliant to EN 50463, meet the requirements of the current LOC&PAS TSI and are thus suitable for on-board energy measurement. For this purpose, many transformers are already eligible for the issue of a preliminary intermediate statement of verification for EC-certification. 
+ GSO(F)B 
+ The GSO(F)B is a single-phase slip-over current transformer, Um = 0.8 kV, with cast resin insulation for use as a high current or reverse current transformer in or on electric railway vehicles.
+ The primary conductor is an insulated cable or bus bar provided and routed through the transformer by the customer. Its outdoor air-resistant cycloaliphatic epoxy resin insulation means it meets all requirements for use on the vehicle roof. The transformers comply with European and international standards and are manufactured in an IRIS-certified plant.
+ The transformers are compliant to EN 50463, meet the requirements of the current LOC&PAS TSI and are thus suitable for on-board energy measurement. For this purpose, many transformers are already eligible for the issue of a preliminary intermediate statement of verification for EC-certification.
+ All railway current and voltage transformers are also available as required in other designs.
+ Bushing bar-type current transformer
+ GDS 12|17.5|24|36 Bushing type current transformer 
+ with fixed conductor 
+ Data sheet 
+ Support current transformers
+ GSSO 12 | 17.5 | 24 High current transformer 
+ High current transformer
+ Data sheet || <TRANSFORMERS ESPECIALLY FOR POWER QUALITY> tpl=1023 Metal-clad combined transformers, 12-36 kV
+ KGBEA 36 / KGBEI 36 designed as wideband transformer 
+ Metal-clad combined transformer 
+ Data sheet 
+ Support current transformers
+ GSWS 24 with optional extended frequency range 
+ Support current transformer
+ Data sheet 
+ Inductive, single-pole voltage transformer
+ GSES 24D with optional extended frequency range 
+ Inductive, single-pole voltage transformer
+ Data sheet
+[TEXT] (in e931b90) Current transformers for indoor applications up to 72.5 kV
+[H H2] (in e931b90) CURRENT TRANSFORMERS
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/produkte_stromwandler_ASS_12_1_7_5_24_36_stuetzerstromwandler.jpg alt=''
+[TEXT] (in e931b90) ASS 12 | 17.5 | 24 | 36 Support current transformer 
+ Block version; narrow design, DIN 42600, Part 8; 
+available as size 1, 2, 3
+[LIST] (in e931b90) Data sheet <https://ritz-international.com/wp-content/uploads/TDB20260015_REV01.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/produkte_stromwandler_GSW_12_0_3_6_7_2_12_Stuetzerstromwandler.jpg alt=''
+[TEXT] (in e931b90) GSW 12/0 3.6 | 7.2 | 12 Support current transformer 
+ Block version, small design, DIN 42600, Part 4
+[LIST] (in e931b90) Data sheet <https://ritz-international.com/wp-content/uploads/En_GSW.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_stromwandler_asn_12_17_5_24_36_stuetzerstromwandler.jpg alt=''
+[TEXT] (in e931b90) ASN 12 | 17.5 | 24 | 36 Support current transformer 
+Block version, large design, DIN 42600, part 5
+[LIST] (in e931b90) Data sheet <https://ritz-international.com/wp-content/uploads/En_ASN.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_stromwandler_gi_52_72_5_stuetzerstromwandler.jpg alt=''
+[TEXT] (in e931b90) GI 52 | 72.5 Support current transformer 
+ DIN 42600, Part 1
+[LIST] (in e931b90) Data sheet <https://ritz-international.com/wp-content/uploads/En_GI.pdf>
+[H H2] (in e931b90) VOLTAGE TRANSFORMERS
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_spannungswandler_ves_12_17_5_24_spannungswandler.jpg alt=''
+[TEXT] (in e931b90) VES 12|17.5|24 Voltage transformer 
+ Single-pole, narrow design DIN 42600, Part 9
+[LIST] (in e931b90) Data sheet <https://ritz-international.com/wp-content/uploads/En_VES.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_spannungswandler_gse_12_0_3_6_7_2_12_spannungswandler.jpg alt=''
+[TEXT] (in e931b90) GSE 12/0 3.6|7.2|12 Voltage transformer 
+ Single-pole, small design, DIN 42600, Part 7
+[LIST] (in e931b90) Data sheet <https://ritz-international.com/wp-content/uploads/En_GSE.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_spannungswandler_ven_12_17_5_24_36_52_72_5_spannungswandler.jpg alt=''
+[TEXT] (in e931b90) VEN 12|17.5|24|36|52|72.5 Voltage transformer 
+ Single-pole, large design/support design, DIN 42600, Part 3
+[LIST] (in e931b90) Data sheet <https://ritz-international.com/wp-content/uploads/En_VEN.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/VZS-12_175_24-Spannungswandler-Zweipolig.jpg alt=''
+[TEXT] (in e931b90) VZS 12|17.5|24 Voltage transformer 
+ Two-pole, narrow design, DIN 42600, Part 9
+[LIST] (in e931b90) Data sheet <https://ritz-international.com/wp-content/uploads/En_VZS.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_spannungswandler_gsz_12_0_3_6_7_2_12_spannungswandler.jpg alt=''
+[TEXT] (in e931b90) GSZ 12/0 3.6|7.2|12 Voltage transformer 
+ Two-pole, small design, DIN 42600, Part 7
+[LIST] (in e931b90) Data sheet <https://ritz-international.com/wp-content/uploads/En_GSZ.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/innenraumanwendung_spannungswandler_vzn_12_17_5_24_36_spannungswandler.jpg alt=''
+[TEXT] (in e931b90) VZN 12|17.5|24|36 Voltage transformer 
+ Two-pole, large design, DIN 42600, Part 3
+[LIST] (in e931b90) Data sheet <https://ritz-international.com/wp-content/uploads/En_VZN.pdf>
+[H H2] (in e931b90) CURRENT TRANSFORMERS
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_stromwandler_gifk_12_17_5_24_36_stuetzerstromwandler.jpg alt=''
+[TEXT] (in e931b90) GIFK 12 | 17.5 | 24 | 36 Support current transformer
+ Compact design
+[LIST] (in e931b90) Data sheet <https://ritz-international.com/wp-content/uploads/En_GIFK.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_stromwandler_GIFS-12-17-5-24-36-Stützerstromwandler.jpg alt=''
+[TEXT] (in e931b90) GIFS 12 | 17.5 | 24 | 36 Support current transformer
+ Standard design
+[LIST] (in e931b90) Data sheet <https://ritz-international.com/wp-content/uploads/En_GIFS.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_stromwandler_gif_10_17_5_20_30_36_52_72_5.jpg alt=''
+[TEXT] (in e931b90) GIF 10 | 17.5 | 20 | 30 | 36 | 52 | 72.5 
+ Head design, available with GOST
+[LIST] (in e931b90) Data sheet <https://ritz-international.com/wp-content/uploads/EN_GIF.pdf>
+[H H2] (in e931b90) VOLTAGE TRANSFORMERS
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_spannungswandler_ves_12_17_5_24_spannungswandler.jpg alt=''
+[TEXT] (in e931b90) VEF 12 | 17.5 | 24 | 36 Voltage transformer
+ Single-pole, narrow design, DIN 42600, Part 9
+[LIST] (in e931b90) Data sheet <https://ritz-international.com/wp-content/uploads/En_VEF_36_.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_spannungswandler_gse_12_0_3_6_7_2_12_spannungswandler.jpg alt=''
+[TEXT] (in e931b90) VEF 52 | 72.5 Voltage transformer
+ Single-pole, small design, DIN 42600, Part 7
+[LIST] (in e931b90) Data sheet <https://ritz-international.com/wp-content/uploads/En_VEF_72.5.pdf>
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/freiluftanwendung_spannungswandler_ven_12_17_5_24_36_52_72_5_spannungswandler.jpg alt=''
+[TEXT] (in e931b90) VZF 12 | 17,5 | 24 | 36 Voltage transformer
+ Two-pole, large design/support design, DIN 42600, Part 3
+[LIST] (in e931b90) Data sheet <https://ritz-international.com/wp-content/uploads/En_VZF.pdf>
+[H H2] (in e931b90) CURRENT TRANSFORMERS
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/beruehrungssichere_wandler_stromwandler_gbw.jpg alt=''
+[TEXT] (in e931b90) GBW
+ Metal-clad current transformers, 12 – 36 kV
+[LIST] (in e931b90) Data sheet <https://ritz-international.com/wp-content/uploads/En_RITZ-Metal_Clad_Instrument_Transformers_ENG_2013-02-2.pdf>
+[H H2] (in e931b90) VOLTAGE TRANSFORMERS
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/beruehrungssichere_wandler_spannungswandler_gbein_gbean.jpg alt=''
+[TEXT] (in e931b90) GBEIN, GBEAN
+ Metal-clad voltage transformers, 12 – 52 kV
+[LIST] (in e931b90) Data sheet <https://ritz-international.com/wp-content/uploads/En_RITZ-Metal_Clad_Instrument_Transformers_ENG_2013-02-3.pdf>
+[H H2] (in e931b90) COMBINED TRANSFORMERS
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/beruehrungssichere_wandler_kombiwandler_kgbei_kgbea.jpg alt=''
+[TEXT] (in e931b90) KGBEI/KGBEA
+ Metal-clad combined transformers, 12-36 kV
+[LIST] (in e931b90) Data sheet <https://ritz-international.com/wp-content/uploads/En_RITZ-Metal_Clad_Instrument_Transformers_ENG_2013-02-1.pdf>
+[H H2] (in e931b90) Railway transformers
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_bahnwandler_gsefb.jpg alt=''
+[TEXT] (in e931b90) GSEFB
+ The GSEFB outdoor voltage transformer is designed for use as a high voltage transformer on electric railway vehicles. The insulation is made from outdoor air-resistant cycloaliphatic epoxy resin, with outstanding mechanical and electrical properties. The GSEFBC is additionally enclosed in an insulating silicone compound and the top is fitted with a pressure-relief cover to protect against damage or the unlikely event of a rupture. All parts exposed to the open air are made from corrosion-resistant materials and the devices are maintenance-free.
+ The railway transformers are used for insulation voltages up to 40.5 kV, comply with European and international standards, and are manufactured in an IRIS-certified plant.
+ The transformers are compliant to EN 50463, meet the requirements of the current LOC&PAS TSI and are thus suitable for on-board energy measurement. For this purpose, many transformers are already eligible for the issue of a preliminary intermediate statement of verification for EC-certification.
+[TEXT] (in e931b90) GSO(F)B 
+ The GSO(F)B is a single-phase slip-over current transformer, Um = 0.8 kV, with cast resin insulation for use as a high current or reverse current transformer in or on electric railway vehicles.
+ The primary conductor is an insulated cable or bus bar provided and routed through the transformer by the customer. Its outdoor air-resistant cycloaliphatic epoxy resin insulation means it meets all requirements for use on the vehicle roof. The transformers comply with European and international standards and are manufactured in an IRIS-certified plant.
+ The transformers are compliant to EN 50463, meet the requirements of the current LOC&PAS TSI and are thus suitable for on-board energy measurement. For this purpose, many transformers are already eligible for the issue of a preliminary intermediate statement of verification for EC-certification.
+ All railway current and voltage transformers are also available as required in other designs.
+[H H2] (in e931b90) Bushing bar-type current transformer
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_durchfuehrungsstabstromwandler_gds_127c_7_5_24_36_durchfuehrungsstromwandler.jpg alt=''
+[TEXT] (in e931b90) GDS 12|17.5|24|36 Bushing type current transformer 
+ with fixed conductor
+[LIST] (in e931b90) Data sheet <https://ritz-international.com/wp-content/uploads/En_GDS.pdf>
+[H H2] (in e931b90) Support current transformers
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_stuetzerstromwandler_gsso_12_17_5_24_hochstromwandler.jpg alt=''
+[TEXT] (in e931b90) GSSO 12 | 17.5 | 24 High current transformer 
+ High current transformer
+[LIST] (in e931b90) Data sheet <https://ritz-international.com/wp-content/uploads/En_GSSO.pdf>
+[H H2] (in e931b90) Metal-clad combined transformers, 12-36 kV
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_metallgekapselte_kombiwandler_12-36_kv_kgbea_36_kgbei_36_ausgefuehrt_als_breitbandwandler.jpg alt=''
+[TEXT] (in e931b90) KGBEA 36 / KGBEI 36 designed as wideband transformer 
+ Metal-clad combined transformer
+[LIST] (in e931b90) Data sheet <https://ritz-international.com/wp-content/uploads/Datenblatt_KGBEA36_Breitband_Index_05_de-DE_en-GB.pdf>
+[H H2] (in e931b90) Support current transformers
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_stuetzerstromwandler_gsws24_mit_optional_erweitertem_frequenzbereich.jpg alt=''
+[TEXT] (in e931b90) GSWS 24 with optional extended frequency range 
+ Support current transformer
+[LIST] (in e931b90) Data sheet <https://ritz-international.com/wp-content/uploads/Datenblatt_GSWS24_Breitband_Index_01_de-DE_en-GB.pdf>
+[H H2] (in e931b90) Inductive, single-pole voltage transformer
+[IMG] (in e931b90) https://ritz-international.com/wp-content/uploads/2022/07/sonderwandler_induktiver_einpoliger_spannungswandler_gses24d_mit_optional_erweitertem_frequenzbereich.jpg alt=''
+[TEXT] (in e931b90) GSES 24D with optional extended frequency range 
+ Inductive, single-pole voltage transformer
+[LIST] (in e931b90) Data sheet <https://ritz-international.com/wp-content/uploads/Datenblatt_GSES24D_Breitband_Index_01_de-DE_en-GB.pdf>
+[PDFS] https://ritz-international.com/wp-content/uploads/RITZ-medium_voltage_instrument_transformers_standard_EN-1-1.pdf https://ritz-international.com/wp-content/uploads/RITZ-Metal_Clad_Instrument_Transformers_ENG_2013-02-1.pdf https://ritz-international.com/wp-content/uploads/PQ_Analysis_EN-1.pdf https://ritz-international.com/wp-content/uploads/2302-AM-Offenbach-v6.pdf https://ritz-international.com/wp-content/uploads/TDB20260015_REV01.pdf https://ritz-international.com/wp-content/uploads/En_GSW.pdf https://ritz-international.com/wp-content/uploads/En_ASN.pdf https://ritz-international.com/wp-content/uploads/En_GI.pdf https://ritz-international.com/wp-content/uploads/En_VES.pdf https://ritz-international.com/wp-content/uploads/En_GSE.pdf https://ritz-international.com/wp-content/uploads/En_VEN.pdf https://ritz-international.com/wp-content/uploads/En_VZS.pdf https://ritz-international.com/wp-content/uploads/En_GSZ.pdf https://ritz-international.com/wp-content/uploads/En_VZN.pdf https://ritz-international.com/wp-content/uploads/En_GIFK.pdf https://ritz-international.com/wp-content/uploads/En_GIFS.pdf https://ritz-international.com/wp-content/uploads/EN_GIF.pdf https://ritz-international.com/wp-content/uploads/En_VEF_36_.pdf https://ritz-international.com/wp-content/uploads/En_VEF_72.5.pdf https://ritz-international.com/wp-content/uploads/En_VZF.pdf https://ritz-international.com/wp-content/uploads/En_RITZ-Metal_Clad_Instrument_Transformers_ENG_2013-02-2.pdf https://ritz-international.com/wp-content/uploads/En_RITZ-Metal_Clad_Instrument_Transformers_ENG_2013-02-3.pdf https://ritz-international.com/wp-content/uploads/En_RITZ-Metal_Clad_Instrument_Transformers_ENG_2013-02-1.pdf https://ritz-international.com/wp-content/uploads/En_GDS.pdf https://ritz-international.com/wp-content/uploads/En_GSSO.pdf https://ritz-international.com/wp-content/uploads/Datenblatt_KGBEA36_Breitband_Index_05_de-DE_en-GB.pdf https://ritz-international.com/wp-content/uploads/Datenblatt_GSWS24_Breitband_Index_01_de-DE_en-GB.pdf https://ritz-international.com/wp-content/uploads/Datenblatt_GSES24D_Breitband_Index_01_de-DE_en-GB.pdf
+[TEMPLATES] 370 1013 1017 1020 1023

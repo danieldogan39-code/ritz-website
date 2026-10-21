@@ -1,0 +1,32 @@
+# Termékek - RITZ
+URL: https://ritz-international.com/hu/termekek/  status=200 lang=hu kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "hu_HU", "og:type": "article", "og:title": "Termékek - RITZ", "og:description": "Kezdőoldal Átfogó termékportfólió. Több, mint a normál. Egyedi termékmegoldásokat kínálunk Önnek, és a legmagasabb minőségben valósítjuk meg az összetett, speciális kéréseket. Bízzon termékeink magas minőségében és szakértelmünkben. Középfeszültségű átalakítókat keres,  beltéri vagy kültéri használatra? Vagy olyan kisfeszültségű átalakítókra van szüksége, amelyek optimálisan az Ön igényeihez igazodnak? Vagy egy 
+canonical: https://ritz-international.com/hu/termekek/
+hreflang: [['en', 'https://ritz-international.com/en/products/'], ['fr', 'https://ritz-international.com/fr/produits/'], ['de', 'https://ritz-international.com/produkte/'], ['hu', 'https://ritz-international.com/hu/termekek/'], ['es', 'https://ritz-international.com/es/productos/'], ['x-default', 'https://ritz-international.com/produkte/']]
+
+[H H2] Átfogó termékportfólió.
+[TEXT] Több, mint a normál. Egyedi termékmegoldásokat kínálunk Önnek, és a legmagasabb minőségben valósítjuk meg az összetett, speciális kéréseket. Bízzon termékeink magas minőségében és szakértelmünkben.
+ Középfeszültségű átalakítókat keres,  beltéri vagy kültéri használatra? Vagy olyan kisfeszültségű átalakítókra van szüksége, amelyek optimálisan az Ön igényeihez igazodnak? Vagy egy innovatív SIS szilárd szigetelésű gyűjtősínrendszer iránt érdeklődik? Vegye fel velünk a kapcsolatot.
+ Kínálatunkat kiváló minőségű és az Ön specifikációi alapján fejlesztett öntöttgyanta alkatrészek és keverékek egészítik ki.
+ Az öntőgyanták alkalmazása leányvállalatunk, a DUROMER specialitása. Végül, de nem utolsósorban a RITZ portfóliójában a legmagasabb  minőségű elektronikus mérőátalakítók és érzékelők is megtalálhatók.
+[IMG] https://ritz-international.com/wp-content/uploads/2022/07/produkte_umfassendes_produktportfolio.jpg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/2022/07/network_lines_new.svg alt=''
+[H H2] Termékeink
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] még több információ  -> https://ritz-international.com/hu/termekek/koezepfeszueltsegu-transzformator/
+[H H2] Középfeszültségű mérőváltó  -> https://ritz-international.com/hu/termekek/koezepfeszueltsegu-transzformator/
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] még több információ  -> https://ritz-international.com/hu/termekek/kisfeszueltsegu-transzformator/
+[H H2] Kisfeszültségű mérőváltó  -> https://ritz-international.com/hu/termekek/kisfeszueltsegu-transzformator/
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] még több információ  -> https://ritz-international.com/hu/termekek/nagyfeszueltsegu-atalakitok/
+[H H2] Nagyfeszültségű mérőváltó  -> https://ritz-international.com/hu/termekek/nagyfeszueltsegu-atalakitok/
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] még több információ  -> https://ritz-international.com/hu/termekek/folyo-sinek/
+[H H2] SIS szilárd szigetelésű gyűjtősínrendszerek  -> https://ritz-international.com/hu/termekek/folyo-sinek/
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] még több információ  -> https://ritz-international.com/hu/termekek/duromer-oentoett-gyanta-alkatreszek/
+[H H2] Öntött műgyanta alkatrészek DUROMER  -> https://ritz-international.com/hu/termekek/duromer-oentoett-gyanta-alkatreszek/
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] még több információ  -> https://ritz-international.com/hu/termekek/elektronikus-meroatalakitok-es-erzekelok/
+[H H2] Elektronikus mérőátalakítók és érzékelők  -> https://ritz-international.com/hu/termekek/elektronikus-meroatalakitok-es-erzekelok/

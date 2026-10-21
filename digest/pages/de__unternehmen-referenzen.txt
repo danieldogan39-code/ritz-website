@@ -1,0 +1,23 @@
+# Referenzen - RITZ
+URL: https://ritz-international.com/unternehmen/referenzen/  status=200 lang=de kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "description": "Entdecken Sie die erfolgreichen Projekte und Referenzen von RITZ Instrument Transformers. Unsere hochwertigen Messwandler und Lösungen haben namhafte Kunden in der Elektroindustrie überzeugt und wurden mehrfach ausgezeichnet.", "og:locale": "de_DE", "og:type": "article", "og:title": "Referenzen - RITZ", "og:description": "Entdecken Sie die erfolgreichen Projekte und Referenzen von RITZ Instrument Transformers. Unsere hochwertigen Messwandler und Lösungen haben namhafte Kunden in der Elekt
+canonical: https://ritz-international.com/unternehmen/referenzen/
+hreflang: [['en', 'https://ritz-international.com/en/company/references/'], ['fr', 'https://ritz-international.com/fr/entreprise/references/'], ['de', 'https://ritz-international.com/unternehmen/referenzen/'], ['hu', 'https://ritz-international.com/hu/a-vallalat/hivatkozasok/'], ['es', 'https://ritz-international.com/es/la-empresa/referencias/'], ['x-default', 'https://ritz-international.com/unternehmen/referenzen/']]
+
+[H H2] Erstklassige
+Produkte für
+namhafte Kunden.
+[TEXT] Gradmesser für Unternehmenserfolg. Die Zufriedenheit unserer Kunden steht an oberster Stelle. Unsere intensiven Kundenbeziehungen, die wir bereits über Jahrzehnte pflegen, sprechen für die exzellente Qualität unserer Produkte, eine hohe Beratungskompetenz und einen guten technischen Support.   
+ Gerne präsentieren wir Ihnen ausführliche Case-Studies in einem persönlichen Gespräch. Nehmen Sie Kontakt zu uns auf und vereinbaren Sie einen Termin.
+[IMG] https://ritz-international.com/wp-content/uploads/2022/07/unternehmen_referenzen_1.jpg alt=''
+[H H2] Auszeichnung zum Lieferanten des Jahres bei Hitachi Supplier Days 2024
+[TEXT] Ritz Instrument Transformers wurde im April von Hitachi Energy Schweden zum Technologielieferanten des Jahres ernannt.
+ Die kontinuierliche Weiterentwicklung unseres Gleichspannungswandlers EMVI hat zu seiner Anerkennung als optimale Lösung für das SVC Light-Portfolio der nächsten Generation von Hitachi Energy geführt. Diese Technologie leistet einen wichtigen Beitrag zur Integration erneuerbarer Energien und unterstützt eine breite Palette von Anwendungen, von Rechenzentren bis hin zu nachhaltiger Mobilität.
+ Unser verbessertes Produkt hat die erfolgreiche Kombination von zwei Stromqualitäts- und Netzstabilisierungstechnologien in einem einzigen, kompakten System ermöglicht.
+[IMG] https://ritz-international.com/wp-content/uploads/Ritz-Lieferanten-auszeichnung.png alt=''
+[H H2] GE HYPACT-Anlage mit RITZ Wandlern
+[TEXT] Projektüberblick 
+Im Jahr 2025 erhielt die RITZ Instrument Transformers GmbH von GE Vernova eine Anfrage zur Lieferung von Stromwandlern für die von GE entwickelte HYpact- Schaltanlagen. In Kooperation mit GE Vernova entwickelten das Sales Team sowie das Application Engineering bei RITZ Stromwandler, die den spezifischen Anforderungen dieser Anlage entsprechen.
+ Weitere Informationen
+[IMG] https://ritz-international.com/wp-content/uploads/Angebauter-Stromwandler-von-Ritz-bei-einer-HYPACT-Schaltanlage.png alt=''
+[TEXT] Angebauter Stromwandler von Ritz bei einer HYPACT-Schaltanlage

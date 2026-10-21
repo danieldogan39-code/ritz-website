@@ -1,0 +1,83 @@
+# Transformadores de alta tensión - RITZ
+URL: https://ritz-international.com/es/productos/transformadores-de-alta-tension/  status=200 lang=es kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "es_ES", "og:type": "article", "og:title": "Transformadores de alta tensión - RITZ", "og:description": "Inicio Transformadores de alta tensión Nuestros transformadores de alta tensión están aislados con papel de aceite con la moderna y probada calidad Ritz. Se utiliza un aceite aislante de alta calidad sin PCB y los convertidores están herméticamente sellados. De ello se encargan componentes resistentes a la corrosión, una célula de expansión de acero inoxidable […]", "og:url": "https://ritz
+canonical: https://ritz-international.com/es/productos/transformadores-de-alta-tension/
+hreflang: [['en', 'https://ritz-international.com/en/products/high-voltage-transformer/'], ['fr', 'https://ritz-international.com/fr/produits/transformateurs-haute-tension/'], ['de', 'https://ritz-international.com/produkte/hochspannungswandler/'], ['hu', 'https://ritz-international.com/hu/termekek/nagyfeszueltsegu-atalakitok/'], ['es', 'https://ritz-international.com/es/productos/transformadores-de-alta-tension/'], ['x-default', 'https://ritz-international.com/produkte/hochspannungswandler/']]
+
+[H H2] Transformadores de alta tensión
+[IMG] https://ritz-international.com/wp-content/uploads/Hochspannungswandler-Intro2.jpg alt=''
+[TEXT] Nuestros transformadores de alta tensión están aislados con papel de aceite con la moderna y probada calidad Ritz. Se utiliza un aceite aislante de alta calidad sin PCB y los convertidores están herméticamente sellados. De ello se encargan componentes resistentes a la corrosión, una célula de expansión de acero inoxidable y juntas tóricas de apriete. Esto protege el aislamiento aceite-papel de las influencias externas y elimina la necesidad de mantenimiento del aceite durante toda la vida útil. Los conductores primarios pueden hacerse conmutables y adaptarse así a diferentes corrientes primarias. Preferimos utilizar aisladores compuestos con una línea de fuga específica de 31 mm/kV y clase de carga 2. La caja de bornes tiene un diseño práctico para un trabajo de conexión seguro y rápido.
+[H H2] Contacto
+[H H2] Transformadores de medida Ritz
+[TEXT] 25 Hamburg Avenue Lavonia, GA 30907
+[LIST] +1 706-356-7180 <tel:+17063567180> | sales@ritzusa.com <mailto:sales@ritzusa.com>
+[H H2] Dr. Horst Riedner
+[LIST] +49 172 9538976 <tel:+491729538976> | horst.riedner@ritz-international.com <mailto:kay.leschick@ritz-international.com>
+[template] PRODUCTOS
+Alta tensión (de 69kV a 500kV)
+RITZ ofrece tanto dispositivos estándar como soluciones personalizadas cuyo diseño y construcción cumplen todas las normas internacionales .Si no encuentras lo que buscas en nuestra gama y necesitasmás información , ponte en contacto con nosotros.
+Transformador de tensión de intemperie aislado en papel de aceitetipo IVO
+El transformador de alta tensión tipo IVO es un transformador de tensión inductivo. Se utiliza para proporcionar corriente de salida a los dispositivos de medición de la rotación, a los relés de protección y a otros dispositivos de control de la corriente.
+Este folleto describe las funciones y características de rendimiento del transformador de corriente RITZ tipo IVO para clases de tensión de 72 kV a 245 kV.
+Folleto del producto
+Transformador de corriente de intemperie con aislamiento de papel aceitado,tipo ICO
+El transformador de alta tensión tipo ICO es un transformador de corriente inductivo (TC). Se utiliza en sistemas de alta tensión para proporcionar corriente de salida a los dispositivos de medición de la rotación, a los relés de protección y a otros dispositivos de control de la corriente.
+Este folleto describe las funciones y características de rendimiento del transformador de corriente RITZ tipo ICO para clases de tensión de 72 kV a 245 kV.
+Folleto del producto
+Tipo CMOPapel aceitado aislado CT/VT
+El transformador de alta tensión CMO es un transformador combinado de alta y baja tensión. transformadores inductivos de corriente y tensión (CT/VT). Se utiliza en Sistemas de alta tensión para el suministro de corriente y tensión de salida para dispositivos de medición del volumen de negocios, para relés de protección y otros dispositivos de control de corriente y tensión.
+Este folletodescribe las funciones y características de rendimiento del transformador de corriente RITZ tipo CMO para clases de tensión de 72 kV a 245 kV .
+Folleto del producto
+Tipo CVO Transformador de tensión capacitivo
+El CVO de RITZ es un transformador de tensión con condensador de acoplamiento (CCVT) que se utiliza en sistemas de alta y muy alta tensión para proporcionar tensión de salida a contadores, relés de protección y otros dispositivos de medida. Además, el aparato puede equiparse con soportes especiales mediante un accesorio que permite utilizar el CCVT para acoplar señales portadoras de línea eléctrica (PLC) a la línea de transmisión para aplicaciones de comunicación.
+En comparación con los transformadores de tensión inductivos, los CCVT son cada vez más rentables a medida que aumenta la tensión de la red. Además, los CCVT pesan menos que los transformadores de tensión inductivos. Los segmentos superiores del condensador pueden desmontarse para facilitar el transporte y la manipulación. Este folleto describe las funciones y características del RITZ-CCVT tipo CVO.
+Folleto del producto
+Información CVO550EM sobre la seguridad antisísmica según IEEE693
+CVO: Garantía de precisión de por vida r2024
+DESCARGAS  IMGS=https://ritz-international.com/wp-content/uploads/Type-IVO-Outdoor-Oil-Filled.jpg https://ritz-international.com/wp-content/uploads/Type-ICO-Outdoor-Oil-Filled.jpg https://ritz-international.com/wp-content/uploads/Type-CMO-Oil-Filled-CV-VT.jpg https://ritz-international.com/wp-content/uploads/CVO-Capacitor.jpg LINKS=Folleto del producto<https://ritz-international.com/wp-content/uploads/type-ivo-outdoor-oil-filled-product-brochure.pdf> Folleto del producto<https://ritz-international.com/wp-content/uploads/type-ico-outdoor-oil-filled-product-brochure.pdf> Folleto del producto<https://ritz-international.com/wp-content/uploads/type-cmo-outdoor-oil-filled-combined-ct-vt-product-brochure.pdf> Folleto del producto<https://ritz-international.com/wp-content/uploads/cvo-capacitor-product-brochure.pdf> Información CVO550EM sobre la seguridad antisísmica según IEEE693<https://ritz-international.com/wp-content/uploads/CVO550EM-IEEE693-High-Seismic.pdf> CVO: Garantía de precisión de por vida r2024<https://ritz-international.com/wp-content/uploads/CVO-Lifetime-Accuracy-Warranty-r2024.pdf> 3 Year Warranty Statement<https://ritz-international.com/wp-content/uploads/3-Year-Warranty-Statement.pdf> High Voltage Type Designation Change Notice<https://ritz-international.com/wp-content/uploads/High-Voltage-Type-Designation-Change-Notice.pdf>
+[ACC] (in 6a73017) <PRODUCTOS> tpl=13067 Alta tensión (de 69kV a 500kV)
+ RITZ ofrece tanto dispositivos estándar como soluciones personalizadas cuyo diseño y construcción cumplen todas las normas internacionales . Si no encuentras lo que buscas en nuestra gama y necesitas más información , ponte en contacto con nosotros .
+Transformador de tensión de intemperie aislado en papel de aceite tipo IVO 
+ El transformador de alta tensión tipo IVO es un transformador de tensión inductivo. Se utiliza para proporcionar corriente de salida a los dispositivos de medición de la rotación, a los relés de protección y a otros dispositivos de control de la corriente.
+ Este folleto describe las funciones y características de rendimiento del transformador de corriente RITZ tipo IVO para clases de tensión de 72 kV a 245 kV.
+ Folleto del producto 
+ Transformador de corriente de intemperie con aislamiento de papel aceitado, tipo ICO 
+ El transformador de alta tensión tipo ICO es un transformador de corriente inductivo (TC). Se utiliza en sistemas de alta tensión para proporcionar corriente de salida a los dispositivos de medición de la rotación, a los relés de protección y a otros dispositivos de control de la corriente.
+ Este folleto describe las funciones y características de rendimiento del transformador de corriente RITZ tipo ICO para clases de tensión de 72 kV a 245 kV.
+ Folleto del producto 
+Tipo CMO Papel aceitado aislado CT/VT 
+ El transformador de alta tensión CMO es un transformador combinado de alta y baja tensión. transformadores inductivos de corriente y tensión (CT/VT). Se utiliza en Sistemas de alta tensión para el suministro de corriente y tensión de salida para dispositivos de medición del volumen de negocios, para relés de protección y otros dispositivos de control de corriente y tensión. 
+ Este folleto describe las funciones y características de rendimiento del transformador de corriente RITZ tipo CMO para clases de tensión de 72 kV a 245 kV .
+ Folleto del producto 
+ T ipo CVO Transformador de tensión capacitivo
+ El CVO de RITZ es un transformador de tensión con condensador de acoplamiento (CCVT) que se utiliza en sistemas de alta y muy alta tensión para proporcionar tensión de salida a contadores, relés de protección y otros dispositivos de medida. Además, el aparato puede equiparse con soportes especiales mediante un accesorio que permite utilizar el CCVT para acoplar señales portadoras de línea eléctrica (PLC) a la línea de transmisión para aplicaciones de comunicación.
+ En comparación con los transformadores de tensión inductivos, los CCVT son cada vez más rentables a medida que aumenta la tensión de la red. Además, los CCVT pesan menos que los transformadores de tensión inductivos. Los segmentos superiores del condensador pueden desmontarse para facilitar el transporte y la manipulación. Este folleto describe las funciones y características del RITZ-CCVT tipo CVO.
+ Folleto del producto 
+ Información CVO550EM sobre la seguridad antisísmica según IEEE693 
+ CVO: Garantía de precisión de por vida r2024 || <DESCARGAS GENERALES> tpl=13162 3 Year Warranty Statement 
+ High Voltage Type Designation Change Notice
+[H H2] (in 1cd068ff) Alta tensión (de 69kV a 500kV)
+[TEXT] (in 1cd068ff) RITZ ofrece tanto dispositivos estándar como soluciones personalizadas cuyo diseño y construcción cumplen todas las normas internacionales . Si no encuentras lo que buscas en nuestra gama y necesitas más información , ponte en contacto con nosotros .
+[IMG] (in 1cd068ff) https://ritz-international.com/wp-content/uploads/Type-IVO-Outdoor-Oil-Filled.jpg alt=''
+[TEXT] (in 1cd068ff) Transformador de tensión de intemperie aislado en papel de aceite tipo IVO
+[TEXT] (in 1cd068ff) El transformador de alta tensión tipo IVO es un transformador de tensión inductivo. Se utiliza para proporcionar corriente de salida a los dispositivos de medición de la rotación, a los relés de protección y a otros dispositivos de control de la corriente.
+ Este folleto describe las funciones y características de rendimiento del transformador de corriente RITZ tipo IVO para clases de tensión de 72 kV a 245 kV.
+[LIST] (in 1cd068ff) Folleto del producto <https://ritz-international.com/wp-content/uploads/type-ivo-outdoor-oil-filled-product-brochure.pdf>
+[IMG] (in 1cd068ff) https://ritz-international.com/wp-content/uploads/Type-ICO-Outdoor-Oil-Filled.jpg alt=''
+[TEXT] (in 1cd068ff) Transformador de corriente de intemperie con aislamiento de papel aceitado, tipo ICO
+[TEXT] (in 1cd068ff) El transformador de alta tensión tipo ICO es un transformador de corriente inductivo (TC). Se utiliza en sistemas de alta tensión para proporcionar corriente de salida a los dispositivos de medición de la rotación, a los relés de protección y a otros dispositivos de control de la corriente.
+ Este folleto describe las funciones y características de rendimiento del transformador de corriente RITZ tipo ICO para clases de tensión de 72 kV a 245 kV.
+[LIST] (in 1cd068ff) Folleto del producto <https://ritz-international.com/wp-content/uploads/type-ico-outdoor-oil-filled-product-brochure.pdf>
+[IMG] (in 1cd068ff) https://ritz-international.com/wp-content/uploads/Type-CMO-Oil-Filled-CV-VT.jpg alt=''
+[TEXT] (in 1cd068ff) Tipo CMO Papel aceitado aislado CT/VT
+[TEXT] (in 1cd068ff) El transformador de alta tensión CMO es un transformador combinado de alta y baja tensión. transformadores inductivos de corriente y tensión (CT/VT). Se utiliza en Sistemas de alta tensión para el suministro de corriente y tensión de salida para dispositivos de medición del volumen de negocios, para relés de protección y otros dispositivos de control de corriente y tensión. 
+ Este folleto describe las funciones y características de rendimiento del transformador de corriente RITZ tipo CMO para clases de tensión de 72 kV a 245 kV .
+[LIST] (in 1cd068ff) Folleto del producto <https://ritz-international.com/wp-content/uploads/type-cmo-outdoor-oil-filled-combined-ct-vt-product-brochure.pdf>
+[IMG] (in 1cd068ff) https://ritz-international.com/wp-content/uploads/CVO-Capacitor.jpg alt=''
+[TEXT] (in 1cd068ff) T ipo CVO Transformador de tensión capacitivo
+[TEXT] (in 1cd068ff) El CVO de RITZ es un transformador de tensión con condensador de acoplamiento (CCVT) que se utiliza en sistemas de alta y muy alta tensión para proporcionar tensión de salida a contadores, relés de protección y otros dispositivos de medida. Además, el aparato puede equiparse con soportes especiales mediante un accesorio que permite utilizar el CCVT para acoplar señales portadoras de línea eléctrica (PLC) a la línea de transmisión para aplicaciones de comunicación.
+ En comparación con los transformadores de tensión inductivos, los CCVT son cada vez más rentables a medida que aumenta la tensión de la red. Además, los CCVT pesan menos que los transformadores de tensión inductivos. Los segmentos superiores del condensador pueden desmontarse para facilitar el transporte y la manipulación. Este folleto describe las funciones y características del RITZ-CCVT tipo CVO.
+[LIST] (in 1cd068ff) Folleto del producto <https://ritz-international.com/wp-content/uploads/cvo-capacitor-product-brochure.pdf> | Información CVO550EM sobre la seguridad antisísmica según IEEE693 <https://ritz-international.com/wp-content/uploads/CVO550EM-IEEE693-High-Seismic.pdf> | CVO: Garantía de precisión de por vida r2024 <https://ritz-international.com/wp-content/uploads/CVO-Lifetime-Accuracy-Warranty-r2024.pdf>
+[LIST] (in 1cd068ff) 3 Year Warranty Statement <https://ritz-international.com/wp-content/uploads/3-Year-Warranty-Statement.pdf> | High Voltage Type Designation Change Notice <https://ritz-international.com/wp-content/uploads/High-Voltage-Type-Designation-Change-Notice.pdf>
+[PDFS] https://ritz-international.com/wp-content/uploads/type-ivo-outdoor-oil-filled-product-brochure.pdf https://ritz-international.com/wp-content/uploads/type-ico-outdoor-oil-filled-product-brochure.pdf https://ritz-international.com/wp-content/uploads/type-cmo-outdoor-oil-filled-combined-ct-vt-product-brochure.pdf https://ritz-international.com/wp-content/uploads/cvo-capacitor-product-brochure.pdf https://ritz-international.com/wp-content/uploads/CVO550EM-IEEE693-High-Seismic.pdf https://ritz-international.com/wp-content/uploads/CVO-Lifetime-Accuracy-Warranty-r2024.pdf https://ritz-international.com/wp-content/uploads/3-Year-Warranty-Statement.pdf https://ritz-international.com/wp-content/uploads/High-Voltage-Type-Designation-Change-Notice.pdf
+[TEMPLATES] 13067 13162

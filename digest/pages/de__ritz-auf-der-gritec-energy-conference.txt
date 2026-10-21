@@ -1,0 +1,10 @@
+# RITZ auf der GRITEC Energy conference - RITZ
+URL: https://ritz-international.com/ritz-auf-der-gritec-energy-conference/  status=200 lang=de kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "RITZ auf der GRITEC Energy conference - RITZ", "og:description": "RITZ stellt auf der Hausmesse Gritec aus", "og:url": "https://ritz-international.com/ritz-auf-der-gritec-energy-conference/", "og:site_name": "RITZ"}
+canonical: https://ritz-international.com/ritz-auf-der-gritec-energy-conference/
+hreflang: [['de', 'https://ritz-international.com/ritz-auf-der-gritec-energy-conference/'], ['x-default', 'https://ritz-international.com/ritz-auf-der-gritec-energy-conference/']]
+
+[POSTTITLE] RITZ auf der GRITEC Energy conference
+[POSTCONTENT] RITZ stellt auf der Hausmesse Gritec aus IMGS= LINKS=RITZ stellt auf der Hausmesse Gritec aus<https://ritz-international.com/wp-content/uploads/RITZ-stellt-auf-der-Hausmesse-Gritec-aus.pdf>
+[BTN] Zurück -> /aktuelles/news
+[PDFS] https://ritz-international.com/wp-content/uploads/RITZ-stellt-auf-der-Hausmesse-Gritec-aus.pdf

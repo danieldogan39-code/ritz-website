@@ -1,0 +1,11 @@
+# RITZ takes part in numerous trade fairs in 2025 - RITZ
+URL: https://ritz-international.com/en/ritz-takes-part-in-numerous-trade-fairs-in-2025/  status=200 lang=en kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "en_US", "og:type": "article", "og:title": "RITZ takes part in numerous trade fairs in 2025 - RITZ", "og:url": "https://ritz-international.com/en/ritz-takes-part-in-numerous-trade-fairs-in-2025/", "og:site_name": "RITZ", "og:image": "https://ritz-international.com/wp-content/uploads/RITZ-TRADE-FAIR-DATES-1.png", "og:image:width": "570", "og:image:height": "828", "og:image:type": "image/png"}
+canonical: https://ritz-international.com/en/ritz-takes-part-in-numerous-trade-fairs-in-2025/
+hreflang: [['en', 'https://ritz-international.com/en/ritz-takes-part-in-numerous-trade-fairs-in-2025/'], ['de', 'https://ritz-international.com/ritz-nimmt-an-zahlreichen-fachmessen-im-jahr-2025-teil/'], ['x-default', 'https://ritz-international.com/ritz-nimmt-an-zahlreichen-fachmessen-im-jahr-2025-teil/']]
+
+[POSTTITLE] RITZ takes part in numerous trade fairs in 2025
+[POSTCONTENT]  IMGS=https://ritz-international.com/wp-content/uploads/Rit-scaled.png LINKS=<https://ritz-international.com/wp-content/uploads/Trade_fairs__1738597680-1.pdf>
+[BTN] Back -> https://ritz-international.com/en/?page_id=5595
+[FEATURED] https://ritz-international.com/wp-content/uploads/RITZ-TRADE-FAIR-DATES-1.png
+[PDFS] https://ritz-international.com/wp-content/uploads/Trade_fairs__1738597680-1.pdf

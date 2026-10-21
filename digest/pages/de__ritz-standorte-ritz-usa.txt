@@ -1,0 +1,9 @@
+# RITZ USA Archive - RITZ
+URL: https://ritz-international.com/ritz-standorte/ritz-usa/  status=200 lang=de kind=extra
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "RITZ USA Archive - RITZ", "og:url": "https://ritz-international.com/ritz-standorte/ritz-usa/", "og:site_name": "RITZ"}
+canonical: https://ritz-international.com/ritz-standorte/ritz-usa/
+hreflang: [['en', 'https://ritz-international.com/en/ritz-standorte/ritz-usa-en/'], ['fr', 'https://ritz-international.com/fr/ritz-standorte/ritz-etats-unis/'], ['de', 'https://ritz-international.com/ritz-standorte/ritz-usa/'], ['hu', 'https://ritz-international.com/hu/ritz-standorte/ritz-usa-hu/'], ['es', 'https://ritz-international.com/es/ritz-standorte/ritz-ee-uu/'], ['x-default', 'https://ritz-international.com/ritz-standorte/ritz-usa/']]
+
+[MAINHTML] RITZ Standorte: RITZ USA 
+ Standort Waynesboro, Georgia 
+ Standort USA Hartwell

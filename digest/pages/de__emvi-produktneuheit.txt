@@ -1,0 +1,15 @@
+# EMVI Produktneuheit - RITZ
+URL: https://ritz-international.com/emvi-produktneuheit/  status=200 lang=de kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "EMVI Produktneuheit - RITZ", "og:description": "ELEKTRONISCHER STROMWANDLER EMVI 4005 HOCHGENAUE MESSUNG VON DC- UND AC-STRÖMEN ANWENDUNG In Mittelspannungsanwendungen wie SVC-Anlagen, Back-to-Back Stationen, DC-Links oder in der Hochspannungs-Gleichstrom-Übertragung ist eine präzise Messung der Ströme von hoher Bedeutung. Der kompakte elektronische Stromwandler vom Typ EMVI 4005 ist für die Messung von Gleich-, Wechsel und Mischströmen bis maximal
+canonical: https://ritz-international.com/emvi-produktneuheit/
+hreflang: [['en', 'https://ritz-international.com/en/emvi-product-innovation/'], ['de', 'https://ritz-international.com/emvi-produktneuheit/'], ['x-default', 'https://ritz-international.com/emvi-produktneuheit/']]
+
+[POSTTITLE] EMVI Produktneuheit
+[POSTCONTENT] ELEKTRONISCHER STROMWANDLER EMVI 4005 
+ HOCHGENAUE MESSUNG VON DC- UND AC-STRÖMEN 
+ ANWENDUNG 
+ In Mittelspannungsanwendungen wie SVC-Anlagen, Back-to-Back Stationen, DC-Links oder in der Hochspannungs-Gleichstrom-Übertragung ist eine präzise Messung der Ströme von hoher Bedeutung. Der kompakte elektronische Stromwandler vom Typ EMVI 4005 ist für die Messung von Gleich-, Wechsel und Mischströmen bis maximal 12000 A geeignet. Die Anwendung in Mittelspannungsanlagen erfolgt mit Hilfe eines entsprechend isolierten Primärleiters. Besonders im Fall eines Primärstroms, der Gleichanteile oder hohe Frequenzanteile enthält, bietet das EMVI 4005 eine gute Alternative zu konventionellen Stromwandlern.
+ EMVI Produktneuheit IMGS= LINKS=EMVI Produktneuheit<https://ritz-international.com/wp-content/uploads/J2-DE_EMVI-4005-Word-DATENBLATT_2Seiter.pdf>
+[BTN] Zurück -> /aktuelles/news
+[FEATURED] https://ritz-international.com/wp-content/uploads/EMVI.png
+[PDFS] https://ritz-international.com/wp-content/uploads/J2-DE_EMVI-4005-Word-DATENBLATT_2Seiter.pdf

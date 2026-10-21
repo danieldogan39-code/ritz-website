@@ -1,0 +1,7 @@
+# Sonderwandler - RITZ
+URL: https://ritz-international.com/produktfinder/mittelspannung/sonderwandler/  status=200 lang=de kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "Sonderwandler - RITZ", "og:description": "Home Sonderwandler", "og:url": "https://ritz-international.com/produktfinder/mittelspannung/sonderwandler/", "og:site_name": "RITZ"}
+canonical: https://ritz-international.com/produktfinder/mittelspannung/sonderwandler/
+hreflang: [['de', 'https://ritz-international.com/produktfinder/mittelspannung/sonderwandler/'], ['x-default', 'https://ritz-international.com/produktfinder/mittelspannung/sonderwandler/']]
+
+[H H2] Sonderwandler

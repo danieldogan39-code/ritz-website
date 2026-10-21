@@ -1,0 +1,124 @@
+# Transformadores de baja tensión - RITZ
+URL: https://ritz-international.com/es/productos/transformador-de-baja-tension/  status=200 lang=es kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "es_ES", "og:type": "article", "og:title": "Transformadores de baja tensión - RITZ", "og:description": "Inicio Transformadores de baja tensión Contacto Karola Walzer (Dep. de Ventas de Baja Tensión) +49 40 511 23 328 karola.walzer@ritz-international.com Melanie Hille (Dep. de Ventas de Baja Tensión) +49 40 511 23 248 melanie.hille@ritz-international.com Descargar catálogos Transformadores de baja tensión – Aplicaciones especiales", "og:url": "https://ritz-international.com/es/productos/trans
+canonical: https://ritz-international.com/es/productos/transformador-de-baja-tension/
+hreflang: [['en', 'https://ritz-international.com/en/products/low-voltage-transformer/'], ['fr', 'https://ritz-international.com/fr/produits/transformateurs-basse-tension/'], ['de', 'https://ritz-international.com/produkte/niederspannungswandler/'], ['hu', 'https://ritz-international.com/hu/termekek/kisfeszueltsegu-transzformator/'], ['es', 'https://ritz-international.com/es/productos/transformador-de-baja-tension/'], ['x-default', 'https://ritz-international.com/produkte/niederspannungswandler/']]
+
+[H H2] Transformadores de baja tensión
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/introduction_image_niederspannungswandler-e1705680245358.jpg alt=''
+[H H2] Contacto
+[H H2] Karola Walzer (Dep. de Ventas de Baja Tensión)
+[LIST] +49 40 511 23 328 | karola.walzer@ritz-international.com <mailto:karola.walzer@ritz-international.com>
+[H H2] Melanie Hille (Dep. de Ventas de Baja Tensión)
+[LIST] +49 40 511 23 248 | melanie.hille@ritz-international.com <mailto:melanie.hille@ritz-international.com>
+[H H2] Descargar catálogos
+[LIST] Transformadores de baja tensión - Aplicaciones especiales <https://ritz-international.com/wp-content/uploads/N7-2002-111-1.pdf>
+[template] Transformadores de corriente de baja tensión: estándar
+KS_50-02_d
+M005585_I06
+KS_60-03_d
+M005587_I05
+KS_70-04_d
+M005588_I05
+KS_79-05_d
+M005589_I05
+KS_95-06_d
+M005590_I06
+KS_120-08_d
+M005591_I06
+KS_160-12_d
+M005592_I06
+KSO_311_d
+M006681I2
+KSW_52_d
+M003651I5
+Transformadores de corriente para fines de medición
+Transformadores de corriente para fines de medición y protección
+Transformadores de corriente de bobinado
+Transformadores de corriente intermedios
+Transformadores de corriente residual
+Transformadores de corriente para perfiles de seguridad
+Transformadores de corriente enchufables
+Transformadores de corriente de varilla
+Transformadores de corriente enchufables para corrientes elevadas
+Transformadores de corriente múltiple
+Transformadores de corriente de núcleo partido
+Transformadores de corriente de núcleo partido para detección de cortocircuito a tierra
+Transformadores para fines de medición
+Conjunto de transformadores de corriente trifásicos
+Transformadores de corriente y de tensión para laboratorios
+Transformadores de tensión
+Transformadores de medida certificables
+Dispositivos de amortiguación de ondas de sierra IMGS=https://ritz-international.com/wp-content/uploads/2022/09/niederspannungsstromwandler_standard_ks_50-02_d_m005585_i06_m005590_i06.jpg https://ritz-international.com/wp-content/uploads/2022/09/niederspannungsstromwandler_standard_ks_60-03_d_m005587_i05.jpg https://ritz-international.com/wp-content/uploads/2022/09/niederspannungsstromwandler_standard_ks_70-04_d_m005588_i05.jpg https://ritz-international.com/wp-content/uploads/2022/09/niederspannungsstromwandler_standard_ks_79-05_d_m005589_i05.jpg https://ritz-international.com/wp-content/uploads/2022/09/niederspannungsstromwandler_standard__ks_95-06_d_m005590_i06.jpg https://ritz-international.com/wp-content/uploads/2022/09/niederspannungsstromwandler_standard__m005591_i06.jpg https://ritz-international.com/wp-content/uploads/2022/09/niederspannungsstromwandler_standard_ks_160-12_d_m005592_i06.jpg https://ritz-international.com/wp-content/uploads/2022/09/niederspannungsstromwandler_standard_kso_311_d_m006681i2.jpg https://ritz-international.com/wp-content/uploads/2022/09/niederspannungsstromwandler_standard_ksw_52_d_m003651i5.jpg https://ritz-international.com/wp-content/uploads/2022/09/sonderwandler_fuer_messzwecke.jpg LINKS=KS_50-02_d<https://ritz-international.com/wp-content/uploads/KS_50-02_d-1.pdf> M005585_I06<https://ritz-international.com/wp-content/uploads/M005585_I06-1.pdf> KS_60-03_d<https://ritz-international.com/wp-content/uploads/KS_60-03_d-1.pdf> M005587_I05<https://ritz-international.com/wp-content/uploads/M005587_I05-1.pdf> KS_70-04_d<https://ritz-international.com/wp-content/uploads/KS_70-04_d-1-1.pdf> M005588_I05<https://ritz-international.com/wp-content/uploads/M005588_I05-1.pdf> KS_79-05_d<https://ritz-international.com/wp-content/uploads/KS_79-05_d-2.pdf> M005589_I05<https://ritz-international.com/wp-content/uploads/M005589_I05-1.pdf> KS_95-06_d<https://ritz-international.com/wp-content/uploads/KS_95-06_d-2.pdf> M005590_I06<https://ritz-international.com/wp-content/uploads/M005590_I06.pdf> KS_120-08_d<https://ritz-international.com/wp-content/uploads/KS_120-08_d-2.pdf> M005591_I06<https://ritz-international.com/wp-content/uploads/M005591_I06-1.pdf> KS_160-12_d<https://ritz-international.com/wp-content/uploads/KS_160-12_d-1.pdf> M005592_I06<https://ritz-international.com/wp-content/uploads/M005592_I06-1.pdf> KSO_311_d<https://ritz-international.com/wp-content/uploads/KSO_311_d-1.pdf> M006681I2<https://ritz-international.com/wp-content/uploads/M006681I2-1.pdf> KSW_52_d<https://ritz-international.com/wp-content/uploads/KSW_52_d-1.pdf> M003651I5<https://ritz-international.com/wp-content/uploads/M003651I5-1.pdf>
+[ACC] (in 1e558e0) <Transformadores de corriente de baja tensión: estándar> tpl=1046 KS_50-02_d 
+ M005585_I06 
+ KS_60-03_d 
+ M005587_I05 
+ KS_70-04_d 
+ M005588_I05 
+ KS_79-05_d 
+ M005589_I05 
+ KS_95-06_d 
+ M005590_I06 
+ KS_120-08_d 
+ M005591_I06 
+ KS_160-12_d 
+ M005592_I06 
+ KSO_311_d 
+ M006681I2 
+ KSW_52_d 
+ M003651I5 || <Transformadores de corriente para fines de medición> tpl=1061 Transformadores de corriente para fines de medición y protección
+ Transformadores de corriente de bobinado
+ Transformadores de corriente intermedios
+ Transformadores de corriente residual
+ Transformadores de corriente para perfiles de seguridad
+ Transformadores de corriente enchufables
+ Transformadores de corriente de varilla
+ Transformadores de corriente enchufables para corrientes elevadas
+ Transformadores de corriente múltiple
+ Transformadores de corriente de núcleo partido
+ Transformadores de corriente de núcleo partido para detección de cortocircuito a tierra
+Transformadores para fines de medición 
+ Conjunto de transformadores de corriente trifásicos
+ Transformadores de corriente y de tensión para laboratorios
+Transformadores de tensión 
+ Transformadores de medida certificables 
+ Dispositivos de amortiguación de ondas de sierra
+[IMG] (in a892fcf) https://ritz-international.com/wp-content/uploads/2022/09/niederspannungsstromwandler_standard_ks_50-02_d_m005585_i06_m005590_i06.jpg alt=''
+[LIST] (in a892fcf) KS_50-02_d <https://ritz-international.com/wp-content/uploads/KS_50-02_d-1.pdf> | M005585_I06 <https://ritz-international.com/wp-content/uploads/M005585_I06-1.pdf>
+[IMG] (in a892fcf) https://ritz-international.com/wp-content/uploads/2022/09/niederspannungsstromwandler_standard_ks_60-03_d_m005587_i05.jpg alt=''
+[LIST] (in a892fcf) KS_60-03_d <https://ritz-international.com/wp-content/uploads/KS_60-03_d-1.pdf> | M005587_I05 <https://ritz-international.com/wp-content/uploads/M005587_I05-1.pdf>
+[IMG] (in a892fcf) https://ritz-international.com/wp-content/uploads/2022/09/niederspannungsstromwandler_standard_ks_70-04_d_m005588_i05.jpg alt=''
+[LIST] (in a892fcf) KS_70-04_d <https://ritz-international.com/wp-content/uploads/KS_70-04_d-1-1.pdf> | M005588_I05 <https://ritz-international.com/wp-content/uploads/M005588_I05-1.pdf>
+[IMG] (in a892fcf) https://ritz-international.com/wp-content/uploads/2022/09/niederspannungsstromwandler_standard_ks_79-05_d_m005589_i05.jpg alt=''
+[LIST] (in a892fcf) KS_79-05_d <https://ritz-international.com/wp-content/uploads/KS_79-05_d-2.pdf> | M005589_I05 <https://ritz-international.com/wp-content/uploads/M005589_I05-1.pdf>
+[IMG] (in a892fcf) https://ritz-international.com/wp-content/uploads/2022/09/niederspannungsstromwandler_standard__ks_95-06_d_m005590_i06.jpg alt=''
+[LIST] (in a892fcf) KS_95-06_d <https://ritz-international.com/wp-content/uploads/KS_95-06_d-2.pdf> | M005590_I06 <https://ritz-international.com/wp-content/uploads/M005590_I06.pdf>
+[IMG] (in a892fcf) https://ritz-international.com/wp-content/uploads/2022/09/niederspannungsstromwandler_standard__m005591_i06.jpg alt=''
+[LIST] (in a892fcf) KS_120-08_d <https://ritz-international.com/wp-content/uploads/KS_120-08_d-2.pdf> | M005591_I06 <https://ritz-international.com/wp-content/uploads/M005591_I06-1.pdf>
+[IMG] (in a892fcf) https://ritz-international.com/wp-content/uploads/2022/09/niederspannungsstromwandler_standard_ks_160-12_d_m005592_i06.jpg alt=''
+[LIST] (in a892fcf) KS_160-12_d <https://ritz-international.com/wp-content/uploads/KS_160-12_d-1.pdf> | M005592_I06 <https://ritz-international.com/wp-content/uploads/M005592_I06-1.pdf>
+[IMG] (in a892fcf) https://ritz-international.com/wp-content/uploads/2022/09/niederspannungsstromwandler_standard_kso_311_d_m006681i2.jpg alt=''
+[LIST] (in a892fcf) KSO_311_d <https://ritz-international.com/wp-content/uploads/KSO_311_d-1.pdf> | M006681I2 <https://ritz-international.com/wp-content/uploads/M006681I2-1.pdf>
+[IMG] (in a892fcf) https://ritz-international.com/wp-content/uploads/2022/09/niederspannungsstromwandler_standard_ksw_52_d_m003651i5.jpg alt=''
+[LIST] (in a892fcf) KSW_52_d <https://ritz-international.com/wp-content/uploads/KSW_52_d-1.pdf> | M003651I5 <https://ritz-international.com/wp-content/uploads/M003651I5-1.pdf>
+[IMG] (in a892fcf) https://ritz-international.com/wp-content/uploads/2022/09/sonderwandler_fuer_messzwecke.jpg alt=''
+[TEXT] (in a892fcf) Transformadores de corriente para fines de medición y protección
+ Transformadores de corriente de bobinado
+ Transformadores de corriente intermedios
+ Transformadores de corriente residual
+ Transformadores de corriente para perfiles de seguridad
+ Transformadores de corriente enchufables
+ Transformadores de corriente de varilla
+ Transformadores de corriente enchufables para corrientes elevadas
+ Transformadores de corriente múltiple
+ Transformadores de corriente de núcleo partido
+ Transformadores de corriente de núcleo partido para detección de cortocircuito a tierra
+Transformadores para fines de medición 
+ Conjunto de transformadores de corriente trifásicos
+ Transformadores de corriente y de tensión para laboratorios
+Transformadores de tensión 
+ Transformadores de medida certificables 
+ Dispositivos de amortiguación de ondas de sierra
+[PDFS] https://ritz-international.com/wp-content/uploads/N7-2002-111-1.pdf https://ritz-international.com/wp-content/uploads/KS_50-02_d-1.pdf https://ritz-international.com/wp-content/uploads/M005585_I06-1.pdf https://ritz-international.com/wp-content/uploads/KS_60-03_d-1.pdf https://ritz-international.com/wp-content/uploads/M005587_I05-1.pdf https://ritz-international.com/wp-content/uploads/KS_70-04_d-1-1.pdf https://ritz-international.com/wp-content/uploads/M005588_I05-1.pdf https://ritz-international.com/wp-content/uploads/KS_79-05_d-2.pdf https://ritz-international.com/wp-content/uploads/M005589_I05-1.pdf https://ritz-international.com/wp-content/uploads/KS_95-06_d-2.pdf https://ritz-international.com/wp-content/uploads/M005590_I06.pdf https://ritz-international.com/wp-content/uploads/KS_120-08_d-2.pdf https://ritz-international.com/wp-content/uploads/M005591_I06-1.pdf https://ritz-international.com/wp-content/uploads/KS_160-12_d-1.pdf https://ritz-international.com/wp-content/uploads/M005592_I06-1.pdf https://ritz-international.com/wp-content/uploads/KSO_311_d-1.pdf https://ritz-international.com/wp-content/uploads/M006681I2-1.pdf https://ritz-international.com/wp-content/uploads/KSW_52_d-1.pdf https://ritz-international.com/wp-content/uploads/M003651I5-1.pdf
+[TEMPLATES] 1046 1061

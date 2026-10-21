@@ -1,0 +1,13 @@
+# Kontakt - RITZ
+URL: https://ritz-international.com/kontakt/  status=200 lang=de kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "description": "Erreichen Sie RITZ Instrument Transformers schnell und einfach. Telefon, E-Mail und Anschrift unseres Hauptsitzes sowie globaler Niederlassungen. Ihr Partner in der Elektroindustrie freut sich auf Ihre Anfrage.", "og:locale": "de_DE", "og:type": "article", "og:title": "Kontakt - RITZ", "og:description": "Erreichen Sie RITZ Instrument Transformers schnell und einfach. Telefon, E-Mail und Anschrift unseres Hauptsitzes sowie globaler Niederlassungen. Ihr Partner in der Elektroindustrie freut
+canonical: https://ritz-international.com/kontakt/
+hreflang: [['en', 'https://ritz-international.com/en/contact-us/'], ['fr', 'https://ritz-international.com/fr/contact/'], ['de', 'https://ritz-international.com/kontakt/'], ['hu', 'https://ritz-international.com/hu/kapcsolatfelvetel/'], ['es', 'https://ritz-international.com/es/contacto/'], ['x-default', 'https://ritz-international.com/kontakt/']]
+
+[H H2] wir sind
+für sie da.
+[TEXT] Viele Wege führen zu RITZ. Sie haben noch Fragen, Wünsche, Anregungen oder benötigen technischen Support? Unsere Experten beraten Sie jederzeit persönlich und teilen ihr fundiertes Wissen gerne mit Ihnen. Nehmen Sie mit uns Kontakt auf. Wir haben die wichtigsten Ansprechpartner übersichtlich für Sie aufgelistet.
+[IMG] https://ritz-international.com/wp-content/uploads/Kontakt_intro_bild.webp alt=''
+[template] ProduktionsstandorteStandorteProduktbereicheVertretungen
+[TABS] (in f45ef3c) Produktionsstandorte#2279 | Standorte#1368 | Produktbereiche#1609 | Vertretungen#1621 contents: 
+[TEMPLATES] 2279 1368 1609 1621

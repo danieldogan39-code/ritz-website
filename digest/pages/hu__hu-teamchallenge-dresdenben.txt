@@ -1,0 +1,10 @@
+# TEAMCHALLENGE DREZDÁBAN - RITZ
+URL: https://ritz-international.com/hu/teamchallenge-dresdenben/  status=200 lang=hu kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "hu_HU", "og:type": "article", "og:title": "TEAMCHALLENGE DREZDÁBAN - RITZ", "og:description": "Nemrégiben a RITZ ottendorf-okrillai telephelyünktől 22 futó vett részt a drezdai Rewe Team Challenge-en. A közös felkészülés a kihívásra, a közös szórakozás és a közös célba érkezés nemcsak a vállalaton belüli kommunikációt és összetartozást segíti elő, hanem minden bizonnyal még sokáig emlékezetes marad! Köszönjük minden futónknak, hogy ilyen méltóan képviselték vállalatunkat, és gratulálunk a n
+canonical: https://ritz-international.com/hu/teamchallenge-dresdenben/
+hreflang: [['en', 'https://ritz-international.com/en/teamchallenge-in-dresden/'], ['fr', 'https://ritz-international.com/fr/teamchallenge-a-dresde/'], ['de', 'https://ritz-international.com/teamchallenge-in-dresden/'], ['hu', 'https://ritz-international.com/hu/teamchallenge-dresdenben/'], ['es', 'https://ritz-international.com/es/teamchallenge-en-dresde/'], ['x-default', 'https://ritz-international.com/teamchallenge-in-dresden/']]
+
+[POSTTITLE] TEAMCHALLENGE DREZDÁBAN
+[POSTCONTENT] Nemrégiben a RITZ ottendorf-okrillai telephelyünktől 22 futó vett részt a drezdai Rewe Team Challenge-en. A közös felkészülés a kihívásra, a közös szórakozás és a közös célba érkezés nemcsak a vállalaton belüli kommunikációt és összetartozást segíti elő, hanem minden bizonnyal még sokáig emlékezetes marad! Köszönjük minden futónknak, hogy ilyen méltóan képviselték vállalatunkat, és gratulálunk a nagyszerű teljesítményükhöz! Szeretné jövőre Ön is erősíteni a futócsapatunkat? Akkor nézze meg gyorsan álláshirdetéseinket. IMGS=https://ritz-international.com/wp-content/uploads/IMG_20230607_060435_853.jpg https://ritz-international.com/wp-content/uploads/IMG_20230607_060435_863.jpg LINKS=
+[BTN] Vissza -> https://ritz-international.com/hu/?page_id=5606
+[FEATURED] https://ritz-international.com/wp-content/uploads/IMG_20230607_060125_233.jpg

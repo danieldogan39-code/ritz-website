@@ -1,0 +1,37 @@
+# Produkte - RITZ
+URL: https://ritz-international.com/produkte/  status=200 lang=de kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "description": "Entdecken Sie die innovativen Produkte von RITZ: Hochwertige Messwandler und Sensoren sowie Stromschienen und Gießharzteile DUROMER. Maßgeschneiderte Lösungen für die moderne Energieversorgung und Elektroindustrie weltweit.", "og:locale": "de_DE", "og:type": "article", "og:title": "Produkte - RITZ", "og:description": "Entdecken Sie die innovativen Produkte von RITZ: Hochwertige Messwandler und Sensoren sowie Stromschienen und Gießharzteile DUROMER. Maßgeschneiderte Lösungen für die modern
+canonical: https://ritz-international.com/produkte/
+hreflang: [['en', 'https://ritz-international.com/en/products/'], ['fr', 'https://ritz-international.com/fr/produits/'], ['de', 'https://ritz-international.com/produkte/'], ['hu', 'https://ritz-international.com/hu/termekek/'], ['es', 'https://ritz-international.com/es/productos/'], ['x-default', 'https://ritz-international.com/produkte/']]
+
+[H H2] Umfassendes
+Produktportfolio.
+[TEXT] Mehr als Standard. Wir bieten Ihnen maßgeschneiderte Produktlösungen und realisieren komplexe Sonderwünsche in höchster Qualität. Setzen Sie auf die Hochwertigkeit unserer Produkte und auf unsere Expertise. 
+ Sie suchen Mittelspannungswandler, z.B. für den Innenraum und Freiluft? Oder benötigen Sie Niederspannungswandler, die optimal auf Ihre Anforderungen zugeschnitten sind? Oder sind Sie an einem innovativen SIS Sammelschienen-Isolations-System interessiert? Nehmen Sie mit uns Kontakt auf. 
+ Hochwertige, nach Ihren Spezifikationen entwickelte, Gießharzteile und -massen ergänzen unser Sortiment. 
+ Die Anwendung von Gießharzen ist ein Spezialgebiet unseres Tochterunternehmens DUROMER. Last but not least gehören auch elektronische Messerwandler und Sensoren in bester Fertigungsqualität zum RITZ Portfolio.
+[IMG] https://ritz-international.com/wp-content/uploads/2022/07/produkte_umfassendes_produktportfolio.jpg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/2022/07/network_lines_new.svg alt=''
+[H H2] Unsere Produkte
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] mehr erfahren  -> /produkte/mittelspannungswandler/
+[H H2] Mittelspannungs-
+wandler  -> /produkte/mittelspannungswandler/
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] mehr erfahren  -> /produkte/niederspannungswandler/
+[H H2] Niederspannungs-
+wandler  -> /produkte/niederspannungswandler/
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] mehr erfahren  -> https://ritz-international.com/produkte/hochspannungswandler/
+[H H2] Hochspannungs-
+wandler  -> https://ritz-international.com/produkte/hochspannungswandler/
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] mehr erfahren  -> /produkte/stromschienen/
+[H H2] SIS Sammelschienen-Isolations-System  -> /produkte/stromschienen/
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] mehr erfahren  -> /produkte/giessharzteile-duromer/
+[H H2] Gießharzteile
+DUROMER  -> /produkte/giessharzteile-duromer/
+[IMG] https://ritz-international.com/wp-content/uploads/square_transparent.png alt=''
+[H H2] mehr erfahren  -> /produkte/elektronische-messwandler-und-sensoren/
+[H H2] Elektronische Messwandler und Sensoren  -> /produkte/elektronische-messwandler-und-sensoren/

@@ -1,0 +1,20 @@
+# CO2 Reduktion in den Werken - RITZ
+URL: https://ritz-international.com/co2-reduktion-in-den-werken/  status=200 lang=de kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "CO2 Reduktion in den Werken - RITZ", "og:description": "RITZ hat seinen CO₂-Ausstoß in den letzten 3 Jahren noch einmal erheblich reduziert Generationenübergreifende Verantwortung war schon immer ein zentraler Bestandteil der Unternehmensphilosophie der RITZ Gruppe. Dazu zählt auch, dass wir stets umfangreiche Maßnahmen ergriffen haben, um negative Auswirkungen auf die Umwelt in Folge unserer Geschäftstätigkeit möglichst gering zu halten. In den ve
+canonical: https://ritz-international.com/co2-reduktion-in-den-werken/
+hreflang: [['de', 'https://ritz-international.com/co2-reduktion-in-den-werken/'], ['x-default', 'https://ritz-international.com/co2-reduktion-in-den-werken/']]
+
+[POSTTITLE] CO2 Reduktion in den Werken
+[POSTCONTENT] RITZ hat seinen CO₂-Ausstoß in den letzten 3 Jahren noch einmal erheblich reduziert 
+ Generationenübergreifende Verantwortung war schon immer ein zentraler Bestandteil der Unternehmensphilosophie der RITZ Gruppe. Dazu zählt auch, dass wir stets umfangreiche Maßnahmen ergriffen haben, um negative Auswirkungen auf die Umwelt in Folge unserer Geschäftstätigkeit möglichst gering zu halten. In den vergangenen Jahren wurden zahlreiche Strategien verfolgt, um den CO₂-Ausstoß an
+den verschiedenen Standorten weiter erheblich zu senken.
+ Durch Investitionen in moderne Technologien, optimierte Prozesse und nachhaltige Energiequellen konnten beeindruckende Erfolge, trotz erhöhter Ausbringung, erzielt werden. Diese Entwicklungen zeigen nicht nur das starke Engagement von RITZ, sondern unterstreichen auch die Wirksamkeit der umgesetzten Maßnahmen. Die folgende Tabelle zeigt die CO₂-Reduktion der vergangenen Jahre. Die Zahlen beziehen sich dabei auf Reduktion von Scope 1 Emissionen, also direkten Emissionen aus eigenen oder kontrollierten Quellen, sowie von Scope 2-Emissionen, die durch den Bezug von zugekaufter Energie, insbesondere Strom und Wärme, entstehen.
+ Weiterlesen IMGS= LINKS=Weiterlesen<https://ritz-international.com/wp-content/uploads/RITZ-CO2-Reduktion-in-den-Werken-1.pdf>
+[TEXT] (in a71c4dd) RITZ hat seinen CO₂-Ausstoß in den letzten 3 Jahren noch einmal erheblich reduziert 
+ Generationenübergreifende Verantwortung war schon immer ein zentraler Bestandteil der Unternehmensphilosophie der RITZ Gruppe. Dazu zählt auch, dass wir stets umfangreiche Maßnahmen ergriffen haben, um negative Auswirkungen auf die Umwelt in Folge unserer Geschäftstätigkeit möglichst gering zu halten. In den vergangenen Jahren wurden zahlreiche Strategien verfolgt, um den CO₂-Ausstoß an
+den verschiedenen Standorten weiter erheblich zu senken.
+ Durch Investitionen in moderne Technologien, optimierte Prozesse und nachhaltige Energiequellen konnten beeindruckende Erfolge, trotz erhöhter Ausbringung, erzielt werden. Diese Entwicklungen zeigen nicht nur das starke Engagement von RITZ, sondern unterstreichen auch die Wirksamkeit der umgesetzten Maßnahmen. Die folgende Tabelle zeigt die CO₂-Reduktion der vergangenen Jahre. Die Zahlen beziehen sich dabei auf Reduktion von Scope 1 Emissionen, also direkten Emissionen aus eigenen oder kontrollierten Quellen, sowie von Scope 2-Emissionen, die durch den Bezug von zugekaufter Energie, insbesondere Strom und Wärme, entstehen.
+ Weiterlesen
+[BTN] Zurück -> /aktuelles/news
+[FEATURED] https://ritz-international.com/wp-content/uploads/Screenshot-2025-07-08-192929.png
+[PDFS] https://ritz-international.com/wp-content/uploads/RITZ-CO2-Reduktion-in-den-Werken-1.pdf

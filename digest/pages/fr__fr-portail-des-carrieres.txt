@@ -1,0 +1,187 @@
+# Portail des carrières - RITZ
+URL: https://ritz-international.com/fr/portail-des-carrieres/  status=200 lang=fr kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "description": "Découvrez des opportunités de carrière variées sur le portail des carrières RITZ. Trouvez l'emploi de vos rêves dans l'industrie électrique - de l'apprentissage aux postes de direction. Construisez avec nous l'avenir de la technologie de l'énergie.", "og:locale": "fr_FR", "og:type": "article", "og:title": "Portail des carrières - RITZ", "og:description": "Découvrez des opportunités de carrière variées sur le portail des carrières RITZ. Trouvez l'emploi de vos rêves dans l'industrie électr
+canonical: https://ritz-international.com/fr/portail-des-carrieres/
+hreflang: [['en', 'https://ritz-international.com/en/career-portal/'], ['fr', 'https://ritz-international.com/fr/portail-des-carrieres/'], ['de', 'https://ritz-international.com/karriereportal/'], ['hu', 'https://ritz-international.com/hu/karrier-portal/'], ['es', 'https://ritz-international.com/es/portal-de-empleo/'], ['x-default', 'https://ritz-international.com/karriereportal/']]
+
+[IMG] https://ritz-international.com/wp-content/uploads/arrow-red-RTZ-2048x1448.png alt='' -> #first-section
+[H H2] CERTAINEMENT UNE BONNE DÉCISION
+[shortcode] Recherche
+Site
+Tous
+Hamburg
+Kirchaich
+Ottendorf-Okrilla
+Catégorie
+Tous
+Auszubildende
+Fach- und Führungskräfte
+Gewerblich
+Kaufmännisch
+15 postes ouverts
+Ausbildung Fachkraft für Lagerlogistik (m/w/d)
+Ottendorf-Okrilla
+Temps plein
+Apprentissage
+Voir l’offre
+(s’ouvre dans un nouvel onglet)
+Ausbildung Mechatroniker (m/w/d)
+Ottendorf-Okrilla
+Temps plein
+Apprentissage
+Voir l’offre
+(s’ouvre dans un nouvel onglet)
+Elektroniker (m/w/d) Prüffeld
+Ottendorf-Okrilla
+Temps plein
+CDI
+Voir l’offre
+(s’ouvre dans un nouvel onglet)
+Specialist Energy (m/w/d)
+Ottendorf-Okrilla
+Temps plein
+CDI
+Voir l’offre
+(s’ouvre dans un nouvel onglet)
+Konstrukteur (m/w/d)
+Hamburg
+Temps plein
+CDI
+Voir l’offre
+(s’ouvre dans un nouvel onglet)
+Group ERP Manager (m/w/d)
+Hamburg
+Temps plein
+CDI
+Voir l’offre
+(s’ouvre dans un nouvel onglet)
+Lagerleiter / Manager Warehouse (m/w/d)
+Kirchaich
+Temps plein
+CDI
+Voir l’offre
+(s’ouvre dans un nouvel onglet)
+HR Specialist (m/w/d)
+Ottendorf-Okrilla
+Temps plein
+CDI
+Voir l’offre
+(s’ouvre dans un nouvel onglet)
+Leitung Prüffeld / Manager Testing (m/w/d)
+Kirchaich
+Temps plein
+CDI
+Voir l’offre
+(s’ouvre dans un nouvel onglet)
+Leitung Prüffeld / Manager Testing (m/w/d)
+Ottendorf-Okrilla
+Temps plein
+CDI
+Voir l’offre
+(s’ouvre dans un nouvel onglet)
+Mitarbeiter Instandhaltung (m/w/d)
+Ottendorf-Okrilla
+Temps plein
+CDI
+Voir l’offre
+(s’ouvre dans un nouvel onglet)
+Specialist Engineering (m/w/d)
+Kirchaich
+Temps plein
+CDI
+Voir l’offre
+(s’ouvre dans un nouvel onglet)
+Konstrukteur (m/w/d)
+Ottendorf-Okrilla
+Temps plein
+CDI
+Voir l’offre
+(s’ouvre dans un nouvel onglet)
+Teamleitung Zuschnitt- und Schweißzentrum (m/w/d)
+Kirchaich
+Temps plein
+CDI
+Voir l’offre
+(s’ouvre dans un nouvel onglet)
+Produktionsmitarbeiter (m/w/d)
+Ottendorf-Okrilla
+Temps plein
+CDI
+Voir l’offre
+(s’ouvre dans un nouvel onglet)
+Aucun poste ne correspond actuellement à votre sélection. LINKS=Ausbildung Fachkraft für Lagerlogistik (m/w/d)
+Ottendorf-Okrilla
+Temps plein
+Apprentissage
+Voir l’of<https://ritz.jobs.personio.de/job/2835088> Ausbildung Mechatroniker (m/w/d)
+Ottendorf-Okrilla
+Temps plein
+Apprentissage
+Voir l’offre
+(s’ouvre d<https://ritz.jobs.personio.de/job/2834291> Elektroniker (m/w/d) Prüffeld
+Ottendorf-Okrilla
+Temps plein
+CDI
+Voir l’offre
+(s’ouvre dans un nouvel<https://ritz.jobs.personio.de/job/2800669> Specialist Energy (m/w/d)
+Ottendorf-Okrilla
+Temps plein
+CDI
+Voir l’offre
+(s’ouvre dans un nouvel ong<https://ritz.jobs.personio.de/job/2775247> Konstrukteur (m/w/d)
+Hamburg
+Temps plein
+CDI
+Voir l’offre
+(s’ouvre dans un nouvel onglet)<https://ritz.jobs.personio.de/job/2749868> Group ERP Manager (m/w/d)
+Hamburg
+Temps plein
+CDI
+Voir l’offre
+(s’ouvre dans un nouvel onglet)<https://ritz.jobs.personio.de/job/2740479> Lagerleiter / Manager Warehouse (m/w/d)
+Kirchaich
+Temps plein
+CDI
+Voir l’offre
+(s’ouvre dans un nouv<https://ritz.jobs.personio.de/job/2676193> HR Specialist (m/w/d)
+Ottendorf-Okrilla
+Temps plein
+CDI
+Voir l’offre
+(s’ouvre dans un nouvel onglet)<https://ritz.jobs.personio.de/job/2573686> Leitung Prüffeld / Manager Testing (m/w/d)
+Kirchaich
+Temps plein
+CDI
+Voir l’offre
+(s’ouvre dans un n<https://ritz.jobs.personio.de/job/2556201> Leitung Prüffeld / Manager Testing (m/w/d)
+Ottendorf-Okrilla
+Temps plein
+CDI
+Voir l’offre
+(s’ouvre d<https://ritz.jobs.personio.de/job/2527864> Mitarbeiter Instandhaltung (m/w/d)
+Ottendorf-Okrilla
+Temps plein
+CDI
+Voir l’offre
+(s’ouvre dans un n<https://ritz.jobs.personio.de/job/2469114> Specialist Engineering (m/w/d)
+Kirchaich
+Temps plein
+CDI
+Voir l’offre
+(s’ouvre dans un nouvel onglet<https://ritz.jobs.personio.de/job/2455915> Konstrukteur (m/w/d)
+Ottendorf-Okrilla
+Temps plein
+CDI
+Voir l’offre
+(s’ouvre dans un nouvel onglet)<https://ritz.jobs.personio.de/job/2433976> Teamleitung Zuschnitt- und Schweißzentrum (m/w/d)
+Kirchaich
+Temps plein
+CDI
+Voir l’offre
+(s’ouvre da<https://ritz.jobs.personio.de/job/2415773> Produktionsmitarbeiter (m/w/d)
+Ottendorf-Okrilla
+Temps plein
+CDI
+Voir l’offre
+(s’ouvre dans un nouve<https://ritz.jobs.personio.de/job/2028868>
+[SECTIONS-BG] [{"id": "7879c1a", "settings": "{\"jet_parallax_layout_list\":[],\"background_background\":\"slideshow\",\"background_slideshow_gallery\":[{\"id\":1405,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/2022\\/11\\/intro_home_slider_1.webp\"},{\"id\":2787,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/stellenangebote_intro_slider_2_Produktion.webp\"},{\"id\":2790,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/stellenangebote_intro_slider_5_Logistik.webp\"},{\"id\":2789,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/stellenangebote_intro_slider_4_International.webp\"},{\"id\":1406,\"url\":\"https:\\/\\/ritz-international.com\\/wp-content\\/uploads\\/2022\\/11\\/intro_home_slider_2.webp\"}],\"background_slideshow_ken_burns\":\"yes\",\"background_slideshow_loop\":\"yes\",\"background_slideshow_slide_duration\":5000,\"background_slideshow_slide_transition\":\"fade\",\"background_slideshow_transition_duration\":500,\"background_slideshow_ken_burns_zoom_direction\":\"in\"}"}]

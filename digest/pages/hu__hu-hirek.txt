@@ -1,0 +1,33 @@
+# Hírek - RITZ
+URL: https://ritz-international.com/hu/hirek/  status=200 lang=hu kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "description": "Maradjon naprakész a RITZ műszeres transzformátorokkal kapcsolatban. Tudjon meg többet legújabb fejlesztéseinkről, vásáron való részvételünkről és díjainkról a műszeres transzformátor- és energiatechnológia területén.", "og:locale": "hu_HU", "og:type": "article", "og:title": "Hírek - RITZ", "og:description": "Maradjon naprakész a RITZ műszeres transzformátorokkal kapcsolatban. Tudjon meg többet legújabb fejlesztéseinkről, vásáron való részvételünkről és díjainkról a műszeres transzformáto
+canonical: https://ritz-international.com/hu/legfrissebb-hirek/hirek/
+hreflang: [['en', 'https://ritz-international.com/en/news/'], ['fr', 'https://ritz-international.com/fr/actualites/'], ['de', 'https://ritz-international.com/news/'], ['hu', 'https://ritz-international.com/hu/hirek/'], ['es', 'https://ritz-international.com/es/noticias/'], ['x-default', 'https://ritz-international.com/news/']]
+
+[H H2] Erről
+tudnia kell.
+[TEXT] Semmi sem állandóbb a változásnál. A RITZ Instrument Transformers GmbH egy dinamikus vállalat, amely nyitott a változásokra. Itt tájékoztatjuk Önt a legfrissebb híreinkről és fejlesztéseinkről. Használja ezt az oldalt információs és szolgáltatási portálként.
+[IMG] https://ritz-international.com/wp-content/uploads/2022/07/network_lines_on_white_right.svg alt=''
+[pp-posts.classic] Published on: 2026.10.20.
+Customer letter about the latest developments in foreign trade and the implications of regulation (EU) 2026/2133
+Dear Valued Customers, We would like to inform you about the latest developments in foreign trade and the implications of Implementing Regulation (EU) 2026/2133, which entered into force on 25 September 2026. Customer Letter_EU_Regulation_2026_2133
+Még több információ
+Published on: 2025.11.26.
+RITZ VÁSÁR DÁTUMOK 2026
+Még több információ
+Published on: 2025.09.18.
+A RITZ kecskeméti telephelyének bővítése
+Fejlesztések a RITZ Magyarország területén A magyarországi üzem fejlesztése átfogó, stratégiai beruházást jelent, amely a jövőbeni növekedés alapjául szolgál. Az intézkedés célja a termelési kapacitás jelentős bővítése, az energiahatékonyság növelése és a fenntartható működés megvalósítása. A fejlesztési terv középpontjában az irodahelyiségek bővítése és a meglévő gyártócsarnok 1000 m²-es bővítése áll. ...
+Még több információ
+Published on: 2024.09.18.
+RITZ nimmt an der XXX. VDE-Zählerfachtagung am 17./18. September 2024 in Gera teil
+Besuchen Sie unsere Kollegen an unserem RITZ Stand!   Ihr RITZ-Vertriebsteam
+Még több információ
+Published on: 2024.06.19.
+Supplier of the Year Award at Hitachi Supplier Days 2024
+Ritz Instrument Transformers was named Technology Supplier of the Year by Hitachi Energy Sweden in April. The continuous development of our DC converter EMVI has led to its recognition as an optimal solution for Hitachi Energy’s next-generation SVC Light portfolio. This technology contributes significantly to the integration of renewable energy ...
+Még több információ
+Published on: 2024.01.26.
+RITZ vásári dátumok 2024
+Még több információ
+Több megjelenítése IMGS=https://ritz-international.com/wp-content/uploads/cropped-RTZ-LOGO-RUND-red.png https://ritz-international.com/wp-content/uploads/Screenshot-2025-11-26-013209.png https://ritz-international.com/wp-content/uploads/Screenshot-2025-09-18-210156.png https://ritz-international.com/wp-content/uploads/IMG-20240917-WA0014.jpg https://ritz-international.com/wp-content/uploads/Ritz-Lieferanten-auszeichnung_Ausgeschnitten-1.jpg https://ritz-international.com/wp-content/uploads/RITZ-MESSETERMINE-2024-fuer-Webseite.png LINKS=<https://ritz-international.com/hu/customer-letter-about-the-latest-developments-in-foreign-trade-and-the-implications-of-regulation-eu-2026-2133/> Customer letter about the latest developments in foreign trade and the implications of regulation (E<https://ritz-international.com/hu/customer-letter-about-the-latest-developments-in-foreign-trade-and-the-implications-of-regulation-eu-2026-2133/> Még több információ<https://ritz-international.com/hu/customer-letter-about-the-latest-developments-in-foreign-trade-and-the-implications-of-regulation-eu-2026-2133/> <https://ritz-international.com/hu/ritz-vasar-datumok-2026/> RITZ VÁSÁR DÁTUMOK 2026<https://ritz-international.com/hu/ritz-vasar-datumok-2026/> Még több információ<https://ritz-international.com/hu/ritz-vasar-datumok-2026/> <https://ritz-international.com/hu/a-ritz-kecskemeti-telephelyenek-bovitese/> A RITZ kecskeméti telephelyének bővítése<https://ritz-international.com/hu/a-ritz-kecskemeti-telephelyenek-bovitese/> Még több információ<https://ritz-international.com/hu/a-ritz-kecskemeti-telephelyenek-bovitese/> <https://ritz-international.com/hu/ritz-nimmt-an-xxx-vde-zaehlerfachtagung-am-17-18-september-2024-in-gera-teil/> RITZ nimmt an der XXX. VDE-Zählerfachtagung am 17./18. September 2024 in Gera teil<https://ritz-international.com/hu/ritz-nimmt-an-xxx-vde-zaehlerfachtagung-am-17-18-september-2024-in-gera-teil/> Még több információ<https://ritz-international.com/hu/ritz-nimmt-an-xxx-vde-zaehlerfachtagung-am-17-18-september-2024-in-gera-teil/> <https://ritz-international.com/hu/supplier-of-the-year-award-at-hitachi-supplier-days-2024/> Supplier of the Year Award at Hitachi Supplier Days 2024<https://ritz-international.com/hu/supplier-of-the-year-award-at-hitachi-supplier-days-2024/> Még több információ<https://ritz-international.com/hu/supplier-of-the-year-award-at-hitachi-supplier-days-2024/> <https://ritz-international.com/hu/2024/> RITZ vásári dátumok 2024<https://ritz-international.com/hu/2024/> Még több információ<https://ritz-international.com/hu/2024/> Több megjelenítése<javascript:void(0);>

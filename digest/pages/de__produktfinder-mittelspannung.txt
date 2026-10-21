@@ -1,0 +1,7 @@
+# Mittelspannung - RITZ
+URL: https://ritz-international.com/produktfinder/mittelspannung/  status=200 lang=de kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "Mittelspannung - RITZ", "og:description": "Home Mittelspannung", "og:url": "https://ritz-international.com/produktfinder/mittelspannung/", "og:site_name": "RITZ"}
+canonical: https://ritz-international.com/produktfinder/mittelspannung/
+hreflang: [['de', 'https://ritz-international.com/produktfinder/mittelspannung/'], ['x-default', 'https://ritz-international.com/produktfinder/mittelspannung/']]
+
+[H H2] Mittelspannung

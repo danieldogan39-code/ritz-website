@@ -1,0 +1,12 @@
+# RITZ Instrument Transformers GmbH achieves the IRIS Silver Quality Performance Level - RITZ
+URL: https://ritz-international.com/en/ritz-instrument-transformers-gmbh-achieves-the-iris-silver-quality-performance-level/  status=200 lang=en kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "en_US", "og:type": "article", "og:title": "RITZ Instrument Transformers GmbH achieves the IRIS Silver Quality Performance Level - RITZ", "og:description": "We are pleased to announce that RITZ Instrument Transformers GmbH has achieved the IRIS Silver Quality Performance Level in its most recent audit. Out of approximately 3,000 companies worldwide certified under IRIS, only 401 have reached this status so far. This result underlines the strong performance of our quality management system.  
+canonical: https://ritz-international.com/en/ritz-instrument-transformers-gmbh-achieves-the-iris-silver-quality-performance-level/
+hreflang: [['en', 'https://ritz-international.com/en/ritz-instrument-transformers-gmbh-achieves-the-iris-silver-quality-performance-level/']]
+
+[POSTTITLE] RITZ Instrument Transformers GmbH achieves the IRIS Silver Quality Performance Level
+[POSTCONTENT] We are pleased to announce that RITZ Instrument Transformers GmbH has achieved the IRIS Silver Quality Performance Level in its most recent audit. Out of approximately 3,000 companies worldwide certified under IRIS, only 401 have reached this status so far. This result underlines the strong performance of our quality management system.
+ IRIS_Silver_performance_level_news_en IMGS= LINKS=IRIS_Silver_performance_level_news_en<https://ritz-international.com/wp-content/uploads/IRIS_Silver_performance_level_news_en.pdf>
+[BTN] Back -> https://ritz-international.com/en/?page_id=5595
+[FEATURED] https://ritz-international.com/wp-content/uploads/IRIS_Silber.png
+[PDFS] https://ritz-international.com/wp-content/uploads/IRIS_Silver_performance_level_news_en.pdf

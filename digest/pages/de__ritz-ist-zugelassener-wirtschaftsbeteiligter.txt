@@ -1,0 +1,13 @@
+# RITZ ist zugelassener Wirtschaftsbeteiligter - RITZ
+URL: https://ritz-international.com/ritz-ist-zugelassener-wirtschaftsbeteiligter/  status=200 lang=de kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "RITZ ist zugelassener Wirtschaftsbeteiligter - RITZ", "og:description": "Die RITZ Instrument Transformers GmbH wurde im September 2015 offiziell als „zugelassener Wirtschaftsbeteiligter“ (AEO–Authorised Economic Operator) der Europäischen Union für „zollrechtliche Vereinfachung/Sicherheit“ (AEO-F) zertifiziert.Das Unternehmen kann dadurch alle Zollformalitäten für Kunden aus Industrie und Handel innerhalb der EU schneller und effizienter abwickeln.
+canonical: https://ritz-international.com/ritz-ist-zugelassener-wirtschaftsbeteiligter/
+hreflang: [['en', 'https://ritz-international.com/en/ritz-is-an-authorized-economic-operator/'], ['fr', 'https://ritz-international.com/fr/ritz-est-un-operateur-economique-agree/'], ['de', 'https://ritz-international.com/ritz-ist-zugelassener-wirtschaftsbeteiligter/'], ['hu', 'https://ritz-international.com/hu/a-ritz-engedelyezett-gazdasagi-szereplo/'], ['es', 'https://ritz-international.com/es/ritz-es-un-operador-economico-autorizado/'], ['x-default', 'https://ritz-international.com/ritz-ist-zugelassener-wirtschaftsbeteiligter/']]
+
+[POSTTITLE] RITZ ist zugelassener Wirtschaftsbeteiligter
+[POSTCONTENT] Die RITZ Instrument Transformers GmbH wurde im September 2015 offiziell als „zugelassener Wirtschaftsbeteiligter“ (AEO–Authorised Economic Operator) der Europäischen Union für „zollrechtliche Vereinfachung/Sicherheit“ (AEO-F) zertifiziert.
+Das Unternehmen kann dadurch alle Zollformalitäten für Kunden aus Industrie und Handel innerhalb der EU schneller und effizienter abwickeln.
+ Die an die Zertifizierung geknüpften Bedingungen, wie zum Beispiel Zuverlässigkeit, Zahlungsfähigkeit und die Erfüllung von Rechts- und Sicherheitsnormen, erfüllt die Ritz Instrument Transformers GmbH bereits seit Jahren. Nun ist dies auch durch das offizielle AEO-F Zertifikat belegt.
+ Das Zertifikat finden Sie als Download  hier . IMGS= LINKS=hier<https://ritz-international.com/?page_id=673>
+[BTN] Zurück -> /aktuelles/news
+[FEATURED] https://ritz-international.com/wp-content/uploads/ritz_header-unternehmen.jpg

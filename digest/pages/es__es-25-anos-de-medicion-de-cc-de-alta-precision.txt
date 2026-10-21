@@ -1,0 +1,14 @@
+# 25 años de medición de CC de alta precisión - RITZ
+URL: https://ritz-international.com/es/25-anos-de-medicion-de-cc-de-alta-precision/  status=200 lang=es kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "es_ES", "og:type": "article", "og:title": "25 años de medición de CC de alta precisión - RITZ", "og:description": "RITZ de nuevo galardonado por su socio sueco en proyectos HVDC con un pedido de 96 DC – Sistemas de Medición La tecnología de corriente continua de alta tensión (HVDC) permite desde hace casi 25 años el intercambio de energía eléctrica limpia y renovable entre Quebec y Nueva Inglaterra. Desde el principio estuvo implicada la […]", "og:url": "https://ritz-international.com/es/25
+canonical: https://ritz-international.com/es/25-anos-de-medicion-de-cc-de-alta-precision/
+hreflang: [['en', 'https://ritz-international.com/en/25-years-of-high-precision-dc-measurement/'], ['fr', 'https://ritz-international.com/fr/25-ans-de-mesure-dc-de-haute-precision/'], ['de', 'https://ritz-international.com/lorem-ipsum-news-1/'], ['hu', 'https://ritz-international.com/hu/25-ev-nagy-pontossagu-dc-meres/'], ['es', 'https://ritz-international.com/es/25-anos-de-medicion-de-cc-de-alta-precision/'], ['x-default', 'https://ritz-international.com/lorem-ipsum-news-1/']]
+
+[POSTTITLE] 25 años de medición de CC de alta precisión
+[POSTCONTENT] RITZ de nuevo galardonado por su socio sueco en proyectos HVDC con un pedido de 96 DC – Sistemas de Medición
+ La tecnología de corriente continua de alta tensión (HVDC) permite desde hace casi 25 años el intercambio de energía eléctrica limpia y renovable entre Quebec y Nueva Inglaterra.
+ Desde el principio estuvo implicada la metrología de CC de alta precisión de Ritz Instrument Transformers GmbH.
+ Tras 25 años de funcionamiento sin problemas, la sustitución de los componentes electrónicos de los sistemas de medición de corriente continua se ha programado como parte de una actualización del proyecto. El contratista ejecutivo sueco de Hydro Quebec (HD) y National Grid (NG)) ha vuelto a hacer un pedido a Ritz para el suministro de 96 unidades de componentes electrónicos del tipo EMVI. Gracias a su calidad duradera, los cabezales sensores asociados (CT) permanecen en la estación, lo que supone una importante reducción de costes para el operador del sistema.
+ El sistema de medición de CC y CA de alta precisión tipo EMVI se utiliza en todo el mundo desde 1985 en casi todos los principales equipos HVDC, SVC y GKK para medir corrientes de CC y CA de hasta 24 kA en todos los niveles de tensión con fines de medición, protección y facturación. IMGS= LINKS=
+[BTN] Volver -> https://ritz-international.com/es/?page_id=5592
+[FEATURED] https://ritz-international.com/wp-content/uploads/ritz-emvi_01-212x300-1.png

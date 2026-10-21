@@ -1,0 +1,106 @@
+# Produktionsstandorte - RITZ
+URL: https://ritz-international.com/unternehmen/produktionsstandorte/  status=200 lang=de kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "description": "Erfahren Sie mehr über die globalen Produktionsstandorte von RITZ Instrument Transformers. Mit Werken in Deutschland, Österreich, Ungarn, China und den USA garantieren wir höchste Qualität und Effizienz in der Fertigung.", "og:locale": "de_DE", "og:type": "article", "og:title": "Produktionsstandorte - RITZ", "og:description": "Erfahren Sie mehr über die globalen Produktionsstandorte von RITZ Instrument Transformers. Mit Werken in Deutschland, Österreich, Ungarn, China und den USA garantie
+canonical: https://ritz-international.com/unternehmen/produktionsstandorte/
+hreflang: [['en', 'https://ritz-international.com/en/company/production-sites/'], ['fr', 'https://ritz-international.com/fr/entreprise/sites-de-production/'], ['de', 'https://ritz-international.com/unternehmen/produktionsstandorte/'], ['hu', 'https://ritz-international.com/hu/a-vallalat/gyartasi-helyszinek/'], ['es', 'https://ritz-international.com/es/la-empresa/centros-de-produccion/'], ['x-default', 'https://ritz-international.com/unternehmen/produktionsstandorte/']]
+
+[TEXT] Home    >    Unternehmen     >    Produktionsstandorte
+[H H2] Die ganze Welt braucht Energie.
+[TEXT] Von Hamburg bis Hartwell (USA). Als RITZ-Firmengruppe sind wir international aufgestellt und befinden uns auf konsequentem Wachstumskurs. 
+ Unsere sechs Produktionsstandorte in Deutschland,  Österreich, Ungarn, China und den USA  sind eng miteinander vernetzt. Gemeinsam mit unseren Partnern wollen wir den globalen Footprint verbessern. Schritt für Schritt.
+[IMG] https://ritz-international.com/wp-content/uploads/2022/07/network_lines_on_white_right.svg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/2022/07/network_lines_on_white_right.svg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/2022/07/unternehmen_produktionsstandorte_1.jpg.jpg alt=''
+[H H2] STANDORTE AUF
+EINEN BLICK
+[H H2] Hamburg
+[TEXT] RITZ Instrument 
+Transformers GmbH, Hamburg
+[LIST] Wandsbeker Zollstraße 92-98 22041 Hamburg Deutschland | +49 40 511 230 <tel:+4940511230>
+[BTN] Routenplaner -> https://goo.gl/maps/5ng9TzyrJcWU8ibV9
+[BTN] Kontakt -> #
+[H H2] Wirges
+[TEXT] RITZ Instrument 
+Transformers GmbH, Wirges
+[LIST] Siemensstraße 2 56422 Wirges Deutschland | +49 2602 6790 <tel:+4926026790>
+[BTN] Routenplaner -> https://goo.gl/maps/e3Do4eB4mcXijkLeA
+[BTN] Kontakt -> #
+[html] Hamburg
+Funktion
+Firmenhauptsitz - Ritz Stiftung
+Vertrieb
+Controlling / Buchhaltung
+IT
+Personalwesen
+Entwicklung/Konstruktion
+Elektronik IMGS=/wp-content/uploads/2022/07/icon_angle_up.svg
+[html] Wirges
+Funktion
+Vertrieb
+Produktion
+Innenraum Spannungs- und Stromwandler bis 72,5 kV
+Freiluft Spannungs- und Stromwandler bis 72,5 kV
+Gießharzisolierte Leistungstransformatoren bis 40,5 kV und 25 MVA IMGS=/wp-content/uploads/2022/07/icon_angle_up.svg
+[jet-listing-grid] Routenplaner
+Kontakt
+EMPLOYEES
+Routenplaner
+Kontakt
+EMPLOYEES
+Routenplaner
+Kontakt
+EMPLOYEES
+Routenplaner
+Kontakt
+EMPLOYEES
+Routenplaner
+Kontakt
+EMPLOYEES
+Routenplaner
+Kontakt
+EMPLOYEES
+Routenplaner
+Kontakt
+EMPLOYEES LINKS=Kontakt<#> Kontakt<#> Kontakt<#> Kontakt<#> Kontakt<#> Kontakt<#> Kontakt<#>
+[LIST] (in 32b1f72)  |  | 
+[BTN] (in 32b1f72) Routenplaner -> None
+[BTN] (in 32b1f72) Kontakt -> #
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) EMPLOYEES
+[LIST] (in 32b1f72)  |  | 
+[BTN] (in 32b1f72) Routenplaner -> None
+[BTN] (in 32b1f72) Kontakt -> #
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) EMPLOYEES
+[LIST] (in 32b1f72)  |  | 
+[BTN] (in 32b1f72) Routenplaner -> None
+[BTN] (in 32b1f72) Kontakt -> #
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) EMPLOYEES
+[LIST] (in 32b1f72)  |  | 
+[BTN] (in 32b1f72) Routenplaner -> None
+[BTN] (in 32b1f72) Kontakt -> #
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) EMPLOYEES
+[LIST] (in 32b1f72)  |  | 
+[BTN] (in 32b1f72) Routenplaner -> None
+[BTN] (in 32b1f72) Kontakt -> #
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) EMPLOYEES
+[LIST] (in 32b1f72)  |  | 
+[BTN] (in 32b1f72) Routenplaner -> None
+[BTN] (in 32b1f72) Kontakt -> #
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) EMPLOYEES
+[LIST] (in 32b1f72)  |  | 
+[BTN] (in 32b1f72) Routenplaner -> None
+[BTN] (in 32b1f72) Kontakt -> #
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) EMPLOYEES

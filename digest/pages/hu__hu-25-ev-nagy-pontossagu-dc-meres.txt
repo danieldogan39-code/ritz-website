@@ -1,0 +1,14 @@
+# 25 év nagy pontosságú DC - mérés - RITZ
+URL: https://ritz-international.com/hu/25-ev-nagy-pontossagu-dc-meres/  status=200 lang=hu kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "hu_HU", "og:type": "article", "og:title": "25 év nagy pontosságú DC - mérés - RITZ", "og:description": "A RITZ ismét megbízást kapott svéd partnerétől a HVDC-projektek területén 96 DC – mérőrendszer megrendelésére A nagyfeszültségű egyenáram (HVDC) – technológia közel 25 éve lehetővé teszi a tiszta, megújuló villamos energia cseréjét Quebec és New England között. A kezdetektől fogva a Ritz Instrument Transformers GmbH nagy pontosságú egyenáramú méréstechnikája volt érintett. 25 év problémam
+canonical: https://ritz-international.com/hu/25-ev-nagy-pontossagu-dc-meres/
+hreflang: [['en', 'https://ritz-international.com/en/25-years-of-high-precision-dc-measurement/'], ['fr', 'https://ritz-international.com/fr/25-ans-de-mesure-dc-de-haute-precision/'], ['de', 'https://ritz-international.com/lorem-ipsum-news-1/'], ['hu', 'https://ritz-international.com/hu/25-ev-nagy-pontossagu-dc-meres/'], ['es', 'https://ritz-international.com/es/25-anos-de-medicion-de-cc-de-alta-precision/'], ['x-default', 'https://ritz-international.com/lorem-ipsum-news-1/']]
+
+[POSTTITLE] 25 év nagy pontosságú DC – mérés
+[POSTCONTENT] A RITZ ismét megbízást kapott svéd partnerétől a HVDC-projektek területén 96 DC – mérőrendszer megrendelésére
+ A nagyfeszültségű egyenáram (HVDC) – technológia közel 25 éve lehetővé teszi a tiszta, megújuló villamos energia cseréjét Quebec és New England között.
+ A kezdetektől fogva a Ritz Instrument Transformers GmbH nagy pontosságú egyenáramú méréstechnikája volt érintett.
+ 25 év problémamentes működés után a DC mérőrendszerek elektronikus alkatrészeinek cseréjét most egy projektfrissítés keretében tervezik. A Hydro Quebec (HD) és a National Grid (NG) svéd kivitelezője ismét megrendelést adott a Ritznek 96 darab EMVI típusú elektronikus alkatrészegység szállítására. Tartós minőségüknek köszönhetően a kapcsolódó érzékelőfejek (CT-k) az állomáson maradnak, ami jelentős költségcsökkentést eredményez a rendszerüzemeltető számára.
+ Az EMVI típusú, nagy pontosságú egyen- és váltakozó áramú mérőrendszert 1985 óta világszerte használják szinte az összes jelentős HVDC, SVC és GKK berendezésben, hogy mérési, védelmi és számlázási célokra minden feszültségszinten 24kA-ig terjedő egyen- és váltakozó áramot mérjenek. IMGS= LINKS=
+[BTN] Vissza -> https://ritz-international.com/hu/?page_id=5606
+[FEATURED] https://ritz-international.com/wp-content/uploads/ritz-emvi_01-212x300-1.png

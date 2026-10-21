@@ -1,0 +1,12 @@
+# New products GBMW /GBMEI - RITZ
+URL: https://ritz-international.com/en/new-products-gbmw-gbmei/  status=200 lang=en kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "en_US", "og:type": "article", "og:title": "New products GBMW /GBMEI - RITZ", "og:description": "Find out more about our new products GBMW/GBMEI GBMW GBMEI", "og:url": "https://ritz-international.com/en/new-products-gbmw-gbmei/", "og:site_name": "RITZ"}
+canonical: https://ritz-international.com/en/new-products-gbmw-gbmei/
+hreflang: [['en', 'https://ritz-international.com/en/new-products-gbmw-gbmei/'], ['de', 'https://ritz-international.com/neue-produkte-gbmw-gbmei/'], ['x-default', 'https://ritz-international.com/neue-produkte-gbmw-gbmei/']]
+
+[POSTTITLE] New products GBMW /GBMEI
+[POSTCONTENT] Find out more about our new products GBMW/GBMEI
+ GBMW 
+ GBMEI IMGS= LINKS=GBMW<https://ritz-international.com/wp-content/uploads/GBMW120240.pdf> GBMEI<https://ritz-international.com/wp-content/uploads/GBMEI-120240.pdf>
+[BTN] Back -> https://ritz-international.com/en/?page_id=5595
+[PDFS] https://ritz-international.com/wp-content/uploads/GBMW120240.pdf https://ritz-international.com/wp-content/uploads/GBMEI-120240.pdf

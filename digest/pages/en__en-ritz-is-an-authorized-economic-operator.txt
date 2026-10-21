@@ -1,0 +1,13 @@
+# RITZ is an authorized economic operator - RITZ
+URL: https://ritz-international.com/en/ritz-is-an-authorized-economic-operator/  status=200 lang=en kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "en_US", "og:type": "article", "og:title": "RITZ is an authorized economic operator - RITZ", "og:description": "RITZ Instrument Transformers GmbH was officially certified as an “Authorized Economic Operator” (AEO-Authorized Economic Operator) of the European Union for “Customs Simplification/Security” (AEO-F) in September 2015.This enables the company to process all customs formalities for industrial and commercial customers within the EU more quickly and efficiently. Ritz Instrument Transfo
+canonical: https://ritz-international.com/en/ritz-is-an-authorized-economic-operator/
+hreflang: [['en', 'https://ritz-international.com/en/ritz-is-an-authorized-economic-operator/'], ['fr', 'https://ritz-international.com/fr/ritz-est-un-operateur-economique-agree/'], ['de', 'https://ritz-international.com/ritz-ist-zugelassener-wirtschaftsbeteiligter/'], ['hu', 'https://ritz-international.com/hu/a-ritz-engedelyezett-gazdasagi-szereplo/'], ['es', 'https://ritz-international.com/es/ritz-es-un-operador-economico-autorizado/'], ['x-default', 'https://ritz-international.com/ritz-ist-zugelassener-wirtschaftsbeteiligter/']]
+
+[POSTTITLE] RITZ is an authorized economic operator
+[POSTCONTENT] RITZ Instrument Transformers GmbH was officially certified as an “Authorized Economic Operator” (AEO-Authorized Economic Operator) of the European Union for “Customs Simplification/Security” (AEO-F) in September 2015.
+This enables the company to process all customs formalities for industrial and commercial customers within the EU more quickly and efficiently.
+ Ritz Instrument Transformers GmbH has been meeting the conditions for certification, such as reliability, solvency and compliance with legal and safety standards, for many years. This has now also been confirmed by the official AEO-F certificate.
+ You can download the certificate here . IMGS= LINKS=here<https://ritz-international.com/?page_id=673>
+[BTN] Back -> https://ritz-international.com/en/?page_id=5595
+[FEATURED] https://ritz-international.com/wp-content/uploads/ritz_header-unternehmen.jpg

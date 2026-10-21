@@ -1,0 +1,16 @@
+# GE HYPACT system with RITZ converters - RITZ
+URL: https://ritz-international.com/en/ge-hypact-system-with-ritz-converters/  status=200 lang=en kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "en_US", "og:type": "article", "og:title": "GE HYPACT system with RITZ converters - RITZ", "og:description": "Project overviewIn 2025, RITZ Instrument Transformers GmbH received a request from GE Vernova to supply current transformers for the HYpact switchgear developed by GE. In cooperation with GE Vernova, the sales team and application engineering at RITZ developed current transformers that meet the specific requirements of this system. Read more", "og:url": "https://ritz-international.co
+canonical: https://ritz-international.com/en/ge-hypact-system-with-ritz-converters/
+hreflang: [['en', 'https://ritz-international.com/en/ge-hypact-system-with-ritz-converters/'], ['de', 'https://ritz-international.com/ge-hypact-anlage-mit-ritz-wandlern/'], ['x-default', 'https://ritz-international.com/ge-hypact-anlage-mit-ritz-wandlern/']]
+
+[POSTTITLE] GE HYPACT system with RITZ converters
+[POSTCONTENT] Project overview 
+In 2025, RITZ Instrument Transformers GmbH received a request from GE Vernova to supply current transformers for the HYpact switchgear developed by GE. In cooperation with GE Vernova, the sales team and application engineering at RITZ developed current transformers that meet the specific requirements of this system. 
+ Read more IMGS= LINKS=Read more<https://ritz-international.com/wp-content/uploads/RITZ_Solution_GE_HYpact_En-1.pdf>
+[TEXT] (in a71c4dd) Project overview 
+In 2025, RITZ Instrument Transformers GmbH received a request from GE Vernova to supply current transformers for the HYpact switchgear developed by GE. In cooperation with GE Vernova, the sales team and application engineering at RITZ developed current transformers that meet the specific requirements of this system. 
+ Read more
+[BTN] Back -> https://ritz-international.com/en/?page_id=5595
+[FEATURED] https://ritz-international.com/wp-content/uploads/HYpact-Anlage.png
+[PDFS] https://ritz-international.com/wp-content/uploads/RITZ_Solution_GE_HYpact_En-1.pdf

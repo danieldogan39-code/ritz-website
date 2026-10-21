@@ -1,0 +1,13 @@
+# TEAMCHALLENGE IN DRESDEN - RITZ
+URL: https://ritz-international.com/teamchallenge-in-dresden/  status=200 lang=de kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "TEAMCHALLENGE IN DRESDEN - RITZ", "og:description": "Kürzlich starteten 22 Läufer:innen und Läufer unseres RITZ Standortes in Ottendorf-Okrilla bei der Rewe Team Challenge in Dresden. Die gemeinsame Vorbereitung auf die Challenge, der gemeinsame Spaß und gemeinsam durchs Ziel zu laufen fördert nicht nur die Kommunikation und das Miteinander im Unternehmen, sondern bleibt definitiv noch lange im Gedächtnis! Herzlichen Dank an all unsere […]", "og:ur
+canonical: https://ritz-international.com/teamchallenge-in-dresden/
+hreflang: [['en', 'https://ritz-international.com/en/teamchallenge-in-dresden/'], ['fr', 'https://ritz-international.com/fr/teamchallenge-a-dresde/'], ['de', 'https://ritz-international.com/teamchallenge-in-dresden/'], ['hu', 'https://ritz-international.com/hu/teamchallenge-dresdenben/'], ['es', 'https://ritz-international.com/es/teamchallenge-en-dresde/'], ['x-default', 'https://ritz-international.com/teamchallenge-in-dresden/']]
+
+[POSTTITLE] TEAMCHALLENGE IN DRESDEN
+[POSTCONTENT] Kürzlich starteten 22 Läufer:innen und Läufer unseres RITZ Standortes in Ottendorf-Okrilla bei der Rewe Team Challenge in Dresden.
+ Die gemeinsame Vorbereitung auf die Challenge, der gemeinsame Spaß und gemeinsam durchs Ziel zu laufen fördert nicht nur die Kommunikation und das Miteinander im Unternehmen, sondern bleibt definitiv noch lange im Gedächtnis!
+ Herzlichen Dank an all unsere Läufer:innen, dass ihr unser Unternehmen so würdig vertreten habt und Glückwunsch zu eurer super Leistung!
+ Ihr habt auch Lust, unser Laufteam nächstes Jahr zu unterstützen? Dann schaut jetzt schnell auf unsere Stellenausschreibungen. IMGS=https://ritz-international.com/wp-content/uploads/IMG_20230607_060435_853.jpg https://ritz-international.com/wp-content/uploads/IMG_20230607_060435_863.jpg LINKS=
+[BTN] Zurück -> /aktuelles/news
+[FEATURED] https://ritz-international.com/wp-content/uploads/IMG_20230607_060125_233.jpg

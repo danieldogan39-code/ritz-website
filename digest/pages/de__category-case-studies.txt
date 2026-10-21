@@ -1,0 +1,15 @@
+# Case Studies Archive - RITZ
+URL: https://ritz-international.com/category/case-studies/  status=200 lang=de kind=extra
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "Case Studies Archive - RITZ", "og:url": "https://ritz-international.com/category/case-studies/", "og:site_name": "RITZ"}
+canonical: https://ritz-international.com/category/case-studies/
+hreflang: [['en', 'https://ritz-international.com/en/category/case-studies/'], ['de', 'https://ritz-international.com/category/case-studies/'], ['x-default', 'https://ritz-international.com/category/case-studies/']]
+
+[MAINHTML] Kategorie: Case Studies 
+ Konstruktion neues Hochspannungswerk 
+ Ritz Instrument Transformers kündigt Bau einer neuen Hochspannungsfabrik an Lavonia, Georgia, USA: Ritz Instrument Transformers, Inc. gab heute bekannt, dass es in Waynesboro, Georgia, eine neue hochmoderne Produktionsstätte für die Herstellung von Hochspannungs-Messwandlern errichten wird. Die Anfangsinvestition wird voraussichtlich 28 Millionen US-Dollar betragen, und das Projekt wird 130 Arbeitsplätze in der Fertigung und im Fachbereich […]
+ Zusatzbürde 
+ Zusatzbürde ist ein Zusatzgerät, mit dem eine ausreichende Bebürdung von nicht annähernd ausgebürdeten Messwandlern (z.B. beim Einsatz von elektronischen Zählern) erzielt wird. Hinweis: Nicht ausgebürdete Messwandler halten die Genauigkeitsklasse nicht ein. Zusatzbürde
+ Auszeichnung zum Lieferanten des Jahres bei den Hitachi Supplier Days 2024 
+ Ritz Instrument Transformers wurde im April von Hitachi Energy Schweden zum Technologielieferanten des Jahres ernannt. Die kontinuierliche Weiterentwicklung unseres Gleichspannungswandlers EMVI hat zu seiner Anerkennung als optimale Lösung für das SVC Light-Portfolio der nächsten Generation von Hitachi Energy geführt. Diese Technologie leistet einen wichtigen Beitrag zur Integration erneuerbarer Energien und unterstützt eine breite Palette von […]
+ Kundenreferenz SIS – Projekt BSW 
+ Immer wenn bei begrenzten Platzangebot hohe Ströme übertragen werden sollen, sind die vollisolierten Stromschienensysteme von RITZ das Mittel der Wahl. Sie dienen dabei als kostengünstige Alternative zu parallel verlegten Kabelverbindungen, metallgekapselten Stromschienen oder anderen Kabelverbindungen. Auch bei dem Projekt von ELATEC POWER DISTRIBUTION GmbH (https://elatec.net) für die Badische Stahlwerke GmbH (BSW) fiel die Wahl auf […]

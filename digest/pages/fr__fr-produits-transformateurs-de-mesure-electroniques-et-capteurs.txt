@@ -1,0 +1,279 @@
+# Transformateurs de mesure électroniques et capteurs - RITZ
+URL: https://ritz-international.com/fr/produits/transformateurs-de-mesure-electroniques-et-capteurs/  status=200 lang=fr kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "fr_FR", "og:type": "article", "og:title": "Transformateurs de mesure électroniques et capteurs - RITZ", "og:description": "Accueil Transformateurs de mesure électroniques et capteurs Compétence dans la solution innovante de votre tâche de mesure Plus de 40 ans d’expérience dans l’utilisation de l’électronique dans la technique énergétique Une technique d’isolation sophistiquée, associée à une grande précision de mesure et à une qualité de fabrication élevée Des techniques non conventionnell
+canonical: https://ritz-international.com/produkte/elektronische-messwandler-und-sensoren/
+hreflang: [['en', 'https://ritz-international.com/en/products/electronic-transducers-and-sensors/'], ['fr', 'https://ritz-international.com/fr/produits/transformateurs-de-mesure-electroniques-et-capteurs/'], ['de', 'https://ritz-international.com/produkte/elektronische-messwandler-und-sensoren/'], ['hu', 'https://ritz-international.com/hu/termekek/elektronikus-meroatalakitok-es-erzekelok/'], ['es', 'https://ritz-international.com/es/productos/transductores-y-sensores-electronicos-de-medicion/'], ['x-default', 'https://ritz-international.com/produkte/elektronische-messwandler-und-sensoren/']]
+
+[H H2] Transformateurs de mesure électroniques et capteurs
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/introduction_image_elektronische_messwandler_und_sensoren-e1705680342912.jpg alt=''
+[TEXT] Compétence dans la solution innovante de votre tâche de mesure
+ Plus de 40 ans d’expérience dans l’utilisation de l’électronique dans la technique énergétique
+ Une technique d’isolation sophistiquée, associée à une grande précision de mesure et à une qualité de fabrication élevée
+ Des techniques non conventionnelles pour une grande fiabilité, même dans des environnements très perturbés
+ Certification selon DIN/EN/ISO 9001
+[H H2] Contact
+[H H2] Gregor Pohl
+[LIST] +49 40 51123 - 260 <tel:+494051123260> | gregor.pohl@ritz-international.com <mailto:gregor.pohl@ritz-international.com>
+[H H2] Télécharger les Documents d'information
+[LIST] Électronique <https://ritz-international.com/wp-content/uploads/RITZ_Elektronik_DE_EN-2.pdf> | Capteurs <https://ritz-international.com/wp-content/uploads/Sensors-2.pdf>
+[template] Caractéristiques, techniques et applications
+Mesure du courant
+Courants jusqu’à 24 kA
+Fréquences de 0 à 10 kHz
+Précisions à partir de 0,1 %
+Techniques
+Procédure de modulation
+Technique des fibres optiques et du laser
+Fournisseur autonome
+Principe du transformateur
+Procédure de compensation
+Enroulement de Rogowski
+Transformateur Kraemer
+Diviseur de tension R et C
+Mesure de tension
+Tensions jusqu’à 90 kV
+Fréquences de 0 à 150 kHz
+Précisions à partir de 0,1 %
+Applications
+Technique énergétique
+Technique ferroviaire
+Électrochimie
+Technique de l’environnement
+Recherche
+Industrie automobile
+PRODUITS
+CAPTEURS DE COURANT INTÉRIEUR
+Capteur de courant KSOH-S 1082 Transformateur de courant passif à faible signal
+Catalogue de capteurs
+Capteur de courant MKSOH-S 1384 Transformateur de courant passif à faible signal
+Catalogue de capteurs
+Capteur de courant UGSS-S 104 Gr. 1 Transformateur de courant passif à faible signal
+Catalogue de capteurs
+Capteur de courant RKU-S 2012 Transformateur de courant passif à faible signal
+Catalogue de capteurs
+Capteurs de tension Intérieur
+Capteur de tension GBERA 12 | 24 | 36 Convertisseur de tension à faible signal passif
+Catalogue de capteurs
+Capteur de tension GSER 3Convertisseur de tension à faible signal passif
+Catalogue de capteurs
+Capteur de tension MGTK 12 | 17.5 | 24Convertisseur de tension à faible signal passif
+Catalogue de capteurs
+Capteur de tension MGTK-V 12 | 17.5 | 24 Convertisseur de tension à faible signal passif
+Catalogue de capteurs
+Capteurs de tension FREILUFT
+GSER(F) 16 Convertisseur de tension à faible signal passif
+Catalogue de capteurs
+GSER(F) 52 Convertisseur de tension à faible signal passif
+Catalogue de capteurs
+GSR 27 | 38 Convertisseur de tension à faible signal passif
+Catalogue de capteurs
+Capteurs combinés pour l'intérieur
+Capteur combiné ABS 12 | 17,5 | 24 | 36 Forme de construction du support pour le montage dans des tableaux isolés par air
+Fiche technique
+Transformateurs de tension électroniques
+Convertisseur de tension électronique EGIW x64 Système de mesure DC et AC avec transmission optique des données
+Fiche technique (anglais)
+Transformateur de tension électronique EGIW x45Système de mesure DC et AC avec amplificateur séparateur
+Fiche technique (anglais)
+Convertisseur de tension électronique EVBA x06 Système de mesure DC et AC avec amplificateur tampon
+Fiche technique (anglais)
+Transformateurs de courant électroniques
+Transformateur de courant électronique EMVI 7xx Système de mesure DC et AC basé sur le principe du flux zéro
+Fiche technique (anglais)
+Électronique autonome
+Amplificateur de tampon EVBA 06 Complément pour les capteurs de tension existants
+Fiche technique (anglais)
+Accessoires pour transformateurs de mesure
+Protection contre la tension en circuit ouvert EOSS 122 Dispositif de protection pour transformateur de courant
+Fiche technique IMGS=https://ritz-international.com/wp-content/uploads/2022/10/produkte_stromsensoren_innenraum_stromsensor_ksoh-s_1082.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_stromsensoren_innenraum_stromsensor_mksoh-s_1384.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_stromsensoren_innenraum_stromsensor_ugss-s_104_gr_1.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_stromsensoren_innenraum_stromsensor_rku-s_2012.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_innenraum_spannungssensor_gbera_12_24_36.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_innenraum_spannungssensor_gser_3.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_innenraum_spannungssensor_mgtk_12_17_5_24.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_innenraum_spannungssensor_mgtk-v_12_17_5_24.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_freiluft_gserf_16.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_freiluft_gserf_52.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_freiluft_gsr_27_38.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_kombisensoren_innenraum_kombisensor_abs_12_17_5_24_36.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_elektronische_spannungwandler_elektronischer_spannungswandler_egiw_x64.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_elektronische_spannungwandler_elektronischer_spannungswandler_egiw_x85.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_elektronische_spannungwandler_elektronischer_spannungswandler_evba_x06.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_elektronische_stromwandler_elektronischer_stromwandler_emvi_7xx.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_stand-alone_elektronik_pufferverstaerker_evba_006.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_messwandlerzubehoer_offenspannungsschutz_eoss_122.jpg LINKS=Catalogue de capteurs<https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf> Catalogue de capteurs<https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf> Catalogue de capteurs<https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf> Catalogue de capteurs<https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf> Catalogue de capteurs<https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf> Catalogue de capteurs<https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf> Catalogue de capteurs<https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf> Catalogue de capteurs<https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf> Catalogue de capteurs<https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf> Catalogue de capteurs<https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf> Catalogue de capteurs<https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf> Fiche technique<https://ritz-international.com/wp-content/uploads/DE_T.Data-Sheet_ABS-12_17.5_24_36.pdf> Fiche technique (anglais)<https://ritz-international.com/wp-content/uploads/2018-08_EGIW_x64_datasheet-2.pdf> Fiche technique (anglais)<https://ritz-international.com/wp-content/uploads/EGIW_x45_Data_Sheet.pdf> Fiche technique (anglais)<https://ritz-international.com/wp-content/uploads/2018-08_EVBA_x06_datasheet-3.pdf> Fiche technique (anglais)<https://ritz-international.com/wp-content/uploads/2018-08_EMVI_7xx_datasheet-2.pdf> Fiche technique (anglais)<https://ritz-international.com/wp-content/uploads/2018-08_EVBA_x06_datasheet-2.pdf> Fiche technique<https://ritz-international.com/wp-content/uploads/201808_EOSS_122_datasheet.pdf>
+[ACC] (in 2556fde) <Caractéristiques, techniques et applications> tpl=1220 Mesure du courant
+ Courants jusqu’à 24 kA
+ Fréquences de 0 à 10 kHz
+ Précisions à partir de 0,1 %
+ Techniques
+ Procédure de modulation
+ Technique des fibres optiques et du laser
+ Fournisseur autonome
+ Principe du transformateur
+ Procédure de compensation
+ Enroulement de Rogowski
+ Transformateur Kraemer
+ Diviseur de tension R et C
+ Mesure de tension
+ Tensions jusqu’à 90 kV
+ Fréquences de 0 à 150 kHz
+ Précisions à partir de 0,1 %
+ Applications
+ Technique énergétique
+ Technique ferroviaire
+ Électrochimie
+ Technique de l’environnement
+ Recherche
+ Industrie automobile || <PRODUITS> tpl=1224 CAPTEURS DE COURANT INTÉRIEUR
+ Capteur de courant KSOH-S 1082 
+ Transformateur de courant passif à faible signal 
+ Catalogue de capteurs 
+ Capteur de courant MKSOH-S 1384 
+ Transformateur de courant passif à faible signal 
+ Catalogue de capteurs 
+ Capteur de courant UGSS-S 104 Gr. 1 
+Transformateur de courant passif à faible signal
+ Catalogue de capteurs 
+ Capteur de courant RKU-S 2012 
+Transformateur de courant passif à faible signal 
+ Catalogue de capteurs 
+ Capteurs de tension Intérieur
+ Capteur de tension GBERA 12 | 24 | 36 
+Convertisseur de tension à faible signal passif 
+ Catalogue de capteurs 
+ Capteur de tension GSER 3
+ Convertisseur de tension à faible signal passif 
+ Catalogue de capteurs 
+ Capteur de tension MGTK 12 | 17.5 | 24 
+Convertisseur de tension à faible signal passif 
+ Catalogue de capteurs 
+ Capteur de tension MGTK-V 12 | 17.5 | 24 
+Convertisseur de tension à faible signal passif 
+ Catalogue de capteurs 
+ Capteurs de tension FREILUFT
+ GSER(F) 16 
+Convertisseur de tension à faible signal passif 
+ Catalogue de capteurs 
+ GSER(F) 52 
+Convertisseur de tension à faible signal passif 
+ Catalogue de capteurs 
+ GSR 27 | 38 
+Convertisseur de tension à faible signal passif 
+ Catalogue de capteurs 
+ Capteurs combinés pour l'intérieur 
+ Capteur combiné ABS 12 | 17,5 | 24 | 36 
+Forme de construction du support pour le montage dans des tableaux isolés par air 
+ Fiche technique 
+ Transformateurs de tension électroniques
+ Convertisseur de tension électronique EGIW x64 
+Système de mesure DC et AC avec transmission optique des données 
+ Fiche technique (anglais) 
+ Transformateur de tension électronique EGIW x45 
+Système de mesure DC et AC avec amplificateur séparateur 
+ Fiche technique (anglais) 
+ Convertisseur de tension électronique EVBA x06 
+Système de mesure DC et AC avec amplificateur tampon 
+ Fiche technique (anglais) 
+ Transformateurs de courant électroniques
+ Transformateur de courant électronique EMVI 7xx 
+Système de mesure DC et AC basé sur le principe du flux zéro
+ Fiche technique (anglais) 
+ Électronique autonome
+ Amplificateur de tampon EVBA 06 
+Complément pour les capteurs de tension existants
+ Fiche technique (anglais) 
+ Accessoires pour transformateurs de mesure
+ Protection contre la tension en circuit ouvert EOSS 122 
+Dispositif de protection pour transformateur de courant 
+ Fiche technique
+[H H2] (in 00c4c7b) Mesure du courant
+[TEXT] (in 00c4c7b) Courants jusqu’à 24 kA
+ Fréquences de 0 à 10 kHz
+ Précisions à partir de 0,1 %
+[H H2] (in 00c4c7b) Techniques
+[TEXT] (in 00c4c7b) Procédure de modulation
+ Technique des fibres optiques et du laser
+ Fournisseur autonome
+ Principe du transformateur
+ Procédure de compensation
+ Enroulement de Rogowski
+ Transformateur Kraemer
+ Diviseur de tension R et C
+[H H2] (in 00c4c7b) Mesure de tension
+[TEXT] (in 00c4c7b) Tensions jusqu’à 90 kV
+ Fréquences de 0 à 150 kHz
+ Précisions à partir de 0,1 %
+[H H2] (in 00c4c7b) Applications
+[TEXT] (in 00c4c7b) Technique énergétique
+ Technique ferroviaire
+ Électrochimie
+ Technique de l’environnement
+ Recherche
+ Industrie automobile
+[H H2] (in 00c4c7b) CAPTEURS DE COURANT INTÉRIEUR
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_stromsensoren_innenraum_stromsensor_ksoh-s_1082.jpg alt=''
+[TEXT] (in 00c4c7b) Capteur de courant KSOH-S 1082 
+ Transformateur de courant passif à faible signal
+[LIST] (in 00c4c7b) Catalogue de capteurs <https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_stromsensoren_innenraum_stromsensor_mksoh-s_1384.jpg alt=''
+[TEXT] (in 00c4c7b) Capteur de courant MKSOH-S 1384 
+ Transformateur de courant passif à faible signal
+[LIST] (in 00c4c7b) Catalogue de capteurs <https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_stromsensoren_innenraum_stromsensor_ugss-s_104_gr_1.jpg alt=''
+[TEXT] (in 00c4c7b) Capteur de courant UGSS-S 104 Gr. 1 
+Transformateur de courant passif à faible signal
+[LIST] (in 00c4c7b) Catalogue de capteurs <https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_stromsensoren_innenraum_stromsensor_rku-s_2012.jpg alt=''
+[TEXT] (in 00c4c7b) Capteur de courant RKU-S 2012 
+Transformateur de courant passif à faible signal
+[LIST] (in 00c4c7b) Catalogue de capteurs <https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf>
+[H H2] (in 00c4c7b) Capteurs de tension Intérieur
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_innenraum_spannungssensor_gbera_12_24_36.jpg alt=''
+[TEXT] (in 00c4c7b) Capteur de tension GBERA 12 | 24 | 36 
+Convertisseur de tension à faible signal passif
+[LIST] (in 00c4c7b) Catalogue de capteurs <https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_innenraum_spannungssensor_gser_3.jpg alt=''
+[TEXT] (in 00c4c7b) Capteur de tension GSER 3
+ Convertisseur de tension à faible signal passif
+[LIST] (in 00c4c7b) Catalogue de capteurs <https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_innenraum_spannungssensor_mgtk_12_17_5_24.jpg alt=''
+[TEXT] (in 00c4c7b) Capteur de tension MGTK 12 | 17.5 | 24 
+Convertisseur de tension à faible signal passif
+[LIST] (in 00c4c7b) Catalogue de capteurs <https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_innenraum_spannungssensor_mgtk-v_12_17_5_24.jpg alt=''
+[TEXT] (in 00c4c7b) Capteur de tension MGTK-V 12 | 17.5 | 24 
+Convertisseur de tension à faible signal passif
+[LIST] (in 00c4c7b) Catalogue de capteurs <https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf>
+[H H2] (in 00c4c7b) Capteurs de tension FREILUFT
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_freiluft_gserf_16.jpg alt=''
+[TEXT] (in 00c4c7b) GSER(F) 16 
+Convertisseur de tension à faible signal passif
+[LIST] (in 00c4c7b) Catalogue de capteurs <https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_freiluft_gserf_52.jpg alt=''
+[TEXT] (in 00c4c7b) GSER(F) 52 
+Convertisseur de tension à faible signal passif
+[LIST] (in 00c4c7b) Catalogue de capteurs <https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_freiluft_gsr_27_38.jpg alt=''
+[TEXT] (in 00c4c7b) GSR 27 | 38 
+Convertisseur de tension à faible signal passif
+[LIST] (in 00c4c7b) Catalogue de capteurs <https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf>
+[H H2] (in 00c4c7b) Capteurs combinés pour l'intérieur
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_kombisensoren_innenraum_kombisensor_abs_12_17_5_24_36.jpg alt=''
+[TEXT] (in 00c4c7b) Capteur combiné ABS 12 | 17,5 | 24 | 36 
+Forme de construction du support pour le montage dans des tableaux isolés par air
+[LIST] (in 00c4c7b) Fiche technique <https://ritz-international.com/wp-content/uploads/DE_T.Data-Sheet_ABS-12_17.5_24_36.pdf>
+[H H2] (in 00c4c7b) Transformateurs de tension électroniques
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_elektronische_spannungwandler_elektronischer_spannungswandler_egiw_x64.jpg alt=''
+[TEXT] (in 00c4c7b) Convertisseur de tension électronique EGIW x64 
+Système de mesure DC et AC avec transmission optique des données
+[LIST] (in 00c4c7b) Fiche technique (anglais) <https://ritz-international.com/wp-content/uploads/2018-08_EGIW_x64_datasheet-2.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_elektronische_spannungwandler_elektronischer_spannungswandler_egiw_x85.jpg alt=''
+[TEXT] (in 00c4c7b) Transformateur de tension électronique EGIW x45 
+Système de mesure DC et AC avec amplificateur séparateur
+[LIST] (in 00c4c7b) Fiche technique (anglais) <https://ritz-international.com/wp-content/uploads/EGIW_x45_Data_Sheet.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_elektronische_spannungwandler_elektronischer_spannungswandler_evba_x06.jpg alt=''
+[TEXT] (in 00c4c7b) Convertisseur de tension électronique EVBA x06 
+Système de mesure DC et AC avec amplificateur tampon
+[LIST] (in 00c4c7b) Fiche technique (anglais) <https://ritz-international.com/wp-content/uploads/2018-08_EVBA_x06_datasheet-3.pdf>
+[H H2] (in 00c4c7b) Transformateurs de courant électroniques
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_elektronische_stromwandler_elektronischer_stromwandler_emvi_7xx.jpg alt=''
+[TEXT] (in 00c4c7b) Transformateur de courant électronique EMVI 7xx 
+Système de mesure DC et AC basé sur le principe du flux zéro
+[LIST] (in 00c4c7b) Fiche technique (anglais) <https://ritz-international.com/wp-content/uploads/2018-08_EMVI_7xx_datasheet-2.pdf>
+[H H2] (in 00c4c7b) Électronique autonome
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_stand-alone_elektronik_pufferverstaerker_evba_006.jpg alt=''
+[TEXT] (in 00c4c7b) Amplificateur de tampon EVBA 06 
+Complément pour les capteurs de tension existants
+[LIST] (in 00c4c7b) Fiche technique (anglais) <https://ritz-international.com/wp-content/uploads/2018-08_EVBA_x06_datasheet-2.pdf>
+[H H2] (in 00c4c7b) Accessoires pour transformateurs de mesure
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_messwandlerzubehoer_offenspannungsschutz_eoss_122.jpg alt=''
+[TEXT] (in 00c4c7b) Protection contre la tension en circuit ouvert EOSS 122 
+Dispositif de protection pour transformateur de courant
+[LIST] (in 00c4c7b) Fiche technique <https://ritz-international.com/wp-content/uploads/201808_EOSS_122_datasheet.pdf>
+[PDFS] https://ritz-international.com/wp-content/uploads/RITZ_Elektronik_DE_EN-2.pdf https://ritz-international.com/wp-content/uploads/Sensors-2.pdf https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf https://ritz-international.com/wp-content/uploads/DE_T.Data-Sheet_ABS-12_17.5_24_36.pdf https://ritz-international.com/wp-content/uploads/2018-08_EGIW_x64_datasheet-2.pdf https://ritz-international.com/wp-content/uploads/EGIW_x45_Data_Sheet.pdf https://ritz-international.com/wp-content/uploads/2018-08_EVBA_x06_datasheet-3.pdf https://ritz-international.com/wp-content/uploads/2018-08_EMVI_7xx_datasheet-2.pdf https://ritz-international.com/wp-content/uploads/2018-08_EVBA_x06_datasheet-2.pdf https://ritz-international.com/wp-content/uploads/201808_EOSS_122_datasheet.pdf
+[TEMPLATES] 1220 1224

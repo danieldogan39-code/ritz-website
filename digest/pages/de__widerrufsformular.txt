@@ -1,0 +1,10 @@
+# Formular zur Widerrufsbelehrung - RITZ
+URL: https://ritz-international.com/widerrufsformular/  status=200 lang=de kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "Formular zur Widerrufsbelehrung - RITZ", "og:description": "Formular zur Widerrufsbelehrung {{block type=“cms/block“ block_id=“revocation_form“}}", "og:url": "https://ritz-international.com/widerrufsformular/", "og:site_name": "RITZ"}
+canonical: https://ritz-international.com/widerrufsformular/
+hreflang: [['de', 'https://ritz-international.com/widerrufsformular/'], ['x-default', 'https://ritz-international.com/widerrufsformular/']]
+
+[POSTTITLE] Formular zur Widerrufsbelehrung
+[POSTCONTENT] Formular zur Widerrufsbelehrung
+ {{block type=“cms/block“ block_id=“revocation_form“}} IMGS= LINKS=
+[BTN] Zurück -> /aktuelles/news

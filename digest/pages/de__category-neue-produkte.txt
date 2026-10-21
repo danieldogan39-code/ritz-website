@@ -1,0 +1,13 @@
+# Neue Produkte Archive - RITZ
+URL: https://ritz-international.com/category/neue-produkte/  status=200 lang=de kind=extra
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "Neue Produkte Archive - RITZ", "og:url": "https://ritz-international.com/category/neue-produkte/", "og:site_name": "RITZ"}
+canonical: https://ritz-international.com/category/neue-produkte/
+hreflang: [['en', 'https://ritz-international.com/en/category/new-products/'], ['de', 'https://ritz-international.com/category/neue-produkte/'], ['x-default', 'https://ritz-international.com/category/neue-produkte/']]
+
+[MAINHTML] Kategorie: Neue Produkte 
+ Neue Produkte GBMW /GBMEI 
+ Erfahren Sie mehr über unsere neuen Produkte GBMW/GBMEI GBMW   GBMEI
+ EMVI Produktneuheit 
+ ELEKTRONISCHER STROMWANDLER EMVI 4005 HOCHGENAUE MESSUNG VON DC- UND AC-STRÖMEN ANWENDUNG In Mittelspannungsanwendungen wie SVC-Anlagen, Back-to-Back Stationen, DC-Links oder in der Hochspannungs-Gleichstrom-Übertragung ist eine präzise Messung der Ströme von hoher Bedeutung. Der kompakte elektronische Stromwandler vom Typ EMVI 4005 ist für die Messung von Gleich-, Wechsel und Mischströmen bis maximal 12000 A geeignet. Die Anwendung […]
+ IRBT: Generatorwandler mit optimiertem Design 
+ Der IRBT-Generatorstromwandler ist seit vielen Jahren ein fester Bestandteil des RITZ-Produktportfolios und bietet eine zuverlässige Lösung für die speziellen Anforderungen im Umfeld von Generatoren. Besonders die extrem hohen Ströme – bis zu 50.000 A – stellen hohe technische Ansprüche. Um trotz geringer Phasenmittenabstände eine präzise Messung zu gewährleisten, werden gezielte Ausgleichswicklungen eingesetzt, die störende Fremdfeldeinflüsse […]

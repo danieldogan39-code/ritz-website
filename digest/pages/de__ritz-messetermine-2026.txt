@@ -1,0 +1,12 @@
+# RITZ Messetermine 2026 - RITZ
+URL: https://ritz-international.com/ritz-messetermine-2026/  status=200 lang=de kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "RITZ Messetermine 2026 - RITZ", "og:url": "https://ritz-international.com/ritz-messetermine-2026/", "og:site_name": "RITZ", "og:image": "https://ritz-international.com/wp-content/uploads/Screenshot-2025-11-26-012519.png", "og:image:width": "643", "og:image:height": "904", "og:image:type": "image/png"}
+canonical: https://ritz-international.com/ritz-messetermine-2026/
+hreflang: [['en', 'https://ritz-international.com/en/ritz-trade-fair-dates-2026/'], ['fr', 'https://ritz-international.com/fr/dates-du-salon-ritz-2026/'], ['de', 'https://ritz-international.com/ritz-messetermine-2026/'], ['hu', 'https://ritz-international.com/hu/ritz-vasar-datumok-2026/'], ['es', 'https://ritz-international.com/es/fechas-de-la-feria-ritz-2026/'], ['x-default', 'https://ritz-international.com/ritz-messetermine-2026/']]
+
+[POSTTITLE] RITZ Messetermine 2026
+[POSTCONTENT]  IMGS=https://ritz-international.com/wp-content/uploads/Screenshot-2025-11-26-012519.png LINKS=<https://ritz-international.com/wp-content/uploads/Messe_Vorlage_DE_2026.pdf>
+[IMG] (in a71c4dd) https://ritz-international.com/wp-content/uploads/Screenshot-2025-11-26-012519.png alt='' -> https://ritz-international.com/wp-content/uploads/Messe_Vorlage_DE_2026.pdf
+[BTN] Zurück -> /aktuelles/news
+[FEATURED] https://ritz-international.com/wp-content/uploads/Screenshot-2025-11-26-012519.png
+[PDFS] https://ritz-international.com/wp-content/uploads/Messe_Vorlage_DE_2026.pdf

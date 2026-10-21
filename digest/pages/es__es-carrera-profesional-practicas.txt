@@ -1,0 +1,22 @@
+# Prácticas - RITZ
+URL: https://ritz-international.com/es/carrera-profesional/practicas/  status=200 lang=es kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "es_ES", "og:type": "article", "og:title": "Prácticas - RITZ", "og:description": "Inicio ¡Pon a prueba tu elección profesional! Una visión práctica. ¿Quieres trabajar en el sector eléctrico? Con unas prácticas en RITZ Instrument Transformers GmbH podrás conocer de cerca tu aspiración profesional y adquirir mucha experiencia práctica.  Unas prácticas también te permiten poner a prueba tus propios puntos fuertes y débiles, hacer contactos importantes y mejorar […]", "og:url": "https://ritz-int
+canonical: https://ritz-international.com/en/career/internships/
+hreflang: [['en', 'https://ritz-international.com/en/career/internships/'], ['fr', 'https://ritz-international.com/fr/carriere/stages/'], ['de', 'https://ritz-international.com/karriere/praktika/'], ['hu', 'https://ritz-international.com/hu/karrier/gyakorlatok/'], ['es', 'https://ritz-international.com/es/carrera-profesional/practicas/'], ['x-default', 'https://ritz-international.com/karriere/praktika/']]
+
+[H H2] ¡Pon a prueba tu elección profesional!
+[TEXT] Una visión práctica. ¿Quieres trabajar en el sector eléctrico? Con unas prácticas en RITZ Instrument Transformers GmbH podrás conocer de cerca tu aspiración profesional y adquirir mucha experiencia práctica. 
+ Unas prácticas también te permiten poner a prueba tus propios puntos fuertes y débiles, hacer contactos importantes y mejorar tu currículum. También estaremos encantados de ayudarte con proyectos académicos de investigación, por ejemplo, como parte de una tesis de final de grado.
+[H H2] Contacto
+[H H2] Hamburgo
+[LIST] personal.hamburg@ritz-international.com <mailto:personal.hamburg@ritz-international.com>
+[H H2] KIRCHAICH
+[LIST] personal.kirchaich@ritz-international.com <mailto:personal.kirchaich@ritz-international.com>
+[H H2] DRESDE
+[LIST] personal.dresden@ritz-international.com <mailto:personal.dresden@ritz-international.com>
+[IMG] https://ritz-international.com/wp-content/uploads/praktika_intro_Bild_links.webp alt=''
+[H H2] prácticas
+[TEXT] Alumnos/-as y estudiantes de distintas especialidades pueden realizar sus prácticas con nosotros. Envía tu solicitud a la sede correspondiente con un breve currículum y tu certificado más reciente, indicando la sede, el período de tiempo y la especialización que deseas.
+[IMG] https://ritz-international.com/wp-content/uploads/praktika_intro_Bild_rechts.webp alt=''
+[H H2] proyectos académicos de investigación
+[TEXT] Supervisamos proyectos de investigación y tesis académicas de una amplia gama de especialidades. Envía tu solicitud a las sedes arriba mencionadas, indicando tu carrera y, si procede, el tema previsto.

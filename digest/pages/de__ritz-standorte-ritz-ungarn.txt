@@ -1,0 +1,8 @@
+# RITZ Ungarn Archive - RITZ
+URL: https://ritz-international.com/ritz-standorte/ritz-ungarn/  status=200 lang=de kind=extra
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "RITZ Ungarn Archive - RITZ", "og:url": "https://ritz-international.com/ritz-standorte/ritz-ungarn/", "og:site_name": "RITZ"}
+canonical: https://ritz-international.com/ritz-standorte/ritz-ungarn/
+hreflang: [['en', 'https://ritz-international.com/en/ritz-standorte/ritz-hungary/'], ['fr', 'https://ritz-international.com/fr/ritz-standorte/ritz-hongrie/'], ['de', 'https://ritz-international.com/ritz-standorte/ritz-ungarn/'], ['hu', 'https://ritz-international.com/hu/ritz-standorte/ritz-magyarorszag/'], ['es', 'https://ritz-international.com/es/ritz-standorte/ritz-hungria/'], ['x-default', 'https://ritz-international.com/ritz-standorte/ritz-ungarn/']]
+
+[MAINHTML] RITZ Standorte: RITZ Ungarn 
+ Standort Ungarn Kecskemét

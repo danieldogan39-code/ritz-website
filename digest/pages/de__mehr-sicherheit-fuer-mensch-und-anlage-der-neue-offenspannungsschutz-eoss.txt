@@ -1,0 +1,14 @@
+# Mehr Sicherheit für Mensch und Anlage – der neue Offenspannungsschutz EOSS! - RITZ
+URL: https://ritz-international.com/mehr-sicherheit-fuer-mensch-und-anlage-der-neue-offenspannungsschutz-eoss/  status=200 lang=de kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "Mehr Sicherheit für Mensch und Anlage – der neue Offenspannungsschutz EOSS! - RITZ", "og:description": "Die Neuentwicklung des Offenspannungsschutzes vom Typ EOSS 112 ZZ für Stromwandler mit 1A Sekundärstrom durch Ritz Instrument Transformers sorgt für mehr Sicherheit. Bei Montage, Inbetriebnahme, Reparatur- und Wartungsarbeiten in der Anlage oder im Fehlerfall der Installation schützt der EOSS vor elektrischem Schlag und Beschädigung oder Zerstöru
+canonical: https://ritz-international.com/mehr-sicherheit-fuer-mensch-und-anlage-der-neue-offenspannungsschutz-eoss/
+hreflang: [['en', 'https://ritz-international.com/en/more-safety-for-people-and-systems-the-new-eoss-open-circuit-voltage-protection/'], ['fr', 'https://ritz-international.com/fr/plus-de-securite-pour-les-personnes-et-les-installations-la-nouvelle-protection-contre-la-tension-en-circuit-ouvert-eoss/'], ['de', 'https://ritz-international.com/mehr-sicherheit-fuer-mensch-und-anlage-der-neue-offenspannungsschutz-eoss/'], ['hu', 'https://ritz-international.com/hu/nagyobb-biztonsag-az-emberek-es-a-rendszerek-szamara-az-uj-eoss-nyitott-aramkoeru-feszueltsegvedelem/'], ['es', 'https://ritz-international.com/es/mas-seguridad-para-las-personas-y-los-sistemas-la-nueva-proteccion-contra-tension-de-circuito-abierto-eoss/'], ['x-default', 'https://ritz-international.com/mehr-sicherheit-fuer-mensch-und-anlage-der-neue-offenspannungsschutz-eoss/']]
+
+[POSTTITLE] Mehr Sicherheit für Mensch und Anlage – der neue Offenspannungsschutz EOSS!
+[POSTCONTENT] Die Neuentwicklung des Offenspannungsschutzes vom Typ EOSS 112 ZZ für Stromwandler mit 1A Sekundärstrom durch Ritz Instrument Transformers sorgt für mehr Sicherheit.
+ Bei Montage, Inbetriebnahme, Reparatur- und Wartungsarbeiten in der Anlage oder im Fehlerfall der Installation schützt der EOSS vor elektrischem Schlag und Beschädigung oder Zerstörung von Anlagen. Der Offenspannungsschutz wird direkt im Wandler integriert. Ab sofort in fast allen Nieder- und Mittelspannungsstromwandlern auf Anfrage verfügbar.
+ Weiter Informationen finden Sie  hier .
+ Ritz – Experience and Solutions | Together! IMGS= LINKS=hier<https://ritz-international.com/wp-content/uploads/2018/01/TE146-93.006i01_Produktinformation.pdf>
+[BTN] Zurück -> /aktuelles/news
+[FEATURED] https://ritz-international.com/wp-content/uploads/EOSS-768x378-1.jpg
+[PDFS] https://ritz-international.com/wp-content/uploads/2018/01/TE146-93.006i01_Produktinformation.pdf

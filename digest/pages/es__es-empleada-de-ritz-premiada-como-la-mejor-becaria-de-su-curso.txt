@@ -1,0 +1,10 @@
+# Empleada de RITZ premiada como la mejor becaria de su curso - RITZ
+URL: https://ritz-international.com/es/empleada-de-ritz-premiada-como-la-mejor-becaria-de-su-curso/  status=200 lang=es kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "es_ES", "og:type": "article", "og:title": "Empleada de RITZ premiada como la mejor becaria de su curso - RITZ", "og:description": "\r El 9 de noviembre de 2017, nuestra compañera Julia Petersen fue nombrada mejor becaria de su curso 2016/2017 por la Cámara de Industria y Comercio de Hamburgo. RITZ también fue galardonada por sus logros en la formación profesional dual. \r", "og:url": "https://ritz-international.com/es/empleada-de-ritz-premiada-como-la-mejor-becaria-de-su-curso/", "og:site_n
+canonical: https://ritz-international.com/es/empleada-de-ritz-premiada-como-la-mejor-becaria-de-su-curso/
+hreflang: [['en', 'https://ritz-international.com/en/ritz-employee-named-best-trainee-of-her-course/'], ['fr', 'https://ritz-international.com/fr/une-collaboratrice-de-ritz-elue-meilleure-apprentie-de-sa-filiere-de-formation/'], ['de', 'https://ritz-international.com/ritz-mitarbeiterin-zur-besten-auszubildenden-ihres-lehrgangs-ausgezeichnet-worden/'], ['hu', 'https://ritz-international.com/hu/a-ritz-munkatarsa-a-legjobb-gyakornok-lett-a-tanfolyamon/'], ['es', 'https://ritz-international.com/es/empleada-de-ritz-premiada-como-la-mejor-becaria-de-su-curso/'], ['x-default', 'https://ritz-international.com/ritz-mitarbeiterin-zur-besten-auszubildenden-ihres-lehrgangs-ausgezeichnet-worden/']]
+
+[POSTTITLE] Empleada de RITZ premiada como la mejor becaria de su curso
+[POSTCONTENT] El 9 de noviembre de 2017, nuestra compañera Julia Petersen fue nombrada mejor becaria de su curso 2016/2017 por la Cámara de Industria y Comercio de Hamburgo. RITZ también fue galardonada por sus logros en la formación profesional dual. IMGS= LINKS=
+[BTN] Volver -> https://ritz-international.com/es/?page_id=5592
+[FEATURED] https://ritz-international.com/wp-content/uploads/Foto_Ehrung_IHK_Petersen-768x510-1.jpg

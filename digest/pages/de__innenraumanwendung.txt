@@ -1,0 +1,7 @@
+# Innenraumanwendung - RITZ
+URL: https://ritz-international.com/innenraumanwendung/  status=200 lang=de kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "Innenraumanwendung - RITZ", "og:url": "https://ritz-international.com/innenraumanwendung/", "og:site_name": "RITZ"}
+canonical: https://ritz-international.com/innenraumanwendung/
+hreflang: [['de', 'https://ritz-international.com/innenraumanwendung/'], ['x-default', 'https://ritz-international.com/innenraumanwendung/']]
+
+[MAINHTML] Innenraumanwendung

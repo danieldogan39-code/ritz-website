@@ -1,0 +1,104 @@
+# Sites de production - RITZ
+URL: https://ritz-international.com/fr/entreprise/sites-de-production/  status=200 lang=fr kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "fr_FR", "og:type": "article", "og:title": "Sites de production - RITZ", "og:description": "Accueil   >   Entreprise    >    Sites de production    Le monde entier a besoin d’énergie. De Hambourg à Hartwell (États-Unis). En tant que groupe d’entreprises RITZ, nous sommes présents sur le plan international et nous nous connaissons une grande croissance.  Nos six sites de production en Allemagne, en Autriche, en Hongrie, en Chine et […]", "og:url": "https://ritz-international.com/fr/entreprise
+canonical: https://ritz-international.com/fr/entreprise/sites-de-production/
+hreflang: [['en', 'https://ritz-international.com/en/company/production-sites/'], ['fr', 'https://ritz-international.com/fr/entreprise/sites-de-production/'], ['de', 'https://ritz-international.com/unternehmen/produktionsstandorte/'], ['hu', 'https://ritz-international.com/hu/a-vallalat/gyartasi-helyszinek/'], ['es', 'https://ritz-international.com/es/la-empresa/centros-de-produccion/'], ['x-default', 'https://ritz-international.com/unternehmen/produktionsstandorte/']]
+
+[TEXT] Accueil    >    Entreprise     >    Sites de production
+[H H2] Le monde entier a besoin d’énergie.
+[TEXT] De Hambourg à Hartwell (États-Unis). En tant que groupe d’entreprises RITZ, nous sommes présents sur le plan international et nous nous connaissons une grande croissance. 
+ Nos six sites de production en Allemagne, en Autriche, en Hongrie, en Chine et aux États-Unis sont étroitement reliés les uns aux autres. En collaboration avec nos partenaires, nous souhaitons améliorer l’empreinte écologique globale. Étape par étape
+[IMG] https://ritz-international.com/wp-content/uploads/2022/07/network_lines_on_white_right.svg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/2022/07/network_lines_on_white_right.svg alt=''
+[IMG] https://ritz-international.com/wp-content/uploads/2022/07/unternehmen_produktionsstandorte_1.jpg.jpg alt=''
+[H H2] LES SITES EN UN COUP D’ŒIL
+[H H2] Hambourg
+[TEXT] RITZ Instrument 
+Transformers GmbH, Hambourg
+[LIST] Wandsbeker Zollstraße 92-98 22041 Hambourg Allemagne | +49 40 511 230
+[BTN] Planificateur d’itinéraire -> https://goo.gl/maps/5ng9TzyrJcWU8ibV9
+[BTN] Contact -> #
+[H H2] Wirges
+[TEXT] RITZ Instrument 
+Transformers GmbH, Wirges
+[LIST] Siemensstraße 2 56422 Wirges Allemagne | +49 2602 6790
+[BTN] Planificateur d’itinéraire -> https://goo.gl/maps/e3Do4eB4mcXijkLeA
+[BTN] Contact -> #
+[html] Hambourg
+Fonction
+Siège principal de l’entreprise - Fondation Ritz
+Distribution
+Contrôle / Comptabilité
+Informatique
+Ressources humaines
+Développement/construction
+Électronique IMGS=/wp-content/uploads/2022/07/icon_angle_up.svg
+[html] Wirges
+Fonction
+Distribution
+Production
+Transformateurs de tension et de courant intérieurs jusqu’à 72,5 kV
+Transformateurs de tension et de courant extérieurs jusqu’à 72,5 kVTransformateurs de puissance isolés à la résine de coulée jusqu’à 40,5 kV et 25 MVA IMGS=/wp-content/uploads/2022/07/icon_angle_up.svg
+[jet-listing-grid] Planificateur d’itinéraire
+Contact
+EMPLOYÉS
+Planificateur d’itinéraire
+Contact
+EMPLOYÉS
+Planificateur d’itinéraire
+Contact
+EMPLOYÉS
+Planificateur d’itinéraire
+Contact
+EMPLOYÉS
+Planificateur d’itinéraire
+Contact
+EMPLOYÉS
+Planificateur d’itinéraire
+Contact
+EMPLOYÉS
+Planificateur d’itinéraire
+Contact
+EMPLOYÉS LINKS=Contact<#> Contact<#> Contact<#> Contact<#> Contact<#> Contact<#> Contact<#>
+[LIST] (in 32b1f72)  | 
+[BTN] (in 32b1f72) Planificateur d’itinéraire -> None
+[BTN] (in 32b1f72) Contact -> #
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) EMPLOYÉS
+[LIST] (in 32b1f72)  | 
+[BTN] (in 32b1f72) Planificateur d’itinéraire -> None
+[BTN] (in 32b1f72) Contact -> #
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) EMPLOYÉS
+[LIST] (in 32b1f72)  | 
+[BTN] (in 32b1f72) Planificateur d’itinéraire -> None
+[BTN] (in 32b1f72) Contact -> #
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) EMPLOYÉS
+[LIST] (in 32b1f72)  | 
+[BTN] (in 32b1f72) Planificateur d’itinéraire -> None
+[BTN] (in 32b1f72) Contact -> #
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) EMPLOYÉS
+[LIST] (in 32b1f72)  | 
+[BTN] (in 32b1f72) Planificateur d’itinéraire -> None
+[BTN] (in 32b1f72) Contact -> #
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) EMPLOYÉS
+[LIST] (in 32b1f72)  | 
+[BTN] (in 32b1f72) Planificateur d’itinéraire -> None
+[BTN] (in 32b1f72) Contact -> #
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) EMPLOYÉS
+[LIST] (in 32b1f72)  | 
+[BTN] (in 32b1f72) Planificateur d’itinéraire -> None
+[BTN] (in 32b1f72) Contact -> #
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) 
+[jet-listing-dynamic-field] (in 32b1f72) EMPLOYÉS

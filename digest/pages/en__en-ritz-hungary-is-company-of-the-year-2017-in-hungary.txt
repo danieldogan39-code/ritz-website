@@ -1,0 +1,10 @@
+# RITZ Hungary is "Company of the Year 2017" in Hungary - RITZ
+URL: https://ritz-international.com/en/ritz-hungary-is-company-of-the-year-2017-in-hungary/  status=200 lang=en kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "en_US", "og:type": "article", "og:title": "RITZ Hungary is \"Company of the Year 2017\" in Hungary - RITZ", "og:description": "\r RITZ Mérötranszformátor Kft. was voted “Company of the Year 2017” in Hungary by the National Association of Hungarian Entrepreneurs and Employers (VOSZ). Ritz has distinguished itself through its strong development in recent decades. The number of employees has steadily increased and the investment in the form of the new plant has contributed to the […]", "og:url
+canonical: https://ritz-international.com/en/ritz-hungary-is-company-of-the-year-2017-in-hungary/
+hreflang: [['en', 'https://ritz-international.com/en/ritz-hungary-is-company-of-the-year-2017-in-hungary/'], ['fr', 'https://ritz-international.com/fr/ritz-hongrie-est-entreprise-de-lannee-2017-en-hongrie/'], ['de', 'https://ritz-international.com/lorem-ipsum-news-3/'], ['hu', 'https://ritz-international.com/hu/a-ritz-magyarorszag-az-ev-vallalata-2017-magyarorszagon/'], ['es', 'https://ritz-international.com/es/ritz-hungria-es-la-empresa-del-ano-2017-en-hungria/'], ['x-default', 'https://ritz-international.com/lorem-ipsum-news-3/']]
+
+[POSTTITLE] RITZ Hungary is “Company of the Year 2017” in Hungary
+[POSTCONTENT] RITZ Mérötranszformátor Kft. was voted “Company of the Year 2017” in Hungary by the National Association of Hungarian Entrepreneurs and Employers (VOSZ). Ritz has distinguished itself through its strong development in recent decades. The number of employees has steadily increased and the investment in the form of the new plant has contributed to the urban development of Kecskemét. IMGS= LINKS=
+[BTN] Back -> https://ritz-international.com/en/?page_id=5595
+[FEATURED] https://ritz-international.com/wp-content/uploads/P1030113_retusalt-768x432-1.jpg

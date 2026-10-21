@@ -1,0 +1,22 @@
+# Szakmai gyakorlatok - RITZ
+URL: https://ritz-international.com/hu/karrier/gyakorlatok/  status=200 lang=hu kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "hu_HU", "og:type": "article", "og:title": "Szakmai gyakorlatok - RITZ", "og:description": "Kezdőoldal Tedd próbára pályaválasztásodat! Gyakorlati betekintés. Az elektromos iparban szeretne elhelyezkedni? A RITZ Instrument Transformers GmbH-nál töltött szakmai gyakorlat során kialakíthatod a karrierterveidet, és rengeteg gyakorlati tapasztalatot szerezhetsz.  A szakmai gyakorlat abban is segít, hogy saját erősségeidet és gyengeségeidet próbára tedd, fontos kapcsolatokat építs ki, és még vonz
+canonical: https://ritz-international.com/en/career/internships/
+hreflang: [['en', 'https://ritz-international.com/en/career/internships/'], ['fr', 'https://ritz-international.com/fr/carriere/stages/'], ['de', 'https://ritz-international.com/karriere/praktika/'], ['hu', 'https://ritz-international.com/hu/karrier/gyakorlatok/'], ['es', 'https://ritz-international.com/es/carrera-profesional/practicas/'], ['x-default', 'https://ritz-international.com/karriere/praktika/']]
+
+[H H2] Tedd próbára pályaválasztásodat!
+[TEXT] Gyakorlati betekintés. Az elektromos iparban szeretne elhelyezkedni? A RITZ Instrument Transformers GmbH-nál töltött szakmai gyakorlat során kialakíthatod a karrierterveidet, és rengeteg gyakorlati tapasztalatot szerezhetsz. 
+ A szakmai gyakorlat abban is segít, hogy saját erősségeidet és gyengeségeidet próbára tedd, fontos kapcsolatokat építs ki, és még vonzóbbá tedd az önéletrajzod. Ráadásul szívesen támogatjuk Önt hallgatói kutatási projektekben is, például a diplomamunka részeként.
+[H H2] Kapcsolat
+[H H2] Hamburg
+[LIST] personal.hamburg@ritz-international.com <mailto:personal.hamburg@ritz-international.com>
+[H H2] KIRCHAICH
+[LIST] personal.kirchaich@ritz-international.com <mailto:personal.kirchaich@ritz-international.com>
+[H H2] DRESDEN
+[LIST] personal.dresden@ritz-international.com <mailto:personal.dresden@ritz-international.com>
+[IMG] https://ritz-international.com/wp-content/uploads/praktika_intro_Bild_links.webp alt=''
+[H H2] szakmai gyakorlatok
+[TEXT] Különböző szakterületek tanulói és hallgatói végezhetnek nálunk szakmai gyakorlatot. Kérjük, küldd el érdeklődésedet az illetékes helyre egy rövid önéletrajzzal és a legfrissebb bizonyítványoddal együtt, a kívánt helyszín, időszak és szakterület megjelölésével.
+[IMG] https://ritz-international.com/wp-content/uploads/praktika_intro_Bild_rechts.webp alt=''
+[H H2] tanulmányi kutatási projekt
+[TEXT] A legkülönbözőbb szakterületekről származó hallgatói kutatási projekteket és diplomamunkákat mentoráljuk. Kérjük, küldd el megkeresésedet a fent említett telephelyre, megjelölve a szakot és adott esetben a tervezett témát.

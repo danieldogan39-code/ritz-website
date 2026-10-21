@@ -1,0 +1,7 @@
+# Blockkombisensoren - RITZ
+URL: https://ritz-international.com/produktfinder/elektronik-und-sensoren/blockkombisensoren/  status=200 lang=de kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "Blockkombisensoren - RITZ", "og:description": "Home Blockkombisensoren", "og:url": "https://ritz-international.com/produktfinder/elektronik-und-sensoren/blockkombisensoren/", "og:site_name": "RITZ"}
+canonical: https://ritz-international.com/produktfinder/elektronik-und-sensoren/blockkombisensoren/
+hreflang: [['de', 'https://ritz-international.com/produktfinder/elektronik-und-sensoren/blockkombisensoren/'], ['x-default', 'https://ritz-international.com/produktfinder/elektronik-und-sensoren/blockkombisensoren/']]
+
+[H H2] Blockkombisensoren

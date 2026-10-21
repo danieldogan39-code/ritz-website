@@ -1,0 +1,10 @@
+# Salon du personnel KarriereStart Dresde - RITZ
+URL: https://ritz-international.com/fr/salon-du-personnel-karrierestart-dresden/  status=200 lang=fr kind=posts
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "fr_FR", "og:type": "article", "og:title": "Salon du personnel KarriereStart Dresde - RITZ", "og:description": "RITZ participe au salon du personnel KarriereStart sur le site de Messe Dresden halle 1 stand L 24 du 19 au 21/01/ 2024. Nous avons hâte de vous y rencontrer ! Votre équipe Salon RITZ", "og:url": "https://ritz-international.com/fr/salon-du-personnel-karrierestart-dresden/", "og:site_name": "RITZ", "og:image": "https://ritz-international.com/wp-content/uploads/IMG-20240119-WA0003.jp
+canonical: https://ritz-international.com/fr/salon-du-personnel-karrierestart-dresden/
+hreflang: [['en', 'https://ritz-international.com/en/personnel-fair-karrierestart-dresden/'], ['fr', 'https://ritz-international.com/fr/salon-du-personnel-karrierestart-dresden/'], ['de', 'https://ritz-international.com/personalmesse-karrierestart-dresden/'], ['hu', 'https://ritz-international.com/hu/szemelyzeti-vasar-karrierestart-dresden/'], ['es', 'https://ritz-international.com/es/feria-de-personal-karrierestart-dresde/'], ['x-default', 'https://ritz-international.com/personalmesse-karrierestart-dresden/']]
+
+[POSTTITLE] Salon du personnel KarriereStart Dresde
+[POSTCONTENT] RITZ participe au salon du personnel KarriereStart sur le site de Messe Dresden halle 1 stand L 24 du 19 au 21/01/ 2024. Nous avons hâte de vous y rencontrer ! Votre équipe Salon RITZ IMGS= LINKS=
+[BTN] Retour -> https://ritz-international.com/fr/?page_id=5615
+[FEATURED] https://ritz-international.com/wp-content/uploads/IMG-20240119-WA0003.jpg

@@ -1,0 +1,7 @@
+# Freiluftanwendung - RITZ
+URL: https://ritz-international.com/produktfinder/mittelspannung/freiluftanwendung/  status=200 lang=de kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "Freiluftanwendung - RITZ", "og:description": "Home Freiluftanwendung", "og:url": "https://ritz-international.com/produktfinder/mittelspannung/freiluftanwendung/", "og:site_name": "RITZ"}
+canonical: https://ritz-international.com/produktfinder/mittelspannung/freiluftanwendung/
+hreflang: [['de', 'https://ritz-international.com/produktfinder/mittelspannung/freiluftanwendung/'], ['x-default', 'https://ritz-international.com/produktfinder/mittelspannung/freiluftanwendung/']]
+
+[H H2] Freiluftanwendung

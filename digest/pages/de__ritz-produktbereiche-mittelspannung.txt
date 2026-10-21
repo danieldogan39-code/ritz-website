@@ -1,0 +1,11 @@
+# Mittelspannung Archive - RITZ
+URL: https://ritz-international.com/ritz-produktbereiche/mittelspannung/  status=200 lang=de kind=extra
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "de_DE", "og:type": "article", "og:title": "Mittelspannung Archive - RITZ", "og:url": "https://ritz-international.com/ritz-produktbereiche/mittelspannung/", "og:site_name": "RITZ"}
+canonical: https://ritz-international.com/ritz-produktbereiche/mittelspannung/
+hreflang: [['en', 'https://ritz-international.com/en/ritz-produktbereiche/medium-voltage/'], ['fr', 'https://ritz-international.com/fr/ritz-produktbereiche/moyenne-tension/'], ['de', 'https://ritz-international.com/ritz-produktbereiche/mittelspannung/'], ['hu', 'https://ritz-international.com/hu/ritz-produktbereiche/koezepfeszueltseg/'], ['es', 'https://ritz-international.com/es/ritz-produktbereiche/media-tension/'], ['x-default', 'https://ritz-international.com/ritz-produktbereiche/mittelspannung/']]
+
+[MAINHTML] RITZ Produktbereiche: Mittelspannung 
+ Produktbereich Mittelspannung USA 
+ Produktbereich Mittelspannung China 
+ Produktbereich Mittelspannung Marchtrenk 
+ Produktbereich Mittelspannung

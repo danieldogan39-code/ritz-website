@@ -1,0 +1,111 @@
+# Privacy policy - RITZ
+URL: https://ritz-international.com/en/privacy-policy/  status=200 lang=en kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "description": "Find out how RITZ Instrument Transformers protects your personal data. Our privacy policy provides transparent information about data collection, data processing and your rights.", "og:locale": "en_US", "og:type": "article", "og:title": "Privacy policy - RITZ", "og:description": "Find out how RITZ Instrument Transformers protects your personal data. Our privacy policy provides transparent information about data collection, data processing and your rights.", "og:url": "https://ritz-interna
+canonical: https://ritz-international.com/en/privacy-policy/
+hreflang: [['en', 'https://ritz-international.com/en/privacy-policy/'], ['fr', 'https://ritz-international.com/fr/declaration-de-confidentialite/'], ['de', 'https://ritz-international.com/datenschutzerklaerung/'], ['hu', 'https://ritz-international.com/hu/adatvedelmi-szabalyzat/'], ['es', 'https://ritz-international.com/es/politica-de-privacidad/'], ['x-default', 'https://ritz-international.com/datenschutzerklaerung/']]
+
+[H H2] RITZ privacy policy
+[TEXT] Your privacy and trust are important to us and this Privacy Policy provides important information about how Ritz Instrument Transformers GmbH (Ritz) handles personal data and the nature, scope and purpose of the personal data collected by this website.
+ As changes in legislation or our internal processes may require changes to this privacy policy, we ask you to check this policy regularly for changes.
+[H H3] 1. information on the processing of personal data
+[TEXT] (1) In the following, we provide information about the collection of personal data when using our website. We would like to take this opportunity to point out that you are under no legal or contractual obligation to provide us with your personal data. However, we may only be able to provide certain services to a limited extent or not at all if you do not provide the necessary data. If this is the case, we will inform you of this below.
+ (2) Personal data is all data that can be related to you personally, e.g. name, address, e-mail addresses, user behavior.
+ (3) Responsible person acc. Art. 4 para. 7 of the EU General Data Protection Regulation (GDPR):
+ RITZ Instrument Transformers GmbH
+Wandsbeker Zollstraße 92-98
+22041 Hamburg
+ (4) You can contact our data protection officer, Mr. Peter Christian Felst, at datenschutz@ritz-international.com or at our postal address with the addition “the data protection officer”.
+ (5) If we use contracted service providers for individual functions of our offer or would like to use your data for advertising purposes, we will inform you in detail below about the respective processes. We also specify the defined criteria for the storage period.
+ (6) Personal data is only collected on this website to the extent technically necessary to fulfill the contract with you or, with your consent, for the purpose of optimizing the presentation of our website. This data is used exclusively for the services you have requested (calling up information material and catalogs, contract documents, etc.).
+[H H3] 2. your rights
+[TEXT] (1) You have the following rights vis-à-vis us with regard to your personal data:
+ Right to information about the processed personal data in accordance with Art. 15 GDPR.
+ Right to immediate correction of incorrect personal data in accordance with Art. 16 GDPR.
+ Right to immediate deletion of personal data in accordance with Art. 17 GDPR.
+ Right to restriction of processing pursuant to Art. 18 GDPR.
+ Right to data portability pursuant to Art. 20 GDPR.
+ Right to object to processing pursuant to Art. 21 GDPR if processing is necessary for the performance of a task carried out in the public interest or in the exercise of official authority vested in the controller pursuant to Art. 6 (1) GDPR. 1 lit. e) GDPR or on the basis of a legitimate interest of the controller Art. 6 para. 1 lit. f) GDPR takes place.
+ Right to revoke consent given at any time in accordance with Art. 7 para. 3 GDPR.
+ (2) You also have the right to complain to the competent data protection supervisory authority about the processing of your personal data by us:
+ The Hamburg Commissioner for Data Protection and Freedom of Information
+Ludwig-Erhard-Straße 22
+20459 Hamburg
+[H H3] 3. collection of personal data when visiting our website
+[TEXT] (1) If you use the website for information purposes only, i.e. if you do not register or otherwise provide us with information, we only collect the personal data that your browser transmits to our server. If you wish to view our website, we collect the following data, which is technically necessary for us to display our website to you and to ensure stability and security (legal basis is Art. 6 para. 1 sentence 1 lit. f GDPR):
+ Host name of the accessing computer
+ IP address of the accessing computer
+ Date and time of the request
+ Time zone difference to Greenwich Mean Time (GMT)
+ Browser type/version
+ Referrer URL (the previously visited page)
+ Content of the request (specific page)
+ Amount of data transferred in each case
+ Access status/HTTP status code
+ This data is not merged with other data sources, and the data is deleted after a statistical evaluation.
+[H H3] 4. collection of personal data when contact is made
+[TEXT] You have the option of contacting us for various reasons (e.g. requesting information). Contact can be made by telephone, e-mail or Microsoft Teams (MS Teams).
+ If you contact us, we process your contact details (in particular name, telephone number, e-mail address) and any additional data you provide for the purpose of contacting you.
+ The purpose of the processing is to be able to respond to your request. The legal basis is Art. 6 para. 1 p. 1 lit. b or lit. f GDPR.
+ If you contact us via MS Teams, your video recording will also be processed in the event of a video call. In any case, data will be forwarded to Microsoft Corporation, One Microsoft Way, Redmond, WA 98052-6399, USA. You can find more information on data processing by Microsoft at https://learn.microsoft.com/de-de/microsoftteams/teams-privacy. 
+ We delete the data processed in this context after storage is no longer required, or restrict processing if there are statutory retention obligations.
+[H H3] 5. collection of personal data when using our applicant portal
+[TEXT] We also offer you the opportunity to apply for vacancies online or by e-mail via our applicant portal at https://ritz-international.com/karriereportal/.
+ If you apply for an open position, we will process your applicant data, namely:
+ Name
+ Contact details (e-mail address, telephone number, address)
+ Other data resulting from your cover letter or CV (e.g. information on your education and professional career)
+ The purpose of the processing is to check your suitability for the position and, if necessary, to be able to make you an offer of employment. The legal basis is Art. 6 para. 1 p. 1 lit. b GDPR.
+ We delete the data processed in this context after storage is no longer required, or restrict processing if there are statutory retention obligations.
+[H H3] 6. cookies
+[TEXT] In addition to the aforementioned data, cookies are stored on your computer when you use our website if you have previously consented to the setting of non-functionally necessary cookies in the banner provided for this purpose. Cookies that are functionally necessary for the use of the website cannot be objected to in this context. Cookies are small text files that are stored on your hard disk assigned to the browser you are using and through which certain information flows to the body that sets the cookie (in this case us). Cookies cannot run programs or transfer viruses to your computer. They serve to make the website more user-friendly and effective overall.
+ The Internet pages use so-called cookies in several places. They serve to make our website more user-friendly, effective and secure. Cookies are small text files that are stored on your computer and saved by your browser. We use several types of cookies:
+ Transient cookies are automatically deleted when you close the browser. These include session cookies in particular. These store a so-called session ID, with which various requests from your browser can be assigned to the shared session. This allows your computer to be recognized when you return to our website. The session cookies are deleted when you log out or close the browser.
+ Persistent cookies are automatically deleted after a specified period, which may vary depending on the cookie. You can delete the cookies in the security settings of your browser at any time.
+ The use of cookies is based on your consent in accordance with § 25 para. 1 TDDDG in conjunction with Art. 6 para. 1 lit. A GDPR. Insofar as the use of cookies is absolutely necessary, this is done on the basis of Section 25 (2) No. 2 TDDDG. The subsequent processing takes place in each case on the basis of Art. 6 para. 1 GDPR. 
+ You can find more information about the cookies we use in our cookie banner.
+[H H3] 7. recipients or categories of recipients of the personal data
+[TEXT] When processing your data, we work together with the following service providers who have access to your data:
+ Provider of web analysis tools
+ Web hosting provider
+[H H3] 8. integration of third-party services
+[TEXT] Personal data is transferred to third parties if
+ pursuant to Art. 6 para. 1 p. 1. a) GDPR has been expressly consented to by the data subject,
+ the disclosure pursuant to Art. 6 para. 1 sentence 1 f) GDPR is necessary for the establishment, exercise or defense of legal claims and there is no reason to assume that the data subject has an overriding legitimate interest in the non-disclosure of their data,
+ for the transfer of data pursuant to Art. 6 para. 1 sentence 1 c) GDPR there is a legal obligation and/or
+ this in accordance with Art. 6 para. 1 sentence 1 b) GDPR is necessary for the performance of a contractual relationship with the data subject.
+ In other cases, personal data will not be passed on to third parties.
+[H H3] 9. duration for which the personal data will be stored
+[TEXT] We store your data,  if you have consented to the processing, at most until you withdraw your consent, 
+ if we require the data for the performance of a contract, at most for as long as the contractual relationship with you exists or statutory retention periods apply,
+ if we use the data on the basis of a legitimate interest, at most as long as your interest in deletion or anonymization does not prevail.
+ After the respective purpose has ceased to exist or these periods have expired, the corresponding data will be routinely deleted or blocked in accordance with the statutory provisions.
+[H H3] 10. data transfer to a third country
+[TEXT] Data is transferred to third countries outside the European Union. This is done on the basis of contractual regulations provided for by law, which are intended to ensure adequate protection of your data and which you can view on request. Subject to legal or contractual permissions, we process or have the data processed in a third country only if the special requirements of Art. 44 et seq. GDPR are met.
+[H H3] 11. integration of third-party services
+[TEXT] (1) We use Google Maps on this website. This allows us to display interactive maps directly on the website and enables you to use the map function conveniently. The legal basis for the use of the maps is Art. 6 para. 1 p. 1 lit. a GDPR, i.e. the integration only takes place with your consent.
+ (2) By visiting the website, Google receives the information that you have accessed the corresponding subpage of our website. In addition, the above-mentioned basic data such as IP address and time stamp are transmitted. However, we would like to point out that the IP address is only transmitted in anonymized form. This takes place regardless of whether Google provides a user account through which you are logged in or whether no user account exists. If you are logged in to Google, your data will be assigned directly to your account. If you do not wish to be associated with your Google profile, you must log out before activating the button. Google stores your data as usage profiles and uses them for the purposes of advertising, market research and/or the needs-based design of its website. Such an evaluation is carried out in particular (even for users who are not logged in) to provide needs-based advertising and to inform other users of the social network about your activities on our website. You have the right to object to the creation of these user profiles, whereby you must contact Google to exercise this right.
+ (3) The information collected is stored on Google servers, including in the USA. The transfer of personal data to the USA is possible on the basis of the adequacy decision adopted by the European Commission on July 10, 2023 for the EU-U.S. Data Privacy Framework with companies certified under this framework without further requirements. Google is subject to this certification. In addition, if necessary, so-called standard contractual clauses are agreed with Google, the purpose of which is to maintain an appropriate level of data protection in the third country.
+ (4) Further information on the purpose and scope of data collection and its processing by the plug-in provider can be found in the provider’s privacy policy. There you will also find further information on your rights in this regard and setting options to protect your privacy: https://policies.google.com/privacy?hl=de&gl=de
+[H H3] 12 Our presence on social networks
+[TEXT] (1) We have various presences on social media platforms. Your visit to these profiles triggers a large number of data processing operations. When you visit our profiles, your personal data is collected, used and stored not only by us, but also by the operators of the respective social network. This happens even if you yourself do not have a profile in the respective social network. The individual data processing operations and their scope differ depending on the operator of the respective social network and are not necessarily comprehensible to us. For details on the collection and storage of your personal data as well as the type, scope and purpose of its use by the operator of the respective social network, please refer to the data protection declarations of the respective operator.
+ (2) We operate the websites of the following providers:
+ Xing and Kununu
+ Xing and Kununu are operated by New Work SE, based in: Am Strandkai 1, 20457 Hamburg, Germany. You can find Xing’s privacy policy here:
+ https://privacy.xing.com/de/datenschutzerklaerung 
+ LinkedIn
+ LinkedIn has its registered office in: LinkedIn Ireland Unlimited Company, Wilton Plaza, Wilton Place, Dublin 2, Ireland. You can find LinkedIn’s privacy policy here: 
+ https://de.linkedin.com/legal/privacy-policy? 
+ Instagram
+ The information service “Instagram” is offered by Meta Platforms Ireland Ltd, 4 Grand Canal Square Grand Canal, Harbour, Dublin 2, Ireland (hereinafter “Meta”). You can find Instagram’s privacy policy here:
+ https://privacycenter.instagram.com/policy 
+ (3) We use the technical platform and services of the providers for the above-mentioned information services. We would like to point out that you use our presence on social media platforms and their functions on your own responsibility. This applies in particular to the use of interactive functions (e.g. commenting, sharing, rating). When you visit our websites, the providers of the social media platforms collect, among other things, your IP address and other information that is stored on your end device in the form of cookies. This information is used to provide us, as the operator of the accounts, with statistical information about the interaction with us.
+ (4) The data collected about you in this context will be processed by the platforms and may be transferred to countries outside the European Union, in particular the USA. The transfer of personal data to the USA is currently possible again without further requirements on the basis of the adequacy decision adopted by the European Commission on July 10, 2023 for the EU-U.S. Data Privacy Framework with companies certified under this framework. According to their own statements, all of the aforementioned providers also maintain an appropriate level of data protection and we have concluded standard contractual clauses with the companies where necessary. We do not know how the social media platforms use the data from your visit to our account and interaction with our posts for their own purposes, how long this data is stored and whether data is passed on to third parties. Data processing may differ depending on whether you are registered and logged in to the social network or whether you visit the site as a non-registered and/or non-logged-in user. When you access a post or the account, the IP address assigned to your end device is transmitted to the provider of the social media platform. If you are currently logged in as a user, a cookie on your end device can be used to track how you have moved around the network. Buttons integrated into websites enable the platforms to record your visits to these websites and assign them to your respective profile. This data can be used to tailor content or advertising to you. If you want to avoid this, you should log out or deactivate the “stay logged in” function, delete the cookies on your device and restart your browser.
+ (5) As the provider of the information service, we also only process the data from your use of our service that you provide to us and that require interaction. For example, if you ask a question that we can only answer by e-mail, we will store your information in accordance with the general principles of our data processing, which we describe in this privacy policy. The legal basis for the processing of your data on the social media platform is Art. 6 para. 1 p. 1 lit. f GDPR.
+ (6) To exercise your rights as a data subject, you can contact us or the provider of the social media platform. If one party is not responsible for responding or must receive the information from the other party, we or the provider will then forward your request to the respective partner. Please contact the operator of the social media platform directly if you have any questions about profiling and the processing of your data when using the website. If you have any questions about the processing of your interaction with us on our site, please write to the contact details we have provided above.
+ (7) What information the social media platform receives and how it is used is described by the providers in their privacy policies (see link in the list above). There you will also find information about contact options and the settings options for advertisements. Further information on social networks and how you can protect your data can also be found at www.youngdata.de .
+[H H3] 13. no automated decision-making (including profiling)
+[TEXT] We do not intend to use personal data collected from you for automated decision-making (including profiling).
+[H H3] 14. revocation and objection to the processing of your data
+[TEXT] (1) If, pursuant to Art. 6 para. 1 lit. a), Art. 7 GDPR, you can revoke your consent to the processing of your data at any time. Such a revocation affects the permissibility of the processing of your personal data after you have declared it to us. The permissibility of the processing of your data up to the time of your revocation remains unaffected.
+ (2) Insofar as we base the processing of your personal data on our legitimate interest pursuant to Art. 6 para. 1 lit. f) GDPR, you can object to the processing at any time for reasons arising from your particular situation. The processing is based in particular on our legitimate interest if it is not necessary for the performance of a contract with you and you have not given us your consent, which we have described in each case under the above descriptions of functions. When exercising such an objection, we ask you to explain the reasons why we should not process your personal data as we have done. In the event of your justified objection, we will examine the situation and either stop or adapt the data processing or point out to you our compelling reasons worthy of protection which outweigh your interests, rights and freedoms and on the basis of which we will continue the processing. In the event that the processing serves the assertion, exercise or defense of legal claims, we also reserve the right to further processing.
+ (3) Of course, you can object to the processing of your personal data for advertising and data analysis purposes at any time. You can inform us of your objection to advertising using the following contact details: datenschutz@ritz-international.com

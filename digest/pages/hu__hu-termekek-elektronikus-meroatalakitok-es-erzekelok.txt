@@ -1,0 +1,277 @@
+# Elektronikus mérőátalakítók és érzékelők - RITZ
+URL: https://ritz-international.com/hu/termekek/elektronikus-meroatalakitok-es-erzekelok/  status=200 lang=hu kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "hu_HU", "og:type": "article", "og:title": "Elektronikus mérőátalakítók és érzékelők - RITZ", "og:description": "Kezdőoldal Elektronikus mérőátalakítók és érzékelők Innovatív megoldásokat kínálunk szakértelmünkkel az Ön méréseihez Több mint 40 éves tapasztalat az elektronika energiatechnológiában való alkalmazása terén Kifinomult szigetelési technológia magas mérési pontossággal és gyártási minőséggel kombinálva Speciális technikák a nagyfokú megbízhatóság érdekében, még erősen zavarterhelt 
+canonical: https://ritz-international.com/hu/termekek/elektronikus-meroatalakitok-es-erzekelok/
+hreflang: [['en', 'https://ritz-international.com/en/products/electronic-transducers-and-sensors/'], ['fr', 'https://ritz-international.com/fr/produits/transformateurs-de-mesure-electroniques-et-capteurs/'], ['de', 'https://ritz-international.com/produkte/elektronische-messwandler-und-sensoren/'], ['hu', 'https://ritz-international.com/hu/termekek/elektronikus-meroatalakitok-es-erzekelok/'], ['es', 'https://ritz-international.com/es/productos/transductores-y-sensores-electronicos-de-medicion/'], ['x-default', 'https://ritz-international.com/produkte/elektronische-messwandler-und-sensoren/']]
+
+[H H2] Elektronikus mérőátalakítók és érzékelők
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/introduction_image_elektronische_messwandler_und_sensoren-e1705680342912.jpg alt=''
+[TEXT] Innovatív megoldásokat kínálunk szakértelmünkkel az Ön méréseihez
+ Több mint 40 éves tapasztalat az elektronika energiatechnológiában való alkalmazása terén
+ Kifinomult szigetelési technológia magas mérési pontossággal és gyártási minőséggel kombinálva
+ Speciális technikák a nagyfokú megbízhatóság érdekében, még erősen zavarterhelt környezetben is
+ DIN/EN/ISO 9001 szerinti tanúsítás
+[H H2] Kapcsolat
+[H H2] Gregor Pohl
+[LIST] +49 40 51123 - 260 <tel:+494051123260> | gregor.pohl@ritz-international.com <mailto:gregor.pohl@ritz-international.com>
+[H H2] Katalógusok letöltése
+[LIST] Elektronika <https://ritz-international.com/wp-content/uploads/RITZ_Elektronik_DE_EN-2.pdf> | Érzékelők <https://ritz-international.com/wp-content/uploads/Sensors-2.pdf>
+[template] Jellemzők, technikák és alkalmazások
+Árammérés
+Áramok 24 kA-ig
+0 és 10 kHz közötti frekvenciák
+0,1%-os pontosság
+Technikák
+Modulációs eljárás
+Száloptikai és lézertechnológia
+Önellátó
+Transzformátor elv
+Kompenzációs módszer
+Rogowski-tekercsek
+Krämer-átalakító
+R és C feszültségosztó
+Feszültségmérés
+Feszültségek 90 kV-ig
+0 és 150 kHz közötti frekvenciák
+0,1%-os pontosság
+Alkalmazások
+Energiatechnológia
+Vasúti technológia
+Elektrokémia
+Környezetvédelmi technológia
+Kutatás
+Autóipar
+Termékek
+ÁRAMÉRZÉKELŐK BELSŐ TÉR
+Áramérő KSOH-S 1082 Passzív kisjelű áramátalakító
+Érzékelő katalógus
+Áramérő MKSOH-S 1384Passzív kisjelű áramátalakító
+Érzékelő katalógus
+Áramérő UGSS-S 104 Gr. 1 Passzív kisjelű áramváltó
+Érzékelő katalógus
+Aktuális érzékelő RKU-S 2012 Passzív kisjelű áramváltó
+Érzékelő katalógus
+Belső feszültségérzékelők
+Feszültségérzékelő GBERA 12 | 24 | 36 Passzív kisjelű feszültségátalakító
+Érzékelő katalógus
+Feszültségérzékelő GSER 3Passzív kisjelű feszültségátalakító
+Érzékelő katalógus
+Feszültségérzékelő MGTK 12 | 17,5 | 24Passzív kisjelű feszültségátalakító
+Érzékelő katalógus
+Feszültségérzékelő MGTK-V 12 | 17,5 | 24 Passzív kisjelű feszültségátalakító
+Érzékelő katalógus
+Feszültségérzékelők FREILUFT
+GSER(F) 16 Passzív kisjelű feszültségátalakító
+Érzékelő katalógus
+GSER(F) 52 Passzív kisjelű feszültségátalakító
+Érzékelő katalógus
+GSR 27 | 38 Passzív kisjelű feszültségátalakító
+Érzékelő katalógus
+Belső kombinált érzékelők
+Kombinált érzékelő ABS 12 | 17,5 | 24 | 36 Tartókialakítás légszigetelt kapcsolóberendezésekbe történő beépítéshez
+Adatlap
+Elektronikus feszültségtranszformátorok
+Elektronikus feszültség transzformátor EGIW x64 DC és AC mérőrendszer optikai adatátvitellel
+Adatlap (angol)
+Elektronikus feszültségtranszformátor EGIW x45DC és AC mérőrendszer szigetelő erősítővel
+Adatlap (angol)
+Elektronikus feszültségtranszformátor EVBA x06 DC és AC mérőrendszer puffererősítővel
+Adatlap (angol)
+Elektronikus áramváltók
+EMVI 7xx elektronikus áramváltó A nulla fluxus elvén alapuló egyenáramú és váltakozó áramú mérőrendszer
+Adatlap (angol)
+Önálló elektronika
+Puffererősítő EVBA 06 Kiegészítés a meglévő feszültségérzékelőkhöz
+Adatlap (angol)
+Műszeres transzformátor tartozékok
+Nyitott áramkörű feszültségvédelem EOSS 122 Védő tisztítóberendezés áramváltókhoz
+Adatlap IMGS=https://ritz-international.com/wp-content/uploads/2022/10/produkte_stromsensoren_innenraum_stromsensor_ksoh-s_1082.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_stromsensoren_innenraum_stromsensor_mksoh-s_1384.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_stromsensoren_innenraum_stromsensor_ugss-s_104_gr_1.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_stromsensoren_innenraum_stromsensor_rku-s_2012.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_innenraum_spannungssensor_gbera_12_24_36.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_innenraum_spannungssensor_gser_3.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_innenraum_spannungssensor_mgtk_12_17_5_24.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_innenraum_spannungssensor_mgtk-v_12_17_5_24.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_freiluft_gserf_16.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_freiluft_gserf_52.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_freiluft_gsr_27_38.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_kombisensoren_innenraum_kombisensor_abs_12_17_5_24_36.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_elektronische_spannungwandler_elektronischer_spannungswandler_egiw_x64.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_elektronische_spannungwandler_elektronischer_spannungswandler_egiw_x85.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_elektronische_spannungwandler_elektronischer_spannungswandler_evba_x06.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_elektronische_stromwandler_elektronischer_stromwandler_emvi_7xx.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_stand-alone_elektronik_pufferverstaerker_evba_006.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_messwandlerzubehoer_offenspannungsschutz_eoss_122.jpg LINKS=Érzékelő katalógus<https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf> Érzékelő katalógus<https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf> Érzékelő katalógus<https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf> Érzékelő katalógus<https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf> Érzékelő katalógus<https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf> Érzékelő katalógus<https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf> Érzékelő katalógus<https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf> Érzékelő katalógus<https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf> Érzékelő katalógus<https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf> Érzékelő katalógus<https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf> Érzékelő katalógus<https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf> Adatlap<https://ritz-international.com/wp-content/uploads/DE_T.Data-Sheet_ABS-12_17.5_24_36.pdf> Adatlap (angol)<https://ritz-international.com/wp-content/uploads/2018-08_EGIW_x64_datasheet-2.pdf> Adatlap (angol)<https://ritz-international.com/wp-content/uploads/EGIW_x45_Data_Sheet.pdf> Adatlap (angol)<https://ritz-international.com/wp-content/uploads/2018-08_EVBA_x06_datasheet-3.pdf> Adatlap (angol)<https://ritz-international.com/wp-content/uploads/2018-08_EMVI_7xx_datasheet-2.pdf> Adatlap (angol)<https://ritz-international.com/wp-content/uploads/2018-08_EVBA_x06_datasheet-2.pdf> Adatlap<https://ritz-international.com/wp-content/uploads/201808_EOSS_122_datasheet.pdf>
+[ACC] (in 2556fde) <Jellemzők, technikák és alkalmazások> tpl=1220 Árammérés
+ Áramok 24 kA-ig
+ 0 és 10 kHz közötti frekvenciák
+ 0,1%-os pontosság
+ Technikák
+ Modulációs eljárás
+ Száloptikai és lézertechnológia
+ Önellátó
+ Transzformátor elv
+ Kompenzációs módszer
+ Rogowski-tekercsek
+ Krämer-átalakító
+ R és C feszültségosztó
+ Feszültségmérés
+ Feszültségek 90 kV-ig
+ 0 és 150 kHz közötti frekvenciák
+ 0,1%-os pontosság
+ Alkalmazások
+ Energiatechnológia
+ Vasúti technológia
+ Elektrokémia
+ Környezetvédelmi technológia
+ Kutatás
+ Autóipar || <Termékek> tpl=1224 ÁRAMÉRZÉKELŐK BELSŐ TÉR
+ Áramérő KSOH-S 1082 
+ Passzív kisjelű áramátalakító 
+ Érzékelő katalógus 
+Áramérő MKSOH-S 1384 Passzív kisjelű áramátalakító 
+ Érzékelő katalógus 
+ Áramérő UGSS-S 104 Gr. 1 
+Passzív kisjelű áramváltó
+ Érzékelő katalógus 
+ Aktuális érzékelő RKU-S 2012 
+Passzív kisjelű áramváltó 
+ Érzékelő katalógus 
+ Belső feszültségérzékelők
+ Feszültségérzékelő GBERA 12 | 24 | 36 
+Passzív kisjelű feszültségátalakító 
+ Érzékelő katalógus 
+ Feszültségérzékelő GSER 3
+ Passzív kisjelű feszültségátalakító 
+ Érzékelő katalógus 
+ Feszültségérzékelő MGTK 12 | 17,5 | 24 
+Passzív kisjelű feszültségátalakító 
+ Érzékelő katalógus 
+ Feszültségérzékelő MGTK-V 12 | 17,5 | 24 
+Passzív kisjelű feszültségátalakító 
+ Érzékelő katalógus 
+ Feszültségérzékelők FREILUFT
+ GSER(F) 16 
+Passzív kisjelű feszültségátalakító 
+ Érzékelő katalógus 
+ GSER(F) 52 
+Passzív kisjelű feszültségátalakító 
+ Érzékelő katalógus 
+ GSR 27 | 38 
+Passzív kisjelű feszültségátalakító 
+ Érzékelő katalógus 
+ Belső kombinált érzékelők 
+ Kombinált érzékelő ABS 12 | 17,5 | 24 | 36 
+Tartókialakítás légszigetelt kapcsolóberendezésekbe történő beépítéshez 
+ Adatlap 
+ Elektronikus feszültségtranszformátorok
+ Elektronikus feszültség transzformátor EGIW x64 
+DC és AC mérőrendszer optikai adatátvitellel 
+ Adatlap (angol) 
+ Elektronikus feszültségtranszformátor EGIW x45 
+DC és AC mérőrendszer szigetelő erősítővel 
+ Adatlap (angol) 
+ Elektronikus feszültségtranszformátor EVBA x06 
+DC és AC mérőrendszer puffererősítővel 
+ Adatlap (angol) 
+ Elektronikus áramváltók
+ EMVI 7xx elektronikus áramváltó 
+A nulla fluxus elvén alapuló egyenáramú és váltakozó áramú mérőrendszer
+ Adatlap (angol) 
+ Önálló elektronika
+ Puffererősítő EVBA 06 
+Kiegészítés a meglévő feszültségérzékelőkhöz
+ Adatlap (angol) 
+ Műszeres transzformátor tartozékok
+ Nyitott áramkörű feszültségvédelem EOSS 122 
+Védő tisztítóberendezés áramváltókhoz 
+ Adatlap
+[H H2] (in 00c4c7b) Árammérés
+[TEXT] (in 00c4c7b) Áramok 24 kA-ig
+ 0 és 10 kHz közötti frekvenciák
+ 0,1%-os pontosság
+[H H2] (in 00c4c7b) Technikák
+[TEXT] (in 00c4c7b) Modulációs eljárás
+ Száloptikai és lézertechnológia
+ Önellátó
+ Transzformátor elv
+ Kompenzációs módszer
+ Rogowski-tekercsek
+ Krämer-átalakító
+ R és C feszültségosztó
+[H H2] (in 00c4c7b) Feszültségmérés
+[TEXT] (in 00c4c7b) Feszültségek 90 kV-ig
+ 0 és 150 kHz közötti frekvenciák
+ 0,1%-os pontosság
+[H H2] (in 00c4c7b) Alkalmazások
+[TEXT] (in 00c4c7b) Energiatechnológia
+ Vasúti technológia
+ Elektrokémia
+ Környezetvédelmi technológia
+ Kutatás
+ Autóipar
+[H H2] (in 00c4c7b) ÁRAMÉRZÉKELŐK BELSŐ TÉR
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_stromsensoren_innenraum_stromsensor_ksoh-s_1082.jpg alt=''
+[TEXT] (in 00c4c7b) Áramérő KSOH-S 1082 
+ Passzív kisjelű áramátalakító
+[LIST] (in 00c4c7b) Érzékelő katalógus <https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_stromsensoren_innenraum_stromsensor_mksoh-s_1384.jpg alt=''
+[TEXT] (in 00c4c7b) Áramérő MKSOH-S 1384 Passzív kisjelű áramátalakító
+[LIST] (in 00c4c7b) Érzékelő katalógus <https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_stromsensoren_innenraum_stromsensor_ugss-s_104_gr_1.jpg alt=''
+[TEXT] (in 00c4c7b) Áramérő UGSS-S 104 Gr. 1 
+Passzív kisjelű áramváltó
+[LIST] (in 00c4c7b) Érzékelő katalógus <https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_stromsensoren_innenraum_stromsensor_rku-s_2012.jpg alt=''
+[TEXT] (in 00c4c7b) Aktuális érzékelő RKU-S 2012 
+Passzív kisjelű áramváltó
+[LIST] (in 00c4c7b) Érzékelő katalógus <https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf>
+[H H2] (in 00c4c7b) Belső feszültségérzékelők
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_innenraum_spannungssensor_gbera_12_24_36.jpg alt=''
+[TEXT] (in 00c4c7b) Feszültségérzékelő GBERA 12 | 24 | 36 
+Passzív kisjelű feszültségátalakító
+[LIST] (in 00c4c7b) Érzékelő katalógus <https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_innenraum_spannungssensor_gser_3.jpg alt=''
+[TEXT] (in 00c4c7b) Feszültségérzékelő GSER 3
+ Passzív kisjelű feszültségátalakító
+[LIST] (in 00c4c7b) Érzékelő katalógus <https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_innenraum_spannungssensor_mgtk_12_17_5_24.jpg alt=''
+[TEXT] (in 00c4c7b) Feszültségérzékelő MGTK 12 | 17,5 | 24 
+Passzív kisjelű feszültségátalakító
+[LIST] (in 00c4c7b) Érzékelő katalógus <https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_innenraum_spannungssensor_mgtk-v_12_17_5_24.jpg alt=''
+[TEXT] (in 00c4c7b) Feszültségérzékelő MGTK-V 12 | 17,5 | 24 
+Passzív kisjelű feszültségátalakító
+[LIST] (in 00c4c7b) Érzékelő katalógus <https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf>
+[H H2] (in 00c4c7b) Feszültségérzékelők FREILUFT
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_freiluft_gserf_16.jpg alt=''
+[TEXT] (in 00c4c7b) GSER(F) 16 
+Passzív kisjelű feszültségátalakító
+[LIST] (in 00c4c7b) Érzékelő katalógus <https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_freiluft_gserf_52.jpg alt=''
+[TEXT] (in 00c4c7b) GSER(F) 52 
+Passzív kisjelű feszültségátalakító
+[LIST] (in 00c4c7b) Érzékelő katalógus <https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_freiluft_gsr_27_38.jpg alt=''
+[TEXT] (in 00c4c7b) GSR 27 | 38 
+Passzív kisjelű feszültségátalakító
+[LIST] (in 00c4c7b) Érzékelő katalógus <https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf>
+[H H2] (in 00c4c7b) Belső kombinált érzékelők
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_kombisensoren_innenraum_kombisensor_abs_12_17_5_24_36.jpg alt=''
+[TEXT] (in 00c4c7b) Kombinált érzékelő ABS 12 | 17,5 | 24 | 36 
+Tartókialakítás légszigetelt kapcsolóberendezésekbe történő beépítéshez
+[LIST] (in 00c4c7b) Adatlap <https://ritz-international.com/wp-content/uploads/DE_T.Data-Sheet_ABS-12_17.5_24_36.pdf>
+[H H2] (in 00c4c7b) Elektronikus feszültségtranszformátorok
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_elektronische_spannungwandler_elektronischer_spannungswandler_egiw_x64.jpg alt=''
+[TEXT] (in 00c4c7b) Elektronikus feszültség transzformátor EGIW x64 
+DC és AC mérőrendszer optikai adatátvitellel
+[LIST] (in 00c4c7b) Adatlap (angol) <https://ritz-international.com/wp-content/uploads/2018-08_EGIW_x64_datasheet-2.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_elektronische_spannungwandler_elektronischer_spannungswandler_egiw_x85.jpg alt=''
+[TEXT] (in 00c4c7b) Elektronikus feszültségtranszformátor EGIW x45 
+DC és AC mérőrendszer szigetelő erősítővel
+[LIST] (in 00c4c7b) Adatlap (angol) <https://ritz-international.com/wp-content/uploads/EGIW_x45_Data_Sheet.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_elektronische_spannungwandler_elektronischer_spannungswandler_evba_x06.jpg alt=''
+[TEXT] (in 00c4c7b) Elektronikus feszültségtranszformátor EVBA x06 
+DC és AC mérőrendszer puffererősítővel
+[LIST] (in 00c4c7b) Adatlap (angol) <https://ritz-international.com/wp-content/uploads/2018-08_EVBA_x06_datasheet-3.pdf>
+[H H2] (in 00c4c7b) Elektronikus áramváltók
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_elektronische_stromwandler_elektronischer_stromwandler_emvi_7xx.jpg alt=''
+[TEXT] (in 00c4c7b) EMVI 7xx elektronikus áramváltó 
+A nulla fluxus elvén alapuló egyenáramú és váltakozó áramú mérőrendszer
+[LIST] (in 00c4c7b) Adatlap (angol) <https://ritz-international.com/wp-content/uploads/2018-08_EMVI_7xx_datasheet-2.pdf>
+[H H2] (in 00c4c7b) Önálló elektronika
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_stand-alone_elektronik_pufferverstaerker_evba_006.jpg alt=''
+[TEXT] (in 00c4c7b) Puffererősítő EVBA 06 
+Kiegészítés a meglévő feszültségérzékelőkhöz
+[LIST] (in 00c4c7b) Adatlap (angol) <https://ritz-international.com/wp-content/uploads/2018-08_EVBA_x06_datasheet-2.pdf>
+[H H2] (in 00c4c7b) Műszeres transzformátor tartozékok
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_messwandlerzubehoer_offenspannungsschutz_eoss_122.jpg alt=''
+[TEXT] (in 00c4c7b) Nyitott áramkörű feszültségvédelem EOSS 122 
+Védő tisztítóberendezés áramváltókhoz
+[LIST] (in 00c4c7b) Adatlap <https://ritz-international.com/wp-content/uploads/201808_EOSS_122_datasheet.pdf>
+[PDFS] https://ritz-international.com/wp-content/uploads/RITZ_Elektronik_DE_EN-2.pdf https://ritz-international.com/wp-content/uploads/Sensors-2.pdf https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf https://ritz-international.com/wp-content/uploads/DE_T.Data-Sheet_ABS-12_17.5_24_36.pdf https://ritz-international.com/wp-content/uploads/2018-08_EGIW_x64_datasheet-2.pdf https://ritz-international.com/wp-content/uploads/EGIW_x45_Data_Sheet.pdf https://ritz-international.com/wp-content/uploads/2018-08_EVBA_x06_datasheet-3.pdf https://ritz-international.com/wp-content/uploads/2018-08_EMVI_7xx_datasheet-2.pdf https://ritz-international.com/wp-content/uploads/2018-08_EVBA_x06_datasheet-2.pdf https://ritz-international.com/wp-content/uploads/201808_EOSS_122_datasheet.pdf
+[TEMPLATES] 1220 1224

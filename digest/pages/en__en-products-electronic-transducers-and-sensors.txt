@@ -1,0 +1,279 @@
+# Electronic instrument transformers and sensors - RITZ
+URL: https://ritz-international.com/en/products/electronic-transducers-and-sensors/  status=200 lang=en kind=pages
+meta: {"robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", "og:locale": "en_US", "og:type": "article", "og:title": "Electronic instrument transformers and sensors - RITZ", "og:description": "Home Electronic instrument transformers and sensors Expertise in innovative solutions for your measurement task More than 40 years of experience in the use of electronics in energy technology Sophisticated insulation technology combined with high measuring accuracy and manufacturing quality Unconventional technologies for high reliability even in environments with high level
+canonical: https://ritz-international.com/produkte/elektronische-messwandler-und-sensoren/
+hreflang: [['en', 'https://ritz-international.com/en/products/electronic-transducers-and-sensors/'], ['fr', 'https://ritz-international.com/fr/produits/transformateurs-de-mesure-electroniques-et-capteurs/'], ['de', 'https://ritz-international.com/produkte/elektronische-messwandler-und-sensoren/'], ['hu', 'https://ritz-international.com/hu/termekek/elektronikus-meroatalakitok-es-erzekelok/'], ['es', 'https://ritz-international.com/es/productos/transductores-y-sensores-electronicos-de-medicion/'], ['x-default', 'https://ritz-international.com/produkte/elektronische-messwandler-und-sensoren/']]
+
+[H H2] Electronic instrument transformers and sensors
+[IMG] https://ritz-international.com/wp-content/uploads/2022/09/introduction_image_elektronische_messwandler_und_sensoren-e1705680342912.jpg alt=''
+[TEXT] Expertise in innovative solutions for your measurement task
+ More than 40 years of experience in the use of electronics in energy technology
+ Sophisticated insulation technology combined with high measuring accuracy and manufacturing quality
+ Unconventional technologies for high reliability even in environments with high levels of interference
+ Certification according to DIN/EN/ISO 9001
+[H H2] Contact us
+[H H2] Gregor Pohl
+[LIST] +49 40 51123 - 260 <tel:+494051123260> | gregor.pohl@ritz-international.com <mailto:gregor.pohl@ritz-international.com>
+[H H2] Download information
+[LIST] Electronics <https://ritz-international.com/wp-content/uploads/RITZ_Elektronik_DE_EN-2.pdf> | Sensors <https://ritz-international.com/wp-content/uploads/Sensors-2.pdf>
+[template] Features, technologies and applications
+Current measurement
+Currents up to 24 kA
+Frequencies from 0 to 10 kHz
+Accuracies from 0.1 %
+Technologies
+Modulation method
+Fibre optic and laser technology
+Self-powered
+Power transformer principle
+Compensation procedure
+Rogowski coils
+Krämer transformers
+R and C voltage dividers
+Voltage measurement
+Voltages up to 90 kV
+Frequencies from 0 to 150 kHz
+Accuracies from 0.1 %
+Applications
+Power engineering
+Rail engineering
+Electrochemistry
+Environmental engineering
+Research
+Automotive industry
+PRODUCTS
+CURRENT SENSORS INTERIOR
+Current sensor KSOH-S 1082 Passive small-signal current transformer
+Sensor catalog
+Current sensor MKSOH-S 1384 Passive small-signal current transformer
+Sensor catalog
+Current sensor UGSS-S 104 Gr. 1 Passive small-signal current transformer
+Sensor catalog
+Current sensor RKU-S 2012 Passive small-signal current transformer
+Sensor catalog
+Interior voltage sensors
+Voltage sensor GBERA 12 | 24 | 36 Passive small-signal voltage converter
+Sensor catalog
+Voltage sensor GSER 3Passive low-signal voltage converter
+Sensor catalog
+Voltage sensor MGTK 12 | 17.5 | 24Passive small-signal voltage converter
+Sensor catalog
+Voltage sensor MGTK-V 12 | 17.5 | 24 Passive small-signal voltage converter
+Sensor catalog
+Voltage sensors FREILUFT
+GSER(F) 16 Passive small-signal voltage converter
+Sensor catalog
+GSER(F) 52 Passive small-signal voltage converter
+Sensor catalog
+GSR 27 | 38 Passive small-signal voltage converter
+Sensor catalog
+Interior combination sensors
+Combination sensor ABS 12 | 17.5 | 24 | 36 Support design for installation in air-insulated switchgear
+Data sheet
+Electronic voltage transformers
+Electronic voltage transformer EGIW x64 DC and AC measuring system with optical data transmission
+Data sheet (English)
+Electronic voltage transformer EGIW x45DC and AC measuring system with isolating amplifier
+Data sheet (English)
+Electronic voltage transformer EVBA x06 DC and AC measuring system with buffer amplifier
+Data sheet (English)
+Electronic current transformers
+EMVI 7xx electronic current transformer DC and AC measuring system based on the zero flux principle
+Data sheet (English)
+Stand-alone electronics
+Buffer amplifier EVBA 06 Supplement for existing voltage sensors
+Data sheet (English)
+Measuring transformer accessories
+Open-circuit voltage protection EOSS 122 Protective cleaning device for current transformers
+Data sheet IMGS=https://ritz-international.com/wp-content/uploads/2022/10/produkte_stromsensoren_innenraum_stromsensor_ksoh-s_1082.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_stromsensoren_innenraum_stromsensor_mksoh-s_1384.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_stromsensoren_innenraum_stromsensor_ugss-s_104_gr_1.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_stromsensoren_innenraum_stromsensor_rku-s_2012.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_innenraum_spannungssensor_gbera_12_24_36.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_innenraum_spannungssensor_gser_3.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_innenraum_spannungssensor_mgtk_12_17_5_24.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_innenraum_spannungssensor_mgtk-v_12_17_5_24.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_freiluft_gserf_16.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_freiluft_gserf_52.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_freiluft_gsr_27_38.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_kombisensoren_innenraum_kombisensor_abs_12_17_5_24_36.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_elektronische_spannungwandler_elektronischer_spannungswandler_egiw_x64.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_elektronische_spannungwandler_elektronischer_spannungswandler_egiw_x85.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_elektronische_spannungwandler_elektronischer_spannungswandler_evba_x06.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_elektronische_stromwandler_elektronischer_stromwandler_emvi_7xx.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_stand-alone_elektronik_pufferverstaerker_evba_006.jpg https://ritz-international.com/wp-content/uploads/2022/10/produkte_messwandlerzubehoer_offenspannungsschutz_eoss_122.jpg LINKS=Sensor catalog<https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf> Sensor catalog<https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf> Sensor catalog<https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf> Sensor catalog<https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf> Sensor catalog<https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf> Sensor catalog<https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf> Sensor catalog<https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf> Sensor catalog<https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf> Sensor catalog<https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf> Sensor catalog<https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf> Sensor catalog<https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf> Data sheet<https://ritz-international.com/wp-content/uploads/DE_T.Data-Sheet_ABS-12_17.5_24_36.pdf> Data sheet (English)<https://ritz-international.com/wp-content/uploads/2018-08_EGIW_x64_datasheet-2.pdf> Data sheet (English)<https://ritz-international.com/wp-content/uploads/EGIW_x45_Data_Sheet.pdf> Data sheet (English)<https://ritz-international.com/wp-content/uploads/2018-08_EVBA_x06_datasheet-3.pdf> Data sheet (English)<https://ritz-international.com/wp-content/uploads/2018-08_EMVI_7xx_datasheet-2.pdf> Data sheet (English)<https://ritz-international.com/wp-content/uploads/2018-08_EVBA_x06_datasheet-2.pdf> Data sheet<https://ritz-international.com/wp-content/uploads/201808_EOSS_122_datasheet.pdf>
+[ACC] (in 2556fde) <Features, technologies and applications> tpl=1220 Current measurement
+ Currents up to 24 kA
+ Frequencies from 0 to 10 kHz
+ Accuracies from 0.1 %
+ Technologies
+ Modulation method
+ Fibre optic and laser technology
+ Self-powered
+ Power transformer principle
+ Compensation procedure
+ Rogowski coils
+ Krämer transformers
+ R and C voltage dividers
+ Voltage measurement
+ Voltages up to 90 kV
+ Frequencies from 0 to 150 kHz
+ Accuracies from 0.1 %
+ Applications
+ Power engineering
+ Rail engineering
+ Electrochemistry
+ Environmental engineering
+ Research
+ Automotive industry || <PRODUCTS> tpl=1224 CURRENT SENSORS INTERIOR
+ Current sensor KSOH-S 1082 
+ Passive small-signal current transformer 
+ Sensor catalog 
+ Current sensor MKSOH-S 1384 
+ Passive small-signal current transformer 
+ Sensor catalog 
+ Current sensor UGSS-S 104 Gr. 1 
+Passive small-signal current transformer
+ Sensor catalog 
+ Current sensor RKU-S 2012 
+Passive small-signal current transformer 
+ Sensor catalog 
+ Interior voltage sensors
+ Voltage sensor GBERA 12 | 24 | 36 
+Passive small-signal voltage converter 
+ Sensor catalog 
+ Voltage sensor GSER 3
+ Passive low-signal voltage converter 
+ Sensor catalog 
+ Voltage sensor MGTK 12 | 17.5 | 24 
+Passive small-signal voltage converter 
+ Sensor catalog 
+ Voltage sensor MGTK-V 12 | 17.5 | 24 
+Passive small-signal voltage converter 
+ Sensor catalog 
+ Voltage sensors FREILUFT
+ GSER(F) 16 
+Passive small-signal voltage converter 
+ Sensor catalog 
+ GSER(F) 52 
+Passive small-signal voltage converter 
+ Sensor catalog 
+ GSR 27 | 38 
+Passive small-signal voltage converter 
+ Sensor catalog 
+ Interior combination sensors 
+ Combination sensor ABS 12 | 17.5 | 24 | 36 
+Support design for installation in air-insulated switchgear 
+ Data sheet 
+ Electronic voltage transformers
+ Electronic voltage transformer EGIW x64 
+DC and AC measuring system with optical data transmission 
+ Data sheet (English) 
+ Electronic voltage transformer EGIW x45 
+DC and AC measuring system with isolating amplifier 
+ Data sheet (English) 
+ Electronic voltage transformer EVBA x06 
+DC and AC measuring system with buffer amplifier 
+ Data sheet (English) 
+ Electronic current transformers
+ EMVI 7xx electronic current transformer 
+DC and AC measuring system based on the zero flux principle
+ Data sheet (English) 
+ Stand-alone electronics
+ Buffer amplifier EVBA 06 
+Supplement for existing voltage sensors
+ Data sheet (English) 
+ Measuring transformer accessories
+ Open-circuit voltage protection EOSS 122 
+Protective cleaning device for current transformers 
+ Data sheet
+[H H2] (in 00c4c7b) Current measurement
+[TEXT] (in 00c4c7b) Currents up to 24 kA
+ Frequencies from 0 to 10 kHz
+ Accuracies from 0.1 %
+[H H2] (in 00c4c7b) Technologies
+[TEXT] (in 00c4c7b) Modulation method
+ Fibre optic and laser technology
+ Self-powered
+ Power transformer principle
+ Compensation procedure
+ Rogowski coils
+ Krämer transformers
+ R and C voltage dividers
+[H H2] (in 00c4c7b) Voltage measurement
+[TEXT] (in 00c4c7b) Voltages up to 90 kV
+ Frequencies from 0 to 150 kHz
+ Accuracies from 0.1 %
+[H H2] (in 00c4c7b) Applications
+[TEXT] (in 00c4c7b) Power engineering
+ Rail engineering
+ Electrochemistry
+ Environmental engineering
+ Research
+ Automotive industry
+[H H2] (in 00c4c7b) CURRENT SENSORS INTERIOR
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_stromsensoren_innenraum_stromsensor_ksoh-s_1082.jpg alt=''
+[TEXT] (in 00c4c7b) Current sensor KSOH-S 1082 
+ Passive small-signal current transformer
+[LIST] (in 00c4c7b) Sensor catalog <https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_stromsensoren_innenraum_stromsensor_mksoh-s_1384.jpg alt=''
+[TEXT] (in 00c4c7b) Current sensor MKSOH-S 1384 
+ Passive small-signal current transformer
+[LIST] (in 00c4c7b) Sensor catalog <https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_stromsensoren_innenraum_stromsensor_ugss-s_104_gr_1.jpg alt=''
+[TEXT] (in 00c4c7b) Current sensor UGSS-S 104 Gr. 1 
+Passive small-signal current transformer
+[LIST] (in 00c4c7b) Sensor catalog <https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_stromsensoren_innenraum_stromsensor_rku-s_2012.jpg alt=''
+[TEXT] (in 00c4c7b) Current sensor RKU-S 2012 
+Passive small-signal current transformer
+[LIST] (in 00c4c7b) Sensor catalog <https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf>
+[H H2] (in 00c4c7b) Interior voltage sensors
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_innenraum_spannungssensor_gbera_12_24_36.jpg alt=''
+[TEXT] (in 00c4c7b) Voltage sensor GBERA 12 | 24 | 36 
+Passive small-signal voltage converter
+[LIST] (in 00c4c7b) Sensor catalog <https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_innenraum_spannungssensor_gser_3.jpg alt=''
+[TEXT] (in 00c4c7b) Voltage sensor GSER 3
+ Passive low-signal voltage converter
+[LIST] (in 00c4c7b) Sensor catalog <https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_innenraum_spannungssensor_mgtk_12_17_5_24.jpg alt=''
+[TEXT] (in 00c4c7b) Voltage sensor MGTK 12 | 17.5 | 24 
+Passive small-signal voltage converter
+[LIST] (in 00c4c7b) Sensor catalog <https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_innenraum_spannungssensor_mgtk-v_12_17_5_24.jpg alt=''
+[TEXT] (in 00c4c7b) Voltage sensor MGTK-V 12 | 17.5 | 24 
+Passive small-signal voltage converter
+[LIST] (in 00c4c7b) Sensor catalog <https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf>
+[H H2] (in 00c4c7b) Voltage sensors FREILUFT
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_freiluft_gserf_16.jpg alt=''
+[TEXT] (in 00c4c7b) GSER(F) 16 
+Passive small-signal voltage converter
+[LIST] (in 00c4c7b) Sensor catalog <https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_freiluft_gserf_52.jpg alt=''
+[TEXT] (in 00c4c7b) GSER(F) 52 
+Passive small-signal voltage converter
+[LIST] (in 00c4c7b) Sensor catalog <https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_spannungssensoren_freiluft_gsr_27_38.jpg alt=''
+[TEXT] (in 00c4c7b) GSR 27 | 38 
+Passive small-signal voltage converter
+[LIST] (in 00c4c7b) Sensor catalog <https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf>
+[H H2] (in 00c4c7b) Interior combination sensors
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_kombisensoren_innenraum_kombisensor_abs_12_17_5_24_36.jpg alt=''
+[TEXT] (in 00c4c7b) Combination sensor ABS 12 | 17.5 | 24 | 36 
+Support design for installation in air-insulated switchgear
+[LIST] (in 00c4c7b) Data sheet <https://ritz-international.com/wp-content/uploads/DE_T.Data-Sheet_ABS-12_17.5_24_36.pdf>
+[H H2] (in 00c4c7b) Electronic voltage transformers
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_elektronische_spannungwandler_elektronischer_spannungswandler_egiw_x64.jpg alt=''
+[TEXT] (in 00c4c7b) Electronic voltage transformer EGIW x64 
+DC and AC measuring system with optical data transmission
+[LIST] (in 00c4c7b) Data sheet (English) <https://ritz-international.com/wp-content/uploads/2018-08_EGIW_x64_datasheet-2.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_elektronische_spannungwandler_elektronischer_spannungswandler_egiw_x85.jpg alt=''
+[TEXT] (in 00c4c7b) Electronic voltage transformer EGIW x45 
+DC and AC measuring system with isolating amplifier
+[LIST] (in 00c4c7b) Data sheet (English) <https://ritz-international.com/wp-content/uploads/EGIW_x45_Data_Sheet.pdf>
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_elektronische_spannungwandler_elektronischer_spannungswandler_evba_x06.jpg alt=''
+[TEXT] (in 00c4c7b) Electronic voltage transformer EVBA x06 
+DC and AC measuring system with buffer amplifier
+[LIST] (in 00c4c7b) Data sheet (English) <https://ritz-international.com/wp-content/uploads/2018-08_EVBA_x06_datasheet-3.pdf>
+[H H2] (in 00c4c7b) Electronic current transformers
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_elektronische_stromwandler_elektronischer_stromwandler_emvi_7xx.jpg alt=''
+[TEXT] (in 00c4c7b) EMVI 7xx electronic current transformer 
+DC and AC measuring system based on the zero flux principle
+[LIST] (in 00c4c7b) Data sheet (English) <https://ritz-international.com/wp-content/uploads/2018-08_EMVI_7xx_datasheet-2.pdf>
+[H H2] (in 00c4c7b) Stand-alone electronics
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_stand-alone_elektronik_pufferverstaerker_evba_006.jpg alt=''
+[TEXT] (in 00c4c7b) Buffer amplifier EVBA 06 
+Supplement for existing voltage sensors
+[LIST] (in 00c4c7b) Data sheet (English) <https://ritz-international.com/wp-content/uploads/2018-08_EVBA_x06_datasheet-2.pdf>
+[H H2] (in 00c4c7b) Measuring transformer accessories
+[IMG] (in 00c4c7b) https://ritz-international.com/wp-content/uploads/2022/10/produkte_messwandlerzubehoer_offenspannungsschutz_eoss_122.jpg alt=''
+[TEXT] (in 00c4c7b) Open-circuit voltage protection EOSS 122 
+Protective cleaning device for current transformers
+[LIST] (in 00c4c7b) Data sheet <https://ritz-international.com/wp-content/uploads/201808_EOSS_122_datasheet.pdf>
+[PDFS] https://ritz-international.com/wp-content/uploads/RITZ_Elektronik_DE_EN-2.pdf https://ritz-international.com/wp-content/uploads/Sensors-2.pdf https://ritz-international.com/wp-content/uploads/EN_SENSORS_CUSTOMER_2024.pdf https://ritz-international.com/wp-content/uploads/DE_T.Data-Sheet_ABS-12_17.5_24_36.pdf https://ritz-international.com/wp-content/uploads/2018-08_EGIW_x64_datasheet-2.pdf https://ritz-international.com/wp-content/uploads/EGIW_x45_Data_Sheet.pdf https://ritz-international.com/wp-content/uploads/2018-08_EVBA_x06_datasheet-3.pdf https://ritz-international.com/wp-content/uploads/2018-08_EMVI_7xx_datasheet-2.pdf https://ritz-international.com/wp-content/uploads/2018-08_EVBA_x06_datasheet-2.pdf https://ritz-international.com/wp-content/uploads/201808_EOSS_122_datasheet.pdf
+[TEMPLATES] 1220 1224
