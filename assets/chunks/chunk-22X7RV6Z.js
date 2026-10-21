@@ -1,4 +1,4 @@
-import{a as e,j as r,k as d}from"./chunk-WIL4UIY2.js";function y(n,a,t=""){let{t:i}=n,s=a.role?.[n.lang]||a.role?.en||a.role?.de||"";return`<article class="person">
+import{a as e,j as r,k as d}from"./chunk-JRCZNLSK.js";function y(n,a,t=""){let{t:i}=n,s=a.role?.[n.lang]||a.role?.en||a.role?.de||"";return`<article class="person">
   ${t?`<span class="person__kind">${e(t)}</span>`:""}
   <h3>${e(a.name)}</h3>
   ${s?`<p class="role">${e(s)}</p>`:""}
