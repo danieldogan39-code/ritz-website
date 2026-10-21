@@ -11,7 +11,7 @@ export async function initDownloads(root) {
   if (!box) return;
   const [docsC, t, ctx] = await Promise.all([getData('docs'), getT(), clientCtx()]);
   // kompaktes Format zurück in Dokumentobjekte
-  const docs = docsC.map((d) => ({ id: d.id, title: d.t, url: d.u, path: d.pa, file: d.f, type: d.ty, lang: d.l, size: d.s, areas: d.a || [], codes: d.c || '', ext: d.e || 'pdf' }));
+  const docs = docsC.map((d) => ({ id: d.id, title: d.t, local: !!d.lo, path: d.pa, file: d.f, type: d.ty, lang: d.l, size: d.s, areas: d.a || [], codes: d.c || '', ext: d.e || 'pdf' }));
   const q = $('[data-dl-q]', box), ty = $('[data-dl-type]', box), ar = $('[data-dl-area]', box), lg = $('[data-dl-lang]', box);
   const res = $('[data-dl-results]', box), cnt = $('[data-dl-count]', box), feat = $('[data-dl-featured]', box);
   const initial = new URLSearchParams(readQuery());

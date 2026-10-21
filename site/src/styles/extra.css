@@ -633,3 +633,25 @@ strong[data-count] span { font-size: inherit; font-weight: inherit; line-height:
   [data-reveal], [data-reveal] * { opacity: 1 !important; clip-path: none !important; animation: none !important; }
   .wt__arc { stroke-dashoffset: 0 !important; }
 }
+/* Dokumente auf Anfrage (noch nicht auf der Seite hinterlegt) */
+.doc--req .doc__icon { background: transparent; box-shadow: inset 0 0 0 1px var(--line-strong); color: var(--steel); }
+.doc--req .doc__go { display: inline-flex; align-items: center; gap: .35rem; font-size: .8rem; font-weight: 650; font-stretch: 88%; }
+.doc--req .doc__go svg { width: 16px; height: 16px; }
+.docreq { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .6rem 1.2rem; padding: 14px 16px; margin-bottom: 8px; background: var(--porcelain); }
+.docreq p { margin: 0; max-width: 60ch; font-size: .92rem; }
+
+/* Bildqualität: breitere Bänder für Panoramen, gering aufgelöste Motive höchstens in natürlicher Größe */
+.arow__img { aspect-ratio: 2.2 / 1; }
+.arow__img img[src*="Hochspannungswandler-Intro2"] { object-position: 50% 60%; }
+img.is-lowres { width: auto !important; height: auto !important; max-width: 100%; max-height: 100%; object-fit: contain !important; margin-inline: auto; }
+.figure img.is-lowres { display: block; }
+.card__img--small { position: relative; display: grid; place-items: center; isolation: isolate; }
+.card__img--small::before { content: ""; position: absolute; inset: -24px; z-index: -1; background: var(--bgimg) center / cover; filter: blur(22px) saturate(.85); opacity: .55; }
+.card__img--small img { width: auto; height: 92%; max-width: 92%; object-fit: contain; box-shadow: 0 10px 30px -14px rgb(28 19 17 / .45); }
+.news-grid .card__img--small img, .card__img--small img { transform: none !important; }
+.phead--compact .phead__fig { aspect-ratio: 2 / 1; }
+@media (max-width: 900px) { .phead--compact .phead__fig { aspect-ratio: 21 / 9; } }
+/* Aktionen auf der Produktseite: bei schmalen Bildschirmen und langen Beschriftungen umbrechen statt überlaufen */
+.pd__actions .row { flex-wrap: wrap; }
+.pd__actions .row > * { flex: 1 1 auto; min-width: min(100%, 9.5rem); }
+.pd__summary { min-width: 0; }

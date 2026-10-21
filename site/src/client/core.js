@@ -43,6 +43,35 @@ export async function getT(lang = CFG.lang) {
   return T;
 }
 
+// Texte der Werkzeuge (Spezifikations-Check, Rechner, Projektmappe) – eigene Datei, nur bei Bedarf geladen
+export async function getX(lang = CFG.lang) {
+  if (CFG.t?.x && CFG.t.meta?.lang === lang) return CFG.t.x;
+  return getData('x-' + lang);
+}
+export const vendorBase = () => (CFG.mode === 'spa' ? 'vendor/' : (CFG.base || '/') + 'assets/vendor/');
+// Konfiguratordaten aller Produkte (Optionen, Abhängigkeiten, Rollen) in der Datensprache
+export const getCfgAll = (dl) => getData('cfg-' + dl);
+// Datei zum Herunterladen anbieten (Vorschau: nicht möglich → false, dann Kopieren anbieten)
+export function saveFile(name, text, type = 'text/plain') {
+  if (CFG.mode === 'spa') return false;
+  try {
+    const url = URL.createObjectURL(new Blob([text], { type: type + ';charset=utf-8' }));
+    const a = document.createElement('a');
+    a.href = url; a.download = name; document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 2000);
+    return true;
+  } catch (e) { return false; }
+}
+// Übergabe zwischen Werkzeugen (z. B. Startseite → Spezifikations-Check) über sessionStorage
+export const handoff = {
+  put(k, v) { try { sessionStorage.setItem('ritz-h-' + k, JSON.stringify(v)); } catch (e) { mem['h-' + k] = v; } },
+  take(k) {
+    let v = null;
+    try { const s = sessionStorage.getItem('ritz-h-' + k); if (s) { v = JSON.parse(s); sessionStorage.removeItem('ritz-h-' + k); } } catch (e) { v = mem['h-' + k] ?? null; delete mem['h-' + k]; }
+    return v;
+  },
+};
+
 // Index: Produkte + Bildmanifest für Karten
 export async function getIndex() {
   const idx = await getData('index');

@@ -57,7 +57,26 @@ export function makeCtx({ lang, mode = 'static', base = '/', t, data, img = {}, 
     },
     plural: (n, forms) => plural(lang, n, forms),
     fmtBytes: (n) => fmtBytes(n, lang),
-    docHref: (d) => (docBase ? docBase + d.path.replace(/^\/dokumente\//, '') : d.url),
+    // Dokumente liegen auf der neuen Seite unter /dokumente/… (Vorschau: auf der Entwurfsseite);
+    // nicht verfügbare Dokumente werden über das Kontaktformular angefordert (kein Link auf alte Seiten)
+    docHref(d) {
+      if (!d || !(d.local || d.lo)) return null;
+      return (docBase || base + 'dokumente/') + String(d.path || d.pa || '').replace(/^\/dokumente\//, '');
+    },
+    docTitle(d) {
+      const tt = d.title || d.t || {};
+      return tt[lang] || tt[dl] || tt.de || tt.en || d.file || d.f || '';
+    },
+    docReq(d) {
+      const R = t.downloads?.req;
+      const msg = R ? R.msg.replace('{title}', ctx.docTitle(d)).replace('{file}', d.file || d.f || '') : '';
+      return ctx.href('contact', {}, { topic: 2, msg });
+    },
+    // Attribute eines Dokumentlinks: Download (neues Fenster) oder Anforderung
+    docAttrs(d) {
+      const h = ctx.docHref(d);
+      return h ? `href="${h}" target="_blank" rel="noopener"` : `href="${ctx.docReq(d).replace(/&/g, '&amp;')}" data-doc-req`;
+    },
     newsSlug: (n) => newsSlugFor(n, lang),
     imgUrl(key, w = 640) {
       const m = key && ctx.img[key];

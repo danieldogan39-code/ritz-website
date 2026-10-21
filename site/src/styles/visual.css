@@ -1,0 +1,78 @@
+/* ---------- Schemazeichnungen (Produkte ohne Foto) ---------- */
+.pv { display: block; width: 100%; height: 100%; overflow: visible; --pv-ink: #4b4540; }
+.pv path, .pv ellipse { stroke: var(--pv-ink); stroke-width: 1; stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; }
+.pv--detail path, .pv--detail ellipse { stroke-width: 1.15; }
+/* Gießharz */
+.pv .r-t { fill: #fbfaf8; } .pv .r-f { fill: #e5e1db; } .pv .r-r { fill: #cec7be; }
+.pv .r-s { fill: #ddd8d1; } .pv .r-c { fill: #f3f0eb; }
+.pv .r-w { fill: #b5ada3; } .pv .r-wt { fill: #c6beb4; } .pv .r-wr { fill: #a59c91; }
+/* Metall */
+.pv .m-t { fill: #f2f4f6; } .pv .m-f { fill: #d7dbe0; } .pv .m-r { fill: #bcc2c9; }
+.pv .m-s { fill: #ccd1d7; } .pv .m-c { fill: #eef0f3; }
+/* Primärleiter (rot) */
+.pv .e-t { fill: #ef5d5f; } .pv .e-f { fill: #d4201f; } .pv .e-r { fill: #a7161a; }
+.pv .e-s { fill: #c91c1f; } .pv .e-c { fill: #e8494b; }
+/* Kunststoff schwarz / Kabelmantel */
+.pv .k-t { fill: #77716c; } .pv .k-f { fill: #57524e; } .pv .k-r { fill: #45403d; }
+.pv .k-s { fill: #4d4845; } .pv .k-c { fill: #615b56; }
+/* transparente Abdeckung */
+.pv .g-t, .pv .g-f, .pv .g-r { fill: #fff; fill-opacity: .4; stroke: #8f8780; }
+/* Details */
+.pv .pv-sh { fill: #4a3c30; fill-opacity: .09; stroke: none; }
+.pv .pv-hl { fill: none; stroke: #fff; stroke-opacity: .55; stroke-width: 1.6; }
+.pv .pv-edge { fill: none; stroke: #fff; stroke-opacity: .85; stroke-width: 1; }
+.pv .pv-ln { fill: none; stroke-opacity: .55; stroke-width: .8; }
+.pv .pv-slot { fill: none; stroke-width: .9; }
+.pv .pv-slotf { fill: #4b4540; fill-opacity: .55; stroke-width: .6; }
+.pv .pv-hole { fill: #5b544f; }
+.pv .pv-core { fill: #f7c7c4; stroke-width: .6; }
+.pv .pv-label { fill: #fff; fill-opacity: .75; stroke-width: .6; }
+.pv .pv-led-g { fill: #3cba6b; stroke-width: .6; } .pv .pv-led-r { fill: #e3393c; stroke-width: .6; }
+.pv .pv-rope { fill: none; vector-effect: none; stroke-linecap: round; stroke-linejoin: round; }
+.pv .k-o { stroke: #2f2b29; } .pv .k-i { stroke: #5b5551; }
+.pv .e-o { stroke: #7f1013; } .pv .e-i { stroke: #d42022; }
+/* Bemaßung */
+.pv .pv-ext { fill: none; stroke: #8a837c; stroke-width: .7; }
+.pv .pv-dim, .pv .pv-tick { fill: none; stroke: #5f5852; stroke-width: .9; }
+.pv .pv-lead { fill: none; stroke: #5f5852; stroke-width: .9; }
+.pv .pv-dot { fill: #5f5852; stroke: none; }
+.pv text { stroke: none; vector-effect: none; }
+.pv .pv-tx { font-family: var(--font, Archivo, Arial, sans-serif); font-size: calc(13.5px * var(--u)); font-weight: 650; font-stretch: 88%; font-variant-numeric: tabular-nums; fill: #3d3834; paint-order: stroke; stroke: var(--stage, #eeedeb); stroke-width: calc(7px * var(--u)); stroke-linejoin: round; }
+.pv .pv-lb { font-family: var(--font, Archivo, Arial, sans-serif); font-size: calc(10.5px * var(--u)); font-weight: 700; letter-spacing: .04em; fill: #6c655f; paint-order: stroke; stroke: var(--stage, #eeedeb); stroke-width: calc(4px * var(--u)); }
+@media (max-width: 600px) {
+  .pv .pv-tx { font-size: calc(19px * var(--u)); stroke-width: calc(9px * var(--u)); }
+  .pv .pv-lb { font-size: calc(14px * var(--u)); }
+}
+
+/* Bühne mit Zeichenpapier-Raster */
+.pvw { position: relative; display: grid; place-items: center; width: 100%; height: 100%; background-color: var(--stage); background-image: radial-gradient(circle, rgb(75 69 64 / .13) .9px, transparent 1.1px); background-size: 14px 14px; background-position: center; }
+.pvw .pv { width: 88%; height: 88%; }
+.pcard__stage .pvw .pv { transition: transform .45s var(--ease); }
+.pcard:hover .pcard__stage .pvw .pv { transform: scale(1.035); }
+.pvw--sm { background-size: 8px 8px; }
+.pvw--sm .pv { width: 100%; height: 100%; }
+.gallery__main--pv { cursor: default; display: block; aspect-ratio: 4 / 3; padding: 0; }
+.gallery__main--pv .pvw .pv { width: 94%; height: 92%; }
+.pvw__tag { position: absolute; left: 12px; bottom: 10px; display: inline-flex; align-items: center; gap: 6px; font-size: .72rem; font-weight: 650; font-stretch: 88%; color: #5d5751; background: rgb(255 255 255 / .82); padding: .2rem .5rem; border-radius: 2px; }
+.pvw__tag svg { flex: none; }
+.pv-legend { display: grid; gap: 2px 18px; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); margin: 0; padding: 12px 0 0; font-size: .86rem; }
+.pv-legend div { display: flex; justify-content: space-between; gap: 12px; padding: 5px 0; border-bottom: 1px solid var(--line); }
+.pv-legend dt { color: var(--muted); }
+.pv-legend dd { margin: 0; font-weight: 600; font-variant-numeric: tabular-nums; text-align: right; }
+.pv-note { margin: 10px 0 0; font-size: .8rem; color: var(--muted); }
+@media (prefers-reduced-motion: reduce) { .pcard__stage .pvw .pv { transition: none; } }
+/* Produktdetail: Zeichnung und Typenschild als Ansichten */
+.gallery__main--pv { position: relative; overflow: hidden; }
+.gallery__main--pv .gv { position: absolute; inset: 0; display: grid; place-items: center; }
+.gallery__main--pv .gv > .pvw { position: absolute; inset: 0; }
+.gallery__main--pv .gv--plate { padding: clamp(16px, 4vw, 48px); background: var(--stage); }
+.gallery__thumbs [data-gallery-view] { display: grid; place-items: center; overflow: hidden; }
+.gallery__thumbs [data-gallery-view][aria-current="true"] { border-color: var(--ink); }
+.plate-mini { display: grid; gap: 4px; width: 50px; padding: 6px 7px 7px; background: linear-gradient(135deg, #e6e7e9, #cfd2d5); border-radius: 3px; box-shadow: 0 0 0 1px #b3b5b9; }
+.plate-mini b { font-size: 8px; line-height: 1; font-weight: 800; color: #cd1719; letter-spacing: .04em; }
+.plate-mini i { display: block; height: 2px; background: #6b6762; opacity: .55; }
+.plate-mini i:nth-child(3) { width: 70%; }
+.pv-note a { white-space: nowrap; }
+/* kleine Vorschaubilder: Zeichnung füllt den Rahmen */
+.search__hit .ic .pvw, .scp__img .pvw, .pmi__img .pvw, .cmp__img .pvw, .bitem__img .pvw, .hs__img .pvw { background-image: none; }
+.pv .pv-ins { fill: #e9e4dc; stroke-width: .7; }

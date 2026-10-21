@@ -26,6 +26,7 @@ export function header(ctx) {
     <nav class="nav" aria-label="${esc(t.ui.mainNav)}">
       ${megaBtn('products', n.products, ['products', 'area', 'product', 'finder', 'compare'])}
       ${megaBtn('sectors', n.sectors, ['sectors', 'sector'])}
+      <div class="nav__item"><a class="nav__link${active(['tools', 'assistant', 'calculators'])}" href="${href('tools')}"${cur === 'tools' ? ' aria-current="page"' : ''}>${esc(n.tools)}</a></div>
       ${link('downloads', n.downloads)}
       ${megaBtn('company', n.company, ['company', 'locations', 'quality', 'responsibility', 'references'])}
       ${link('career', n.career)}
@@ -70,6 +71,7 @@ function megaProducts(ctx) {
         <strong class="h4">${esc(t.nav.megaFinderTitle)}</strong>
         <p>${esc(t.nav.megaFinderText)}</p>
         <a class="btn btn--light btn--small" href="${href('finder')}">${esc(t.ui.openFinder)}</a>
+        <a class="link link--light" href="${href('assistant')}">${esc(t.x.assist.title)}</a>
         <a class="link link--light" href="${href('products')}">${esc(t.ui.allProducts)}</a>
       </div>
     </div>
@@ -123,6 +125,10 @@ export function drawer(ctx) {
       <li><details>${sum(t.nav.sectors)}<ul>
         ${SECTORS.map((s) => `<li><a href="${href('sector', { sector: s })}">${esc(t.pages.sectors.items[s].title)}</a></li>`).join('')}
       </ul></details></li>
+      <li><details>${sum(t.nav.tools)}<ul>
+        <li><a href="${href('assistant')}">${esc(t.x.assist.title)}</a></li><li><a href="${href('calculators')}">${esc(t.x.calc.title)}</a></li>
+        <li><a href="${href('inquiry')}">${esc(t.ui.inquiryList)}</a></li><li><a href="${href('tools')}">${esc(t.x.hub.title)}</a></li>
+      </ul></details></li>
       <li><a href="${href('downloads')}">${esc(t.nav.downloads)}</a></li>
       <li><details>${sum(t.nav.company)}<ul>
         <li><a href="${href('company')}">${esc(t.nav.about)}</a></li><li><a href="${href('locations')}">${esc(t.nav.locations)}</a></li>
@@ -160,6 +166,7 @@ export function footer(ctx) {
       </ul></nav>
       <nav aria-label="${esc(F.colService)}"><h2>${esc(F.colService)}</h2><ul>
         <li><a href="${href('downloads')}">${esc(t.nav.downloads)}</a></li><li><a href="${href('contact')}">${esc(t.nav.contact)}</a></li>
+        <li><a href="${href('tools')}">${esc(t.nav.tools)}</a></li><li><a href="${href('assistant')}">${esc(t.x.assist.title)}</a></li>
         <li><a href="${href('inquiry')}">${esc(t.ui.inquiryList)}</a></li><li><a href="${href('sectors')}">${esc(t.nav.sectors)}</a></li>
         <li><a href="${href('quality')}">${esc(t.nav.quality)}</a></li>
       </ul></nav>
@@ -270,11 +277,13 @@ export function docRow(ctx, d) {
   const tl = d.title.de === title && d.title.en === title ? (/^(de|en|fr|es|hu)$/.test(d.lang || '') ? d.lang : lang)
     : d.title.de === title ? 'de' : d.title.en === title ? 'en' : lang;
   const size = d.size ? ctx.fmtBytes(d.size) : '';
-  return `<a class="doc" href="${ctx.docHref(d)}" target="_blank" rel="noopener" data-doc-id="${d.id}">
+  const local = !!ctx.docHref(d);
+  const R = t.downloads.req;
+  return `<a class="doc${local ? '' : ' doc--req'}" ${ctx.docAttrs(d)} data-doc-id="${d.id}">
   <span class="doc__icon" aria-hidden="true">${esc((d.ext || 'pdf').toUpperCase())}</span>
-  <span><span class="doc__title"${tl !== lang ? ` lang="${tl}"` : ''}>${esc(title)}</span><span class="doc__meta"><span>${esc(t.lbl.docTypeOne[d.type] || '')}</span>${size ? `<span>${esc(size)}</span>` : ''}</span></span>
+  <span><span class="doc__title"${tl !== lang ? ` lang="${tl}"` : ''}>${esc(title)}</span><span class="doc__meta"><span>${esc(t.lbl.docTypeOne[d.type] || '')}</span>${local ? (size ? `<span>${esc(size)}</span>` : '') : `<span>${esc(R.onRequest)}</span>`}</span></span>
   ${L ? `<span class="doc__lang" title="${esc(L)}">${esc(L)}</span>` : '<span></span>'}
-  <span class="doc__go">${icon('download')}<span class="vh">${esc(t.ui.download)}</span></span>
+  <span class="doc__go">${local ? `${icon('download')}<span class="vh">${esc(t.ui.download)}</span>` : `${icon('mail')}<span class="doc__req">${esc(R.doc)}</span>`}</span>
 </a>`;
 }
 

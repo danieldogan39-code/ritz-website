@@ -26,6 +26,9 @@ export const SEG = {
   imprint: { de: 'impressum', en: 'imprint', fr: 'mentions-legales', hu: 'impresszum', es: 'aviso-legal' },
   privacy: { de: 'datenschutz', en: 'privacy', fr: 'confidentialite', hu: 'adatvedelem', es: 'privacidad' },
   search: { de: 'suche', en: 'search', fr: 'recherche', hu: 'kereses', es: 'buscar' },
+  tools: { de: 'werkzeuge', en: 'tools', fr: 'outils', hu: 'eszkozok', es: 'herramientas' },
+  assistant: { de: 'spezifikations-check', en: 'specification-check', fr: 'analyse-specification', hu: 'specifikacio-ellenorzes', es: 'analisis-especificacion' },
+  calculators: { de: 'wandler-rechner', en: 'calculators', fr: 'calculateurs', hu: 'kalkulatorok', es: 'calculadoras' },
 };
 
 export const AREAS = ['niederspannung', 'mittelspannung', 'hochspannung', 'elektronik-sensoren', 'stromschienen-sis', 'giessharzteile-duromer'];
@@ -77,6 +80,9 @@ export function pathFor(lang, id, p = {}) {
     case 'imprint': return s('imprint');
     case 'privacy': return s('privacy');
     case 'search': return s('search');
+    case 'tools': return s('tools');
+    case 'assistant': return `${s('tools')}/${s('assistant')}`;
+    case 'calculators': return `${s('tools')}/${s('calculators')}`;
     case '404': return '404';
     default: throw new Error('unknown page ' + id);
   }
@@ -109,6 +115,11 @@ export function matchPath(lang, path) {
     if (!b) return { id: 'career', p: {} };
     if (eq('training', b)) return { id: 'training', p: {} };
     if (eq('internships', b)) return { id: 'internships', p: {} };
+    return null;
+  }
+  if (eq('tools', a)) {
+    if (!b) return { id: 'tools', p: {} };
+    for (const k of ['assistant', 'calculators']) if (eq(k, b)) return { id: k, p: {} };
     return null;
   }
   if (eq('news', a)) return b ? { id: 'article', p: { slug: b } } : { id: 'news', p: {} };

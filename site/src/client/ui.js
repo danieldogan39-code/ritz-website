@@ -1,5 +1,5 @@
 // Bedienelemente: Kopfnavigation, Drawer, Sprache, Darstellung, Kopieren, Galerie, Tabs, Filter, Kontaktfinder
-import { $, $$, getT, getData, clientCtx, CFG, store } from './core.js';
+import { $, $$, getT, getData, clientCtx, CFG, store, readQuery } from './core.js';
 import { esc, icon, phoneTxt } from '../lib/util.js';
 import { copyText, bindForm } from './basket.js';
 import { personCard } from '../views/layout.js';
@@ -99,11 +99,17 @@ export function initGallery(root) {
   if (!g) return;
   const main = $('[data-gallery-main]', g);
   g.addEventListener('click', (e) => {
+    const vb = e.target.closest('[data-gallery-view]');
+    if (vb) {
+      $$('[data-gallery-view]', g).forEach((x) => x.setAttribute('aria-current', String(x === vb)));
+      $$('[data-view]', g).forEach((v) => { v.hidden = v.dataset.view !== vb.dataset.galleryView; });
+      return;
+    }
     const th = e.target.closest('[data-gallery-thumb]');
     if (th) {
       $$('[data-gallery-thumb]', g).forEach((x) => x.setAttribute('aria-current', String(x === th)));
       const img = main.querySelector('img'), src = th.querySelector('img');
-      if (img && src) { img.srcset = src.srcset; img.src = th.dataset.full || src.src; img.sizes = '(max-width: 900px) 100vw, 58vw'; }
+      if (img && src) { img.srcset = th.dataset.srcset || src.srcset; img.src = th.dataset.full || src.src; img.sizes = th.dataset.sizes || '(max-width: 900px) 100vw, 58vw'; img.classList.toggle('is-lowres', 'lowres' in th.dataset); }
       return;
     }
     if (e.target.closest('[data-gallery-main]')) {
@@ -195,6 +201,12 @@ export async function initForms(root) {
   const f = $('[data-contact-form]', root);
   if (!f) return;
   const [t, ctx] = await Promise.all([getT(), clientCtx()]);
+  // Vorbelegung über die Adresse (z. B. Maßbild- oder Dokumentanforderung): ?topic=2&msg=…
+  const qs = new URLSearchParams(readQuery());
+  const msg = qs.get('msg'), topic = qs.get('topic');
+  const sel = f.querySelector('[name=topic]'), ta = f.querySelector('[name=message]');
+  if (topic && sel && sel.options[+topic]) sel.selectedIndex = +topic;
+  if (msg && ta && !ta.value) ta.value = msg;
   bindForm(f, t, ctx, 'contact');
 }
 

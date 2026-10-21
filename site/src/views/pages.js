@@ -23,7 +23,7 @@ const newsByPrefix = (ctx, pre) => ctx.data.news.find((n) => n.id.startsWith(pre
 export function sectorsPage(ctx) {
   const { t, href } = ctx;
   const S = t.pages.sectors;
-  return `${phead(ctx, { title: S.h1, lead: S.lead, crumbs: [[S.title]] })}
+  return `${phead(ctx, { title: S.h1, lead: S.lead, image: 'mimg/4-Konen-Adapter-in-Anlage-1.webp', figure: true, crumbs: [[S.title]] })}
 <section class="section section--tight"><div class="wrap">
   <div class="scards">${SECTORS.map((s) => {
     const it = S.items[s];
@@ -202,13 +202,13 @@ export function mapBox(ctx, { mode = 'all' } = {}) {
 export function qualityPage(ctx) {
   const { t, href } = ctx;
   const Q = t.pages.quality;
-  return `${phead(ctx, { title: Q.h1, lead: Q.lead, crumbs: [[t.nav.company, href('company')], [Q.title]] })}
+  return `${phead(ctx, { title: Q.h1, lead: Q.lead, image: 'mimg/JKI1023-2.webp', figure: true, crumbs: [[t.nav.company, href('company')], [Q.title]] })}
 <section class="section">
   <div class="wrap split">
     <div class="prose">${Q.body.map((x) => `<p class="lead">${esc(x)}</p>`).join('')}</div>
     <div class="certgrid">${Q.certs.map(([n, d, key]) => {
       const doc = docByFile(ctx, CERT_FILES[key]);
-      return `<a class="certcard" href="${doc ? ctx.docHref(doc) : '#'}" target="_blank" rel="noopener"><b>${esc(n)}</b><span>${esc(d)}</span>${icon('download', 'width="18" height="18"')}</a>`;
+      return `<a class="certcard" ${doc ? ctx.docAttrs(doc) : `href="${ctx.href('contact', {}, { topic: 2 })}"`}><b>${esc(n)}</b><span>${esc(d)}</span>${icon(doc && ctx.docHref(doc) ? 'download' : 'mail', 'width="18" height="18"')}</a>`;
     }).join('')}</div>
   </div>
 </section>
@@ -220,8 +220,8 @@ export function qualityPage(ctx) {
 </section>
 <section class="section">
   <div class="wrap grid g-2">
-    <figure class="figure">${imgTag(ctx, 'mimg/2022__07__unternehmen_qualitaetsmanagement_wandler_pruefung.webp', { alt: Q.imgTransformer, sizes: '(max-width: 600px) 100vw, 50vw', max: 960 })}<figcaption>${esc(Q.imgTransformer)}</figcaption></figure>
-    <figure class="figure">${imgTag(ctx, 'mimg/2022__07__unternehmen_qualitaetsmanagement_schienen_pruefung.webp', { alt: Q.imgBusbar, sizes: '(max-width: 600px) 100vw, 50vw', max: 960 })}<figcaption>${esc(Q.imgBusbar)}</figcaption></figure>
+    <figure class="figure">${imgTag(ctx, 'mimg/2022__07__unternehmen_qualitaetsmanagement_wandler_pruefung.webp', { alt: Q.imgTransformer, sizes: '(max-width: 600px) 100vw, 50vw', max: 960, lowres: 640 })}<figcaption>${esc(Q.imgTransformer)}</figcaption></figure>
+    <figure class="figure">${imgTag(ctx, 'mimg/2022__07__unternehmen_qualitaetsmanagement_schienen_pruefung.webp', { alt: Q.imgBusbar, sizes: '(max-width: 600px) 100vw, 50vw', max: 960, lowres: 640 })}<figcaption>${esc(Q.imgBusbar)}</figcaption></figure>
   </div>
 </section>
 <section class="section section--porcelain"><div class="wrap split split--even">
@@ -247,15 +247,15 @@ ${news.length ? `<section class="section"><div class="wrap">${sectionHead(R.news
 export function referencesPage(ctx) {
   const { t, href } = ctx;
   const R = t.pages.references;
-  return `${phead(ctx, { title: R.h1, lead: R.lead, crumbs: [[t.nav.company, href('company')], [R.title]] })}
+  return `${phead(ctx, { title: R.h1, lead: R.lead, image: 'mimg/JKI0984-2-2048x1366.webp', figure: true, crumbs: [[t.nav.company, href('company')], [R.title]] })}
 <section class="section section--tight"><div class="wrap stack" style="--s:clamp(32px,5vw,64px)">
   ${R.items.map(([who, what, text], i) => {
     const doc = REFERENCE_DOC[i] && docByFile(ctx, REFERENCE_DOC[i]);
     const n = REFERENCE_NEWS[i] && newsByPrefix(ctx, REFERENCE_NEWS[i]);
     return `<article class="ref${i % 2 ? ' ref--flip' : ''}">
-      <div class="ref__img">${ctx.img[REFERENCE_IMG[i]] ? imgTag(ctx, REFERENCE_IMG[i], { alt: '', sizes: '(max-width: 900px) 100vw, 40vw', max: 960, cls: imgFit(ctx, REFERENCE_IMG[i]) }) : ''}</div>
+      <div class="ref__img">${ctx.img[REFERENCE_IMG[i]] ? imgTag(ctx, REFERENCE_IMG[i], { alt: '', sizes: '(max-width: 900px) 100vw, 40vw', max: 960, cls: imgFit(ctx, REFERENCE_IMG[i]), lowres: 500 }) : ''}</div>
       <div class="ref__body stack" style="--s:.8rem"><span class="area__kv">${esc(who)}</span><h2 class="h3">${esc(what)}</h2><p>${esc(text)}</p>
-        <div class="cluster">${doc ? `<a class="btn btn--ghost btn--small" href="${ctx.docHref(doc)}" target="_blank" rel="noopener">${icon('download')}PDF</a>` : ''}${n ? `<a class="link" href="${href('article', { slug: ctx.newsSlug(n) })}">${esc(t.ui.readArticle)}</a>` : ''}</div>
+        <div class="cluster">${doc ? `<a class="btn btn--ghost btn--small" ${ctx.docAttrs(doc)}>${ctx.docHref(doc) ? `${icon('download')}PDF` : `${icon('mail')}${esc(t.downloads.req.doc)}`}</a>` : ''}${n ? `<a class="link" href="${href('article', { slug: ctx.newsSlug(n) })}">${esc(t.ui.readArticle)}</a>` : ''}</div>
       </div>
     </article>`;
   }).join('')}
@@ -272,7 +272,7 @@ export function downloadsPage(ctx) {
   const types = Object.keys(t.lbl.docType);
   const counts = {};
   for (const d of ctx.data.docs) counts[d.type] = (counts[d.type] || 0) + 1;
-  return `${phead(ctx, { title: D.title, lead: D.lead, crumbs: [[D.title]], cls: 'phead--compact' })}
+  return `${phead(ctx, { title: D.title, lead: D.lead, image: 'mimg/JKI1013-2048x1366.webp', figure: true, crumbs: [[D.title]], cls: 'phead--compact' })}
 <section class="section section--tight">
   <div class="wrap dl" data-downloads>
     <aside class="dl__filters">
@@ -298,7 +298,7 @@ export function contactPage(ctx) {
   const CF = t.contactFinder;
   const people = ctx.data.contacts.people.filter((p) => !p.areas.includes('karriere'));
   const byArea = AREAS.map((a) => [a, people.filter((p) => p.areas.includes(a))]).filter(([, l]) => l.length);
-  return `${phead(ctx, { title: C.title, h1: C.h1, lead: C.lead, crumbs: [[C.title]] })}
+  return `${phead(ctx, { title: C.title, h1: C.h1, lead: C.lead, image: 'mimg/JKI1069-2048x1366.webp', figure: true, crumbs: [[C.title]] })}
 <section class="section section--tight">
   <div class="wrap split">
     <div class="stack" style="--s:1rem">
@@ -392,7 +392,7 @@ export function trainingPage(ctx) {
   <div class="wrap">
     <p class="lead mb">${esc(T.how)}</p>
     <div class="grid g-3">${T.sites.map(([site, mail, list]) => `<article class="feature feature--card"><h2 class="h3">${esc(site)}</h2>
-      <ul class="plain">${list.map(([title, file]) => { const d = docByFile(ctx, file); return `<li>${d ? `<a href="${ctx.docHref(d)}" target="_blank" rel="noopener">${esc(title)} ${icon('download', 'width="15" height="15"')}</a>` : esc(title)}</li>`; }).join('')}</ul>
+      <ul class="plain">${list.map(([title, file]) => { const d = docByFile(ctx, file); return `<li>${d ? `<a ${ctx.docAttrs(d)}>${esc(title)} ${icon(ctx.docHref(d) ? 'download' : 'mail', 'width="15" height="15"')}</a>` : esc(title)}</li>`; }).join('')}</ul>
       <p><a href="mailto:${esc(mail)}">${icon('mail', 'width="16" height="16"')} ${esc(mail)}</a></p></article>`).join('')}</div>
   </div>
 </section>
@@ -415,7 +415,7 @@ export function newsPage(ctx) {
   const { t } = ctx;
   const N = t.pages.news;
   const cats = Object.keys(t.lbl.newsCat);
-  return `${phead(ctx, { title: N.title, lead: N.lead, crumbs: [[N.title]], cls: 'phead--compact' })}
+  return `${phead(ctx, { title: N.title, lead: N.lead, image: 'mimg/thumbnail_IMG_2331.webp', figure: true, crumbs: [[N.title]], cls: 'phead--compact' })}
 <section class="section section--tight"><div class="wrap" data-news>
   <div class="cluster mb" role="group" aria-label="${esc(N.filterAll)}"><button class="chip is-on" type="button" data-news-cat="" aria-pressed="true">${esc(N.filterAll)}</button>${cats.map((c) => `<button class="chip" type="button" data-news-cat="${c}" aria-pressed="false">${esc(t.lbl.newsCat[c])}</button>`).join('')}</div>
   <div class="news-grid">${ctx.data.news.map((n) => `<div data-cat="${n.cat}">${newsCard(ctx, n)}</div>`).join('')}</div>
@@ -432,8 +432,11 @@ export function articlePage(ctx, n) {
   const la = cl !== lang ? ` lang="${cl}"` : '';
   let langName = cl;
   try { langName = new Intl.DisplayNames([lang], { type: 'language' }).of(cl) || cl; } catch (e) { /* Kürzel */ }
-  const body = (v.html || '').replace(/<img data-img="([^"]+)" alt="">/g, (m, k) => (ctx.img[k] ? `<figure class="figure">${imgTag(ctx, k, { alt: '', sizes: '(max-width: 900px) 100vw, 680px', max: 1200 })}</figure>` : ''))
-    .replace(/<a data-doc="([^"]+)" href="[^"]*">/g, (m, id) => { const d = ctx.data.docsById[id]; return d ? `<a href="${ctx.docHref(d)}" target="_blank" rel="noopener">` : '<a>'; })
+  const body = (v.html || '').replace(/<img data-img="([^"]+)" alt="">/g, (m, k) => (ctx.img[k] ? `<figure class="figure">${imgTag(ctx, k, { alt: '', sizes: '(max-width: 900px) 100vw, 680px', max: 1200, lowres: 560 })}</figure>` : ''))
+    .replace(/<a data-doc="([^"]+)" href="[^"]*">/g, (m, id) => { const d = ctx.data.docsById[id]; return d ? `<a ${ctx.docAttrs(d)}>` : '<a>'; })
+    // Verweise auf Seiten der alten Website (beim Build in Routen übersetzt)
+    .replace(/<a data-route="article" data-news="([^"]+)">/g, (m, id) => { const x = ctx.data.news.find((k) => k.id === id); return x ? `<a href="${href('article', { slug: ctx.newsSlug(x) })}">` : '<a>'; })
+    .replace(/<a data-route="([a-z-]+)"(?: data-p="([^"]*)")?(?: data-anchor="([^"]*)")?>/g, (m, id, p, anchor) => { let prm = {}; try { prm = p ? JSON.parse(p.replace(/&quot;/g, '"')) : {}; } catch (e) { /* ohne Parameter */ } try { return `<a href="${ctx.hrefA(id, prm, anchor || '')}">`; } catch (e) { return '<a>'; } })
     // Verweise der Altbeiträge auf Seiten der alten Website: auf die neuen Seiten umstellen, sonst als Text belassen
     .replace(/<a\b[^>]*?href="https?:\/\/(?:www\.)?ritz-international\.com(\/[^"]*)"[^>]*>([\s\S]*?)<\/a>/g, (m, p, inner) => {
       if (/^\/(wp-content|media)\//.test(p) || /\.(pdf|zip|dwg|dxf|stp|step|docx?|xlsx?)$/i.test(p)) return m;
@@ -449,7 +452,7 @@ export function articlePage(ctx, n) {
     <div>
       <header class="stack mb" style="--s:.8rem"><div class="card__meta"><time datetime="${n.date}">${esc(fmtDate(n.date, lang))}</time><span>${esc(t.lbl.newsCat[n.cat])}</span></div><h1 class="h2${/[^\s\-–/]{18,}/.test(v.title) ? ' lw' : ''}"${la}>${esc(v.title)}</h1></header>
       ${cl !== lang ? `<p class="notice small">${esc(tpl(t.ui.untranslated, { lang: langName }))}</p>` : ''}
-      ${heroImg ? `<figure class="article__hero">${imgTag(ctx, heroImg, { alt: '', sizes: '(max-width: 900px) 100vw, 760px', eager: true, max: 1200 })}</figure>` : ''}
+      ${heroImg ? `<figure class="article__hero">${imgTag(ctx, heroImg, { alt: '', sizes: '(max-width: 900px) 100vw, 760px', eager: true, max: 1200, lowres: 600 })}</figure>` : ''}
       <div class="prose"${la}>${body}</div>
       ${docs.length ? `<h2 class="h4 mt-xl">${esc(N.attachments)}</h2><div class="docs">${docs.map((d) => docRow(ctx, d)).join('')}</div>` : ''}
     </div>

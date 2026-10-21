@@ -2,7 +2,7 @@
 import { initGallery, initTabs, initFilters, initContactFinder, initForms, initHero, initGotoSearch } from './ui.js';
 import { initCompareToggles } from './basket.js';
 import { $ } from './core.js';
-import { initMotion } from './motion.js';
+import { initMotion, initHero2 } from './motion.js';
 
 export async function initPage(root = document) {
   initCompareToggles(root);
@@ -12,6 +12,7 @@ export async function initPage(root = document) {
   initHero(root);
   initGotoSearch(root);
   initMotion(root);
+  initHero2(root);
   const has = (s) => !!$(s, root);
   const jobs = [];
   if (has('[data-vaxis]')) jobs.push(import('./vaxis.js').then((m) => m.initVaxis(root)));
@@ -23,9 +24,12 @@ export async function initPage(root = document) {
     if (id && box?.__selectById) box.__selectById(id);
   })));
   if (has('[data-downloads]')) jobs.push(import('./downloads.js').then((m) => m.initDownloads(root)));
-  if (has('[data-basket-list]')) jobs.push(import('./basket.js').then((m) => m.initInquiry(root)));
+  if (has('[data-mappe]')) jobs.push(import('./mappe.js').then((m) => m.initMappe(root)));
   if (has('[data-compare]')) jobs.push(import('./basket.js').then((m) => m.initComparePage(root)));
   if (has('[data-search-page]')) jobs.push(import('./search.js').then((m) => m.initSearchPage(root)));
+  if (has('[data-assist]')) jobs.push(import('./assistant.js').then((m) => m.initAssist(root)));
+  if (has('[data-calc]')) jobs.push(import('./calc.js').then((m) => m.initCalc(root)));
+  if (has('[data-home-spec]')) jobs.push(import('./homespec.js').then((m) => m.initHomeSpec(root)));
   if (has('[data-contact-finder]')) jobs.push(initContactFinder(root));
   if (has('[data-contact-form]')) jobs.push(initForms(root));
   await Promise.allSettled(jobs);

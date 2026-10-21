@@ -1,5 +1,8 @@
 // English – UI strings, labels and page content
+import X from './x/en.js';
+
 export default {
+  x: X,
   meta: {
     lang: 'en', siteName: 'RITZ Instrument Transformers', claim: 'Empowering Our Electrical Future',
     defaultDesc: 'RITZ develops and manufactures current and voltage transformers, sensors, busbars and cast resin parts from 0.72 to 550 kV – since 1945, with plants in Europe, China and the USA.',
@@ -7,7 +10,7 @@ export default {
   ui: {
     skip: 'Skip to content', skipIntro: 'Skip intro', introLine: 'Instrument transformers since 1945', menu: 'Menu', close: 'Close', search: 'Search', searchPh: 'Search type, voltage or topic …',
     searchHint: 'e.g.', lang: 'Language', theme: 'Appearance', themeLight: 'Light', themeDark: 'Dark', themeAuto: 'System',
-    inquiryList: 'Inquiry list', contactCta: 'Contact', home: 'Home', more: 'Learn more', all: 'All', show: 'Show',
+    inquiryList: 'Project list', contactCta: 'Contact', home: 'Home', more: 'Learn more', all: 'All', show: 'Show',
     back: 'Back', next: 'Next', open: 'Open', copy: 'Copy', copied: 'Copied', download: 'Download', external: 'opens external site',
     route: 'Get directions', phone: 'Phone', fax: 'Fax', email: 'Email', address: 'Address', website: 'Website', employees: 'Employees',
     functions: 'Focus', newBadge: 'New', madeIn: 'Made in', pdf: 'PDF', lang_de: 'German', lang_en: 'English', lang_deen: 'German/English',
@@ -17,7 +20,7 @@ export default {
     dataLangNote: 'Product data is available in English and German.', untranslated: 'This article is only available in {lang}.',
     page: 'Page', of: 'of', filters: 'Filters', resetFilters: 'Reset filters', apply: 'Apply', sortBy: 'Sort',
     viewGrid: 'Grid view', viewList: 'List view', compare: 'Compare', compareNow: 'Compare now', remove: 'Remove',
-    addInquiry: 'Add to inquiry', added: 'Added to inquiry list', inList: 'In inquiry list', configure: 'Configure',
+    addInquiry: 'Add to project list', added: 'Added to the project list', inList: 'In the project list', configure: 'Configure',
     datasheet: 'Datasheet', allDownloads: 'All downloads', contactPerson: 'Your contact', contactPersons: 'Contacts',
     productCount: { one: '{n} product', other: '{n} products' }, docCount: { one: '{n} document', other: '{n} documents' },
     resultCount: { one: '{n} result', other: '{n} results' }, jobCount: { one: '{n} open position', other: '{n} open positions' },
@@ -27,6 +30,7 @@ export default {
     mapSkip: 'Skip map', listView: 'List', mapView: 'Map',
   },
   nav: {
+    tools: 'Tools', megaToolsText: 'Check specifications, size transformers, prepare inquiries.',
     products: 'Products', finder: 'Product finder', sectors: 'Applications', downloads: 'Downloads', company: 'Company',
     career: 'Careers', news: 'News', contact: 'Contact', about: 'About RITZ', locations: 'Locations', quality: 'Quality & certificates',
     responsibility: 'Responsibility', references: 'References', jobs: 'Vacancies', training: 'Apprenticeships', internships: 'Internships & theses',
@@ -43,6 +47,7 @@ export default {
     privacyNote: 'This website uses no cookies and no tracking.',
   },
   lbl: {
+    dim: { box: 'Dimensions W / H / D', height: 'Height', inner: 'Inner diameter', win: 'Window opening', bar: 'Busbars', cable: 'Cable up to', din: 'DIN rail' },
     area: {
       niederspannung: 'Low voltage', mittelspannung: 'Medium voltage', hochspannung: 'High voltage', 'elektronik-sensoren': 'Electronics & sensors',
       'stromschienen-sis': 'SIS busbars', 'giessharzteile-duromer': 'DUROMER cast resin parts',
@@ -181,13 +186,14 @@ export default {
     umFrom: 'from', umTo: 'to', iprFrom: 'from', iprTo: 'to',
   },
   product: {
+    pv: { tag: 'Schematic drawing', plate: 'Rating plate', note: 'Schematic illustration, not to scale. Dimensions in mm as per data sheet.', noteNone: 'Schematic illustration of the design, not to scale.', ask: 'Request dimension drawing', askMsg: 'Please send me a dimension drawing for {code}.' },
     overview: 'Overview', specs: 'Technical data', configurator: 'Configurator', downloads: 'Downloads', related: 'Similar products', features: 'Features',
     keySpecs: 'Key data', noConfig: 'This product is designed for each project. Describe your requirements and we will send you an offer.',
     cfgIntro: 'Choose the version. Dependent options appear as soon as they are relevant. Required fields are marked.',
     plate: { type: 'Type', cls: 'Cl.', std: 'Std.' }, cfgDepends: 'Select first: {list}',
     cfgSummary: 'Your configuration', cfgEmpty: 'Nothing selected yet.', cfgProgress: '{done} of {total} required', cfgRequired: 'Required',
     cfgSpecial: 'Special requests', cfgSpecialPh: 'e.g. different primary current, test report, labelling', quantity: 'Quantity',
-    cfgMissing: 'Please complete: {list}', cfgAdded: 'Configuration added to the inquiry list', cfgReset: 'Reset selection',
+    cfgMissing: 'Please complete: {list}', cfgAdded: 'Configuration added to the project list', cfgReset: 'Reset selection',
     deliveryNote: 'Delivery time ex works depends on version and quantity.', railTitle: 'Railway applications', newsTitle: 'New',
     docsEmpty: 'No documents are online for this product yet. We will be happy to send them to you.', gallery: 'Product images', zoom: 'Enlarge image',
     familyNote: 'From the product catalogue', askTitle: 'Questions about this product?', askText: 'Our sales team advises you on design, standards and delivery times.',
@@ -198,8 +204,8 @@ export default {
     emptyHint: 'Select up to four products in the product finder using “Compare”.', onlyDiff: 'Show differences only', clear: 'Clear comparison',
   },
   inquiry: {
-    title: 'Inquiry', lead: 'Check your selection and send us your inquiry. You will receive an offer from the responsible sales team.',
-    listTitle: 'Your inquiry list', empty: 'Your inquiry list is empty.', emptyHint: 'Add products in the product finder or on a product page – or write to us directly.',
+    title: 'Project list', lead: 'Collect, tag and schedule items – then send them as an inquiry to the responsible sales team or share them with colleagues via link.',
+    listTitle: 'Items', empty: 'Your project list is empty.', emptyHint: 'Add products in the product finder, on a product page or via the specification check – or write to us directly.',
     formTitle: 'Your details', company: 'Company', name: 'First and last name', email: 'Email', phone: 'Phone (optional)', country: 'Country', countryOther: 'Other country',
     message: 'Message', messagePh: 'Project, dates, standards, tests …', privacy: 'I have read the {link} and agree to my details being processed to handle the inquiry.',
     privacyLink: 'privacy notice', submit: 'Send inquiry', sending: 'Sending …', success: 'Thank you! We have received your inquiry.',
@@ -215,6 +221,7 @@ export default {
     shortcut: 'Open search', allResults: 'Show all results',
   },
   downloads: {
+    req: { doc: 'Request', datasheet: 'Request data sheet', onRequest: 'On request', msg: 'Please send me the document “{title}” ({file}).', note: 'We will gladly send you the documents for this product on request.', all: 'Request all documents', allMsg: 'Please send me the documents for {code}:' },
     title: 'Downloads', lead: 'Catalogues, datasheets, dimension drawings, certificates and terms – in one place, filterable by topic, product range and language.',
     searchPh: 'Title, type code or file name', type: 'Document type', area: 'Product range', language: 'Language', count: 'documents',
     note: 'All documents are the property of RITZ Instrument Transformers GmbH and are provided for information purposes only.',
@@ -234,6 +241,11 @@ export default {
   forms: { required: 'Required', optional: 'optional', submitError: 'Please check the highlighted fields.' },
   pages: {
     home: {
+      hero2: { cta1: 'Explore products', cta2: 'Send an inquiry', slides: 'Images from our plants', pause: 'Pause slideshow', play: 'Resume slideshow', slide: 'Image {n} of {total}' },
+      stats: { founded: 'founded in Hamburg', staff: 'employees', plants: 'plants in {n} countries', range: 'voltage range', reps: 'countries with representatives' },
+      helpTitle: 'How can we help?',
+      plants: { title: 'Made in {n} plants worldwide', lead: 'From Hamburg, RITZ leads a group of more than {staff} people. Every plant has its speciality – from low-voltage to high-voltage instrument transformers.', staff: '{n} employees', cta: 'All locations', hq: 'Headquarters', plant: 'Plant' },
+      heritage: { title: 'Growing since 1945', lead: 'From its founding in Hamburg to the new high-voltage plant in the USA: eight decades of instrument transformer engineering.', cta: 'Company history' },
       title: 'Instrument transformers, sensors and busbars since 1945',
       h1: 'We make power measurable.',
       lead: 'Current and voltage transformers, sensors, busbars and cast resin parts from 0.72 to 550 kV – developed and manufactured in Europe, China and the USA.',

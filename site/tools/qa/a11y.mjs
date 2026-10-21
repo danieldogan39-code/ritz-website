@@ -12,6 +12,7 @@ const PAGES = [
   '/de/anwendungen/', '/de/anwendungen/bahntechnik/', '/de/unternehmen/', '/de/unternehmen/standorte/', '/de/unternehmen/qualitaet/',
   '/de/downloads/', '/de/news/', '/de/kontakt/', '/de/anfrage/', '/de/karriere/', '/de/suche/', '/de/vergleich/',
   '/en/', '/en/products/low-voltage/kso-103/', '/fr/', '/hu/', '/es/', '/es/productos/media-tension/gbw/',
+  '/de/produkte/niederspannung/kso-50/', '/de/produkte/niederspannung/rku-2012/', '/de/werkzeuge/', '/de/werkzeuge/spezifikations-check/', '/de/werkzeuge/wandler-rechner/',
 ];
 const all = {};
 for (const scheme of ['light', 'dark']) {

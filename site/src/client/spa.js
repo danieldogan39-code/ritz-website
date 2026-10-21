@@ -19,7 +19,7 @@ async function loadBase(lang) {
   ]);
   CFG.t = t;
   CFG.img = img;
-  const docs = docsC.map((d) => ({ id: d.id, title: d.t, url: d.u, path: d.pa, file: d.f, type: d.ty, lang: d.l, size: d.s, areas: d.a || [], products: d.p || [], ext: d.e || 'pdf', codes: d.c || '' }));
+  const docs = docsC.map((d) => ({ id: d.id, title: d.t, local: !!d.lo, path: d.pa, file: d.f, type: d.ty, lang: d.l, size: d.s, areas: d.a || [], products: d.p || [], ext: d.e || 'pdf', codes: d.c || '' }));
   return { idx, t, data: { products: idx.products, docs, docsById: Object.fromEntries(docs.map((d) => [d.id, d])), news, jobs, contacts, worldmeta: { W: world.W, H: world.H, scale: world.scale, translate: world.translate } }, img };
 }
 async function fullProduct(p) {
@@ -62,7 +62,7 @@ async function render() {
   let route = resolveRoute(lang, h.path, base);
   if (route.id === 'product') route = { ...route, product: await fullProduct(route.product) };
   CFG.route = { id: route.id, p: route.p };
-  const ctx = makeCtx({ lang, mode: 'spa', base: '', t: base.t, data: base.data, img: base.img, route: { id: route.id, p: route.p, news: route.news } });
+  const ctx = makeCtx({ lang, mode: 'spa', base: '', t: base.t, data: base.data, img: base.img, route: { id: route.id, p: route.p, news: route.news }, docBase: CFG.docBase || null });
   const page = renderRoute(ctx, route);
   if (shellLang !== lang || !$('#main')) {
     app.innerHTML = `<a class="skip" href="#main" data-skip>${base.t.ui.skip}</a>${header(ctx)}${drawer(ctx)}<main id="main" tabindex="-1"></main>${footer(ctx)}${searchOverlay(ctx)}`;

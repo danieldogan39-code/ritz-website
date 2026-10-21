@@ -38,7 +38,7 @@ export async function initFinder(root) {
   const ORDER = {
     area: ['niederspannung', 'mittelspannung', 'hochspannung', 'elektronik-sensoren', 'stromschienen-sis', 'giessharzteile-duromer'],
     kindGroup: ['ct', 'vt', 'combined', 'sensor', 'electronic', 'other'], install: ['indoor', 'outdoor'],
-    classes: ['0.1', '0.2', '0.2S', '0.5', '0.5S', '1', '3', '5P', '10P', 'PX', '6P'], isr: ['1', '5'], freq: ['16.7', '50', '60', 'broad'],
+    classes: ['0.1', '0.2', '0.2S', '0.5', '0.5S', '1', '3', '5P', '10P', 'PX', '3P', '6P'], isr: ['1', '5'], freq: ['16.7', '50', '60', 'broad'],
   };
   const OPEN = ['area', 'kindGroup', 'install', 'um', 'app'];
 

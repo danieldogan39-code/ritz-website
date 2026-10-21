@@ -1,7 +1,7 @@
 // Globale Suche (Overlay + Suchseite)
-import { $, $$, getIndex, getT, getData, clientCtx, debounce, CFG } from './core.js';
+import { $, $$, getIndex, getT, getX, getData, clientCtx, debounce, CFG, handoff } from './core.js';
 import { esc, icon, imgTag, productGlyph, tpl } from '../lib/util.js';
-import { matchText, descriptor, imgFit } from '../lib/product.js';
+import { matchText, descriptor, imgFit, productThumb } from '../lib/product.js';
 
 const norm = (s) => String(s || '').toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '').replace(/ß/g, 'ss');
 
@@ -26,20 +26,39 @@ async function searchAll(q) {
   return { products: prods, pages: pageHits, docs: docHits, news: newsHits, ctx, t };
 }
 
-function hitHtml(kind, item, ctx, t, i) {
+function hitHtml(kind, item, ctx, t, i, score = null) {
   if (kind === 'product') {
     const p = item;
-    const img = p.images?.[0] && ctx.img[p.images[0]] ? imgTag(ctx, p.images[0], { alt: '', sizes: '44px', max: 320, cls: imgFit(ctx, p.images[0]) }) : productGlyph(p.kind);
-    return `<a class="search__hit" role="option" id="sh-${i}" href="${ctx.href('product', { area: p.area, slug: p.id })}"><span class="ic">${img}</span><span><b>${esc(p.code)}</b><span>${esc(descriptor(p, t, ctx.lang))} – ${esc(t.lbl.area[p.area])}</span></span></a>`;
+    const img = productThumb(ctx, p, { sizes: '44px' });
+    return `<a class="search__hit" role="option" id="sh-${i}" href="${ctx.href('product', { area: p.area, slug: p.id })}"><span class="ic">${img}</span><span><b>${esc(p.code)}</b><span>${esc(descriptor(p, t, ctx.lang))} – ${esc(t.lbl.area[p.area])}</span></span>${score != null ? `<em class="search__score">${score}&nbsp;%</em>` : ''}</a>`;
   }
   if (kind === 'doc') {
     const d = item;
     const title = d.t[ctx.dl] || d.t.de || d.t.en || d.f;
-    return `<a class="search__hit" role="option" id="sh-${i}" href="${ctx.docHref({ url: d.u, path: d.pa })}" target="_blank" rel="noopener"><span class="ic">${icon('file')}</span><span><b>${esc(title)}</b><span>${esc([t.lbl.docTypeOne[d.ty], (d.l || '').toUpperCase()].filter(Boolean).join(', '))}</span></span></a>`;
+    const local = !!ctx.docHref(d);
+    return `<a class="search__hit" role="option" id="sh-${i}" ${ctx.docAttrs(d)}><span class="ic">${icon(local ? 'file' : 'mail')}</span><span><b>${esc(title)}</b><span>${esc([t.lbl.docTypeOne[d.ty], (d.l || '').toUpperCase(), local ? '' : t.downloads.req.onRequest].filter(Boolean).join(', '))}</span></span></a>`;
   }
   const p = item;
   return `<a class="search__hit" role="option" id="sh-${i}" href="${ctx.mode === 'spa' ? p.h : CFG.base + p.u}"><span class="ic">${icon(kind === 'news' ? 'calendar' : 'layers')}</span><span><b>${esc(p.t)}</b><span>${esc(p.s || '')}</span></span></a>`;
 }
+
+// Technische Anfrage (z. B. „400/5 A 0,5 FS5 24 kV“): erkannte Werte + passende Typen, Übergabe an den Spezifikations-Check
+const TECH = /\d\s*[/:]\s*\d|\d\s*k?V\b|\bVA\b|\d\s*kA\b|\bHz\b|\b(?:5|10)P\s?\d|\bFS\s?\d|\b0[.,][125]S?\b/i;
+async function smartBlock(q, ctx, t, i0) {
+  if (!TECH.test(q)) return { html: '', n: 0 };
+  const [{ parsePosition, reqWeight, setProductCodes }, { matchProducts }, { reqChipsHtml }, X, idx] = await Promise.all([import('../lib/spec.js'), import('../lib/match.js'), import('../lib/reqfmt.js'), getX(), getIndex()]);
+  setProductCodes(idx.products);
+  const { req } = parsePosition(q);
+  if (reqWeight(req) < 1.5) return { html: '', n: 0 };
+  const best = matchProducts(req, idx.products, null, { limit: 3 }).best;
+  const S = X.smart;
+  let i = i0;
+  const html = `<div class="smart"><div class="smart__head">${icon('sliders', 'width="16" height="16"')}${esc(S.title)}</div><div class="smart__req">${reqChipsHtml(req, t, X.assist, ctx.lang)}</div>
+    ${best.length ? `<div class="search__group">${esc(S.best)}</div>${best.map((m) => hitHtml('product', m.p, ctx, t, i++, Math.round(m.score * 100))).join('')}` : ''}
+    <a class="link smart__go search__hit" role="option" id="sh-${i++}" href="${ctx.href('assistant')}" data-smart-go>${esc(S.open)}</a></div>`;
+  return { html, n: i - i0 };
+}
+document.addEventListener('click', (e) => { const a = e.target.closest('[data-smart-go]'); if (a) handoff.put('spec', { text: a.closest('[data-search], [data-search-page]')?.querySelector('input')?.value || '' }); });
 
 export function initSearchOverlay() {
   const ov = $('[data-search]');
@@ -63,8 +82,11 @@ export function initSearchOverlay() {
     const { t, ctx } = r;
     if (!q.trim()) { out.innerHTML = `<p class="search__group">${esc(t.search.lead)}</p>`; active = -1; return; }
     let i = 0;
+    const smart = await smartBlock(q, ctx, t, 0).catch(() => ({ html: '', n: 0 }));
+    if (q !== input.value) return;
+    i += smart.n;
     const sec = (title, list, kind, n) => (list.length ? `<div class="search__group">${esc(title)}</div>${list.slice(0, n).map((x) => hitHtml(kind, x, ctx, t, i++)).join('')}` : '');
-    const html = sec(t.search.groups.product, r.products, 'product', 6) + sec(t.search.groups.page, r.pages, 'page', 4) + sec(t.search.groups.news, r.news, 'news', 3) + sec(t.search.groups.doc, r.docs, 'doc', 4);
+    const html = smart.html + sec(t.search.groups.product, r.products, 'product', 6) + sec(t.search.groups.page, r.pages, 'page', 4) + sec(t.search.groups.news, r.news, 'news', 3) + sec(t.search.groups.doc, r.docs, 'doc', 4);
     out.innerHTML = html ? html + `<a class="search__all" href="${ctx.href('search', {}, { q })}">${esc(t.search.allResults)}</a>` : `<div class="empty empty--small"><p>${esc(tpl(t.search.empty, { q }))}</p><p class="small muted">${esc(t.search.emptyHint)}</p></div>`;
     active = -1;
   }, 120);
@@ -117,8 +139,10 @@ export async function initSearchPage(root) {
     const { t, ctx } = r;
     if (!q.trim()) { out.innerHTML = ''; return; }
     let i = 0;
+    const smart = await smartBlock(q, ctx, t, 0).catch(() => ({ html: '', n: 0 }));
+    i += smart.n;
     const sec = (title, list, kind) => (list.length ? `<h2 class="h4 mt">${esc(title)} <span class="faint">${list.length}</span></h2><div class="search-list">${list.slice(0, 60).map((x) => hitHtml(kind, x, ctx, t, i++)).join('')}</div>` : '');
-    const html = sec(t.search.groups.product, r.products, 'product') + sec(t.search.groups.page, r.pages, 'page') + sec(t.search.groups.news, r.news, 'news') + sec(t.search.groups.doc, r.docs, 'doc');
+    const html = smart.html + sec(t.search.groups.product, r.products, 'product') + sec(t.search.groups.page, r.pages, 'page') + sec(t.search.groups.news, r.news, 'news') + sec(t.search.groups.doc, r.docs, 'doc');
     out.innerHTML = html || `<div class="empty"><p>${esc(tpl(t.search.empty, { q }))}</p><p class="small muted">${esc(t.search.emptyHint)}</p></div>`;
   };
   form.addEventListener('submit', (e) => { e.preventDefault(); run(); });

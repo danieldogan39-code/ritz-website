@@ -212,7 +212,7 @@ def norm_class(v):
     v = v.replace(',', '.').upper().replace(' ', '')
     out = set()
     for tok in re.split(r'[/;+&]|UND|AND', v):
-        m = re.match(r'^(0\.1|0\.2S|0\.2|0\.5S|0\.5|1|3|5P|10P|3P|6P|PX|PR|TPY|TPX|TPZ)', tok)
+        m = re.match(r'^(0\.1|0\.2S|0\.2|0\.5S|0\.5|10P|5P|3P|6P|PX|PR|TPY|TPX|TPZ|1|3)', tok)  # längere Klassen zuerst (sonst wird 10P zu 1, 3P zu 3)
         if m:
             out.add(m.group(1))
     return out

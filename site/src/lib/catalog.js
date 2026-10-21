@@ -10,9 +10,11 @@ export const SECTOR_LINKS = {
 };
 
 export const HISTORY_IMG = {
+  // Zuordnung wie in der Zeitleiste der bisherigen Website (Abschnitt je Jahr: Text und Foto)
   2026: ['mimg/RITZ-USA-HV-Waynesboro-Grand-Opening-2026-Ribbon-Cutting.webp'],
-  2022: ['mimg/image17.webp'], 2020: ['mimg/image16.webp'], 2008: ['mimg/image13.webp'], 2003: ['mimg/image12.webp'],
-  1999: ['mimg/image11.webp'], 1996: ['mimg/image9.webp'], 1986: ['mimg/image3.webp'], 1945: ['mimg/unternehmen_vision_timeline_image_5.webp', 'mimg/image2-1.webp'],
+  2022: ['mimg/image17.webp'], 2020: ['mimg/image16.webp'], 2015: ['mimg/image14.webp'], 2008: ['mimg/image13.webp'], 2003: ['mimg/image12.webp'],
+  1999: ['mimg/image11.webp'], 1996: ['mimg/image8.webp', 'mimg/image9.webp'], 1991: ['mimg/image5.webp'], 1989: ['mimg/image4.webp'], 1986: ['mimg/image3.webp'],
+  1956: ['mimg/image2-1.webp'], 1945: ['mimg/unternehmen_vision_timeline_image_5.webp'],
 };
 
 export const PEOPLE_IMG = {
@@ -58,6 +60,6 @@ export const FEATURED_DOCS_EN = ['RITZ-medium_voltage_instrument_transformers_st
   '000632-Ritz-Instrument-Transformers-GmbH-CERTIFICATE-deutsch-2026-07-17-QM15.pdf'];
 
 export const LOC_IMG = {
-  hamburg: 'mimg/2022__07__unternehmen_historie_1.webp', kirchaich: 'mimg/Luftbild_Kirchaich_2014_klein.webp', shanghai: 'mimg/image12.webp',
-  lavonia: 'mimg/image13.webp', waynesboro: 'mimg/RITZ-USA-HV-Waynesboro-Grand-Opening-2026-Ribbon-Cutting.webp',
+  hamburg: 'mimg/2022__07__unternehmen_historie_1.webp', kirchaich: 'mimg/Luftbild_Kirchaich_2014_klein.webp', dresden: 'mimg/image5.webp',
+  wirges: 'mimg/image4.webp', kecskemet: 'mimg/image14.webp', shanghai: 'mimg/image12.webp', lavonia: 'mimg/image13.webp', waynesboro: 'mimg/image17.webp',
 };

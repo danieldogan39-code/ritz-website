@@ -1,0 +1,86 @@
+// Schnelltest Konfigurator + Projektmappe: node tools/qa/mappe-probe.mjs <outdir>
+import { chromium } from 'playwright-core';
+import fs from 'node:fs';
+const out = process.argv[2] || '/tmp/mappe-probe';
+fs.mkdirSync(out, { recursive: true });
+const exe = '/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell';
+const browser = await chromium.launch(fs.existsSync(exe) ? { executablePath: exe } : { channel: 'chrome' });
+const ctx = await browser.newContext({ viewport: { width: 1440, height: 1000 }, permissions: ['clipboard-read', 'clipboard-write'] });
+const page = await ctx.newPage();
+const logs = [];
+page.on('console', (m) => { if (['error', 'warning'].includes(m.type())) logs.push(`[${m.type()}] ${m.text()}`); });
+page.on('pageerror', (e) => logs.push(`[pageerror] ${e.message}`));
+page.on('response', (r) => { if (r.status() >= 400) logs.push(`[${r.status()}] ${r.url()}`); });
+const B = 'http://localhost:8080';
+// 1) Check → Konfigurator öffnen
+await page.goto(B + '/de/werkzeuge/spezifikations-check/', { waitUntil: 'networkidle' });
+await page.click('[data-sc-example="0"]');
+await page.waitForSelector('.scp .scp__actions a');
+const href = await page.getAttribute('.scp:not(.scp--pre) .scp__actions a', 'href');
+console.log('Konfigurator-Link:', href.slice(0, 120));
+await page.goto(B + href, { waitUntil: 'networkidle' });
+await page.waitForSelector('.cfg__summary h3');
+console.log('Meldung:', await page.textContent('[data-cfg-msg]'));
+console.log('Fortschritt:', await page.textContent('.cfg__summary .muted'));
+console.log('Typenschild:', (await page.textContent('.plate--live'))?.replace(/\s+/g, ' ').trim());
+await page.click('[data-cfg-tender]');
+console.log('Ausschreibungstext:\n' + await page.textContent('[data-cfg-tender-text]'));
+await page.screenshot({ path: `${out}/cfg.png`, fullPage: false, clip: { x: 0, y: 0, width: 1440, height: 1000 } });
+await page.$eval('#konfigurator', (el) => el.scrollIntoView());
+await page.waitForTimeout(300);
+await page.screenshot({ path: `${out}/cfg-section.png` });
+await page.fill('[data-ref]', '1.10');
+await page.click('[data-cfg-add]');
+await page.waitForTimeout(300);
+// 2) Aus Anforderung ausfüllen auf einem anderen Produkt
+await page.goto(B + '/de/produkte/mittelspannung/gis-12-24/', { waitUntil: 'networkidle' }).catch(() => {});
+if (await page.$('[data-cfg-spec]')) {
+  await page.$eval('.cfg__spec', (d) => { d.open = true; });
+  await page.fill('[data-cfg-spec]', '300/5/5 A, 0,5 FS5 15 VA, 5P20 10 VA, Ith 25 kA, Um 24 kV, 3 Stück');
+  await page.click('[data-cfg-apply]');
+  await page.waitForTimeout(500);
+  console.log('Ausfüllen:', (await page.textContent('[data-cfg-msg]')).replace(/\s+/g, ' '));
+  console.log('Fortschritt:', await page.textContent('.cfg__summary .muted'));
+  await page.$eval('#konfigurator', (el) => el.scrollIntoView());
+  await page.screenshot({ path: `${out}/cfg-fill.png` });
+} else console.log('GSWS ohne Konfigurator?', page.url());
+// 3) Projektmappe
+await page.goto(B + '/de/werkzeuge/spezifikations-check/', { waitUntil: 'networkidle' });
+await page.click('[data-sc-example="0"]');
+await page.waitForSelector('[data-sc-addall]');
+await page.click('[data-sc-addall]');
+await page.goto(B + '/de/anfrage/', { waitUntil: 'networkidle' });
+await page.waitForSelector('.pmi');
+await page.fill('#pm-name', 'UW Nord');
+await page.fill('#pm-due', '2027-03-15');
+await page.dispatchEvent('#pm-due', 'change');
+await page.dispatchEvent('#pm-name', 'change');
+await page.waitForTimeout(300);
+console.log('Plan:', (await page.textContent('[data-pm-plan]')).replace(/\s+/g, ' '));
+console.log('Positionen:', await page.$$eval('.pmi', (els) => els.map((e) => e.querySelector('[data-f="ref"]').value + ' ' + e.querySelector('.pmi__code').textContent + ' | ' + (e.querySelector('.pmi__date')?.textContent || '-'))));
+await page.click('[data-pm-tender]');
+await page.waitForTimeout(200);
+console.log('LV-Text (Anfang):\n' + (await page.textContent('[data-pm-tendertext]')).slice(0, 600));
+await page.screenshot({ path: `${out}/mappe.png`, fullPage: true });
+await page.click('[data-pm-share]');
+await page.waitForTimeout(400);
+const link = await page.evaluate(() => navigator.clipboard.readText());
+console.log('Link-Länge:', link.length, link.slice(0, 90));
+// 4) Import in frischem Kontext
+const ctx2 = await browser.newContext({ viewport: { width: 1440, height: 1000 } });
+const p2 = await ctx2.newPage();
+p2.on('pageerror', (e) => logs.push(`[pageerror2] ${e.message}`));
+await p2.goto(link, { waitUntil: 'networkidle' });
+await p2.waitForSelector('[data-pm-import]:not([hidden])');
+console.log('Import:', (await p2.textContent('[data-pm-import]')).replace(/\s+/g, ' '));
+await p2.click('[data-imp="replace"]');
+await p2.waitForTimeout(400);
+console.log('Nach Import:', await p2.$$eval('.pmi', (els) => els.map((e) => e.querySelector('.pmi__code').textContent + ' ' + e.querySelector('.pmi__cfg').textContent.slice(0, 60))), 'Projekt:', await p2.inputValue('#pm-name'), 'URL:', p2.url());
+// 5) Formular (Vorschau ohne Versand: statisch mit api → Fehler erwartet, Text sichtbar)
+await page.fill('#f-company', 'Test GmbH'); await page.fill('#f-name', 'Max Muster'); await page.fill('#f-email', 'max@example.com');
+await page.selectOption('#f-country', 'DE'); await page.check('input[name="privacy"]');
+await page.click('button[type="submit"]');
+await page.waitForTimeout(800);
+console.log('Anfragetext:\n' + ((await page.textContent('.copybox')) || '').slice(0, 1200));
+console.log(logs.join('\n') || 'keine Konsolenfehler');
+await browser.close();

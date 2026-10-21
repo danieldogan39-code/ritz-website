@@ -1,5 +1,8 @@
 // Deutsch – UI-Texte, Beschriftungen und Seiteninhalte
+import X from './x/de.js';
+
 export default {
+  x: X,
   meta: {
     lang: 'de', siteName: 'RITZ Instrument Transformers', claim: 'Empowering Our Electrical Future',
     defaultDesc: 'RITZ entwickelt und fertigt Strom- und Spannungswandler, Sensoren, Stromschienen und Gießharzteile von 0,72 bis 550 kV – seit 1945, mit Werken in Europa, China und den USA.',
@@ -7,7 +10,7 @@ export default {
   ui: {
     skip: 'Zum Inhalt springen', skipIntro: 'Intro überspringen', introLine: 'Messwandler seit 1945', menu: 'Menü', close: 'Schließen', search: 'Suche', searchPh: 'Typ, Spannung oder Thema suchen …',
     searchHint: 'z. B.', lang: 'Sprache', theme: 'Darstellung', themeLight: 'Hell', themeDark: 'Dunkel', themeAuto: 'System',
-    inquiryList: 'Anfrageliste', contactCta: 'Kontakt', home: 'Startseite', more: 'Mehr erfahren', all: 'Alle', show: 'Anzeigen',
+    inquiryList: 'Projektmappe', contactCta: 'Kontakt', home: 'Startseite', more: 'Mehr erfahren', all: 'Alle', show: 'Anzeigen',
     back: 'Zurück', next: 'Weiter', open: 'Öffnen', copy: 'Kopieren', copied: 'Kopiert', download: 'Herunterladen', external: 'öffnet externe Seite',
     route: 'Route planen', phone: 'Telefon', fax: 'Fax', email: 'E-Mail', address: 'Adresse', website: 'Website', employees: 'Mitarbeitende',
     functions: 'Schwerpunkte', newBadge: 'Neu', madeIn: 'Made in', pdf: 'PDF', lang_de: 'Deutsch', lang_en: 'Englisch', lang_deen: 'Deutsch/Englisch',
@@ -17,7 +20,7 @@ export default {
     dataLangNote: 'Produktdaten sind auf Deutsch und Englisch verfügbar.', untranslated: 'Dieser Beitrag liegt nur auf {lang} vor.',
     page: 'Seite', of: 'von', filters: 'Filter', resetFilters: 'Filter zurücksetzen', apply: 'Anwenden', sortBy: 'Sortieren',
     viewGrid: 'Kachelansicht', viewList: 'Listenansicht', compare: 'Vergleichen', compareNow: 'Jetzt vergleichen', remove: 'Entfernen',
-    addInquiry: 'Zur Anfrageliste', added: 'Zur Anfrageliste hinzugefügt', inList: 'In der Anfrageliste', configure: 'Konfigurieren',
+    addInquiry: 'In die Projektmappe', added: 'Zur Projektmappe hinzugefügt', inList: 'In der Projektmappe', configure: 'Konfigurieren',
     datasheet: 'Datenblatt', allDownloads: 'Alle Downloads', contactPerson: 'Ihr Ansprechpartner', contactPersons: 'Ansprechpartner',
     productCount: { one: '{n} Produkt', other: '{n} Produkte' }, docCount: { one: '{n} Dokument', other: '{n} Dokumente' },
     resultCount: { one: '{n} Treffer', other: '{n} Treffer' }, jobCount: { one: '{n} offene Stelle', other: '{n} offene Stellen' },
@@ -27,6 +30,7 @@ export default {
     mapSkip: 'Karte überspringen', listView: 'Liste', mapView: 'Karte',
   },
   nav: {
+    tools: 'Werkzeuge', megaToolsText: 'Spezifikationen prüfen, Wandler auslegen, Anfragen vorbereiten.',
     products: 'Produkte', finder: 'Produktfinder', sectors: 'Anwendungen', downloads: 'Downloads', company: 'Unternehmen',
     career: 'Karriere', news: 'News', contact: 'Kontakt', about: 'Über RITZ', locations: 'Standorte', quality: 'Qualität & Zertifikate',
     responsibility: 'Verantwortung', references: 'Referenzen', jobs: 'Stellenangebote', training: 'Ausbildung', internships: 'Praktika & Abschlussarbeiten',
@@ -44,6 +48,7 @@ export default {
   },
   // ---------- Beschriftungen ----------
   lbl: {
+    dim: { box: 'Außenmaße B / H / T', height: 'Höhe', inner: 'Innendurchmesser', win: 'Fensteröffnung', bar: 'Schienen', cable: 'Kabel bis', din: 'Tragschiene' },
     area: {
       niederspannung: 'Niederspannung', mittelspannung: 'Mittelspannung', hochspannung: 'Hochspannung', 'elektronik-sensoren': 'Elektronik & Sensoren',
       'stromschienen-sis': 'Stromschienen SIS', 'giessharzteile-duromer': 'Gießharzteile DUROMER',
@@ -184,13 +189,14 @@ export default {
     umFrom: 'ab', umTo: 'bis', iprFrom: 'von', iprTo: 'bis',
   },
   product: {
+    pv: { tag: 'Schemazeichnung', plate: 'Typenschild', note: 'Schematische Darstellung, nicht maßstabsgetreu. Maße in mm laut Datenblatt.', noteNone: 'Schematische Darstellung der Bauform, nicht maßstabsgetreu.', ask: 'Maßbild anfordern', askMsg: 'Bitte senden Sie mir ein Maßbild (Maßzeichnung) für {code}.' },
     overview: 'Überblick', specs: 'Technische Daten', configurator: 'Konfigurator', downloads: 'Downloads', related: 'Ähnliche Produkte', features: 'Merkmale',
     keySpecs: 'Kenndaten', noConfig: 'Dieses Produkt wird projektspezifisch ausgelegt. Beschreiben Sie Ihre Anforderung – wir melden uns mit einem Angebot.',
     cfgIntro: 'Wählen Sie die Ausführung. Abhängige Optionen erscheinen, sobald sie relevant sind. Pflichtfelder sind markiert.',
     plate: { type: 'Typ', cls: 'Kl.', std: 'Norm' }, cfgDepends: 'Zuerst auswählen: {list}',
     cfgSummary: 'Ihre Konfiguration', cfgEmpty: 'Noch keine Auswahl getroffen.', cfgProgress: '{done} von {total} Pflichtangaben', cfgRequired: 'Pflichtangabe',
     cfgSpecial: 'Sonderwünsche', cfgSpecialPh: 'z. B. abweichender Primärstrom, Prüfprotokoll, Beschriftung', quantity: 'Stückzahl',
-    cfgMissing: 'Bitte ergänzen Sie noch: {list}', cfgAdded: 'Konfiguration zur Anfrageliste hinzugefügt', cfgReset: 'Auswahl zurücksetzen',
+    cfgMissing: 'Bitte ergänzen Sie noch: {list}', cfgAdded: 'Konfiguration in die Projektmappe übernommen', cfgReset: 'Auswahl zurücksetzen',
     deliveryNote: 'Lieferzeit ab Werk, abhängig von Ausführung und Stückzahl.', railTitle: 'Bahnanwendungen', newsTitle: 'Neu',
     docsEmpty: 'Für dieses Produkt sind noch keine Dokumente online. Wir senden Ihnen die Unterlagen gern zu.', gallery: 'Produktbilder', zoom: 'Bild vergrößern',
     familyNote: 'Aus dem Produktkatalog', askTitle: 'Fragen zu diesem Produkt?', askText: 'Unser Vertrieb berät Sie zu Auslegung, Normen und Lieferzeiten.',
@@ -201,8 +207,8 @@ export default {
     emptyHint: 'Wählen Sie im Produktfinder bis zu vier Produkte über „Vergleichen“ aus.', onlyDiff: 'Nur Unterschiede zeigen', clear: 'Vergleich leeren',
   },
   inquiry: {
-    title: 'Anfrage', lead: 'Prüfen Sie Ihre Auswahl und senden Sie uns Ihre Anfrage. Sie erhalten ein Angebot vom zuständigen Vertrieb.',
-    listTitle: 'Ihre Anfrageliste', empty: 'Ihre Anfrageliste ist leer.', emptyHint: 'Fügen Sie Produkte im Produktfinder oder auf der Produktseite hinzu – oder schreiben Sie uns direkt.',
+    title: 'Projektmappe', lead: 'Positionen sammeln, kennzeichnen und terminieren – dann als Anfrage an den zuständigen Vertrieb senden oder per Link mit Kollegen teilen.',
+    listTitle: 'Positionen', empty: 'Ihre Projektmappe ist leer.', emptyHint: 'Fügen Sie Produkte im Produktfinder, auf der Produktseite oder über den Spezifikations-Check hinzu – oder schreiben Sie uns direkt.',
     formTitle: 'Ihre Angaben', company: 'Firma', name: 'Vor- und Nachname', email: 'E-Mail', phone: 'Telefon (optional)', country: 'Land', countryOther: 'Anderes Land',
     message: 'Nachricht', messagePh: 'Projekt, Termine, Normen, Prüfungen …', privacy: 'Ich habe die {link} gelesen und bin mit der Verarbeitung meiner Angaben zur Bearbeitung der Anfrage einverstanden.',
     privacyLink: 'Datenschutzhinweise', submit: 'Anfrage senden', sending: 'Wird gesendet …', success: 'Vielen Dank! Ihre Anfrage ist eingegangen.',
@@ -210,7 +216,7 @@ export default {
     errRequired: 'Bitte füllen Sie dieses Feld aus.', errEmail: 'Bitte geben Sie eine gültige E-Mail-Adresse ein.', errPrivacy: 'Bitte bestätigen Sie die Datenschutzhinweise.',
     errSend: 'Die Anfrage konnte nicht gesendet werden. Bitte versuchen Sie es erneut oder schreiben Sie an {mail}.',
     previewNote: 'Vorschau: In dieser Vorschau wird nichts versendet. Auf der Live-Website geht die Anfrage direkt an den Vertrieb.',
-    qty: 'Stück', config: 'Konfiguration', unconfigured: 'Ohne Konfiguration – Angaben bitte in der Nachricht', edit: 'Bearbeiten', clear: 'Liste leeren',
+    qty: 'Stück', config: 'Konfiguration', unconfigured: 'Ohne Konfiguration – Angaben bitte in der Nachricht', edit: 'Bearbeiten', clear: 'Mappe leeren',
   },
   search: {
     title: 'Suche', lead: 'Durchsuchen Sie Produkte, Seiten, Dokumente und News.', groups: { product: 'Produkte', page: 'Seiten', doc: 'Dokumente', news: 'News' },
@@ -218,6 +224,7 @@ export default {
     shortcut: 'Suche öffnen', allResults: 'Alle Ergebnisse anzeigen',
   },
   downloads: {
+    req: { doc: 'Anfordern', datasheet: 'Datenblatt anfordern', onRequest: 'Auf Anfrage', msg: 'Bitte senden Sie mir das Dokument „{title}“ ({file}).', note: 'Die Unterlagen zu diesem Produkt senden wir Ihnen auf Anfrage gern zu.', all: 'Alle Unterlagen anfordern', allMsg: 'Bitte senden Sie mir die Unterlagen zu {code}:' },
     title: 'Downloads', lead: 'Kataloge, Datenblätter, Maßzeichnungen, Zertifikate und Bedingungen – an einem Ort, filterbar nach Thema, Produktbereich und Sprache.',
     searchPh: 'Titel, Typcode oder Dateiname', type: 'Dokumentart', area: 'Produktbereich', language: 'Sprache', count: 'Dokumente',
     note: 'Alle Dokumente sind Eigentum der RITZ Instrument Transformers GmbH und dienen ausschließlich Informationszwecken.',
@@ -238,6 +245,11 @@ export default {
   // ---------- Seiten ----------
   pages: {
     home: {
+      hero2: { cta1: 'Produkte entdecken', cta2: 'Projekt anfragen', slides: 'Bilder aus unseren Werken', pause: 'Bildwechsel anhalten', play: 'Bildwechsel fortsetzen', slide: 'Bild {n} von {total}' },
+      stats: { founded: 'gegründet in Hamburg', staff: 'Mitarbeitende', plants: 'Werke in {n} Ländern', range: 'Spannungsbereich', reps: 'Länder mit Vertretung' },
+      helpTitle: 'Wobei dürfen wir helfen?',
+      plants: { title: 'Gefertigt in {n} Werken weltweit', lead: 'Von Hamburg aus führt RITZ eine Gruppe mit mehr als {staff} Mitarbeitenden. Jedes Werk hat seine Spezialität – vom Niederspannungswandler bis zum Hochspannungswandler.', staff: '{n} Mitarbeitende', cta: 'Alle Standorte', hq: 'Zentrale', plant: 'Werk' },
+      heritage: { title: 'Seit 1945 gewachsen', lead: 'Von der Gründung in Hamburg bis zum neuen Hochspannungswerk in den USA: acht Jahrzehnte Messwandlerbau.', cta: 'Unternehmensgeschichte' },
       title: 'Messwandler, Sensoren und Stromschienen seit 1945',
       h1: 'Wir machen Energie messbar.',
       lead: 'Strom- und Spannungswandler, Sensoren, Stromschienen und Gießharzteile von 0,72 bis 550 kV – entwickelt und gefertigt in Europa, China und den USA.',

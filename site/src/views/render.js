@@ -2,6 +2,7 @@
 import { home } from './home.js';
 import { productsPage, areaPage, productPage, finderPage, comparePage, inquiryPage } from './products.js';
 import * as P from './pages.js';
+import { toolsPage, assistantPage, calculatorsPage } from './tools.js';
 import { descriptor } from '../lib/product.js';
 import { shorten } from './layout.js';
 import { htmlText } from '../lib/util.js';
@@ -49,6 +50,9 @@ export function renderRoute(ctx, route) {
     case 'imprint': return r(pg.imprint.title, P.imprintPage(ctx), `${pg.imprint.title}: RITZ Instrument Transformers GmbH, Wandsbeker Zollstraße 92–98, 22041 Hamburg`, { noindex: false });
     case 'privacy': return r(pg.privacy.title, P.privacyPage(ctx), pg.privacy.lead);
     case 'search': return r(t.search.title, P.searchPage(ctx), t.search.lead, { noindex: true });
+    case 'tools': return r(t.x.hub.title, toolsPage(ctx), t.x.hub.lead);
+    case 'assistant': return r(t.x.assist.title, assistantPage(ctx), t.x.assist.lead);
+    case 'calculators': return r(t.x.calc.title, calculatorsPage(ctx), t.x.calc.lead);
     default: return r(pg.notFound.title, P.notFoundPage(ctx), pg.notFound.lead, { noindex: true });
   }
 }

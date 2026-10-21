@@ -1,0 +1,24 @@
+import { chromium } from 'playwright-core';
+const browser = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell' });
+const page = await browser.newPage({ viewport: { width: 1280, height: 900 } });
+const logs = []; page.on('pageerror', (e) => logs.push(e.message)); page.on('console', (m) => { if (m.type() === 'error') logs.push(m.text()); });
+await page.goto('http://localhost:8080/de/', { waitUntil: 'networkidle' });
+await page.keyboard.press('Escape');
+await page.click('[data-search-open]');
+await page.fill('[data-search-input]', '400/5 A 0,5 FS5 15 VA 24 kV');
+await page.waitForTimeout(1200);
+await page.screenshot({ path: process.argv[2] + '/smart.png' });
+console.log((await page.textContent('[data-search-results]')).replace(/\s+/g, ' ').slice(0, 400));
+await page.keyboard.press('Escape');
+// Startseite: Live-Vorschau
+await page.$eval('#spezifikation', (el) => el.scrollIntoView());
+await page.fill('[data-hs-text]', 'Spannungswandler 20000/√3 / 100/√3 V Klasse 0,5 30 VA, 3 Stück');
+await page.waitForTimeout(800);
+console.log('Home:', (await page.textContent('[data-hs-res]')).replace(/\s+/g, ' '));
+await page.$eval('#spezifikation', (el) => el.scrollIntoView());
+await page.screenshot({ path: process.argv[2] + '/home-spec.png' });
+await page.click('#spezifikation [data-hs-go]');
+await page.waitForSelector('.scp');
+console.log('Übergabe:', await page.inputValue('[data-sc-text]'));
+console.log(logs.join('\n') || 'ok');
+await browser.close();

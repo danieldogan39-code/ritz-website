@@ -1,6 +1,8 @@
 // Produktlogik (isomorph): Bezeichnung, Facetten, Karten, Spannungsbalken, Gruppen
 import { esc, icon, fmtKv, fmtRange, fmtList, fmtNum, axisPos, imgTag, productGlyph, nbsp, UM_STEPS, fmtCls, fmtClasses } from './util.js';
 import { dataLang } from './routes.js';
+import { productVisual } from './visual.js';
+import { dimRows } from './dims.js';
 
 export const KIND_GROUP = {
   ct: 'ct', vt: 'vt', combined: 'combined', ccvt: 'vt', 'current-sensor': 'sensor', 'voltage-sensor': 'sensor', 'combi-sensor': 'sensor',
@@ -43,7 +45,24 @@ export function productImage(ctx, p, { sizes = '(max-width: 600px) 50vw, 240px',
   const key = (p.images || []).find((k) => ctx.img[k]);
   // Familienbilder der Hauptseite (Graustufen-Studio, Querformat) füllen die Bühne, Einzelfreisteller werden eingepasst
   if (key) return imgTag(ctx, key, { alt: `${p.code}`, sizes, eager, max, cls: imgFit(ctx, key) });
-  return `<span class="glyph-wrap">${productGlyph(p.kind)}</span>`;
+  return productDrawing(ctx, p, { label: true });
+}
+
+// Schemazeichnung für Produkte ohne Foto (Bühne mit Zeichenpapier-Raster)
+export const fmtDim = (lang) => (v) => fmtNum(+(+v).toFixed(1), lang);
+export function productDrawing(ctx, p, { label = false, small = false, detail = false } = {}) {
+  const T = ctx.t.product.pv || {};
+  const svg = productVisual(p, { detail, label: label ? `${T.tag || 'Schema'}: ${p.code}` : '', fmt: fmtDim(ctx.lang), ...(small ? { ratio: 1, tight: true } : {}) });
+  return `<span class="pvw${small ? ' pvw--sm' : ''}">${svg}</span>`;
+}
+// Kleines Vorschaubild (Suche, Projektmappe, Vergleich, Check): Foto oder Schemazeichnung
+export function productThumb(ctx, p, { sizes = '48px', max = 320 } = {}) {
+  const k = (p.images || []).find((x) => ctx.img[x]);
+  return k ? imgTag(ctx, k, { alt: '', sizes, max, cls: imgFit(ctx, k) }) : productDrawing(ctx, p, { small: true });
+}
+// Maßangaben aus dem Datenblatt als Tabellenzeilen
+export function dimSpecRows(ctx, p) {
+  return dimRows(p.dm, ctx.t.lbl.dim || {}, fmtDim(ctx.lang));
 }
 
 export function keySpecs(p, t, lang, { short = false } = {}) {
@@ -277,6 +296,7 @@ export function specRows(ctx, p) {
   if (p.std?.length) rows.push([L.std, p.std.join(', ')]);
   if (p.specs?.mount) rows.push([L.mount, t.lbl.mount[p.specs.mount] || '']);
   if (p.specs?.imax) rows.push([L.imax, `${fmtNum(p.specs.imax, lang)} A`]);
+  rows.push(...dimSpecRows(ctx, p));
   if (p.weeks) rows.push([L.weeks, `${fmtRange(p.weeks, lang)} ${t.ui.weeks}`]);
   if (p.made) rows.push([L.made, t.lbl.made[p.made] || p.made]);
   return rows.filter((r) => r[1]);

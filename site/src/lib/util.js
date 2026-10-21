@@ -120,6 +120,9 @@ const P = {
   reset: '<path d="M4 12a8 8 0 1 0 2.4-5.7M4 4v4h4"/>',
   user: '<circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/>',
   print: '<path d="M7 9V3h10v6M7 18H4v-8h16v8h-3M7 14h10v7H7z"/>',
+  pause: '<path d="M8 5v14M16 5v14"/>',
+  play: '<path d="M7 4.5v15l12-7.5z"/>',
+  ruler: '<path d="M3 16.5 16.5 3 21 7.5 7.5 21z"/><path d="m7 13 2 2M10 10l1.5 1.5M13 7l2 2"/>',
 };
 export function icon(name, extra = '') {
   // eigene Größe (extra) ersetzt die Standardgröße – doppelte Attribute würden ignoriert
@@ -134,15 +137,29 @@ export const LOGO = '<svg viewBox="0 0 258.72 140.09" width="84" height="45" rol
 
 // ---------- Bilder ----------
 // manifest[key] = { n: 'name', w, h, ws: [320, 640, ...] }
-export function imgTag(ctx, key, { alt = '', sizes = '100vw', cls: c = '', eager = false, max = 9999, fallback = '' } = {}) {
+export function imgTag(ctx, key, { alt = '', sizes = '100vw', cls: c = '', eager = false, max = 9999, fallback = '', cover = 0, lowres = 0 } = {}) {
   const m = key && ctx.img[key];
   if (!m) return fallback;
+  // Gering aufgelöste Motive nicht über ihre natürliche Größe hinaus vergrößern (Rahmen bleibt, Bild mittig)
+  // (sizes = natürliche Breite, sonst rechnet der Browser die Bildbreite aus srcset/sizes hoch)
+  if (lowres && m.w < lowres) { c = `${c ? c + ' ' : ''}is-lowres`; sizes = `${Math.min(m.w, max)}px`; }
+  // Bildfüllend beschnitten (object-fit: cover) in einem flacheren Rahmen: das Bild wird breiter gezeichnet als der Rahmen –
+  // die Größenangabe entsprechend vergrößern, damit der Browser eine scharfe Variante wählt
+  const f = cover ? (m.w / m.h) / cover : 1;
+  if (f > 1.05) sizes = sizes.split(',').map((part) => { const x = part.trim(); const i = x.lastIndexOf(' '); const len = i < 0 ? x : x.slice(i + 1); const cond = i < 0 ? '' : x.slice(0, i + 1); return `${cond}calc(${len} * ${f.toFixed(2)})`; }).join(', ');
   const ws = m.ws.filter((w) => w <= max);
   const use = ws.length ? ws : [m.ws[0]];
   const src = (w) => `${ctx.base}img/${m.n}-${w}.webp`;
   const largest = use[use.length - 1];
   const h = Math.round((m.h / m.w) * largest);
   return `<img src="${src(largest)}" srcset="${use.map((w) => `${src(w)} ${w}w`).join(', ')}" sizes="${sizes}" width="${largest}" height="${h}" alt="${esc(alt)}"${c ? ` class="${c}"` : ''}${eager ? ' fetchpriority="high"' : ' loading="lazy"'} decoding="async">`;
+}
+// srcset aller Varianten bis max (für Bildwechsel per Skript)
+export function imgSrcset(ctx, key, max = 9999) {
+  const m = key && ctx.img[key];
+  if (!m) return '';
+  const ws = m.ws.filter((w) => w <= max);
+  return (ws.length ? ws : [m.ws[0]]).map((w) => `${ctx.base}img/${m.n}-${w}.webp ${w}w`).join(', ');
 }
 export function imgUrl(ctx, key, w = 640) {
   const m = key && ctx.img[key];

@@ -1,14 +1,17 @@
 // Startseite
 import { esc, icon, imgTag, tpl, fmtDate, axisPos, AXIS_TICKS, fmtNum, htmlText, UM_STEPS } from '../lib/util.js';
+import { parsePosition } from '../lib/spec.js';
+import { matchProducts } from '../lib/match.js';
+import { reqChipsHtml, markedText, homeHitsHtml } from '../lib/reqfmt.js';
 import { AREAS, SECTORS } from '../lib/routes.js';
 import { sectionHead, ctaBand, shorten } from './layout.js';
 import { projectLL } from '../lib/geo.js';
-import { CERT_FILES } from '../lib/catalog.js';
+import { CERT_FILES, LOC_IMG, HISTORY_IMG } from '../lib/catalog.js';
 import { coversUm } from '../lib/product.js';
 
 export const AREA_IMG = {
   niederspannung: 'mimg/ritz_header-niederspannung.webp', mittelspannung: 'mimg/ritz_header-mittelspannung.webp',
-  hochspannung: 'mimg/home_teaser_image_hochspannungswandler.webp', 'elektronik-sensoren': 'mimg/ritz_header-elektronik.webp',
+  hochspannung: 'mimg/Hochspannungswandler-Intro2.webp', 'elektronik-sensoren': 'mimg/ritz_header-elektronik.webp',
   'stromschienen-sis': 'mimg/SIS_Slider.webp', 'giessharzteile-duromer': 'mimg/ritz_header-duromer.webp',
 };
 export const SECTOR_IMG = {
@@ -134,17 +137,36 @@ function introOverlay(ctx) {
 // Überschrift Wort für Wort (Maske), damit der Einstieg ohne Layoutverschiebung läuft
 const words = (text) => String(text).split(' ').map((w, i) => `<span class="h1w"><span style="--i:${i}">${esc(w)}</span></span>`).join(' ');
 
-export function home(ctx) {
-  const { t, href, lang, data } = ctx;
-  const H = t.pages.home;
-  const counts = {};
-  for (const p of data.products) counts[p.area] = (counts[p.area] || 0) + 1;
-  const news = data.news.slice(0, 3);
-  return `
-${introOverlay(ctx)}
-<section class="hero hero--anim">
-  <div class="hero__media">${imgTag(ctx, 'mimg/intro_home_slider_8.webp', { alt: '', sizes: '(max-width: 720px) 100vw, 62vw', eager: true })}</div>
-  <div class="wrap hero__inner">
+// Bühne der Startseite: Bilder aus den Werken (Überblendung, langsamer Zoom), Leitsatz, Suche und Kennzahlen
+export const HERO_SLIDES = [
+  ['mimg/intro_home_slider_7.webp', '62% 50%'],
+  ['mimg/stellenangebote_intro_slider_2_Produktion.webp', '68% 35%'],
+  ['mimg/intro_home_slider_6.webp', '58% 50%'],
+  ['mimg/intro_home_slider_4.webp', '60% 50%'],
+];
+// Kennzahlen aus den Stammdaten (Standorte, Mitarbeitende, Vertretungen)
+export function groupStats(ctx) {
+  const locs = ctx.data.contacts.locations;
+  const plants = locs.filter((l) => l.type === 'production');
+  const staff = locs.reduce((s, l) => s + (+l.employees || 0), 0);
+  const repCountries = new Set((ctx.data.contacts.reps || []).map((r) => r.country).filter(Boolean)).size;
+  return { plants: plants.length, plantCountries: new Set(plants.map((l) => l.country)).size, staff, staffRound: Math.floor(staff / 100) * 100, repCountries };
+}
+function heroStage(ctx) {
+  const { t, href, lang } = ctx;
+  const H = t.pages.home, Hs = H.hero2, St = H.stats;
+  const g = groupStats(ctx);
+  const facts = [
+    ['1945', St.founded],
+    [`${fmtNum(g.staffRound, lang)}+`, St.staff],
+    [String(g.plants), tpl(St.plants, { n: g.plantCountries })],
+    [`${fmtNum(0.72, lang)}–550`, St.range, 'kV'],
+    ...(g.repCountries ? [[String(g.repCountries), St.reps]] : []),
+  ];
+  const slides = HERO_SLIDES.filter(([k]) => ctx.img[k]);
+  return `<section class="hero2 hero--anim" data-hero2 aria-label="${esc(Hs.slides)}">
+  <div class="hero2__media">${slides.map(([k, pos], i) => `<figure class="hero2__slide${i ? '' : ' is-on'}" data-slide="${i}" style="--pos:${pos}">${imgTag(ctx, k, { alt: '', sizes: '(max-width: 700px) 1800px, (max-width: 1100px) 150vw, 100vw', eager: i === 0 })}</figure>`).join('')}</div>
+  <div class="wrap hero2__inner">
     <h1>${words(H.h1)}</h1>
     <p class="lead">${esc(H.lead)}</p>
     <form class="hero__search" role="search" action="${href('search')}" data-hero-search>
@@ -153,20 +175,109 @@ ${introOverlay(ctx)}
       <button type="submit">${icon('search')}<span>${esc(H.searchBtn)}</span></button>
     </form>
     <p class="hero__hint">${esc(H.hint)} ${H.hints.map((h) => `<button type="button" data-hint="${esc(h)}">${esc(h)}</button>`).join(', ')}</p>
-    ${voltageAxis(ctx, { sweep: true })}
+    <div class="hero2__cta"><a class="btn btn--red" href="${href('products')}">${esc(Hs.cta1)}</a><a class="btn btn--light" href="${href('inquiry')}">${esc(Hs.cta2)}</a></div>
   </div>
-</section>
+  ${slides.length > 1 ? `<div class="hero2__ctl wrap" data-hero2-ctl>
+    <div class="hero2__dots">${slides.map((_, i) => `<button type="button" data-goto="${i}" aria-label="${esc(tpl(Hs.slide, { n: i + 1, total: slides.length }))}"${i ? '' : ' aria-current="true"'}><i></i></button>`).join('')}</div>
+    <button class="hero2__pause" type="button" data-hero2-pause aria-pressed="false" aria-label="${esc(Hs.pause)}" data-l-pause="${esc(Hs.pause)}" data-l-play="${esc(Hs.play)}">${icon('pause', 'width="16" height="16"')}${icon('play', 'width="16" height="16"')}</button>
+  </div>` : ''}
+  <div class="hero2__facts">
+    <dl class="wrap hero2__fl" data-reveal="facts">${facts.map(([a, b, unit]) => `<div class="hero2__fact"><dt>${esc(b)}</dt><dd><strong${unit ? '' : ' data-count'}>${esc(a)}${unit ? `<small>${esc(unit)}</small>` : ''}</strong></dd></div>`).join('')}</dl>
+  </div>
+</section>`;
+}
 
-<nav class="wrap tasks-wrap" aria-label="${esc(t.ui.quickTasks)}">
+// Werke der Gruppe: Zentrale und Fertigungsstandorte mit Foto (sonst Kartenausschnitt), Spezialitäten, Mitarbeitenden
+function plantMap(ctx, l) {
+  const wm = ctx.data.worldmeta;
+  if (!l.lat || !wm) return '';
+  const [x, y] = projectLL(wm, l.lng, l.lat);
+  const w = 150, h = (w * 10) / 16;
+  return `<svg class="plant__map" viewBox="${(x - w / 2).toFixed(1)} ${(y - h / 2).toFixed(1)} ${w} ${h.toFixed(1)}" aria-hidden="true" focusable="false"><use class="loc__land" href="${ctx.base}img/world-land.svg#land"/><circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="7" class="loc__halo"/><circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="3.4" class="loc__dot"/></svg>`;
+}
+// Allgemeine Funktionen (Vertrieb, Verwaltung, Konstruktion) ausblenden – erkannt an der deutschen Liste,
+// die Sprachfassungen haben dieselbe Reihenfolge
+const GENERIC_FN = /^(vertrieb|controlling|it$|personal|konstruktion|zwei gesellschaften)/i;
+function plantFunctions(l, lang, dl) {
+  const de = l.functions?.de || [];
+  const list = (l.functions && (l.functions[lang] || l.functions[dl] || l.functions.en)) || [];
+  return list.filter((f, i) => !GENERIC_FN.test(de[i] || f));
+}
+function plantsSection(ctx) {
+  const { t, lang } = ctx;
+  const P = t.pages.home.plants;
+  const g = groupStats(ctx);
+  const locs = ctx.data.contacts.locations.filter((l) => l.type === 'hq' || l.type === 'production');
+  let region = (c) => c;
+  try { const dn = new Intl.DisplayNames([lang], { type: 'region' }); region = (c) => dn.of(c) || c; } catch (e) { /* Kürzel */ }
+  const cards = locs.map((l) => {
+    const img = LOC_IMG[l.id];
+    const fn = plantFunctions(l, lang, ctx.dl).slice(0, 2);
+    return `<a class="plant" href="${ctx.hrefA('locations', {}, l.id)}">
+    <div class="plant__img"${img && ctx.img[img] ? ' data-reveal="img"' : ''}>${img && ctx.img[img] ? imgTag(ctx, img, { alt: '', sizes: '(max-width: 600px) 80vw, (max-width: 1100px) 40vw, 25vw', max: 960 }) : plantMap(ctx, l)}</div>
+    <div class="plant__body">
+      <span class="plant__type">${esc(l.type === 'hq' ? P.hq : P.plant)} · ${esc(region(l.country))}</span>
+      <h3>${esc(l.city.replace(/\s*\(.*\)$/, ''))}</h3>
+      ${fn.length ? `<ul class="plant__fn">${fn.map((f) => `<li>${esc(f)}</li>`).join('')}</ul>` : ''}
+      ${l.employees ? `<span class="plant__staff">${esc(tpl(P.staff, { n: fmtNum(+l.employees, lang) }))}</span>` : ''}
+    </div>
+  </a>`;
+  }).join('');
+  return `<section class="section section--porcelain plants-sec">
+  <div class="wrap">
+    <div class="plants-head">
+      <div class="stack" style="--s:1rem" data-reveal="head">
+        <h2>${esc(tpl(P.title, { n: g.plants }))}</h2>
+        <p class="lead">${esc(tpl(P.lead, { staff: fmtNum(g.staffRound, lang) }))}</p>
+        <div class="cluster"><a class="btn" href="${ctx.href('locations')}">${esc(P.cta)}</a><a class="btn btn--ghost" href="${ctx.hrefA('contact', {}, 'karte')}">${esc(t.pages.home.worldCta2)}</a></div>
+      </div>
+      ${worldTeaser(ctx)}
+    </div>
+    <div class="plants" role="list">${cards.replace(/<a class="plant"/g, '<a role="listitem" class="plant"')}</div>
+  </div>
+</section>`;
+}
+
+// Geschichte in Etappen: Gründung bis heute (Texte aus der Unternehmensseite, Fotos aus der bisherigen Zeitleiste)
+const HERITAGE_YEARS = ['1945', '1956', '1991', '2003', '2008', '2026'];
+function heritageSection(ctx) {
+  const { t, href } = ctx;
+  const C = t.pages.company;
+  const Hh = t.pages.home.heritage;
+  const items = HERITAGE_YEARS.map((y) => C.history.find(([yy]) => yy === y)).filter(Boolean);
+  return `<section class="section heritage">
+  <div class="wrap">
+    ${sectionHead(Hh.title, Hh.lead, `<a class="btn btn--ghost" href="${href('company')}">${esc(Hh.cta)}</a>`, { reveal: true })}
+    <ol class="her" data-reveal="facts" tabindex="0" aria-label="${esc(Hh.title)}">${items.map(([year, title, text]) => {
+      const k = (HISTORY_IMG[year] || []).find((x) => ctx.img[x]);
+      return `<li class="her__item"><span class="her__year">${esc(year)}</span>${k ? `<span class="her__img">${imgTag(ctx, k, { alt: '', sizes: '(max-width: 700px) 60vw, 16vw', max: 640 })}</span>` : '<span class="her__img her__img--none" aria-hidden="true"></span>'}<b>${esc(title)}</b><span>${esc(text)}</span></li>`;
+    }).join('')}</ol>
+  </div>
+</section>`;
+}
+
+export function home(ctx) {
+  const { t, href, lang, data } = ctx;
+  const H = t.pages.home;
+  const counts = {};
+  for (const p of data.products) counts[p.area] = (counts[p.area] || 0) + 1;
+  const news = data.news.slice(0, 3);
+  return `
+${introOverlay(ctx)}
+${heroStage(ctx)}
+
+<nav class="wrap tasks-wrap" aria-labelledby="help-title">
+  <h2 class="tasks__title" id="help-title">${esc(H.helpTitle)}</h2>
   <div class="tasks">${H.tasks.map(([title, text, id, ic]) => `<a class="task" href="${href(id)}"><strong>${icon(ic)}${esc(title)}</strong><span>${esc(text)}</span></a>`).join('')}</div>
 </nav>
 
 <section class="section">
   <div class="wrap">
     ${sectionHead(H.areasTitle, H.areasLead, `<a class="btn btn--ghost" href="${href('finder')}">${esc(t.ui.openFinder)}</a>`, { reveal: true })}
+    <div class="areas-axis">${voltageAxis(ctx, { dark: false })}</div>
     <div class="areas">
       ${AREAS.map((a) => `<a class="area" href="${href('area', { area: a })}">
-        <div class="area__img" data-reveal="img">${imgTag(ctx, AREA_IMG[a], { alt: '', sizes: '(max-width: 600px) 100vw, (max-width: 960px) 50vw, 33vw', max: 960 })}</div>
+        <div class="area__img" data-reveal="img">${imgTag(ctx, AREA_IMG[a], { alt: '', sizes: '(max-width: 600px) 100vw, (max-width: 960px) 50vw, 33vw', max: 1920, cover: 16 / 10 })}</div>
         <div class="area__body"><span class="area__kv">${esc(t.lbl.areaRange[a])}</span><h3>${esc(t.lbl.area[a])}</h3><p>${esc(t.lbl.areaShort[a])}</p></div>
         <div class="area__foot"><span>${esc(ctx.plural(counts[a] || 0, t.ui.productCount))}</span><span class="go">${esc(t.ui.more)}</span></div>
       </a>`).join('')}
@@ -174,13 +285,17 @@ ${introOverlay(ctx)}
   </div>
 </section>
 
-<section class="section section--porcelain">
+${homeSpec(ctx)}
+
+${plantsSection(ctx)}
+
+<section class="section">
   <div class="wrap">
     ${sectionHead(H.sectorsTitle, H.sectorsLead, '', { reveal: true })}
     <div class="apps">
       ${SECTORS.map((s) => {
         const S = t.pages.sectors.items[s];
-        return `<a class="app" href="${href('sector', { sector: s })}"><span class="app__img">${imgTag(ctx, SECTOR_IMG[s], { alt: '', sizes: '76px', max: 320 })}</span><span><strong>${esc(S.title)}</strong><span>${esc(S.short)}</span></span>${icon('right')}</a>`;
+        return `<a class="app" href="${href('sector', { sector: s })}"><span class="app__img">${imgTag(ctx, SECTOR_IMG[s], { alt: '', sizes: '76px', max: 320, cover: 76 / 56 })}</span><span><strong>${esc(S.title)}</strong><span>${esc(S.short)}</span></span>${icon('right')}</a>`;
       }).join('')}
     </div>
   </div>
@@ -198,33 +313,25 @@ ${introOverlay(ctx)}
     </div>
     <div class="certs certs--row">${t.pages.quality.certs.slice(0, 6).map(([n, d, key]) => {
       const doc = data.docs.find((x) => x.file === CERT_FILES[key]);
-      return `<a class="cert" href="${doc ? ctx.docHref(doc) : href('quality')}"${doc ? ' target="_blank" rel="noopener"' : ''}><b>${esc(n)}</b><span>${esc(d)}</span>${doc ? icon('download', 'width="16" height="16"') : ''}</a>`;
+      return `<a class="cert" ${doc ? ctx.docAttrs(doc) : `href="${href('quality')}"`}><b>${esc(n)}</b><span>${esc(d)}</span>${doc ? icon(ctx.docHref(doc) ? 'download' : 'mail', 'width="16" height="16"') : ''}</a>`;
     }).join('')}</div>
   </div>
 </section>
 
-<section class="section">
+${heritageSection(ctx)}
+
+<section class="section section--porcelain">
   <div class="wrap">
     ${sectionHead(H.newsTitle, H.newsLead, `<a class="btn btn--ghost" href="${href('news')}">${esc(t.ui.allNews)}</a>`, { reveal: true })}
     <div class="news-grid">${news.map((n) => newsCard(ctx, n, { reveal: true })).join('')}</div>
   </div>
 </section>
 
-<section class="section section--porcelain">
+<section class="section career-sec">
   <div class="wrap split split--even">
-    <div class="stack" style="--s:1.1rem" data-reveal="head">
-      <h2>${esc(H.worldTitle)}</h2>
-      <p class="lead">${esc(H.worldLead)}</p>
-      <div class="kfacts" data-reveal="facts">${H.facts.slice(0, 3).map(([a, b]) => `<div><strong data-count>${esc(a)}</strong><span>${esc(b)}</span></div>`).join('')}</div>
-      <div class="cluster"><a class="btn" href="${href('locations')}">${esc(H.worldCta1)}</a><a class="btn btn--ghost" href="${ctx.hrefA('contact', {}, 'karte')}">${esc(H.worldCta2)}</a></div>
+    <div class="career-mosaic" data-reveal="img">
+      ${['mimg/stellenangebote_intro_slider_2_Produktion.webp', 'mimg/stellenangebote_intro_slider_5_Logistik.webp', 'mimg/iStock-1146844837-2048x1366.webp'].filter((k) => ctx.img[k]).map((k, i) => `<span class="cm cm--${i}">${imgTag(ctx, k, { alt: '', sizes: i ? '(max-width: 900px) 50vw, 25vw' : '(max-width: 900px) 100vw, 50vw', max: i ? 960 : 1800 })}</span>`).join('')}
     </div>
-    ${worldTeaser(ctx)}
-  </div>
-</section>
-
-<section class="section">
-  <div class="wrap split split--even">
-    <div class="media-cover" data-reveal="img">${imgTag(ctx, 'mimg/stellenangebote_intro_slider_2_Produktion.webp', { alt: '', sizes: '(max-width: 900px) 100vw, 50vw', max: 1200 })}</div>
     <div class="stack" style="--s:1.1rem" data-reveal="head">
       <h2>${esc(H.careerTitle)}</h2>
       <p class="lead">${esc(H.careerLead)}</p>
@@ -248,10 +355,37 @@ export function newsCard(ctx, n, { reveal = false } = {}) {
   const text = htmlText(v.html);
   const url = ctx.href('article', { slug: ctx.newsSlug(n) });
   const img = n.image || n.images?.[0];
+  // kleine Altbilder (z. B. 212 × 300) nicht strecken: eingepasst vor unscharfem Hintergrund
+  const small = !!(img && ctx.img[img] && ctx.img[img].w < 600);
   return `<a class="card" href="${url}">
-  <div class="card__img"${reveal ? ' data-reveal="img"' : ''}>${img && ctx.img[img] ? imgTag(ctx, img, { alt: '', sizes: '(max-width: 560px) 100vw, (max-width: 900px) 50vw, 33vw', max: 960 }) : `<span class="card__ph"><svg viewBox="0 0 80 40" width="80" height="40" aria-hidden="true"><path d="M40 2 78 20 40 38 2 20Z" fill="none" stroke="currentColor" stroke-width="2"/></svg><span>${esc(t.lbl.newsCat[n.cat] || '')}</span></span>`}</div>
+  <div class="card__img${small ? ' card__img--small' : ''}"${small ? ` style="--bgimg:url(${ctx.imgUrl(img, 320)})"` : ''}${reveal ? ' data-reveal="img"' : ''}>${img && ctx.img[img] ? imgTag(ctx, img, { alt: '', sizes: small ? `${ctx.img[img].w}px` : '(max-width: 560px) 100vw, (max-width: 900px) 50vw, 33vw', max: 960 }) : `<span class="card__ph"><svg viewBox="0 0 80 40" width="80" height="40" aria-hidden="true"><path d="M40 2 78 20 40 38 2 20Z" fill="none" stroke="currentColor" stroke-width="2"/></svg><span>${esc(t.lbl.newsCat[n.cat] || '')}</span></span>`}</div>
   <div class="card__meta"><time datetime="${n.date}">${esc(fmtDate(n.date, lang))}</time><span>${esc(t.lbl.newsCat[n.cat] || '')}</span>${other ? `<span class="card__lang" title="${esc(t.ui[vl] || vl)}">${esc(vl.toUpperCase())}</span>` : ''}</div>
   <h3${other ? ` lang="${vl}"` : ''}>${esc(v.title)}</h3>
   ${text ? `<p${other ? ` lang="${vl}"` : ''}>${esc(shorten(text, 150))}</p>` : ''}
 </a>`;
+}
+
+// Live-Spezifikations-Check (Vorschau): Ergebnis für den Beispieltext schon im HTML, Aktualisierung im Browser
+function homeSpec(ctx) {
+  const { t, href, lang } = ctx;
+  const X = t.x, Hx = X.home, A = X.assist;
+  const p = parsePosition(Hx.sample);
+  const best = matchProducts(p.req, ctx.data.products, null, { limit: 3 }).best;
+  return `<section class="section" id="spezifikation">
+  <div class="wrap hs" data-home-spec>
+    <div class="hs__copy" data-reveal="head">
+      <h2>${esc(Hx.title)}</h2>
+      <p class="lead">${esc(Hx.lead)}</p>
+      <ul class="hs__points">${Hx.points.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>
+      <div class="cluster"><a class="btn btn--red" href="${href('assistant')}" data-hs-go>${esc(Hx.cta)}</a><a class="btn btn--ghost" href="${href('calculators')}">${esc(Hx.calc)}</a><a class="link" href="${href('tools')}">${esc(Hx.tools)}</a></div>
+    </div>
+    <div class="hs__panel">
+      <label for="hs-text">${esc(Hx.label)}</label>
+      <textarea class="textarea" id="hs-text" data-hs-text spellcheck="false" autocomplete="off" rows="3">${esc(Hx.sample)}</textarea>
+      <p class="hs__marked" data-hs-marked aria-hidden="true">${markedText(Hx.sample, p.marks, A)}</p>
+      <div class="scp__req" data-hs-req><span class="scp__lbl">${esc(Hx.result)}</span>${reqChipsHtml(p.req, t, A, lang)}</div>
+      <div class="hs__res" data-hs-res aria-live="polite">${homeHitsHtml(ctx, best, X)}</div>
+    </div>
+  </div>
+</section>`;
 }

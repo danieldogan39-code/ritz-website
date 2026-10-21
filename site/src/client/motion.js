@@ -52,12 +52,19 @@ function runCounts(el) {
   }
 }
 
+// Zählwerke erst nach dem Intro starten (sonst laufen sie unsichtbar hinter dem Vorhang ab)
+function afterIntro(fn) {
+  if (d.dataset.intro !== 'play') { fn(); return; }
+  const mo = new MutationObserver(() => { if (d.dataset.intro !== 'play') { mo.disconnect(); fn(); } });
+  mo.observe(d, { attributes: true, attributeFilter: ['data-intro'] });
+}
+
 function reveal(el, i) {
   const kind = el.dataset.reveal;
   if (kind === 'img') el.style.setProperty('--rv-i', i);
   if (kind === 'facts') [...el.children].forEach((c, k) => c.style.setProperty('--rv-i', k));
   el.classList.add('is-in');
-  if (kind === 'facts') runCounts(el);
+  if (kind === 'facts') afterIntro(() => runCounts(el));
 }
 
 export function initMotion(root = document) {
@@ -82,4 +89,53 @@ export function initMotion(root = document) {
     }
   }, { rootMargin: '0px 0px -8% 0px', threshold: 0.15 });
   for (const el of els) io.observe(el);
+}
+
+// Bühne der Startseite: Bildwechsel alle 7 s (Überblendung), anhalten per Knopf, bei verborgenem Tab, außerhalb
+// des Sichtbereichs und während des Intros. Bei reduzierter Bewegung kein automatischer Wechsel.
+const SLIDE_MS = 7000;
+export function initHero2(root = document) {
+  const h = root.querySelector('[data-hero2]');
+  if (!h || h.__h2) return;
+  h.__h2 = true;
+  const slides = [...h.querySelectorAll('[data-slide]')];
+  if (slides.length < 2) return;
+  h.style.setProperty('--slide-ms', `${SLIDE_MS}ms`);
+  const dots = [...h.querySelectorAll('[data-goto]')];
+  const btn = h.querySelector('[data-hero2-pause]');
+  let i = 0, timer = 0, visible = true, paused = reduced();
+  const warm = (k) => { const img = slides[k % slides.length].querySelector('img'); if (img) img.loading = 'eager'; };
+  const setPaused = (v) => {
+    paused = v;
+    h.classList.toggle('is-paused', v);
+    if (btn) { btn.setAttribute('aria-pressed', String(v)); btn.setAttribute('aria-label', v ? btn.dataset.lPlay : btn.dataset.lPause); }
+  };
+  const show = (k) => {
+    k = (k + slides.length) % slides.length;
+    if (k === i) return;
+    warm(k);
+    slides[i].classList.remove('is-on');
+    slides[k].classList.add('is-on');
+    dots.forEach((dt, n) => dt.setAttribute('aria-current', String(n === k)));
+    // Fortschrittsbalken neu starten
+    const bar = dots[k]?.querySelector('i');
+    if (bar) { bar.style.display = 'none'; void bar.offsetWidth; bar.style.display = ''; }
+    i = k;
+    warm(k + 1);
+  };
+  const tick = () => {
+    clearTimeout(timer);
+    if (!h.isConnected) { document.removeEventListener('visibilitychange', tick); return; }
+    if (paused || !visible || document.hidden) return;
+    if (d.dataset.intro === 'play') { timer = setTimeout(tick, 400); return; }
+    timer = setTimeout(() => { show(i + 1); tick(); }, SLIDE_MS);
+  };
+  dots.forEach((dt) => dt.addEventListener('click', () => { show(+dt.dataset.goto); tick(); }));
+  btn?.addEventListener('click', () => { setPaused(!paused); tick(); });
+  document.addEventListener('visibilitychange', tick);
+  if ('IntersectionObserver' in window) new IntersectionObserver(([e]) => { visible = e.isIntersecting; tick(); }, { threshold: 0.25 }).observe(h);
+  setPaused(paused);
+  // zweites Bild vorladen, sobald die Seite steht
+  if ('requestIdleCallback' in window) requestIdleCallback(() => warm(1)); else setTimeout(() => warm(1), 1500);
+  tick();
 }

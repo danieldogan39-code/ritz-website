@@ -1,5 +1,8 @@
 // Magyar – felületi szövegek, címkék és tartalmak
+import X from './x/hu.js';
+
 export default {
+  x: X,
   meta: {
     lang: 'hu', siteName: 'RITZ Instrument Transformers', claim: 'Empowering Our Electrical Future',
     defaultDesc: 'A RITZ 0,72 és 550 kV közötti áram- és feszültségváltókat, érzékelőket, áramvezető síneket és öntött gyanta alkatrészeket fejleszt és gyárt – 1945 óta, Európában, Kínában és az USA-ban működő gyárakkal.',
@@ -27,6 +30,7 @@ export default {
     mapSkip: 'Térkép átugrása', listView: 'Lista', mapView: 'Térkép',
   },
   nav: {
+    tools: 'Eszközök', megaToolsText: 'Specifikációk ellenőrzése, mérőváltók méretezése, ajánlatkérések előkészítése.',
     products: 'Termékek', finder: 'Termékkereső', sectors: 'Alkalmazások', downloads: 'Letöltések', company: 'Vállalat',
     career: 'Karrier', news: 'Hírek', contact: 'Kapcsolat', about: 'A RITZ-ről', locations: 'Telephelyek', quality: 'Minőség és tanúsítványok',
     responsibility: 'Felelősségvállalás', references: 'Referenciák', jobs: 'Állásajánlatok', training: 'Szakképzés', internships: 'Gyakorlatok és szakdolgozatok',
@@ -43,6 +47,7 @@ export default {
     privacyNote: 'Ez a weboldal nem használ sütiket, és nem végez nyomon követést.',
   },
   lbl: {
+    dim: { box: 'Külső méretek Sz / M / Mé', height: 'Magasság', inner: 'Belső átmérő', win: 'Ablaknyílás', bar: 'Gyűjtősínek', cable: 'Kábel legfeljebb', din: 'DIN-sín' },
     area: {
       niederspannung: 'Kisfeszültség', mittelspannung: 'Középfeszültség', hochspannung: 'Nagyfeszültség', 'elektronik-sensoren': 'Elektronika és érzékelők',
       'stromschienen-sis': 'SIS áramvezető sínek', 'giessharzteile-duromer': 'DUROMER öntött gyanta alkatrészek',
@@ -181,6 +186,7 @@ export default {
     umFrom: 'min.', umTo: 'max.', iprFrom: 'min.', iprTo: 'max.',
   },
   product: {
+    pv: { tag: 'Vázlatrajz', plate: 'Adattábla', note: 'Sematikus ábrázolás, nem méretarányos. Méretek mm-ben az adatlap szerint.', noteNone: 'A kivitel sematikus ábrázolása, nem méretarányos.', ask: 'Méretrajz kérése', askMsg: 'Kérem, küldjenek méretrajzot a következő termékhez: {code}.' },
     overview: 'Áttekintés', specs: 'Műszaki adatok', configurator: 'Konfigurátor', downloads: 'Letöltések', related: 'Hasonló termékek', features: 'Jellemzők',
     keySpecs: 'Főbb adatok', noConfig: 'Ezt a terméket projektenként tervezzük meg. Írja le igényeit – ajánlattal jelentkezünk.',
     cfgIntro: 'Válassza ki a kivitelt. A függő opciók akkor jelennek meg, amikor relevánssá válnak. A kötelező mezőket jelöltük.',
@@ -215,6 +221,7 @@ export default {
     shortcut: 'Keresés megnyitása', allResults: 'Összes találat megjelenítése',
   },
   downloads: {
+    req: { doc: 'Igénylés', datasheet: 'Adatlap igénylése', onRequest: 'Kérésre', msg: 'Kérem, küldjék el a következő dokumentumot: „{title}” ({file}).', note: 'A termék dokumentációját kérésre szívesen elküldjük.', all: 'Összes dokumentum igénylése', allMsg: 'Kérem, küldjék el a(z) {code} dokumentációját:' },
     title: 'Letöltések', lead: 'Katalógusok, adatlapok, méretrajzok, tanúsítványok és feltételek egy helyen – téma, termékterület és nyelv szerint szűrhetően.',
     searchPh: 'Cím, típuskód vagy fájlnév', type: 'Dokumentumtípus', area: 'Termékterület', language: 'Nyelv', count: 'dokumentum',
     note: 'Minden dokumentum a RITZ Instrument Transformers GmbH tulajdona, és kizárólag tájékoztatási célt szolgál.',
@@ -234,6 +241,11 @@ export default {
   forms: { required: 'Kötelező mező', optional: 'nem kötelező', submitError: 'Kérjük, ellenőrizze a megjelölt mezőket.' },
   pages: {
     home: {
+      hero2: { cta1: 'Termékek felfedezése', cta2: 'Ajánlatkérés küldése', slides: 'Képek gyárainkból', pause: 'Képváltás szüneteltetése', play: 'Képváltás folytatása', slide: '{n}. kép / {total}' },
+      stats: { founded: 'alapítva Hamburgban', staff: 'munkatárs', plants: 'gyár {n} országban', range: 'feszültségtartomány', reps: 'ország képviselettel' },
+      helpTitle: 'Miben segíthetünk?',
+      plants: { title: '{n} gyárban gyártunk világszerte', lead: 'A RITZ Hamburgból irányít egy több mint {staff} munkatársat foglalkoztató csoportot. Minden gyárnak megvan a maga specialitása – a kisfeszültségű mérőtranszformátoroktól a nagyfeszültségűekig.', staff: '{n} munkatárs', cta: 'Összes telephely', hq: 'Központ', plant: 'Gyár' },
+      heritage: { title: '1945 óta növekszünk', lead: 'A hamburgi alapítástól az új amerikai nagyfeszültségű gyárig: nyolc évtized mérőtranszformátor-gyártás.', cta: 'Cégtörténet' },
       title: 'Mérőváltók, érzékelők és áramvezető sínek 1945 óta',
       h1: 'Mérhetővé tesszük az energiát.',
       lead: 'Áram- és feszültségváltók, érzékelők, áramvezető sínek és öntött gyanta alkatrészek 0,72 és 550 kV között – fejlesztés és gyártás Európában, Kínában és az USA-ban.',

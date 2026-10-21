@@ -1,5 +1,8 @@
 // Español – textos de interfaz, etiquetas y contenidos
+import X from './x/es.js';
+
 export default {
+  x: X,
   meta: {
     lang: 'es', siteName: 'RITZ Instrument Transformers', claim: 'Empowering Our Electrical Future',
     defaultDesc: 'RITZ desarrolla y fabrica transformadores de corriente y de tensión, sensores, barras y piezas de resina colada de 0,72 a 550 kV – desde 1945, con plantas en Europa, China y Estados Unidos.',
@@ -27,6 +30,7 @@ export default {
     mapSkip: 'Saltar el mapa', listView: 'Lista', mapView: 'Mapa',
   },
   nav: {
+    tools: 'Herramientas', megaToolsText: 'Analizar especificaciones, dimensionar transformadores, preparar solicitudes.',
     products: 'Productos', finder: 'Buscador de productos', sectors: 'Aplicaciones', downloads: 'Descargas', company: 'Empresa',
     career: 'Empleo', news: 'Noticias', contact: 'Contacto', about: 'Sobre RITZ', locations: 'Sedes', quality: 'Calidad y certificados',
     responsibility: 'Responsabilidad', references: 'Referencias', jobs: 'Ofertas de empleo', training: 'Formación profesional', internships: 'Prácticas y tesis',
@@ -43,6 +47,7 @@ export default {
     privacyNote: 'Este sitio web no utiliza cookies ni herramientas de seguimiento.',
   },
   lbl: {
+    dim: { box: 'Dimensiones An / Al / P', height: 'Altura', inner: 'Diámetro interior', win: 'Ventana', bar: 'Barras', cable: 'Cable hasta', din: 'Carril DIN' },
     area: {
       niederspannung: 'Baja tensión', mittelspannung: 'Media tensión', hochspannung: 'Alta tensión', 'elektronik-sensoren': 'Electrónica y sensores',
       'stromschienen-sis': 'Barras SIS', 'giessharzteile-duromer': 'Piezas de resina colada DUROMER',
@@ -181,6 +186,7 @@ export default {
     umFrom: 'desde', umTo: 'hasta', iprFrom: 'desde', iprTo: 'hasta',
   },
   product: {
+    pv: { tag: 'Esquema', plate: 'Placa de características', note: 'Representación esquemática, no a escala. Dimensiones en mm según la hoja de datos.', noteNone: 'Representación esquemática del diseño, no a escala.', ask: 'Solicitar plano acotado', askMsg: 'Envíenme, por favor, un plano acotado de {code}.' },
     overview: 'Resumen', specs: 'Datos técnicos', configurator: 'Configurador', downloads: 'Descargas', related: 'Productos similares', features: 'Características',
     keySpecs: 'Datos principales', noConfig: 'Este producto se diseña específicamente para cada proyecto. Describa sus requisitos y le enviaremos una oferta.',
     cfgIntro: 'Elija la versión. Las opciones dependientes aparecen en cuanto son relevantes. Los campos obligatorios están marcados.',
@@ -215,6 +221,7 @@ export default {
     shortcut: 'Abrir búsqueda', allResults: 'Mostrar todos los resultados',
   },
   downloads: {
+    req: { doc: 'Solicitar', datasheet: 'Solicitar hoja de datos', onRequest: 'Bajo petición', msg: 'Envíenme, por favor, el documento «{title}» ({file}).', note: 'Le enviamos con gusto la documentación de este producto bajo petición.', all: 'Solicitar toda la documentación', allMsg: 'Envíenme, por favor, la documentación de {code}:' },
     title: 'Descargas', lead: 'Catálogos, fichas de datos, planos dimensionales, certificados y condiciones – en un solo lugar, filtrables por tema, gama de productos e idioma.',
     searchPh: 'Título, código de tipo o nombre de archivo', type: 'Tipo de documento', area: 'Gama de productos', language: 'Idioma', count: 'documentos',
     note: 'Todos los documentos son propiedad de RITZ Instrument Transformers GmbH y se facilitan únicamente con fines informativos.',
@@ -234,6 +241,11 @@ export default {
   forms: { required: 'Obligatorio', optional: 'opcional', submitError: 'Revise los campos marcados.' },
   pages: {
     home: {
+      hero2: { cta1: 'Descubrir productos', cta2: 'Enviar una consulta', slides: 'Imágenes de nuestras plantas', pause: 'Pausar el pase de imágenes', play: 'Reanudar el pase de imágenes', slide: 'Imagen {n} de {total}' },
+      stats: { founded: 'fundada en Hamburgo', staff: 'empleados', plants: 'plantas en {n} países', range: 'rango de tensión', reps: 'países con representación' },
+      helpTitle: '¿En qué podemos ayudarle?',
+      plants: { title: 'Fabricado en {n} plantas en todo el mundo', lead: 'Desde Hamburgo, RITZ dirige un grupo de más de {staff} empleados. Cada planta tiene su especialidad: desde transformadores de medida de baja tensión hasta alta tensión.', staff: '{n} empleados', cta: 'Todas las ubicaciones', hq: 'Sede central', plant: 'Planta' },
+      heritage: { title: 'Creciendo desde 1945', lead: 'Desde la fundación en Hamburgo hasta la nueva planta de alta tensión en EE. UU.: ocho décadas fabricando transformadores de medida.', cta: 'Historia de la empresa' },
       title: 'Transformadores de medida, sensores y barras desde 1945',
       h1: 'Hacemos medible la energía.',
       lead: 'Transformadores de corriente y de tensión, sensores, barras y piezas de resina colada de 0,72 a 550 kV – desarrollados y fabricados en Europa, China y Estados Unidos.',

@@ -15,6 +15,8 @@ import { header, drawer, footer, searchOverlay } from './src/views/layout.js';
 import { descriptor } from './src/lib/product.js';
 import { esc } from './src/lib/util.js';
 import { locAddress } from './src/lib/geo.js';
+import { classifyOptions, markMulti } from './src/lib/roles.js';
+import { readDims } from './src/lib/dims.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..'); // Projektordner (raw/, site/, tools/)
 const SRC = 'src';
@@ -22,6 +24,8 @@ const DIST = process.env.DIST || 'dist';
 const ART = process.env.ART || 'artifact';
 // Nach der Dokumentenmigration: DOCBASE=/dokumente/ setzt alle Dokumentlinks auf den eigenen Server
 const DOCBASE = process.env.DOCBASE || null;
+// Vorschau (Artifact): Dokumente liegen auf der Entwurfsseite
+const SPA_DOCBASE = process.env.SPA_DOCBASE || 'https://ritz.entwurf.medialyte.de/dokumente/';
 // SITE: Adresse für canonical, hreflang, og: und Sitemap. DRAFT=1: Entwurfsfassung (z. B. GitHub Pages) – für
 // Suchmaschinen gesperrt, Formulare im Vorschaumodus (nichts wird versendet), Startadresse zeigt die deutsche
 // Startseite direkt (keine Weiterleitung), kein PHP, keine Projektunterlagen.
@@ -58,6 +62,38 @@ const oldurls = rd(`${B}/oldurls.json`);
 const contacts = rd(`${SRC}/data/contacts.json`);
 const world = rd(`${SRC}/assets/worldmap.json`);
 const docsById = Object.fromEntries(docs.map((d) => [d.id, d]));
+// Dokumente der neuen Seite: liegen sie im Dokumentenbestand (raw/docs/…), werden sie unter /dokumente/ veröffentlicht.
+// DOCBASE gesetzt (Server nach der Migration): alle Dokumente gelten als vorhanden. Fehlende Dokumente werden angefordert.
+const DOCS_DIR = `${ROOT}/raw/docs`;
+const docRel = (d) => d.path.replace(/^\/dokumente\//, '');
+for (const d of docs) d.local = DOCBASE ? true : fs.existsSync(path.join(DOCS_DIR, docRel(d)));
+// Beitragstexte: Verweise auf die alten Websites in Verweise der neuen Seite übersetzen
+// (Dokumente → data-doc, Seiten → data-route, Beiträge → data-news; unbekannte Dateien bleiben Text)
+{
+  const docByUrl = new Map(docs.map((d) => [d.url.replace(/^http:/, 'https:').replace('://www.ritz-international', '://ritz-international'), d]));
+  const OLD = /<a\b([^>]*?)href="(https?:\/\/(?:www\.)?(?:ritz-international\.com|produkte\.ritz-international\.com|ritzusa\.com)[^"]*)"([^>]*)>([\s\S]*?)<\/a>/g;
+  let nDoc = 0, nRoute = 0, nText = 0;
+  for (const n of news) for (const v of Object.values(n.v)) {
+    if (!v.html) continue;
+    // Dokumentmarken ohne alte Adresse (die Seite setzt den Link beim Rendern)
+    v.html = v.html.replace(/<a data-doc="([^"]+)" href="[^"]*">/g, '<a data-doc="$1" href="">');
+    v.html = v.html.replace(OLD, (m, a1, href, a2, inner) => {
+      if (/data-doc=/.test(a1 + a2)) return m;
+      const key = href.replace(/^http:/, 'https:').replace('://www.ritz-international', '://ritz-international');
+      const doc = docByUrl.get(key);
+      if (doc) { nDoc++; return `<a data-doc="${doc.id}" href="">${inner}</a>`; }
+      if (/\/wp-content\/|\/media\/|\.(pdf|zip|jpe?g|png|docx?|xlsx?)$/i.test(href)) { nText++; return inner; }
+      if (/ritzusa\.com/.test(href)) return m;
+      let r; try { r = oldRoute(href); } catch (e) { nText++; return inner; }
+      nRoute++;
+      if (r.news) return `<a data-route="article" data-news="${r.news.id}">${inner}</a>`;
+      return `<a data-route="${r.id}"${Object.keys(r.p).length ? ` data-p="${esc(JSON.stringify(r.p))}"` : ''}${r.anchor ? ` data-anchor="${r.anchor}"` : ''}>${inner}</a>`;
+    });
+  }
+  log('Beitragstexte: Verweise umgestellt –', nDoc, 'Dokumente,', nRoute, 'Seiten,', nText, 'als Text');
+}
+// Maße aus den Datenblatt-Texten (für Schemazeichnungen und Datentabelle)
+for (const p of products) { const dm = readDims(p.desc); if (dm) p.dm = dm; }
 const data = { products, docs, docsById, news, jobs, contacts, worldmeta: { W: world.W, H: world.H, scale: world.scale, translate: world.translate } };
 
 // Wörterbücher
@@ -140,7 +176,7 @@ function worldLand() {
 function allRoutes(lang) {
   const R = [];
   const add = (id, p = {}, extra = {}) => R.push({ id, p, ...extra });
-  for (const id of ['home', 'products', 'finder', 'compare', 'inquiry', 'sectors', 'company', 'locations', 'quality', 'responsibility', 'references', 'downloads', 'contact', 'career', 'training', 'internships', 'news', 'imprint', 'privacy', 'search']) add(id);
+  for (const id of ['home', 'products', 'finder', 'compare', 'inquiry', 'sectors', 'company', 'locations', 'quality', 'responsibility', 'references', 'downloads', 'contact', 'career', 'training', 'internships', 'news', 'imprint', 'privacy', 'search', 'tools', 'assistant', 'calculators']) add(id);
   for (const a of AREAS) add('area', { area: a });
   for (const s of SECTORS) add('sector', { sector: s });
   for (const p of products) add('product', { area: p.area, slug: p.id }, { product: p });
@@ -245,11 +281,14 @@ function minify(html) {
 }
 
 // ---------------- Client-Daten ----------------
+// Kenndaten ohne Verweise auf die Altseiten (z. B. Katalog-Adresse in specs.datasheet)
+const cleanSpecs = (sp) => Object.fromEntries(Object.entries(sp || {}).filter(([, v]) => !(typeof v === 'string' && /^https?:\/\//.test(v))));
 function indexEntry(p) {
   const img = (p.images || []).find((k) => manifest[k]);
   const e = { id: p.id, code: p.code, area: p.area, kind: p.kind, dk: p.dk, install: p.install, form: p.form, apps: p.apps, um: p.um, ipr: p.ipr, isr: p.isr, upr: p.upr, usr: p.usr,
     classes: p.classes, ith: p.ith, freq: p.freq, std: p.std, weeks: p.weeks, burden: p.burden, made: p.made, images: img ? [img] : [], catalog: p.catalog || undefined, isNew: p.isNew || undefined,
-    aliases: p.aliases?.length ? p.aliases : undefined, specs: Object.keys(p.specs || {}).length ? p.specs : undefined, cfg: !p.catalog && (p.options?.de || []).length ? 1 : undefined };
+    aliases: p.aliases?.length ? p.aliases : undefined, specs: Object.keys(cleanSpecs(p.specs)).length ? cleanSpecs(p.specs) : undefined, cfg: !p.catalog && (p.options?.de || []).length ? 1 : undefined,
+    dm: !img && p.dm ? p.dm : undefined };
   if (p.catalog) e.name = p.name;
   if (img) { const m = manifest[img]; e.im = [m.n, m.w, m.h, m.ws.filter((x) => x <= 640), ...(m.bg ? [m.bg] : [])]; }
   for (const k of Object.keys(e)) if (e[k] === null || e[k] === undefined || (Array.isArray(e[k]) && !e[k].length && !['images', 'um', 'install', 'form', 'apps'].includes(k))) delete e[k];
@@ -258,17 +297,34 @@ function indexEntry(p) {
 function docsCompact() {
   return docs.map((d) => {
     const codes = d.products.map((id) => products.find((p) => p.id === id)?.code).filter(Boolean);
-    const o = { id: d.id, t: d.title, u: d.url, pa: d.path, f: d.file, ty: d.type, l: d.lang, s: d.size || undefined, a: d.areas.length ? d.areas : undefined, p: d.products.length ? d.products : undefined, c: codes.length ? codes.join(' ') : undefined, e: d.ext !== 'pdf' ? d.ext : undefined };
+    const o = { id: d.id, t: d.title, pa: d.path, lo: d.local ? 1 : undefined, f: d.file, ty: d.type, l: d.lang, s: d.size || undefined, a: d.areas.length ? d.areas : undefined, p: d.products.length ? d.products : undefined, c: codes.length ? codes.join(' ') : undefined, e: d.ext !== 'pdf' ? d.ext : undefined };
     return JSON.parse(JSON.stringify(o));
   });
 }
+// Konfiguratordaten aller Produkte je Datensprache (für Spezifikations-Assistent und Projektmappe):
+// Optionen, Abhängigkeiten, Rollen (aus den deutschen Titeln) und gelesene Werte
+const cfgCache = {};
+function cfgData(dl) {
+  if (cfgCache[dl]) return cfgCache[dl];
+  const out = {};
+  for (const p of products) {
+    if (p.catalog || !p.options) continue;
+    const opts = p.options[dl] || p.options.de;
+    if (!opts?.length) continue;
+    const { r, x } = classifyOptions(p.options.de || opts);
+    out[p.id] = { o: markMulti(opts, r).map((o) => ({ id: o.id, t: o.t, type: o.type, ...(o.req ? { req: 1 } : {}), ...(o.m ? { m: 1 } : {}), v: o.v })), d: p.deps || {}, r, x };
+  }
+  return (cfgCache[dl] = JSON.stringify(out));
+}
 function clientT(t) {
-  const { pages, ...rest } = t;
+  const { pages, x, ...rest } = t;
   return { ...rest, axis: { matches: pages.home.axisMatches, open: pages.home.axisOpen } };
 }
 function fullDetail(area) {
   const out = {};
-  for (const p of products.filter((x) => x.area === area)) out[p.id] = { desc: p.desc, feats: p.feats, options: p.options, deps: p.deps, docs: p.docs, family: p.family, news: p.news, railText: p.railText, images: p.images.filter((k) => manifest[k]), name: p.name, specs: p.specs };
+  for (const p of products.filter((x) => x.area === area)) {
+    out[p.id] = { desc: p.desc, feats: p.feats, options: p.options, deps: p.deps, docs: p.docs, family: p.family ? cleanSpecs(p.family) : p.family, news: p.news, railText: p.railText, images: p.images.filter((k) => manifest[k]), name: p.name, specs: cleanSpecs(p.specs), dm: p.dm };
+  }
   return out;
 }
 function textOf(html) {
@@ -333,9 +389,22 @@ async function buildStatic(cacheDir) {
   wr(`${D}/docs.json`, JSON.stringify(docsCompact()));
   wr(`${D}/contacts.json`, JSON.stringify(contacts));
   wr(`${D}/world.json`, JSON.stringify(world));
-  for (const l of LANGS) { wr(`${D}/t-${l}.json`, JSON.stringify(clientT(dicts[l]))); wr(`${D}/pages-${l}.json`, JSON.stringify(searchIdx[l])); }
+  for (const l of LANGS) { wr(`${D}/t-${l}.json`, JSON.stringify(clientT(dicts[l]))); wr(`${D}/x-${l}.json`, JSON.stringify(dicts[l].x)); wr(`${D}/pages-${l}.json`, JSON.stringify(searchIdx[l])); }
+  for (const dl of ['de', 'en']) wr(`${D}/cfg-${dl}.json`, cfgData(dl));
   // Assets
   await bundleAssets(DIST, 'static');
+  // Dokumente aus dem Bestand unter /dokumente/ veröffentlichen (feste Verknüpfung statt Kopie, wo möglich)
+  if (!DOCBASE) {
+    let nd = 0, bytes = 0;
+    for (const d of docs) {
+      if (!d.local) continue;
+      const src = path.join(DOCS_DIR, docRel(d)), dst = `${DIST}/dokumente/${docRel(d)}`;
+      fs.mkdirSync(path.dirname(dst), { recursive: true });
+      try { fs.linkSync(src, dst); } catch (e) { fs.copyFileSync(src, dst); }
+      nd++; bytes += fs.statSync(src).size;
+    }
+    log('Dokumente auf der Seite:', nd, 'von', docs.length, `(${(bytes / 1e6).toFixed(0)} MB), übrige über Anforderung`);
+  }
   // Sitemap, robots, Weiterleitungen, API
   if (!DRAFT) wr(`${DIST}/sitemap.xml`, `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${sitemap.map((s) => `<url><loc>${SITE}${s.url}</loc><lastmod>${s.lastmod}</lastmod>${s.alternates.map(([l, u]) => `<xhtml:link rel="alternate" hreflang="${l}" href="${SITE}${u}"/>`).join('')}</url>`).join('\n')}\n</urlset>\n`);
   wr(`${DIST}/robots.txt`, DRAFT ? 'User-agent: *\nDisallow: /\n' : `User-agent: *\nAllow: /\nDisallow: /api/\nDisallow: /*/suche/\nDisallow: /*/search/\n\nSitemap: ${SITE}/sitemap.xml\n`);
@@ -346,7 +415,7 @@ async function buildStatic(cacheDir) {
 
 // ---------------- Assets (CSS, JS, Fonts, Icons) ----------------
 async function bundleAssets(out, mode) {
-  let css = fs.readFileSync(`${SRC}/styles/main.css`, 'utf8') + '\n' + (fs.existsSync(`${SRC}/styles/extra.css`) ? fs.readFileSync(`${SRC}/styles/extra.css`, 'utf8') : '');
+  let css = ['main', 'extra', 'tools', 'visual', 'home'].map((n) => `${SRC}/styles/${n}.css`).filter((f) => fs.existsSync(f)).map((f) => fs.readFileSync(f, 'utf8')).join('\n');
   if (mode === 'static') {
     css = css.replace('__FONT_LATIN__', '/assets/fonts/archivo-latin.woff2').replace('__FONT_LATIN_EXT__', '/assets/fonts/archivo-latin-ext.woff2');
     fs.mkdirSync(`${out}/assets/fonts`, { recursive: true });
@@ -355,6 +424,10 @@ async function bundleAssets(out, mode) {
     css = css.replace(/@font-face\s*{[^}]*}/g, '');
   }
   const cssMin = (await esbuild.transform(css, { loader: 'css', minify: true })).code;
+  // PDF-Leser (pdf.js, Legacy-Build) – wird nur geladen, wenn im Spezifikations-Check eine PDF geöffnet wird
+  const vend = mode === 'static' ? `${out}/assets/vendor` : `${out}/vendor`;
+  fs.mkdirSync(vend, { recursive: true });
+  for (const f of ['pdf.min.mjs', 'pdf.worker.min.mjs']) fs.copyFileSync(`node_modules/pdfjs-dist/legacy/build/${f}`, `${vend}/${f}`);
   wr(mode === 'static' ? `${out}/assets/main.css` : `${out}/app.css`, cssMin);
   if (mode === 'static') {
     await esbuild.build({ entryPoints: [`${SRC}/client/app.js`], bundle: true, splitting: true, format: 'esm', minify: true, outdir: `${out}/assets`, chunkNames: 'chunks/[name]-[hash]', target: ['es2020'], legalComments: 'none' });
@@ -371,7 +444,7 @@ async function bundleAssets(out, mode) {
     wr(`${out}/img/world-lite-dark.svg`, worldLite('#3a312d'));
     wr(`${out}/img/world-land.svg`, worldLand());
   } else {
-    await esbuild.build({ entryPoints: [`${SRC}/client/spa.js`], bundle: true, format: 'esm', minify: true, outfile: `${out}/app.js`, target: ['es2020'], legalComments: 'none' });
+    await esbuild.build({ entryPoints: { app: `${SRC}/client/spa.js` }, bundle: true, splitting: true, format: 'esm', minify: true, outdir: out, chunkNames: 'chunks/[name]-[hash]', target: ['es2020'], legalComments: 'none' });
     wr(`${out}/img/world-lite.svg`, worldLite());
     wr(`${out}/img/world-lite-dark.svg`, worldLite('#3a312d'));
     wr(`${out}/img/world-land.svg`, worldLand());
@@ -379,53 +452,61 @@ async function bundleAssets(out, mode) {
 }
 
 // ---------------- Weiterleitungen (alte URLs → neue) ----------------
-function mapOldUrl(u) {
+// Alte Adresse → Route der neuen Seite ({ lang, id, p } oder { lang, news })
+function oldRoute(u) {
   const url = new URL(u);
   const host = url.host;
-  let p = decodeURIComponent(url.pathname).replace(/\/+$/, '/') ;
+  const p = decodeURIComponent(url.pathname).replace(/\/+$/, '/');
   if (host.startsWith('produkte.')) {
     // Magento: /de/<slug>.html oder Kategorie
     const m = p.match(/^\/(de|en)\/(.+?)(\.html)?\/?$/);
     const lang = m ? m[1] : 'de';
     const prod = products.find((x) => [x.old?.de, x.old?.en].filter(Boolean).some((o) => o.replace(/\/$/, '') === u.replace(/\/$/, '')));
-    if (prod) return `/${lang}/${pathFor(lang, 'product', { area: prod.area, slug: prod.id })}/`;
-    if (/niederspannung|low-voltage/.test(p)) return `/${lang}/${pathFor(lang, 'area', { area: 'niederspannung' })}/`;
-    if (/mittelspannung|medium-voltage/.test(p)) return `/${lang}/${pathFor(lang, 'area', { area: 'mittelspannung' })}/`;
-    if (/elektronik|electronic|sensor/.test(p)) return `/${lang}/${pathFor(lang, 'area', { area: 'elektronik-sensoren' })}/`;
-    return `/${lang}/${pathFor(lang, 'finder')}/`;
+    if (prod) return { lang, id: 'product', p: { area: prod.area, slug: prod.id } };
+    if (/niederspannung|low-voltage/.test(p)) return { lang, id: 'area', p: { area: 'niederspannung' } };
+    if (/mittelspannung|medium-voltage/.test(p)) return { lang, id: 'area', p: { area: 'mittelspannung' } };
+    if (/elektronik|electronic|sensor/.test(p)) return { lang, id: 'area', p: { area: 'elektronik-sensoren' } };
+    return { lang, id: 'finder', p: {} };
   }
   const lm = p.match(/^\/(en|fr|hu|es)\//);
   const lang = lm ? lm[1] : 'de';
   const rest = lm ? p.slice(3) : p;
-  const R = (id, prm = {}) => `/${lang}/${pathFor(lang, id, prm) ? pathFor(lang, id, prm) + '/' : ''}`;
-  const tests = [
-    [/^\/?$/, () => R('home')],
-    [/hochspannung|high-voltage|haute-tension|nagyfesz|alta-tension/, () => R('area', { area: 'hochspannung' })],
-    [/mittelspannung|medium-voltage|moyenne|kozepfesz|közép|media-tension/, () => R('area', { area: 'mittelspannung' })],
-    [/niederspannung|low-voltage|basse|kisfesz|baja-tension/, () => R('area', { area: 'niederspannung' })],
-    [/stromschienen|bus-?bars|barres|sinek|barras/, () => R('area', { area: 'stromschienen-sis' })],
-    [/duromer|giessharz|cast-resin|resine|gyanta|resina/, () => R('area', { area: 'giessharzteile-duromer' })],
-    [/elektronische|electronic|electroni|elektronik|sensor/, () => R('area', { area: 'elektronik-sensoren' })],
-    [/produktfinder|product-finder/, () => R('finder')],
-    [/produkte\/?$|^\/products\/?$|produits\/?$|termekek\/?$|productos\/?$/, () => R('products')],
-    [/produktkatalog|downloads|telechargements|letoltesek|descargas/, () => R('downloads')],
-    [/qualitaetsmanagement|quality|qualite|minoseg|calidad/, () => R('quality')],
-    [/produktionsstandorte|production-sites|sites-de-production|telephely|plantas|standorte/, () => R('locations')],
-    [/verantwortung|responsibility|responsabilit|felelos/, () => R('responsibility')],
-    [/referenzen|references|referenc|referencias/, () => R('references')],
-    [/vision|unternehmen|company|entreprise|vallalat|empresa/, () => R('company')],
-    [/ausbildung|apprentice|formation|szakkepzes|formacion/, () => R('training')],
-    [/praktika|internship|stage|gyakornok|practicas/, () => R('internships')],
-    [/karriere|career|carriere|karrier|empleo|stellenangebote|jobs/, () => R('career')],
-    [/kontakt|contact|kapcsolat|contacto|ritz-kontakte|vertretungen|agencies|standorte\//, () => R('contact')],
-    [/impressum|imprint|mentions|impresszum|aviso/, () => R('imprint')],
-    [/datenschutz|privacy|confidentialite|adatvedelem|privacidad/, () => R('privacy')],
-    [/news|aktuelles|latest-news|actualites|hirek|noticias|category|tag\//, () => R('news')],
-  ];
   // News-Beiträge
-  for (const n of news) for (const [l, v] of Object.entries(n.v)) if (v.old && v.old.replace(/\/$/, '') === u.replace(/\/$/, '')) return `/${l}/${pathFor(l, 'article', { slug: newsSlugFor(n, l) })}/`;
-  for (const [re, fn] of tests) if (re.test(rest)) return fn();
-  return R('home');
+  for (const n of news) for (const [l, v] of Object.entries(n.v)) if (v.old && v.old.replace(/\/$/, '') === u.replace(/\/$/, '')) return { lang: l, news: n };
+  if (/page_id=673/.test(url.search)) return { lang, id: 'quality', p: {} };
+  if (/\/kontakt\/kontakt-2\/?$/.test(p)) return { lang, id: 'locations', p: {}, anchor: 'wirges' };
+  const tests = [
+    [/^\/?$/, 'home'],
+    [/hochspannung|high-voltage|haute-tension|nagyfesz|alta-tension/, 'area', { area: 'hochspannung' }],
+    [/mittelspannung|medium-voltage|moyenne|kozepfesz|közép|media-tension/, 'area', { area: 'mittelspannung' }],
+    [/niederspannung|low-voltage|basse|kisfesz|baja-tension/, 'area', { area: 'niederspannung' }],
+    [/stromschienen|bus-?bars|barres|sinek|barras/, 'area', { area: 'stromschienen-sis' }],
+    [/duromer|giessharz|cast-resin|resine|gyanta|resina/, 'area', { area: 'giessharzteile-duromer' }],
+    [/elektronische|electronic|electroni|elektronik|sensor/, 'area', { area: 'elektronik-sensoren' }],
+    [/produktfinder|product-finder/, 'finder'],
+    [/produkte\/?$|^\/products\/?$|produits\/?$|termekek\/?$|productos\/?$/, 'products'],
+    [/produktkatalog|downloads|telechargements|letoltesek|descargas/, 'downloads'],
+    [/qualitaetsmanagement|quality|qualite|minoseg|calidad/, 'quality'],
+    [/produktionsstandorte|production-sites|sites-de-production|telephely|plantas|standorte/, 'locations'],
+    [/verantwortung|responsibility|responsabilit|felelos/, 'responsibility'],
+    [/referenzen|references|referenc|referencias/, 'references'],
+    [/vision|unternehmen|company|entreprise|vallalat|empresa/, 'company'],
+    [/ausbildung|apprentice|formation|szakkepzes|formacion/, 'training'],
+    [/praktika|internship|stage|gyakornok|practicas/, 'internships'],
+    [/karriere|career|carriere|karrier|empleo|stellenangebote|jobs/, 'career'],
+    [/kontakt|contact|kapcsolat|contacto|ritz-kontakte|vertretungen|agencies|standorte\//, 'contact'],
+    [/impressum|imprint|mentions|impresszum|aviso/, 'imprint'],
+    [/datenschutz|privacy|confidentialite|adatvedelem|privacidad/, 'privacy'],
+    [/news|aktuelles|latest-news|actualites|hirek|noticias|category|tag\//, 'news'],
+  ];
+  for (const [re, id, prm] of tests) if (re.test(rest)) return { lang, id, p: prm || {} };
+  return { lang, id: 'home', p: {} };
+}
+function mapOldUrl(u) {
+  const r = oldRoute(u);
+  if (r.news) return `/${r.lang}/${pathFor(r.lang, 'article', { slug: newsSlugFor(r.news, r.lang) })}/`;
+  const rel = pathFor(r.lang, r.id, r.p);
+  return `/${r.lang}/${rel ? rel + '/' : ''}`;
 }
 // Dokumentenmigration: Liste, Download-Skript und Weiterleitungen für die Altpfade
 function writeDocMigration() {
@@ -592,13 +673,23 @@ foreach (['company' => 'Firma', 'name' => 'Name', 'email' => 'E-Mail', 'phone' =
 $lines[] = '';
 $lines[] = 'Nachricht:';
 $lines[] = (string)($f['message'] ?? '');
+$pj = is_array($in['project'] ?? null) ? $in['project'] : [];
+foreach (['name' => 'Projekt', 'ref' => 'Projekt-/Anfragenummer', 'due' => 'Wunschtermin'] as $k => $label) if (!empty($pj[$k])) $lines[] = $label . ': ' . $clean($pj[$k]);
 if ($items) {
-  $lines[] = ''; $lines[] = 'Anfrageliste:';
-  foreach ($items as $it) {
-    $lines[] = '- ' . intval($it['qty'] ?? 1) . ' x ' . $clean($it['code'] ?? '');
+  $lines[] = ''; $lines[] = 'Projektmappe (' . count($items) . ' Positionen):';
+  foreach ($items as $i => $it) {
+    $ref = $clean($it['ref'] ?? '');
+    $lines[] = '- ' . ($ref !== '' ? 'Pos. ' . $ref . ': ' : ($i + 1) . '. ') . intval($it['qty'] ?? 1) . ' x ' . $clean($it['code'] ?? '');
     foreach (($it['lines'] ?? []) as $l) $lines[] = '    ' . $clean($l[0] ?? '') . ': ' . $clean($l[1] ?? '');
+    if (!empty($it['special'])) $lines[] = '    Sonderwünsche: ' . $clean($it['special']);
+    if (!empty($it['note'])) $lines[] = '    Notiz: ' . $clean($it['note']);
+    if (!empty($it['orderBy'])) $lines[] = '    spätestens bestellen bis: ' . $clean($it['orderBy']);
+    if (!empty($it['src'])) $lines[] = '    Text: ' . $clean(function_exists('mb_substr') ? mb_substr((string)$it['src'], 0, 1500) : substr((string)$it['src'], 0, 1500));
   }
 }
+$link = (string)($in['link'] ?? '');
+// Link nur auf die eigene Domain (kein fremder Link in der Mail an den Vertrieb)
+if ($link !== '' && preg_match('#^https://[^\\s<>"]+$#', $link) && strlen($link) < 8000 && strcasecmp((string)parse_url($link, PHP_URL_HOST), (string)($_SERVER['HTTP_HOST'] ?? '')) === 0) { $lines[] = ''; $lines[] = 'Projektmappe öffnen (alle Konfigurationen): ' . $link; }
 $lines[] = ''; $lines[] = 'Seite: ' . $clean($in['page'] ?? '') . ' | Sprache: ' . $clean($in['lang'] ?? '');
 $subject = '=?UTF-8?B?' . base64_encode('Website-${kind === 'inquiry' ? 'Anfrage' : 'Kontakt'}: ' . $clean(($f['company'] ?? '') ?: ($f['name'] ?? ''))) . '?=';
 $headers = "From: RITZ Website <noreply@ritz-international.com>\\r\\nReply-To: " . $email . "\\r\\nContent-Type: text/plain; charset=UTF-8";
@@ -631,28 +722,32 @@ async function buildSpa(cacheDir) {
   fs.mkdirSync(`${ART}/img`, { recursive: true });
   for (const [k, m] of Object.entries(manifest)) {
     if (!used.has(m.n)) continue;
-    const w = m.ws.filter((x) => x <= 960).pop() || m.ws[0];
+    // Bühnen-, Kopf- und Bereichsbilder in voller Breite (scharf auf großen Bildschirmen), sonst bis 960 px
+    const cap = m.w >= 1200 ? 1920 : 960;
+    const w = m.ws.filter((x) => x <= cap).pop() || m.ws[0];
     fs.copyFileSync(`${cacheDir}/${m.n}-${w}.webp`, `${ART}/img/${m.n}-${w}.webp`);
     spaManifest[k] = { n: m.n, w: m.w, h: m.h, ws: [w] };
   }
   const D = `${ART}/data`;
-  const idx = products.map((p) => { const e = indexEntry(p); const k = e.images[0]; if (k && spaManifest[k]) e.im = [spaManifest[k].n, spaManifest[k].w, spaManifest[k].h, spaManifest[k].ws]; else { delete e.im; e.images = []; } return e; });
+  const idx = products.map((p) => { const e = indexEntry(p); const k = e.images[0]; if (k && spaManifest[k]) e.im = [spaManifest[k].n, spaManifest[k].w, spaManifest[k].h, spaManifest[k].ws]; else { delete e.im; e.images = []; if (p.dm) e.dm = p.dm; } return e; });
   wr(`${D}/index.json`, JSON.stringify({ products: idx }));
   wr(`${D}/docs.json`, JSON.stringify(docsCompact()));
   wr(`${D}/contacts.json`, JSON.stringify(contacts));
   wr(`${D}/world.json`, JSON.stringify(world));
-  wr(`${D}/news.json`, JSON.stringify(news));
+  wr(`${D}/news.json`, JSON.stringify(news.map((n) => ({ ...n, v: Object.fromEntries(Object.entries(n.v).map(([l, v]) => { const { old, ...rest } = v; return [l, rest]; })) }))));
   wr(`${D}/jobs.json`, JSON.stringify(jobs));
   wr(`${D}/img.json`, JSON.stringify(spaManifest));
   for (const a of AREAS) { const fd = fullDetail(a); for (const v of Object.values(fd)) v.images = v.images.filter((k) => spaManifest[k]); wr(`${D}/p-${a}.json`, JSON.stringify(fd)); }
+  for (const dl of ['de', 'en']) wr(`${D}/cfg-${dl}.json`, cfgData(dl));
   for (const l of LANGS) {
     wr(`${D}/t-${l}.json`, JSON.stringify(clientT(dicts[l])));
     wr(`${D}/tf-${l}.json`, JSON.stringify(dicts[l]));
+    wr(`${D}/x-${l}.json`, JSON.stringify(dicts[l].x));
     const pg = fs.existsSync(`${DIST}/data/pages-${l}.json`) ? fs.readFileSync(`${DIST}/data/pages-${l}.json`, 'utf8') : '[]';
     wr(`${D}/pages-${l}.json`, pg);
   }
   await bundleAssets(ART, 'spa');
-  const cfg = { mode: 'spa', base: '', dataBase: 'data/', lang: 'de', v: V };
+  const cfg = { mode: 'spa', base: '', dataBase: 'data/', lang: 'de', v: V, docBase: SPA_DOCBASE };
   // Artifact-Seite: ohne eigenes doctype/html/head/body (der Rahmen wird beim Veröffentlichen ergänzt)
   wr(`${ART}/index.html`, `<title>RITZ Instrument Transformers</title>
 <meta name="claude:viewport-fit-sides" content="cover">
