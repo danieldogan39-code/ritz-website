@@ -247,10 +247,12 @@ p { margin: 0; text-wrap: pretty; }
   display: inline-flex; align-items: center; justify-content: center; gap: .55em;
   min-height: 46px; padding: .7em 1.25em; border: 1px solid var(--bd); border-radius: 0;
   background: var(--bg); color: var(--fg); font-weight: 600; font-stretch: 96%; font-size: .975rem; line-height: 1.1;
-  text-decoration: none; cursor: pointer; white-space: nowrap;
+  text-decoration: none; cursor: pointer; white-space: nowrap; max-width: 100%;
   clip-path: polygon(0 0, calc(100% - var(--cut)) 0, 100% var(--cut), 100% 100%, 0 100%);
   transition: background-color .18s var(--ease), color .18s var(--ease), border-color .18s var(--ease), transform .18s var(--ease);
 }
+/* lange Beschriftungen (z. B. Ungarisch, Französisch) brechen auf dem Telefon um, statt die Seite zu verbreitern */
+@media (max-width: 600px) { .btn { white-space: normal; text-align: center; text-wrap: balance; } }
 .btn:hover { --bg: var(--red-hover); --bd: var(--red-hover); color: #fff; }
 .btn:active { transform: scale(.97); }
 .btn--red { --bg: var(--red); --bd: var(--red); --fg: #fff; }

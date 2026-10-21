@@ -67,5 +67,14 @@ t('Mengenzeile ist keine Positionsnummer', '3 Stück Stromwandler 400/5 A 0,5 FS
 t('Abkürzungen trennen nicht', 'Pos. 4 Stromwandler Kl. 0,5 FS5 10 VA, Übers. 300/5 A, ca. 12 kV', { n: 1, p: [{ req: { ipr: [300], cores: [{ c: '0.5', fs: 5, va: 10 }], um: 12 } }] });
 t('Word mit Tabelle und Begleittext', 'Anfrage Umspannwerk Süd – Innenraum, 50 Hz, IEC 61869\nBitte bieten Sie folgende Wandler an:\nPos\tMenge\tBeschreibung\n1\t3\tStromwandler 24 kV 300/5/5 A, 0,5 FS5 15 VA, 5P20 10 VA\n2\t3\tSpannungswandler einpolig 20000/√3 / 100/√3 / 100/3 V, 0,5 30 VA\nMit freundlichen Grüßen', {
   n: 2, p: [{ ref: '1', qty: 3, req: { install: 'indoor', freq: 50, um: 24, ipr: [300] } }, { ref: '2', qty: 3, req: { kind: 'vt', install: 'indoor' } }] });
+// Wortgrenzen neben Akzenten (JS-\b kennt nur ASCII), Menge vor dem Produktwort, weitere Bindewörter, Maße
+t('HU áttétel ist kein TT', 'Áramváltó, áttétel 400/5 A, osztály 0,5 FS5 10 VA, 6 db', { n: 1, p: [{ qty: 6, req: { kind: 'ct', ipr: [400] } }] });
+t('HU között/mégis', 'Áramváltó 100/5 A a két mező között, mégis beltéri kivitel, 0,5 5 VA', { n: 1, p: [{ req: { kind: 'ct', install: 'indoor' } }] });
+t('ÖVE und Ø', 'Stromwandler 400/5 A, Kl. 0,5, 10 VA, nach ÖVE, Ø 60 mm', { n: 1, p: [{ req: { std: ['ÖVE'], size: { d: 60 } } }] });
+t('Innen-Ø statt Außen-Ø', 'Kabelumbauwandler Außen-Ø 180 mm, Innen-Ø 120 mm, 300/1 A', { n: 1, p: [{ req: { size: { d: 120 } } }] });
+t('Menge vor dem Produktwort', 'Merci de chiffrer 12 transformateurs de courant 1500/5 A classe 0,5 10 VA ainsi que 3 pièces 400/1 A classe 1 5 VA', { n: 2, p: [{ qty: 12, req: { ipr: [1500] } }, { qty: 3, req: { ipr: [400] } }] });
+t('as well as / valamint / así como', 'Please quote 10 current transformers 800/5 A class 0.5 10 VA as well as 2 pcs 100/5 A class 1 2.5 VA', { n: 2, p: [{ qty: 10 }, { qty: 2 }] });
+t('Pos.-Nummer ist keine Menge', 'Pos. 3 Stromwandler 400/5 A, Kl. 1, 5 VA', { n: 1, p: [{ qty: 1, req: { ipr: [400] } }] });
+t('FR pour barre = Schienenwandler', 'Transformateur de courant basse tension pour barre 60x10 mm, 1000/5 A, classe 0,5, 10 VA', { n: 1, p: [{ req: { forms: ['bushing'], size: { bar: [60, 10] } } }] });
 console.log(`\n${pass} bestanden, ${fail} fehlgeschlagen`);
 process.exit(fail ? 1 : 0);

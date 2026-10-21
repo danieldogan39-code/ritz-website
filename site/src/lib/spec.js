@@ -24,13 +24,20 @@ function normalize(s) {
   return s.replace(/[   \t]/g, ' ').replace(/[–—−]/g, '-').replace(/[’‘]/g, "'").replace(/[×]/g, 'x').replace(/[≙]/g, '=');
 }
 
+// Wortgrenzen auch neben Umlauten und Akzenten: JavaScripts \b kennt nur ASCII-Buchstaben, sonst stünde
+// in „áttétel“ ein „tt“ (Spannungswandler) und in „mégis“ ein „gis“ (gasisoliert) für sich.
+const WCH = String.raw`[\p{L}\p{N}_]`;
+const UB = String.raw`(?:(?<=${WCH})(?!${WCH})|(?<!${WCH})(?=${WCH}))`;
+const U = (rx) => new RegExp(rx.source.replaceAll('\\b', UB), rx.flags.includes('u') ? rx.flags : rx.flags + 'u');
+const uAll = (o) => Object.fromEntries(Object.entries(o).map(([k, rx]) => [k, U(rx)]));
+
 // ---------- Wortlisten (5 Sprachen) ----------
-const W = {
+const W = uAll({
   ct: /stromwandler|strom-?wandler|current[- ]transformers?|\bc\.?t\.?s?\b|transformateurs? de courant|\btcs?\b|áramváltó|aramvalto|transformador(?:es)? de (?:corriente|intensidad)|\bt\.?i\.?\b|ringkern|kabelumbau|summenstromwandler|aufsteckstromwandler|durchsteckwandler|stromsensor|current sensor|rogowski/i,
   vt: /spannungswandler|spannungs-?wandler|voltage[- ]transformers?|potential[- ]transformers?|\bv\.?t\.?s?\b|\bp\.?t\.?s?\b|transformateurs? de tension|feszültségváltó|feszultsegvalto|transformador(?:es)? de tensi[oó]n|\btt\b|spannungssensor|voltage sensor|capteur de tension/i,
   combined: /kombiwandler|kombi-?wandler|combined (?:instrument )?transformer|transformateurs? combin[ée]s?|kombinált mérőváltó|transformador(?:es)? combinados?|combi[- ]sensor/i,
   sensor: /\bsensor(?:en)?\b|\blpit\b|rogowski|capteurs?\b|érzékelő|\bsensores?\b/i,
-  indoor: /innenraum|innenaufstellung|\binnen\b|indoor|int[ée]rieur|beltéri|bels[őo]téri|\binterior\b|para interior/i,
+  indoor: /innenraum|innenaufstellung|\binnen\b(?!\s*-?\s*(?:ø|durchmesser))|indoor|(?<!diam[eè]tre\s)int[ée]rieur|beltéri|bels[őo]téri|(?<!di[aá]metro\s)\binterior\b|para interior/i,
   outdoor: /freiluft|au(?:ß|ss)enaufstellung|\bau(?:ß|ss)en\b|outdoor|ext[ée]rieur|kültéri|kulteri|\bexterior\b|intemperie|para exterior/i,
   verifiable: /eichf[äa]hig|beglaubigungsf[äa]hig|geeicht|\bmid\b|\bptb\b|verrechnung|abrechnung|revenue|billing|fiscal|tarif|comptage|facturaci[oó]n|hiteles[ií]t|elszámol|konformit[äa]tsbewert/i,
   protection: /\bschutz(?:kern|zwecke|wandler|ger[äa]t)?\b|protection|protecci[oó]n|v[ée]delm|relais|relay|rel[ée]s?\b/i,
@@ -44,12 +51,12 @@ const W = {
   lab: /\blabor|laborator|prüffeld|test field|étalon/i,
   ex: /\bex-?schutz|\batex\b|explosion/i,
   aux: /hilfsspannung|eigenbedarf|auxiliary supply|alimentation auxiliaire|segédfeszültség|tensi[oó]n auxiliar/i,
-};
+});
 const FORMS = [
   ['split-core', /klappwandler|klapp-?stromwandler|aufklappbar|teilbar|split[- ]?core|ouvrant|à noyau ouvrant|bontható|n[uú]cleo (?:partido|abierto)|abatible|nachr[üu]st/i],
   ['window', /kabelumbau|ringkern|durchsteck|window[- ]type|toro[iï]da?l?|ring[- ]type|core balance|à tore|gyűrűs|kábelátfűz|toroidal|tipo ventana/i],
   ['support', /stützer|st[üu]tzerwandler|support[- ]type|post[- ]type|\bsupport\b|támszigetelő|tipo soporte/i],
-  ['bushing', /durchführung|bushing|travers[ée]e|átvezető|pasatapas|aufsteck|aufsteckbar|schienen-?(?:strom)?wandler|busbar[- ]type|for busbars?|sur barre/i],
+  ['bushing', /durchführung|bushing|travers[ée]e|átvezető|pasatapas|aufsteck|aufsteckbar|schienen-?(?:strom)?wandler|für (?:strom)?schienen?\b|busbar[- ]type|for (?:a )?busbars?|(?:sur|pour) (?:(?:le |un )?jeu de )?barres?\b|para (?:juego de )?barras?\b|gyűjtősínre|gyűjtősínes/i],
   ['block', /blockwandler|block[- ]type|\bbloc\b|blokk|tipo bloque/i],
   ['single-pole', /einpolig|single[- ]pole|unipolaire|egypólusú|unipolar/i],
   ['two-pole', /zweipolig|double[- ]pole|two[- ]pole|bipolaire|kétpólusú|bipolar/i],
@@ -60,7 +67,7 @@ const FORMS = [
   ['wound', /gewickelt|wound[- ]primary|primärwicklung|à primaire bobiné/i],
   ['three-phase', /dreiphasig|drei-?phasig|three[- ]phase|triphas[ée]|háromfázisú|trif[áa]sico/i],
   ['tube-bar', /rohrstab|tube[- ]bar/i],
-];
+].map(([k, rx]) => [k, U(rx)]);
 
 // ---------- Teilaufgaben ----------
 function addMark(marks, s, e, k) { if (e > s) marks.push({ s, e, k }); }
@@ -270,9 +277,11 @@ function findFreq(s, marks) {
   return /2\s*\/\s*3/.test(m[1]) ? 16.7 : Math.round(toNum(m[1]) * 10) / 10;
 }
 
+const RX_STD = U(/\b(IEC|EN|DIN EN|VDE)\s*6(?:1869|0044)(?:\s*-\s*(\d{1,2}))?|\bIEEE\s*C\s*57\.13(?:\.\d)?|\bANSI\s*C\s*57\.13|\bIEEE\b|\bANSI\b|\bGOST\b|ГОСТ|\bAS(?:\/NZS)?\s*6?\d{4}\b|\bÖVE\b|\bIEC\b/g);
 function findStd(s, marks) {
   const out = new Set();
-  const rx = /\b(IEC|EN|DIN EN|VDE)\s*6(?:1869|0044)(?:\s*-\s*(\d{1,2}))?|\bIEEE\s*C\s*57\.13(?:\.\d)?|\bANSI\s*C\s*57\.13|\bIEEE\b|\bANSI\b|\bGOST\b|ГОСТ|\bAS(?:\/NZS)?\s*6?\d{4}\b|\bÖVE\b|\bIEC\b/g;
+  const rx = RX_STD;
+  rx.lastIndex = 0;
   let m;
   while ((m = rx.exec(s))) {
     const t = m[0].toUpperCase();
@@ -288,14 +297,18 @@ function findStd(s, marks) {
 }
 
 function findQty(s, marks) {
-  let m = /(?:^|[\s(|;:,])(\d{1,5})\s*(?:st(?:ü|ue)ck|stk\.?|st\.(?=\s)|pcs?\.?|pieces?|units?|sätze?|satz|sets?|db\b|darab|uds?\.?|unidades?|unit[ée]s?|pi[eè]ces?|pzas?\.?|ea\.?)(?=\W|$)/i.exec(s);
+  let m = /(?:^|[\s(|;:,])(\d{1,5})\s*(?:st(?:ü|ue)ck|stk\.?|st\.(?=\s)|pcs?\.?|pieces?|units?|sätze?|satz|sets?|db\b|darab|uds?\.?|unid\.?|unidad(?:es)?|unidades?|unit[ée]s?|pi[eè]ces?|piezas?|pzas?\.?|ea\.?)(?=\W|$)/i.exec(s);
   if (m) { const i = m.index + m[0].indexOf(m[1]); addMark(marks, i, m.index + m[0].length, 'qty'); return Number(m[1]); }
   m = /(?:menge|stückzahl|anzahl(?!\s*(?:der\s*)?(?:kern|wicklung|sekund))|qty|quantity|quantit[ée]|qt[ée]|mennyiség|cantidad)\s*[:=]?\s*(\d{1,5})\b(?!\s*(?:kern|core|wicklung|winding))/i.exec(s);
   if (m) { addMark(marks, m.index, m.index + m[0].length, 'qty'); return Number(m[1]); }
   m = /^\s*(\d{1,4})\s*x\s+(?=\D)/i.exec(s);
   if (m) { addMark(marks, m.index, m.index + m[0].length, 'qty'); return Number(m[1]); }
+  // „bitte 12 Stromwandler …“, „12 low voltage current transformers“, „12 transformateurs de courant“, „12 áramváltóra“
+  m = RX_QTY_NOUN.exec(s);
+  if (m) { const i = m.index + m[0].indexOf(m[1]); addMark(marks, i, i + m[1].length, 'qty'); return Number(m[1]); }
   return null;
 }
+const RX_QTY_NOUN = U(/(?:^|[\s(,;:])(?<!\b(?:pos(?:ition)?|nr|no|item|tétel|réf|ref|oz|lfd|feld|bay|iec|en|din|vde|ieee|ansi|öve|typ|type|tipo|típus)\.?\s*)(\d{1,4})[ \t]+(?!(?:k?v|k?a|va|kva|mva|hz|mm|s)\b)(?:(?!(?:k?v|k?a|va|kva|mva|hz|mm)\b)\p{L}[\p{L}-]{2,}[ \t]+){0,2}(?:[\p{L}-]*wandler(?:n)?|(?:current |voltage |instrument |combined )?transformers?|transformateurs?|transformador(?:es)?|\p{L}*váltó\p{L}*|c\.?t\.?s?|v\.?t\.?s?|p\.?t\.?s?|t\.?c\.?s?|t\.?i\.?)(?![\p{L}\p{N}])/i);
 
 function findCoreCount(s, marks) {
   const words = { ein: 1, eine: 1, zwei: 2, drei: 3, vier: 4, one: 1, two: 2, three: 3, four: 4, un: 1, deux: 2, trois: 3, egy: 1, kettő: 2, két: 2, három: 3, uno: 1, dos: 2, tres: 3 };
@@ -324,10 +337,13 @@ function findVf(s, marks) {
   return { f, t };
 }
 
+// Innen-Ø (nicht Außen-Ø) und Schienenmaß (nicht Hut-/Tragschiene TH35)
+const RX_DIA = U(/(?:innendurchmesser|innen-?[ø⌀]|(?<!au(?:ß|ss)en-?)durchmesser|inner diameter|inside diameter|diam[eè]tre int[ée]rieur|belső átmérő|di[aá]metro interior|(?<![\p{L}\p{N}_])(?<!au(?:ß|ss)en-?\s?)[ø⌀]|\bd\s*=)\s*[:=]?\s*(?:≥|>=|min\.?)?\s*(\d+(?:[.,]\d+)?)\s*mm/i);
+const RX_BAR = U(/(?<!(?:hut|trag)-?)(?:schiene|stromschiene|busbar|bar|barre|sín|barra)\s*[:=]?\s*(\d+)\s*x\s*(\d+)\s*(?:mm)?/i);
 function findSize(s, marks) {
-  let m = /(?:innendurchmesser|innen-?ø|durchmesser|inner diameter|inside diameter|diam[eè]tre int[ée]rieur|belső átmérő|di[aá]metro interior|\bø|\bd\s*=)\s*[:=]?\s*(?:≥|>=|min\.?)?\s*(\d+(?:[.,]\d+)?)\s*mm/i.exec(s);
+  let m = RX_DIA.exec(s);
   if (m) { addMark(marks, m.index, m.index + m[0].length, 'size'); return { d: toNum(m[1]) }; }
-  m = /(?:schiene|stromschiene|busbar|bar|barre|sín|barra)\s*[:=]?\s*(\d+)\s*x\s*(\d+)\s*(?:mm)?/i.exec(s);
+  m = RX_BAR.exec(s);
   if (m) { addMark(marks, m.index, m.index + m[0].length, 'size'); return { bar: [Number(m[1]), Number(m[2])] }; }
   return null;
 }
@@ -444,7 +460,7 @@ export function reqWeight(req) {
 }
 
 // ---------- Text in Positionen zerlegen ----------
-const HEAD = {
+const HEAD = uAll({
   qty: /^(menge|anzahl|stück(?:zahl)?|stk\.?|qty|quantity|pcs|quantit[ée]|qt[ée]|mennyiség|db|cantidad|uds?\.?)$/i,
   ref: /^(pos(?:ition)?\.?|nr\.?|item|oz|kennz(?:eichnung)?\.?|bmk|feld|bay|tag|referen[cz]e?|réf\.?|tétel|tag-?nr\.?|elemento)$/i,
   ratio: /übersetzung|ratio|rapport|áttétel|relaci[oó]n|übers\./i,
@@ -454,7 +470,7 @@ const HEAD = {
   type: /^(typ|type|tipo|típus|bauform|ausführung|design)$/i,
   ipr: /prim[äa]r|primary|primaire|primer|primari/i,
   isr: /sekund|secondary|secondaire|szekunder|secundari/i,
-};
+});
 function splitTable(lines, sep) {
   const rows = lines.map((l) => l.split(sep).map((c) => c.trim()));
   const head = rows[0];
@@ -539,7 +555,7 @@ const INHERIT = ['um', 'umHow', 'sys', 'level', 'freq', 'std', 'install', 'isr',
 
 // Mehrere Anforderungen in einem Absatz (z. B. E-Mail: „12 Stück … 1500/5 A …, und 3 Stück … 400/1 A …“) in Teilpositionen trennen
 const ratioCount = (s) => { const n = normalize(s); return findRatios(n, []).length + vtAll(n).length; };
-const CLAUSE = /\r?\n+|;\s+|(?<=[^\d\s][.!?])\s+(?=\S)|,?\s+(?:and|und|sowie|plus|et|és|y)\s+(?=(?:\d{1,5}\s*(?:x\b|pcs?\b|pieces?|units?|stk|st(?:ü|ue)ck|st\.|db\b|darab|uds?\b|unidades|pi[eè]ces?|sets?)|[\wäöüéáó-]*(?:wandler|transformers?|transformateurs?|váltó|transformador(?:es)?|\bcts?\b)))/gi;
+const CLAUSE = U(/\r?\n+|;\s+|(?<=[^\d\s][.!?])(?<!\b(?:uds?|unid|stk|st|pcs?|pzas?|ca|bzw|inkl|zzgl|ggf|max|min|nr|pos|kl|gr|typ|vgl|evtl|approx|resp|env|kb|kb|aprox|p\. ?ej|z\. ?b|e\. ?g|i\. ?e)\.)\s+(?=\S)|,?\s+(?:and|as well as|und|sowie|plus|et|ainsi que|és|valamint|továbbá|y|así como)\s+(?=(?:\d{1,5}\s*(?:x\b|pcs?\b|pieces?|units?|stk|st(?:ü|ue)ck|st\.|db\b|darab|uds?\b|unidades|pi[eè]ces?|sets?)|[\wäöüéáó-]*(?:wandler|transformers?|transformateurs?|váltó|transformador(?:es)?|\bcts?\b)))/gi);
 function subSplit(text) {
   const parts = [];
   let last = 0, m;
