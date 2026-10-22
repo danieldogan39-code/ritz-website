@@ -64,28 +64,34 @@ async function render() {
   CFG.route = { id: route.id, p: route.p };
   const ctx = makeCtx({ lang, mode: 'spa', base: '', t: base.t, data: base.data, img: base.img, route: { id: route.id, p: route.p, news: route.news }, docBase: CFG.docBase || null });
   const page = renderRoute(ctx, route);
-  document.body.className = page.bodyClass || '';
-  if (shellLang !== lang || !$('#main')) {
-    app.innerHTML = `<a class="skip" href="#main" data-skip>${base.t.ui.skip}</a>${header(ctx)}${drawer(ctx)}<main id="main" tabindex="-1"></main>${footer(ctx)}${searchOverlay(ctx)}`;
-    shellLang = lang;
-    initHeader(); initDrawer(); initTheme(); initSearchOverlay(); initBadges();
-  } else {
-    // Kopf neu zeichnen (aktive Navigation, Sprachlinks)
-    const old = $('[data-hdr]');
-    const tmp = document.createElement('div');
-    tmp.innerHTML = header(ctx);
-    old.replaceWith(tmp.firstElementChild);
-    initHeader(); initBadges();
-    const dr = $('[data-drawer]');
-    const tmp2 = document.createElement('div'); tmp2.innerHTML = drawer(ctx);
-    dr.replaceWith(tmp2.firstElementChild); initDrawer();
-  }
-  const main = $('#main');
-  main.innerHTML = `<div class="route-fade">${page.html}</div>`;
-  document.title = `${page.title} | RITZ`;
-  if (h.anchor) setTimeout(() => document.getElementById(h.anchor)?.scrollIntoView({ block: 'start' }), 30);
-  else window.scrollTo(0, 0);
-  initPage(main);
+  // Seitenwechsel als View Transition (Kopf bleibt stehen, Inhalt blendet über), sonst wie bisher mit kurzem Einblenden
+  const useVT = !!document.startViewTransition && !matchMedia('(prefers-reduced-motion: reduce)').matches && shellLang === lang && !!$('#main');
+  const swap = () => {
+    document.body.className = page.bodyClass || '';
+    if (shellLang !== lang || !$('#main')) {
+      app.innerHTML = `<a class="skip" href="#main" data-skip>${base.t.ui.skip}</a>${header(ctx)}${drawer(ctx)}<main id="main" tabindex="-1"></main>${footer(ctx)}${searchOverlay(ctx)}`;
+      shellLang = lang;
+      initHeader(); initDrawer(); initTheme(); initSearchOverlay(); initBadges();
+    } else {
+      // Kopf neu zeichnen (aktive Navigation, Sprachlinks)
+      const old = $('[data-hdr]');
+      const tmp = document.createElement('div');
+      tmp.innerHTML = header(ctx);
+      old.replaceWith(tmp.firstElementChild);
+      initHeader(); initBadges();
+      const dr = $('[data-drawer]');
+      const tmp2 = document.createElement('div'); tmp2.innerHTML = drawer(ctx);
+      dr.replaceWith(tmp2.firstElementChild); initDrawer();
+    }
+    $('#main').innerHTML = `<div class="${useVT ? 'route' : 'route-fade'}">${page.html}</div>`;
+    document.title = `${page.title} | RITZ`;
+    if (h.anchor) setTimeout(() => document.getElementById(h.anchor)?.scrollIntoView({ block: 'start' }), 30);
+    else window.scrollTo(0, 0);
+  };
+  if (useVT) await document.startViewTransition(swap).updateCallbackDone.catch(() => {});
+  else swap();
+  if (my !== rendering) return;
+  initPage($('#main'));
 }
 
 // In-Page-Anker ohne Routenwechsel behandeln

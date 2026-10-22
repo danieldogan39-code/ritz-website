@@ -261,6 +261,39 @@ function making(ctx) {
 </section>`;
 }
 
+// ---------- Produktsuche: Bildwechsel aus den Werken, Suche nach Typ, Spannung oder Anwendung, Spannungsachse ----------
+export const SEARCH_SLIDES = [
+  ['mimg/intro_home_slider_7.webp', '62% 50%'],
+  ['mimg/intro_home_slider_4.webp', '58% 50%'],
+  ['mimg/2022__11__intro_home_slider_2.webp', '72% 40%'],
+];
+function finderSearch(ctx) {
+  const { t, href } = ctx;
+  const H = t.pages.home, Hs = H.hero2;
+  const slides = SEARCH_SLIDES.filter(([k]) => ctx.img[k]);
+  return `<section class="ps" data-hero2 aria-labelledby="ps-title">
+  <div class="hero2__media" aria-hidden="true">${slides.map(([k, pos], i) => `<figure class="hero2__slide${i ? '' : ' is-on'}" data-slide="${i}" style="--pos:${pos}">${imgTag(ctx, k, { alt: '', sizes: '(max-width: 700px) 1800px, (max-width: 1100px) 150vw, 100vw', max: 1920 })}</figure>`).join('')}</div>
+  <div class="wrap ps__inner">
+    <div class="ps__copy" data-reveal="head">
+      <h2 class="ch__title" id="ps-title">${esc(t.nav.megaFinderTitle)}</h2>
+      <p class="ch__lead">${esc(t.nav.megaFinderText)}</p>
+      <form class="hero__search" role="search" action="${href('search')}" data-hero-search>
+        <label class="vh" for="ps-q">${esc(H.searchLabel)}</label>
+        <input id="ps-q" name="q" type="search" placeholder="${esc(H.searchPh)}" autocomplete="off">
+        <button type="submit">${icon('search')}<span>${esc(H.searchBtn)}</span></button>
+      </form>
+      <p class="hero__hint">${esc(H.hint)} ${H.hints.map((h) => `<button type="button" data-hint="${esc(h)}">${esc(h)}</button>`).join(', ')}</p>
+    </div>
+    <div class="ps__axis" data-reveal="chart">${voltageAxis(ctx, { dark: true, sweep: true })}</div>
+    <p class="ps__cta"><a class="link link--light" href="${href('products')}">${esc(Hs.cta1)}${icon('arrow')}</a><a class="link link--light" href="${href('inquiry')}">${esc(Hs.cta2)}${icon('arrow')}</a></p>
+  </div>
+  ${slides.length > 1 ? `<div class="hero2__ctl wrap">
+    <div class="hero2__dots">${slides.map((_, i) => `<button type="button" data-goto="${i}" aria-label="${esc(tpl(Hs.slide, { n: i + 1, total: slides.length }))}"${i ? '' : ' aria-current="true"'}><i></i></button>`).join('')}</div>
+    <button class="hero2__pause" type="button" data-hero2-pause aria-pressed="false" aria-label="${esc(Hs.pause)}" data-l-pause="${esc(Hs.pause)}" data-l-play="${esc(Hs.play)}">${icon('pause', 'width="16" height="16"')}${icon('play', 'width="16" height="16"')}</button>
+  </div>` : ''}
+</section>`;
+}
+
 // ---------- Werke weltweit ----------
 const GENERIC_FN = /^(vertrieb|controlling|it$|personal|konstruktion|zwei gesellschaften)/i;
 function plantFunctions(l, lang, dl) {
@@ -363,10 +396,11 @@ ${introOverlay(ctx)}
 ${stage(ctx)}
 ${principle(ctx)}
 ${spectrum(ctx)}
-${making(ctx)}
-${world(ctx)}
+${finderSearch(ctx)}
 ${heritage(ctx)}
+${making(ctx)}
 ${quality(ctx)}
+${world(ctx)}
 ${newsList(ctx)}
 ${career(ctx)}`;
 }

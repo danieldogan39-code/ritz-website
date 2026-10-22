@@ -1,0 +1,139 @@
+/* ==========================================================================
+   Bewegung auf allen Seiten
+   – Seitenübergänge zwischen den Seiten (View Transitions; Browser ohne Unterstützung wechseln wie bisher),
+   – Auftritt des Seitenkopfs beim Laden,
+   – Einblenden beim Scrollen über Scroll-Zeitachsen (reines CSS, ohne JavaScript; Inhalte, die schon im Bild sind,
+     stehen sofort fertig da; Browser ohne Scroll-Zeitachsen zeigen alles sofort),
+   – Parallaxe der großen Bilder, Lesefortschritt am Seitenkopf, Menüs, Mikro-Interaktionen.
+   Bewegt werden nur opacity, translate/scale/transform und clip-path. Alles gilt nur ohne „Bewegung reduzieren“
+   und nicht im Druck. Die Startseite hat zusätzlich ihre eigene Choreografie (home.css, [data-reveal]).
+   ========================================================================== */
+
+@media screen and (prefers-reduced-motion: no-preference) {
+
+  /* ---------- Seitenübergänge: Kopf bleibt stehen, Inhalt blendet über ---------- */
+  @view-transition { navigation: auto; }
+  .hdr { view-transition-name: site-header; }
+  ::view-transition-old(root) { animation: vtOut .2s var(--ease-out) both; }
+  ::view-transition-new(root) { animation: vtIn .42s var(--ease-out) both; }
+  ::view-transition-group(site-header) { animation-duration: .25s; }
+
+  /* ---------- Seitenkopf: Auftritt beim Laden ---------- */
+  .phead .crumbs { animation: fadeIn .5s var(--ease-out) backwards; }
+  .phead h1 { animation: maskUp .85s var(--ease-out) .06s backwards; }
+  .phead .lead { animation: riseIn .7s var(--ease-out) .2s backwards; }
+  .phead__aside { animation: riseIn .7s var(--ease-out) .3s backwards; }
+  .phead__fig { animation: imgOpen 1s var(--ease-out) .12s backwards; }
+  .phead__fig img { animation: imgSettle 1.6s var(--ease-out) .12s backwards; }
+  .pd-top .crumbs, .article header { animation: riseIn .6s var(--ease-out) backwards; }
+  .pd .gallery__main, .pd .drawing { animation: imgOpen .95s var(--ease-out) .05s backwards; }
+  .pd .gallery__main img { animation: imgSettle 1.5s var(--ease-out) .05s backwards; }
+  .pd__summary > * { animation: riseIn .6s var(--ease-out) backwards; }
+  .pd__summary > :nth-child(2) { animation-delay: .07s; }
+  .pd__summary > :nth-child(3) { animation-delay: .14s; }
+  .pd__summary > :nth-child(4) { animation-delay: .21s; }
+  .pd__summary > :nth-child(n+5) { animation-delay: .28s; }
+
+  /* ---------- Lesefortschritt: rote Linie an der Unterkante des Kopfs ---------- */
+  @supports (animation-timeline: scroll()) {
+    .hdr::after { content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; background: var(--red); transform-origin: 0 50%; transform: scaleX(0); pointer-events: none;
+      animation: svProgress linear both; animation-timeline: scroll(root block); }
+  }
+
+  /* ---------- Einblenden beim Scrollen (eigene Zeitachse je Element: staffelt sich von selbst) ---------- */
+  @supports (animation-timeline: view()) {
+    :is(.section-head, .split > .stack, .ctaband, .prose > h2):not([data-reveal], [data-reveal] *, .mega *, .search *, .drawer *, .hx *) {
+      animation: svRise linear both; animation-timeline: view(); animation-range: entry 0% entry 80%;
+    }
+    :is(.card, .pcard, .scard, .area, .app, .task, .mgr, .certcard, .feature, .esg, .job, .doc, .org__card, .brand, .person, .sgroup, .dlcat,
+      .mega__card--page, .ref, .loc, .fact, .nl__item, .world__list li, .tl2__item, .ftr__top > *, .table-wrap, .pd-sec, .ks, .figure):not([data-reveal] *, .mega *, .search *, .drawer *, .hx *, [data-finder] *) {
+      animation: svRise linear both; animation-timeline: view(); animation-range: entry 0% entry 70%;
+    }
+    /* Bilder: leichtes Heranzoomen beim Eintreten – nur in Rahmen, die beschneiden (overflow: hidden); sie brauchen eine eigene, benannte Zeitachse */
+    :is(.card__img, .area__img, .scard__img, .media-cover, .mgr__img, .ref__img, .tl2__img):not([data-reveal], [data-reveal] *, .mega *) { view-timeline: --pic block; }
+    :is(.card__img, .area__img, .scard__img, .media-cover, .mgr__img, .ref__img, .tl2__img):not([data-reveal], [data-reveal] *, .mega *) img {
+      animation: svZoom linear both; animation-timeline: --pic; animation-range: entry 0% cover 45%;
+    }
+    /* Parallaxe: große Bilder gleiten langsamer als die Seite */
+    .phead--image { view-timeline: --phead block; }
+    .phead--image .phead__bg img { scale: 1.12; animation: heroSettle 1.8s var(--ease-out) backwards, svDrift linear both; animation-timeline: auto, --phead; animation-range: normal, exit 0% exit 100%; }
+    .band { view-timeline: --band block; }
+    .band__media img { scale: 1.16; animation: svPan linear both; animation-timeline: --band; animation-range: cover 0% cover 100%; }
+    .ps { view-timeline: --ps block; }
+    /* Trennlinien der Produktgruppen zeichnen sich von links */
+    .pgroup .section-head { position: relative; border-top-color: transparent; view-timeline: --sh block; }
+    .pgroup .section-head::before { content: ""; position: absolute; left: 0; right: 0; top: -1px; height: 1px; background: var(--line); transform-origin: 0 50%;
+      animation: svLine linear both; animation-timeline: --sh; animation-range: entry 0% entry 100%; }
+    .ps .hero2__media { animation: svPanS linear both; animation-timeline: --ps; animation-range: cover 0% cover 100%; scale: 1.12; }
+  }
+
+  /* ---------- Aufklappbares (Akkordeons, Filtergruppen, mobiles Menü) öffnet weich ---------- */
+  @supports selector(::details-content) {
+    details { interpolate-size: allow-keywords; }
+    details::details-content { block-size: 0; overflow-y: clip; transition: block-size .3s var(--ease-out), content-visibility .3s allow-discrete; }
+    details[open]::details-content { block-size: auto; }
+  }
+
+  /* ---------- Menüs, Überlagerungen ---------- */
+  .mega:not([hidden]) { animation: megaIn .2s var(--ease-out); }
+  .mg__row.is-on .mg__pane { animation: paneIn .26s var(--ease-out); }
+  .mg__row.is-on .mg__img img { animation: paneImg .6s var(--ease-out); }
+  .lang__menu:not([hidden]) { animation: megaIn .16s var(--ease-out); }
+  .search:not([hidden]) .search__panel { animation: popIn .22s var(--ease-out); }
+  .search:not([hidden]) { animation: fadeIn .18s var(--ease-out); }
+
+  /* ---------- Mikro-Interaktionen ---------- */
+  .chip, .icon-btn, .hx__step-btn, .hero2__pause, .theme-toggle button { transition-property: background-color, border-color, color, scale; transition-duration: .16s; transition-timing-function: var(--ease-out); }
+  :is(.chip, .icon-btn, .theme-toggle button):active { scale: .95; }
+  .link svg, .mg__cta svg, .nl__item svg, .doc__go svg { transition: translate .22s var(--ease-out); }
+  /* Textlinks: rote Linie fährt beim Überfahren unter dem Strich entlang */
+  .link { background: linear-gradient(var(--red), var(--red)) 0 100% / 0 2px no-repeat; background-origin: border-box; transition: background-size .32s var(--ease-out), color .2s var(--ease); }
+  .link:hover { background-size: 100% 2px; }
+  :is(.link, .mg__cta):hover svg, .nl__item:hover svg { translate: 4px 0; }
+  .doc:hover .doc__go svg { translate: 0 2px; }
+  .pcard { transition: box-shadow .2s var(--ease), transform .25s var(--ease-out); }
+  .pcard:hover { transform: translateY(-3px); }
+  .scard, .loc, .certcard, .dlcat, .person { transition: transform .25s var(--ease-out), border-color .2s var(--ease), box-shadow .2s var(--ease); }
+  :is(.scard, .certcard, .dlcat):hover { transform: translateY(-3px); }
+  /* Glanz über dunklen und roten Schaltflächen */
+  .btn:not(.btn--ghost, .btn--light) { position: relative; }
+  .btn:not(.btn--ghost, .btn--light)::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(110deg, transparent 30%, rgb(255 255 255 / .24) 50%, transparent 70%); transform: translateX(-120%); }
+  .btn:not(.btn--ghost, .btn--light):hover::after { transform: translateX(120%); transition: transform .7s var(--ease-out); }
+
+  /* ---------- Organigramm: Leitungen zeichnen sich, Gesellschaften folgen ---------- */
+  :root.rv .org:not(.is-in) :is(.org__node, .org__card) { opacity: 0; }
+  :root.rv .org:not(.is-in) .org__stem { transform: scaleY(0); }
+  :root.rv .org:not(.is-in) .org__cos::before { transform: scaleX(0); }
+  :root.rv .org:not(.is-in) :is(.org__co, .org__sub)::before { transform: scaleY(0); }
+  .org.is-in .org__node--foundation { animation: riseIn .55s var(--ease-out) backwards; }
+  .org.is-in .org__stem { transform-origin: top; animation: stemIn .4s var(--ease-in-out) backwards; }
+  .org.is-in .org__stem:nth-of-type(1) { animation-delay: .35s; }
+  .org.is-in .org__node--group { animation: riseIn .55s var(--ease-out) .6s backwards; }
+  .org.is-in .org__stem:nth-of-type(2) { animation-delay: .95s; }
+  .org.is-in .org__cos::before { animation: busIn .6s var(--ease-in-out) 1.2s backwards; }
+  .org.is-in .org__co::before { transform-origin: top; animation: stemIn .3s var(--ease-in-out) backwards; animation-delay: calc(1.6s + var(--k, 0) * 80ms); }
+  .org.is-in .org__co > .org__card { animation: riseIn .5s var(--ease-out) backwards; animation-delay: calc(1.75s + var(--k, 0) * 80ms); }
+  .org.is-in .org__sub::before { transform-origin: top; animation: stemIn .3s var(--ease-in-out) 2.2s backwards; }
+  .org.is-in .org__sub .org__card { animation: riseIn .5s var(--ease-out) 2.4s backwards; }
+  .org__co:nth-child(1) { --k: 0; } .org__co:nth-child(2) { --k: 1; } .org__co:nth-child(3) { --k: 2; } .org__co:nth-child(4) { --k: 3; } .org__co:nth-child(5) { --k: 4; }
+}
+
+@keyframes vtOut { to { opacity: 0; transform: translateY(-8px); } }
+@keyframes vtIn { from { opacity: 0; transform: translateY(14px); } }
+@keyframes svProgress { to { transform: scaleX(1); } }
+@keyframes svRise { from { opacity: 0; translate: 0 34px; } to { opacity: 1; translate: none; } }
+@keyframes svZoom { from { scale: 1.14; } to { scale: 1; } }
+@keyframes svDrift { from { translate: 0 0; } to { translate: 0 14%; } }
+@keyframes svPan { from { translate: 0 -7%; } to { translate: 0 7%; } }
+@keyframes svPanS { from { translate: 0 -4.5%; } to { translate: 0 4.5%; } }
+@keyframes megaIn { from { opacity: 0; translate: 0 -8px; } }
+@keyframes paneIn { from { opacity: 0; translate: 12px 0; } }
+@keyframes paneImg { from { scale: 1.07; } }
+@keyframes popIn { from { opacity: 0; scale: .97; translate: 0 -6px; } }
+@keyframes svLine { from { transform: scaleX(0); } }
+@keyframes stemIn { from { transform: scaleY(0); } }
+@keyframes busIn { from { transform: scaleX(0); } }
+
+@media print {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}

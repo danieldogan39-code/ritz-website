@@ -209,6 +209,58 @@
   .sp__track { grid-column: 1 / -1; grid-row: 2; }
 }
 
+/* ---------- Produktsuche: Bildwechsel aus den Werken, Suche, Spannungsachse ---------- */
+.ps { position: relative; isolation: isolate; display: grid; grid-template-rows: 1fr auto; min-height: clamp(640px, 94svh, 920px); color: var(--on-night); background: var(--night); overflow: hidden; }
+.hero2__media { position: absolute; inset: 0; z-index: -2; overflow: hidden; }
+.hero2__slide { position: absolute; inset: 0; margin: 0; opacity: 0; transition: opacity 1.6s var(--ease-in-out); }
+.hero2__slide.is-on { opacity: 1; }
+.hero2__slide img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: var(--pos, 60% 50%); }
+.ps::after { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background:
+    linear-gradient(90deg, rgb(18 12 11 / .94) 0%, rgb(18 12 11 / .8) 34%, rgb(18 12 11 / .34) 66%, rgb(18 12 11 / .14) 100%),
+    linear-gradient(0deg, rgb(18 12 11 / .95) 0%, rgb(18 12 11 / .4) 30%, rgb(18 12 11 / 0) 52%); }
+.ps__inner { align-self: end; display: grid; gap: clamp(26px, 3.4vw, 44px); padding-block: clamp(80px, 10vw, 140px) clamp(16px, 2vw, 24px); }
+.ps__copy { display: grid; gap: 1.1rem; max-width: 640px; }
+.ps .ch__title { color: #fff; }
+.ps .ch__lead { margin: 0; color: var(--on-night-2); }
+.ps .hero__search { margin-top: .4rem; box-shadow: 0 18px 40px -18px rgb(0 0 0 / .6); }
+.ps__axis { max-width: 1040px; padding: 4px clamp(14px, 2vw, 24px) 16px; background: rgb(18 12 11 / .58); border: 1px solid rgb(255 255 255 / .1); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); }
+.ps__axis .vaxis { margin-top: 0; border-top: 0; }
+.ps__cta { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.6rem; margin: 0; }
+.hero2__ctl { display: flex; justify-content: flex-end; align-items: center; gap: 12px; padding-bottom: 16px; }
+.hero2__dots { display: flex; gap: 2px; }
+.hero2__dots button { width: 40px; height: 32px; display: grid; place-items: center; padding: 0; background: none; border: 0; cursor: pointer; }
+.hero2__dots i { position: relative; display: block; width: 30px; height: 2px; overflow: hidden; background: rgb(255 255 255 / .3); }
+.hero2__dots i::after { content: ""; position: absolute; inset: 0; background: #fff; transform: scaleX(0); transform-origin: left; }
+.hero2__dots [aria-current="true"] i::after { transform: none; }
+.hero2__pause { width: 32px; height: 32px; display: grid; place-items: center; padding: 0; color: #fff; background: rgb(255 255 255 / .08); border: 1px solid rgb(255 255 255 / .28); cursor: pointer; transition: background-color .18s var(--ease-out); }
+.hero2__pause:hover { background: rgb(255 255 255 / .18); }
+.hero2__pause svg:last-child, .ps.is-paused .hero2__pause svg:first-child { display: none; }
+.ps.is-paused .hero2__pause svg:last-child { display: block; }
+.ps :focus-visible { outline-color: #fff; }
+@media (max-width: 760px) {
+  .ps { min-height: 0; }
+  .ps__axis { padding: 0; background: none; border: 0; -webkit-backdrop-filter: none; backdrop-filter: none; }
+  .ps::after { background: linear-gradient(180deg, rgb(18 12 11 / .62) 0%, rgb(18 12 11 / .84) 44%, rgb(18 12 11 / .96) 100%); }
+  .ps__inner { padding-block: 64px 12px; }
+  .hero2__ctl { justify-content: flex-start; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .ps .hero2__slide.is-on img { animation: kenBurns 11s linear both; }
+  .ps .hero2__dots [aria-current="true"] i::after { animation: dotRun var(--slide-ms, 7000ms) linear both; }
+  .ps.is-paused .hero2__dots [aria-current="true"] i::after { animation: none; transform: none; }
+  .ps.is-paused .hero2__slide.is-on img { animation-play-state: paused; }
+  :root.rv .ps__copy:not(.is-in) :is(.hero__search, .hero__hint) { opacity: 0; }
+  .ps__copy.is-in .hero__search { animation: riseIn .7s var(--ease-out) .26s backwards; }
+  .ps__copy.is-in .hero__hint { animation: fadeIn .6s var(--ease-out) .4s backwards; }
+  :root.rv .ps__axis:not(.is-in) .vaxis__band { clip-path: inset(0 100% 0 0); }
+  :root.rv .ps__axis:not(.is-in) .vaxis__probe { opacity: 0; }
+  .ps__axis.is-in .vaxis__band { animation: bandIn .7s var(--ease-out) backwards; animation-delay: calc(.1s + var(--bi, 0) * 60ms); }
+  .ps__axis.is-in .vaxis__probe { animation: fadeIn .35s var(--ease-out) .55s backwards; }
+}
+@keyframes kenBurns { from { transform: scale(1); } to { transform: scale(1.07); } }
+@keyframes dotRun { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+
 /* ---------- Bildband Fertigung ---------- */
 .band { position: relative; isolation: isolate; display: grid; align-items: end; min-height: clamp(460px, 78vh, 820px); color: var(--on-night); background: var(--night); overflow: hidden; }
 .band__media { position: absolute; inset: 0; z-index: -2; }

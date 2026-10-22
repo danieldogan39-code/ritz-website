@@ -503,6 +503,7 @@ export default {
       mgmtTitle: 'Management', boardTitle: 'Foundation board',
       mgmt: [['Dr Christian Henze', 'Managing Director, CTO'], ['Dr Andreas Grambow', 'Managing Director, CSO'], ['Marcel Rosin', 'COO, Member of the Board'], ['Katrin Pras-Eberenz', 'CFO, Member of the Board']],
       board: [['Prof. Dr Ingmar Grambow', 'Chairman'], ['Dr Andreas Grambow', 'Board member'], ['Johann Spreitzer', 'Board member'], ['Dr Dirk Blömer', 'Board member'], ['Dr Wolfgang Wawrzinek', 'Board member'], ['Prof. Dr Klaus Heuck', 'Honorary member'], ['Gernot Kugler', 'Honorary member']],
+      hxNav: 'Timeline',
       orgGroup: 'RITZ Group', orgOwner: 'Owner of the group', orgHq: 'Headquarters in Hamburg', brandsTitle: 'Brands under the RITZ umbrella', since: 'since {y}', orgSites: 'Sites',
       structureTitle: 'Group structure', structureText: 'The RITZ Foundation owns the RITZ Group. RITZ unites long-established instrument transformer brands: MWB, WTW and TuR.',
       foundationTitle: 'RITZ Foundation', foundationText: 'For more than three decades the RITZ Foundation has supported Alzheimer’s research at the Institute of Molecular Neurogenetics at University Medical Center Hamburg-Eppendorf (UKE). Researchers from the UKE regularly present their latest findings at RITZ.',

@@ -503,6 +503,7 @@ export default {
       mgmtTitle: 'Ügyvezetés', boardTitle: 'Alapítványi kuratórium',
       mgmt: [['Dr. Christian Henze', 'Ügyvezető igazgató, CTO'], ['Dr. Andreas Grambow', 'Ügyvezető igazgató, CSO'], ['Marcel Rosin', 'COO, a vállalatvezetés tagja'], ['Katrin Pras-Eberenz', 'CFO, a vállalatvezetés tagja']],
       board: [['Prof. Dr. Ingmar Grambow', 'Elnök'], ['Dr. Andreas Grambow', 'Kuratóriumi tag'], ['Johann Spreitzer', 'Kuratóriumi tag'], ['Dr. Dirk Blömer', 'Kuratóriumi tag'], ['Dr. Wolfgang Wawrzinek', 'Kuratóriumi tag'], ['Prof. Dr. Klaus Heuck', 'Tiszteletbeli tag'], ['Gernot Kugler', 'Tiszteletbeli tag']],
+      hxNav: 'Idővonal',
       orgGroup: 'RITZ-csoport', orgOwner: 'A csoport tulajdonosa', orgHq: 'Központ: Hamburg', brandsTitle: 'Márkák a RITZ égisze alatt', since: '{y} óta', orgSites: 'Telephelyek',
       structureTitle: 'Vállalati struktúra', structureText: 'A RITZ-csoport a RITZ Alapítvány tulajdonában van. A RITZ égisze alatt a mérőváltó-technika nagy múltú márkái egyesülnek: MWB, WTW és TuR.',
       foundationTitle: 'RITZ Alapítvány', foundationText: 'A RITZ Alapítvány több mint három évtizede támogatja az Alzheimer-kór kutatását a Hamburg-Eppendorfi Egyetemi Klinikum (UKE) Molekuláris Neurogenetikai Intézetében. Az UKE kutatói rendszeresen beszámolnak legújabb eredményeikről a RITZ-nél.',

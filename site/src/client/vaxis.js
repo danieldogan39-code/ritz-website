@@ -55,9 +55,11 @@ export async function initVaxis(root) {
       cnt.setAttribute('aria-live', 'polite');
       if (p != null) { range.value = Math.round(p * 1000); last = null; update(); } // Regler dort, wo die Sonde steht
     };
-    const fade = el.hasAttribute('data-vaxis-sweep') && !matchMedia('(prefers-reduced-motion: reduce)').matches && probe.getAnimations
-      ? probe.getAnimations().find((a) => a.animationName === 'fadeIn') : null;
-    if (fade && (fade.playState === 'paused' || (fade.currentTime ?? 0) < 760)) {
+    const wantSweep = el.hasAttribute('data-vaxis-sweep') && !matchMedia('(prefers-reduced-motion: reduce)').matches && !!probe.getAnimations;
+    const fade = wantSweep ? probe.getAnimations().find((a) => a.animationName === 'fadeIn') : null;
+    // weiter unten auf der Seite: Einmessen, sobald der Abschnitt eingeblendet wird (Einblendung startet fadeIn der Sonde)
+    const later = wantSweep && !fade && document.documentElement.classList.contains('rv') && !!el.closest('[data-reveal]:not(.is-in)');
+    if (later || (fade && (fade.playState === 'paused' || (fade.currentTime ?? 0) < 760))) {
       const p0 = axisPos(UM_STEPS[0]), p1 = axisPos(24);
       sweep = { raf: 0, wait: true };
       range.value = Math.round(p0 * 1000);

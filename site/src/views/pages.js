@@ -96,7 +96,7 @@ function groupStructure(ctx) {
   return `<section class="section" aria-labelledby="org-title">
   <div class="wrap">
     ${sectionHead(C.structureTitle, C.structureText, '', { id: 'org-title' })}
-    <div class="org">
+    <div class="org" data-reveal="org">
       <div class="org__node org__node--foundation"><span class="org__mark" aria-hidden="true"></span><strong>${esc(C.foundationTitle)}</strong><span>${esc(C.orgOwner)}</span></div>
       <span class="org__stem" aria-hidden="true"></span>
       <div class="org__node org__node--group"><span class="org__logo" aria-hidden="true">${group}</span><strong>${esc(C.orgGroup)}</strong><span>${esc(C.orgHq)}</span></div>
@@ -109,6 +109,55 @@ function groupStructure(ctx) {
       const txt = h ? h[2].split(/;\s*/)[0].replace(/[.]?$/, '.') : '';
       return `<li class="brand"><span class="brand__logo">${ctx.img['misc/brand-' + k] ? imgTag(ctx, 'misc/brand-' + k, { alt: k === 'tur' ? 'TuR' : k.toUpperCase(), sizes: '200px', max: 640 }) : ''}</span><span class="brand__year">${esc(tpl(C.since, { y }))}</span><span class="brand__text">${esc(txt)}</span></li>`;
     }).join('')}</ul>
+  </div>
+</section>`;
+}
+
+// Geschichte als Zeitreise: chronologisch, links (Desktop) eine mitlaufende Bühne mit rollender Jahreszahl, Bild und
+// Zeitskala zum Springen, rechts die Etappen; die Etappe in der Bildschirmmitte ist aktiv. Ohne JavaScript eine schlichte
+// Liste mit Bildern (Bühne nur mit .is-live sichtbar); alle Inhalte stehen in den Etappen, die Bühne ist Schmuck.
+function historyJourney(ctx) {
+  const { t } = ctx;
+  const C = t.pages.company;
+  const items = C.history.slice().sort((a, b) => +a[0] - +b[0]);
+  const first = +items[0][0], last = +items[items.length - 1][0];
+  const imgsOf = (y) => (HISTORY_IMG[y] || []).filter((k) => ctx.img[k]);
+  const reel = '<span class="hx__reel">' + [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((d) => `<span>${d}</span>`).join('') + '</span>';
+  const y0 = String(items[0][0]);
+  const pos = (i) => ((i / (items.length - 1)) * 100).toFixed(3);
+  return `<section class="hx" id="geschichte" aria-labelledby="hx-title" data-hx>
+  <div class="wrap">
+    <div class="hx__head" data-reveal="head"><h2 class="hx__title" id="hx-title">${esc(C.historyTitle)}</h2><p class="hx__lead">${esc(C.historyLead)}</p></div>
+    <div class="hx__grid">
+      <div class="hx__stage">
+        <div class="hx__top">
+          <p class="hx__year" aria-hidden="true" data-hx-year>${[...y0].map((c) => `<span class="hx__dig" style="--d:${c}">${reel}</span>`).join('')}</p>
+          <p class="hx__count" aria-hidden="true"><b data-hx-n>01</b><span>/ ${String(items.length).padStart(2, '0')}</span></p>
+        </div>
+        <div class="hx__frame" aria-hidden="true">
+          ${items.map(([year, title], i) => { const [k, k2] = imgsOf(year); return `<figure class="hx__shot${i ? '' : ' is-on'}${k ? '' : ' hx__shot--none'}" data-hx-shot="${i}">${k ? imgTag(ctx, k, { alt: '', sizes: '(max-width: 1000px) 0px, 46vw', max: 1280, eager: false }) + (k2 ? `<span class="hx__pip">${imgTag(ctx, k2, { alt: '', sizes: '(max-width: 1000px) 0px, 17vw', max: 640, eager: false })}</span>` : '') + (year === '1986' ? '<span class="hx__credit">Illustration ©UKE</span>' : '') : `<span class="hx__ghost">${esc(year)}</span><span class="hx__ghost-t">${esc(title)}</span>`}</figure>`; }).join('')}
+          <span class="hx__corner hx__corner--tl"></span><span class="hx__corner hx__corner--tr"></span><span class="hx__corner hx__corner--bl"></span><span class="hx__corner hx__corner--br"></span>
+          <span class="hx__scan"></span>
+        </div>
+        <nav class="hx__ruler" aria-label="${esc(C.hxNav)}" data-hx-ruler>
+          <button class="hx__step-btn hx__step-btn--prev" type="button" data-hx-prev aria-label="${esc(t.ui.back)}">${icon('arrow')}</button>
+          <div class="hx__scale">
+            <span class="hx__track"></span><span class="hx__fill"></span><span class="hx__needle"><span data-hx-label>${esc(y0)}</span></span>
+            ${items.map(([year, title], i) => `<button class="hx__mark" type="button" style="--x:${pos(i)}%" data-hx-go="${i}" aria-label="${esc(year)} – ${esc(title)}"${i ? '' : ' aria-current="step"'}><i></i><span class="hx__tip">${esc(year)}</span></button>`).join('')}
+            <span class="hx__end hx__end--a">${first}</span><span class="hx__end hx__end--b">${last}</span>
+          </div>
+          <button class="hx__step-btn hx__step-btn--next" type="button" data-hx-next aria-label="${esc(t.ui.next)}">${icon('arrow')}</button>
+        </nav>
+      </div>
+      <ol class="hx__steps">
+        ${items.map(([year, title, text], i) => { const ks = imgsOf(year); return `<li class="hx__step${i ? '' : ' is-on'}" id="g-${esc(year)}" data-hx-step="${i}" data-year="${esc(year)}">
+          <span class="hx__y">${esc(year)}</span>
+          <h3>${esc(title)}</h3>
+          <p>${esc(text)}</p>
+          ${ks.length ? `<figure class="hx__inline${ks.length > 1 ? ' hx__inline--duo' : ''}">${ks.slice(0, 2).map((k) => imgTag(ctx, k, { alt: '', sizes: ks.length > 1 ? '(max-width: 1000px) 46vw, 0px' : '(max-width: 1000px) 92vw, 0px', max: 960 })).join('')}${year === '1986' ? '<figcaption>Illustration ©UKE</figcaption>' : ''}</figure>` : ''}
+        </li>`; }).join('')}
+      </ol>
+    </div>
   </div>
 </section>`;
 }
@@ -132,14 +181,9 @@ export function companyPage(ctx) {
   </div>
 </section>
 <section class="section section--resin">
-  <div class="wrap">${sectionHead(C.factsTitle)}<div class="facts">${C.facts.map(([a, b]) => `<div class="fact"><strong>${esc(a)}</strong><span>${esc(b)}</span></div>`).join('')}</div></div>
+  <div class="wrap">${sectionHead(C.factsTitle)}<div class="facts" data-reveal="facts">${C.facts.map(([a, b]) => `<div class="fact"><strong data-count>${esc(a)}</strong><span>${esc(b)}</span></div>`).join('')}</div></div>
 </section>
-<section class="section" id="geschichte">
-  <div class="wrap wrap--narrow">
-    ${sectionHead(C.historyTitle, C.historyLead)}
-    <ol class="tl">${C.history.map(([year, title, text]) => `<li class="tl__item"><span class="tl__year">${esc(year)}</span><div class="tl__body"><h3>${esc(title)}</h3><p>${esc(text)}</p>${(HISTORY_IMG[year] || []).filter((k) => ctx.img[k]).length ? `<div class="tl__imgs">${HISTORY_IMG[year].filter((k) => ctx.img[k]).map((k) => imgTag(ctx, k, { alt: '', sizes: '180px', max: 640 })).join('')}</div>${year === '1986' ? '<p class="small faint">Illustration ©UKE</p>' : ''}` : ''}</div></li>`).join('')}</ol>
-  </div>
-</section>
+${historyJourney(ctx)}
 <section class="section section--porcelain" id="management">
   <div class="wrap">
     ${sectionHead(C.mgmtTitle)}

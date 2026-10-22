@@ -31,6 +31,7 @@ export async function initPage(root = document) {
   if (has('[data-assist]')) jobs.push(import('./assistant.js').then((m) => m.initAssist(root)));
   if (has('[data-calc]')) jobs.push(import('./calc.js').then((m) => m.initCalc(root)));
   if (has('[data-home-spec]')) jobs.push(import('./homespec.js').then((m) => m.initHomeSpec(root)));
+  if (has('[data-hx]')) jobs.push(import('./history.js').then((m) => m.initHistory(root)));
   if (has('[data-contact-finder]')) jobs.push(initContactFinder(root));
   if (has('[data-contact-form]')) jobs.push(initForms(root));
   await Promise.allSettled(jobs);

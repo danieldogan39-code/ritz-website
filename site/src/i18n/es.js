@@ -503,6 +503,7 @@ export default {
       mgmtTitle: 'Dirección', boardTitle: 'Junta directiva de la fundación',
       mgmt: [['Dr. Christian Henze', 'Director general, CTO'], ['Dr. Andreas Grambow', 'Director general, CSO'], ['Marcel Rosin', 'COO, miembro de la dirección'], ['Katrin Pras-Eberenz', 'CFO, miembro de la dirección']],
       board: [['Prof. Dr. Ingmar Grambow', 'Presidente'], ['Dr. Andreas Grambow', 'Miembro de la junta'], ['Johann Spreitzer', 'Miembro de la junta'], ['Dr. Dirk Blömer', 'Miembro de la junta'], ['Dr. Wolfgang Wawrzinek', 'Miembro de la junta'], ['Prof. Dr. Klaus Heuck', 'Miembro honorífico'], ['Gernot Kugler', 'Miembro honorífico']],
+      hxNav: 'Cronología',
       orgGroup: 'Grupo RITZ', orgOwner: 'Propietaria del grupo', orgHq: 'Sede central en Hamburgo', brandsTitle: 'Marcas bajo el paraguas de RITZ', since: 'desde {y}', orgSites: 'Sedes',
       structureTitle: 'Estructura del grupo', structureText: 'La Fundación RITZ es la propietaria del Grupo RITZ. RITZ reúne marcas de transformadores de medida con una larga tradición: MWB, WTW y TuR.',
       foundationTitle: 'Fundación RITZ', foundationText: 'Desde hace más de tres décadas, la Fundación RITZ apoya la investigación sobre la enfermedad de Alzheimer en el Instituto de Neurogenética Molecular del Centro Médico Universitario de Hamburgo-Eppendorf (UKE). Investigadores del UKE presentan periódicamente en RITZ sus nuevos resultados.',

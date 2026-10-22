@@ -507,6 +507,7 @@ export default {
       mgmtTitle: 'Geschäftsführung', boardTitle: 'Stiftungsvorstand',
       mgmt: [['Dr. Christian Henze', 'Geschäftsführer, CTO'], ['Dr. Andreas Grambow', 'Geschäftsführer, CSO'], ['Marcel Rosin', 'COO, Mitglied der Geschäftsleitung'], ['Katrin Pras-Eberenz', 'CFO, Mitglied der Geschäftsleitung']],
       board: [['Prof. Dr. Ingmar Grambow', 'Vorsitzender'], ['Dr. Andreas Grambow', 'Vorstand'], ['Johann Spreitzer', 'Vorstand'], ['Dr. Dirk Blömer', 'Vorstand'], ['Dr. Wolfgang Wawrzinek', 'Vorstand'], ['Prof. Dr. Klaus Heuck', 'Ehrenmitglied'], ['Gernot Kugler', 'Ehrenmitglied']],
+      hxNav: 'Zeitleiste',
       orgGroup: 'RITZ-Gruppe', orgOwner: 'Eigentümerin der Gruppe', orgHq: 'Zentrale in Hamburg', brandsTitle: 'Marken unter dem Dach von RITZ', since: 'seit {y}', orgSites: 'Standorte',
       structureTitle: 'Firmenstruktur', structureText: 'Die RITZ Stiftung ist Eigentümerin der RITZ-Gruppe. Unter dem Dach von RITZ sind traditionsreiche Marken der Messwandlertechnik vereint: MWB, WTW und TuR.',
       foundationTitle: 'RITZ Stiftung', foundationText: 'Seit über drei Jahrzehnten unterstützt die RITZ Stiftung die Alzheimerforschung am Institut für molekulare Neurogenetik des Universitätsklinikums Hamburg-Eppendorf (UKE). Regelmäßig berichten Forschende des UKE bei RITZ über neue Erkenntnisse.',
