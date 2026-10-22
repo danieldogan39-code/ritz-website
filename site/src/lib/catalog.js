@@ -75,6 +75,22 @@ export const FEATURED_DOCS_EN = ['RITZ-medium_voltage_instrument_transformers_st
   'N7-2002-111-3.pdf', 'EN_SENSORS_CUSTOMER_2024.pdf', 'RITZ_SIS_Brochure_EN-3.pdf', 'Delivery_conditions_GL2018_EN.pdf', 'AEB_Ritz_final_engl_Apr2023.pdf',
   '000632-Ritz-Instrument-Transformers-GmbH-CERTIFICATE-deutsch-2026-07-17-QM15.pdf'];
 
+// Beiträge auf der Weltkarte der Startseite – übernommen aus der Karte der bisherigen Startseite (Unlimited Elements,
+// Stand 22.10.2026): Beitrag (News-Kennung), Kategorie wie dort (Einsatzgebiet, Neuigkeiten, Neue Produkte, Case Studies)
+// und die dort eingetragene Lage. Liegt ein Beitrag auf einem eigenen Standort, steht er in dessen Karte.
+export const MAP_STORIES = [
+  { news: 'uebersicht-hvdc-und-anwendungen', cat: 'field', lat: 59.3251172, lng: 18.0710935 },
+  { news: 'konstruktion-neues-hochspannungswerk', cat: 'news', lat: 33.1013, lng: -81.9908 },
+  { news: 'neue-produkte-gbmw-gbmei', cat: 'product', lat: 43.2961743, lng: 5.3699525 },
+  { news: 'zusatzbuerde', cat: 'case', lat: 48.2043985, lng: 15.6229118 },
+  { news: 'kombiwandler-platzersparnis', cat: 'case', lat: 49.630668, lng: 8.3567606 },
+  { news: 'emvi-produktneuheit', cat: 'product', lat: 55.6052931, lng: 13.0001566 },
+  { news: 'giessharzanwendungen-in-der-elektrotechnik-und-mehr', cat: 'field', lat: 51.178264216329964, lng: 13.845022732157767 },
+  { news: 'irbt-generatorwandler-mit-optimiertem-design', cat: 'product', lat: 19.054999, lng: 72.8692035 },
+  { news: 'auszeichnung-zum-lieferanten-des-jahres-bei-den-hitachi-supplier-days-2024', cat: 'case', lat: 60.1453848, lng: 15.1722065 },
+  { news: 'kundenreferenz-sis-projekt-bsw', cat: 'case', lat: 48.59408950805664, lng: 7.822681903839111 },
+];
+
 export const LOC_IMG = {
   hamburg: 'mimg/2022__07__unternehmen_historie_1.webp', kirchaich: 'mimg/Luftbild_Kirchaich_2014_klein.webp', dresden: 'mimg/image5.webp',
   wirges: 'mimg/image4.webp', kecskemet: 'mimg/image14.webp', shanghai: 'mimg/image12.webp', lavonia: 'mimg/image13.webp', waynesboro: 'mimg/image17.webp',

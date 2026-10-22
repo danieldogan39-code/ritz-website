@@ -431,6 +431,7 @@
 .nm__key { display: inline-block; flex: none; }
 .nm__key--site { width: 9px; height: 9px; border-radius: 1px; rotate: 45deg; background: var(--hud-red); box-shadow: 0 0 8px rgb(255 74 67 / .8); }
 .nm__key--rep { width: 8px; height: 8px; border-radius: 50%; background: var(--hud-copper); box-shadow: 0 0 8px rgb(227 154 95 / .7); }
+.nm__key--story { width: 9px; height: 9px; border-radius: 50%; box-shadow: inset 0 0 0 2px var(--on-night), 0 0 8px rgb(246 240 236 / .5); }
 .nm__key--net { width: 20px; height: 9px; border: 1.5px solid var(--hud-red); border-bottom: 0; border-radius: 50% 50% 0 0 / 100% 100% 0 0; }
 
 /* Bühne: ohne JavaScript ein Bild im Seitenverhältnis der Karte, die Marker in Prozent darauf */
@@ -451,6 +452,9 @@
 .nm__mk--site { z-index: 2; }
 .nm__mk--site > i { width: 11px; height: 11px; border-radius: 1.5px; rotate: 45deg; background: var(--hud-red); box-shadow: 0 0 0 1.5px var(--night), 0 0 14px rgb(255 74 67 / .75); }
 .nm__mk--hq { z-index: 3; }
+/* Beiträge (Projekte & News): heller Ring wie Porzellan – weder Standort-Raute noch Vertretungspunkt */
+.nm__mk--story > i { width: 10px; height: 10px; background: var(--night); box-shadow: inset 0 0 0 2px var(--on-night), 0 0 0 1.5px var(--night), 0 0 12px rgb(246 240 236 / .45); }
+.nm__mk--story .nm__rip { border-color: var(--on-night); }
 .nm__mk--hq > i { width: 14px; height: 14px; border-radius: 2px; rotate: 45deg; background: var(--hud-red); box-shadow: 0 0 0 2px var(--night), 0 0 0 3.5px var(--hud-red), 0 0 24px rgb(255 74 67 / .9); }
 .nm__mk--multi:not(.nm__mk--site, .nm__mk--hq) > i { box-shadow: 0 0 0 1.5px var(--night), 0 0 0 3px rgb(227 154 95 / .55), 0 0 10px rgb(227 154 95 / .6); }
 .nm__mk.is-on > i { scale: 1.6; }
@@ -467,6 +471,7 @@
 /* Zielring: gleitet zum angedockten Punkt und zieht sich zusammen */
 .nm__ret { position: absolute; left: 0; top: 0; z-index: 1; width: 36px; height: 36px; margin: -18px 0 0 -18px; color: var(--hud-copper); pointer-events: none; opacity: 0; scale: 1.35; rotate: 45deg; transition: opacity .16s var(--ease-out), scale .22s var(--ease-out), rotate .3s var(--ease-out); }
 .nm__ret.is-site { color: var(--hud-red); }
+.nm__ret.is-story { color: var(--on-night); }
 .nm__ret.is-hq { width: 44px; height: 44px; margin: -22px 0 0 -22px; }
 .nm__ret.is-on { opacity: 1; scale: 1; rotate: 0deg; }
 .nm__ret.is-glide { transition: opacity .16s var(--ease-out), scale .22s var(--ease-out), rotate .3s var(--ease-out), translate .2s var(--ease-out); }
@@ -490,6 +495,15 @@
 @supports ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) { .nm__card { background: rgb(29 20 18 / .78); backdrop-filter: blur(12px) saturate(140%); -webkit-backdrop-filter: blur(12px) saturate(140%); } }
 .nm__card::before { content: ""; position: absolute; left: 18px; right: 18px; top: 0; height: 2px; background: var(--hud-red); }
 .nm__card.is-rep::before { background: var(--hud-copper); }
+.nm__card.is-story::before { background: var(--on-night); }
+.nm__card::before { z-index: 1; }
+/* Foto in der angehefteten Karte (Standort oder Beitrag), randlos oben; blendet nach dem Laden ein */
+.nm__pic { position: relative; margin: -16px -18px 12px; aspect-ratio: 16 / 7; overflow: hidden; border-radius: 5px 5px 0 0; background: rgb(246 240 236 / .06); }
+.nm__pic img { display: block; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .35s var(--ease-out); }
+.nm__pic.is-ok img { opacity: 1; }
+.nm__pic::after { content: ""; position: absolute; inset: auto 0 0; height: 40%; background: linear-gradient(transparent, rgb(29 20 18 / .55)); pointer-events: none; }
+.nm__card.is-pin:has(.nm__pic:not([hidden])) .nm__x { z-index: 2; background: rgb(18 12 11 / .62); color: var(--on-night); }
+.nm__card.is-pin:has(.nm__pic:not([hidden])) .nm__x:hover { background: rgb(18 12 11 / .85); }
 .nm__card.is-pin { pointer-events: auto; }
 /* Vorschau beim Andocken: kompakt, damit sie wenig verdeckt */
 .nm__card:not(.is-pin) { width: max-content; max-width: min(280px, calc(100% - 24px)); padding: 11px 14px 10px; font-size: .86rem; }
@@ -500,6 +514,8 @@
 .nm__card.is-away { visibility: hidden; }
 .nm__kind { display: block; font-size: .78rem; font-weight: 650; color: var(--hud-red); }
 .nm__kind--rep { color: var(--hud-copper); }
+.nm__kind--story { color: var(--on-night); }
+.nm__tx { margin: .45rem 0 0; color: var(--on-night-2); font-size: .86rem; line-height: 1.45; }
 .nm__title { display: block; margin: .15rem 2rem .1rem 0; font-size: 1.12rem; font-weight: 650; font-stretch: 108%; line-height: 1.2; }
 .nm__title--s { margin-right: 0; font-size: .95rem; }
 .nm__sub, .nm__fn, .nm__addr { margin: .2rem 0 0; color: var(--on-night-2); }
@@ -535,6 +551,13 @@
 .nm__wrap { margin-top: clamp(40px, 5vw, 64px); }
 .nm__tile { position: relative; border-radius: 12px; background: rgb(246 240 236 / .015); box-shadow: 0 0 0 1px var(--night-line), 0 40px 80px -60px rgb(0 0 0 / .9); overflow: hidden; overflow: clip; }
 .nm__tile .nm__bar { margin: 0; padding: 14px clamp(14px, 1.8vw, 22px); border-bottom: 1px solid var(--night-line); }
+/* Breit: zwei feste Zeilen statt zufälligem Umbruch – oben die Ebenen und rechts die Länderwahl, darunter die Regionen */
+@media (min-width: 701px) {
+  .nm--home .nm__tile .nm__bar { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 10px 20px; }
+  .nm--home .nm__tile .nm__layers { grid-area: 1 / 1; }
+  .nm--home .nm__tile .nm__pick { grid-area: 1 / 2; }
+  .nm--home .nm__tile .nm__regions { grid-area: 2 / 1 / 3 / 3; }
+}
 .nm__tile .nm__stage { margin: 0; }
 .nm__tile .nm__frame { width: 100%; }
 .nm.is-live .nm__tile .nm__frame { max-width: none; height: clamp(320px, min(48vw, 70vh), 760px); }

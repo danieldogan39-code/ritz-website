@@ -75,7 +75,8 @@ function setup(el) {
   card.id = cardId;
 
   // ---------- Modell ----------
-  const nodes = M.nodes.map((n, i) => ({ ...n, i, el: marksBox.querySelector(`.nm__mk[data-n="${i}"]`), on: true, match: true, site: n.k !== 'rep', X: 0, Y: 0, out: false, nn: Infinity }));
+  // Arten: Standorte (site), Vertretungen, Beiträge der Startseite (story: Projekte, neue Produkte, Neuigkeiten)
+  const nodes = M.nodes.map((n, i) => ({ ...n, i, el: marksBox.querySelector(`.nm__mk[data-n="${i}"]`), on: true, match: true, site: n.k !== 'rep' && n.k !== 'story', story: n.k === 'story', X: 0, Y: 0, out: false, nn: Infinity }));
   const hq = nodes[M.hq] || nodes[0];
   const arcs = M.arcs.map((a) => {
     const A = nodes[a.a], B = nodes[a.b];
@@ -111,7 +112,8 @@ function setup(el) {
   let viewSync = null; // Knopf „Ansicht“ (Telefon) markiert ausgeblendete Ebenen
   let chase = null, idleT = 0, lastCX = NaN, lastCY = NaN; // Folge-Zoom: Ziel der Ansicht, Auszeit, letzte Zeigerlage
   let wz = null, sleepUntil = Infinity; // Mausrad: Zielmaßstab mit Ankerpunkt; Karte „schläft“, bis der Zeiger auf ihr ruht
-  const layer = { sites: 1, reps: 1, net: 1 }, fade = { sites: 1, reps: 1, net: 1 };
+  const layer = { sites: 1, reps: 1, stories: 1, net: 1 }, fade = { sites: 1, reps: 1, stories: 1, net: 1 };
+  const layerOf = (n) => (n.site ? 'sites' : n.story ? 'stories' : 'reps');
   const pulses = [], sparks = [], layers = new Map();
 
   // ---------- Landmaske und Punktraster ----------
@@ -168,6 +170,7 @@ function setup(el) {
       if (px < ext[0] - hr || px > ext[2] + hr || py < ext[1] - hr || py > ext[3] + hr) continue;
       let best = Infinity, bt = 0, bi = -1;
       for (const nd of nodes) {
+        if (nd.story) continue; // Beiträge färben das Land nicht
         const ddx = nd.x - px, ddy = nd.y - py;
         if (ddx > hr || ddx < -hr || ddy > hr || ddy < -hr) continue;
         const q = ddx * ddx + ddy * ddy;
@@ -315,7 +318,7 @@ function setup(el) {
     g.fillStyle = rgba(C.cop, 0.5); g.fill(paths[1]);
     g.fillStyle = rgba(C.red, 0.78); g.fill(paths[2]);
     g.fillStyle = rgba(C.dot, 0.9); g.fill(paths[3]);
-    g.fillStyle = rgba(focus?.site ? C.red : C.cop, 0.95); g.fill(paths[4]);
+    g.fillStyle = rgba(focus?.site ? C.red : focus?.story ? C.dot : C.cop, 0.95); g.fill(paths[4]);
     g.globalAlpha = 1;
   }
   // Raster je Zoomstufe: das passende wird kurz überblendet (zeitlich), in Ruhe liegt immer genau eines
@@ -459,7 +462,7 @@ function setup(el) {
     const n = snap || pinned;
     const on = !!n && !n.out && n.on;
     ret.classList.toggle('is-on', on);
-    if (n) { ret.classList.toggle('is-site', n.site); ret.classList.toggle('is-hq', n === hq); ret.style.translate = `${n.X.toFixed(1)}px ${n.Y.toFixed(1)}px`; }
+    if (n) { ret.classList.toggle('is-site', n.site); ret.classList.toggle('is-story', n.story); ret.classList.toggle('is-hq', n === hq); ret.style.translate = `${n.X.toFixed(1)}px ${n.Y.toFixed(1)}px`; }
   }
 
   // ---------- Schleifen ----------
@@ -497,7 +500,7 @@ function setup(el) {
       clampCam();
       if (Math.hypot(chase.x - cam.x, chase.y - cam.y) * cam.s < 0.35) { cam.x = chase.x; cam.y = chase.y; chase = null; } else busy = true;
     }
-    for (const k of ['sites', 'reps', 'net']) { // Ebenen weich ein- und ausblenden
+    for (const k of ['sites', 'reps', 'stories', 'net']) { // Ebenen weich ein- und ausblenden
       const d = layer[k] - fade[k];
       if (Math.abs(d) > 0.01) { fade[k] += d * 0.2; busy = true; } else fade[k] = layer[k];
     }
@@ -586,7 +589,17 @@ function setup(el) {
 
   // ---------- Karte zum Punkt ----------
   const kindOf = (it) => M.L.types[it.k === 'l' ? it.ty : 'rep'] || '';
+  // Beitrag: Kategorie (wie auf der bisherigen Karte), Titel, in der angehefteten Karte ein kurzer Anriss
+  function storyHTML(it, full, first) {
+    const lg = it.tl ? ` lang="${esc(it.tl)}"` : '';
+    let h = `<span class="nm__kind nm__kind--story">${esc(it.ca)}</span>`;
+    h += first ? `<h3 class="nm__title"${lg}>${esc(it.ti)}</h3>` : `<b class="nm__title nm__title--s"${lg}>${esc(it.ti)}</b>`;
+    if (full && first && it.tx) h += `<p class="nm__tx"${lg}>${esc(it.tx)}</p>`;
+    if (full && !first && it.h) h += `<p class="nm__lines"><a href="${esc(it.h)}">${icon('arrow', 'width="15" height="15"')}<span>${esc(M.L.more)}</span></a></p>`;
+    return h;
+  }
   function itemHTML(n, it, full, first) {
+    if (it.k === 's') return storyHTML(it, full, first);
     const title = it.k === 'l' ? n.label : it.ti;
     let h = `<span class="nm__kind${it.k === 'r' ? ' nm__kind--rep' : ''}">${esc(kindOf(it))}</span>`;
     h += first ? `<h3 class="nm__title">${esc(title)}</h3>` : `<b class="nm__title nm__title--s">${esc(title)}</b>`;
@@ -605,14 +618,16 @@ function setup(el) {
     return h;
   }
   function cardHTML(n, full, pick = 0) {
-    const items = n.items.slice();
+    let items = n.items.slice();
     if (pick > 0 && pick < items.length) items.unshift(...items.splice(pick, 1)); // aus der Liste gewählter Eintrag zuerst
+    if (!layer.stories && !n.story) items = items.filter((it) => it.k !== 's'); // Ebene „Projekte & News“ aus
     const [first, ...rest] = items;
     let h = full ? `<button type="button" class="nm__x" data-nm-close aria-label="${esc(M.L.close)}">${icon('close', 'width="16" height="16"')}</button>` : '';
+    if (full && first.im) h += `<div class="nm__pic"><img src="${esc(first.im)}" alt="" decoding="async"></div>`;
     h += `<div class="nm__item">${itemHTML(n, first, full, true)}</div>`;
     if (rest.length) h += `<div class="nm__also"><span class="nm__alsoh">${esc(M.L.alsoHere)}</span>${rest.map((it) => `<div class="nm__item nm__item--s">${itemHTML(n, it, full, false)}</div>`).join('')}</div>`;
     if (full) {
-      const link = first.k === 'l' ? (first.h ? [first.h, M.L.site] : null) : M.L.repHref ? [M.L.repHref, M.L.rep] : null;
+      const link = first.k === 's' ? (first.h ? [first.h, M.L.more] : null) : first.k === 'l' ? (first.h ? [first.h, M.L.site] : null) : M.L.repHref ? [M.L.repHref, M.L.rep] : null;
       if (link) h += `<p class="nm__cta"><a class="link link--light" href="${esc(link[0])}">${esc(link[1])}${icon('arrow')}</a></p>`;
     }
     return h;
@@ -628,7 +643,12 @@ function setup(el) {
     const fresh = cardFor !== n || cardFull !== full || cardPick !== pick;
     if (fresh) {
       card.innerHTML = cardHTML(n, full, pick);
-      card.className = `nm__card${full ? ' is-pin' : ''}${n.site ? '' : ' is-rep'}`;
+      card.className = `nm__card${full ? ' is-pin' : ''}${n.site ? '' : n.story ? ' is-story' : ' is-rep'}`;
+      const pic = card.querySelector('.nm__pic'), pim = pic?.querySelector('img');
+      if (pim) { // Foto blendet ein, sobald es geladen ist; fehlt es, bleibt die Karte ohne
+        const ok = () => pic.classList.add('is-ok');
+        if (pim.complete && pim.naturalWidth) ok(); else { pim.addEventListener('load', ok, { once: true }); pim.addEventListener('error', () => { pic.hidden = true; measureCard(); positionCard(true); }, { once: true }); }
+      }
       if (full) card.removeAttribute('aria-hidden'); else card.setAttribute('aria-hidden', 'true'); // Vorschau: Inhalt steht im Namen des Markers
       cardFor = n; cardFull = full; cardPick = pick; cardSide = '';
     }
@@ -801,8 +821,10 @@ function setup(el) {
     const st = bar ? Object.fromEntries([...bar.querySelectorAll('[data-nm-layer]')].map((b) => [b.dataset.nmLayer, b.getAttribute('aria-pressed') === 'true'])) : {};
     layer.sites = st.sites === false ? 0 : 1;
     layer.reps = st.reps === false ? 0 : 1;
+    layer.stories = st.stories === false ? 0 : 1;
     layer.net = st.net === false ? 0 : 1;
-    for (const n of nodes) { n.on = n.site ? !!layer.sites : !!layer.reps; n.el?.classList.toggle('is-off', !n.on); }
+    for (const n of nodes) { n.on = !!layer[layerOf(n)]; n.el?.classList.toggle('is-off', !n.on); }
+    if (cardFor && !card.hidden && cardFor.on) { const n0 = cardFor, f = cardFull, pk = cardPick; cardFor = null; showCard(n0, f, pk); } // Einträge der Ebene „Projekte & News“ in Standortkarten
     if (listEl) for (const b of listEl.querySelectorAll('.nm__entry')) b.parentElement.classList.toggle('is-off', !nodes[+b.dataset.n]?.on);
     neighbors();
     if (pinned && !pinned.on) unpin();
@@ -836,7 +858,7 @@ function setup(el) {
   const setRegion = (r) => { if (bar) for (const x of bar.querySelectorAll('[data-nm-region]')) x.setAttribute('aria-pressed', String(x.dataset.nmRegion === r)); };
   const showLayerOf = (n) => {
     if (n.on || !bar) return;
-    for (const b of bar.querySelectorAll('[data-nm-layer]')) if (b.dataset.nmLayer === (n.site ? 'sites' : 'reps')) b.setAttribute('aria-pressed', 'true');
+    for (const b of bar.querySelectorAll('[data-nm-layer]')) if (b.dataset.nmLayer === layerOf(n)) b.setAttribute('aria-pressed', 'true');
     applyLayers();
   };
   const pinScale = (n) => Math.min(sMax, Math.max(cam.s, base.s * (inEU(n.x, n.y) ? 2.6 : 1.7), isFinite(n.nn) ? Math.min(SPREAD / n.nn, base.s * 8) : 0));
@@ -845,8 +867,10 @@ function setup(el) {
     if (!b) return;
     if (b.dataset.nmLayer) {
       const on = b.getAttribute('aria-pressed') !== 'true';
-      const other = bar.querySelector(`[data-nm-layer="${b.dataset.nmLayer === 'sites' ? 'reps' : 'sites'}"]`);
-      if (!on && b.dataset.nmLayer !== 'net' && other && other.getAttribute('aria-pressed') !== 'true') other.setAttribute('aria-pressed', 'true'); // eine Punktebene bleibt
+      if (!on && b.dataset.nmLayer !== 'net') { // eine Punktebene bleibt immer an
+        const others = [...bar.querySelectorAll('[data-nm-layer]')].filter((x) => x !== b && x.dataset.nmLayer !== 'net');
+        if (!others.some((x) => x.getAttribute('aria-pressed') === 'true')) others[0]?.setAttribute('aria-pressed', 'true');
+      }
       b.setAttribute('aria-pressed', String(on));
       applyLayers();
     } else if (b.dataset.nmRegion) {
@@ -899,7 +923,7 @@ function setup(el) {
     };
     document.addEventListener('pointerdown', outsideV, true);
     mq.addEventListener?.('change', () => { if (!mq.matches) closeView(false); });
-    viewSync = () => viewBtn.classList.toggle('has-filter', !layer.sites || !layer.reps || !layer.net);
+    viewSync = () => viewBtn.classList.toggle('has-filter', !layer.sites || !layer.reps || !layer.stories || !layer.net);
     viewSync();
   }
   // Länderwahl (Startseite): Knopf öffnet Suchfeld und Liste; Durchgehen zeigt das Land auf der Karte, Auswahl heftet an.

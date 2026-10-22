@@ -166,14 +166,14 @@ function historyJourney(ctx) {
 export function companyPage(ctx) {
   const { t, href } = ctx;
   const C = t.pages.company;
-  // Porträt mit der abgeschrägten Ecke aus der RITZ-Raute, darin eine kleine rote Raute; bei der Geschäftsführung
-  // steht das Kürzel der Funktion (CTO, CFO …) im Bild (für Vorleser genügt die Rolle in der Unterschrift)
-  const mgr = (name, role, { board = false, cls = '', sizes = '(max-width: 900px) 50vw, 25vw' } = {}) => {
+  // Porträtkarte: Foto immer in Farbe, darunter das Namensschild mit Name und Funktion (wörtlich wie auf der bisherigen
+  // Website; roleLang nennt ihre Sprache, z. B. Englisch auf der deutschen Seite).
+  // Alle Porträts einer Gruppe sind gleich groß. Beim Zeigen zieht sich ein roter Fokusrahmen um das Foto (CSS).
+  const rl = C.roleLang || '';
+  const mgr = (name, role, { board = false, sizes = '(max-width: 900px) 50vw, 25vw' } = {}) => {
     const k = personImg(name, board);
-    const acr = board ? '' : (/\b(C[A-Z]O)\b/.exec(role) || [])[1] || '';
-    return `<figure class="mgr${cls}"><div class="mgr__img">${k && ctx.img[k] ? imgTag(ctx, k, { alt: name, sizes, max: 1280 }) : ''}${acr ? `<span class="mgr__tag" aria-hidden="true">${acr}</span>` : ''}</div><i class="mgr__gem" aria-hidden="true"></i><figcaption><b>${esc(name)}</b><span>${esc(role)}</span></figcaption></figure>`;
+    return `<figure class="mgr"><div class="mgr__img">${k && ctx.img[k] ? imgTag(ctx, k, { alt: name, sizes, max: 1280 }) : ''}</div><figcaption><b>${esc(name)}</b>${role ? `<span${rl ? ` lang="${rl}"` : ''}>${esc(role)}</span>` : ''}</figcaption></figure>`;
   };
-  const hon = C.board.length > 2 ? C.board[C.board.length - 1][1] : null; // Ehrenmitglieder: Rolle des letzten Eintrags
   return `${phead(ctx, { title: C.h1, lead: C.lead, image: 'mimg/ritz_header-unternehmen.webp', crumbs: [[C.title]] })}
 <section class="section">
   <div class="wrap split">
@@ -194,7 +194,7 @@ ${historyJourney(ctx)}
     ${sectionHead(C.mgmtTitle)}
     <div class="mgmt" data-reveal="team">${C.mgmt.map(([n, r]) => mgr(n, r)).join('')}</div>
     <h2 class="h3 mt-xl mb">${esc(C.boardTitle)}</h2>
-    <div class="mgmt mgmt--small mgmt--board" data-reveal="team">${C.board.map(([n, r], i) => mgr(n, r, { board: true, cls: i === 0 ? ' mgr--lead' : r === hon && i > 1 ? ' mgr--hon' : '', sizes: i === 0 ? '(max-width: 1100px) 50vw, 40vw' : '(max-width: 600px) 50vw, 20vw' })).join('')}</div>
+    <div class="mgmt mgmt--board" data-reveal="team">${C.board.map(([n, r]) => mgr(n, r, { board: true, sizes: '(max-width: 600px) 50vw, (max-width: 1239px) 25vw, 15vw' })).join('')}</div>
   </div>
 </section>
 ${groupStructure(ctx)}

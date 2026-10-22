@@ -43,7 +43,7 @@ for (const [url, name] of [['/de/', 'home'], ['/de/kontakt/', 'con']]) {
   check(sw <= 390, `${name}: kein seitliches Scrollen (${sw})`);
   await page.close();
 }
-// Desktop: Leiste unverändert (Ebenen, Regionen, Länderwahl in einer Zeile), Knopf „Ansicht“ unsichtbar
+// Desktop (Startseite): zwei feste Zeilen – Ebenen und Länderwahl oben, Regionen darunter; Knopf „Ansicht“ unsichtbar
 const page = await browser.newPage({ viewport: { width: 1440, height: 900 } });
 await page.addInitScript(() => { try { sessionStorage.setItem('ritz-intro-skip', '1'); } catch (e) {} });
 await page.goto('http://localhost:8080/de/', { waitUntil: 'networkidle' });
@@ -51,7 +51,7 @@ await page.evaluate(() => { const s = document.querySelector('[data-nm-bar]'); s
 await page.waitForTimeout(800);
 const d = await page.evaluate(() => { const r = (s) => document.querySelector(s).getBoundingClientRect(); return { btn: getComputedStyle(document.querySelector('[data-nm-viewbtn]')).display, layers: Math.round(r('.nm__layers').top), regions: Math.round(r('.nm__regions').top), pick: Math.round(r('.nm__pick').top), bar: Math.round(r('[data-nm-bar]').height) }; });
 console.log('desktop', JSON.stringify(d));
-check(d.btn === 'none' && Math.abs(d.layers - d.regions) < 4 && Math.abs(d.pick - d.regions) < 6 && d.bar < 80, 'Desktop: eine Zeile wie bisher');
+check(d.btn === 'none' && Math.abs(d.layers - d.pick) < 6 && d.regions > d.layers + 30 && d.bar < 130, 'Desktop: Ebenen und Länderwahl oben, Regionen darunter');
 await page.screenshot({ path: `${out}/mv-desktop.png`, clip: { x: 0, y: 40, width: 1440, height: 140 } });
 await browser.close();
 console.log(errs.length ? errs.join('\n') : 'keine Fehler');

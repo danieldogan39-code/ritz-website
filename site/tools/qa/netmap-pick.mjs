@@ -160,6 +160,7 @@ if (only === 'all' || only === 'lupe') {
   }
   const ref = find(s, 'Dubai');
   const tx = s.fr.x + best.x, ty = s.fr.y + best.y;
+  const tLeave = Date.now(); // ab hier „ohne Punkt“: die 4 s zählen ab dem Verlassen des Punkts, nicht ab dem Ende der Bewegung
   await page.mouse.move(tx, ty, { steps: 24 });
   await page.waitForTimeout(500);
   s = await state(page);
@@ -170,10 +171,10 @@ if (only === 'all' || only === 'lupe') {
   check(along > 40, 'Ansicht folgt dem Zeiger (Inhalt wandert entgegen)');
   await page.screenshot({ path: `${out}/l-follow.png` });
   const zNow = scale(s, 'Hamburg', 'Kirchaich');
-  await page.waitForTimeout(3000);
+  await page.waitForTimeout(Math.max(0, tLeave + 3000 - Date.now()));
   s = await state(page);
   check(Math.abs(scale(s, 'Hamburg', 'Kirchaich') - zNow) < 1, 'nach 3 s ohne Punkt noch gezoomt');
-  await page.waitForTimeout(2400);
+  await page.waitForTimeout(Math.max(0, tLeave + 5600 - Date.now()));
   s = await state(page);
   const d4 = scale(s, 'Hamburg', 'Kirchaich');
   log('  nach gut 4 s ohne Punkt: Abstand', d4.toFixed(1), '(Ausgang', d0.toFixed(1) + ')');

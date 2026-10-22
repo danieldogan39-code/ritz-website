@@ -3,8 +3,10 @@
 // Ohne JavaScript: Punktkarte als Bild (img/world-dots.svg) mit den Markern in Prozentlage und – auf den Unterseiten –
 // der vollständigen Liste. Mit JavaScript zeichnet src/client/netmap.js Punkte und Netz auf eine Leinwand. Knoten,
 // Bögen, Zeitplan und Texte stehen als JSON in der Seite, damit Ansicht und Skript dieselben Daten nutzen.
-import { esc, icon, tpl, fmtNum } from '../lib/util.js';
+import { esc, icon, tpl, fmtNum, htmlText } from '../lib/util.js';
 import { projectLL, countryName, locAddress } from '../lib/geo.js';
+import { MAP_STORIES, LOC_IMG } from '../lib/catalog.js';
+import { shorten } from './layout.js';
 
 const GENERIC_FN = /^(vertrieb|controlling|it$|personal|konstruktion|zwei gesellschaften)/i;
 export function plantFunctions(l, lang, dl) {
@@ -28,6 +30,20 @@ const gcDeg = (a, b) => {
   return (2 * Math.asin(Math.min(1, Math.sqrt(h)))) / r;
 };
 const routeUrl = (lat, lng) => `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
+// Anriss eines Beitrags: erster Absatz mit Fließtext – keine reinen Dokument-Links, keine Zeilen in Versalien; sonst leer
+function teaser(h) {
+  for (const m of String(h || '').matchAll(/<p(?:\s[^>]*)?>([\s\S]*?)<\/p>/g)) {
+    const tx = htmlText(m[1]);
+    if (/^\s*<a\b[^>]*data-doc/.test(m[1]) && !/<\/a>\s*[^\s<]/.test(m[1])) continue;
+    const letters = tx.replace(/[^\p{L}]/gu, '');
+    if (tx.length < 25 || (letters && letters.replace(/[^\p{Lu}]/gu, '').length / letters.length > 0.6)) continue;
+    return shorten(tx, 150);
+  }
+  return '';
+}
+// Foto für die angeheftete Karte (Standort oder Beitrag): das erste ausreichend große Bild (die Karte ist gut 300 px
+// breit, auf scharfen Bildschirmen doppelt) – kleine Altbilder (z. B. 260 px) würden unscharf, dann bleibt die Karte ohne Foto
+const picUrl = (ctx, ...keys) => { const k = keys.flat().find((x) => x && ctx.img[x] && ctx.img[x].w >= 400); return k ? ctx.imgUrl(k, 640) : ''; };
 
 export function netModel(ctx, { mode = 'home' } = {}) {
   const { t, lang } = ctx;
@@ -49,7 +65,7 @@ export function netModel(ctx, { mode = 'home' } = {}) {
     nodes.push({ id: l.id, kind: l.type, x, y, lat: l.lat, lng: l.lng, cc: l.country, label: cityOf[l.id], items: [{
       k: 'l', cc: l.country, ty: l.type, ti: l.city, su: l.company, co: cname(l.country), ad: locAddress(l, lang),
       te: l.phone || '', ma: l.email || '', fn, st: l.employees ? tpl(t.pages.home.plants.staff, { n: fmtNum(l.employees, lang) }) : '',
-      h: siteHref(l.id), rt: full ? routeUrl(l.lat, l.lng) : '',
+      h: siteHref(l.id), rt: full ? routeUrl(l.lat, l.lng) : '', im: picUrl(ctx, LOC_IMG[l.id]),
     }] });
   }
   if (withReps) {
@@ -63,13 +79,35 @@ export function netModel(ctx, { mode = 'home' } = {}) {
       nodes.push({ id: 'r' + r.pid, kind: 'rep', x, y, lat: r.lat, lng: r.lng, cc: r.country, label: cname(r.country, r), items: [it] });
     }
   }
+  // Beiträge aus der Karte der bisherigen Startseite (nur dort): Projekte, neue Produkte, Neuigkeiten, Einsatzgebiete.
+  // Liegt ein Beitrag auf einem eigenen Standort (neues Werk in Waynesboro, Gießharz in Dresden), steht er in dessen
+  // Karte unter „Ebenfalls hier“ – zwei Punkte auf derselben Stelle ließen sich nicht getrennt wählen.
+  const stories = [];
+  if (mode === 'home') {
+    const news = ctx.data.news || [];
+    MAP_STORIES.forEach((s, si) => {
+      const n = news.find((x) => x.id === s.news || Object.values(x.v).some((v) => v?.slug === s.news));
+      if (!n) return;
+      const vf = n.v[lang] ? lang : n.v[ctx.dl] ? ctx.dl : n.v.de ? 'de' : Object.keys(n.v)[0];
+      const v = n.v[vf];
+      const vl = v.contentLang || vf;
+      const it = { k: 's', ca: N.storyCats[s.cat] || '', ti: v.title, tl: vl !== lang ? vl : '', tx: teaser(v.html),
+        im: picUrl(ctx, n.image, n.images || []), h: ctx.href('article', { slug: ctx.newsSlug(n) }) };
+      const [x, y] = projectLL(meta, s.lng, s.lat);
+      const site = nodes.find((m) => m.kind !== 'rep' && Math.hypot(m.x - x, m.y - y) < 1.2);
+      if (site) { site.items.push(it); return; }
+      const node = { id: 's' + si, kind: 'story', x, y, lat: s.lat, lng: s.lng, cc: '', label: v.title, items: [it] };
+      nodes.push(node);
+      stories.push(node);
+    });
+  }
   // Verbindungen und Zeitplan des Netzaufbaus (ms ab Start): Zentrale → Standorte, Standort → Vertretungen
   const hq = nodes.find((n) => n.kind === 'hq');
   const hubs = nodes.filter((n) => NM_HUBS.includes(n.id));
   const dist = (a, b) => Math.hypot(a.x - b.x, a.y - b.y);
   const arcs = [];
   hq.t = 160;
-  nodes.filter((n) => n.kind !== 'rep' && n !== hq).sort((a, b) => dist(hq, a) - dist(hq, b)).forEach((n, i) => {
+  nodes.filter((n) => n.kind !== 'rep' && n.kind !== 'story' && n !== hq).sort((a, b) => dist(hq, a) - dist(hq, b)).forEach((n, i) => {
     const d = dist(hq, n), t0 = 520 + i * 80, dur = Math.round(520 + Math.min(1, d / 320) * 660);
     arcs.push({ a: hq, b: n, t0, dur, s: 1 });
     n.t = t0 + dur;
@@ -88,8 +126,11 @@ export function netModel(ctx, { mode = 'home' } = {}) {
       n.t = t0 + dur;
     });
   }
-  // Reihenfolge: Vertretungen unten, Standorte darüber, Zentrale oben
-  const rank = { rep: 0, site: 1, sales: 1, production: 2, hq: 3 };
+  // Beiträge erscheinen nach dem Netz, nacheinander von West nach Ost
+  const tNet = Math.max(0, ...nodes.map((n) => n.t || 0));
+  stories.sort((a, b) => a.x - b.x).forEach((n, i) => { n.t = tNet + 160 + i * 110; });
+  // Reihenfolge: Vertretungen unten, Beiträge darüber, dann Standorte, Zentrale oben
+  const rank = { rep: 0, story: 0.5, site: 1, sales: 1, production: 2, hq: 3 };
   nodes.sort((a, b) => rank[a.kind] - rank[b.kind]);
   const idx = new Map(nodes.map((n, i) => [n, i]));
   const regions = {};
@@ -102,6 +143,7 @@ export function netModel(ctx, { mode = 'home' } = {}) {
   const byCc = new Map();
   nodes.forEach((n, i) => {
     for (const it of n.items) {
+      if (it.k === 's') continue; // Beiträge gehören zu keinem Land der Auswahl
       const pr = it.k === 'l' ? 10 + rank[n.kind] : 0;
       let cur = byCc.get(it.cc);
       if (!cur) { cur = { n: i, pr, name: it.co, cities: [], ns: [] }; byCc.set(it.cc, cur); } else if (pr > cur.pr) Object.assign(cur, { n: i, pr, name: it.co });
@@ -121,7 +163,7 @@ export function netModel(ctx, { mode = 'home' } = {}) {
     hq: idx.get(hq), regions, _countries: countries,
     stats: { sites: locs.length, cc: new Set(locs.map((l) => l.country)).size, reps: repCountries },
     L: {
-      types: { ...t.lbl.locType, rep: t.map.legendRep }, site: N.site, rep: mode === 'home' ? N.rep : '', repHref: mode === 'home' ? ctx.hrefA('contact', {}, 'karte') : '',
+      types: { ...t.lbl.locType, rep: t.map.legendRep }, site: N.site, rep: mode === 'home' ? N.rep : '', repHref: mode === 'home' ? ctx.hrefA('contact', {}, 'karte') : '', more: t.ui.more,
       alsoHere: N.alsoHere, close: t.ui.close, route: t.ui.route, count1: t.map.count1, countN: t.map.countN, none: t.ui.noResults,
     },
     // Rohdaten für die Liste (nur Unterseiten)
@@ -129,11 +171,11 @@ export function netModel(ctx, { mode = 'home' } = {}) {
   };
 }
 
-const kindCls = (k) => (k === 'hq' ? 'hq' : k === 'rep' ? 'rep' : 'site');
+const kindCls = (k) => (k === 'hq' ? 'hq' : k === 'rep' ? 'rep' : k === 'story' ? 'story' : 'site');
 function marksHTML(m) {
   return m.nodes.map((n, i) => {
-    const label = n.items.map((it) => `${m.L.types[it.k === 'l' ? it.ty : 'rep']} ${it.k === 'l' ? n.label : it.ti}, ${it.co}`).join('; ');
-    return `<button type="button" class="nm__mk nm__mk--${kindCls(n.k)}${n.items.length > 1 ? ' nm__mk--multi' : ''}" data-n="${i}" style="--x:${(n.x / 10).toFixed(2)}%;--y:${(n.y / 5.2).toFixed(2)}%;--d:${n.t}ms" aria-label="${esc(label)}"${i === m.hq ? '' : ' tabindex="-1"'}><i></i>${n.k !== 'rep' ? `<span class="nm__lbl" aria-hidden="true">${esc(n.label)}</span>` : ''}</button>`;
+    const label = n.items.map((it) => (it.k === 's' ? `${it.ca}: ${it.ti}` : `${m.L.types[it.k === 'l' ? it.ty : 'rep']} ${it.k === 'l' ? n.label : it.ti}, ${it.co}`)).join('; ');
+    return `<button type="button" class="nm__mk nm__mk--${kindCls(n.k)}${n.items.length > 1 ? ' nm__mk--multi' : ''}" data-n="${i}" style="--x:${(n.x / 10).toFixed(2)}%;--y:${(n.y / 5.2).toFixed(2)}%;--d:${n.t}ms" aria-label="${esc(label)}"${i === m.hq ? '' : ' tabindex="-1"'}><i></i>${n.k !== 'rep' && n.k !== 'story' ? `<span class="nm__lbl" aria-hidden="true">${esc(n.label)}</span>` : ''}</button>`;
   }).join('');
 }
 function stageHTML(ctx, m, N) {
@@ -149,7 +191,7 @@ function stageHTML(ctx, m, N) {
         <button type="button" data-nm-z="out" aria-label="${esc(t.map.zoomOut)}">${icon('minus')}</button>
         <button type="button" data-nm-z="reset" aria-label="${esc(t.map.reset)}">${icon('reset')}</button>
       </div>
-      <div class="nm__marks" role="group" aria-label="${esc(m.mode === 'locations' ? N.sites : N.marks)}" data-nm-marks>${marksHTML(m)}</div>
+      <div class="nm__marks" role="group" aria-label="${esc(m.mode === 'locations' ? N.sites : m.mode === 'home' ? N.marksAll : N.marks)}" data-nm-marks>${marksHTML(m)}</div>
     </div>
     <div class="nm__card" data-nm-card hidden></div>
     <p class="vh" id="nm-help-${m.mode}">${esc(N.help)}</p>
@@ -163,21 +205,22 @@ function regionsHTML(ctx, N) {
 }
 // Ebenen und Regionen. Breit stehen sie in der Leiste (der Rahmen ist dort display: contents); auf dem Telefon liegen sie
 // als Blatt hinter dem Knopf „Ansicht“, damit über der Karte nur eine Zeile bleibt.
-function viewHTML(ctx, N, mode, all = true) {
+function viewHTML(ctx, N, mode, all = true, stories = false) {
   const id = `nm-view-${mode}`;
   return `<div class="nm__view" id="${id}" tabindex="-1" data-nm-view>
       <div class="nm__viewhead"><span aria-hidden="true">${esc(N.viewTitle)}</span><button type="button" class="nm__popx" aria-label="${esc(ctx.t.ui.close)}" data-nm-viewx>${icon('close')}</button></div>
       <p class="nm__viewlbl" aria-hidden="true">${esc(N.layers)}</p>
-      ${layersHTML(N, all)}
+      ${layersHTML(N, all, stories)}
       <p class="nm__viewlbl" aria-hidden="true">${esc(N.region)}</p>
       ${regionsHTML(ctx, N)}
     </div>
     <button type="button" class="nm__viewbtn" aria-expanded="false" aria-controls="${id}" data-nm-viewbtn>${icon('layers')}<span>${esc(N.view)}</span></button>`;
 }
-function layersHTML(N, all = true) {
+function layersHTML(N, all = true, stories = false) {
   return `<div class="nm__layers" role="group" aria-label="${esc(N.layers)}">
       <button type="button" class="nm__tog" data-nm-layer="sites" aria-pressed="true"><i class="nm__key nm__key--site" aria-hidden="true"></i>${esc(N.sites)}</button>
       <button type="button" class="nm__tog" data-nm-layer="reps" aria-pressed="true"><i class="nm__key nm__key--rep" aria-hidden="true"></i>${esc(N.reps)}</button>
+      ${stories ? `<button type="button" class="nm__tog" data-nm-layer="stories" aria-pressed="true"><i class="nm__key nm__key--story" aria-hidden="true"></i>${esc(N.stories)}</button>` : ''}
       ${all ? `<button type="button" class="nm__tog" data-nm-layer="net" aria-pressed="true"><i class="nm__key nm__key--net" aria-hidden="true"></i>${esc(N.net)}</button>` : ''}
     </div>`;
 }
@@ -227,7 +270,7 @@ export function netMapHome(ctx) {
   <div class="wrap nm__wrap">
     <div class="nm__tile">
       <div class="nm__bar nm__bar--sheet" data-nm-bar hidden>
-        ${viewHTML(ctx, N, 'home')}
+        ${viewHTML(ctx, N, 'home', true, true)}
         ${countryPick(ctx, m, N)}
       </div>
       ${stageHTML(ctx, m, N)}

@@ -4,6 +4,7 @@ import { LANGS, LANG_NAMES, AREAS, SECTORS } from '../lib/routes.js';
 import { AREA_IMG, SECTOR_IMG, PAGE_IMG } from '../lib/catalog.js';
 import { docTitleFor, docsForLang, dedupeCopies } from '../lib/doclang.js';
 import { SOCIAL_ICONS } from '../lib/social-icons.js';
+import { flag } from '../lib/flags.js';
 
 export const GROUP_ANCHORS = {
   mittelspannung: ['ms.indoor.ct', 'ms.indoor.vt', 'ms.outdoor.ct', 'ms.metalclad', 'ms.pq'],
@@ -51,9 +52,9 @@ export function header(ctx) {
 function langSwitch(ctx) {
   const { lang, t } = ctx;
   return `<div class="lang" data-lang>
-    <button class="lang__btn" type="button" aria-expanded="false" aria-controls="lang-menu" aria-label="${esc(t.ui.lang)}: ${esc(LANG_NAMES[lang])}">${icon('globe', 'width="16" height="16"')}${lang.toUpperCase()}</button>
+    <button class="lang__btn" type="button" aria-expanded="false" aria-controls="lang-menu" aria-label="${esc(t.ui.lang)}: ${esc(LANG_NAMES[lang])}">${flag(lang)}${lang.toUpperCase()}</button>
     <div class="lang__menu" id="lang-menu" hidden>
-      ${LANGS.map((l) => `<a href="${ctx.langHref(l)}" hreflang="${l}" lang="${l}" data-lang-link="${l}"${l === lang ? ' aria-current="true"' : ''}>${esc(LANG_NAMES[l])}<span>${l.toUpperCase()}</span></a>`).join('')}
+      ${LANGS.map((l) => `<a href="${ctx.langHref(l)}" hreflang="${l}" lang="${l}" data-lang-link="${l}"${l === lang ? ' aria-current="true"' : ''}>${flag(l)}<b>${esc(LANG_NAMES[l])}</b><span>${l.toUpperCase()}</span></a>`).join('')}
     </div>
   </div>`;
 }
@@ -135,7 +136,7 @@ export function drawer(ctx) {
     <div class="drawer__body">
       <button class="btn btn--ghost btn--block" type="button" data-search-open style="--i:0">${icon('search')}${esc(t.ui.search)}</button>
       <ul class="mnav">${top.map((x, i) => `<li style="--i:${i + 1}">${x}</li>`).join('')}</ul>
-      <div class="cluster" style="--i:${top.length + 1}">${LANGS.map((l) => `<a class="chip${l === ctx.lang ? ' is-on' : ''}" href="${ctx.langHref(l)}" hreflang="${l}" lang="${l}" data-lang-link="${l}">${l.toUpperCase()}</a>`).join('')}</div>
+      <div class="cluster" style="--i:${top.length + 1}">${LANGS.map((l) => `<a class="chip chip--lang${l === ctx.lang ? ' is-on' : ''}" href="${ctx.langHref(l)}" hreflang="${l}" lang="${l}" data-lang-link="${l}" aria-label="${esc(LANG_NAMES[l])}">${flag(l)}${l.toUpperCase()}</a>`).join('')}</div>
     </div>
     <div class="drawer__foot"><a class="btn btn--red btn--block" href="${href('inquiry')}">${icon('clipboard')}${esc(t.ui.inquiryList)}<span class="badge-inline" data-basket-count hidden>0</span></a></div>
   </div>
