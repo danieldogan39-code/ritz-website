@@ -305,6 +305,8 @@ p { margin: 0; text-wrap: pretty; }
 .hdr { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 50; background: var(--paper); border-bottom: 1px solid var(--line); }
 @supports ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
   .hdr { background: color-mix(in srgb, var(--paper) 82%, transparent); backdrop-filter: saturate(180%) blur(16px); -webkit-backdrop-filter: saturate(180%) blur(16px); }
+  /* geöffnetes Mega-Menü: Kopf und Panel als eine ruhige Fläche (auch über der dunklen Bühne) */
+  .hdr.is-open { background: var(--paper); }
 }
 .hdr__bar { display: flex; align-items: center; gap: 1rem; height: var(--header-h); }
 .logo { display: inline-flex; align-items: center; color: var(--red); flex: none; }
