@@ -112,40 +112,133 @@ export function groupStats(ctx) {
   return { plants: plants.length, plantCountries: new Set(plants.map((l) => l.country)).size, staff, staffRound: Math.floor(staff / 100) * 100, repCountries };
 }
 
-// ---------- Bühne: ein Ringkern-Stromwandler im Detail, darüber das Messwerk ----------
-// Foto und Einblendungen teilen ein Koordinatensystem (Pixel des Fotos, 1800 × 813): Die Fläche hat das
-// Seitenverhältnis des Fotos und wird wie ein Titelbild beschnitten, so liegen Skala und Hinweise bei jeder
-// Fenstergröße genau auf dem Ring.
-const STAGE_IMG = 'mimg/intro_home_slider_6.webp';
-const STAGE = { w: 1800, h: 813, cx: 1172, cy: 437, r: 292 };
+// ---------- Bühne: ein Ringkern-Stromwandler in der Fertigung, darüber das Messwerk mit Röntgenblick ----------
+// Foto und Einblendungen teilen ein Koordinatensystem (Pixel des Fotos): Die Fläche hat das Seitenverhältnis des
+// Fotos und wird wie ein Titelbild beschnitten, so liegen Skala, Röntgenbild und Hinweise bei jeder Fenstergröße
+// genau auf dem Ring. Die Kamera steht leicht rechts der Ringachse, die Stirnseite erscheint deshalb waagerecht
+// verkürzt: Skala und Röntgenbild werden als Kreise gezeichnet und mit E = rx / ry auf die Stirnseite gelegt.
+// Ablauf: Das Messwerk legt sich um das Fenster, dann fährt ein Scanner von links nach rechts über den Ring.
+// Im Streifen wird das Foto abgedunkelt und das Innere scharf sichtbar (Ringkern mit Bandlagen, Sekundärwicklung,
+// Außenkante des Gießharzkörpers, Lage des Primärleiters); hinter dem Scanner bleibt die Zeichnung zart stehen.
+// Die Hinweise erscheinen in dem Moment, in dem der Scanner ihren Punkt erreicht. Danach läuft alle 14 s ein
+// leiser zweiter Scan. Bei einem neuen Foto genügt es, STAGE neu einzumessen.
+const STAGE_IMG = 'mimg/buehne-ringkernwandler.webp';
+const STAGE = {
+  w: 2912, h: 1440,
+  cx: 1992, cy: 745, rx: 395, ry: 438, // Öffnung: Mitte und Halbachsen an der Kante der Aluminiumhülse
+  outer: [2010, 745, 692, 752], // Außenkante der Stirnseite (Mitte, Halbachsen; rechts durch die Perspektive größer)
+  mw: 1400, mh: 1051, // Handy: so viele Fotopixel füllen Breite und Höhe der Bildfläche (Ring samt Aufklebern)
+  // Bauteile auf der Stirnseite (x, y, Breite, Höhe): Aufkleber P1, CE mit Gewindeeinsatz, Klemmenkasten.
+  // Das Röntgenbild spart sie aus, damit sie sauber über der Zeichnung liegen.
+  parts: [[2511, 567, 157, 125], [2465, 690, 180, 112], [2438, 834, 245, 285]],
+};
+const E = STAGE.rx / STAGE.ry; // Verkürzung der Stirnseite
+const U = STAGE.ry / 292; // Maßeinheit der Einblendung (1 = Skala auf dem ersten Bühnenfoto)
+// Röntgenbild in Vielfachen des Öffnungsradius: Ringkern und Wicklung liegen außerhalb der Skala (bis 1,22)
+const XR = { core: [1.27, 1.45], wind: [1.25, 1.47], lam: 13, cond: 60, dot: [1.36, -40] };
+// Scanner: Mitte des Streifens fährt gleichmäßig von x0 nach x1 (Fotopixel, Breite bw), Start t0, Dauer dur, Wiederholung loop (s)
+const SCAN = { x0: 1180, x1: 2912, bw: 510, t0: 0.9, dur: 2.4, loop: 14 };
+const scanAt = (x) => +(SCAN.t0 + ((x - SCAN.x0) / (SCAN.x1 - SCAN.x0)) * SCAN.dur).toFixed(2);
 const P = (x, y) => `left:${((x / STAGE.w) * 100).toFixed(2)}%;top:${((y / STAGE.h) * 100).toFixed(2)}%`;
+const f1 = (v) => v.toFixed(1);
+const rad = (a) => (a * Math.PI) / 180;
+// Kreis um die Mitte (ungestaucht, für die Gruppe ON_FACE) und Punkt auf der Stirnseite (k-facher Öffnungsradius)
+const lp = (r, a) => [STAGE.cx + r * Math.cos(rad(a)), STAGE.cy + r * Math.sin(rad(a))];
+const face = (k, a) => [STAGE.cx + E * k * STAGE.ry * Math.cos(rad(a)), STAGE.cy + k * STAGE.ry * Math.sin(rad(a))];
+const ON_FACE = `translate(${STAGE.cx} ${STAGE.cy}) scale(${E.toFixed(4)} 1) translate(${-STAGE.cx} ${-STAGE.cy})`;
 function arcPath(cx, cy, r, a0, a1) {
   const p = (a) => [cx + r * Math.cos((a * Math.PI) / 180), cy + r * Math.sin((a * Math.PI) / 180)];
   const [x0, y0] = p(a0), [x1, y1] = p(a1);
-  return `M${x0.toFixed(1)} ${y0.toFixed(1)}A${r} ${r} 0 ${a1 - a0 > 180 ? 1 : 0} 1 ${x1.toFixed(1)} ${y1.toFixed(1)}`;
+  return `M${x0.toFixed(1)} ${y0.toFixed(1)}A${r.toFixed(1)} ${r.toFixed(1)} 0 ${a1 - a0 > 180 ? 1 : 0} 1 ${x1.toFixed(1)} ${y1.toFixed(1)}`;
+}
+const circ = (r) => `M${f1(STAGE.cx + r)} ${STAGE.cy}A${f1(r)} ${f1(r)} 0 1 1 ${f1(STAGE.cx - r)} ${STAGE.cy}A${f1(r)} ${f1(r)} 0 1 1 ${f1(STAGE.cx + r)} ${STAGE.cy}`;
+// Hinweise: Ankerpunkte in Fotopixeln (Schilder rechtsbündig an der Linie, Messwerte mit der linken unteren Ecke)
+function stageMarks() {
+  const { cx, cy, rx, ry } = STAGE, u = U;
+  const [kx, ky] = face(...XR.dot);
+  const ly = cy - 1.2 * ry;
+  return {
+    lead1: [[cx, cy], [cx - 84 * u, cy + 84 * u], [cx - 136 * u, cy + 84 * u]],
+    lead2: [[kx, ky], [kx - (ky - ly), ly], [cx + 0.22 * rx, ly]],
+    chipA: [cx - 142 * u, cy + 84 * u],
+    chipB: [cx + 0.22 * rx - 6 * u, ly],
+    read: [cx - 0.12 * rx, cy + 0.8 * ry],
+    dot2: [kx, ky],
+  };
 }
 function stageHud() {
-  const { cx, cy, r } = STAGE;
+  const { cx, cy, ry: r } = STAGE, u = U;
   let ticks = '', major = '';
   for (let a = 0; a < 360; a += 3) {
     const long = a % 15 === 0;
-    const r1 = r + 22, r2 = r1 + (long ? 18 : 8);
-    const c = Math.cos((a * Math.PI) / 180), s = Math.sin((a * Math.PI) / 180);
-    const seg = `M${(cx + c * r1).toFixed(1)} ${(cy + s * r1).toFixed(1)}L${(cx + c * r2).toFixed(1)} ${(cy + s * r2).toFixed(1)}`;
+    const r1 = r + 22 * u, r2 = r1 + (long ? 18 : 8) * u;
+    const [x1, y1] = lp(r1, a), [x2, y2] = lp(r2, a);
+    const seg = `M${f1(x1)} ${f1(y1)}L${f1(x2)} ${f1(y2)}`;
     if (long) major += seg; else ticks += seg;
   }
-  const cross = [[1, 0], [-1, 0], [0, 1], [0, -1]].map(([dx, dy]) => `M${cx + dx * 18} ${cy + dy * 18}L${cx + dx * 46} ${cy + dy * 46}`).join('');
+  const cross = [[1, 0], [-1, 0], [0, 1], [0, -1]].map(([dx, dy]) => `M${f1(cx + dx * 18 * u)} ${f1(cy + dy * 18 * u)}L${f1(cx + dx * 46 * u)} ${f1(cy + dy * 46 * u)}`).join('');
+  const M = stageMarks();
+  const [kx, ky] = M.dot2;
+  const t1 = scanAt(cx), t2 = scanAt(kx);
+  const line = (pts) => pts.map(([x, y], i) => `${i ? 'L' : 'M'}${f1(x)} ${f1(y)}`).join('');
+  const rot = `style="transform-origin:${cx}px ${cy}px"`;
   return `<svg class="hud" viewBox="0 0 ${STAGE.w} ${STAGE.h}" preserveAspectRatio="none" focusable="false">
-    <circle class="hud__glow" cx="${cx}" cy="${cy}" r="${r + 8}"/>
-    <circle class="hud__ring" cx="${cx}" cy="${cy}" r="${r + 8}" pathLength="1"/>
-    <path class="hud__ticks" d="${ticks}"/><path class="hud__major" d="${major}"/>
-    <g class="hud__rot"><path class="hud__scan" d="${arcPath(cx, cy, r + 50, -70, -18)}"/><path class="hud__scan hud__scan--2" d="${arcPath(cx, cy, r + 50, 110, 162)}"/></g>
-    <g class="hud__rot hud__rot--rev"><path class="hud__flow" d="${arcPath(cx, cy, r + 64, 200, 232)}"/><path class="hud__flow" d="${arcPath(cx, cy, r + 64, 20, 52)}"/></g>
-    <path class="hud__cross" d="${cross}"/>
-    <path class="hud__lead hud__lead--1" d="M${cx} ${cy}L${cx - 84} ${cy + 84}L${cx - 136} ${cy + 84}" pathLength="1"/>
-    <path class="hud__lead hud__lead--2" d="M${cx + 270} ${cy - 226}L${cx + 208} ${cy - 297}L${cx + 120} ${cy - 297}" pathLength="1"/>
-    <circle class="hud__dot" cx="${cx}" cy="${cy}" r="5"/><circle class="hud__dot hud__dot--2" cx="${cx + 270}" cy="${cy - 226}" r="5"/>
+    <g transform="${ON_FACE}">
+      <circle class="hud__glow" cx="${cx}" cy="${cy}" r="${f1(r + 8 * u)}"/>
+      <circle class="hud__ring" cx="${cx}" cy="${cy}" r="${f1(r + 8 * u)}" pathLength="1"/>
+      <path class="hud__ticks" d="${ticks}"/><path class="hud__major" d="${major}"/>
+      <g class="hud__rot" ${rot}><path class="hud__scan" d="${arcPath(cx, cy, r + 50 * u, -70, -18)}"/><path class="hud__scan hud__scan--2" d="${arcPath(cx, cy, r + 50 * u, 110, 162)}"/></g>
+      <g class="hud__rot hud__rot--rev" ${rot}><path class="hud__flow" d="${arcPath(cx, cy, r + 64 * u, 200, 232)}"/><path class="hud__flow" d="${arcPath(cx, cy, r + 64 * u, 20, 52)}"/></g>
+      <path class="hud__cross" d="${cross}"/>
+      <circle class="hud__ping" style="--d:${t1}s" cx="${cx}" cy="${cy}" r="${f1(6 * u)}"/>
+    </g>
+    <path class="hud__lead hud__lead--1" style="--d:${t1}s" d="${line(M.lead1)}" pathLength="1"/>
+    <path class="hud__lead hud__lead--2" style="--d:${t2}s" d="${line(M.lead2)}" pathLength="1"/>
+    <circle class="hud__ping hud__ping--2" style="--d:${t2}s" cx="${f1(kx)}" cy="${f1(ky)}" r="${f1(6 * u)}"/>
+    <circle class="hud__dot" style="--d:${t1}s" cx="${cx}" cy="${cy}" r="${f1(5 * u)}"/><circle class="hud__dot hud__dot--2" style="--d:${t2}s" cx="${f1(kx)}" cy="${f1(ky)}" r="${f1(5 * u)}"/>
   </svg>`;
+}
+// Röntgenbild: Außenkante des Gießharzkörpers, Ringkern mit Bandlagen, Sekundärwicklung (radiale Windungen,
+// zwischen den Skalenstrichen versetzt) und die Lage des Primärleiters im Fenster
+function xrArt() {
+  const r = STAGE.ry;
+  const [c0, c1] = XR.core.map((k) => k * r), [w0, w1] = XR.wind.map((k) => k * r);
+  let lam = '', wind = '';
+  for (let q = c0 + XR.lam; q < c1 - 4; q += XR.lam) lam += circ(q);
+  for (let a = 1.5; a < 360; a += 3) {
+    const [x0, y0] = lp(w0, a), [x1, y1] = lp(w1, a);
+    wind += `M${f1(x0)} ${f1(y0)}L${f1(x1)} ${f1(y1)}`;
+  }
+  const [ox, oy, orx, ory] = STAGE.outer;
+  return `<ellipse class="xr__o" cx="${ox}" cy="${oy}" rx="${orx}" ry="${ory}"/><g transform="${ON_FACE}"><path class="xr__l" d="${lam}"/><path class="xr__w" d="${wind}"/><path class="xr__c" d="${circ(c0)}${circ(c1)}"/><path class="xr__p" d="${circ(XR.cond * U)}"/></g>`;
+}
+// Aussparung der Bauteile (weiche Kanten); id je Ebene, weil die Zeichnung zweimal im Dokument steht
+function xrMask(id) {
+  const { w, h, parts } = STAGE;
+  return `<defs><filter id="${id}f" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="9"/></filter><mask id="${id}" maskUnits="userSpaceOnUse" x="0" y="0" width="${w}" height="${h}"><rect width="${w}" height="${h}" fill="#fff"/><g filter="url(#${id}f)">${parts.map(([x, y, pw, ph]) => `<rect x="${x}" y="${y}" width="${pw}" height="${ph}" rx="18" fill="#000"/>`).join('')}</g></mask></defs>`;
+}
+// Scanner als zwei Ebenen: ein schmaler Streifen (weiche Kanten, dunkelt das Foto ab, trägt die Scanlinie) wandert
+// über die Fläche, die scharfe Zeichnung darin läuft genau gegenläufig und bleibt so auf dem Ring stehen; beides
+// nur mit transform, damit die Bewegung im Compositor läuft. Die zarte Zeichnung wird dahinter per clip-path frei.
+function stageXray() {
+  const { w, h } = STAGE;
+  const pc = (v) => `${(v * 100).toFixed(4)}%`;
+  const bw = SCAN.bw / w, l0 = (SCAN.x0 - SCAN.bw / 2) / w, l1 = (SCAN.x1 - SCAN.bw / 2) / w;
+  const vars = [
+    `--bw:${pc(bw)}`, `--aw:${pc(1 / bw)}`,
+    `--wa:${pc(l0 / bw)}`, `--wb:${pc(l1 / bw)}`,
+    `--aa:${pc(-l0)}`, `--ab:${pc(-l1)}`,
+    `--ca:${pc(1 - SCAN.x0 / w)}`,
+    `--xt:${SCAN.t0}s`, `--xd:${SCAN.dur}s`, `--xl:${SCAN.loop}s`, `--xl0:${+(SCAN.t0 + SCAN.loop).toFixed(2)}s`,
+  ].join(';');
+  const art = xrArt();
+  const svg = (cls, id) => `<svg class="${cls}" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none" focusable="false">${xrMask(id)}<g mask="url(#${id})">${art}</g></svg>`;
+  return `<div class="xr" style="${vars}">${svg('xr__base', 'xrm-b')}<div class="xr__win">${svg('xr__art', 'xrm-a')}<i class="xr__line"></i></div></div>`;
+}
+// Größen des Fotos für srcset: Handy (Breite füllt mw Fotopixel), Desktop (Höhe der Bühne bis 90 % des Fensters)
+function stageSizes() {
+  const k = STAGE.w / STAGE.mw, ar = STAGE.w / STAGE.h;
+  return `(max-width: 560px) ${Math.ceil(k * 100)}vw, (max-width: 760px) ${Math.ceil(k * 560)}px, (max-aspect-ratio: ${Math.round(ar * 90)}/100) ${Math.ceil(ar * 90)}vh, 100vw`;
 }
 // kleine Messkurve (zwei Perioden, doppelt lang zum Durchlaufen)
 function trace(amp) {
@@ -164,16 +257,19 @@ function stage(ctx) {
     [`${fmtNum(0.72, lang)}–550`, H.stats.range, 'kV'],
     ...(g.repCountries ? [[String(g.repCountries), H.stats.reps]] : []),
   ];
-  const { cx, cy, r } = STAGE;
-  const photo = ctx.img[STAGE_IMG] ? imgTag(ctx, STAGE_IMG, { alt: '', sizes: '(max-aspect-ratio: 9/4) 230vh, 100vw', eager: true, cls: 'st__photo' }) : '';
-  return `<section class="st hero--anim" data-stage aria-labelledby="st-title">
+  const { w, h, cx, cy, mw, mh } = STAGE;
+  const photo = ctx.img[STAGE_IMG] ? imgTag(ctx, STAGE_IMG, { alt: '', sizes: stageSizes(), eager: true, cls: 'st__photo' }) : '';
+  const M = stageMarks();
+  const tA = scanAt(cx) + 0.2, tB = scanAt(M.dot2[0]) + 0.2, tR = scanAt(SCAN.x1) - 0.15;
+  return `<section class="st hero--anim" data-stage aria-labelledby="st-title" style="--st-w:${w};--st-h:${h};--st-ar:${w} / ${h};--st-cx:${cx};--st-cy:${cy};--st-mw:${mw};--st-mh:${mh};--st-cov:${2 * Math.min(cx, w - cx)}">
   <div class="st__media" aria-hidden="true">
     <div class="st__frame">
       ${photo}
+      ${stageXray()}
       ${stageHud()}
-      <span class="st__chip st__chip--a" style="${P(cx - 142, cy + 84)}">${esc(S.hudWindow)}</span>
-      <span class="st__chip st__chip--b" style="${P(cx + 114, cy - 297)}">${esc(S.hudCore)}</span>
-      <span class="st__read" style="${P(cx + 70, cy + 214)}">
+      <span class="st__chip st__chip--a" style="${P(...M.chipA)};--d:${tA.toFixed(2)}s">${esc(S.hudWindow)}</span>
+      <span class="st__chip st__chip--b" style="${P(...M.chipB)};--d:${tB.toFixed(2)}s">${esc(S.hudCore)}</span>
+      <span class="st__read" style="${P(...M.read)};--d:${tR.toFixed(2)}s">
         <span class="st__trace"><b>${esc(S.primary)}</b><i>2000 A</i>${trace(15)}</span>
         <span class="st__trace st__trace--s"><b>${esc(S.secondary)}</b><i>5 A</i>${trace(4)}</span>
       </span>
