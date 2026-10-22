@@ -35,7 +35,12 @@ for (let i = 0; i < 60; i++) {
   if (r < 0.45) await page.touchscreen.tap(x, y);
   else if (r < 0.7) await swipe(x, y, (Math.random() - 0.5) * 240, (Math.random() - 0.5) * 20, 5);
   else if (r < 0.85) await pinch(x, y, 80, 80 + (Math.random() - 0.5) * 140, 6);
-  else await page.locator('[data-nm-region]').nth(i % 5).click();
+  else { // Telefon: Regionen liegen im Blatt „Ansicht“
+    const reg = page.locator('[data-nm-region]').nth(i % 5);
+    if (!(await reg.isVisible())) { await page.locator('[data-nm-viewbtn]').tap(); await page.waitForTimeout(350); }
+    await reg.tap();
+    await page.waitForTimeout(250);
+  }
   await toMap();
 }
 await page.waitForTimeout(1200);

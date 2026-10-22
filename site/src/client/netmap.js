@@ -29,6 +29,10 @@ const CROWD = 30, SPREAD = 60; // Nachbar näher als CROWD px → Zoom, bis er e
 const FOCUS = 1.45; // sanfter Zoom auf einen einzelnen Punkt (relativ zur Ausgangsansicht)
 const DWELL = 340; // Verweildauer, bis die Karte folgt (ms)
 const LOCK_R = 34; // so weit darf sich die Maus nach dem Zentrieren bewegen, ohne den Punkt loszulassen (px)
+const IDLE_OUT = 4000; // Folge-Zoom: so lange auf keinem Punkt, dann zoomt die Karte von selbst heraus (ms)
+const LUPE_K = 2; // Folge-Zoom: Höchstmaß, mit dem die Ansicht dem Zeiger folgt (1 = so schnell wie der Zeiger)
+const CHASE_TAU = 0.12; // Glättung dieser Bewegung (s)
+const WAKE = 700; // Mausrad: so lange muss der Zeiger auf der Karte ruhen, bis das Rad zoomt statt die Seite zu rollen (ms)
 const WAVE_MS = 2600;
 const reduced = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
 const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
@@ -104,6 +108,9 @@ function setup(el) {
   let pinned = null, hovered = null, snap = null, roving = hq, lastFocus = null, focusAmt = 0;
   let followBase = null, inside = false, backT = 0, dwellT = 0, glideT = 0, flashT = 0, lock = null, lastPX = 0, lastPY = 0;
   let pickSync = null; // Länderwahl zeigt das Land des angehefteten Punkts
+  let viewSync = null; // Knopf „Ansicht“ (Telefon) markiert ausgeblendete Ebenen
+  let chase = null, idleT = 0, lastCX = NaN, lastCY = NaN; // Folge-Zoom: Ziel der Ansicht, Auszeit, letzte Zeigerlage
+  let wz = null, sleepUntil = Infinity; // Mausrad: Zielmaßstab mit Ankerpunkt; Karte „schläft“, bis der Zeiger auf ihr ruht
   const layer = { sites: 1, reps: 1, net: 1 }, fade = { sites: 1, reps: 1, net: 1 };
   const pulses = [], sparks = [], layers = new Map();
 
@@ -218,6 +225,7 @@ function setup(el) {
   }
   // Flug: Maßstab logarithmisch; mit Anker bleibt ein Kartenpunkt am selben Bildschirmort (Zoom um den Zeiger)
   function flyTo(x, y, s, dur = 820, anchor = null) {
+    chase = null; wz = null;
     const to = clampCam({ x, y, s });
     if (reduced() || !visible || !vw) dur = 0;
     if (!dur) { Object.assign(cam, to); flight = null; render(performance.now()); positionCard(); return; }
@@ -235,7 +243,28 @@ function setup(el) {
     flyTo((b[0] + b[2]) / 2, (b[1] + b[3]) / 2, s, dur);
   }
   const home = () => flyTo(base.x, base.y, base.s);
-  const userView = () => { followBase = null; lock = null; clearTimeout(backT); clearTimeout(dwellT); };
+  const userView = () => { followBase = null; lock = null; chase = null; clearTimeout(backT); clearTimeout(dwellT); clearTimeout(idleT); };
+  // Folge-Zoom: steht der Zeiger 4 s lang auf keinem Punkt, zoomt die Karte von selbst wieder heraus
+  function armIdle() {
+    clearTimeout(idleT);
+    if (!followBase || pinned || !inside || snap) return;
+    idleT = setTimeout(() => {
+      if (!followBase || pinned || !inside || snap || drag || pinch || !el.isConnected) return;
+      const b = followBase;
+      followBase = null; lock = null;
+      flyTo(b.x, b.y, b.s, 1000);
+    }, IDLE_OUT);
+  }
+  // Folge-Zoom: die Ansicht wandert mit dem Zeiger (wie eine Lupe über der Weltansicht), solange kein Punkt angedockt
+  // ist. Je stärker der Zoom, desto weiter; über die Rahmenbreite erreicht der Zeiger so die ganze Ausgangsansicht.
+  function chaseBy(dx, dy) {
+    const k = Math.min(LUPE_K, cam.s / base.s - 1);
+    if (k < 0.03 || (!dx && !dy)) return;
+    const from = chase || cam;
+    const to = clampCam({ x: from.x + (dx * k) / cam.s, y: from.y + (dy * k) / cam.s, s: cam.s });
+    chase = { x: to.x, y: to.y, t: chase?.t || performance.now() };
+    kick();
+  }
   function scheduleBack() {
     clearTimeout(backT);
     if (!followBase || pinned || inside) return;
@@ -450,6 +479,23 @@ function setup(el) {
       } else { cam.x = f.x + (to.x - f.x) * e; cam.y = f.y + (to.y - f.y) * e; }
       clampCam();
       if (p >= 1) { Object.assign(cam, clampCam({ ...to })); flight = null; } else busy = true;
+    } else if (wz) { // Mausrad: weich zum Zielmaßstab, der Punkt unter dem Zeiger bleibt stehen
+      const dt = clamp((now - wz.t) / 1000, 0, 0.05);
+      wz.t = now;
+      const a = 1 - Math.exp(-dt / 0.085);
+      cam.s = Math.exp(Math.log(cam.s) + (Math.log(wz.s) - Math.log(cam.s)) * a);
+      if (Math.abs(Math.log(cam.s / wz.s)) < 0.003) cam.s = wz.s;
+      cam.x = wz.mx - (wz.px - vw / 2) / cam.s;
+      cam.y = wz.my - (wz.py - vh / 2) / cam.s;
+      clampCam();
+      if (cam.s === wz.s) wz = null; else busy = true;
+    } else if (chase) {
+      const dt = clamp((now - chase.t) / 1000, 0, 0.05);
+      chase.t = now;
+      const a = 1 - Math.exp(-dt / CHASE_TAU);
+      cam.x += (chase.x - cam.x) * a; cam.y += (chase.y - cam.y) * a;
+      clampCam();
+      if (Math.hypot(chase.x - cam.x, chase.y - cam.y) * cam.s < 0.35) { cam.x = chase.x; cam.y = chase.y; chase = null; } else busy = true;
     }
     for (const k of ['sites', 'reps', 'net']) { // Ebenen weich ein- und ausblenden
       const d = layer[k] - fade[k];
@@ -653,6 +699,7 @@ function setup(el) {
   function pin(n, o = {}) {
     if (!n) { unpin(); return; }
     pinned = n; hovered = null; lastFocus = n;
+    chase = null; clearTimeout(idleT);
     setActive(n); setRoving(n);
     pickSync?.(n);
     for (const m of nodes) {
@@ -680,6 +727,7 @@ function setup(el) {
     if (snap) hover(snap); else { setActive(null); showCard(null); }
     placeRet(); kick();
     scheduleBack();
+    armIdle();
   }
   function hover(n) {
     if (pinned || hovered === n) return;
@@ -706,6 +754,7 @@ function setup(el) {
     if (!zoom && !off) return false;
     if (track && !followBase) followBase = fb;
     flyTo(n.x, n.y, zoom ? want : cam.s, quick ? 640 : 820);
+    armIdle();
     return true;
   }
   const crowded = (n) => isFinite(n.nn) && n.nn * cam.s < CROWD && cam.s < sMax * 0.95;
@@ -713,6 +762,7 @@ function setup(el) {
     if (snap === n) return;
     snap = n;
     clearTimeout(dwellT);
+    armIdle();
     frame.classList.toggle('is-snap', !!n);
     if (ret) {
       ret.classList.remove('is-lock');
@@ -759,6 +809,7 @@ function setup(el) {
     if (snap && !snap.on) setSnap(null);
     if (hovered && !hovered.on) hover(null);
     if (!roving.on) setRoving(nodes.find((n) => n.on && n.site) || nodes.find((n) => n.on) || hq);
+    viewSync?.();
     updateCount();
     kick();
   }
@@ -805,6 +856,52 @@ function setup(el) {
       if (b.dataset.nmRegion === 'world') home(); else fitBox(M.regions[b.dataset.nmRegion]);
     }
   });
+  // Telefon: Ebenen und Regionen als Blatt hinter „Ansicht“ (breit ist ihr Rahmen unsichtbar, siehe home.css)
+  const viewEl = bar?.querySelector('[data-nm-view]'), viewBtn = bar?.querySelector('[data-nm-viewbtn]');
+  if (viewEl && viewBtn) {
+    const mq = matchMedia('(max-width: 700px)');
+    const title = viewEl.querySelector('.nm__viewhead span')?.textContent || '';
+    let vOpen = false, vT = 0;
+    const openView = () => {
+      if (vOpen || !mq.matches) return;
+      vOpen = true;
+      clearTimeout(vT);
+      viewEl.classList.remove('is-leaving');
+      el.classList.remove('is-view-leaving');
+      el.classList.add('is-viewing');
+      viewEl.setAttribute('role', 'dialog');
+      viewEl.setAttribute('aria-label', title);
+      viewBtn.setAttribute('aria-expanded', 'true');
+      requestAnimationFrame(() => viewEl.focus({ preventScroll: true }));
+    };
+    const closeView = (focusBtn = true) => {
+      if (!vOpen) return;
+      vOpen = false;
+      viewBtn.setAttribute('aria-expanded', 'false');
+      const gone = () => { el.classList.remove('is-viewing', 'is-view-leaving'); viewEl.classList.remove('is-leaving'); viewEl.removeAttribute('role'); viewEl.removeAttribute('aria-label'); };
+      if (reduced()) gone();
+      else { viewEl.classList.add('is-leaving'); el.classList.add('is-view-leaving'); vT = setTimeout(gone, 220); }
+      if (focusBtn) viewBtn.focus({ preventScroll: true });
+    };
+    viewBtn.addEventListener('click', () => (vOpen ? closeView() : openView()));
+    viewEl.querySelector('[data-nm-viewx]')?.addEventListener('click', () => closeView());
+    viewEl.addEventListener('keydown', (e) => { if (e.key === 'Escape') { e.preventDefault(); e.stopPropagation(); closeView(); } });
+    viewEl.addEventListener('click', (e) => { if (e.target.closest('[data-nm-region]')) closeView(false); }); // Region gewählt: die Karte fliegt sichtbar
+    viewEl.addEventListener('focusout', (e) => { if (vOpen && e.relatedTarget && !viewEl.contains(e.relatedTarget) && e.relatedTarget !== viewBtn) closeView(false); });
+    const outsideV = (e) => {
+      if (!el.isConnected) { document.removeEventListener('pointerdown', outsideV, true); return; }
+      if (!vOpen || viewEl.contains(e.target) || viewBtn.contains(e.target)) return;
+      closeView(false); // Schleier: Tippen schließt nur das Blatt, der folgende Klick geht ins Leere
+      e.stopPropagation();
+      const eat = (ev) => { ev.stopPropagation(); ev.preventDefault(); };
+      document.addEventListener('click', eat, { capture: true, once: true });
+      setTimeout(() => document.removeEventListener('click', eat, true), 700);
+    };
+    document.addEventListener('pointerdown', outsideV, true);
+    mq.addEventListener?.('change', () => { if (!mq.matches) closeView(false); });
+    viewSync = () => viewBtn.classList.toggle('has-filter', !layer.sites || !layer.reps || !layer.net);
+    viewSync();
+  }
   // Länderwahl (Startseite): Knopf öffnet Suchfeld und Liste; Durchgehen zeigt das Land auf der Karte, Auswahl heftet an.
   // Der Knopf nennt immer das Land des angehefteten Punkts (auch nach einem Klick auf die Karte); das Kreuz hebt die Wahl auf.
   const pickEl = bar?.querySelector('[data-nm-pick]');
@@ -1002,6 +1099,7 @@ function setup(el) {
   frame.addEventListener('pointerdown', (e) => {
     if (!live || e.button > 0 || e.target.closest('.nm__zoom')) return;
     lastPtr = e.pointerType;
+    if (e.pointerType === 'mouse') sleepUntil = 0; // Klick weckt die Karte: das Mausrad zoomt sofort
     ptrT = performance.now();
     ptrs.set(e.pointerId, local(e));
     if (ptrs.size === 1) drag = { id: e.pointerId, x: e.clientX, y: e.clientY, cx: cam.x, cy: cam.y, moved: false, type: e.pointerType };
@@ -1045,6 +1143,10 @@ function setup(el) {
     }
     if (e.pointerType !== 'mouse' || phase === 'wait' || drag?.moved) return;
     inside = true;
+    if (sleepUntil === Infinity) sleepUntil = performance.now() + WAKE;
+    // Bewegung am Bildschirm (nicht im Rahmen): rollt nur die Seite unter dem Zeiger, bewegt das die Ansicht nicht
+    const mdx = Number.isFinite(lastCX) ? e.clientX - lastCX : 0, mdy = Number.isFinite(lastCY) ? e.clientY - lastCY : 0;
+    lastCX = e.clientX; lastCY = e.clientY;
     lastPX = px; lastPY = py;
     if (e.target.closest?.('.nm__zoom')) { lock = null; setSnap(null); return; }
     if (lock) { // nach dem Zentrieren bleibt der Punkt angedockt, bis sich die Maus deutlich bewegt
@@ -1058,6 +1160,7 @@ function setup(el) {
       if (ds < SNAP + 10 && ds - dn < 8) n = snap;
     }
     setSnap(n);
+    if (!snap && followBase && !pinned && !flight && !drag) chaseBy(mdx, mdy);
   });
   const endPtr = (e) => {
     ptrs.delete(e.pointerId);
@@ -1088,23 +1191,39 @@ function setup(el) {
   };
   frame.addEventListener('pointerup', endPtr);
   frame.addEventListener('pointercancel', endPtr);
-  frame.addEventListener('pointerenter', (e) => { if (e.pointerType === 'mouse') { inside = true; clearTimeout(backT); } });
+  frame.addEventListener('pointerenter', (e) => { if (e.pointerType === 'mouse') { inside = true; lastCX = e.clientX; lastCY = e.clientY; clearTimeout(backT); armIdle(); } });
   frame.addEventListener('pointerleave', (e) => {
     if (e.pointerType !== 'mouse') return;
     inside = false;
     lock = null;
+    lastCX = lastCY = NaN;
+    sleepUntil = Infinity;
     setSnap(null);
+    clearTimeout(idleT);
     scheduleBack();
   });
+  // Mausrad: zoomt, sobald die Karte „wach“ ist – der Zeiger ruht kurz auf ihr (0,7 s) oder man hat hineingeklickt. Wer
+  // die Seite scrollt und dabei über die Karte fährt, scrollt weiter (jedes Rad-Ereignis im Schlaf verlängert ihn); ganz
+  // herausgezoomt rollt die Seite ebenfalls weiter. Strg/⌘ + Mausrad und das Zoomen am Trackpad wirken immer.
   frame.addEventListener('wheel', (e) => {
-    if (!live || (!e.ctrlKey && !e.metaKey)) return; // normales Mausrad scrollt die Seite
+    if (!live) return;
+    const now = performance.now();
+    const pinchKey = e.ctrlKey || e.metaKey;
+    if (!pinchKey && now < sleepUntil) { if (sleepUntil !== Infinity) sleepUntil = now + WAKE; return; }
+    const dy = e.deltaY * (e.deltaMode === 1 ? 16 : e.deltaMode === 2 ? vh : 1);
+    const target = wz ? wz.s : cam.s;
+    if (!pinchKey && dy > 0 && target <= sMin * 1.002) { sleepUntil = now + WAKE; return; } // ganz heraus: die Seite rollt weiter
     e.preventDefault();
     const [px, py] = local(e);
-    flight = null; userView();
-    const s = clamp(cam.s * Math.exp(-e.deltaY * 0.012), sMin, sMax);
+    flight = null; userView(); setRegion('');
+    const s = clamp(target * Math.exp(-clamp(dy, -240, 240) * (pinchKey ? 0.012 : 0.0028)), sMin, sMax);
     const mx = (px - vw / 2) / cam.s + cam.x, my = (py - vh / 2) / cam.s + cam.y;
-    cam.s = s; cam.x = mx - (px - vw / 2) / s; cam.y = my - (py - vh / 2) / s;
-    clampCam(); setRegion(''); kick();
+    if (pinchKey && Math.abs(dy) < 40) { // Trackpad: unmittelbar
+      wz = null;
+      cam.s = s; cam.x = mx - (px - vw / 2) / s; cam.y = my - (py - vh / 2) / s;
+      clampCam();
+    } else wz = { s, mx, my, px, py, t: wz?.t || now };
+    kick();
   }, { passive: false });
   // Safari: Trackpad-Geste statt Strg + Mausrad
   let gs = null;

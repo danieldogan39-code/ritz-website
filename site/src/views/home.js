@@ -292,15 +292,46 @@ function heritage(ctx) {
 }
 
 // ---------- Qualität ----------
+// Prüffeld-Monitor: spielt die beiden Kennzahlen als Prüfung ab (Wechselspannung bis 400 kV, Hochstrom bis 50 kA,
+// dann das Protokoll). Ohne JavaScript und bei reduzierter Bewegung steht das Endbild. Dekor: die Zahlen stehen rechts.
+const RIG_GRID = (() => {
+  let d = '';
+  for (let x = 50; x < 600; x += 50) d += `M${x} 0V200`;
+  for (let y = 25; y < 200; y += 25) d += `M0 ${y}H600`;
+  return d;
+})();
+const RIG_SINE = (() => {
+  const pts = [];
+  for (let k = 0; k <= 120; k++) { const x = (k / 120) * 600; pts.push(`${x.toFixed(1)} ${(100 - 80 * Math.sin((x / 600) * 8 * Math.PI)).toFixed(1)}`); }
+  return `M${pts.join('L')}`;
+})();
+function rigHTML(ctx) {
+  const H = ctx.t.pages.home;
+  const R = H.rig;
+  const num = (s) => { const m = /([\d.,]+)\s*(\S+)/.exec(s || ''); return m ? [m[1], m[2]] : ['', '']; };
+  const [uv, uu] = num(H.proofFacts[0]?.[0]), [iv, iu] = num(H.proofFacts[1]?.[0]);
+  const steps = [[R.u, tpl(R.upTo, { v: H.proofFacts[0]?.[0] || '' })], [R.i, tpl(R.upTo, { v: H.proofFacts[1]?.[0] || '' })], [R.rep, R.pass]];
+  return `<div class="rig" data-rig data-u="${esc(uv)}" data-uu="${esc(uu)}" data-i="${esc(iv)}" data-iu="${esc(iu)}" data-reveal="img" aria-hidden="true">
+      <div class="rig__top"><span class="rig__mode"><i class="rig__led"></i><span data-rig-mode>${esc(R.u)}</span></span><span class="rig__read"><b data-rig-val>${esc(uv)}</b><small data-rig-unit>${esc(uu)}</small></span></div>
+      <div class="rig__scope">
+        <svg viewBox="0 0 600 200" preserveAspectRatio="none"><path class="rig__grid" d="${RIG_GRID}"/><path class="rig__axis" d="M0 100H600"/><path class="rig__trace" data-rig-trace d="${RIG_SINE}"/></svg>
+        <span class="rig__stamp"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="20"/><path d="M15 24.5l6 6 12-13"/></svg></span>
+      </div>
+      <ol class="rig__steps">${steps.map(([a, b], i) => `<li class="is-done" data-rig-step="${i}"><span class="rig__bar"><i></i></span><b>${esc(a)}</b><small>${esc(b)}</small></li>`).join('')}</ol>
+    </div>`;
+}
 function quality(ctx) {
   const { t, href } = ctx;
   const H = t.pages.home;
-  return `<section class="ch ch--porcelain" aria-labelledby="qu-title">
+  return `<section class="ch ch--porcelain ch--rig" aria-labelledby="qu-title">
   <div class="wrap ch__split">
-    <h2 class="ch__title" id="qu-title" data-reveal="head">${esc(H.qTitle)}</h2>
+    <div class="ch__lhs">
+      <h2 class="ch__title" id="qu-title" data-reveal="head">${esc(H.qTitle)}</h2>
+      ${rigHTML(ctx)}
+    </div>
     <div class="ch__body" data-reveal="head">
       <p class="ch__text">${esc(H.proofLead)}</p>
-      <dl class="figs figs--2">${H.proofFacts.map(([v, l]) => `<div class="fig"><dt>${esc(l)}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl>
+      <dl class="figs figs--2" data-reveal="facts">${H.proofFacts.map(([v, l], i) => `<div class="fig"${i < 2 ? ` data-rig-fig="${i}"` : ''}><dt>${esc(l)}</dt><dd${i < 2 ? ' data-count' : ''}>${esc(v)}</dd></div>`).join('')}</dl>
       <p><a class="link" href="${href('quality')}">${esc(H.proofCta)}${icon('arrow')}</a></p>
     </div>
   </div>

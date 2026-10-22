@@ -62,7 +62,7 @@ function afterIntro(fn) {
 function reveal(el, i) {
   const kind = el.dataset.reveal;
   if (kind === 'img') el.style.setProperty('--rv-i', i);
-  if (kind === 'facts') [...el.children].forEach((c, k) => c.style.setProperty('--rv-i', k));
+  if (kind === 'facts' || kind === 'team') [...el.children].forEach((c, k) => c.style.setProperty('--rv-i', k));
   el.classList.add('is-in');
   if (kind === 'facts') afterIntro(() => runCounts(el));
 }

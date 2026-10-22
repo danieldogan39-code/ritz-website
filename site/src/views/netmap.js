@@ -161,6 +161,19 @@ function regionsHTML(ctx, N) {
   const regions = [['world', N.world], ['europe', t.lbl.region.europe], ['americas', t.lbl.region.americas], ['apac', t.lbl.region.apac], ['africa', t.lbl.region.africa]];
   return `<div class="nm__regions" role="group" aria-label="${esc(N.region)}">${regions.map(([k, l], i) => `<button type="button" class="nm__reg" data-nm-region="${k}" aria-pressed="${i === 0}">${esc(l)}</button>`).join('')}</div>`;
 }
+// Ebenen und Regionen. Breit stehen sie in der Leiste (der Rahmen ist dort display: contents); auf dem Telefon liegen sie
+// als Blatt hinter dem Knopf „Ansicht“, damit über der Karte nur eine Zeile bleibt.
+function viewHTML(ctx, N, mode, all = true) {
+  const id = `nm-view-${mode}`;
+  return `<div class="nm__view" id="${id}" tabindex="-1" data-nm-view>
+      <div class="nm__viewhead"><span aria-hidden="true">${esc(N.viewTitle)}</span><button type="button" class="nm__popx" aria-label="${esc(ctx.t.ui.close)}" data-nm-viewx>${icon('close')}</button></div>
+      <p class="nm__viewlbl" aria-hidden="true">${esc(N.layers)}</p>
+      ${layersHTML(N, all)}
+      <p class="nm__viewlbl" aria-hidden="true">${esc(N.region)}</p>
+      ${regionsHTML(ctx, N)}
+    </div>
+    <button type="button" class="nm__viewbtn" aria-expanded="false" aria-controls="${id}" data-nm-viewbtn>${icon('layers')}<span>${esc(N.view)}</span></button>`;
+}
 function layersHTML(N, all = true) {
   return `<div class="nm__layers" role="group" aria-label="${esc(N.layers)}">
       <button type="button" class="nm__tog" data-nm-layer="sites" aria-pressed="true"><i class="nm__key nm__key--site" aria-hidden="true"></i>${esc(N.sites)}</button>
@@ -211,12 +224,15 @@ export function netMapHome(ctx) {
       <div><dt>${esc(N.repCountries)}</dt><dd><strong data-count>${st.reps}</strong></dd></div>
     </dl>
   </div>
-  <div class="wrap nm__bar" data-nm-bar hidden>
-    ${layersHTML(N)}
-    ${regionsHTML(ctx, N)}
-    ${countryPick(ctx, m, N)}
+  <div class="wrap nm__wrap">
+    <div class="nm__tile">
+      <div class="nm__bar nm__bar--sheet" data-nm-bar hidden>
+        ${viewHTML(ctx, N, 'home')}
+        ${countryPick(ctx, m, N)}
+      </div>
+      ${stageHTML(ctx, m, N)}
+    </div>
   </div>
-  ${stageHTML(ctx, m, N)}
   <div class="wrap nm__foot">
     <p class="nm__legend" data-nm-legend><span><i class="nm__key nm__key--site" aria-hidden="true"></i>${esc(N.legendSite)}</span><span><i class="nm__key nm__key--rep" aria-hidden="true"></i>${esc(N.legendRep)}</span></p>
     <p class="cluster"><a class="btn btn--light" href="${ctx.href('locations')}">${esc(P.cta)}</a><a class="link link--light" href="${ctx.hrefA('contact', {}, 'karte')}">${esc(t.pages.home.worldCta2)}</a></p>
@@ -243,9 +259,8 @@ export function netMapBlock(ctx, { mode = 'contact' } = {}) {
   }).join('');
   const contact = mode === 'contact';
   return `<div class="nm nm--panel nm--${mode}" data-nm data-nm-mode="${mode}">
-  <div class="nm__bar" data-nm-bar hidden>
-    ${contact ? layersHTML(N, false) : ''}
-    ${regionsHTML(ctx, N)}
+  <div class="nm__bar${contact ? ' nm__bar--sheet' : ''}" data-nm-bar hidden>
+    ${contact ? viewHTML(ctx, N, mode, false) : regionsHTML(ctx, N)}
   </div>
   <div class="nm__body">
     ${stageHTML(ctx, m, N)}

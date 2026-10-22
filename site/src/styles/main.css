@@ -437,22 +437,27 @@ p { margin: 0; text-wrap: pretty; }
 .drawer__scrim { background: rgb(13 9 8 / .5); }
 /* Kopf und Projektmappe stehen fest, dazwischen scrollt das Menü */
 .drawer__panel { display: flex; flex-direction: column; height: 100%; min-height: 0; overflow: hidden; background: var(--paper); box-shadow: var(--shadow-lg); }
+/* Die Tafel behält ihre eigene Ebene, solange sie sichtbar ist: Safari baut sie (samt Scrollbereich) sonst am Ende des
+   Hereingleitens neu auf, und für einige Bilder ist das Menü weg. Unter dem offenen Menü verzichten Kopf und App-Leiste
+   auf den Weichzeichner – sie sind ohnehin verdeckt, und Weichzeichner unter bewegten Ebenen flackern in Safari. */
+.drawer__panel { will-change: transform; backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+.has-drawer :is(.hdr, .abar) { -webkit-backdrop-filter: none !important; backdrop-filter: none !important; }
 .drawer__body { flex: 1; min-height: 0; display: flex; flex-direction: column; gap: 1rem; overflow-y: auto; overscroll-behavior: contain; padding: 4px max(20px, env(safe-area-inset-right, 0px)) 24px 20px; }
 .drawer__foot { flex: none; padding: 12px max(20px, env(safe-area-inset-right, 0px)) calc(env(safe-area-inset-bottom, 0px) + 14px) 20px; border-top: 1px solid var(--line); background: var(--paper); box-shadow: 0 -14px 24px -18px rgb(28 19 17 / .28); }
 /* Öffnen: Schleier blendet auf, Tafel gleitet herein (ausklingend), Einträge folgen gestaffelt; Schließen zügig */
 .drawer__scrim { opacity: 0; }
-.drawer__panel { translate: 100% 0; }
+.drawer__panel { transform: translateX(100%); } /* transform statt translate: in Safari erprobter, beschleunigter Weg */
 .drawer.is-open .drawer__scrim { opacity: 1; }
-.drawer.is-open .drawer__panel { translate: 0 0; }
+.drawer.is-open .drawer__panel { transform: translateX(0); }
 @media (prefers-reduced-motion: no-preference) {
   .drawer__scrim { transition: opacity .3s var(--ease); }
-  .drawer__panel { transition: translate .3s cubic-bezier(.5, 0, .75, .3); }
-  .drawer.is-open .drawer__panel { transition: translate .55s var(--ease-drawer); }
+  .drawer__panel { transition: transform .3s cubic-bezier(.5, 0, .75, .3); }
+  .drawer.is-open .drawer__panel { transition: transform .55s var(--ease-drawer); }
   .drawer.is-open :is(.drawer__body > .btn, .mnav > li, .drawer__body > .cluster) { animation: drawerIn .5s var(--ease-out) backwards; animation-delay: calc(.1s + var(--i, 0) * 34ms); }
   .drawer.is-open .drawer__foot { animation: drawerFoot .5s var(--ease-out) .22s backwards; }
 }
-@keyframes drawerIn { from { opacity: 0; translate: 26px 0; } }
-@keyframes drawerFoot { from { opacity: 0; translate: 0 100%; } }
+@keyframes drawerIn { from { opacity: 0; transform: translateX(26px); } }
+@keyframes drawerFoot { from { opacity: 0; transform: translateY(100%); } }
 .drawer__head { flex: none; display: flex; justify-content: space-between; align-items: center; padding: calc(env(safe-area-inset-top, 0px) + 12px) max(20px, env(safe-area-inset-right, 0px)) 12px 20px; }
 .mnav { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
 .mnav > li { border-bottom: 1px solid var(--line); }
@@ -649,7 +654,10 @@ p { margin: 0; text-wrap: pretty; }
 .pcard__actions svg { width: 16px; height: 16px; }
 .pcard:hover .pcard__code { color: var(--red-ink); }
 .plist .pcard { grid-template-columns: 120px minmax(0, 1fr) 210px; grid-template-rows: auto; align-items: center; }
-.plist .pcard__stage { aspect-ratio: 1; height: 100%; }
+/* Liste: das Bild füllt seine Spalte (gleich breit in jeder Zeile, auch wenn eine Zeile höher ist); die Herkunft steht
+   als schmales Band unten im Bild statt als Schild, das die schmale Spalte zur Hälfte verdeckt */
+.plist .pcard__stage { aspect-ratio: auto; width: 100%; height: 100%; min-height: 112px; }
+.plist .pcard__made { left: 0; right: 0; top: auto; bottom: 0; padding: .18rem .3rem; overflow: hidden; font-size: .64rem; text-align: center; text-overflow: ellipsis; white-space: nowrap; background: rgb(255 255 255 / .88); }
 .plist .pcard__foot { padding: 14px 16px; flex-direction: column; align-items: stretch; }
 .plist { grid-template-columns: minmax(0, 1fr); }
 @media (max-width: 600px) {
@@ -658,8 +666,12 @@ p { margin: 0; text-wrap: pretty; }
   .pcard__foot { padding: 0 12px 12px; }
   .pcard__code { font-size: 1rem; }
   .pcard__specs { display: none; }
-  .plist .pcard { grid-template-columns: 96px minmax(0, 1fr); }
-  .plist .pcard__foot { grid-column: 1 / -1; flex-direction: row; }
+  .plist { grid-template-columns: minmax(0, 1fr); } /* sonst gewinnt die zweispaltige Kachelansicht darüber */
+  .plist .pcard { grid-template-columns: 96px minmax(0, 1fr); align-items: start; }
+  .plist .pcard__stage { height: 96px; min-height: 0; }
+  .plist .pcard__made { font-size: .56rem; letter-spacing: 0; }
+  .plist .pcard__body { padding: 10px 12px 6px; }
+  .plist .pcard__foot { grid-column: 1 / -1; flex-direction: row; align-items: center; padding: 8px 12px 10px; }
 }
 
 /* ---------- FINDER ---------- */
@@ -854,12 +866,50 @@ p { margin: 0; text-wrap: pretty; }
 
 /* management */
 .mgmt { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(16px, 2vw, 28px); }
-.mgr { display: grid; gap: .5rem; align-content: start; }
-.mgr__img { aspect-ratio: 4 / 5; overflow: hidden; background: var(--porcelain); }
-.mgr__img img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(.15); }
-.mgr b { font-size: 1.05rem; }
+/* Porträts: abgeschrägte Ecke wie die RITZ-Raute, in der Ecke eine kleine rote Raute; Kürzel der Funktion im Bild */
+.mgr { --mcut: clamp(16px, 1.8vw, 26px); position: relative; display: grid; gap: .5rem; align-content: start; }
+.mgr__img { position: relative; aspect-ratio: 4 / 5; overflow: hidden; background: var(--porcelain-2); clip-path: polygon(0 0, calc(100% - var(--mcut)) 0, 100% var(--mcut), 100% 100%, 0 100%); }
+.mgr__img img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(.15); transition: filter .6s var(--ease), transform .8s var(--ease-out); }
+.mgr__gem { position: absolute; top: calc(var(--mcut) * .22); right: calc(var(--mcut) * .22); width: calc(var(--mcut) * .42); aspect-ratio: 1; background: var(--red); rotate: 45deg; transition: rotate .5s var(--ease-out), scale .3s var(--ease-out); }
+.mgr .mgr__tag { position: absolute; left: 12px; bottom: 12px; padding: .28rem .55rem .24rem; background: rgb(18 12 11 / .78); color: #fff; font-size: .78rem; font-weight: 700; font-stretch: 112%; letter-spacing: .06em; line-height: 1; transition: background-color .3s var(--ease); }
+.mgr figcaption { position: relative; }
+.mgr figcaption::before { content: ""; display: block; width: 36px; height: 2px; margin-bottom: .55rem; background: var(--red); transform-origin: 0 50%; transform: scaleX(.35); transition: transform .45s var(--ease-out); }
+.mgr b { font-size: 1.05rem; transition: color .3s var(--ease); }
 .mgr span { color: var(--graphite); font-size: .9rem; }
+@media (hover: hover) and (pointer: fine) {
+  .mgr__img img { filter: grayscale(.55) contrast(1.03); }
+  .mgr:hover .mgr__img img { filter: none; transform: scale(1.045); }
+  .mgr:hover .mgr__gem { rotate: 135deg; scale: 1.25; }
+  .mgr:hover .mgr__tag { background: var(--red-hover, var(--red)); }
+  .mgr:hover figcaption::before { transform: scaleX(1); }
+  .mgr:hover b { color: var(--red-ink); }
+}
+/* Stiftungsvorstand: Vorsitz groß, die übrigen daneben (breite Bildschirme) */
+@media (min-width: 1101px) {
+  .mgmt.mgmt--board { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  .mgmt.mgmt--board .mgr--lead { grid-column: span 2; grid-row: span 2; }
+  .mgmt.mgmt--board .mgr--lead b { font-size: 1.3rem; }
+  .mgmt.mgmt--board .mgr--lead span { font-size: 1rem; }
+}
+.mgmt.mgmt--board .mgr--lead figcaption::before { transform: scaleX(1); }
 @media (max-width: 900px) { .mgmt { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) {
+  .mgmt.mgmt--board .mgr--lead { grid-column: 1 / -1; }
+  .mgmt.mgmt--board .mgr--lead .mgr__img { aspect-ratio: 1; }
+}
+/* Einstieg: Porträts öffnen sich nacheinander von unten, das Bild setzt sich, die Raute springt auf, die Zeile folgt */
+@media (prefers-reduced-motion: no-preference) {
+  :root.rv [data-reveal="team"]:not(.is-in) > .mgr { opacity: 0; }
+  [data-reveal="team"].is-in > .mgr .mgr__img { animation: mgrOpen 1s var(--ease-out) backwards; animation-delay: calc(var(--rv-i, 0) * 110ms); }
+  [data-reveal="team"].is-in > .mgr .mgr__img img { animation: mgrSettle 1.4s var(--ease-out) backwards; animation-delay: calc(var(--rv-i, 0) * 110ms); }
+  [data-reveal="team"].is-in > .mgr .mgr__gem { animation: mgrGem .55s var(--ease-out) backwards; animation-delay: calc(var(--rv-i, 0) * 110ms + .55s); }
+  [data-reveal="team"].is-in > .mgr .mgr__tag { animation: fadeIn .5s var(--ease-out) backwards; animation-delay: calc(var(--rv-i, 0) * 110ms + .6s); }
+  [data-reveal="team"].is-in > .mgr figcaption { animation: mgrCap .7s var(--ease-out) backwards; animation-delay: calc(var(--rv-i, 0) * 110ms + .25s); }
+}
+@keyframes mgrOpen { from { clip-path: polygon(0 100%, calc(100% - var(--mcut)) 100%, 100% 100%, 100% 100%, 0 100%); } }
+@keyframes mgrSettle { from { transform: scale(1.16); } }
+@keyframes mgrGem { from { scale: 0; rotate: -45deg; } }
+@keyframes mgrCap { from { opacity: 0; transform: translateY(10px); } }
 
 /* ---------- timeline ---------- */
 .tl { position: relative; display: grid; gap: 0; }

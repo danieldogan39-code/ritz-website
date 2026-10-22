@@ -1,4 +1,4 @@
-// Karte: Zentrieren beim Verweilen, Länderwahl (Desktop, Telefon als Blatt, dunkel), Listen der Unterseiten
+// Karte: Zentrieren beim Verweilen, Folge-Zoom (Lupe, 4 s heraus), Länderwahl (Desktop, Telefon als Blatt, dunkel), Listen der Unterseiten
 import { chromium } from 'playwright-core';
 import { mkdirSync } from 'node:fs';
 const out = process.argv[2] || (process.env.QA_OUT || 'qa-shots');
@@ -107,6 +107,7 @@ if (only === 'all' || only === 'center') {
   await waitDone(page);
   await page.waitForTimeout(500);
   let s0 = await state(page);
+  const dBase = scale(s0, 'Hamburg', 'Kirchaich');
   const reps = s0.mk.filter((m) => /rep/.test(m.k));
   const east = reps.reduce((a, b) => (b.x > a.x ? b : a)), south = reps.reduce((a, b) => (b.y > a.y ? b : a)), west = reps.reduce((a, b) => (b.x < a.x ? b : a));
   for (const [name, pick] of [['Shanghai', (s) => find(s, 'Shanghai')], ['Dubai', (s) => find(s, 'Dubai')], ['östlichste Vertretung', (s) => s.mk.find((m) => m.lbl === east.lbl)], ['südlichste Vertretung', (s) => s.mk.find((m) => m.lbl === south.lbl)], ['westlichste Vertretung', (s) => s.mk.find((m) => m.lbl === west.lbl)]]) {
@@ -125,7 +126,121 @@ if (only === 'all' || only === 'center') {
     await page.waitForTimeout(1900);
   }
   s0 = await state(page);
-  check(Math.abs(scale(s0, 'Hamburg', 'Kirchaich') - 16.9) < 1.5, 'danach wieder Ausgangsansicht');
+  check(Math.abs(scale(s0, 'Hamburg', 'Kirchaich') - dBase) < 1.5, 'danach wieder Ausgangsansicht');
+  await page.close();
+}
+
+if (only === 'all' || only === 'lupe') {
+  log('— Folge-Zoom: Ansicht folgt dem Zeiger, nach 4 s ohne Punkt heraus (1440)');
+  const page = await open('/de/');
+  await toStage(page);
+  await waitDone(page);
+  await page.waitForTimeout(500);
+  let s = await state(page);
+  const d0 = scale(s, 'Hamburg', 'Kirchaich');
+  const du = find(s, 'Dubai');
+  let px = s.fr.x + du.x + 3, py = s.fr.y + du.y + 2;
+  await page.mouse.move(px + 40, py + 40);
+  await page.mouse.move(px, py, { steps: 6 });
+  await page.waitForTimeout(1500);
+  s = await state(page);
+  const z1 = scale(s, 'Hamburg', 'Kirchaich');
+  log('  Abstand Hamburg–Kirchaich', d0.toFixed(1), '→', z1.toFixed(1));
+  check(z1 > d0 * 1.3, 'Verweilen auf Dubai: Karte zoomt hinein');
+  await page.waitForTimeout(5000);
+  s = await state(page);
+  check(Math.abs(scale(s, 'Hamburg', 'Kirchaich') - z1) < 1 && /is-on/.test(s.ret.cls), 'auf dem Punkt: nach 5 s weiter gezoomt (kein Herauszoomen)');
+  // freie Stelle suchen (weit weg von allen sichtbaren Markern) und dorthin fahren
+  const vis = s.mk.filter((m) => m.x > 0 && m.x < s.fr.w && m.y > 0 && m.y < s.fr.h);
+  let best = null;
+  for (let x = 60; x < s.fr.w - 60; x += 40) for (let y = 60; y < s.fr.h - 60; y += 40) {
+    const dmin = Math.min(...vis.map((m) => Math.hypot(m.x - x, m.y - y)), 1e9);
+    const far = Math.hypot(s.fr.x + x - px, s.fr.y + y - py);
+    if (far > 180 && dmin > 110 && (!best || dmin > best.d)) best = { x, y, d: dmin };
+  }
+  const ref = find(s, 'Dubai');
+  const tx = s.fr.x + best.x, ty = s.fr.y + best.y;
+  await page.mouse.move(tx, ty, { steps: 24 });
+  await page.waitForTimeout(500);
+  s = await state(page);
+  const moved = find(s, 'Dubai');
+  const mx = moved.x - ref.x, my = moved.y - ref.y, ux = tx - px, uy = ty - py;
+  const along = -(mx * ux + my * uy) / Math.hypot(ux, uy); // Inhalt wandert dem Zeiger entgegen
+  log('  Zeiger', Math.round(ux), Math.round(uy), '→ Inhalt', Math.round(mx), Math.round(my), 'gegen die Zeigerrichtung', Math.round(along), 'px', 'ret', s.ret.cls);
+  check(along > 40, 'Ansicht folgt dem Zeiger (Inhalt wandert entgegen)');
+  await page.screenshot({ path: `${out}/l-follow.png` });
+  const zNow = scale(s, 'Hamburg', 'Kirchaich');
+  await page.waitForTimeout(3000);
+  s = await state(page);
+  check(Math.abs(scale(s, 'Hamburg', 'Kirchaich') - zNow) < 1, 'nach 3 s ohne Punkt noch gezoomt');
+  await page.waitForTimeout(2400);
+  s = await state(page);
+  const d4 = scale(s, 'Hamburg', 'Kirchaich');
+  log('  nach gut 4 s ohne Punkt: Abstand', d4.toFixed(1), '(Ausgang', d0.toFixed(1) + ')');
+  check(Math.abs(d4 - d0) / d0 < 0.06, 'nach 4 s ohne Punkt: Karte zoomt von selbst heraus');
+  await page.screenshot({ path: `${out}/l-out.png` });
+  // ungezoomt folgt die Ansicht nicht
+  s = await state(page);
+  const r0 = find(s, 'Hamburg');
+  await page.mouse.move(tx - 160, ty + 30, { steps: 12 });
+  await page.waitForTimeout(400);
+  s = await state(page);
+  const r1 = find(s, 'Hamburg');
+  check(Math.hypot(r1.x - r0.x, r1.y - r0.y) < 2 || /is-on/.test(s.ret.cls), 'Ausgangsansicht: Karte bleibt beim Bewegen stehen');
+  await page.close();
+}
+
+if (only === 'all' || only === 'wheel') {
+  log('— Mausrad (1440)');
+  const page = await open('/de/');
+  await toStage(page);
+  await waitDone(page);
+  await page.waitForTimeout(500);
+  let s = await state(page);
+  const d0 = scale(s, 'Hamburg', 'Kirchaich');
+  // frei liegende Stelle über dem Atlantik (keine Punkte in der Nähe)
+  const cx = s.fr.x + s.fr.w * 0.36, cy = s.fr.y + s.fr.h * 0.55;
+  // 1) gerade erst hineingefahren: das Rad rollt die Seite
+  await page.mouse.move(cx, cy - 300);
+  await page.mouse.move(cx, cy, { steps: 4 });
+  const y0 = await page.evaluate(() => scrollY);
+  await page.mouse.wheel(0, 120);
+  await page.waitForTimeout(400);
+  const y1 = await page.evaluate(() => scrollY);
+  s = await state(page);
+  check(y1 > y0 && Math.abs(scale(s, 'Hamburg', 'Kirchaich') - d0) < 0.5, `ohne Verweilen: Seite rollt (${y0} → ${y1}), Karte bleibt`);
+  await page.evaluate((y) => scrollTo(0, y), y0);
+  await page.waitForTimeout(300);
+  // 2) kurz ruhen lassen, dann zoomt das Rad
+  await page.mouse.move(cx + 4, cy + 3, { steps: 2 });
+  await page.waitForTimeout(900);
+  const y2 = await page.evaluate(() => scrollY);
+  for (let k = 0; k < 3; k++) { await page.mouse.wheel(0, -100); await page.waitForTimeout(60); }
+  await page.waitForTimeout(700);
+  const y3 = await page.evaluate(() => scrollY);
+  s = await state(page);
+  const d1 = scale(s, 'Hamburg', 'Kirchaich');
+  log('  nach 3 Rasten hinein: Abstand', d0.toFixed(1), '→', d1.toFixed(1), 'Seite', y2, '→', y3);
+  check(d1 > d0 * 1.6 && y3 === y2, 'nach kurzem Verweilen zoomt das Rad, die Seite bleibt stehen');
+  await page.screenshot({ path: `${out}/w-in.png` });
+  // 3) wieder heraus bis ganz außen, dann rollt die Seite weiter
+  for (let k = 0; k < 14; k++) { await page.mouse.wheel(0, 100); await page.waitForTimeout(40); }
+  await page.waitForTimeout(800);
+  const y4 = await page.evaluate(() => scrollY);
+  log('  ganz heraus, Seite', y3, '→', y4);
+  check(y4 > y3, 'ganz herausgezoomt: weiteres Drehen rollt die Seite');
+  // 4) Klick weckt sofort
+  await page.evaluate((y) => scrollTo(0, y), y2);
+  await page.mouse.move(20, 20);
+  await page.waitForTimeout(300);
+  s = await state(page);
+  const d5 = scale(s, 'Hamburg', 'Kirchaich');
+  await page.mouse.move(cx, cy, { steps: 3 });
+  await page.mouse.down(); await page.mouse.up();
+  await page.mouse.wheel(0, -100);
+  await page.waitForTimeout(600);
+  s = await state(page);
+  check(scale(s, 'Hamburg', 'Kirchaich') > d5 * 1.15, 'nach einem Klick zoomt das Rad sofort');
   await page.close();
 }
 

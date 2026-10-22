@@ -5,13 +5,28 @@ import { copyText, bindForm } from './basket.js';
 import { personCard } from '../views/layout.js';
 
 // App-Leiste (Telefon): beim Tippen in ein Eingabefeld zieht sie sich zurück, damit sie nicht über der Tastatur klebt
+// App-Leiste: weicht der Bildschirmtastatur. Ob die Tastatur offen ist, zeigt die sichtbare Fläche (visualViewport) –
+// sie schrumpft um die Tastatur. Der Fokus allein genügt nicht: Schließt man die Tastatur, ohne das Feld zu verlassen
+// (Android „Zurück“, iOS nach unten wischen), bliebe die Leiste sonst verschwunden.
 export function initAppBar() {
   const bar = $('[data-abar]');
   if (!bar || document.__abar) return;
   document.__abar = true;
-  const typing = (el) => el && el.matches?.('input:not([type="checkbox"], [type="radio"], [type="button"], [type="submit"], [type="range"]), textarea, select, [contenteditable="true"]');
-  document.addEventListener('focusin', (e) => { if (typing(e.target)) document.documentElement.classList.add('is-typing'); });
-  document.addEventListener('focusout', (e) => { if (typing(e.target)) setTimeout(() => { if (!typing(document.activeElement)) document.documentElement.classList.remove('is-typing'); }, 60); });
+  const root = document.documentElement;
+  const vv = window.visualViewport;
+  const typing = (el) => el && el.matches?.('input:not([type="checkbox"], [type="radio"], [type="button"], [type="submit"], [type="reset"], [type="range"], [type="color"], [type="file"]), textarea, select, [contenteditable="true"]');
+  let full = 0, width = 0;
+  const update = () => {
+    const h = vv ? vv.height * (vv.scale || 1) : innerHeight;
+    if (Math.abs(innerWidth - width) > 40) { width = innerWidth; full = 0; } // gedreht: neu messen
+    full = Math.max(full, h);
+    root.classList.toggle('is-typing', !!typing(document.activeElement) && h < full - 120);
+  };
+  update();
+  vv?.addEventListener('resize', update);
+  addEventListener('resize', update);
+  document.addEventListener('focusin', () => { update(); setTimeout(update, 400); });
+  document.addEventListener('focusout', () => setTimeout(update, 60));
 }
 
 export function initHeader() {
@@ -84,28 +99,36 @@ export function initHeader() {
   window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
 }
 
+// Handy-Menü. Die Vorschau (SPA) ersetzt das Menü bei jedem Seitenwechsel: das Akkordeon hängt am jeweiligen Element,
+// Öffnen, Schließen und Tastatur hängen einmal am Dokument und greifen auf das aktuelle Menü zu.
+const DRW = { last: null, closeT: 0 };
+const drawerStill = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
+// Öffnen: sichtbar machen, Ausgangslage übernehmen lassen, dann .is-open (Übergänge in main.css);
+// Schließen: .is-open entfernen und erst nach dem Hinausgleiten verbergen
+function drawerSet(on) {
+  const dr = $('[data-drawer]');
+  if (!dr) return;
+  const root = document.documentElement;
+  clearTimeout(DRW.closeT);
+  if (on) {
+    root.classList.add('has-drawer'); // darunter liegende Leisten ohne Weichzeichner (siehe main.css)
+    dr.hidden = false;
+    void dr.offsetWidth;
+    dr.classList.add('is-open');
+  } else {
+    dr.classList.remove('is-open');
+    const gone = () => { dr.hidden = true; root.classList.remove('has-drawer'); };
+    if (drawerStill()) gone(); else DRW.closeT = setTimeout(gone, 320);
+  }
+  document.body.style.overflow = on ? 'hidden' : '';
+  $$('[data-drawer-open]').forEach((b) => b.setAttribute('aria-expanded', String(on)));
+  if (on) { DRW.last = document.activeElement; dr.querySelector('.drawer__panel button, .drawer__panel a')?.focus({ preventScroll: true }); } else DRW.last?.focus?.({ preventScroll: true });
+}
 export function initDrawer() {
   const dr = $('[data-drawer]');
   if (!dr || dr.__bound) return;
   dr.__bound = true;
-  let last = null, closeT = 0;
-  const still = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
-  // Öffnen: sichtbar machen, Ausgangslage übernehmen lassen, dann .is-open (Übergänge in main.css);
-  // Schließen: .is-open entfernen und erst nach dem Hinausgleiten verbergen
-  const set = (on) => {
-    clearTimeout(closeT);
-    if (on) {
-      dr.hidden = false;
-      void dr.offsetWidth;
-      dr.classList.add('is-open');
-    } else {
-      dr.classList.remove('is-open');
-      if (still()) dr.hidden = true; else closeT = setTimeout(() => { dr.hidden = true; }, 320);
-    }
-    document.body.style.overflow = on ? 'hidden' : '';
-    $$('[data-drawer-open]').forEach((b) => b.setAttribute('aria-expanded', String(on)));
-    if (on) { last = document.activeElement; dr.querySelector('.drawer__panel button, .drawer__panel a')?.focus(); } else last?.focus?.();
-  };
+  const still = drawerStill;
   // Akkordeon: per Skript animiert (in allen Browsern gleich weich), nur ein Abschnitt offen. Schließt sich ein
   // Abschnitt oberhalb, bleibt der angetippte Eintrag an seinem Platz (Scrollausgleich je Bild).
   const body = dr.querySelector('.drawer__body');
@@ -164,18 +187,23 @@ export function initDrawer() {
     };
     requestAnimationFrame(hold);
   });
+  if (document.__drawerDoc) return;
+  document.__drawerDoc = true;
   document.addEventListener('click', (e) => {
-    if (e.target.closest('[data-drawer-open]')) set(true);
-    else if (e.target.closest('[data-drawer-close]')) set(false);
-    else if (!dr.hidden && e.target.closest('.drawer__panel a')) set(false);
-    else if (!dr.hidden && e.target.closest('.drawer__panel [data-search-open]')) set(false);
+    const cur = $('[data-drawer]');
+    if (!cur) return;
+    if (e.target.closest('[data-drawer-open]')) drawerSet(true);
+    else if (e.target.closest('[data-drawer-close]')) drawerSet(false);
+    else if (!cur.hidden && e.target.closest('.drawer__panel a')) drawerSet(false);
+    else if (!cur.hidden && e.target.closest('.drawer__panel [data-search-open]')) drawerSet(false);
   });
   document.addEventListener('keydown', (e) => {
-    if (dr.hidden || !dr.classList.contains('is-open')) return;
-    if (e.key === 'Escape') { set(false); return; }
+    const cur = $('[data-drawer]');
+    if (!cur || cur.hidden || !cur.classList.contains('is-open')) return;
+    if (e.key === 'Escape') { drawerSet(false); return; }
     // Fokus im geöffneten Menü halten
     if (e.key === 'Tab') {
-      const f = $$('.drawer__panel a[href], .drawer__panel button:not([disabled]), .drawer__panel input, .drawer__panel select', dr).filter((x) => x.offsetParent !== null);
+      const f = $$('.drawer__panel a[href], .drawer__panel button:not([disabled]), .drawer__panel input, .drawer__panel select', cur).filter((x) => x.offsetParent !== null);
       if (!f.length) return;
       const first = f[0], last = f[f.length - 1];
       if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
