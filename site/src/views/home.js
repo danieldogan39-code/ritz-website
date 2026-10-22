@@ -121,13 +121,17 @@ export function groupStats(ctx) {
 // Im Streifen wird das Foto abgedunkelt und das Innere scharf sichtbar (Ringkern mit Bandlagen, Sekundärwicklung,
 // Außenkante des Gießharzkörpers, Lage des Primärleiters); hinter dem Scanner bleibt die Zeichnung zart stehen.
 // Die Hinweise erscheinen in dem Moment, in dem der Scanner ihren Punkt erreicht. Danach läuft alle 14 s ein
-// leiser zweiter Scan. Bei einem neuen Foto genügt es, STAGE neu einzumessen.
+// leiser zweiter Scan. Auf dem Telefon liegt nur das Messwerk im Hintergrund hinter dem Text (ohne Scanner).
+// Rechenlast: Jede Bewegung ist transform oder opacity auf einer eigenen, kleinen Ebene und läuft im Compositor
+// ohne Hauptthread – die Bögen drehen sich als eigene SVG-Ebenen, das Leuchten pulsiert über die Deckkraft seiner
+// Ebene, die Messkurven gleiten als Ganzes, Scanner und Röntgenbild verschieben nur Ebenen. Neu gezeichnet werden
+// allein Ring und Führungslinien, während sie sich beim Einstieg aufziehen (je eine kleine Ebene).
+// Bei einem neuen Foto genügt es, STAGE neu einzumessen.
 const STAGE_IMG = 'mimg/buehne-ringkernwandler.webp';
 const STAGE = {
   w: 2912, h: 1440,
   cx: 1992, cy: 745, rx: 395, ry: 438, // Öffnung: Mitte und Halbachsen an der Kante der Aluminiumhülse
   outer: [2010, 745, 692, 752], // Außenkante der Stirnseite (Mitte, Halbachsen; rechts durch die Perspektive größer)
-  mw: 1400, mh: 1051, // Handy: so viele Fotopixel füllen Breite und Höhe der Bildfläche (Ring samt Aufklebern)
   // Bauteile auf der Stirnseite (x, y, Breite, Höhe): Aufkleber P1, CE mit Gewindeeinsatz, Klemmenkasten.
   // Das Röntgenbild spart sie aus, damit sie sauber über der Zeichnung liegen.
   parts: [[2511, 567, 157, 125], [2465, 690, 180, 112], [2438, 834, 245, 285]],
@@ -139,8 +143,14 @@ const XR = { core: [1.27, 1.45], wind: [1.25, 1.47], lam: 13, cond: 60, dot: [1.
 // Scanner: Mitte des Streifens fährt gleichmäßig von x0 nach x1 (Fotopixel, Breite bw), Start t0, Dauer dur, Wiederholung loop (s)
 const SCAN = { x0: 1180, x1: 2912, bw: 510, t0: 0.9, dur: 2.4, loop: 14 };
 const scanAt = (x) => +(SCAN.t0 + ((x - SCAN.x0) / (SCAN.x1 - SCAN.x0)) * SCAN.dur).toFixed(2);
-const P = (x, y) => `left:${((x / STAGE.w) * 100).toFixed(2)}%;top:${((y / STAGE.h) * 100).toFixed(2)}%`;
 const f1 = (v) => v.toFixed(1);
+const pcOf = (v, of) => `${((v / of) * 100).toFixed(3)}%`;
+const P = (x, y) => `left:${pcOf(x, STAGE.w)};top:${pcOf(y, STAGE.h)}`;
+const BOX = ([x0, y0, x1, y1]) => `left:${pcOf(x0, STAGE.w)};top:${pcOf(y0, STAGE.h)};width:${pcOf(x1 - x0, STAGE.w)};height:${pcOf(y1 - y0, STAGE.h)}`;
+// SVG-Ebene über einem Ausschnitt des Fotos (x0, y0, x1, y1); gezeichnet wird weiter in Fotopixeln
+const layer = (cls, box, inner, style = '') => `<svg class="${cls}" style="${BOX(box)}${style}" viewBox="${f1(box[0])} ${f1(box[1])} ${f1(box[2] - box[0])} ${f1(box[3] - box[1])}" preserveAspectRatio="none" focusable="false">${inner}</svg>`;
+// Ausschnitt um die Mitte des Rings mit halber Breite a und halber Höhe b
+const around = (a, b) => [STAGE.cx - a, STAGE.cy - b, STAGE.cx + a, STAGE.cy + b];
 const rad = (a) => (a * Math.PI) / 180;
 // Kreis um die Mitte (ungestaucht, für die Gruppe ON_FACE) und Punkt auf der Stirnseite (k-facher Öffnungsradius)
 const lp = (r, a) => [STAGE.cx + r * Math.cos(rad(a)), STAGE.cy + r * Math.sin(rad(a))];
@@ -152,6 +162,7 @@ function arcPath(cx, cy, r, a0, a1) {
   return `M${x0.toFixed(1)} ${y0.toFixed(1)}A${r.toFixed(1)} ${r.toFixed(1)} 0 ${a1 - a0 > 180 ? 1 : 0} 1 ${x1.toFixed(1)} ${y1.toFixed(1)}`;
 }
 const circ = (r) => `M${f1(STAGE.cx + r)} ${STAGE.cy}A${f1(r)} ${f1(r)} 0 1 1 ${f1(STAGE.cx - r)} ${STAGE.cy}A${f1(r)} ${f1(r)} 0 1 1 ${f1(STAGE.cx + r)} ${STAGE.cy}`;
+const polyline = (pts) => pts.map(([x, y], i) => `${i ? 'L' : 'M'}${f1(x)} ${f1(y)}`).join('');
 // Hinweise: Ankerpunkte in Fotopixeln (Schilder rechtsbündig an der Linie, Messwerte mit der linken unteren Ecke)
 function stageMarks() {
   const { cx, cy, rx, ry } = STAGE, u = U;
@@ -166,6 +177,8 @@ function stageMarks() {
     dot2: [kx, ky],
   };
 }
+// Messwerk aus kleinen Ebenen: Leuchten, Ring, Skala (mit Fadenkreuz), zwei drehende Bögen, zwei Führungslinien,
+// Punkte und Pulse als HTML-Elemente
 function stageHud() {
   const { cx, cy, ry: r } = STAGE, u = U;
   let ticks = '', major = '';
@@ -177,26 +190,29 @@ function stageHud() {
     if (long) major += seg; else ticks += seg;
   }
   const cross = [[1, 0], [-1, 0], [0, 1], [0, -1]].map(([dx, dy]) => `M${f1(cx + dx * 18 * u)} ${f1(cy + dy * 18 * u)}L${f1(cx + dx * 46 * u)} ${f1(cy + dy * 46 * u)}`).join('');
+  const rRing = r + 8 * u, rScale = r + 40 * u, rOrbit = r + 64 * u + 8;
+  const onFace = (inner) => `<g transform="${ON_FACE}">${inner}</g>`;
+  // drehende Bögen: quadratischer Ausschnitt in Kreiskoordinaten, die Stauchung auf die Stirnseite übernimmt die Hülle
+  const orbit = (cls, arcs) => `<svg class="hud__rot${cls}" viewBox="${f1(cx - rOrbit)} ${f1(cy - rOrbit)} ${f1(2 * rOrbit)} ${f1(2 * rOrbit)}" focusable="false">${arcs}</svg>`;
   const M = stageMarks();
-  const [kx, ky] = M.dot2;
-  const t1 = scanAt(cx), t2 = scanAt(kx);
-  const line = (pts) => pts.map(([x, y], i) => `${i ? 'L' : 'M'}${f1(x)} ${f1(y)}`).join('');
-  const rot = `style="transform-origin:${cx}px ${cy}px"`;
-  return `<svg class="hud" viewBox="0 0 ${STAGE.w} ${STAGE.h}" preserveAspectRatio="none" focusable="false">
-    <g transform="${ON_FACE}">
-      <circle class="hud__glow" cx="${cx}" cy="${cy}" r="${f1(r + 8 * u)}"/>
-      <circle class="hud__ring" cx="${cx}" cy="${cy}" r="${f1(r + 8 * u)}" pathLength="1"/>
-      <path class="hud__ticks" d="${ticks}"/><path class="hud__major" d="${major}"/>
-      <g class="hud__rot" ${rot}><path class="hud__scan" d="${arcPath(cx, cy, r + 50 * u, -70, -18)}"/><path class="hud__scan hud__scan--2" d="${arcPath(cx, cy, r + 50 * u, 110, 162)}"/></g>
-      <g class="hud__rot hud__rot--rev" ${rot}><path class="hud__flow" d="${arcPath(cx, cy, r + 64 * u, 200, 232)}"/><path class="hud__flow" d="${arcPath(cx, cy, r + 64 * u, 20, 52)}"/></g>
-      <path class="hud__cross" d="${cross}"/>
-      <circle class="hud__ping" style="--d:${t1}s" cx="${cx}" cy="${cy}" r="${f1(6 * u)}"/>
-    </g>
-    <path class="hud__lead hud__lead--1" style="--d:${t1}s" d="${line(M.lead1)}" pathLength="1"/>
-    <path class="hud__lead hud__lead--2" style="--d:${t2}s" d="${line(M.lead2)}" pathLength="1"/>
-    <circle class="hud__ping hud__ping--2" style="--d:${t2}s" cx="${f1(kx)}" cy="${f1(ky)}" r="${f1(6 * u)}"/>
-    <circle class="hud__dot" style="--d:${t1}s" cx="${cx}" cy="${cy}" r="${f1(5 * u)}"/><circle class="hud__dot hud__dot--2" style="--d:${t2}s" cx="${f1(kx)}" cy="${f1(ky)}" r="${f1(5 * u)}"/>
-  </svg>`;
+  const t1 = scanAt(cx), t2 = scanAt(M.dot2[0]);
+  const lead = (pts, n, t) => {
+    const xs = pts.map((p) => p[0]), ys = pts.map((p) => p[1]);
+    return layer(`hud hud--lead hud--lead${n}`, [Math.min(...xs) - 6, Math.min(...ys) - 6, Math.max(...xs) + 6, Math.max(...ys) + 6], `<path d="${polyline(pts)}" pathLength="1"/>`, `;--d:${t}s`);
+  };
+  return [
+    layer('hud hud--glow', around(E * rRing + 60, rRing + 60), onFace(`<circle class="hud__glow" cx="${cx}" cy="${cy}" r="${f1(rRing)}"/>`)),
+    layer('hud hud--ring', around(E * rRing + 8, rRing + 8), onFace(`<circle class="hud__ring" cx="${cx}" cy="${cy}" r="${f1(rRing)}" pathLength="1"/>`)),
+    layer('hud hud--scale', around(E * rScale + 8, rScale + 8), onFace(`<path class="hud__ticks" d="${ticks}"/><path class="hud__major" d="${major}"/><path class="hud__cross" d="${cross}"/>`)),
+    `<div class="hud-orbit" style="${BOX([cx - rOrbit, cy - rOrbit, cx + rOrbit, cy + rOrbit])};--e:${E.toFixed(4)}">`
+      + orbit('', `<path class="hud__scan" d="${arcPath(cx, cy, r + 50 * u, -70, -18)}"/><path class="hud__scan hud__scan--2" d="${arcPath(cx, cy, r + 50 * u, 110, 162)}"/>`)
+      + orbit(' hud__rot--rev', `<path class="hud__flow" d="${arcPath(cx, cy, r + 64 * u, 200, 232)}"/><path class="hud__flow" d="${arcPath(cx, cy, r + 64 * u, 20, 52)}"/>`)
+      + '</div>',
+    lead(M.lead1, 1, t1),
+    lead(M.lead2, 2, t2),
+    `<i class="st__ping" style="${P(cx, cy)};--d:${t1}s"></i><i class="st__ping st__ping--2" style="${P(...M.dot2)};--d:${t2}s"></i>`,
+    `<i class="st__dot" style="${P(cx, cy)};--d:${t1}s"></i><i class="st__dot st__dot--2" style="${P(...M.dot2)};--d:${t2}s"></i>`,
+  ].join('');
 }
 // Röntgenbild: Außenkante des Gießharzkörpers, Ringkern mit Bandlagen, Sekundärwicklung (radiale Windungen,
 // zwischen den Skalenstrichen versetzt) und die Lage des Primärleiters im Fenster
@@ -217,34 +233,38 @@ function xrMask(id) {
   const { w, h, parts } = STAGE;
   return `<defs><filter id="${id}f" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="9"/></filter><mask id="${id}" maskUnits="userSpaceOnUse" x="0" y="0" width="${w}" height="${h}"><rect width="${w}" height="${h}" fill="#fff"/><g filter="url(#${id}f)">${parts.map(([x, y, pw, ph]) => `<rect x="${x}" y="${y}" width="${pw}" height="${ph}" rx="18" fill="#000"/>`).join('')}</g></mask></defs>`;
 }
-// Scanner als zwei Ebenen: ein schmaler Streifen (weiche Kanten, dunkelt das Foto ab, trägt die Scanlinie) wandert
-// über die Fläche, die scharfe Zeichnung darin läuft genau gegenläufig und bleibt so auf dem Ring stehen; beides
-// nur mit transform, damit die Bewegung im Compositor läuft. Die zarte Zeichnung wird dahinter per clip-path frei.
+// Scanner als Ebenen, die sich nur verschieben: ein schmaler Streifen (weiche Kanten, dunkelt das Foto ab, trägt die
+// Scanlinie) wandert über die Fläche, die scharfe Zeichnung darin läuft genau gegenläufig und bleibt so auf dem Ring
+// stehen. Ebenso gibt eine mitlaufende Hülle die zarte Zeichnung hinter dem Scanner frei (rechte Kante = Scanlinie).
 function stageXray() {
   const { w, h } = STAGE;
-  const pc = (v) => `${(v * 100).toFixed(4)}%`;
-  const bw = SCAN.bw / w, l0 = (SCAN.x0 - SCAN.bw / 2) / w, l1 = (SCAN.x1 - SCAN.bw / 2) / w;
+  const p4 = (v) => `${(v * 100).toFixed(4)}%`;
+  const bw = SCAN.bw / w, l0 = (SCAN.x0 - SCAN.bw / 2) / w, l1 = (SCAN.x1 - SCAN.bw / 2) / w, c0 = SCAN.x0 / w;
   const vars = [
-    `--bw:${pc(bw)}`, `--aw:${pc(1 / bw)}`,
-    `--wa:${pc(l0 / bw)}`, `--wb:${pc(l1 / bw)}`,
-    `--aa:${pc(-l0)}`, `--ab:${pc(-l1)}`,
-    `--ca:${pc(1 - SCAN.x0 / w)}`,
+    `--bw:${p4(bw)}`, `--aw:${p4(1 / bw)}`,
+    `--wa:${p4(l0 / bw)}`, `--wb:${p4(l1 / bw)}`,
+    `--aa:${p4(-l0)}`, `--ab:${p4(-l1)}`,
+    `--ra:${p4(c0 - 1)}`, `--rb:${p4(1 - c0)}`,
     `--xt:${SCAN.t0}s`, `--xd:${SCAN.dur}s`, `--xl:${SCAN.loop}s`, `--xl0:${+(SCAN.t0 + SCAN.loop).toFixed(2)}s`,
   ].join(';');
   const art = xrArt();
   const svg = (cls, id) => `<svg class="${cls}" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none" focusable="false">${xrMask(id)}<g mask="url(#${id})">${art}</g></svg>`;
-  return `<div class="xr" style="${vars}">${svg('xr__base', 'xrm-b')}<div class="xr__win">${svg('xr__art', 'xrm-a')}<i class="xr__line"></i></div></div>`;
+  // erster Scan und Wiederholung auf getrennten Ebenen: je Element nur eine Animation, sonst kann der Browser sie
+  // nicht im Compositor abspielen
+  return `<div class="xr" style="${vars}"><div class="xr__rev">${svg('xr__base', 'xrm-b')}</div>`
+    + `<div class="xr__win">${svg('xr__art', 'xrm-a')}<i class="xr__line"></i></div>`
+    + `<div class="xr__win xr__win--loop">${svg('xr__art', 'xrm-l')}<i class="xr__line"></i></div></div>`;
 }
-// Größen des Fotos für srcset: Handy (Breite füllt mw Fotopixel), Desktop (Höhe der Bühne bis 90 % des Fensters)
+// Größen des Fotos für srcset: Telefon (Bühne mindestens 92 % der Fensterhöhe), sonst Höhe der Bühne bis 90 %
 function stageSizes() {
-  const k = STAGE.w / STAGE.mw, ar = STAGE.w / STAGE.h;
-  return `(max-width: 560px) ${Math.ceil(k * 100)}vw, (max-width: 760px) ${Math.ceil(k * 560)}px, (max-aspect-ratio: ${Math.round(ar * 90)}/100) ${Math.ceil(ar * 90)}vh, 100vw`;
+  const ar = STAGE.w / STAGE.h;
+  return `(max-width: 760px) ${Math.ceil(ar * 92)}vh, (max-aspect-ratio: ${Math.round(ar * 90)}/100) ${Math.ceil(ar * 90)}vh, 100vw`;
 }
 // kleine Messkurve (zwei Perioden, doppelt lang zum Durchlaufen)
 function trace(amp) {
   let d = '';
   for (let x = 0; x <= 240; x += 4) d += `${x ? 'L' : 'M'}${x} ${(20 - amp * Math.sin((2 * Math.PI * x) / 60)).toFixed(1)}`;
-  return `<svg viewBox="0 0 120 40" preserveAspectRatio="none" focusable="false"><path d="${d}"/></svg>`;
+  return `<span class="st__wave"><svg viewBox="0 0 240 40" preserveAspectRatio="none" focusable="false"><path d="${d}"/></svg></span>`;
 }
 function stage(ctx) {
   const { t, href, lang } = ctx;
@@ -257,11 +277,11 @@ function stage(ctx) {
     [`${fmtNum(0.72, lang)}–550`, H.stats.range, 'kV'],
     ...(g.repCountries ? [[String(g.repCountries), H.stats.reps]] : []),
   ];
-  const { w, h, cx, cy, mw, mh } = STAGE;
+  const { w, h, cx } = STAGE;
   const photo = ctx.img[STAGE_IMG] ? imgTag(ctx, STAGE_IMG, { alt: '', sizes: stageSizes(), eager: true, cls: 'st__photo' }) : '';
   const M = stageMarks();
   const tA = scanAt(cx) + 0.2, tB = scanAt(M.dot2[0]) + 0.2, tR = scanAt(SCAN.x1) - 0.15;
-  return `<section class="st hero--anim" data-stage aria-labelledby="st-title" style="--st-w:${w};--st-h:${h};--st-ar:${w} / ${h};--st-cx:${cx};--st-cy:${cy};--st-mw:${mw};--st-mh:${mh};--st-cov:${2 * Math.min(cx, w - cx)}">
+  return `<section class="st hero--anim" data-stage aria-labelledby="st-title" style="--st-w:${w};--st-h:${h};--st-ar:${w} / ${h}">
   <div class="st__media" aria-hidden="true">
     <div class="st__frame">
       ${photo}

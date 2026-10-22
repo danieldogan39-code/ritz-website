@@ -105,10 +105,11 @@
 /* ---------- Bühne ---------- */
 .is-home .st { margin-top: calc(-1 * var(--header-h)); }
 .st { position: relative; isolation: isolate; display: grid; grid-template-rows: 1fr auto; min-height: clamp(560px, calc(90svh - var(--abar-h, 0px)), 880px); padding-top: var(--header-h); background: var(--night); color: var(--on-night); overflow: hidden; }
-.st__media { position: absolute; inset: 0; z-index: -2; overflow: hidden; }
+.st__media { position: absolute; inset: 0; z-index: -2; overflow: hidden; contain: layout paint; }
 /* Fläche im Seitenverhältnis des Fotos, wie ein Titelbild beschnitten; Fokus auf dem Ring */
 .st__frame { --fx: 50%; position: absolute; top: 50%; left: 50%; height: max(100%, calc(100vw * var(--st-h) / var(--st-w))); aspect-ratio: var(--st-ar); transform: translate(calc(-1 * var(--fx)), -50%); }
-.st__photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: saturate(.92) contrast(1.05) brightness(.82); }
+/* Farbabstimmung (Sättigung .92, Kontrast 1.05, Helligkeit .82) ist ins Bild eingerechnet: kein Filter pro Bild */
+.st__photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .st::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
   background:
     linear-gradient(90deg, rgb(18 12 11 / .94) 0%, rgb(18 12 11 / .82) 30%, rgb(18 12 11 / .34) 56%, rgb(18 12 11 / .12) 100%),
@@ -120,21 +121,26 @@
 .st__links { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.6rem; margin-top: .4rem; }
 .st :focus-visible { outline-color: #fff; }
 
-/* Messwerk über dem Foto */
-.hud { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; fill: none; }
-.hud path, .hud circle { vector-effect: non-scaling-stroke; }
-.hud__glow { stroke: var(--hud-red); stroke-width: 10; opacity: .14; filter: blur(6px); }
+/* Messwerk über dem Foto: kleine Ebenen (Lage und Größe aus home.js), bewegt nur über transform und opacity */
+.hud { position: absolute; overflow: visible; fill: none; pointer-events: none; }
+.hud :is(path, circle) { vector-effect: non-scaling-stroke; }
+.hud__glow { stroke: var(--hud-red); stroke-width: 10; filter: blur(6px); }
+.hud--glow { opacity: .14; }
 .hud__ring { stroke: var(--hud); stroke-width: 1.3; opacity: .78; }
 .hud__ticks { stroke: var(--hud); stroke-width: 1; opacity: .3; }
 .hud__major { stroke: var(--hud); stroke-width: 1.4; opacity: .62; }
+.hud__cross { stroke: var(--hud); stroke-width: 1.2; opacity: .7; }
+.hud--lead path { stroke: var(--hud); stroke-width: 1.1; opacity: .85; }
+/* drehende Bögen: Hülle staucht auf die Stirnseite, die beiden SVG-Ebenen drehen sich darin um ihre Mitte */
+.hud-orbit { position: absolute; transform: scaleX(var(--e, 1)); pointer-events: none; }
+.hud-orbit > svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; fill: none; }
+.hud-orbit path { vector-effect: non-scaling-stroke; }
 .hud__scan { stroke: var(--hud-red); stroke-width: 3; stroke-linecap: round; }
 .hud__scan--2 { opacity: .5; }
 .hud__flow { stroke: var(--hud-copper); stroke-width: 2; stroke-linecap: round; opacity: .8; }
-.hud__rot { transform-box: view-box; }
-.hud__cross { stroke: var(--hud); stroke-width: 1.2; opacity: .7; }
-.hud__lead { stroke: var(--hud); stroke-width: 1.1; opacity: .85; }
-.hud__dot { fill: var(--hud-red); stroke: none; }
-.hud__ping { fill: none; stroke: var(--hud-red); stroke-width: 1.5; opacity: 0; transform-box: fill-box; transform-origin: center; }
+.st__dot, .st__ping { position: absolute; border-radius: 50%; pointer-events: none; }
+.st__dot { width: 9px; height: 9px; margin: -4.5px 0 0 -4.5px; background: var(--hud-red); }
+.st__ping { width: 56px; height: 56px; margin: -28px 0 0 -28px; border: 1.5px solid var(--hud-red); opacity: 0; }
 /* Röntgenblick: zarte Zeichnung hinter dem Scanner, im Streifen scharf über dem abgedunkelten Foto */
 .xr { position: absolute; inset: 0; pointer-events: none; }
 .xr svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; fill: none; }
@@ -144,6 +150,7 @@
 .xr__l { stroke: var(--hud); stroke-width: .8; opacity: .4; }
 .xr__w { stroke: var(--hud-copper); stroke-width: 1.2; }
 .xr__p { stroke: var(--hud); stroke-width: 1.2; stroke-dasharray: 5 5; }
+.xr__rev { position: absolute; inset: 0; overflow: hidden; }
 .xr__base { opacity: .4; }
 .xr__win { position: absolute; top: 0; bottom: 0; left: 0; width: var(--bw); overflow: hidden; opacity: 0; background: linear-gradient(90deg, transparent 25%, rgb(255 74 67 / .13) 50%, transparent 75%), rgb(18 12 11 / .6);
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 35%, #000 65%, transparent), linear-gradient(transparent, #000 9%, #000 80%, transparent); -webkit-mask-composite: source-in;
@@ -151,13 +158,14 @@
 .xr__win .xr__art { inset: 0 auto 0 0; width: var(--aw); }
 .xr__line { position: absolute; top: 0; bottom: 0; left: 50%; width: 2px; margin-left: -1px; background: var(--hud-red); box-shadow: 0 0 18px 3px color-mix(in srgb, var(--hud-red) 55%, transparent); }
 .st__chip, .st__read { position: absolute; font-size: .8rem; line-height: 1.25; color: #fff; }
-.st__chip { transform: translate(-100%, -50%); max-width: 15em; padding: .28rem .55rem; text-wrap: balance; font-weight: 560; font-stretch: 92%; letter-spacing: .01em; background: rgb(18 12 11 / .62); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
+.st__chip { transform: translate(-100%, -50%); max-width: 15em; padding: .28rem .55rem; text-wrap: balance; font-weight: 560; font-stretch: 92%; letter-spacing: .01em; background: rgb(18 12 11 / .74); }
 .st__chip--b { transform: translate(-100%, -50%); }
-.st__read { display: grid; gap: 6px; width: 15.5rem; padding: 12px 14px; background: rgb(18 12 11 / .55); border: 1px solid rgb(255 255 255 / .18); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); transform: translate(0, -100%); }
+.st__read { display: grid; gap: 6px; width: 15.5rem; padding: 12px 14px; background: rgb(18 12 11 / .7); border: 1px solid rgb(255 255 255 / .18); transform: translate(0, -100%); }
 .st__trace { display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 0 10px; font-variant-numeric: tabular-nums; }
 .st__trace b { font-weight: 560; font-size: .74rem; font-stretch: 90%; color: var(--on-night-2); }
 .st__trace i { font-style: normal; justify-self: end; font-weight: 680; font-stretch: 110%; }
-.st__trace svg { grid-column: 1 / -1; width: 100%; height: 28px; overflow: hidden; }
+.st__wave { grid-column: 1 / -1; height: 28px; overflow: hidden; }
+.st__wave svg { display: block; width: 200%; height: 100%; }
 .st__trace path { fill: none; stroke: var(--hud-red); stroke-width: 1.6; vector-effect: non-scaling-stroke; }
 .st__trace--s path { stroke: var(--hud-copper); }
 
@@ -172,30 +180,25 @@
 .st__fact strong small { font-size: .56em; font-weight: 620; margin-left: .14em; }
 .st__fact dt { font-size: .84rem; line-height: 1.35; color: var(--on-night-2); }
 @media (max-width: 1240px) {
-  .st__chip--a, .hud__lead--1 { display: none; }
+  .st__chip--a, .hud--lead1 { display: none; }
 }
 @media (max-width: 1100px) {
   .st__frame { --fx: 56%; }
-  .st__chip--b, .hud__lead--2, .hud__dot--2, .hud__ping--2 { display: none; }
+  .st__chip--b, .hud--lead2, .st__dot--2, .st__ping--2 { display: none; }
 }
 @media (max-width: 1000px) {
   .st__ruler { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .st__fact:nth-child(4) { padding-left: 0; }
   .st__fact:nth-child(n+4) { border-top: 1px solid var(--night-line); }
 }
-/* Handy: der Ring steht oben ganz im Bild (Messwerk und Röntgenblick bleiben lesbar), der Text darunter auf
-   ruhigem Grund. Maßstab --s (CSS-Pixel je Fotopixel): --st-mw Fotopixel füllen die Breite (Ring samt Aufklebern),
-   --st-mh die Höhe der Bildfläche (Werte aus STAGE in home.js). */
+/* Telefon: Foto mit Ring im Hintergrund hinter dem Text, nur das Messwerk (ohne Scanner, Schilder und Messwerte) */
 @media (max-width: 760px) {
-  .st { display: flex; flex-direction: column; min-height: 0; --s: max(calc(min(100vw, 560px) / var(--st-mw)), calc(100vw / var(--st-cov))); --mh: calc(var(--st-mh) * var(--s)); }
-  .st__media { position: relative; inset: auto; flex: none; height: var(--mh); }
-  .st__frame { top: calc(50% - var(--st-cy) * var(--s)); left: calc(50% - var(--st-cx) * var(--s)); width: calc(var(--st-w) * var(--s)); height: calc(var(--st-h) * var(--s)); aspect-ratio: auto; transform: none;
-    transform-origin: calc(var(--st-cx) / var(--st-w) * 100%) calc(var(--st-cy) / var(--st-h) * 100%); }
-  .st::before { inset: var(--header-h) 0 auto; height: var(--mh);
-    background: radial-gradient(closest-side, rgb(18 12 11 / 0) 72%, rgb(18 12 11 / .8) 100%), linear-gradient(0deg, var(--night) 0%, rgb(18 12 11 / 0) 26%), linear-gradient(180deg, rgb(18 12 11 / .55) 0%, rgb(18 12 11 / 0) 18%); }
-  .st__chip, .st__read, .hud__lead, .hud__dot, .hud__ping { display: none; }
+  .st { min-height: max(92svh, 600px); }
+  .st__frame { --fx: 62%; }
+  .st::before { background: linear-gradient(180deg, rgb(18 12 11 / .72) 0%, rgb(18 12 11 / .55) 40%, rgb(18 12 11 / .92) 82%, rgb(18 12 11 / .98) 100%); }
+  .st__chip, .st__read, .hud--lead, .st__dot, .st__ping, .xr { display: none; }
   .st__fact:nth-child(5) { display: none; }
-  .st__inner { align-self: stretch; padding-block: 14px 30px; }
+  .st__inner { align-self: end; }
   .st__ruler { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .st__fact { padding: 16px 12px 18px 0; }
   .st__fact:nth-child(n) { border-top: 1px solid var(--night-line); padding-left: 0; }
@@ -213,36 +216,40 @@
 .hdr.hdr--over:not(.is-open) .hdr__cta:hover { --bg: #fff; --fg: #1b1716; --bd: #fff; color: #1b1716; }
 .hdr.hdr--over:not(.is-open) :focus-visible { outline-color: #fff; }
 
-/* Bewegung der Bühne: ein Einstieg, danach ruhige Schleifen; bei reduzierter Bewegung steht alles */
+/* Bewegung der Bühne: ein Einstieg, danach ruhige Schleifen; bei reduzierter Bewegung steht alles.
+   Alle Schleifen sind transform oder opacity ganzer Ebenen (Compositor, kein Neuzeichnen). */
 @media (prefers-reduced-motion: no-preference) {
   .st__frame { animation: stZoom 18s var(--ease-out) both; }
   .hud__ring { stroke-dasharray: 1; animation: stDraw 1.6s var(--ease-out) .25s both; }
-  .hud__ticks, .hud__major, .hud__cross { animation: stFade 1.2s var(--ease-out) .7s both; }
+  .hud--scale { animation: stFade 1.2s var(--ease-out) .7s both; }
   .hud__rot { animation: stSpin 16s linear infinite; }
   .hud__rot--rev { animation-duration: 26s; animation-direction: reverse; }
+  .hud--glow { animation: stPulse 4s var(--ease-in-out) infinite; }
   /* Hinweise im Takt des Scanners (Zeitpunkte aus home.js) */
-  .hud__lead { stroke-dasharray: 1; animation: stDraw .9s var(--ease-out) var(--d, 1.3s) both; }
-  .hud__dot { animation: stFade .4s var(--ease-out) var(--d, 1.2s) both; }
-  .hud__ping { animation: stPing 1s var(--ease-out) var(--d, 1.2s) forwards; }
+  .hud--lead path { stroke-dasharray: 1; animation: stDraw .9s var(--ease-out) var(--d, 1.3s) both; }
+  .st__dot { animation: stFade .4s var(--ease-out) var(--d, 1.2s) both; }
+  .st__ping { animation: stPing 1s var(--ease-out) var(--d, 1.2s) forwards; }
   .st__chip { animation: stFade .6s var(--ease-out) var(--d, 1.9s) both; }
   .st__read { animation: stUp .8s var(--ease-out) var(--d, 1.5s) both; }
-  /* Scanner: Streifen und Zeichnung laufen exakt gegenläufig (gleiche Dauer, gleicher Start, linear) */
-  .xr__base { animation: xrBase var(--xd) linear var(--xt) both; }
-  .xr__win { animation: xrWin var(--xd) linear var(--xt) both, xrWinLoop var(--xl) linear var(--xl0) infinite; }
-  .xr__win .xr__art { animation: xrArt var(--xd) linear var(--xt) both, xrArtLoop var(--xl) linear var(--xl0) infinite; }
-  .st__trace svg path { animation: stTrace 2.4s linear infinite; }
-  .st__trace--s svg path { animation-duration: 2.4s; }
-  .hud__glow { animation: stPulse 4s var(--ease-in-out) infinite; }
+  .st__wave svg { animation: stTrace 2.4s linear infinite; }
+  /* Scanner: Streifen, Zeichnung und Freigabe laufen exakt gegenläufig (gleiche Dauer, gleicher Start, linear) */
+  .xr__rev { animation: xrRev var(--xd) linear var(--xt) both; }
+  .xr__rev > svg { animation: xrRevIn var(--xd) linear var(--xt) both; }
+  .xr__win { animation: xrWin var(--xd) linear var(--xt) both; }
+  .xr__win .xr__art { animation: xrArt var(--xd) linear var(--xt) both; }
+  .xr__win--loop { animation: xrWinLoop var(--xl) linear var(--xl0) infinite backwards; }
+  .xr__win--loop .xr__art { animation: xrArtLoop var(--xl) linear var(--xl0) infinite backwards; }
   .hero--anim .st__lead { animation: riseIn .7s var(--ease-out) .26s backwards; }
   .hero--anim .st__links { animation: riseIn .7s var(--ease-out) .36s backwards; }
   .hero--anim .st__foot { animation: fadeIn .8s var(--ease-out) .5s backwards; }
   :root[data-intro="play"] :is(.hero--anim .st__lead, .hero--anim .st__links, .hero--anim .st__foot) { animation-play-state: paused; }
   :root.rv .sp__chart:not(.is-in) .sp__bar { transform: scaleX(0); }
-  .st.is-idle :is(.st__frame, .hud__rot, .st__trace path, .hud__glow, .xr__base, .xr__win, .xr__art) { animation-play-state: paused; }
-  :root[data-intro="play"] .st :is(.st__frame, .hud__ring, .hud__ticks, .hud__major, .hud__cross, .hud__lead, .hud__dot, .hud__ping, .st__chip, .st__read, .xr__base, .xr__win, .xr__art) { animation-play-state: paused; }
+  .st.is-idle :is(.st__frame, .hud__rot, .hud--glow, .st__wave svg, .xr__rev, .xr__rev > svg, .xr__win, .xr__art) { animation-play-state: paused; }
+  :root[data-intro="play"] .st :is(.st__frame, .hud__ring, .hud--scale, .hud--lead path, .st__dot, .st__ping, .st__chip, .st__read, .xr__rev, .xr__rev > svg, .xr__win, .xr__art) { animation-play-state: paused; }
 }
-@keyframes stPing { 0% { opacity: .9; transform: scale(1); } 100% { opacity: 0; transform: scale(5.5); } }
-@keyframes xrBase { from { clip-path: inset(0 var(--ca) 0 0); } to { clip-path: inset(0 0 0 0); } }
+@keyframes stPing { 0% { opacity: .9; transform: scale(.18); } 100% { opacity: 0; transform: scale(1); } }
+@keyframes xrRev { from { transform: translateX(var(--ra)); } to { transform: none; } }
+@keyframes xrRevIn { from { transform: translateX(var(--rb)); } to { transform: none; } }
 @keyframes xrWin { 0% { transform: translateX(var(--wa)); opacity: 0; } 8% { opacity: 1; } 90% { opacity: 1; } 100% { transform: translateX(var(--wb)); opacity: 0; } }
 @keyframes xrArt { from { transform: translateX(var(--aa)); } to { transform: translateX(var(--ab)); } }
 /* leiser zweiter Scan: 19 % von 14 s entsprechen der Dauer des ersten */
