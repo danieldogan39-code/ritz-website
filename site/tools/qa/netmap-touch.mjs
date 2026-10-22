@@ -1,0 +1,45 @@
+// Karte auf dem Telefon: Tippen, Wischen, Zwei-Finger-Zoom (CDP-Touch), Zustand bleibt gültig
+import { chromium } from 'playwright-core';
+import { mkdirSync } from 'node:fs';
+const out = (process.env.QA_OUT || 'qa-shots');
+mkdirSync(out, { recursive: true });
+const browser = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell' });
+const ctx = await browser.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true });
+const page = await ctx.newPage();
+const errs = [];
+page.on('console', (m) => { if (m.type() === 'error' || m.type() === 'warning') errs.push(m.text()); });
+page.on('pageerror', (e) => errs.push(String(e)));
+await page.addInitScript(() => { try { sessionStorage.setItem('ritz-intro-skip', '1'); } catch (e) {} });
+await page.goto('http://localhost:8080/de/kontakt/', { waitUntil: 'networkidle' });
+const cdp = await ctx.newCDPSession(page);
+const toMap = () => page.evaluate(() => { const s = document.querySelector('[data-nm-stage]'); scrollTo(0, s.getBoundingClientRect().top + scrollY - 140); });
+await toMap(); await page.waitForTimeout(600); await toMap();
+await page.waitForFunction(() => document.querySelector('[data-nm]')?.classList.contains('is-done'), null, { timeout: 15000 });
+const fr = await page.evaluate(() => { const r = document.querySelector('[data-nm-frame]').getBoundingClientRect(); return { x: r.left, y: r.top, w: r.width, h: r.height }; });
+const touch = async (type, pts) => cdp.send('Input.dispatchTouchEvent', { type, touchPoints: pts.map(([x, y], i) => ({ x, y, id: i + 1, radiusX: 4, radiusY: 4, force: 1 })) });
+const swipe = async (x0, y0, dx, dy, steps = 8) => { await touch('touchStart', [[x0, y0]]); for (let i = 1; i <= steps; i++) { await touch('touchMove', [[x0 + (dx * i) / steps, y0 + (dy * i) / steps]]); await page.waitForTimeout(16); } await touch('touchEnd', []); };
+const pinch = async (cx, cy, d0, d1, steps = 10) => { await touch('touchStart', [[cx - d0 / 2, cy], [cx + d0 / 2, cy]]); for (let i = 1; i <= steps; i++) { const d = d0 + ((d1 - d0) * i) / steps; await touch('touchMove', [[cx - d / 2, cy], [cx + d / 2, cy]]); await page.waitForTimeout(16); } await touch('touchEnd', []); };
+const spread = async () => page.evaluate(() => { const xs = [...document.querySelectorAll('.nm__mk')].map((b) => parseFloat((b.style.translate || '0').split(' ')[0])); return { ok: xs.every(Number.isFinite), min: Math.min(...xs).toFixed(0), max: Math.max(...xs).toFixed(0) }; });
+console.log('Start', JSON.stringify(await spread()));
+await pinch(fr.x + fr.w / 2, fr.y + fr.h / 2, 60, 220);
+await page.waitForTimeout(300);
+console.log('nach Zoom', JSON.stringify(await spread()));
+await page.screenshot({ path: `${out}/t-pinch.png` });
+const sy0 = await page.evaluate(() => scrollY);
+await swipe(fr.x + fr.w * 0.7, fr.y + fr.h / 2, -160, 0);
+await page.waitForTimeout(300);
+console.log('nach Wischen', JSON.stringify(await spread()), 'Seite gescrollt um', (await page.evaluate(() => scrollY)) - sy0);
+for (let i = 0; i < 60; i++) {
+  const x = fr.x + 10 + Math.random() * (fr.w - 20), y = fr.y + 10 + Math.random() * (fr.h - 20);
+  const r = Math.random();
+  if (r < 0.45) await page.touchscreen.tap(x, y);
+  else if (r < 0.7) await swipe(x, y, (Math.random() - 0.5) * 240, (Math.random() - 0.5) * 20, 5);
+  else if (r < 0.85) await pinch(x, y, 80, 80 + (Math.random() - 0.5) * 140, 6);
+  else await page.locator('[data-nm-region]').nth(i % 5).click();
+  await toMap();
+}
+await page.waitForTimeout(1200);
+console.log('Stress', JSON.stringify(await spread()), 'Karte', await page.evaluate(() => document.querySelector('[data-nm-card]').className));
+await page.screenshot({ path: `${out}/t-end.png` });
+console.log(errs.length ? 'FEHLER:\n' + errs.join('\n') : 'keine Konsolenfehler');
+await browser.close();

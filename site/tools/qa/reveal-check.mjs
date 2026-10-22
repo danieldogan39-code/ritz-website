@@ -8,7 +8,7 @@ for (const p of paths.length ? paths : ['/de/', '/de/unternehmen/', '/de/werkzeu
   const page = await browser.newPage({ viewport: { width: +w, height: 900 } });
   const errs = [];
   page.on('pageerror', (e) => errs.push(String(e)));
-  await page.addInitScript(() => { try { sessionStorage.setItem('ritz-intro', '1'); } catch (e) {} });
+  await page.addInitScript(() => { try { sessionStorage.setItem('ritz-intro-skip', '1'); } catch (e) {} });
   await page.goto('http://localhost:8080' + p, { waitUntil: 'networkidle' });
   const H = await page.evaluate(() => document.documentElement.scrollHeight);
   for (let y = 0; y < H; y += 600) { await page.evaluate((v) => scrollTo(0, v), y); await page.waitForTimeout(90); }

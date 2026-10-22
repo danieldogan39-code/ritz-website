@@ -10,7 +10,7 @@ export default {
   ui: {
     skip: 'Zum Inhalt springen', skipIntro: 'Intro überspringen', introLine: 'Messwandler seit 1945', menu: 'Menü', close: 'Schließen', search: 'Suche', searchPh: 'Typ, Spannung oder Thema suchen …',
     searchHint: 'z. B.', lang: 'Sprache', theme: 'Darstellung', themeLight: 'Hell', themeDark: 'Dunkel', themeAuto: 'System',
-    inquiryList: 'Projektmappe', contactCta: 'Kontakt', home: 'Startseite', more: 'Mehr erfahren', all: 'Alle', show: 'Anzeigen',
+    inquiryList: 'Projektmappe', contactCta: 'Kontakt', finderCta: 'Produktfinder', home: 'Startseite', more: 'Mehr erfahren', all: 'Alle', show: 'Anzeigen',
     back: 'Zurück', next: 'Weiter', open: 'Öffnen', copy: 'Kopieren', copied: 'Kopiert', download: 'Herunterladen', external: 'öffnet externe Seite',
     route: 'Route planen', phone: 'Telefon', fax: 'Fax', email: 'E-Mail', address: 'Adresse', website: 'Website', employees: 'Mitarbeitende',
     functions: 'Schwerpunkte', newBadge: 'Neu', madeIn: 'Made in', pdf: 'PDF', lang_de: 'Deutsch', lang_en: 'Englisch', lang_deen: 'Deutsch/Englisch',
@@ -41,7 +41,7 @@ export default {
     megaCompanyText: 'Familiengeführt durch die RITZ Stiftung, seit 1945 in Hamburg.', megaCareerText: 'Über 20 Berufe an Standorten in Europa, China und den USA.',
   },
   footer: {
-    claim: 'Empowering Our Electrical Future',
+    ctaContact: 'Kontakt aufnehmen', claim: 'Empowering Our Electrical Future',
     lead: 'Messwandler, Sensoren, Stromschienen und Gießharzteile für die Energieversorgung – entwickelt und gefertigt in Europa, China und den USA.',
     colProducts: 'Produkte', colService: 'Service', colCompany: 'Unternehmen', funding: 'Gefördert durch: Bundesministerium für Wirtschaft und Energie, aufgrund eines Beschlusses des Deutschen Bundestages', follow: 'Folgen Sie uns', newTab: '{name} (öffnet in neuem Tab)',
     rights: '© {year} RITZ Instrument Transformers GmbH', madeBy: 'Konzeption & Umsetzung: Medialyte',
@@ -233,7 +233,7 @@ export default {
   },
   map: {
     title: 'RITZ weltweit', all: 'Alle', locations: 'RITZ-Standorte', reps: 'Vertretungen', legendHq: 'Zentrale', legendProd: 'Produktion', legendSite: 'Standort',
-    legendSales: 'Vertrieb', legendRep: 'Vertretung', zoomIn: 'Vergrößern', zoomOut: 'Verkleinern', reset: 'Ansicht zurücksetzen', listTitle: 'Einträge',
+    legendSales: 'Vertrieb', legendRep: 'Vertretung', zoomIn: 'Vergrößern', zoomOut: 'Verkleinern', reset: 'Ansicht zurücksetzen', listTitle: 'Einträge', count1: '{n} Eintrag', countN: '{n} Einträge',
     filterPh: 'Land oder Firma suchen', choose: 'Wählen Sie einen Punkt auf der Karte oder einen Eintrag in der Liste.', servedBy: 'Betreut von',
     keyboard: 'Mit Tab durch die Standorte, Eingabe öffnet die Details.',
   },
@@ -255,7 +255,7 @@ export default {
       qTitle: "Jedes Gerät geprüft.",
       helpTitle: 'Wobei dürfen wir helfen?',
       plants: { title: 'Gefertigt in {n} Werken weltweit', lead: 'Von Hamburg aus führt RITZ eine Gruppe mit mehr als {staff} Mitarbeitenden. Jedes Werk hat seine Spezialität – vom Niederspannungswandler bis zum Hochspannungswandler.', staff: '{n} Mitarbeitende', cta: 'Alle Standorte', hq: 'Zentrale', plant: 'Werk' },
-      net: { title: 'Weltweit vernetzt', lead: 'Von Hamburg aus in die Welt: {sites} eigene Standorte in {cc} Ländern und Vertretungen in {reps} Ländern bringen RITZ-Messwandler dorthin, wo Netze gebaut und betrieben werden.', sites: 'RITZ-Standorte', siteCountries: 'Länder mit eigenem Standort', repCountries: 'Länder mit Vertretung', layers: 'Ebenen', reps: 'Vertretungen', net: 'Verbindungen', region: 'Region', world: 'Welt', country: 'Land wählen', countryPh: 'Land wählen …', map: 'Weltkarte mit allen RITZ-Standorten und Vertretungen', marks: 'Standorte und Vertretungen', help: 'Pfeiltasten wechseln zwischen den Punkten, Eingabe zeigt die Details, Escape schließt sie, Plus und Minus zoomen.', site: 'Zum Standort', rep: 'Kontakt und alle Vertretungen', alsoHere: 'Ebenfalls hier', legendSite: 'RITZ-Standort', legendRep: 'Vertretung' },
+      net: { title: 'Weltweit vernetzt', lead: 'Von Hamburg aus in die Welt: {sites} eigene Standorte in {cc} Ländern und Vertretungen in {reps} Ländern bringen RITZ-Messwandler dorthin, wo Netze gebaut und betrieben werden.', sites: 'RITZ-Standorte', siteCountries: 'Länder mit eigenem Standort', repCountries: 'Länder mit Vertretung', layers: 'Ebenen', reps: 'Vertretungen', net: 'Verbindungen', region: 'Region', world: 'Welt', country: 'Land wählen', countryPh: 'Land wählen …', mapSites: 'Weltkarte mit allen RITZ-Standorten', map: 'Weltkarte mit allen RITZ-Standorten und Vertretungen', marks: 'Standorte und Vertretungen', help: 'Pfeiltasten wechseln zwischen den Punkten, Eingabe zeigt die Details, Escape schließt sie, Plus und Minus zoomen.', site: 'Zum Standort', rep: 'Kontakt und alle Vertretungen', alsoHere: 'Ebenfalls hier', legendSite: 'RITZ-Standort', legendRep: 'Vertretung' },
       heritage: { title: 'Seit 1945 gewachsen', lead: 'Von der Gründung in Hamburg bis zum neuen Hochspannungswerk in den USA: acht Jahrzehnte Messwandlerbau.', cta: 'Unternehmensgeschichte' },
       title: 'Messwandler, Sensoren und Stromschienen seit 1945',
       h1: 'Wir machen Energie messbar.',

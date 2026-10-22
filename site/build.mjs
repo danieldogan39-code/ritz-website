@@ -217,7 +217,8 @@ function themeScript() {
 // Bewegung: setzt vor dem ersten Bild :root.rv (Ausgangszustände fürs Einblenden) und startet auf der
 // Startseite das Intro (data-intro: play → out → entfernt): beim ersten Aufruf und danach bei jedem dritten
 // erneuten Laden (Zähler „ritz-intro-n“ im localStorage läuft 0 → 1 → 2 → 0, das Intro kommt bei 0; ohne
-// Speicher jedes Mal). sessionStorage „ritz-intro“ schaltet es ab (Prüfskripte). Überspringen per Klick, Taste,
+// Speicher jedes Mal). sessionStorage „ritz-intro-skip“ schaltet es ab (Prüfskripte); der frühere Sitzungsvermerk
+// „ritz-intro“ wird entfernt, damit er das Intro nicht mehr blockiert. Überspringen per Klick, Taste,
 // Mausrad oder Wischen; bei reduzierter Bewegung passiert nichts. mode: 'home' | 'page' (nur Einblenden) | 'spa' (Startseite am Hash).
 function motionScript(mode) {
   const isHome = mode === 'spa' ? "(function(h){return !h||h==='#'||/^#(de|en|fr|hu|es)$/.test(h)})(location.hash)" : mode === 'home' ? 'true' : 'false';
@@ -225,7 +226,7 @@ function motionScript(mode) {
 if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
 if('IntersectionObserver' in window){d.classList.add('rv');setTimeout(function(){if(!d.classList.contains('rv-ok'))d.classList.remove('rv')},4000)}
 if(!${isHome})return;
-try{if(sessionStorage.getItem('ritz-intro'))return}catch(e){}
+try{var ss=sessionStorage;ss.removeItem('ritz-intro');if(ss.getItem('ritz-intro-skip'))return}catch(e){}
 try{var ls=localStorage,k=parseInt(ls.getItem('ritz-intro-n'),10)||0;ls.setItem('ritz-intro-n',String((k+1)%3));if(k!==0)return}catch(e){}
 d.setAttribute('data-intro','play');
 var done=0,EV=['pointerdown','keydown','wheel','touchstart'];
@@ -281,7 +282,7 @@ ${DRAFT ? '<meta name="robots" content="noindex, nofollow">' : page.noindex || p
 ${alternates.map(([l, u]) => `<link rel="alternate" hreflang="${l}" href="${SITE}${u}">`).join('\n')}
 <meta property="og:type" content="${page.type === 'article' ? 'article' : 'website'}"><meta property="og:title" content="${esc(page.title)}"><meta property="og:description" content="${esc(page.desc)}"><meta property="og:url" content="${SITE}${url}"><meta property="og:locale" content="${LOCALES[ctx.lang].replace('-', '_')}">${ogImg ? `<meta property="og:image" content="${ogImg}">` : ''}
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#141110" media="(prefers-color-scheme: dark)">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="icon" href="/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest">
+<link rel="icon" href="/favicon.ico" sizes="32x32"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest">
 <link rel="preload" href="/assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/main.css?v=${V}">
 ${themeScript()}
@@ -443,6 +444,46 @@ async function buildStatic(cacheDir) {
 }
 
 // ---------------- Assets (CSS, JS, Fonts, Icons) ----------------
+// Favicons: das „R“ aus der Wortmarke (eigene Kontur, keine Systemschrift) weiß auf RITZ-Rot. Die Kachel trägt die
+// abgeschrägte Ecke oben rechts wie die Knöpfe der Website. Für iOS und Android-Masken vollflächig ohne Schräge.
+const R_GLYPH = 'M66.45 49.99V90.36H74.43V74.51H83.83L92.18 90.36H101.16L91.7 73.49C96.61 72.37 99.36 68.37 99.36 62.13C99.36 53.64 95.08 49.99 86.1 49.99ZM84.2 57.19C88.95 57.19 91.28 58.09 91.28 62.25S88.95 67.37 84.2 67.37H74.42V57.19Z';
+function favSvg({ size = 64, cut = true, h = size * 0.578 } = {}) {
+  const k = h / 40.37, w = 34.71 * k;
+  const x = (size - w) / 2 + size * 0.006, y = (size - h) / 2;
+  const c = size * 0.19;
+  const tile = cut ? `<path fill="#cd1719" d="M0 0H${size - c}L${size} ${c}V${size}H0Z"/>` : `<rect width="${size}" height="${size}" fill="#cd1719"/>`;
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${size} ${size}">${tile}<path fill="#fff" fill-rule="evenodd" transform="translate(${x.toFixed(2)} ${y.toFixed(2)}) scale(${k.toFixed(4)}) translate(-66.45 -49.99)" d="${R_GLYPH}"/></svg>`;
+}
+function icoFile(pngs) {
+  const head = Buffer.alloc(6 + 16 * pngs.length);
+  head.writeUInt16LE(0, 0); head.writeUInt16LE(1, 2); head.writeUInt16LE(pngs.length, 4);
+  let off = head.length;
+  pngs.forEach(({ size, buf }, i) => {
+    const o = 6 + 16 * i;
+    head.writeUInt8(size >= 256 ? 0 : size, o); head.writeUInt8(size >= 256 ? 0 : size, o + 1);
+    head.writeUInt16LE(1, o + 4); head.writeUInt16LE(32, o + 6);
+    head.writeUInt32LE(buf.length, o + 8); head.writeUInt32LE(off, o + 12);
+    off += buf.length;
+  });
+  return Buffer.concat([head, ...pngs.map((p) => p.buf)]);
+}
+async function favicons(out) {
+  const tab = favSvg();
+  wr(`${out}/favicon.svg`, tab);
+  // vierfach überabgetastet rendern, dann verkleinern (saubere Kanten auch bei 16 px)
+  const png = (svg, n) => { const vb = +/viewBox="0 0 (\d+)/.exec(svg)[1]; return sharp(Buffer.from(svg), { density: Math.max(72, (72 * 4 * n) / vb) }).resize(n, n).png({ compressionLevel: 9 }).toBuffer(); };
+  const ico = [];
+  for (const n of [16, 32, 48]) ico.push({ size: n, buf: await png(favSvg({ h: n <= 16 ? 38.5 : 37 }), n) });
+  fs.writeFileSync(`${out}/favicon.ico`, icoFile(ico));
+  fs.writeFileSync(`${out}/favicon-32.png`, ico[1].buf);
+  fs.writeFileSync(`${out}/apple-touch-icon.png`, await png(favSvg({ size: 180, cut: false, h: 96 }), 180));
+  fs.writeFileSync(`${out}/icon-192.png`, await png(favSvg({ size: 192 }), 192));
+  fs.writeFileSync(`${out}/icon-512.png`, await png(favSvg({ size: 512 }), 512));
+  fs.writeFileSync(`${out}/icon-maskable.png`, await png(favSvg({ size: 512, cut: false, h: 232 }), 512));
+  wr(`${out}/site.webmanifest`, JSON.stringify({ name: 'RITZ Instrument Transformers', short_name: 'RITZ', start_url: '/de/', display: 'browser', background_color: '#ffffff', theme_color: '#cd1719',
+    icons: [{ src: '/icon-192.png', sizes: '192x192', type: 'image/png' }, { src: '/icon-512.png', sizes: '512x512', type: 'image/png' }, { src: '/icon-maskable.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' }] }));
+}
+
 async function bundleAssets(out, mode) {
   let css = ['main', 'extra', 'tools', 'visual', 'home', 'motion'].map((n) => `${SRC}/styles/${n}.css`).filter((f) => fs.existsSync(f)).map((f) => fs.readFileSync(f, 'utf8')).join('\n');
   if (mode === 'static') {
@@ -464,12 +505,7 @@ async function bundleAssets(out, mode) {
     // Logo & Favicons
     const logo = fs.readFileSync(`${SRC}/assets/logo.svg`, 'utf8').replace(/currentColor/g, '#cd1719');
     wr(`${out}/assets/logo.svg`, logo);
-    const fav = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="#cd1719"/><path fill="#fff" d="M32 9 7 32l25 23 25-23Zm0 6.6L50 32 32 48.4 14 32Z"/><text x="32" y="38" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="15" fill="#fff">R</text></svg>`;
-    wr(`${out}/favicon.svg`, fav);
-    await sharp(Buffer.from(fav)).resize(32, 32).png().toFile(`${out}/favicon-32.png`);
-    await sharp(Buffer.from(fav)).resize(180, 180).png().toFile(`${out}/apple-touch-icon.png`);
-    await sharp(Buffer.from(fav)).resize(512, 512).png().toFile(`${out}/icon-512.png`);
-    wr(`${out}/site.webmanifest`, JSON.stringify({ name: 'RITZ Instrument Transformers', short_name: 'RITZ', start_url: '/de/', display: 'browser', background_color: '#ffffff', theme_color: '#1c1311', icons: [{ src: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }, { src: '/icon-512.png', sizes: '512x512', type: 'image/png' }] }));
+    await favicons(out);
     wr(`${out}/img/world-lite.svg`, worldLite());
     wr(`${out}/img/world-lite-dark.svg`, worldLite('#3a312d'));
     wr(`${out}/img/world-land.svg`, worldLand());

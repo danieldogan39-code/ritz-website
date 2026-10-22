@@ -19,11 +19,6 @@ export async function initPage(root = document) {
   if (has('[data-vaxis]')) jobs.push(import('./vaxis.js').then((m) => m.initVaxis(root)));
   if (has('[data-finder]')) jobs.push(import('./finder.js').then((m) => m.initFinder(root)));
   if (has('[data-config]')) jobs.push(import('./config.js').then((m) => m.initConfigurators(root)));
-  if (has('[data-map]')) jobs.push(import('./map.js').then((m) => m.initMaps(root).then(() => {
-    const id = location.hash.slice(1);
-    const box = $('[data-map="locations"]', root);
-    if (id && box?.__selectById) box.__selectById(id);
-  })));
   if (has('[data-downloads]')) jobs.push(import('./downloads.js').then((m) => m.initDownloads(root)));
   if (has('[data-mappe]')) jobs.push(import('./mappe.js').then((m) => m.initMappe(root)));
   if (has('[data-compare]')) jobs.push(import('./basket.js').then((m) => m.initComparePage(root)));

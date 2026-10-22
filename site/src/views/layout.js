@@ -39,7 +39,8 @@ export function header(ctx) {
       <button class="icon-btn" type="button" data-search-open aria-label="${esc(t.ui.search)} (Ctrl+K)" title="${esc(t.ui.search)}">${icon('search')}</button>
       <a class="icon-btn" href="${href('inquiry')}" data-basket-link aria-label="${esc(t.ui.inquiryList)}" title="${esc(t.ui.inquiryList)}">${icon('clipboard')}<span class="badge-count" data-basket-count hidden>0</span></a>
       ${langSwitch(ctx)}
-      <a class="btn btn--small hdr__cta" href="${href('contact')}">${esc(t.ui.contactCta)}</a>
+      <a class="btn btn--small btn--ghost hdr__cta" href="${href('contact')}"${cur === 'contact' ? ' aria-current="page"' : ''}>${esc(t.ui.contactCta)}</a>
+      <a class="btn btn--small btn--red hdr__finder" href="${href('finder')}"${t.ui.finderCta !== n.finder ? ` aria-label="${esc(n.finder)}"` : ''}${cur === 'finder' ? ' aria-current="page"' : ''}>${icon('finder', 'width="18" height="18"')}<span class="hdr__finder-l">${esc(t.ui.finderCta)}</span></a>
       <button class="icon-btn burger" type="button" data-drawer-open aria-label="${esc(t.ui.menu)}" aria-expanded="false" aria-controls="drawer">${icon('menu')}</button>
     </div>
   </div>
@@ -114,8 +115,8 @@ export function shorten(s, n) {
 export function drawer(ctx) {
   const { t, href } = ctx;
   const sum = (label) => `<summary>${esc(label)}${icon('down')}</summary>`;
-  // Menüpunkte mit Untermenü: Akkordeon (name = nur einer offen; Schließen animiert über ::details-content)
-  const sub = (label, items) => `<details name="mnav">${sum(label)}<ul>${items}</ul></details>`;
+  // Menüpunkte mit Untermenü: Akkordeon (ui.js animiert Öffnen und Schließen, nur einer offen; ohne Skript normale details)
+  const sub = (label, items) => `<details>${sum(label)}<ul>${items}</ul></details>`;
   const top = [
     sub(t.nav.products, `${AREAS.map((a) => `<li><a href="${href('area', { area: a })}">${esc(t.lbl.area[a])}</a></li>`).join('')}<li><a href="${href('finder')}">${esc(t.nav.finder)}</a></li><li><a href="${href('products')}">${esc(t.ui.allProducts)}</a></li>`),
     sub(t.nav.sectors, SECTORS.map((s) => `<li><a href="${href('sector', { sector: s })}">${esc(t.pages.sectors.items[s].title)}</a></li>`).join('')),
@@ -147,49 +148,54 @@ export const SOCIAL = [
   ['Xing', 'https://www.xing.com/pages/ritzinstrumenttransformersgmbh'],
 ];
 
+// Fuß: Marke mit den zwei wichtigsten Einstiegen, darunter Anschrift und zwei kurze Linklisten, unten Rechtliches.
+// Alles Weitere erreicht man über die Hauptnavigation; der Fuß bleibt bewusst knapp.
 export function footer(ctx) {
   const { t, href } = ctx;
   const F = t.footer;
   const year = new Date().getFullYear();
+  const fund = ctx.img['misc/bmwi'] ? 'misc/bmwi' : ctx.img['misc/bmwi.png'] ? 'misc/bmwi.png' : '';
   return `<footer class="ftr">
   <div class="wrap">
-    <div class="ftr__top">
+    <div class="ftr__head">
       <div class="ftr__brand">
         <a class="logo" href="${href('home')}" aria-label="RITZ – ${esc(t.ui.home)}">${LOGO}</a>
         <p class="ftr__claim">${esc(F.claim)}</p>
-        <p class="ftr__lead">${esc(F.lead)}</p>
-        <address class="ftr__addr">RITZ Instrument Transformers GmbH<br>Wandsbeker Zollstraße 92–98<br>22041 Hamburg<br><a href="tel:+4940511230"><span class="nw">+49&nbsp;40&nbsp;51123&#8209;0</span></a><br><a href="mailto:info@ritz-international.com">info@ritz-international.com</a></address>
-        <nav class="ftr__social" aria-label="${esc(F.follow)}"><h2>${esc(F.follow)}</h2><ul>${SOCIAL.map(([name, url]) => `<li><a href="${url}" target="_blank" rel="noopener" aria-label="${esc(tpl(F.newTab, { name }))}">${esc(name)}${icon('arrowUpRight', 'width="15" height="15"')}</a></li>`).join('')}</ul></nav>
       </div>
-      <nav aria-label="${esc(F.colProducts)}"><h2>${esc(F.colProducts)}</h2><ul>
+      <p class="ftr__ctas">
+        <a class="btn btn--red" href="${href('finder')}">${icon('finder', 'width="18" height="18"')}${esc(t.nav.finder)}</a>
+        <a class="btn btn--line" href="${href('contact')}">${esc(F.ctaContact)}</a>
+      </p>
+    </div>
+    <div class="ftr__grid">
+      <div class="ftr__contact">
+        <h2>${esc(t.contactFinder.hq)}</h2>
+        <address>RITZ Instrument Transformers GmbH<br>Wandsbeker Zollstraße 92–98<br>22041 Hamburg</address>
+        <p class="ftr__lines"><a href="tel:+4940511230">${icon('phone', 'width="16" height="16"')}<span class="nw">+49&nbsp;40&nbsp;51123&#8209;0</span></a><a href="mailto:info@ritz-international.com">${icon('mail', 'width="16" height="16"')}<span>info@ritz-international.com</span></a></p>
+      </div>
+      <nav aria-labelledby="ftr-prod"><h2 id="ftr-prod">${esc(F.colProducts)}</h2><ul>
         ${AREAS.map((a) => `<li><a href="${href('area', { area: a })}">${esc(t.lbl.area[a])}</a></li>`).join('')}
-        <li><a href="${href('finder')}">${esc(t.nav.finder)}</a></li>
+        <li><a href="${href('downloads')}">${esc(t.nav.downloads)}</a></li>
       </ul></nav>
-      <nav aria-label="${esc(F.colService)}"><h2>${esc(F.colService)}</h2><ul>
-        <li><a href="${href('downloads')}">${esc(t.nav.downloads)}</a></li><li><a href="${href('contact')}">${esc(t.nav.contact)}</a></li>
-        <li><a href="${href('tools')}">${esc(t.nav.tools)}</a></li><li><a href="${href('assistant')}">${esc(t.x.assist.title)}</a></li>
-        <li><a href="${href('inquiry')}">${esc(t.ui.inquiryList)}</a></li><li><a href="${href('sectors')}">${esc(t.nav.sectors)}</a></li>
-        <li><a href="${href('quality')}">${esc(t.nav.quality)}</a></li>
-      </ul></nav>
-      <nav aria-label="${esc(F.colCompany)}"><h2>${esc(F.colCompany)}</h2><ul>
+      <nav aria-labelledby="ftr-co"><h2 id="ftr-co">${esc(F.colCompany)}</h2><ul>
         <li><a href="${href('company')}">${esc(t.nav.about)}</a></li><li><a href="${href('locations')}">${esc(t.nav.locations)}</a></li>
-        <li><a href="${href('responsibility')}">${esc(t.nav.responsibility)}</a></li><li><a href="${href('references')}">${esc(t.nav.references)}</a></li>
-        <li><a href="${href('career')}">${esc(t.nav.career)}</a></li><li><a href="${href('news')}">${esc(t.nav.news)}</a></li>
+        <li><a href="${href('quality')}">${esc(t.nav.quality)}</a></li><li><a href="${href('career')}">${esc(t.nav.career)}</a></li>
+        <li><a href="${href('news')}">${esc(t.nav.news)}</a></li>
       </ul></nav>
     </div>
-    <div class="ftr__mid">
-      ${ctx.img['misc/bmwi.png'] || ctx.img['misc/bmwi'] ? `<div class="ftr__funding">${imgTag(ctx, ctx.img['misc/bmwi'] ? 'misc/bmwi' : 'misc/bmwi.png', { alt: F.funding, sizes: '(max-width: 600px) 150px, 196px', max: 480 })}</div>` : ''}
-      <p class="ftr__note">${icon('check', 'width="16" height="16"')}${esc(F.privacyNote)}</p>
-    </div>
-    <div class="ftr__bottom">
-      <span>${esc(tpl(F.rights, { year }))}</span>
-      <nav class="ftr__legal" aria-label="${esc(t.ui.footerNav)}">
-        <a href="${href('imprint')}">${esc(t.nav.imprint)}</a><a href="${href('privacy')}">${esc(t.nav.privacy)}</a><a href="${href('search')}">${esc(t.nav.search)}</a>
-      </nav>
-      <div class="theme-toggle" role="group" aria-label="${esc(t.ui.theme)}" data-theme-toggle>
-        <button type="button" data-theme-set="light" aria-pressed="false">${esc(t.ui.themeLight)}</button>
-        <button type="button" data-theme-set="auto" aria-pressed="true">${esc(t.ui.themeAuto)}</button>
-        <button type="button" data-theme-set="dark" aria-pressed="false">${esc(t.ui.themeDark)}</button>
+    <div class="ftr__base">
+      ${fund ? `<div class="ftr__funding">${imgTag(ctx, fund, { alt: F.funding, sizes: '150px', max: 480 })}</div>` : ''}
+      <div class="ftr__legalbox">
+        <p class="ftr__legal"><span>${esc(tpl(F.rights, { year }))}</span><a href="${href('imprint')}">${esc(t.nav.imprint)}</a><a href="${href('privacy')}">${esc(t.nav.privacy)}</a></p>
+        <p class="ftr__note">${icon('check', 'width="15" height="15"')}${esc(F.privacyNote)}</p>
+      </div>
+      <div class="ftr__end">
+        <ul class="ftr__social" aria-label="${esc(F.follow)}">${SOCIAL.map(([name, url]) => `<li><a href="${url}" target="_blank" rel="noopener" aria-label="${esc(tpl(F.newTab, { name }))}">${esc(name)}${icon('arrowUpRight', 'width="14" height="14"')}</a></li>`).join('')}</ul>
+        <div class="theme-toggle" role="group" aria-label="${esc(t.ui.theme)}" data-theme-toggle>
+          <button type="button" data-theme-set="light" aria-pressed="false">${esc(t.ui.themeLight)}</button>
+          <button type="button" data-theme-set="auto" aria-pressed="true">${esc(t.ui.themeAuto)}</button>
+          <button type="button" data-theme-set="dark" aria-pressed="false">${esc(t.ui.themeDark)}</button>
+        </div>
       </div>
     </div>
   </div>

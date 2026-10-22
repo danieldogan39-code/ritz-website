@@ -114,6 +114,7 @@ const P = {
   briefcase: '<rect x="3" y="7" width="18" height="13" rx="1"/><path d="M8 7V4h8v3M3 13h18"/>',
   bolt: '<path d="M13 2 4 14h7l-1 8 9-12h-7z"/>',
   layers: '<path d="m12 3 9 5-9 5-9-5z"/><path d="m3 13 9 5 9-5"/>',
+  finder: '<path d="M4 7h16M4 12h16M4 17h16" opacity=".5"/><circle class="k1" cx="15" cy="7" r="2.4" fill="currentColor" stroke="none"/><circle class="k2" cx="9" cy="12" r="2.4" fill="currentColor" stroke="none"/><circle class="k3" cx="13.5" cy="17" r="2.4" fill="currentColor" stroke="none"/>',
   sliders: '<path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12M20 18h0"/><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="18" r="2"/>',
   trash: '<path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/>',
   zoomin: '<circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2M8 11h6M11 8v6"/>',

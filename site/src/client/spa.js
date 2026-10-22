@@ -67,6 +67,8 @@ async function render() {
   // Seitenwechsel als View Transition (Kopf bleibt stehen, Inhalt blendet über), sonst wie bisher mit kurzem Einblenden
   const useVT = !!document.startViewTransition && !matchMedia('(prefers-reduced-motion: reduce)').matches && shellLang === lang && !!$('#main');
   const swap = () => {
+    // schnelle Wechsel: ein überholter Aufruf darf die neuere Seite nicht mehr überschreiben (Übergänge laufen versetzt)
+    if (my !== rendering) return;
     document.body.className = page.bodyClass || '';
     if (shellLang !== lang || !$('#main')) {
       app.innerHTML = `<a class="skip" href="#main" data-skip>${base.t.ui.skip}</a>${header(ctx)}${drawer(ctx)}<main id="main" tabindex="-1"></main>${footer(ctx)}${searchOverlay(ctx)}`;

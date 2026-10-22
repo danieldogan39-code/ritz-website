@@ -3,7 +3,7 @@ import { chromium } from 'playwright-core';
 const exe = '/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell';
 const browser = await chromium.launch({ executablePath: exe });
 const page = await browser.newPage({ viewport: { width: 360, height: 860 }, deviceScaleFactor: 1, isMobile: true, hasTouch: true });
-await page.addInitScript(() => { try { sessionStorage.setItem('ritz-intro', '1'); } catch (e) {} });
+await page.addInitScript(() => { try { sessionStorage.setItem('ritz-intro-skip', '1'); } catch (e) {} });
 for (const p of process.argv.slice(2)) {
   await page.goto('http://localhost:8080' + p, { waitUntil: 'networkidle' });
   await page.evaluate(async () => { for (let y = 0; y < document.body.scrollHeight; y += 600) { window.scrollTo(0, y); await new Promise((r) => setTimeout(r, 30)); } });

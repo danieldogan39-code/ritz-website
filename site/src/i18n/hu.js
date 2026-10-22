@@ -10,7 +10,7 @@ export default {
   ui: {
     skip: 'Ugrás a tartalomhoz', skipIntro: 'Bevezető átugrása', introLine: 'Mérőváltók 1945 óta', menu: 'Menü', close: 'Bezárás', search: 'Keresés', searchPh: 'Típus, feszültség vagy téma keresése …',
     searchHint: 'pl.', lang: 'Nyelv', theme: 'Megjelenés', themeLight: 'Világos', themeDark: 'Sötét', themeAuto: 'Rendszer',
-    inquiryList: 'Projektmappa', contactCta: 'Kapcsolat', home: 'Kezdőlap', more: 'Bővebben', all: 'Összes', show: 'Megjelenítés',
+    inquiryList: 'Projektmappa', contactCta: 'Kapcsolat', finderCta: 'Termékkereső', home: 'Kezdőlap', more: 'Bővebben', all: 'Összes', show: 'Megjelenítés',
     back: 'Vissza', next: 'Tovább', open: 'Megnyitás', copy: 'Másolás', copied: 'Másolva', download: 'Letöltés', external: 'külső oldalt nyit meg',
     route: 'Útvonaltervezés', phone: 'Telefon', fax: 'Fax', email: 'E-mail', address: 'Cím', website: 'Weboldal', employees: 'Munkatársak',
     functions: 'Fő tevékenységek', newBadge: 'Új', madeIn: 'Gyártás:', pdf: 'PDF', lang_de: 'Német', lang_en: 'Angol', lang_deen: 'Német/angol',
@@ -41,7 +41,7 @@ export default {
     megaCompanyText: 'A RITZ Alapítvány tulajdonában, 1945 óta Hamburgban.', megaCareerText: 'Több mint 20 szakma európai, kínai és egyesült államokbeli telephelyeken.',
   },
   footer: {
-    claim: 'Empowering Our Electrical Future',
+    ctaContact: 'Kapcsolatfelvétel', claim: 'Empowering Our Electrical Future',
     lead: 'Mérőváltók, érzékelők, áramvezető sínek és öntött gyanta alkatrészek az energiaellátáshoz – fejlesztés és gyártás Európában, Kínában és az USA-ban.',
     colProducts: 'Termékek', colService: 'Szolgáltatások', colCompany: 'Vállalat', funding: 'A Német Szövetségi Gazdasági és Energiaügyi Minisztérium támogatásával, a német Szövetségi Gyűlés (Bundestag) határozata alapján', follow: 'Kövessen minket', newTab: '{name} (új lapon nyílik meg)',
     rights: '© {year} RITZ Instrument Transformers GmbH', madeBy: 'Koncepció és megvalósítás: Medialyte',
@@ -230,7 +230,7 @@ export default {
   },
   map: {
     title: 'A RITZ világszerte', all: 'Összes', locations: 'RITZ-telephelyek', reps: 'Képviseletek', legendHq: 'Központ', legendProd: 'Gyártás', legendSite: 'Telephely',
-    legendSales: 'Értékesítés', legendRep: 'Képviselet', zoomIn: 'Nagyítás', zoomOut: 'Kicsinyítés', reset: 'Nézet visszaállítása', listTitle: 'Bejegyzések',
+    legendSales: 'Értékesítés', legendRep: 'Képviselet', zoomIn: 'Nagyítás', zoomOut: 'Kicsinyítés', reset: 'Nézet visszaállítása', listTitle: 'Bejegyzések', count1: '{n} bejegyzés', countN: '{n} bejegyzés',
     filterPh: 'Ország vagy cég keresése', choose: 'Válasszon egy pontot a térképen vagy egy bejegyzést a listában.', servedBy: 'Illetékes',
     keyboard: 'A Tab billentyűvel lépkedhet a telephelyek között, az Enter megnyitja a részleteket.',
   },
@@ -251,7 +251,7 @@ export default {
       qTitle: "Minden készülék bevizsgálva.",
       helpTitle: 'Miben segíthetünk?',
       plants: { title: '{n} gyárban gyártunk világszerte', lead: 'A RITZ Hamburgból irányít egy több mint {staff} munkatársat foglalkoztató csoportot. Minden gyárnak megvan a maga specialitása – a kisfeszültségű mérőtranszformátoroktól a nagyfeszültségűekig.', staff: '{n} munkatárs', cta: 'Összes telephely', hq: 'Központ', plant: 'Gyár' },
-      net: { title: 'Világszerte jelen', lead: 'Hamburgból a világba: {sites} saját RITZ-telephely {cc} országban és képviseletek {reps} országban viszik a RITZ mérőtranszformátorait oda, ahol hálózatokat építenek és üzemeltetnek.', sites: 'RITZ-telephelyek', siteCountries: 'ország saját telephellyel', repCountries: 'ország képviselettel', layers: 'Rétegek', reps: 'Képviseletek', net: 'Kapcsolatok', region: 'Régió', world: 'Világ', country: 'Ország kiválasztása', countryPh: 'Ország kiválasztása …', map: 'Világtérkép az összes RITZ-telephellyel és képviselettel', marks: 'Telephelyek és képviseletek', help: 'A nyílbillentyűkkel lépkedhet a pontok között, az Enter megjeleníti a részleteket, az Escape bezárja őket, a plusz és a mínusz nagyít, illetve kicsinyít.', site: 'Telephely megtekintése', rep: 'Kapcsolat és az összes képviselet', alsoHere: 'Szintén itt', legendSite: 'RITZ-telephely', legendRep: 'Képviselet' },
+      net: { title: 'Világszerte jelen', lead: 'Hamburgból a világba: {sites} saját RITZ-telephely {cc} országban és képviseletek {reps} országban viszik a RITZ mérőtranszformátorait oda, ahol hálózatokat építenek és üzemeltetnek.', sites: 'RITZ-telephelyek', siteCountries: 'ország saját telephellyel', repCountries: 'ország képviselettel', layers: 'Rétegek', reps: 'Képviseletek', net: 'Kapcsolatok', region: 'Régió', world: 'Világ', country: 'Ország kiválasztása', countryPh: 'Ország kiválasztása …', mapSites: 'Világtérkép az összes RITZ-telephellyel', map: 'Világtérkép az összes RITZ-telephellyel és képviselettel', marks: 'Telephelyek és képviseletek', help: 'A nyílbillentyűkkel lépkedhet a pontok között, az Enter megjeleníti a részleteket, az Escape bezárja őket, a plusz és a mínusz nagyít, illetve kicsinyít.', site: 'Telephely megtekintése', rep: 'Kapcsolat és az összes képviselet', alsoHere: 'Szintén itt', legendSite: 'RITZ-telephely', legendRep: 'Képviselet' },
       heritage: { title: '1945 óta növekszünk', lead: 'A hamburgi alapítástól az új amerikai nagyfeszültségű gyárig: nyolc évtized mérőtranszformátor-gyártás.', cta: 'Cégtörténet' },
       title: 'Mérőváltók, érzékelők és áramvezető sínek 1945 óta',
       h1: 'Mérhetővé tesszük az energiát.',

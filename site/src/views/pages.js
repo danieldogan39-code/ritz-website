@@ -8,6 +8,7 @@ import { docVisible, dedupeCopies } from '../lib/doclang.js';
 import { SECTOR_LINKS, HISTORY_IMG, personImg, REFERENCE_IMG, REFERENCE_DOC, REFERENCE_NEWS, CERT_FILES, RESP_DOCS, FEATURED_DOCS, FEATURED_DOCS_EN, LOC_IMG } from '../lib/catalog.js';
 import { filterProducts, parseQuery, productCard, imgFit } from '../lib/product.js';
 import { projectLL, locAddress } from '../lib/geo.js';
+import { netMapBlock } from './netmap.js';
 import { sortDocs, peopleFor, countryOptions } from './products.js';
 
 const docByFile = (ctx, f) => ctx.data.docs.find((d) => d.file === f);
@@ -211,7 +212,7 @@ export function locationsPage(ctx) {
   const locs = ctx.data.contacts.locations;
   return `${phead(ctx, { title: L.h1, lead: L.lead, image: 'mimg/Luftbild_Kirchaich_2014_klein.webp', crumbs: [[t.nav.company, href('company')], [L.title]] })}
 <section class="section section--tight" id="karte">
-  <div class="wrap">${sectionHead(L.mapTitle)}${mapBox(ctx, { mode: 'locations' })}</div>
+  <div class="wrap">${sectionHead(L.mapTitle)}${netMapBlock(ctx, { mode: 'locations' })}</div>
 </section>
 <section class="section">
   <div class="wrap">
@@ -255,28 +256,6 @@ export function locCard(ctx, l) {
     ${fn.length ? `<details class="loc__fn"><summary>${esc(t.ui.functions)}${icon('down')}</summary>${ticks(fn)}</details>` : ''}
   </div>
 </article>`;
-}
-
-export function mapBox(ctx, { mode = 'all' } = {}) {
-  const { t } = ctx;
-  const M = t.map;
-  return `<div class="mapbox" data-map="${mode}">
-  <a class="skip skip--inline" href="#map-list-${mode}">${esc(t.ui.mapSkip)}</a>
-  <div class="map" data-map-canvas>
-    <div class="map__regions" data-map-regions role="group" aria-label="${esc(M.title)}"></div>
-    <div class="map__ctrl"><button type="button" data-map-zoom="in" aria-label="${esc(M.zoomIn)}">+</button><button type="button" data-map-zoom="out" aria-label="${esc(M.zoomOut)}">−</button><button type="button" data-map-zoom="reset" aria-label="${esc(M.reset)}">${icon('reset', 'width="18" height="18"')}</button></div>
-    <div class="map__legend" data-map-legend></div>
-    <div class="map__loading">${esc(t.ui.loading)}</div>
-  </div>
-  <div class="map__panel">
-    <div class="map__panel-head">
-      ${mode === 'all' ? `<div class="seg" role="group" aria-label="${esc(M.title)}"><button type="button" class="chip is-on" data-map-layer="all" aria-pressed="true">${esc(M.all)}</button><button type="button" class="chip" data-map-layer="locations" aria-pressed="false">${esc(M.locations)}</button><button type="button" class="chip" data-map-layer="reps" aria-pressed="false">${esc(M.reps)}</button></div>` : ''}
-      <label class="vh" for="map-filter-${mode}">${esc(M.filterPh)}</label><input class="input input--small" id="map-filter-${mode}" type="search" placeholder="${esc(M.filterPh)}" data-map-filter>
-    </div>
-    <div class="map__detail" data-map-detail hidden></div>
-    <div class="map__list" id="map-list-${mode}" data-map-list tabindex="-1"></div>
-  </div>
-</div>`;
 }
 
 // ---------------- Qualität ----------------
@@ -408,7 +387,7 @@ export function contactPage(ctx) {
   </div>
 </section>
 <section class="section" id="karte">
-  <div class="wrap">${sectionHead(C.mapTitle)}${mapBox(ctx, { mode: 'all' })}</div>
+  <div class="wrap">${sectionHead(C.mapTitle)}${netMapBlock(ctx, { mode: 'contact' })}</div>
 </section>
 <section class="section section--tight" id="vertretungen-de">
   <div class="wrap">${sectionHead(C.repsDeTitle)}

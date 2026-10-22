@@ -96,12 +96,64 @@ export function initDrawer() {
     $$('[data-drawer-open]').forEach((b) => b.setAttribute('aria-expanded', String(on)));
     if (on) { last = document.activeElement; dr.querySelector('.drawer__panel button, .drawer__panel a')?.focus(); } else last?.focus?.();
   };
-  // Akkordeon: nur ein Untermenü offen (Browser ohne details[name] schließen hier die anderen)
-  dr.addEventListener('toggle', (e) => {
-    const d = e.target;
-    if (d.tagName !== 'DETAILS' || !d.open) return;
-    for (const o of dr.querySelectorAll('.mnav details[open]')) if (o !== d) o.open = false;
-  }, true);
+  // Akkordeon: per Skript animiert (in allen Browsern gleich weich), nur ein Abschnitt offen. Schließt sich ein
+  // Abschnitt oberhalb, bleibt der angetippte Eintrag an seinem Platz (Scrollausgleich je Bild).
+  const body = dr.querySelector('.drawer__body');
+  const run = new WeakMap();
+  const EASE = 'cubic-bezier(.32, .72, 0, 1)'; // wie die Schublade selbst: weicher Anlauf ohne Sprung im ersten Bild
+  const slide = (d, open) => {
+    const ul = d.querySelector(':scope > ul');
+    // läuft noch eine Animation (schnelles Tippen), geht es von der aktuellen Höhe aus weiter statt zu springen
+    const prev = run.get(d);
+    const from = prev && ul ? ul.getBoundingClientRect().height : null;
+    const fromO = prev && ul ? parseFloat(getComputedStyle(ul).opacity) : null;
+    prev?.cancel();
+    run.delete(d);
+    if (ul) ul.style.height = '';
+    d.classList.toggle('is-closing', !open);
+    if (still() || !ul?.animate) { d.open = open; d.classList.remove('is-closing'); return; }
+    const done = (a, fn) => { a.onfinish = () => { fn?.(); ul.style.height = ''; a.cancel(); run.delete(d); }; };
+    if (open) {
+      ul.style.height = `${from ?? 0}px`; // Sicherheitsnetz: kein Bild in voller Höhe, bevor die Animation greift
+      d.open = true;
+      const h = ul.scrollHeight;
+      const a = ul.animate([{ height: `${from ?? 0}px`, opacity: fromO ?? 0, translate: from === null ? '0 -6px' : '0 0' }, { height: `${h}px`, opacity: 1, translate: '0 0' }], { duration: 380, easing: EASE, fill: 'forwards' });
+      run.set(d, a);
+      done(a);
+    } else {
+      const h = from ?? ul.offsetHeight;
+      const a = ul.animate([{ height: `${h}px`, opacity: fromO ?? 1 }, { height: '0px', opacity: 0 }], { duration: 340, easing: EASE, fill: 'forwards' });
+      run.set(d, a);
+      done(a, () => { d.open = false; d.classList.remove('is-closing'); });
+    }
+  };
+  dr.addEventListener('click', (e) => {
+    const sm = e.target.closest('.mnav summary');
+    if (!sm) return;
+    e.preventDefault();
+    const d = sm.parentElement;
+    const opening = !d.open || d.classList.contains('is-closing');
+    const top0 = sm.getBoundingClientRect().top;
+    // Abschnitte oberhalb, die jetzt zuklappen: ihre Höhe verschwindet über dem angetippten Eintrag
+    const above = [...dr.querySelectorAll('.mnav details[open]')].filter((o) => o !== d && !o.classList.contains('is-closing') && (o.compareDocumentPosition(d) & Node.DOCUMENT_POSITION_FOLLOWING));
+    const ulOf = (o) => o.querySelector(':scope > ul');
+    const H = above.reduce((h, o) => h + (ulOf(o)?.offsetHeight || 0), 0);
+    for (const o of dr.querySelectorAll('.mnav details[open]')) if (o !== d && !o.classList.contains('is-closing')) slide(o, false);
+    slide(d, opening);
+    if (!body || still() || !H) return;
+    // Scrollausgleich im Takt der Animation: was der Scrollstand auffangen kann, bleibt ruhig; den Rest legt der Eintrag
+    // in derselben Kurve zurück (kein Stehen-und-dann-Springen, wenn der Scrollstand oben anschlägt)
+    const D = Math.max(0, H - body.scrollTop);
+    const t0 = performance.now();
+    const hold = () => {
+      const hNow = above.reduce((h, o) => h + (o.open ? ulOf(o)?.getBoundingClientRect().height || 0 : 0), 0);
+      const p = Math.min(1, Math.max(0, (H - hNow) / H));
+      const dy = sm.getBoundingClientRect().top - (top0 - D * p);
+      if (Math.abs(dy) > 0.5) body.scrollTop += dy;
+      if (performance.now() - t0 < 420 && p < 1) requestAnimationFrame(hold);
+    };
+    requestAnimationFrame(hold);
+  });
   document.addEventListener('click', (e) => {
     if (e.target.closest('[data-drawer-open]')) set(true);
     else if (e.target.closest('[data-drawer-close]')) set(false);

@@ -10,7 +10,7 @@ export default {
   ui: {
     skip: 'Aller au contenu', skipIntro: 'Passer l’intro', introLine: 'Transformateurs de mesure depuis 1945', menu: 'Menu', close: 'Fermer', search: 'Rechercher', searchPh: 'Rechercher un type, une tension ou un thème…',
     searchHint: 'p. ex.', lang: 'Langue', theme: 'Apparence', themeLight: 'Clair', themeDark: 'Sombre', themeAuto: 'Système',
-    inquiryList: 'Dossier projet', contactCta: 'Contact', home: 'Accueil', more: 'En savoir plus', all: 'Tous', show: 'Afficher',
+    inquiryList: 'Dossier projet', contactCta: 'Contact', finderCta: 'Sélecteur', home: 'Accueil', more: 'En savoir plus', all: 'Tous', show: 'Afficher',
     back: 'Retour', next: 'Suivant', open: 'Ouvrir', copy: 'Copier', copied: 'Copié', download: 'Télécharger', external: 'ouvre un site externe',
     route: 'Itinéraire', phone: 'Téléphone', fax: 'Fax', email: 'E-mail', address: 'Adresse', website: 'Site web', employees: 'Collaborateurs',
     functions: 'Activités', newBadge: 'Nouveau', madeIn: 'Origine :', pdf: 'PDF', lang_de: 'Allemand', lang_en: 'Anglais', lang_deen: 'Allemand/anglais',
@@ -41,7 +41,7 @@ export default {
     megaCompanyText: 'Propriété de la Fondation RITZ, à Hambourg depuis 1945.', megaCareerText: 'Plus de 20 métiers sur des sites en Europe, en Chine et aux États-Unis.',
   },
   footer: {
-    claim: 'Empowering Our Electrical Future',
+    ctaContact: 'Nous contacter', claim: 'Empowering Our Electrical Future',
     lead: 'Transformateurs de mesure, capteurs, jeux de barres et pièces en résine coulée pour l’approvisionnement en énergie – développés et fabriqués en Europe, en Chine et aux États-Unis.',
     colProducts: 'Produits', colService: 'Services', colCompany: 'Entreprise', funding: 'Financé par le ministère fédéral allemand de l’Économie et de l’Énergie en vertu d’une décision du Bundestag allemand', follow: 'Suivez-nous', newTab: '{name} (s’ouvre dans un nouvel onglet)',
     rights: '© {year} RITZ Instrument Transformers GmbH', madeBy: 'Conception et réalisation : Medialyte',
@@ -230,7 +230,7 @@ export default {
   },
   map: {
     title: 'RITZ dans le monde', all: 'Tous', locations: 'Sites RITZ', reps: 'Représentants', legendHq: 'Siège', legendProd: 'Production', legendSite: 'Site',
-    legendSales: 'Vente', legendRep: 'Représentant', zoomIn: 'Zoom avant', zoomOut: 'Zoom arrière', reset: 'Réinitialiser la vue', listTitle: 'Entrées',
+    legendSales: 'Vente', legendRep: 'Représentant', zoomIn: 'Zoom avant', zoomOut: 'Zoom arrière', reset: 'Réinitialiser la vue', listTitle: 'Entrées', count1: '{n} entrée', countN: '{n} entrées',
     filterPh: 'Rechercher un pays ou une société', choose: 'Sélectionnez un point sur la carte ou une entrée dans la liste.', servedBy: 'Pris en charge par',
     keyboard: 'Parcourez les sites avec Tab ; Entrée affiche les détails.',
   },
@@ -251,7 +251,7 @@ export default {
       qTitle: "Chaque appareil contrôlé.",
       helpTitle: 'Comment pouvons-nous vous aider ?',
       plants: { title: 'Fabriqué dans {n} usines dans le monde', lead: 'Depuis Hambourg, RITZ dirige un groupe de plus de {staff} collaborateurs. Chaque usine a sa spécialité – des transformateurs de mesure basse tension à la haute tension.', staff: '{n} collaborateurs', cta: 'Tous les sites', hq: 'Siège', plant: 'Usine' },
-      net: { title: 'Un réseau mondial', lead: 'De Hambourg vers le monde : {sites} sites RITZ dans {cc} pays et des représentants dans {reps} pays apportent les transformateurs de mesure RITZ là où les réseaux sont construits et exploités.', sites: 'Sites RITZ', siteCountries: 'pays avec un site RITZ', repCountries: 'pays avec représentation', layers: 'Calques', reps: 'Représentants', net: 'Liaisons', region: 'Région', world: 'Monde', country: 'Choisir un pays', countryPh: 'Choisir un pays …', map: 'Carte du monde avec tous les sites et représentants RITZ', marks: 'Sites et représentants', help: 'Les flèches passent d’un point à l’autre, Entrée affiche les détails, Échap les ferme, plus et moins zooment.', site: 'Voir le site', rep: 'Contact et tous les représentants', alsoHere: 'Également ici', legendSite: 'Site RITZ', legendRep: 'Représentant' },
+      net: { title: 'Un réseau mondial', lead: 'De Hambourg vers le monde : {sites} sites RITZ dans {cc} pays et des représentants dans {reps} pays apportent les transformateurs de mesure RITZ là où les réseaux sont construits et exploités.', sites: 'Sites RITZ', siteCountries: 'pays avec un site RITZ', repCountries: 'pays avec représentation', layers: 'Calques', reps: 'Représentants', net: 'Liaisons', region: 'Région', world: 'Monde', country: 'Choisir un pays', countryPh: 'Choisir un pays …', mapSites: 'Carte du monde avec tous les sites RITZ', map: 'Carte du monde avec tous les sites et représentants RITZ', marks: 'Sites et représentants', help: 'Les flèches passent d’un point à l’autre, Entrée affiche les détails, Échap les ferme, plus et moins zooment.', site: 'Voir le site', rep: 'Contact et tous les représentants', alsoHere: 'Également ici', legendSite: 'Site RITZ', legendRep: 'Représentant' },
       heritage: { title: 'En croissance depuis 1945', lead: 'De la fondation à Hambourg à la nouvelle usine haute tension aux États-Unis : huit décennies de transformateurs de mesure.', cta: 'Histoire de l’entreprise' },
       title: 'Transformateurs de mesure, capteurs et jeux de barres depuis 1945',
       h1: 'Nous rendons l’énergie mesurable.',

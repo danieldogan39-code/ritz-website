@@ -9,7 +9,7 @@ const exe = '/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless
 const browser = await chromium.launch(fs.existsSync(exe) ? { executablePath: exe } : {});
 const w = +width;
 const page = await browser.newPage({ viewport: { width: w, height: w < 700 ? 860 : 1000 }, deviceScaleFactor: w < 700 ? 2 : 1 });
-await page.addInitScript(() => { try { sessionStorage.setItem('ritz-intro', '1'); } catch (e) { /* */ } });
+await page.addInitScript(() => { try { sessionStorage.setItem('ritz-intro-skip', '1'); } catch (e) { /* */ } });
 const logs = [];
 page.on('pageerror', (e) => logs.push('[pageerror] ' + e.message));
 page.on('console', (m) => { if (m.type() === 'error') logs.push('[console] ' + m.text()); });

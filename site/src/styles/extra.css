@@ -31,12 +31,6 @@
 .section--flush { padding-top: 0; }
 .pd-top { padding-top: clamp(16px, 2vw, 28px); }
 
-/* Fuß */
-.ftr__lead { color: var(--on-resin-2); font-size: .95rem; line-height: 1.55; max-width: 44ch; }
-.ftr__mid { display: flex; flex-wrap: wrap; gap: 1rem 2rem; align-items: center; justify-content: space-between; padding-block: 24px; border-bottom: 1px solid var(--on-resin-line); }
-.ftr__note { display: inline-flex; gap: .5rem; align-items: center; color: var(--on-resin-2); font-size: .85rem; }
-.ftr__note svg { color: #7fd1a0; flex: none; }
-
 /* Spannungsachse hell (Produktübersicht) */
 .vaxis--light { border-top-color: var(--line); color: var(--ink); }
 .vaxis--light .vaxis__title, .vaxis--light .vaxis__readout strong { color: var(--ink); }
@@ -224,24 +218,6 @@
 /* Karte */
 .skip--inline { position: absolute; left: 12px; top: 12px; z-index: 5; }
 .skip--inline:not(:focus) { clip-path: inset(50%); width: 1px; height: 1px; padding: 0; overflow: hidden; white-space: nowrap; }
-.mapbox { position: relative; }
-.map { min-height: 420px; }
-.map > svg { position: absolute; inset: 0; }
-.map__loading { position: absolute; inset: 0; display: grid; place-items: center; color: var(--steel); }
-.map__panel-head .seg { display: flex; flex-wrap: wrap; gap: 4px; }
-.map__legend .lg { width: 11px; height: 11px; border-radius: 50%; display: inline-block; border: 2px solid var(--red); }
-.map__legend .lg--hq { border-color: var(--red); background: var(--ink) !important; }
-.map__legend .lg--rep { border-color: var(--paper); }
-.map__legend .lg--production { border-color: var(--paper); }
-.map__legend span { display: inline-flex; gap: .4rem; align-items: center; }
-.map .dot-prod { fill: var(--red); stroke: var(--paper); stroke-width: 2; vector-effect: non-scaling-stroke; }
-.map .dot-hq { fill: var(--ink); stroke: var(--red); stroke-width: 3; vector-effect: non-scaling-stroke; }
-.map .dot-sales { fill: var(--paper); stroke: var(--red); stroke-width: 2.5; vector-effect: non-scaling-stroke; }
-.map .dot-rep { fill: var(--copper); stroke: var(--paper); stroke-width: 1.5; vector-effect: non-scaling-stroke; }
-.map__detail .kind { font-size: .72rem; font-weight: 700; font-stretch: 82%; color: var(--copper-ink); }
-.map__detail .lines { margin-top: .3rem; }
-.map__entry { color: inherit; font: inherit; }
-.map__label { font-family: var(--f); }
 
 /* Qualität */
 .certgrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; padding: 1px; }
@@ -390,10 +366,6 @@
 h3.h4.mt { margin-top: clamp(28px, 3vw, 44px); }
 
 /* Karte: kein Textmarkieren beim Ziehen, Detail schließen */
-.map { user-select: none; -webkit-user-select: none; }
-.map__detail { position: relative; }
-.map__close { position: absolute; right: 8px; top: 8px; width: 34px; height: 34px; display: grid; place-items: center; border: 0; background: none; color: var(--graphite); cursor: pointer; }
-.map__close:hover { color: var(--ink); }
 .person .lines { font-size: .88rem; }
 
 /* Typenschild-Bühne wächst mit dem Inhalt */
@@ -422,10 +394,6 @@ h3.h4.mt { margin-top: clamp(28px, 3vw, 44px); }
 }
 
 @media (max-width: 600px) {
-  .map__regions { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; max-width: calc(100% - 64px); }
-  .map__regions::-webkit-scrollbar { display: none; }
-  .map__regions .chip { flex: none; }
-  .map__legend { font-size: .75rem; padding: .3rem .55rem; gap: .2rem .7rem; }
 }
 .job span { display: inline-flex; align-items: center; gap: .35rem; }
 .job span svg { width: 16px; height: 16px; flex: none; }

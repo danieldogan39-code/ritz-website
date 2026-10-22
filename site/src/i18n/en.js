@@ -10,7 +10,7 @@ export default {
   ui: {
     skip: 'Skip to content', skipIntro: 'Skip intro', introLine: 'Instrument transformers since 1945', menu: 'Menu', close: 'Close', search: 'Search', searchPh: 'Search type, voltage or topic …',
     searchHint: 'e.g.', lang: 'Language', theme: 'Appearance', themeLight: 'Light', themeDark: 'Dark', themeAuto: 'System',
-    inquiryList: 'Project list', contactCta: 'Contact', home: 'Home', more: 'Learn more', all: 'All', show: 'Show',
+    inquiryList: 'Project list', contactCta: 'Contact', finderCta: 'Product finder', home: 'Home', more: 'Learn more', all: 'All', show: 'Show',
     back: 'Back', next: 'Next', open: 'Open', copy: 'Copy', copied: 'Copied', download: 'Download', external: 'opens external site',
     route: 'Get directions', phone: 'Phone', fax: 'Fax', email: 'Email', address: 'Address', website: 'Website', employees: 'Employees',
     functions: 'Focus', newBadge: 'New', madeIn: 'Made in', pdf: 'PDF', lang_de: 'German', lang_en: 'English', lang_deen: 'German/English',
@@ -41,7 +41,7 @@ export default {
     megaCompanyText: 'Owned by the RITZ Foundation, based in Hamburg since 1945.', megaCareerText: 'More than 20 professions at sites in Europe, China and the USA.',
   },
   footer: {
-    claim: 'Empowering Our Electrical Future',
+    ctaContact: 'Get in touch', claim: 'Empowering Our Electrical Future',
     lead: 'Instrument transformers, sensors, busbars and cast resin parts for power supply – developed and manufactured in Europe, China and the USA.',
     colProducts: 'Products', colService: 'Service', colCompany: 'Company', funding: 'Funded by the German Federal Ministry for Economic Affairs and Energy on the basis of a decision by the German Bundestag', follow: 'Follow us', newTab: '{name} (opens in a new tab)',
     rights: '© {year} RITZ Instrument Transformers GmbH', madeBy: 'Concept & implementation: Medialyte',
@@ -230,7 +230,7 @@ export default {
   },
   map: {
     title: 'RITZ worldwide', all: 'All', locations: 'RITZ locations', reps: 'Representatives', legendHq: 'Headquarters', legendProd: 'Production', legendSite: 'Site',
-    legendSales: 'Sales', legendRep: 'Representative', zoomIn: 'Zoom in', zoomOut: 'Zoom out', reset: 'Reset view', listTitle: 'Entries',
+    legendSales: 'Sales', legendRep: 'Representative', zoomIn: 'Zoom in', zoomOut: 'Zoom out', reset: 'Reset view', listTitle: 'Entries', count1: '{n} entry', countN: '{n} entries',
     filterPh: 'Search country or company', choose: 'Select a point on the map or an entry in the list.', servedBy: 'Served by',
     keyboard: 'Tab through the locations, Enter opens the details.',
   },
@@ -251,7 +251,7 @@ export default {
       qTitle: "Every device tested.",
       helpTitle: 'How can we help?',
       plants: { title: 'Made in {n} plants worldwide', lead: 'From Hamburg, RITZ leads a group of more than {staff} people. Every plant has its speciality – from low-voltage to high-voltage instrument transformers.', staff: '{n} employees', cta: 'All locations', hq: 'Headquarters', plant: 'Plant' },
-      net: { title: 'Connected worldwide', lead: 'From Hamburg to the world: {sites} RITZ sites in {cc} countries and representatives in {reps} countries bring RITZ instrument transformers wherever grids are built and operated.', sites: 'RITZ sites', siteCountries: 'countries with a RITZ site', repCountries: 'countries with representatives', layers: 'Layers', reps: 'Representatives', net: 'Connections', region: 'Region', world: 'World', country: 'Choose a country', countryPh: 'Choose a country …', map: 'World map with all RITZ sites and representatives', marks: 'Sites and representatives', help: 'Arrow keys move between the points, Enter shows the details, Escape closes them, plus and minus zoom.', site: 'View site', rep: 'Contact and all representatives', alsoHere: 'Also here', legendSite: 'RITZ site', legendRep: 'Representative' },
+      net: { title: 'Connected worldwide', lead: 'From Hamburg to the world: {sites} RITZ sites in {cc} countries and representatives in {reps} countries bring RITZ instrument transformers wherever grids are built and operated.', sites: 'RITZ sites', siteCountries: 'countries with a RITZ site', repCountries: 'countries with representatives', layers: 'Layers', reps: 'Representatives', net: 'Connections', region: 'Region', world: 'World', country: 'Choose a country', countryPh: 'Choose a country …', mapSites: 'World map with all RITZ sites', map: 'World map with all RITZ sites and representatives', marks: 'Sites and representatives', help: 'Arrow keys move between the points, Enter shows the details, Escape closes them, plus and minus zoom.', site: 'View site', rep: 'Contact and all representatives', alsoHere: 'Also here', legendSite: 'RITZ site', legendRep: 'Representative' },
       heritage: { title: 'Growing since 1945', lead: 'From its founding in Hamburg to the new high-voltage plant in the USA: eight decades of instrument transformer engineering.', cta: 'Company history' },
       title: 'Instrument transformers, sensors and busbars since 1945',
       h1: 'We make power measurable.',

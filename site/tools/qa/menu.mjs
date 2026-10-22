@@ -11,7 +11,7 @@ const fail = [];
 const ok = (cond, msg) => { if (!cond) fail.push(msg); };
 for (const scheme of ['light', 'dark']) {
   const page = await browser.newPage({ viewport: { width: 1440, height: 900 }, colorScheme: scheme, reducedMotion: 'reduce' });
-  await page.addInitScript(() => { try { sessionStorage.setItem('ritz-intro', '1'); } catch (e) {} });
+  await page.addInitScript(() => { try { sessionStorage.setItem('ritz-intro-skip', '1'); } catch (e) {} });
   await page.goto(base + path, { waitUntil: 'networkidle' });
   const keys = await page.$$eval('header nav button[data-mega]', (bs) => bs.map((b) => b.dataset.mega));
   for (const key of keys) {

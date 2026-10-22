@@ -80,6 +80,18 @@ for (const [name, opt] of Object.entries(VIEWS)) {
   await ctx.close();
 }
 
+// 2b) Alter Sitzungsvermerk aus der früheren Fassung („ritz-intro“) darf das Intro nicht blockieren
+{
+  const ctx = await browser.newContext(VIEWS.desk);
+  await ctx.addInitScript(() => { try { if (!sessionStorage.getItem('qa-once')) { sessionStorage.setItem('qa-once', '1'); sessionStorage.setItem('ritz-intro', '1'); } } catch (e) {} });
+  const page = await ctx.newPage();
+  watch(page, 'altvermerk');
+  await page.goto(base + path, { waitUntil: 'domcontentloaded' });
+  const st = await page.evaluate(() => ({ intro: document.documentElement.getAttribute('data-intro'), alt: sessionStorage.getItem('ritz-intro') }));
+  console.log('Alter Sitzungsvermerk', JSON.stringify(st), st.intro === 'play' && st.alt === null ? 'ok' : 'FEHLER');
+  await ctx.close();
+}
+
 // 3) Überspringen per Taste
 {
   const ctx = await browser.newContext(VIEWS.desk);

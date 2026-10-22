@@ -34,7 +34,7 @@ await page.waitForTimeout(500);
 console.log('Finder:', page.url().split('#')[1], await page.textContent('[data-count]').catch(() => '?'));
 // Karte
 await page.goto(base + '#de.kontakt', { waitUntil: 'networkidle' }); await page.waitForTimeout(1200);
-console.log('Karte Marker:', await page.locator('.map__mk').count(), 'Liste:', await page.locator('[data-map-entry], .map__entry').count());
+console.log('Karte Marker:', await page.locator('.nm__mk').count(), 'Liste:', await page.locator('.nm__entry').count());
 // Sprachwechsel
 await page.goto(base + '#en', { waitUntil: 'networkidle' }); await page.waitForTimeout(800);
 console.log('EN:', await page.title(), await page.textContent('h1'));

@@ -83,7 +83,9 @@ export function initMotion(root = document) {
   const io = new IntersectionObserver((entries) => {
     let n = 0;
     for (const e of entries) {
-      if (!e.isIntersecting) continue;
+      // auch was schon über den oberen Rand hinaus ist (schnelles Scrollen, Sprung, beschäftigter Hauptthread):
+      // sonst bliebe es unsichtbar, bis man zurückscrollt
+      if (!e.isIntersecting && !(e.boundingClientRect.bottom < (e.rootBounds?.top ?? 0))) continue;
       io.unobserve(e.target);
       reveal(e.target, n++);
     }

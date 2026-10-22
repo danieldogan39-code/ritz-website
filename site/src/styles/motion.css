@@ -46,7 +46,7 @@
       animation: svRise linear both; animation-timeline: view(); animation-range: entry 0% entry 80%;
     }
     :is(.card, .pcard, .scard, .area, .app, .task, .mgr, .certcard, .feature, .esg, .job, .doc, .org__card, .brand, .person, .sgroup, .dlcat,
-      .mega__card--page, .ref, .loc, .fact, .nl__item, .world__list li, .tl2__item, .ftr__top > *, .table-wrap, .pd-sec, .ks, .figure):not([data-reveal] *, .mega *, .search *, .drawer *, .hx *, [data-finder] *) {
+      .mega__card--page, .ref, .loc, .fact, .nl__item, .world__list li, .tl2__item, .ftr__grid > *, .table-wrap, .pd-sec, .ks, .figure):not([data-reveal] *, .mega *, .search *, .drawer *, .hx *, [data-finder] *) {
       animation: svRise linear both; animation-timeline: view(); animation-range: entry 0% entry 70%;
     }
     /* Bilder: leichtes Heranzoomen beim Eintreten – nur in Rahmen, die beschneiden (overflow: hidden); sie brauchen eine eigene, benannte Zeitachse */
@@ -69,9 +69,9 @@
 
   /* ---------- Aufklappbares (Akkordeons, Filtergruppen, mobiles Menü) öffnet weich ---------- */
   @supports selector(::details-content) {
-    details { interpolate-size: allow-keywords; }
-    details::details-content { block-size: 0; overflow-y: clip; transition: block-size .3s var(--ease-out), content-visibility .3s allow-discrete; }
-    details[open]::details-content { block-size: auto; }
+    details:not(.mnav details) { interpolate-size: allow-keywords; }
+    details:not(.mnav details)::details-content { block-size: 0; overflow-y: clip; transition: block-size .3s var(--ease-out), content-visibility .3s allow-discrete; }
+    details:not(.mnav details)[open]::details-content { block-size: auto; }
   }
 
   /* ---------- Menüs, Überlagerungen ---------- */
