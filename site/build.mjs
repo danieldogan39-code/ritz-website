@@ -230,8 +230,8 @@ function themeScript() {
   return `<script>(function(){var d=document.documentElement;d.dataset.hostTheme=d.dataset.theme||'';try{var t=JSON.parse(localStorage.getItem('ritz-theme')||'"auto"');if(t==='light'||t==='dark')d.dataset.theme=t}catch(e){}})()</script>`;
 }
 // Bewegung: setzt vor dem ersten Bild :root.rv (Ausgangszustände fürs Einblenden) und startet auf der
-// Startseite das Intro (data-intro: play → out → entfernt): beim ersten Aufruf und danach bei jedem dritten
-// erneuten Laden (Zähler „ritz-intro-n“ im localStorage läuft 0 → 1 → 2 → 0, das Intro kommt bei 0; ohne
+// Startseite das Intro (data-intro: play → out → entfernt): beim ersten Aufruf und danach bei jedem fünften
+// erneuten Laden (Zähler „ritz-intro-n“ im localStorage läuft 0 → 1 → 2 → 3 → 4 → 0, das Intro kommt bei 0; ohne
 // Speicher jedes Mal). sessionStorage „ritz-intro-skip“ schaltet es ab (Prüfskripte); der frühere Sitzungsvermerk
 // „ritz-intro“ wird entfernt, damit er das Intro nicht mehr blockiert. Überspringen per Klick, Taste,
 // Mausrad oder Wischen; bei reduzierter Bewegung passiert nichts. mode: 'home' | 'page' (nur Einblenden) | 'spa' (Startseite am Hash).
@@ -242,7 +242,7 @@ if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
 if('IntersectionObserver' in window){d.classList.add('rv');setTimeout(function(){if(!d.classList.contains('rv-ok'))d.classList.remove('rv')},4000)}
 if(!${isHome})return;
 try{var ss=sessionStorage;ss.removeItem('ritz-intro');if(ss.getItem('ritz-intro-skip'))return}catch(e){}
-try{var ls=localStorage,k=parseInt(ls.getItem('ritz-intro-n'),10)||0;ls.setItem('ritz-intro-n',String((k+1)%3));if(k!==0)return}catch(e){}
+try{var ls=localStorage,k=parseInt(ls.getItem('ritz-intro-n'),10)||0;ls.setItem('ritz-intro-n',String((k+1)%5));if(k!==0)return}catch(e){}
 d.setAttribute('data-intro','play');
 var done=0,EV=['pointerdown','keydown','wheel','touchstart'];
 function q(x){return document.querySelector(x)}

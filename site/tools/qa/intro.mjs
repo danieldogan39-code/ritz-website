@@ -1,5 +1,5 @@
 // Intro und Startseiten-Bewegung prüfen: Einzelbilder des Intros (angehalten), echter Ablauf mit Flug ins Logo,
-// zweiter und dritter Aufruf ohne Intro, vierter wieder mit (jedes dritte Neuladen), reduzierte Bewegung,
+// zweiter bis fünfter Aufruf ohne Intro, sechster wieder mit (jedes fünfte Neuladen), reduzierte Bewegung,
 // Überspringen, Konsolenfehler.
 // node tools/qa/intro.mjs [basis-url] [ausgabeordner]
 import { chromium } from 'playwright-core';
@@ -71,12 +71,12 @@ for (const [name, opt] of Object.entries(VIEWS)) {
   console.log(name, 'nicht eingeblendet nach Scrollen:', hidden.length, hidden.slice(0, 5));
   const counts = await page.evaluate(() => [...document.querySelectorAll('[data-count]')].map((e) => e.textContent));
   console.log(name, 'Zahlen:', JSON.stringify(counts));
-  // dritter Aufruf ohne, vierter wieder mit Intro
+  // dritter bis fünfter Aufruf ohne, sechster wieder mit Intro
+  const mid = [];
+  for (let k = 3; k <= 5; k++) { await page.goto(base + path, { waitUntil: 'domcontentloaded' }); mid.push(await page.evaluate(() => document.documentElement.getAttribute('data-intro'))); }
   await page.goto(base + path, { waitUntil: 'domcontentloaded' });
-  const st3 = await page.evaluate(() => document.documentElement.getAttribute('data-intro'));
-  await page.goto(base + path, { waitUntil: 'domcontentloaded' });
-  const st4 = await page.evaluate(() => document.documentElement.getAttribute('data-intro'));
-  console.log(name, 'dritter/vierter Aufruf', JSON.stringify({ third: st3, fourth: st4 }), st3 === null && st4 === 'play' ? 'ok' : 'FEHLER');
+  const st6 = await page.evaluate(() => document.documentElement.getAttribute('data-intro'));
+  console.log(name, 'dritter bis sechster Aufruf', JSON.stringify({ third_to_fifth: mid, sixth: st6 }), mid.every((x) => x === null) && st6 === 'play' ? 'ok' : 'FEHLER');
   await ctx.close();
 }
 
