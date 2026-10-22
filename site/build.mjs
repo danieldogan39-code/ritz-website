@@ -11,12 +11,14 @@ import { presimplify, simplify, quantile } from 'topojson-simplify';
 import { LANGS, AREAS, SECTORS, pathFor, dataLang, LOCALES, LANG_NAMES } from './src/lib/routes.js';
 import { makeCtx, newsSlugFor, spaHash } from './src/lib/ctx.js';
 import { renderRoute } from './src/views/render.js';
-import { header, drawer, footer, searchOverlay } from './src/views/layout.js';
+import { header, drawer, footer, searchOverlay, appBar } from './src/views/layout.js';
 import { descriptor } from './src/lib/product.js';
 import { esc } from './src/lib/util.js';
 import { locAddress } from './src/lib/geo.js';
 import { classifyOptions, markMulti } from './src/lib/roles.js';
 import { readDims } from './src/lib/dims.js';
+import { socialIconsModule } from './tools/social-icons.mjs';
+import { spawnSync } from 'node:child_process';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..'); // Projektordner (raw/, site/, tools/)
 const SRC = 'src';
@@ -33,6 +35,19 @@ const SITE = (process.env.SITE || 'https://ritz-international.com').replace(/\/$
 const DRAFT = !!process.env.DRAFT;
 const ONLY = process.env.ONLY || 'all'; // all | static | spa
 const t0 = Date.now();
+// Social-Logos (src/assets/social/*.svg → src/lib/social-icons.js): hat sich etwas geändert, wird das Modul neu
+// geschrieben und der Bau einmal neu gestartet, damit alle Ansichten die neue Fassung laden
+{
+  const file = `${SRC}/lib/social-icons.js`, want = socialIconsModule(SRC);
+  if (!fs.existsSync(file) || fs.readFileSync(file, 'utf8') !== want) {
+    fs.writeFileSync(file, want);
+    console.log('Social-Logos aktualisiert:', file);
+    if (!process.env.RITZ_RESTARTED) {
+      const r = spawnSync(process.execPath, process.argv.slice(1), { stdio: 'inherit', env: { ...process.env, RITZ_RESTARTED: '1' } });
+      process.exit(r.status ?? 1);
+    }
+  }
+}
 // Versionskennung für Cache-Busting: Prüfsumme über Quellcode und Daten (gleicher Stand → gleiche Kennung)
 const V = (() => {
   const h = crypto.createHash('md5');
@@ -299,6 +314,7 @@ ${drawer(ctx)}
 ${page.html}
 </main>
 ${footer(ctx)}
+${appBar(ctx)}
 ${searchOverlay(ctx)}
 </body>
 </html>`;

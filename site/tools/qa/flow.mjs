@@ -43,7 +43,7 @@ ok(Number(badge) >= 1 || urlAfter.includes('konfigurator'), 'Anfrageliste/Konfig
 await page.evaluate(() => localStorage.setItem('ritz-basket', JSON.stringify([{ id: 'gsef-10-45', code: 'GSEF 10…45', area: 'mittelspannung', sel: {}, lines: [['Spannungsreihe', '24']], qty: 2, key: 'k1' }])));
 await page.goto(base + '/de/anfrage/', { waitUntil: 'networkidle' });
 await page.waitForTimeout(400);
-ok(await page.locator('.bitem').count() === 1, 'Anfrageliste zeigt Eintrag');
+ok(await page.locator('.pmi, .bitem').count() === 1, 'Anfrageliste zeigt Eintrag'); // .pmi: Projektmappe (seit dem Umbau der Anfrageliste)
 await page.click('form [type="submit"]'); await page.waitForTimeout(300);
 const invalid = await page.$$eval('form [aria-invalid="true"], form :invalid', (els) => els.length);
 ok(invalid > 0, 'Pflichtfeldprüfung greift: ' + invalid);
@@ -71,9 +71,11 @@ ok(hits > 0, 'Suche liefert Treffer: ' + hits);
 await page.screenshot({ path: out + 'flow_search.png' });
 await page.keyboard.press('Escape');
 // 5) Hero-Suche mit exaktem Typ
-await page.fill('#hero-q', 'GSO 1910'); await page.press('#hero-q', 'Enter');
-await page.waitForLoadState('networkidle'); await page.waitForTimeout(300);
-console.log('Hero-Suche →', page.url());
+if (await page.locator('#hero-q').count()) { // die Startseite hat seit dem Umbau zur Präsentation kein Suchfeld mehr in der Bühne
+  await page.fill('#hero-q', 'GSO 1910'); await page.press('#hero-q', 'Enter');
+  await page.waitForLoadState('networkidle'); await page.waitForTimeout(300);
+  console.log('Hero-Suche →', page.url());
+} else console.log('Hero-Suche: kein Suchfeld in der Bühne (entfällt)');
 // 6) Sprachwechsel
 await page.goto(base + '/de/produkte/mittelspannung/gsef-10-45/', { waitUntil: 'networkidle' });
 const en = await page.$eval('a[hreflang="en"]', (a) => a.getAttribute('href')).catch(() => null);

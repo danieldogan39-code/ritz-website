@@ -49,7 +49,7 @@
 
 /* ---------- Bühne ---------- */
 .is-home .st { margin-top: calc(-1 * var(--header-h)); }
-.st { position: relative; isolation: isolate; display: grid; grid-template-rows: 1fr auto; min-height: clamp(620px, 90svh, 880px); padding-top: var(--header-h); background: var(--night); color: var(--on-night); overflow: hidden; }
+.st { position: relative; isolation: isolate; display: grid; grid-template-rows: 1fr auto; min-height: clamp(560px, calc(90svh - var(--abar-h, 0px)), 880px); padding-top: var(--header-h); background: var(--night); color: var(--on-night); overflow: hidden; }
 .st__media { position: absolute; inset: 0; z-index: -2; overflow: hidden; }
 /* Fläche im Seitenverhältnis des Fotos, wie ein Titelbild beschnitten; Fokus auf dem Ring */
 .st__frame { --fx: 50%; position: absolute; top: 50%; left: 50%; height: max(100%, calc(100vw * 813 / 1800)); aspect-ratio: 1800 / 813; transform: translate(calc(-1 * var(--fx)), -50%); }
@@ -293,8 +293,76 @@
 .nm__tog[aria-pressed="false"] { text-decoration: line-through; text-decoration-color: rgb(246 240 236 / .4); }
 .nm__tog[aria-pressed="false"] .nm__key { opacity: .3; box-shadow: none; }
 .nm__reg[aria-pressed="true"] { background: var(--on-night); border-color: var(--on-night); color: var(--night); }
-.nm__tog:focus-visible, .nm__reg:focus-visible, .nm__find select:focus-visible, .nm__zoom button:focus-visible { outline: 2px solid var(--on-night); outline-offset: 2px; }
-.nm__find select { min-height: 38px; max-width: 100%; padding: 0 14px; border: 1px solid var(--night-line); border-radius: 999px; background: var(--night-2); color: var(--on-night); font: inherit; font-size: .9rem; color-scheme: dark; cursor: pointer; }
+.nm__tog:focus-visible, .nm__reg:focus-visible, .nm__pickbtn:focus-visible, .nm__zoom button:focus-visible { outline: 2px solid var(--on-night); outline-offset: 2px; }
+
+/* Länderwahl: Knopf wie die übrigen Pillen, Aufklapper mit Suchfeld und Liste */
+.nm__pick { position: relative; }
+.nm__pickbtn { display: inline-flex; align-items: center; gap: .6rem; width: clamp(220px, 22vw, 300px); min-height: 40px; padding: 0 12px 0 14px; border: 1px solid var(--night-line); border-radius: 999px; background: rgb(246 240 236 / .04); color: var(--on-night); font: inherit; font-size: .9rem; font-weight: 560; text-align: left; cursor: pointer; transition: border-color .2s var(--ease), background-color .2s var(--ease), scale .14s var(--ease-out); }
+.nm__pickbtn:hover { border-color: rgb(246 240 236 / .5); background: rgb(246 240 236 / .07); }
+.nm__pickbtn:active { scale: .98; }
+.nm__pickbtn > svg { flex: none; }
+.nm__pickbtn > svg:first-child { width: 17px; height: 17px; color: var(--hud-red); }
+.nm__pickbtn > svg:last-child { width: 16px; height: 16px; margin-left: auto; color: var(--on-night-2); transition: rotate .28s var(--ease-out); }
+.nm__pick.is-open .nm__pickbtn { border-color: rgb(246 240 236 / .6); background: rgb(246 240 236 / .09); }
+.nm__pick.is-open .nm__pickbtn > svg:last-child { rotate: 180deg; }
+.nm__picklbl { min-width: 0; overflow: hidden; color: var(--on-night-2); white-space: nowrap; text-overflow: ellipsis; }
+/* gewähltes Land: gefüllt wie die aktive Region, das Kreuz ersetzt den Pfeil */
+.nm__pick.has-value .nm__pickbtn { border-color: var(--on-night); background: var(--on-night); color: var(--night); }
+.nm__pick.has-value .nm__pickbtn:hover { border-color: #fff; background: #fff; }
+.nm__pick.has-value .nm__picklbl { color: var(--night); font-weight: 640; }
+.nm__pick.has-value .nm__pickbtn > svg:first-child { color: var(--red); }
+.nm__pick.has-value .nm__pickbtn > svg:last-child { visibility: hidden; }
+.nm__pickx { position: absolute; right: 6px; top: 50%; display: grid; place-items: center; width: 28px; height: 28px; padding: 0; border: 0; border-radius: 50%; background: transparent; color: var(--night); cursor: pointer; translate: 0 -50%; transition: background-color .16s var(--ease), scale .14s var(--ease-out); }
+.nm__pickx[hidden] { display: none; }
+.nm__pickx svg { width: 16px; height: 16px; }
+.nm__pickx:hover { background: rgb(28 19 17 / .1); }
+.nm__pickx:active { scale: .9; }
+.nm__pickx:focus-visible { outline: 2px solid var(--night); outline-offset: 0; }
+@media (prefers-reduced-motion: no-preference) {
+  .nm__pick.has-value .nm__pickx { animation: nmPickX .22s var(--ease-out); }
+}
+@keyframes nmPickX { from { opacity: 0; scale: .6; } }
+.nm__pop { position: absolute; right: 0; top: calc(100% + 8px); z-index: 20; display: grid; gap: 6px; width: min(340px, calc(100vw - 32px)); padding: 8px; border: 1px solid rgb(246 240 236 / .14); border-radius: 12px; background: rgb(29 20 18 / .97); box-shadow: 0 30px 60px -18px rgb(0 0 0 / .85); transform-origin: 100% 0; }
+@supports ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) { .nm__pop { background: rgb(29 20 18 / .86); backdrop-filter: blur(14px) saturate(140%); -webkit-backdrop-filter: blur(14px) saturate(140%); } }
+.nm__pop[hidden] { display: none; }
+.nm__pop:focus { outline: none; }
+.nm__pophead { display: none; }
+.nm__popq { position: relative; }
+.nm__popq svg { position: absolute; left: 12px; top: 50%; width: 16px; height: 16px; translate: 0 -50%; color: var(--on-night-2); pointer-events: none; }
+.nm__popq input { width: 100%; height: 40px; padding: 0 12px 0 36px; border: 1px solid var(--night-line); border-radius: 8px; background: var(--night); color: var(--on-night); font: inherit; font-size: .92rem; color-scheme: dark; }
+.nm__popq input::placeholder { color: var(--on-night-2); opacity: 1; }
+.nm__popq input:focus-visible { outline: 2px solid var(--on-night); outline-offset: 1px; }
+.nm__opts { max-height: min(340px, 48vh); overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; scrollbar-color: rgb(246 240 236 / .25) transparent; }
+.nm__optg { margin: 0; padding: 0; list-style: none; }
+.nm__optg[hidden] { display: none; }
+.nm__optg + .nm__optg { padding-top: 6px; } /* Abstand innen: der vorige Kopf ist ganz verschwunden, wenn dieser oben ankommt */
+/* Gruppenkopf bleibt beim Blättern oben stehen */
+.nm__opth { position: sticky; top: 0; z-index: 1; padding: 8px 10px 6px; background: rgb(30 21 19); color: var(--on-night-2); font-size: .76rem; font-weight: 640; letter-spacing: .015em; }
+.nm__opt { display: grid; grid-template-columns: 12px minmax(0, 1fr) auto; align-items: center; gap: 10px; padding: 9px 10px; border-radius: 6px; color: var(--on-night); font-size: .92rem; cursor: pointer; }
+.nm__opt[hidden] { display: none; }
+.nm__opt span { min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.nm__opt small { font-size: .74rem; color: var(--on-night-2); }
+.nm__opt .nm__key { justify-self: center; }
+.nm__opt.is-active { background: rgb(246 240 236 / .09); }
+.nm__opt[aria-selected="true"] span { font-weight: 680; }
+.nm__opt[aria-selected="true"]::after { content: ""; grid-column: 3; justify-self: end; width: 6px; height: 6px; border-radius: 50%; background: var(--hud-red); }
+.nm__opt[aria-selected="true"] small { display: none; }
+.nm__nohit { margin: 4px 10px 8px; font-size: .86rem; color: var(--on-night-2); }
+@media (prefers-reduced-motion: no-preference) {
+  .nm__pop:not([hidden]) { animation: nmPopIn .2s var(--ease-out); }
+  .nm__pop.is-leaving { animation: nmPopOut .15s var(--ease-out) forwards; }
+}
+@media (max-width: 700px) and (prefers-reduced-motion: no-preference) {
+  .nm__pop:not([hidden]) { animation: nmSheetIn .32s var(--ease-drawer, cubic-bezier(.32, .72, 0, 1)); }
+  .nm__pop.is-leaving { animation: nmSheetOut .22s var(--ease-out) forwards; }
+  .nm.is-picking .nm__pick.is-open::before { animation: nmFade .24s var(--ease-out); }
+  .nm.is-picking .nm__pick:not(.is-open)::before { animation: nmFadeOut .22s var(--ease-out) forwards; }
+}
+@keyframes nmSheetIn { from { translate: 0 100%; } }
+@keyframes nmFadeOut { to { opacity: 0; } }
+@keyframes nmSheetOut { to { translate: 0 100%; } }
+@keyframes nmPopIn { from { opacity: 0; scale: .96; translate: 0 -6px; } }
+@keyframes nmPopOut { to { opacity: 0; scale: .97; translate: 0 -4px; } }
 .nm__key { display: inline-block; flex: none; }
 .nm__key--site { width: 9px; height: 9px; border-radius: 1px; rotate: 45deg; background: var(--hud-red); box-shadow: 0 0 8px rgb(255 74 67 / .8); }
 .nm__key--rep { width: 8px; height: 8px; border-radius: 50%; background: var(--hud-copper); box-shadow: 0 0 8px rgb(227 154 95 / .7); }
@@ -437,7 +505,19 @@
   .nm__regions { flex-wrap: nowrap; overflow-x: auto; margin-inline: calc(-1 * var(--gutter, 20px)); padding: 2px var(--gutter, 20px); scrollbar-width: none; }
   .nm__regions::-webkit-scrollbar { display: none; }
   .nm__reg { flex: none; }
-  .nm__find select { width: 100%; }
+  .nm__pickbtn { width: 100%; min-height: 44px; }
+  .nm__pickx { right: 8px; width: 32px; height: 32px; }
+  /* Länderwahl als Blatt von unten: über Kopf und App-Leiste, die Karte bleibt darüber sichtbar */
+  .nm.is-picking { z-index: 90; }
+  .nm.is-picking .nm__pick::before { content: ""; position: fixed; inset: 0; z-index: 40; background: rgb(13 9 8 / .5); }
+  .nm__pop { position: fixed; left: 0; right: 0; top: auto; bottom: 0; z-index: 41; display: flex; flex-direction: column; gap: 8px; width: auto; max-height: min(60svh, 560px); padding: 6px max(14px, env(safe-area-inset-right, 0px)) calc(12px + env(safe-area-inset-bottom, 0px)) max(14px, env(safe-area-inset-left, 0px)); border-width: 1px 0 0; border-radius: 18px 18px 0 0; box-shadow: 0 -24px 60px -20px rgb(0 0 0 / .8); transform-origin: 50% 100%; }
+  .nm__pophead { display: flex; align-items: center; justify-content: space-between; min-height: 44px; padding-left: 4px; font-weight: 680; font-size: 1rem; }
+  .nm__popx { display: grid; place-items: center; width: 44px; height: 44px; margin-right: -8px; padding: 0; border: 0; border-radius: 50%; background: none; color: var(--on-night); cursor: pointer; }
+  .nm__popx svg { width: 20px; height: 20px; }
+  .nm__popx:focus-visible { outline: 2px solid var(--on-night); outline-offset: -4px; }
+  .nm__popq input { height: 44px; font-size: 1rem; } /* 16 px: iOS zoomt nicht ins Feld */
+  .nm__opts { flex: 1 1 auto; min-height: 0; max-height: none; }
+  .nm__opt { min-height: 46px; padding-block: 8px; font-size: 1rem; }
   .nm.is-live .nm__frame { height: clamp(250px, 66vw, 420px); }
   .nm--panel.is-live .nm__frame { height: clamp(260px, 72vw, 420px); }
   .nm__card { position: relative; left: auto; top: auto; width: auto; max-height: none; margin: 12px var(--gutter, 20px) 0; pointer-events: auto; }

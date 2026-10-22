@@ -390,6 +390,49 @@ p { margin: 0; text-wrap: pretty; }
   .hdr__finder { width: 40px; padding: 0; }
   .hdr__finder-l { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 }
+
+/* ---------- App-Leiste (Telefon) ----------
+   Fest am unteren Rand: Produkte, Suche, Produktfinder (rote Raute wie im Logo), Projektmappe, Menü. Der Kopf zeigt auf
+   dem Telefon nur noch Logo und Kontakt. Beim Tippen in Felder zieht sich die Leiste zurück. */
+.abar { display: none; }
+@media (max-width: 760px) {
+  :root { --abar-h: 62px; }
+  body { padding-bottom: calc(var(--abar-h) + env(safe-area-inset-bottom, 0px)); }
+  .abar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 58; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); align-items: end; height: calc(var(--abar-h) + env(safe-area-inset-bottom, 0px)); padding: 0 max(4px, env(safe-area-inset-right, 0px)) env(safe-area-inset-bottom, 0px) max(4px, env(safe-area-inset-left, 0px)); background: var(--paper); border-top: 1px solid var(--line); box-shadow: 0 -12px 30px -20px rgb(28 19 17 / .4); transition: translate .32s var(--ease-out); }
+  @supports ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    .abar { background: color-mix(in srgb, var(--paper) 90%, transparent); backdrop-filter: saturate(180%) blur(16px); -webkit-backdrop-filter: saturate(180%) blur(16px); }
+  }
+  .is-typing .abar { translate: 0 calc(100% + 8px); }
+  .abar__it { position: relative; display: grid; justify-items: center; align-content: center; gap: 3px; min-width: 0; height: var(--abar-h); padding: 0 2px; border: 0; background: none; color: var(--graphite); font: inherit; font-size: .69rem; font-weight: 620; letter-spacing: .01em; line-height: 1.1; text-decoration: none; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+  .abar__ic { position: relative; display: grid; place-items: center; width: 26px; height: 26px; transition: scale .16s var(--ease-out), translate .2s var(--ease-out); }
+  .abar__ic svg { width: 23px; height: 23px; }
+  .abar__l { max-width: 100%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+  .abar__it.is-on { color: var(--ink); }
+  .abar__it.is-on::before { content: ""; position: absolute; top: -1px; left: 50%; width: 24px; height: 2px; margin-left: -12px; border-radius: 0 0 2px 2px; background: var(--red); }
+  .abar__it:active .abar__ic { scale: .88; }
+  .abar__it:focus-visible { outline: 2px solid var(--focus); outline-offset: -4px; border-radius: 10px; }
+  .abar .badge-count { top: -5px; right: -10px; }
+  /* Produktfinder: rote Raute, die über die Leiste hinausragt */
+  .abar__it--main { color: var(--ink); }
+  .abar__gem { position: relative; display: grid; place-items: center; width: 48px; height: 48px; margin-top: -22px; translate: 0 -3px; color: #fff; transition: scale .16s var(--ease-out); }
+  .abar__gem::before { content: ""; position: absolute; inset: 7px; border-radius: 9px; background: var(--red); rotate: 45deg; box-shadow: 0 0 0 4px var(--paper), 0 10px 20px -6px rgb(205 23 25 / .6); transition: box-shadow .2s var(--ease-out); }
+  .abar__gem svg { position: relative; }
+  .abar__it--main:active .abar__gem { scale: .9; }
+  .abar__it--main.is-on::before { display: none; }
+  .abar__it--main.is-on .abar__gem::before { box-shadow: 0 0 0 4px var(--paper), 0 0 0 5.5px var(--red), 0 10px 20px -6px rgb(205 23 25 / .6); }
+  /* über der Leiste: Vergleichsleiste und Meldungen */
+  .tray, .toasts { bottom: calc(var(--abar-h) + env(safe-area-inset-bottom, 0px) + 12px); }
+  /* Kopf: Logo und Kontakt; Suche, Mappe, Finder und Menü liegen in der Leiste */
+  .hdr__tools > .icon-btn, .hdr__finder, .hdr .burger { display: none !important; }
+  .hdr__cta { display: inline-flex; margin-left: .5rem; }
+}
+@media (max-width: 760px) and (prefers-reduced-motion: no-preference) {
+  /* Regler im Symbol rücken beim Antippen, wie im Kopf */
+  .abar__gem circle { transition: translate .42s var(--ease-out); }
+  .abar__it--main:active circle.k1 { translate: -6px 0; }
+  .abar__it--main:active circle.k2 { translate: 6px 0; }
+  .abar__it--main:active circle.k3 { translate: -4px 0; }
+}
 .drawer { position: fixed; inset: 0; z-index: 70; display: grid; grid-template-columns: 1fr minmax(0, 440px); }
 .drawer__scrim { background: rgb(13 9 8 / .5); }
 /* Kopf und Projektmappe stehen fest, dazwischen scrollt das Menü */
@@ -957,6 +1000,12 @@ kbd { font-family: var(--f); font-size: .75rem; border: 1px solid var(--line-str
 .ftr__social a { display: inline-flex; align-items: center; gap: .3rem; min-height: 32px; }
 .ftr__social svg { opacity: .65; transition: translate .2s var(--ease-out), opacity .2s; }
 .ftr__social a:hover svg { opacity: 1; translate: 2px -2px; }
+/* mit Logos (src/assets/social): runde Knöpfe, beim Überfahren gefüllt */
+.ftr__social--icons { gap: 10px; }
+.ftr__social .ftr__soc { display: grid; place-items: center; width: 44px; height: 44px; min-height: 0; border: 1px solid var(--on-resin-line); border-radius: 50%; color: var(--on-resin); transition: background-color .2s var(--ease), border-color .2s var(--ease), color .2s var(--ease), scale .14s var(--ease-out); }
+.ftr__social .ftr__soc svg { width: 20px; height: 20px; opacity: 1; translate: none; transition: none; }
+.ftr__social .ftr__soc:hover { border-color: var(--on-resin); background: var(--on-resin); color: var(--resin); }
+.ftr__social .ftr__soc:active { scale: .94; }
 .theme-toggle { display: inline-flex; border: 1px solid var(--on-resin-line); }
 .theme-toggle button { padding: .35rem .6rem; border: 0; background: transparent; color: var(--on-resin-2); cursor: pointer; font-size: .8rem; font-stretch: 88%; }
 .theme-toggle button[aria-pressed="true"] { background: var(--on-resin); color: var(--resin); }

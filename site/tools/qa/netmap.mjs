@@ -78,7 +78,8 @@ if (only === 'all' || only === 'home') {
   s = await state(page);
   log('Lavonia pin', s.card.cls, s.card.text.split('\n').slice(0, 3).join(' | '));
   await page.screenshot({ path: `${out}/h-lavonia.png` });
-  // Stresstest: zufällige Bewegungen, Klicks, Regionen, Zoom
+  // Stresstest: zufällige Bewegungen, Klicks, Regionen, Zoom (Links in der Karte führen nicht weg)
+  await page.evaluate(() => document.addEventListener('click', (e) => { if (e.target.closest('a')) e.preventDefault(); }, true));
   const t0 = Date.now();
   const regs = ['europe', 'americas', 'apac', 'africa', 'world'];
   for (let i = 0; i < 260; i++) {

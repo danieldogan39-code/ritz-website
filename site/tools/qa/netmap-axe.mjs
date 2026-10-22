@@ -1,4 +1,4 @@
-// axe auf der Karte in Zuständen: Ruhe, Vorschau (Andocken), angeheftete Karte; Start, Standorte, Kontakt
+// axe auf der Karte in Zuständen: Ruhe, Vorschau (Andocken), angeheftete Karte, Länderwahl; Start, Standorte, Kontakt
 import { chromium } from 'playwright-core';
 import fs from 'node:fs';
 const axe = fs.readFileSync('node_modules/axe-core/axe.min.js', 'utf8');
@@ -25,6 +25,18 @@ for (const scheme of ['light', 'dark']) for (const vp of [{ width: 1440, height:
     await page.keyboard.press('Enter');
     await page.waitForTimeout(700);
     res.push(...(await run(page)).map((r) => 'Karte ' + r));
+    // Startseite: Länderwahl offen (mit Vorauswahl), danach gewählt
+    if (p === '/de/') {
+      await page.keyboard.press('Escape');
+      await page.click('[data-nm-pickbtn]');
+      await page.waitForTimeout(400);
+      await page.keyboard.press('ArrowDown');
+      await page.waitForTimeout(300);
+      res.push(...(await run(page)).map((r) => 'Länderwahl ' + r));
+      await page.keyboard.press('Enter');
+      await page.waitForTimeout(700);
+      res.push(...(await run(page)).map((r) => 'Land gewählt ' + r));
+    }
     if (res.length) { bad++; console.log(scheme, vp.width, p, '\n  ' + res.join('\n  ')); }
   }
   await ctx.close();

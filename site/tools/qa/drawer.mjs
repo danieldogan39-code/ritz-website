@@ -9,7 +9,7 @@ const errs = [];
 page.on('pageerror', (e) => errs.push(String(e)));
 await page.addInitScript(() => { try { sessionStorage.setItem('ritz-intro-skip', '1'); } catch (e) {} });
 await page.goto('http://localhost:8080/de/', { waitUntil: 'networkidle' });
-await page.locator('[data-drawer-open]').first().click();
+await page.locator('[data-drawer-open]:visible').first().click(); // Telefon: Menüknopf der App-Leiste
 await page.waitForTimeout(900);
 const rec = (i) => page.evaluate(async (i) => {
   const sums = document.querySelectorAll('.mnav details > summary');

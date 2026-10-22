@@ -97,24 +97,28 @@ export function netModel(ctx, { mode = 'home' } = {}) {
     const a = projectLL(meta, lo0, la1), b = projectLL(meta, lo1, la0), c = projectLL(meta, lo0, la0), d = projectLL(meta, lo1, la1);
     regions[k] = [Math.min(a[0], c[0]), Math.min(a[1], d[1]), Math.max(b[0], d[0]), Math.max(b[1], c[1])].map(r1);
   }
-  // Länderliste (Startseite): je Land der wichtigste eigene Standort, sonst die Vertretung
+  // Länderliste (Startseite): je Land der wichtigste eigene Standort, sonst die Vertretung; dazu die Orte der
+  // eigenen Standorte (Suche nach „Hamburg“ findet Deutschland) und alle Punkte des Landes (Abgleich mit der Karte)
   const byCc = new Map();
   nodes.forEach((n, i) => {
     for (const it of n.items) {
       const pr = it.k === 'l' ? 10 + rank[n.kind] : 0;
-      const cur = byCc.get(it.cc);
-      if (!cur || pr > cur.pr) byCc.set(it.cc, { n: i, pr, name: it.co });
+      let cur = byCc.get(it.cc);
+      if (!cur) { cur = { n: i, pr, name: it.co, cities: [], ns: [] }; byCc.set(it.cc, cur); } else if (pr > cur.pr) Object.assign(cur, { n: i, pr, name: it.co });
+      if (!cur.ns.includes(i)) cur.ns.push(i);
+      if (it.k === 'l' && !cur.cities.some((c) => c.l === n.label)) cur.cities.push({ l: n.label, r: rank[n.kind] });
     }
   });
   const coll = new Intl.Collator(lang);
-  const countries = [...byCc.values()].sort((a, b) => coll.compare(a.name, b.name)).map(({ n, name }) => ({ n, name }));
+  const countries = [...byCc.values()].sort((a, b) => coll.compare(a.name, b.name))
+    .map(({ n, name, pr, cities, ns }) => ({ n, name, site: pr >= 10, ns, cities: cities.sort((a, b) => b.r - a.r || coll.compare(a.l, b.l)).map((c) => c.l) }));
   const repCountries = new Set((C.reps || []).map((r) => r.country).filter(Boolean)).size;
   const clean = (it) => Object.fromEntries(Object.entries(it).filter(([k, v]) => k !== 'sf' && k !== 'cc' && v !== '' && !(Array.isArray(v) && !v.length)));
   return {
     mode,
     nodes: nodes.map((n) => ({ x: r1(n.x), y: r1(n.y), k: n.kind, t: n.t || 0, label: n.label, items: n.items.map(clean) })),
     arcs: arcs.map((a) => ({ a: idx.get(a.a), b: idx.get(a.b), t0: a.t0, dur: a.dur, s: a.s })),
-    hq: idx.get(hq), regions, countries,
+    hq: idx.get(hq), regions, _countries: countries,
     stats: { sites: locs.length, cc: new Set(locs.map((l) => l.country)).size, reps: repCountries },
     L: {
       types: { ...t.lbl.locType, rep: t.map.legendRep }, site: N.site, rep: mode === 'home' ? N.rep : '', repHref: mode === 'home' ? ctx.hrefA('contact', {}, 'karte') : '',
@@ -151,7 +155,7 @@ function stageHTML(ctx, m, N) {
     <p class="vh" id="nm-help-${m.mode}">${esc(N.help)}</p>
   </div>`;
 }
-const modelJSON = (m) => { const { _list, ...rest } = m; return JSON.stringify(rest).replace(/</g, '\\u003c'); };
+const modelJSON = (m) => JSON.stringify(Object.fromEntries(Object.entries(m).filter(([k]) => k[0] !== '_'))).replace(/</g, '\\u003c');
 function regionsHTML(ctx, N) {
   const { t } = ctx;
   const regions = [['world', N.world], ['europe', t.lbl.region.europe], ['americas', t.lbl.region.americas], ['apac', t.lbl.region.apac], ['africa', t.lbl.region.africa]];
@@ -162,6 +166,29 @@ function layersHTML(N, all = true) {
       <button type="button" class="nm__tog" data-nm-layer="sites" aria-pressed="true"><i class="nm__key nm__key--site" aria-hidden="true"></i>${esc(N.sites)}</button>
       <button type="button" class="nm__tog" data-nm-layer="reps" aria-pressed="true"><i class="nm__key nm__key--rep" aria-hidden="true"></i>${esc(N.reps)}</button>
       ${all ? `<button type="button" class="nm__tog" data-nm-layer="net" aria-pressed="true"><i class="nm__key nm__key--net" aria-hidden="true"></i>${esc(N.net)}</button>` : ''}
+    </div>`;
+}
+
+// Länderwahl: Knopf mit Aufklapper (Suchfeld und nach Art gruppierte Liste, wie das Muster „Listbox with grouped
+// options“ der WAI-ARIA-Praxis); erst mit JavaScript sichtbar (die ganze Leiste ist es). Daneben das Kreuz zum Aufheben.
+const normQ = (s) => String(s || '').toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g, '');
+function countryPick(ctx, m, N) {
+  const id = `nm-pick-${m.mode}`;
+  const opt = (c) => {
+    const sub = c.site ? c.cities.slice(0, 2).join(', ') + (c.cities.length > 2 ? ` +${c.cities.length - 2}` : '') : '';
+    return `<li class="nm__opt" role="option" id="${id}-o${c.n}" data-n="${c.n}" data-ns="${c.ns.join(' ')}" data-q="${esc(normQ([c.name, ...c.cities].join(' ')))}" aria-selected="false"><i class="nm__key nm__key--${c.site ? 'site' : 'rep'}" aria-hidden="true"></i><span>${esc(c.name)}</span>${sub ? `<small>${esc(sub)}</small>` : ''}</li>`;
+  };
+  const group = (k, label, list) => (list.length ? `<ul class="nm__optg" role="group" aria-labelledby="${id}-g${k}"><li class="nm__opth" role="presentation" id="${id}-g${k}">${esc(label)}</li>${list.map(opt).join('')}</ul>` : '');
+  const all = m._countries;
+  return `<div class="nm__pick" data-nm-pick>
+      <button type="button" class="nm__pickbtn" aria-haspopup="dialog" aria-expanded="false" aria-controls="${id}" data-nm-pickbtn>${icon('pin')}<span class="nm__picklbl" data-nm-picklbl>${esc(N.countryPh)}</span>${icon('down')}</button>
+      <button type="button" class="nm__pickx" aria-label="${esc(N.countryClear)}" data-nm-pickx hidden>${icon('close')}</button>
+      <div class="nm__pop" id="${id}" role="dialog" aria-label="${esc(N.country)}" tabindex="-1" data-nm-pop hidden>
+        <div class="nm__pophead"><span aria-hidden="true">${esc(N.country)}</span><button type="button" class="nm__popx" aria-label="${esc(ctx.t.ui.close)}" data-nm-popx>${icon('close')}</button></div>
+        <div class="nm__popq">${icon('search')}<input type="text" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-controls="${id}-list" aria-label="${esc(N.country)}" placeholder="${esc(N.countrySearch)}" autocomplete="off" spellcheck="false" data-nm-pickq></div>
+        <div class="nm__opts" id="${id}-list" role="listbox" aria-label="${esc(N.country)}" data-nm-opts>${group('s', N.pickSites, all.filter((c) => c.site))}${group('r', N.pickReps, all.filter((c) => !c.site))}</div>
+        <p class="nm__nohit" data-nm-nohit hidden>${esc(ctx.t.ui.noResults)}</p>
+      </div>
     </div>`;
 }
 
@@ -187,7 +214,7 @@ export function netMapHome(ctx) {
   <div class="wrap nm__bar" data-nm-bar hidden>
     ${layersHTML(N)}
     ${regionsHTML(ctx, N)}
-    <label class="nm__find"><span class="vh">${esc(N.country)}</span><select data-nm-country><option value="">${esc(N.countryPh)}</option>${m.countries.map((c) => `<option value="${c.n}">${esc(c.name)}</option>`).join('')}</select></label>
+    ${countryPick(ctx, m, N)}
   </div>
   ${stageHTML(ctx, m, N)}
   <div class="wrap nm__foot">

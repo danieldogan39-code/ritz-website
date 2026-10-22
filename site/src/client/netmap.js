@@ -5,9 +5,10 @@
 // Bedienung
 // – Andocken: Der Zeiger rastet am nächsten Punkt im Umkreis ein (mit Hysterese); ein Zielring gleitet hin und zieht sich
 //   zusammen, die Verbindung leuchtet auf, eine Vorschau erscheint. Klick heftet die Karte an (Anschrift, Telefon, Link).
-// – Zoom folgt: Verweilt der Zeiger kurz auf einem Punkt, zoomt die Karte um genau diesen Punkt (er bleibt unter dem
-//   Zeiger) – sanft bei einzelnen Punkten, so weit wie nötig bei dichten Nachbarn. Verlässt der Zeiger die Karte, fliegt sie
-//   zur Ausgangsansicht zurück. Ausdrückliches Zoomen, Ziehen und Regionen beenden diesen Modus.
+// – Karte folgt: Verweilt der Zeiger kurz auf einem Punkt, fliegt die Karte so, dass der Punkt in die Mitte rückt – mit
+//   sanftem Zoom, bei dichten Nachbarn so weit, dass sie auseinanderrücken. Der Punkt bleibt angedockt, bis die Maus sich
+//   deutlich bewegt. Verlässt der Zeiger die Karte, fliegt sie zur Ausgangsansicht zurück. Ausdrückliches Zoomen, Ziehen
+//   und Regionen beenden diesen Modus. Liste, Länderwahl und Tastatur zentrieren genauso.
 // – Touch: Tippen auf einen Punkt mit dichten Nachbarn zoomt erst, sonst öffnet es die Karte; Wischen verschiebt waagrecht
 //   (senkrecht scrollt die Seite), zwei Finger zoomen und verschieben.
 // – Regionen, Länderwahl, Liste und Suche fliegen die Kamera an; Zoom-Knöpfe, Doppelklick, Trackpad bzw. Strg/⌘ + Mausrad.
@@ -19,11 +20,15 @@ import { esc, icon, phoneTxt } from '../lib/util.js';
 const W = 1000, H = 520;
 const LEVELS = [8, 4.6, 2.4, 1.2, 0.62]; // Punktteilung in Karteneinheiten (gleiches Gitter wie world-dots.svg bei 4,6)
 const EU = [455, 50, 615, 172]; // Ausschnitt mit feiner Landmaske (Europa)
+const EU_B = 14; // Übergangsband am Rand dieses Ausschnitts (Karteneinheiten): feines und grobes Raster mischen sich, keine Kante
+const hash01 = (i) => (Math.imul(i ^ 0x9e3779b9, 2654435761) >>> 0) / 4294967296;
+const euDepth = (x, y) => Math.min(x - EU[0], EU[2] - x, y - EU[1], EU[3] - y);
 const TARGET_PX = 6.3; // gewünschter Punktabstand auf dem Bildschirm
 const SNAP = 44, SNAP_TOUCH = 28; // Einrastradius in px
 const CROWD = 30, SPREAD = 60; // Nachbar näher als CROWD px → Zoom, bis er etwa SPREAD px entfernt ist
 const FOCUS = 1.45; // sanfter Zoom auf einen einzelnen Punkt (relativ zur Ausgangsansicht)
-const DWELL = 300; // Verweildauer, bis der Zoom folgt (ms)
+const DWELL = 340; // Verweildauer, bis die Karte folgt (ms)
+const LOCK_R = 34; // so weit darf sich die Maus nach dem Zentrieren bewegen, ohne den Punkt loszulassen (px)
 const WAVE_MS = 2600;
 const reduced = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
 const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
@@ -97,7 +102,8 @@ function setup(el) {
   const tEnd = Math.max(0, ...nodes.map((n) => n.t)) + 650;
   let visible = false, raf = 0, idleRaf = 0, lastIdle = 0, nextPulse = 0, flight = null;
   let pinned = null, hovered = null, snap = null, roving = hq, lastFocus = null, focusAmt = 0;
-  let followBase = null, inside = false, backT = 0, dwellT = 0, glideT = 0, flashT = 0;
+  let followBase = null, inside = false, backT = 0, dwellT = 0, glideT = 0, flashT = 0, lock = null, lastPX = 0, lastPY = 0;
+  let pickSync = null; // Länderwahl zeigt das Land des angehefteten Punkts
   const layer = { sites: 1, reps: 1, net: 1 }, fade = { sites: 1, reps: 1, net: 1 };
   const pulses = [], sparks = [], layers = new Map();
 
@@ -171,11 +177,14 @@ function setup(el) {
   // ---------- Kamera ----------
   const sx = (x) => (x - cam.x) * cam.s + vw / 2;
   const sy = (y) => (y - cam.y) * cam.s + vh / 2;
+  // Die Karte füllt den Rahmen; damit jeder Punkt in die Mitte rücken kann, darf die Mitte bis zum äußersten Punkt
+  // wandern – jenseits der Küsten ist die Karte ohnehin dunkel, der Rand fällt nicht auf
   function clampCam(c = cam) {
     c.s = clamp(c.s, sMin, sMax);
     const hw = vw / (2 * c.s), hh = vh / (2 * c.s);
-    c.x = hw * 2 >= W ? W / 2 : clamp(c.x, hw, W - hw);
-    c.y = hh * 2 >= H ? H / 2 : clamp(c.y, hh, H - hh);
+    const x0 = Math.min(hw, ext[0]), x1 = Math.max(W - hw, ext[2]), y0 = Math.min(hh, ext[1]), y1 = Math.max(H - hh, ext[3]);
+    c.x = x0 > x1 ? W / 2 : clamp(c.x, x0, x1);
+    c.y = y0 > y1 ? H / 2 : clamp(c.y, y0, y1);
     return c;
   }
   // Ausgangsansicht: alle Punkte mit Rand für Marker und Beschriftungen
@@ -226,7 +235,7 @@ function setup(el) {
     flyTo((b[0] + b[2]) / 2, (b[1] + b[3]) / 2, s, dur);
   }
   const home = () => flyTo(base.x, base.y, base.s);
-  const userView = () => { followBase = null; clearTimeout(backT); clearTimeout(dwellT); };
+  const userView = () => { followBase = null; lock = null; clearTimeout(backT); clearTimeout(dwellT); };
   function scheduleBack() {
     clearTimeout(backT);
     if (!followBase || pinned || inside) return;
@@ -258,7 +267,8 @@ function setup(el) {
       if (y > y1) break;
       const x = L.X[i];
       if (x < x0 || x > x1) continue;
-      if (skipEU && inEU(x, y)) continue;
+      if (skipEU) { if (inEU(x, y)) { const d = euDepth(x, y); if (d >= EU_B || hash01(i) < d / EU_B) continue; } } // grob: läuft im Band aus
+      else if (L.eu) { const d = euDepth(x, y); if (d < EU_B && hash01(i) >= d / EU_B) continue; } // fein: setzt im Band ein
       let k = L.heat[i];
       if (k) { const o = nodes[L.owner[i]]; if (o && (!o.on || !o.match)) k = 0; }
       if (run) {
@@ -644,6 +654,7 @@ function setup(el) {
     if (!n) { unpin(); return; }
     pinned = n; hovered = null; lastFocus = n;
     setActive(n); setRoving(n);
+    pickSync?.(n);
     for (const m of nodes) {
       if (!m.el) continue;
       if (m === n) { m.el.setAttribute('aria-expanded', 'true'); m.el.setAttribute('aria-controls', cardId); } else { m.el.removeAttribute('aria-expanded'); m.el.removeAttribute('aria-controls'); }
@@ -663,6 +674,7 @@ function setup(el) {
   function unpin() {
     if (!pinned) return;
     pinned = null;
+    pickSync?.(null);
     for (const m of nodes) { m.el?.removeAttribute('aria-expanded'); m.el?.removeAttribute('aria-controls'); }
     hovered = null;
     if (snap) hover(snap); else { setActive(null); showCard(null); }
@@ -678,19 +690,22 @@ function setup(el) {
     if (n) spark(n);
     kick();
   }
-  // Zoom folgt dem Punkt: sanfter Fokus (nur Zeiger) bzw. so weit, dass dichte Nachbarn auseinanderrücken
-  // track: nur bei der Maus merkt sich die Karte die Ausgangsansicht und fliegt beim Verlassen zurück; Tippen und
-  // Tastatur zoomen dauerhaft (wie selbst gezoomt)
+  // Karte folgt dem Punkt: er rückt in die Mitte, dazu sanfter Fokus (iso) bzw. so viel Zoom, dass dichte Nachbarn
+  // auseinanderrücken. track: nur bei der Maus (und Vorschauen aus Liste und Länderwahl) merkt sich die Karte die
+  // Ausgangsansicht und fliegt beim Verlassen zurück; Tippen und Tastatur bewegen die Karte dauerhaft.
   function follow(n, { iso = false, quick = false, step = 3.2, track = false } = {}) {
-    if (!n || !vw || n.out) return false;
+    if (!n || !vw) return false;
     if (!track) { followBase = null; clearTimeout(backT); }
     const fb = followBase || { x: cam.x, y: cam.y, s: cam.s };
-    let want = iso ? fb.s * FOCUS : 0;
+    let want = cam.s;
+    if (iso) want = Math.max(want, fb.s * FOCUS);
     if (isFinite(n.nn) && n.nn * cam.s < CROWD) want = Math.max(want, Math.min(cam.s * step, SPREAD / n.nn));
     want = Math.min(want, sMax);
-    if (want <= cam.s * 1.06) return false;
+    const zoom = want > cam.s * 1.04;
+    const off = Math.abs(n.X - vw / 2) > vw * 0.05 || Math.abs(n.Y - vh / 2) > vh * 0.07;
+    if (!zoom && !off) return false;
     if (track && !followBase) followBase = fb;
-    zoomAt(n.X, n.Y, want / cam.s, quick ? 540 : 720);
+    flyTo(n.x, n.y, zoom ? want : cam.s, quick ? 640 : 820);
     return true;
   }
   const crowded = (n) => isFinite(n.nn) && n.nn * cam.s < CROWD && cam.s < sMax * 0.95;
@@ -707,7 +722,12 @@ function setup(el) {
     placeRet();
     if (!n) return;
     requestAnimationFrame(() => { if (snap === n) ret?.classList.add('is-lock'); }); // Zielring zieht sich zusammen
-    if (dwell && !reduced()) dwellT = setTimeout(() => { if (snap === n && !drag?.moved && !pinch && inside) follow(n, { iso: !pinned, track: true }); }, DWELL);
+    // verweilen: der Punkt wandert in die Mitte, der Zeiger bleibt. Ist eine Karte angeheftet, hält die Ansicht still –
+    // man liest gerade; ein Klick auf einen anderen Punkt heftet diesen an und holt ihn in die Mitte
+    if (dwell && !reduced() && !pinned) dwellT = setTimeout(() => {
+      if (snap !== n || drag?.moved || pinch || !inside || pinned) return;
+      if (follow(n, { iso: true, track: true })) lock = { n, x: lastPX, y: lastPY };
+    }, DWELL);
   }
   // kurzer Zielring für Touch und Tastatur
   function flash(n, ms = 900) {
@@ -785,14 +805,143 @@ function setup(el) {
       if (b.dataset.nmRegion === 'world') home(); else fitBox(M.regions[b.dataset.nmRegion]);
     }
   });
-  const sel = bar?.querySelector('[data-nm-country]');
-  sel?.addEventListener('change', () => {
-    const n = nodes[+sel.value];
-    if (!sel.value || !n) return;
-    showLayerOf(n);
-    setRegion(''); userView();
-    pin(n, { fly: true, s: pinScale(n), focus: true });
-  });
+  // Länderwahl (Startseite): Knopf öffnet Suchfeld und Liste; Durchgehen zeigt das Land auf der Karte, Auswahl heftet an.
+  // Der Knopf nennt immer das Land des angehefteten Punkts (auch nach einem Klick auf die Karte); das Kreuz hebt die Wahl auf.
+  const pickEl = bar?.querySelector('[data-nm-pick]');
+  if (pickEl) {
+    const btn = pickEl.querySelector('[data-nm-pickbtn]'), pop = pickEl.querySelector('[data-nm-pop]'), pq = pickEl.querySelector('[data-nm-pickq]');
+    const optsEl = pickEl.querySelector('[data-nm-opts]'), lbl = pickEl.querySelector('[data-nm-picklbl]'), nohit = pickEl.querySelector('[data-nm-nohit]');
+    const xBtn = pickEl.querySelector('[data-nm-pickx]'), popX = pickEl.querySelector('[data-nm-popx]');
+    const sheet = matchMedia('(max-width: 700px)'); // schmal: Auswahl als Blatt von unten, die Karte bleibt darüber sichtbar
+    let openBy = '';
+    const opts = [...optsEl.querySelectorAll('[role="option"]')], groups = [...optsEl.querySelectorAll('[role="group"]')];
+    const ph = lbl.textContent;
+    let isOpen = false, act = null, prevT = 0, closeT = 0;
+    const vis = () => opts.filter((o) => !o.hidden);
+    const optNode = (o) => nodes[+o.dataset.n];
+    const has = (o, n) => !!o && !!n && o.dataset.ns.split(' ').includes(String(n.i));
+    const chosen = () => opts.find((o) => o.getAttribute('aria-selected') === 'true') || null;
+    const showValue = (o) => {
+      for (const x of opts) x.setAttribute('aria-selected', String(x === o));
+      lbl.textContent = o ? o.querySelector('span').textContent : ph;
+      pickEl.classList.toggle('has-value', !!o);
+      xBtn.hidden = !o;
+    };
+    pickSync = (n) => { if (!has(chosen(), n)) showValue(n ? opts.find((o) => has(o, n)) || null : null); };
+    const previewOpt = (o) => {
+      const n = optNode(o);
+      if (!n || !isOpen || phase === 'wait') return;
+      showLayerOf(n);
+      clearTimeout(flashT);
+      snap = n; placeRet();
+      requestAnimationFrame(() => { if (snap === n) ret?.classList.add('is-lock'); });
+      if (pinned) { setActive(n); showCard(n, n === pinned); } else hover(n); // angeheftet: die Vorschau gilt nur, solange die Liste offen ist
+      follow(n, { iso: true, track: true, quick: true });
+    };
+    const activate = (o, { scroll = true, preview = true } = {}) => {
+      act = o;
+      for (const x of opts) x.classList.toggle('is-active', x === o);
+      if (o) { pq.setAttribute('aria-activedescendant', o.id); if (scroll) o.scrollIntoView({ block: 'nearest' }); } else pq.removeAttribute('aria-activedescendant');
+      clearTimeout(prevT);
+      if (o && preview) prevT = setTimeout(() => previewOpt(o), 180);
+    };
+    const filterOpts = () => {
+      const q = norm(pq.value).trim();
+      for (const o of opts) o.hidden = !!q && !o.dataset.q.includes(q);
+      for (const g of groups) g.hidden = !g.querySelector('[role="option"]:not([hidden])');
+      const v = vis();
+      nohit.hidden = v.length > 0;
+      if (q) activate(v[0] || null);
+      else if (act?.hidden) activate(null);
+    };
+    const openPick = () => {
+      if (isOpen) return;
+      isOpen = true;
+      clearTimeout(closeT);
+      pop.classList.remove('is-leaving');
+      pop.hidden = false;
+      pickEl.classList.add('is-open');
+      el.classList.add('is-picking');
+      btn.setAttribute('aria-expanded', 'true');
+      pq.value = '';
+      for (const o of opts) o.hidden = false;
+      for (const g of groups) g.hidden = false;
+      nohit.hidden = true;
+      optsEl.scrollTop = 0;
+      activate(chosen(), { preview: false });
+      const touch = openBy === 'touch' && sheet.matches; // Finger: erst die Liste, die Tastatur erst beim Tippen ins Suchfeld
+      openBy = '';
+      requestAnimationFrame(() => (touch ? pop : pq).focus({ preventScroll: true }));
+    };
+    const closePick = (focusBtn = true, done = false) => {
+      if (!isOpen) return;
+      isOpen = false;
+      clearTimeout(prevT);
+      pickEl.classList.remove('is-open');
+      btn.setAttribute('aria-expanded', 'false');
+      const gone = () => { pop.hidden = true; pop.classList.remove('is-leaving'); el.classList.remove('is-picking'); };
+      if (reduced()) gone();
+      else { pop.classList.add('is-leaving'); closeT = setTimeout(gone, sheet.matches ? 220 : 150); }
+      if (focusBtn) btn.focus({ preventScroll: true });
+      if (done) return;
+      if (pinned) { // Vorschau zurücknehmen: der angeheftete Punkt und seine Ansicht kehren zurück
+        setActive(pinned); showCard(pinned, true);
+        snap = null; ret?.classList.remove('is-lock'); placeRet();
+        if (followBase) { const b = followBase; followBase = null; flyTo(b.x, b.y, b.s, 700); }
+      } else if (!inside) { snap = null; ret?.classList.remove('is-lock'); placeRet(); hover(null); scheduleBack(); }
+    };
+    const choose = (o) => {
+      const n = optNode(o);
+      if (!n) return;
+      showValue(o);
+      closePick(true, true);
+      showLayerOf(n);
+      setRegion(''); userView();
+      pin(n, { fly: true, s: pinScale(n) });
+    };
+    btn.addEventListener('pointerdown', (e) => { openBy = e.pointerType; });
+    btn.addEventListener('click', () => (isOpen ? closePick() : openPick()));
+    popX.addEventListener('click', () => closePick());
+    pop.addEventListener('keydown', (e) => { if (e.key === 'Escape') { e.preventDefault(); e.stopPropagation(); closePick(); } }); // auch vom Blatt selbst und vom Kreuz aus
+    btn.addEventListener('keydown', (e) => { if (e.key === 'ArrowDown' || e.key === 'ArrowUp') { e.preventDefault(); openPick(); } });
+    xBtn.addEventListener('click', () => {
+      closePick(false, true);
+      showValue(null);
+      unpin(); userView();
+      setRegion('world'); home();
+      btn.focus({ preventScroll: true });
+    });
+    pq.addEventListener('input', filterOpts);
+    pq.addEventListener('keydown', (e) => {
+      const v = vis(), i = v.indexOf(act);
+      if (e.key === 'ArrowDown') { e.preventDefault(); activate(v[i < 0 ? 0 : Math.min(v.length - 1, i + 1)] || null); }
+      else if (e.key === 'ArrowUp') { e.preventDefault(); activate(v[Math.max(0, i - 1)] || null); }
+      else if (e.key === 'PageDown' || e.key === 'PageUp') { e.preventDefault(); activate(v[Math.max(0, Math.min(v.length - 1, i + (e.key === 'PageDown' ? 8 : -8)))] || null); }
+      else if (e.key === 'Home' && !pq.value) { e.preventDefault(); activate(v[0] || null); }
+      else if (e.key === 'End' && !pq.value) { e.preventDefault(); activate(v[v.length - 1] || null); }
+      else if (e.key === 'Enter') { e.preventDefault(); if (act && !act.hidden) choose(act); }
+      else if (e.key === 'Escape') { e.preventDefault(); e.stopPropagation(); closePick(); }
+      else if (e.key === 'Tab') closePick(false);
+    });
+    optsEl.addEventListener('pointermove', (e) => { if (e.pointerType !== 'mouse') return; const o = e.target.closest('[role="option"]'); if (o && o !== act) activate(o, { scroll: false }); });
+    optsEl.addEventListener('pointerdown', (e) => { if (e.pointerType === 'mouse') e.preventDefault(); }); // Fokus bleibt im Suchfeld
+    optsEl.addEventListener('click', (e) => { const o = e.target.closest('[role="option"]'); if (o) choose(o); });
+    const outside = (e) => {
+      if (!el.isConnected) { document.removeEventListener('pointerdown', outside, true); return; }
+      if (!isOpen || (pickEl.contains(e.target) && e.target !== pickEl)) return; // pickEl selbst: der Schleier hinter dem Blatt
+      closePick(false);
+      if (e.target === pickEl) { // Schleier: Tippen schließt nur das Blatt, der folgende Klick geht ins Leere
+        e.stopPropagation();
+        const eat = (ev) => { ev.stopPropagation(); ev.preventDefault(); };
+        document.addEventListener('click', eat, { capture: true, once: true });
+        setTimeout(() => document.removeEventListener('click', eat, true), 700);
+        return;
+      }
+      // leere Kartenfläche: der Klick schließt nur die Liste (hebt nichts auf); ein Punkt lässt sich direkt anklicken
+      if (frame.contains(e.target) && !e.target.closest('.nm__mk, .nm__zoom')) e.stopPropagation();
+    };
+    document.addEventListener('pointerdown', outside, true);
+  }
   if (listEl) {
     listEl.addEventListener('click', (e) => {
       const b = e.target.closest('.nm__entry');
@@ -809,13 +958,16 @@ function setup(el) {
     const over = (e) => {
       const b = e.target.closest?.('.nm__entry');
       const n = b ? nodes[+b.dataset.n] : null;
-      if (!n || n.out || !n.on) return;
+      if (!n || !n.on || snap === n) return;
       clearTimeout(flashT);
       snap = n; placeRet();
       requestAnimationFrame(() => { if (snap === n) ret?.classList.add('is-lock'); });
       hover(n);
+      // kurz verweilen: die Karte holt den Eintrag in die Mitte
+      clearTimeout(dwellT);
+      if (!reduced() && !pinned) dwellT = setTimeout(() => { if (snap === n && !inside && !pinned) follow(n, { iso: true, track: true }); }, DWELL + 60);
     };
-    const leave = () => { if (!inside) { snap = null; ret?.classList.remove('is-lock'); placeRet(); hover(null); } };
+    const leave = () => { if (!inside) { clearTimeout(dwellT); snap = null; ret?.classList.remove('is-lock'); placeRet(); hover(null); scheduleBack(); } };
     listEl.addEventListener('pointerover', over);
     listEl.addEventListener('focusin', over);
     listEl.addEventListener('pointerleave', leave);
@@ -893,7 +1045,12 @@ function setup(el) {
     }
     if (e.pointerType !== 'mouse' || phase === 'wait' || drag?.moved) return;
     inside = true;
-    if (e.target.closest?.('.nm__zoom')) { setSnap(null); return; }
+    lastPX = px; lastPY = py;
+    if (e.target.closest?.('.nm__zoom')) { lock = null; setSnap(null); return; }
+    if (lock) { // nach dem Zentrieren bleibt der Punkt angedockt, bis sich die Maus deutlich bewegt
+      if (lock.n === snap && lock.n.on && lock.n.match && Math.hypot(px - lock.x, py - lock.y) < LOCK_R) return;
+      lock = null;
+    }
     // Andocken mit Hysterese: der bisherige Punkt bleibt, bis ein anderer deutlich näher liegt
     let n = nearest(px, py, SNAP);
     if (snap && n !== snap && snap.on && snap.match && !snap.out) {
@@ -920,7 +1077,7 @@ function setup(el) {
       if (pinned === n) { unpin(); return; }
       clearTimeout(dwellT);
       pin(n);
-      follow(n, { quick: true, track: true });
+      if (follow(n, { quick: true, track: true })) { snap = n; lock = { n, x: px, y: py }; placeRet(); }
       return;
     }
     // Tippen: dichte Gruppe → erst zoomen, einzelner Punkt → Karte öffnen
@@ -935,6 +1092,7 @@ function setup(el) {
   frame.addEventListener('pointerleave', (e) => {
     if (e.pointerType !== 'mouse') return;
     inside = false;
+    lock = null;
     setSnap(null);
     scheduleBack();
   });
@@ -980,15 +1138,17 @@ function setup(el) {
   // Marker: Klick, Tippen, Tastatur und Screenreader (Klicks daneben behandelt der Rahmen über das Andocken)
   marksBox.addEventListener('click', (e) => {
     const b = e.target.closest('.nm__mk');
-    const n = b ? nodes[+b.dataset.n] : null;
+    let n = b ? nodes[+b.dataset.n] : null;
     if (!n || !live || phase === 'wait' || performance.now() - dragEnd < 120) return;
     const touch = e.detail > 0 && lastPtr !== 'mouse';
+    const mouse = e.detail > 0 && !touch;
+    if (mouse && snap && snap !== n && snap.on && snap.match) n = snap; // Maus: es gilt der Punkt im Fadenkreuz – nach dem Zentrieren liegt unter dem Zeiger oft ein anderer
     if (touch && crowded(n) && pinned !== n) { flash(n); follow(n, { quick: true, step: 9 }); return; } // dichte Gruppe: erst zoomen
     clearTimeout(dwellT);
     if (pinned === n) { unpin(); return; }
     if (touch) flash(n, 600);
     pin(n, { reveal: touch });
-    follow(n, { quick: true, track: e.detail > 0 && !touch });
+    if (follow(n, { quick: true, track: mouse }) && mouse) { snap = n; lock = { n, x: lastPX, y: lastPY }; placeRet(); }
   });
   card.addEventListener('click', (e) => { if (e.target.closest('[data-nm-close]')) { const n = pinned; unpin(); n?.el?.focus({ preventScroll: true }); } });
   card.addEventListener('keydown', (e) => { if (e.key === 'Escape' && pinned) { const n = pinned; unpin(); n.el?.focus({ preventScroll: true }); } });

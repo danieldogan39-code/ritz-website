@@ -4,6 +4,16 @@ import { esc, icon, phoneTxt } from '../lib/util.js';
 import { copyText, bindForm } from './basket.js';
 import { personCard } from '../views/layout.js';
 
+// App-Leiste (Telefon): beim Tippen in ein Eingabefeld zieht sie sich zurück, damit sie nicht über der Tastatur klebt
+export function initAppBar() {
+  const bar = $('[data-abar]');
+  if (!bar || document.__abar) return;
+  document.__abar = true;
+  const typing = (el) => el && el.matches?.('input:not([type="checkbox"], [type="radio"], [type="button"], [type="submit"], [type="range"]), textarea, select, [contenteditable="true"]');
+  document.addEventListener('focusin', (e) => { if (typing(e.target)) document.documentElement.classList.add('is-typing'); });
+  document.addEventListener('focusout', (e) => { if (typing(e.target)) setTimeout(() => { if (!typing(document.activeElement)) document.documentElement.classList.remove('is-typing'); }, 60); });
+}
+
 export function initHeader() {
   const hdr = $('[data-hdr]');
   if (!hdr || hdr.__bound) return;

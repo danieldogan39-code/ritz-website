@@ -1,0 +1,16 @@
+Social-Media-Logos für den Fuß der Website
+==========================================
+
+Hier die offiziellen Logo-Dateien der Plattformen als SVG ablegen – genau diese Dateinamen:
+
+  linkedin.svg    LinkedIn  (Brand-Seite von LinkedIn: das „in“-Logo, einfarbig)
+  instagram.svg   Instagram (Brand-Seite von Instagram/Meta: das Glyph-Logo, einfarbig)
+  xing.svg        XING      (Brand-Seite von XING: das Logo-Symbol, einfarbig)
+
+Beim nächsten Bau (node build.mjs) werden die Dateien bereinigt und als Modul src/lib/social-icons.js
+eingebunden; der Fuß zeigt dann runde Knöpfe mit den Logos statt der Namen. Einfarbige Logos übernehmen
+automatisch die Textfarbe (hell auf dunklem Fuß, beim Überfahren dunkel auf hell). Fehlt eine Datei,
+erscheint für diese Plattform weiter der Name als Link.
+
+Bitte nur die von den Plattformen bereitgestellten Dateien verwenden und deren Markenrichtlinien beachten
+(Schutzraum, keine Veränderung der Form).

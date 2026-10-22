@@ -3,6 +3,7 @@ import { esc, icon, LOGO, tpl, cls, imgTag, fmtNum, phoneTxt } from '../lib/util
 import { LANGS, LANG_NAMES, AREAS, SECTORS } from '../lib/routes.js';
 import { AREA_IMG, SECTOR_IMG, PAGE_IMG } from '../lib/catalog.js';
 import { docTitleFor, docsForLang, dedupeCopies } from '../lib/doclang.js';
+import { SOCIAL_ICONS } from '../lib/social-icons.js';
 
 export const GROUP_ANCHORS = {
   mittelspannung: ['ms.indoor.ct', 'ms.indoor.vt', 'ms.outdoor.ct', 'ms.metalclad', 'ms.pq'],
@@ -141,12 +142,41 @@ export function drawer(ctx) {
 </div>`;
 }
 
+// App-Leiste unten (nur auf Telefonen sichtbar): die wichtigsten Wege in Daumenreichweite – Produkte, Suche,
+// Produktfinder (Raute in der Mitte, wie im Logo), Projektmappe mit Zähler, Menü. Die aktive Seite ist markiert.
+export function appBar(ctx) {
+  const { t, href } = ctx;
+  const cur = ctx.route?.id || '';
+  const on = (ids) => (ids.includes(cur) ? ' is-on' : '');
+  const curAttr = (ids) => (ids.includes(cur) ? ' aria-current="page"' : '');
+  const PROD = ['products', 'area', 'product', 'compare'];
+  return `<nav class="abar" aria-label="${esc(t.ui.quickNav)}" data-abar>
+  <a class="abar__it${on(PROD)}" href="${href('products')}"${curAttr(PROD)}><span class="abar__ic">${icon('grid')}</span><span class="abar__l">${esc(t.nav.products)}</span></a>
+  <button class="abar__it${on(['search'])}" type="button" data-search-open><span class="abar__ic">${icon('search')}</span><span class="abar__l">${esc(t.ui.search)}</span></button>
+  <a class="abar__it abar__it--main${on(['finder'])}" href="${href('finder')}" aria-label="${esc(t.nav.finder)}"${curAttr(['finder'])}><span class="abar__gem">${icon('finder', 'width="22" height="22"')}</span><span class="abar__l">${esc(t.ui.tabFinder)}</span></a>
+  <a class="abar__it${on(['inquiry'])}" href="${href('inquiry')}" data-basket-link aria-label="${esc(t.ui.inquiryList)}"${curAttr(['inquiry'])}><span class="abar__ic">${icon('clipboard')}<span class="badge-count" data-basket-count hidden>0</span></span><span class="abar__l">${esc(t.ui.tabList)}</span></a>
+  <button class="abar__it" type="button" data-drawer-open aria-controls="drawer" aria-expanded="false"><span class="abar__ic">${icon('menu')}</span><span class="abar__l">${esc(t.ui.menu)}</span></button>
+</nav>`;
+}
+
 // Profile der RITZ-Gruppe in sozialen Netzwerken (wie im Fuß der bisherigen Website)
+// Name, Adresse, Kennung des Logos (src/assets/social/<kennung>.svg – nur offizielle Dateien der Plattformen)
 export const SOCIAL = [
-  ['LinkedIn', 'https://de.linkedin.com/company/ritz-instrument-transformers'],
-  ['Instagram', 'https://www.instagram.com/ritz_instrument_transformers/'],
-  ['Xing', 'https://www.xing.com/pages/ritzinstrumenttransformersgmbh'],
+  ['LinkedIn', 'https://de.linkedin.com/company/ritz-instrument-transformers', 'linkedin'],
+  ['Instagram', 'https://www.instagram.com/ritz_instrument_transformers/', 'instagram'],
+  ['XING', 'https://www.xing.com/pages/ritzinstrumenttransformersgmbh', 'xing'],
 ];
+// Liegt das Logo vor, ein runder Knopf mit dem Logo (Name als Beschriftung für Hilfsmittel und als Tooltip), sonst der Name
+function socialLinks(ctx) {
+  const F = ctx.t.footer;
+  const all = SOCIAL.every(([, , k]) => SOCIAL_ICONS[k]);
+  return `<ul class="ftr__social${all ? ' ftr__social--icons' : ''}" aria-label="${esc(F.follow)}">${SOCIAL.map(([name, url, k]) => {
+    const label = esc(tpl(F.newTab, { name }));
+    return SOCIAL_ICONS[k]
+      ? `<li><a class="ftr__soc" href="${url}" target="_blank" rel="noopener" aria-label="${label}" title="${esc(name)}">${SOCIAL_ICONS[k]}</a></li>`
+      : `<li><a href="${url}" target="_blank" rel="noopener" aria-label="${label}">${esc(name)}${icon('arrowUpRight', 'width="14" height="14"')}</a></li>`;
+  }).join('')}</ul>`;
+}
 
 // Fuß: Marke mit den zwei wichtigsten Einstiegen, darunter Anschrift und zwei kurze Linklisten, unten Rechtliches.
 // Alles Weitere erreicht man über die Hauptnavigation; der Fuß bleibt bewusst knapp.
@@ -190,7 +220,7 @@ export function footer(ctx) {
         <p class="ftr__note">${icon('check', 'width="15" height="15"')}${esc(F.privacyNote)}</p>
       </div>
       <div class="ftr__end">
-        <ul class="ftr__social" aria-label="${esc(F.follow)}">${SOCIAL.map(([name, url]) => `<li><a href="${url}" target="_blank" rel="noopener" aria-label="${esc(tpl(F.newTab, { name }))}">${esc(name)}${icon('arrowUpRight', 'width="14" height="14"')}</a></li>`).join('')}</ul>
+        ${socialLinks(ctx)}
         <div class="theme-toggle" role="group" aria-label="${esc(t.ui.theme)}" data-theme-toggle>
           <button type="button" data-theme-set="light" aria-pressed="false">${esc(t.ui.themeLight)}</button>
           <button type="button" data-theme-set="auto" aria-pressed="true">${esc(t.ui.themeAuto)}</button>

@@ -2,9 +2,9 @@
 import { CFG, getData, getIndex, setData, $ } from './core.js';
 import { makeCtx, parseSpaHash, spaHash, newsSlugFor } from '../lib/ctx.js';
 import { matchPath, LANGS, pathFor } from '../lib/routes.js';
-import { header, drawer, footer, searchOverlay } from '../views/layout.js';
+import { header, drawer, footer, searchOverlay, appBar } from '../views/layout.js';
 import { renderRoute } from '../views/render.js';
-import { initHeader, initDrawer, initTheme, initCopy } from './ui.js';
+import { initHeader, initDrawer, initTheme, initCopy, initAppBar } from './ui.js';
 import { initBadges, initBasketButtons, initTray } from './basket.js';
 import { initSearchOverlay } from './search.js';
 import { initPage } from './app-page.js';
@@ -71,9 +71,9 @@ async function render() {
     if (my !== rendering) return;
     document.body.className = page.bodyClass || '';
     if (shellLang !== lang || !$('#main')) {
-      app.innerHTML = `<a class="skip" href="#main" data-skip>${base.t.ui.skip}</a>${header(ctx)}${drawer(ctx)}<main id="main" tabindex="-1"></main>${footer(ctx)}${searchOverlay(ctx)}`;
+      app.innerHTML = `<a class="skip" href="#main" data-skip>${base.t.ui.skip}</a>${header(ctx)}${drawer(ctx)}<main id="main" tabindex="-1"></main>${footer(ctx)}${appBar(ctx)}${searchOverlay(ctx)}`;
       shellLang = lang;
-      initHeader(); initDrawer(); initTheme(); initSearchOverlay(); initBadges();
+      initHeader(); initDrawer(); initTheme(); initSearchOverlay(); initBadges(); initAppBar();
     } else {
       // Kopf neu zeichnen (aktive Navigation, Sprachlinks)
       const old = $('[data-hdr]');
@@ -84,6 +84,12 @@ async function render() {
       const dr = $('[data-drawer]');
       const tmp2 = document.createElement('div'); tmp2.innerHTML = drawer(ctx);
       dr.replaceWith(tmp2.firstElementChild); initDrawer();
+      // App-Leiste: aktive Seite umschalten, ohne die Leiste neu aufzubauen (kein Flackern)
+      const ab = $('[data-abar]');
+      const tmp3 = document.createElement('div'); tmp3.innerHTML = appBar(ctx);
+      const fresh = tmp3.firstElementChild;
+      if (ab && fresh) [...ab.children].forEach((it, i) => { const nf = fresh.children[i]; if (!nf) return; it.className = nf.className; if (nf.hasAttribute('aria-current')) it.setAttribute('aria-current', 'page'); else it.removeAttribute('aria-current'); if (nf.getAttribute('href')) it.setAttribute('href', nf.getAttribute('href')); });
+      initBadges();
     }
     $('#main').innerHTML = `<div class="${useVT ? 'route' : 'route-fade'}">${page.html}</div>`;
     document.title = `${page.title} | RITZ`;
