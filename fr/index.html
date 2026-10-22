@@ -17,11 +17,11 @@
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#141110" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="icon" href="/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest">
 <link rel="preload" href="/assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/main.css?v=7d550725">
+<link rel="stylesheet" href="/assets/main.css?v=765bf3de">
 <script>(function(){var d=document.documentElement;d.dataset.hostTheme=d.dataset.theme||'';try{var t=JSON.parse(localStorage.getItem('ritz-theme')||'"auto"');if(t==='light'||t==='dark')d.dataset.theme=t}catch(e){}})()</script>
 <script>(function(d){try{if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;if('IntersectionObserver' in window){d.classList.add('rv');setTimeout(function(){if(!d.classList.contains('rv-ok'))d.classList.remove('rv')},4000)}if(!true)return;try{var s=sessionStorage;if(s.getItem('ritz-intro'))return;s.setItem('ritz-intro','1')}catch(e){}d.setAttribute('data-intro','play');var done=0,EV=['pointerdown','keydown','wheel','touchstart'];function q(x){return document.querySelector(x)}function off(){d.removeAttribute('data-intro');var x=document.querySelectorAll('.intro,.intro__skip');for(var i=0;i<x.length;i++)x[i].parentNode.removeChild(x[i])}function end(skip){if(done)return;done=1;for(var i=0;i<EV.length;i++)removeEventListener(EV[i],onSkip,true);var o=q('.intro');if(!o){off();return}var lg=o.querySelector('.intro__logo'),sv=lg&&lg.querySelector('svg'),hd=q('.hdr .logo svg');if(!skip&&sv&&hd){var a=sv.getBoundingClientRect(),b=hd.getBoundingClientRect();if(a.width&&b.width){lg.style.setProperty('--fx',(b.left+b.width/2-a.left-a.width/2).toFixed(1)+'px');lg.style.setProperty('--fy',(b.top+b.height/2-a.top-a.height/2).toFixed(1)+'px');lg.style.setProperty('--fs',(b.width/a.width).toFixed(4));lg.style.setProperty('--fc',getComputedStyle(hd).color);o.classList.add('is-fly')}else skip=1}if(skip)o.classList.add('is-skip');d.setAttribute('data-intro','out');setTimeout(off,skip?300:720)}function onSkip(e){if(e.type==='keydown'&&/^(Shift|Control|Alt|Meta|CapsLock)$/.test(e.key))return;end(1)}for(var i=0;i<EV.length;i++)addEventListener(EV[i],onSkip,{capture:true,passive:true});addEventListener('animationend',function(e){if(e.animationName==='iTag')end(0)});var fb=0;addEventListener('animationstart',function(e){if(e.animationName==='iFade'&&!fb)fb=setTimeout(function(){end(0)},3400)});setTimeout(function(){end(0)},6000);}catch(e){}})(document.documentElement)</script>
-<script>window.__RITZ__={"lang":"fr","mode":"static","base":"/","dataBase":"/data/","v":"7d550725","api":null,"preview":true,"route":{"id":"home","p":{}}}</script>
-<script type="module" src="/assets/app.js?v=7d550725"></script>
+<script>window.__RITZ__={"lang":"fr","mode":"static","base":"/","dataBase":"/data/","v":"765bf3de","api":null,"preview":true,"route":{"id":"home","p":{}}}</script>
+<script type="module" src="/assets/app.js?v=765bf3de"></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"RITZ Instrument Transformers GmbH","url":"https://ritz.entwurf.medialyte.de","logo":"https://ritz.entwurf.medialyte.de/assets/logo.svg","foundingDate":"1945","address":{"@type":"PostalAddress","streetAddress":"Wandsbeker Zollstraße 92–98","postalCode":"22041","addressLocality":"Hamburg","addressCountry":"DE"},"telephone":"+49 40 51123-0","email":"info@ritz-international.com"}</script>
 </head>
 <body class="is-home">
@@ -30,11 +30,211 @@
 <div class="wrap hdr__bar">
 <a class="logo" href="/fr/" aria-label="RITZ – Accueil"><svg viewBox="0 0 258.72 140.09" width="84" height="45" role="img" aria-label="RITZ"><path fill="currentColor" d="M172.99,83.46l19.27-33.73h-29.93v6.9h16.36l-19.33,33.73h31.85v-6.9h-18.23Zm-37.06-26.39v33.28h8.24V57.08h12.31v-7.03h-32.81v7.03h12.26Zm-18.81-7.08h-8.35v40.37h8.35V49.99Zm-32.92,7.2c4.75,0,7.08,.9,7.08,5.06s-2.33,5.12-7.08,5.12h-9.78v-10.18h9.78Zm-17.75-7.2v40.37h7.98v-15.85h9.4l8.35,15.85h8.98l-9.46-16.87c4.91-1.120,7.66-5.12,7.66-11.36,0-8.49-4.28-12.14-13.26-12.14h-19.66Z"/><path fill="currentColor" d="M74.74,103.3h109.25l-54.62,29.99-54.62-29.99ZM12.89,70.11l51.17-28.1H194.66l51.17,28.1-51.17,27.57H64.06L12.89,70.11ZM129.36,6.64l54.62,29.76H74.74L129.36,6.64Zm.05-6.64L0,70.11l129.31,69.98,129.41-69.98L129.41,0Z"/></svg></a>
 <nav class="nav" aria-label="Navigation principale">
-<div class="nav__item"><button class="nav__link" type="button" aria-expanded="false" aria-controls="mega-products" data-mega="products">Produits<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></button></div>
-<div class="nav__item"><button class="nav__link" type="button" aria-expanded="false" aria-controls="mega-sectors" data-mega="sectors">Applications<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></button></div>
+<div class="nav__item"><button class="nav__link" type="button" aria-expanded="false" aria-controls="mega-products" data-mega="products">Produits<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></button><div class="mega" id="mega-products" data-mega-panel="products" hidden>
+<div class="wrap mg">
+<ul class="mg__list">
+<li class="mg__row is-on"><a class="mg__item" href="/fr/produits/basse-tension/"><span class="mg__name">Basse tension</span><span class="mg__meta">0,72–3,6 kV</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="16" height="16"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+<div class="mg__pane">
+<span class="mg__img"><img src="/img/mimg-ritz_header-niederspannung-960.webp" srcset="/img/mimg-ritz_header-niederspannung-320.webp 320w, /img/mimg-ritz_header-niederspannung-640.webp 640w, /img/mimg-ritz_header-niederspannung-960.webp 960w" sizes="(max-width: 1400px) calc(26vw * 2.69), calc(360px * 2.69)" width="960" height="268" alt="" loading="lazy" decoding="async"></span>
+<div class="mg__body">
+<p class="mg__title">Transformateurs de mesure basse tension</p>
+<p class="mg__text">Transformateurs de courant pour la mesure et la protection, transformateurs de tension et dispositifs d’amortissement jusqu’à 3,6 kV.</p>
+<ul class="mg__subs"><li><a href="/fr/produits/basse-tension/#g-ns-window">Transformateurs de courant à fenêtre</a></li><li><a href="/fr/produits/basse-tension/#g-ns-bushing">Transformateurs de courant à fenêtre en résine coulée</a></li><li><a href="/fr/produits/basse-tension/#g-ns-splitcore">Transformateurs de courant à tore ouvrant</a></li><li><a href="/fr/produits/basse-tension/#g-ns-vt">Transformateurs de tension</a></li></ul>
+<a class="link mg__cta" href="/fr/produits/basse-tension/" tabindex="-1">Voir la gamme<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</li>
+<li class="mg__row"><a class="mg__item" href="/fr/produits/moyenne-tension/"><span class="mg__name">Moyenne tension</span><span class="mg__meta">3,6–72,5 kV</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="16" height="16"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+<div class="mg__pane">
+<span class="mg__img"><img src="/img/mimg-ritz_header-mittelspannung-960.webp" srcset="/img/mimg-ritz_header-mittelspannung-320.webp 320w, /img/mimg-ritz_header-mittelspannung-640.webp 640w, /img/mimg-ritz_header-mittelspannung-960.webp 960w" sizes="(max-width: 1400px) calc(26vw * 2.69), calc(360px * 2.69)" width="960" height="268" alt="" loading="lazy" decoding="async"></span>
+<div class="mg__body">
+<p class="mg__title">Transformateurs de mesure moyenne tension</p>
+<p class="mg__text">Transformateurs de courant, de tension et combinés pour l’intérieur et l’extérieur, protégés contre les contacts, pour le ferroviaire, les générateurs et la qualité de l’énergie.</p>
+<ul class="mg__subs"><li><a href="/fr/produits/moyenne-tension/#g-ms-indoor-ct">Transformateurs de courant pour l’intérieur</a></li><li><a href="/fr/produits/moyenne-tension/#g-ms-indoor-vt">Transformateurs de tension pour l’intérieur</a></li><li><a href="/fr/produits/moyenne-tension/#g-ms-outdoor-ct">Transformateurs de courant pour l’extérieur</a></li><li><a href="/fr/produits/moyenne-tension/#g-ms-metalclad">Transformateurs sous enveloppe métallique protégés contre les contacts</a></li><li><a href="/fr/produits/moyenne-tension/#g-ms-pq">Transformateurs pour la qualité de l’énergie</a></li></ul>
+<a class="link mg__cta" href="/fr/produits/moyenne-tension/" tabindex="-1">Voir la gamme<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</li>
+<li class="mg__row"><a class="mg__item" href="/fr/produits/haute-tension/"><span class="mg__name">Haute tension</span><span class="mg__meta">72,5–550 kV</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="16" height="16"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+<div class="mg__pane">
+<span class="mg__img"><img src="/img/mimg-Hochspannungswandler-Intro2-628.webp" srcset="/img/mimg-Hochspannungswandler-Intro2-320.webp 320w, /img/mimg-Hochspannungswandler-Intro2-628.webp 628w" sizes="(max-width: 1400px) 26vw, 360px" width="628" height="837" alt="" loading="lazy" decoding="async"></span>
+<div class="mg__body">
+<p class="mg__title">Transformateurs de mesure haute tension</p>
+<p class="mg__text">Transformateurs de courant, de tension et combinés à isolation papier-huile et transformateurs de tension capacitifs jusqu’à 550 kV.</p>
+<a class="link mg__cta" href="/fr/produits/haute-tension/" tabindex="-1">Voir la gamme<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</li>
+<li class="mg__row"><a class="mg__item" href="/fr/produits/electronique-capteurs/"><span class="mg__name">Électronique &amp; capteurs</span><span class="mg__meta">DC à 150 kHz</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="16" height="16"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+<div class="mg__pane">
+<span class="mg__img"><img src="/img/mimg-ritz_header-elektronik-960.webp" srcset="/img/mimg-ritz_header-elektronik-320.webp 320w, /img/mimg-ritz_header-elektronik-640.webp 640w, /img/mimg-ritz_header-elektronik-960.webp 960w" sizes="(max-width: 1400px) calc(26vw * 2.69), calc(360px * 2.69)" width="960" height="268" alt="" loading="lazy" decoding="async"></span>
+<div class="mg__body">
+<p class="mg__title">Transformateurs de mesure électroniques et capteurs</p>
+<p class="mg__text">Transformateurs électroniques pour la mesure DC et AC et capteurs passifs de faible puissance pour les réseaux intelligents.</p>
+<ul class="mg__subs"><li><a href="/fr/produits/electronique-capteurs/#g-es-electronic">Transformateurs de mesure électroniques</a></li><li><a href="/fr/produits/electronique-capteurs/#g-es-current">Capteurs de courant</a></li><li><a href="/fr/produits/electronique-capteurs/#g-es-voltage">Capteurs de tension</a></li></ul>
+<a class="link mg__cta" href="/fr/produits/electronique-capteurs/" tabindex="-1">Voir la gamme<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</li>
+<li class="mg__row"><a class="mg__item" href="/fr/produits/jeux-de-barres-sis/"><span class="mg__name">Jeux de barres SIS</span><span class="mg__meta">jusqu’à 40,5 kV, 8 000 A</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="16" height="16"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+<div class="mg__pane">
+<span class="mg__img"><img src="/img/mimg-SIS_Slider-960.webp" srcset="/img/mimg-SIS_Slider-320.webp 320w, /img/mimg-SIS_Slider-640.webp 640w, /img/mimg-SIS_Slider-960.webp 960w" sizes="(max-width: 1400px) calc(26vw * 2.69), calc(360px * 2.69)" width="960" height="268" alt="" loading="lazy" decoding="async"></span>
+<div class="mg__body">
+<p class="mg__title">Jeux de barres SIS et traversées SISD</p>
+<p class="mg__text">Jeux de barres entièrement isolés à répartition capacitive du champ pour courants élevés dans un espace restreint, ainsi que des traversées.</p>
+<a class="link mg__cta" href="/fr/produits/jeux-de-barres-sis/" tabindex="-1">Voir la gamme<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</li>
+<li class="mg__row"><a class="mg__item" href="/fr/produits/resine-coulee-duromer/"><span class="mg__name">Pièces en résine coulée DUROMER</span><span class="mg__meta">BT, MT &amp; électronique</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="16" height="16"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+<div class="mg__pane">
+<span class="mg__img"><img src="/img/mimg-ritz_header-duromer-960.webp" srcset="/img/mimg-ritz_header-duromer-320.webp 320w, /img/mimg-ritz_header-duromer-640.webp 640w, /img/mimg-ritz_header-duromer-960.webp 960w" sizes="(max-width: 1400px) calc(26vw * 2.69), calc(360px * 2.69)" width="960" height="268" alt="" loading="lazy" decoding="async"></span>
+<div class="mg__body">
+<p class="mg__title">Pièces et systèmes en résine coulée de DUROMER</p>
+<p class="mg__text">Systèmes de résine coulée, pièces moulées et appareils à isolation solide – de la formulation à la production en série.</p>
+<a class="link mg__cta" href="/fr/produits/resine-coulee-duromer/" tabindex="-1">Voir la gamme<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</li>
+</ul>
+<p class="mg__foot"><a href="/fr/recherche-produits/">Sélecteur de produits</a><a href="/fr/outils/analyse-specification/">Vérification de spécification</a><a href="/fr/produits/">Tous les produits</a></p>
+</div>
+</div></div>
+<div class="nav__item"><button class="nav__link" type="button" aria-expanded="false" aria-controls="mega-sectors" data-mega="sectors">Applications<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></button><div class="mega" id="mega-sectors" data-mega-panel="sectors" hidden>
+<div class="wrap mg">
+<ul class="mg__list">
+<li class="mg__row is-on"><a class="mg__item" href="/fr/applications/reseaux-energie/"><span class="mg__name">Fournisseurs d’énergie et réseaux</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="16" height="16"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+<div class="mg__pane">
+<span class="mg__img"><img src="/img/mimg-2022__06__image_empowering_the_future-640.webp" srcset="/img/mimg-2022__06__image_empowering_the_future-320.webp 320w, /img/mimg-2022__06__image_empowering_the_future-640.webp 640w" sizes="(max-width: 1400px) 26vw, 360px" width="640" height="458" alt="" loading="lazy" decoding="async"></span>
+<div class="mg__body">
+<p class="mg__title">Fournisseurs d’énergie et réseaux</p>
+<p class="mg__text">Comptage de facturation, protection et qualité du réseau, de la distribution locale à la très haute tension.</p>
+<a class="link mg__cta" href="/fr/applications/reseaux-energie/" tabindex="-1">En savoir plus<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</li>
+<li class="mg__row"><a class="mg__item" href="/fr/applications/fabricants-appareillage/"><span class="mg__name">Constructeurs d’appareillages</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="16" height="16"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+<div class="mg__pane">
+<span class="mg__img"><img src="/img/mimg-2022__07__unternehmen_qualitaetsmanagement_wandler_pruefung-408.webp" srcset="/img/mimg-2022__07__unternehmen_qualitaetsmanagement_wandler_pruefung-320.webp 320w, /img/mimg-2022__07__unternehmen_qualitaetsmanagement_wandler_pruefung-408.webp 408w" sizes="(max-width: 1400px) 26vw, 360px" width="408" height="408" alt="" loading="lazy" decoding="async"></span>
+<div class="mg__body">
+<p class="mg__title">Constructeurs d’appareillages</p>
+<p class="mg__text">Transformateurs selon DIN 42600, versions sous enveloppe métallique et capteurs pour vos appareillages.</p>
+<a class="link mg__cta" href="/fr/applications/fabricants-appareillage/" tabindex="-1">En savoir plus<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</li>
+<li class="mg__row"><a class="mg__item" href="/fr/applications/industrie-infrastructure/"><span class="mg__name">Industrie et infrastructures</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="16" height="16"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+<div class="mg__pane">
+<span class="mg__img"><img src="/img/mimg-Kundenreferenz-SIS-Projekt-BSW-3-640.webp" srcset="/img/mimg-Kundenreferenz-SIS-Projekt-BSW-3-320.webp 320w, /img/mimg-Kundenreferenz-SIS-Projekt-BSW-3-640.webp 640w" sizes="(max-width: 1400px) 26vw, 360px" width="640" height="480" alt="" loading="lazy" decoding="async"></span>
+<div class="mg__body">
+<p class="mg__title">Industrie et infrastructures</p>
+<p class="mg__text">Courants élevés, environnements difficiles et courant continu – de l’aciérie au centre de données.</p>
+<a class="link mg__cta" href="/fr/applications/industrie-infrastructure/" tabindex="-1">En savoir plus<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</li>
+<li class="mg__row"><a class="mg__item" href="/fr/applications/ferroviaire/"><span class="mg__name">Ferroviaire</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="16" height="16"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+<div class="mg__pane">
+<span class="mg__img"><img src="/img/mimg-2022__07__sonderwandler_bahnwandler_gsefb-623.webp" srcset="/img/mimg-2022__07__sonderwandler_bahnwandler_gsefb-320.webp 320w, /img/mimg-2022__07__sonderwandler_bahnwandler_gsefb-623.webp 623w" sizes="(max-width: 1400px) calc(26vw * 1.38), calc(360px * 1.38)" width="623" height="338" alt="" loading="lazy" decoding="async"></span>
+<div class="mg__body">
+<p class="mg__title">Ferroviaire</p>
+<p class="mg__text">Transformateurs pour le matériel roulant et les installations d’alimentation de traction – selon EN 50463 et STI.</p>
+<a class="link mg__cta" href="/fr/applications/ferroviaire/" tabindex="-1">En savoir plus<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</li>
+<li class="mg__row"><a class="mg__item" href="/fr/applications/renouvelables-ccht-qualite-reseau/"><span class="mg__name">Énergies renouvelables, CCHT et qualité de l’énergie</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="16" height="16"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+<div class="mg__pane">
+<span class="mg__img"><img src="/img/mimg-wind-energy-sq-960.webp" srcset="/img/mimg-wind-energy-sq-320.webp 320w, /img/mimg-wind-energy-sq-640.webp 640w, /img/mimg-wind-energy-sq-960.webp 960w" sizes="(max-width: 1400px) 26vw, 360px" width="960" height="960" alt="" loading="lazy" decoding="async"></span>
+<div class="mg__body">
+<p class="mg__title">Énergies renouvelables, CCHT et qualité de l’énergie</p>
+<p class="mg__text">Mesure DC pour CCHT et SVC, transformateurs large bande pour la qualité du réseau.</p>
+<a class="link mg__cta" href="/fr/applications/renouvelables-ccht-qualite-reseau/" tabindex="-1">En savoir plus<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</li>
+<li class="mg__row"><a class="mg__item" href="/fr/applications/centrales-generateurs/"><span class="mg__name">Centrales électriques et générateurs</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="16" height="16"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+<div class="mg__pane">
+<span class="mg__img"><img src="/img/mimg-IRBT-1-760.webp" srcset="/img/mimg-IRBT-1-320.webp 320w, /img/mimg-IRBT-1-640.webp 640w, /img/mimg-IRBT-1-760.webp 760w" sizes="(max-width: 1400px) calc(26vw * 1.25), calc(360px * 1.25)" width="760" height="455" alt="" loading="lazy" decoding="async"></span>
+<div class="mg__body">
+<p class="mg__title">Centrales électriques et générateurs</p>
+<p class="mg__text">Transformateurs pour générateurs jusqu’à 50 000 A, alimentation auxiliaire et haute tension.</p>
+<a class="link mg__cta" href="/fr/applications/centrales-generateurs/" tabindex="-1">En savoir plus<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</li>
+<li class="mg__row"><a class="mg__item" href="/fr/applications/comptage-essais/"><span class="mg__name">Mesure, essais et comptage</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="16" height="16"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+<div class="mg__pane">
+<span class="mg__img"><img src="/img/mimg-2022__07__unternehmen_qualitaetsmanagement_schienen_pruefung-408.webp" srcset="/img/mimg-2022__07__unternehmen_qualitaetsmanagement_schienen_pruefung-320.webp 320w, /img/mimg-2022__07__unternehmen_qualitaetsmanagement_schienen_pruefung-408.webp 408w" sizes="(max-width: 1400px) 26vw, 360px" width="408" height="408" alt="" loading="lazy" decoding="async"></span>
+<div class="mg__body">
+<p class="mg__title">Mesure, essais et comptage</p>
+<p class="mg__text">Transformateurs certifiables, transformateurs de laboratoire et accessoires pour l’armoire de comptage.</p>
+<a class="link mg__cta" href="/fr/applications/comptage-essais/" tabindex="-1">En savoir plus<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</li>
+</ul>
+<p class="mg__foot"><a href="/fr/applications/">Toutes les applications</a></p>
+</div>
+</div></div>
 <div class="nav__item"><a class="nav__link" href="/fr/outils/">Outils</a></div>
 <div class="nav__item"><a class="nav__link" href="/fr/telechargements/">Téléchargements</a></div>
-<div class="nav__item"><button class="nav__link" type="button" aria-expanded="false" aria-controls="mega-company" data-mega="company">Entreprise<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></button></div>
+<div class="nav__item"><button class="nav__link" type="button" aria-expanded="false" aria-controls="mega-company" data-mega="company">Entreprise<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></button><div class="mega" id="mega-company" data-mega-panel="company" hidden>
+<div class="wrap mg">
+<ul class="mg__list">
+<li class="mg__row is-on"><a class="mg__item" href="/fr/entreprise/"><span class="mg__name">À propos de RITZ</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="16" height="16"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+<div class="mg__pane">
+<span class="mg__img"><img src="/img/mimg-ritz_header-unternehmen-960.webp" srcset="/img/mimg-ritz_header-unternehmen-320.webp 320w, /img/mimg-ritz_header-unternehmen-640.webp 640w, /img/mimg-ritz_header-unternehmen-960.webp 960w" sizes="(max-width: 1400px) calc(26vw * 2.69), calc(360px * 2.69)" width="960" height="268" alt="" loading="lazy" decoding="async"></span>
+<div class="mg__body">
+<p class="mg__title">À propos de RITZ</p>
+<p class="mg__text">Propriété de la Fondation RITZ, à Hambourg depuis 1945.</p>
+<a class="link mg__cta" href="/fr/entreprise/" tabindex="-1">En savoir plus<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</li>
+<li class="mg__row"><a class="mg__item" href="/fr/entreprise/sites/"><span class="mg__name">Sites</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="16" height="16"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+<div class="mg__pane">
+<span class="mg__img"><img src="/img/mimg-Luftbild_Kirchaich_2014_klein-960.webp" srcset="/img/mimg-Luftbild_Kirchaich_2014_klein-320.webp 320w, /img/mimg-Luftbild_Kirchaich_2014_klein-640.webp 640w, /img/mimg-Luftbild_Kirchaich_2014_klein-960.webp 960w" sizes="(max-width: 1400px) calc(26vw * 1.13), calc(360px * 1.13)" width="960" height="640" alt="" loading="lazy" decoding="async"></span>
+<div class="mg__body">
+<p class="mg__title">Sites</p>
+<p class="mg__text">De Hambourg à Waynesboro : nos usines sont étroitement interconnectées et accompagnent les clients depuis leur propre région.</p>
+<a class="link mg__cta" href="/fr/entreprise/sites/" tabindex="-1">En savoir plus<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</li>
+<li class="mg__row"><a class="mg__item" href="/fr/entreprise/qualite/"><span class="mg__name">Qualité &amp; certificats</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="16" height="16"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+<div class="mg__pane">
+<span class="mg__img"><img src="/img/mimg-JKI1023-2-960.webp" srcset="/img/mimg-JKI1023-2-320.webp 320w, /img/mimg-JKI1023-2-640.webp 640w, /img/mimg-JKI1023-2-960.webp 960w" sizes="(max-width: 1400px) 26vw, 360px" width="960" height="1440" alt="" loading="lazy" decoding="async"></span>
+<div class="mg__body">
+<p class="mg__title">Qualité &amp; certificats</p>
+<p class="mg__text">Notre management de la qualité couvre toutes les étapes – du développement, de la conception et des achats à la fabrication et aux essais, jusqu’à la …</p>
+<a class="link mg__cta" href="/fr/entreprise/qualite/" tabindex="-1">En savoir plus<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</li>
+<li class="mg__row"><a class="mg__item" href="/fr/entreprise/responsabilite/"><span class="mg__name">Responsabilité</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="16" height="16"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+<div class="mg__pane">
+<span class="mg__img"><img src="/img/mimg-wind-energy-sq-960.webp" srcset="/img/mimg-wind-energy-sq-320.webp 320w, /img/mimg-wind-energy-sq-640.webp 640w, /img/mimg-wind-energy-sq-960.webp 960w" sizes="(max-width: 1400px) 26vw, 360px" width="960" height="960" alt="" loading="lazy" decoding="async"></span>
+<div class="mg__body">
+<p class="mg__title">Responsabilité</p>
+<p class="mg__text">Le nom RITZ est étroitement lié à la Fondation RITZ. Nous nous appuyons sur les principes environnementaux, sociaux et de gouvernance – et …</p>
+<a class="link mg__cta" href="/fr/entreprise/responsabilite/" tabindex="-1">En savoir plus<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</li>
+<li class="mg__row"><a class="mg__item" href="/fr/entreprise/references/"><span class="mg__name">Références</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="16" height="16"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+<div class="mg__pane">
+<span class="mg__img"><img src="/img/mimg-JKI0984-2-2048x1366-960.webp" srcset="/img/mimg-JKI0984-2-2048x1366-320.webp 320w, /img/mimg-JKI0984-2-2048x1366-640.webp 640w, /img/mimg-JKI0984-2-2048x1366-960.webp 960w" sizes="(max-width: 1400px) calc(26vw * 1.12), calc(360px * 1.12)" width="960" height="640" alt="" loading="lazy" decoding="async"></span>
+<div class="mg__body">
+<p class="mg__title">Références</p>
+<p class="mg__text">Nombre de nos relations clients durent depuis des décennies – elles témoignent de la qualité de nos produits, de nos conseils et de notre support …</p>
+<a class="link mg__cta" href="/fr/entreprise/references/" tabindex="-1">En savoir plus<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div></div>
 <div class="nav__item"><a class="nav__link" href="/fr/carriere/">Carrière</a></div>
 <div class="nav__item"><a class="nav__link" href="/fr/actualites/">Actualités</a></div>
 </nav>
@@ -49,49 +249,6 @@
 </div>
 <a class="btn btn--small hdr__cta" href="/fr/contact/">Contact</a>
 <button class="icon-btn burger" type="button" data-drawer-open aria-label="Menu" aria-expanded="false" aria-controls="drawer"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 7h18M3 12h18M3 17h18"/></svg></button>
-</div>
-</div>
-<div class="mega" id="mega-products" data-mega-panel="products" hidden>
-<div class="wrap mega__inner">
-<div class="mega__col">
-<a class="mega__title" href="/fr/produits/moyenne-tension/">Moyenne tension<span class="kv">3,6–72,5 kV</span></a>
-<ul class="mega__list"><li><a href="/fr/produits/moyenne-tension/#g-ms-indoor-ct">Transformateurs de courant pour l’intérieur</a></li><li><a href="/fr/produits/moyenne-tension/#g-ms-indoor-vt">Transformateurs de tension pour l’intérieur</a></li><li><a href="/fr/produits/moyenne-tension/#g-ms-outdoor-ct">Transformateurs de courant pour l’extérieur</a></li><li><a href="/fr/produits/moyenne-tension/#g-ms-metalclad">Transformateurs sous enveloppe métallique protégés contre les contacts</a></li><li><a href="/fr/produits/moyenne-tension/#g-ms-pq">Transformateurs pour la qualité de l’énergie</a></li>
-</ul>
-<a class="mega__title" href="/fr/produits/basse-tension/">Basse tension<span class="kv">0,72–3,6 kV</span></a>
-<ul class="mega__list"><li><a href="/fr/produits/basse-tension/#g-ns-window">Transformateurs de courant à fenêtre</a></li><li><a href="/fr/produits/basse-tension/#g-ns-bushing">Transformateurs de courant à fenêtre en résine coulée</a></li><li><a href="/fr/produits/basse-tension/#g-ns-splitcore">Transformateurs de courant à tore ouvrant</a></li><li><a href="/fr/produits/basse-tension/#g-ns-vt">Transformateurs de tension</a></li>
-</ul></div>
-<div class="mega__col">
-<a class="mega__title" href="/fr/produits/haute-tension/">Haute tension<span class="kv">72,5–550 kV</span></a>
-<ul class="mega__list">
-<li><a href="/fr/produits/haute-tension/">Transformateurs de courant, de tension et combinés à isolation papier-huile et transformateurs de tension capacitifs jusqu’à 550 kV.</a></li></ul>
-<a class="mega__title" href="/fr/produits/electronique-capteurs/">Électronique &amp; capteurs<span class="kv">DC à 150 kHz</span></a>
-<ul class="mega__list"><li><a href="/fr/produits/electronique-capteurs/#g-es-electronic">Transformateurs de mesure électroniques</a></li><li><a href="/fr/produits/electronique-capteurs/#g-es-current">Capteurs de courant</a></li><li><a href="/fr/produits/electronique-capteurs/#g-es-voltage">Capteurs de tension</a></li>
-</ul></div>
-<div class="mega__col">
-<a class="mega__title" href="/fr/produits/jeux-de-barres-sis/">Jeux de barres SIS<span class="kv">jusqu’à 40,5 kV, 8 000 A</span></a>
-<ul class="mega__list">
-<li><a href="/fr/produits/jeux-de-barres-sis/">Jeux de barres entièrement isolés à répartition capacitive du champ pour courants élevés dans un espace restreint, ainsi que des traversées.</a></li></ul>
-<a class="mega__title" href="/fr/produits/resine-coulee-duromer/">Pièces en résine coulée DUROMER<span class="kv">BT, MT &amp; électronique</span></a>
-<ul class="mega__list">
-<li><a href="/fr/produits/resine-coulee-duromer/">Systèmes de résine coulée, pièces moulées et appareils à isolation solide – de la formulation à la production en série.</a></li></ul></div>
-<div class="mega__feature">
-<strong class="h4">Trouver le transformateur adapté</strong>
-<p>Filtrez plus de 290 types par niveau de tension, courant primaire, classe de précision et norme, configurez-les et envoyez directement une demande.</p>
-<a class="btn btn--light btn--small" href="/fr/recherche-produits/">Ouvrir le sélecteur de produits</a>
-<a class="link link--light" href="/fr/outils/analyse-specification/">Vérification de spécification</a>
-<a class="link link--light" href="/fr/produits/">Tous les produits</a>
-</div>
-</div>
-</div>
-<div class="mega" id="mega-sectors" data-mega-panel="sectors" hidden>
-<div class="wrap mega__simple">
-<a class="mega__card" href="/fr/applications/reseaux-energie/"><strong>Fournisseurs d’énergie et réseaux</strong><span>Comptage de facturation, protection et qualité du réseau, de la distribution locale à la très haute tension.</span></a><a class="mega__card" href="/fr/applications/fabricants-appareillage/"><strong>Constructeurs d’appareillages</strong><span>Transformateurs selon DIN 42600, versions sous enveloppe métallique et capteurs pour vos appareillages.</span></a><a class="mega__card" href="/fr/applications/industrie-infrastructure/"><strong>Industrie et infrastructures</strong><span>Courants élevés, environnements difficiles et courant continu – de l’aciérie au centre de données.</span></a><a class="mega__card" href="/fr/applications/ferroviaire/"><strong>Ferroviaire</strong><span>Transformateurs pour le matériel roulant et les installations d’alimentation de traction – selon EN 50463 et STI.</span></a><a class="mega__card" href="/fr/applications/renouvelables-ccht-qualite-reseau/"><strong>Énergies renouvelables, CCHT et qualité de l’énergie</strong><span>Mesure DC pour CCHT et SVC, transformateurs large bande pour la qualité du réseau.</span></a><a class="mega__card" href="/fr/applications/centrales-generateurs/"><strong>Centrales électriques et générateurs</strong><span>Transformateurs pour générateurs jusqu’à 50 000 A, alimentation auxiliaire et haute tension.</span></a><a class="mega__card" href="/fr/applications/comptage-essais/"><strong>Mesure, essais et comptage</strong><span>Transformateurs certifiables, transformateurs de laboratoire et accessoires pour l’armoire de comptage.</span></a>
-<a class="mega__card" href="/fr/applications/"><strong>Applications</strong><span>Les transformateurs de mesure font partie de presque toutes les installations électriques. Trouvez ici les produits adaptés à votre domaine d’application.</span></a>
-</div>
-</div>
-<div class="mega" id="mega-company" data-mega-panel="company" hidden>
-<div class="wrap mega__simple">
-<a class="mega__card" href="/fr/entreprise/"><strong>À propos de RITZ</strong><span>Propriété de la Fondation RITZ, à Hambourg depuis 1945.</span></a><a class="mega__card" href="/fr/entreprise/sites/"><strong>Sites</strong><span>De Hambourg à Waynesboro : nos usines sont étroitement interconnectées et accompagnent les clients depuis …</span></a><a class="mega__card" href="/fr/entreprise/qualite/"><strong>Qualité &amp; certificats</strong><span>Notre management de la qualité couvre toutes les étapes – du développement, de la conception et des achats à …</span></a><a class="mega__card" href="/fr/entreprise/responsabilite/"><strong>Responsabilité</strong><span>Le nom RITZ est étroitement lié à la Fondation RITZ. Nous nous appuyons sur les principes environnementaux …</span></a><a class="mega__card" href="/fr/entreprise/references/"><strong>Références</strong><span>Nombre de nos relations clients durent depuis des décennies – elles témoignent de la qualité de nos produits …</span></a><a class="mega__card" href="/fr/carriere/"><strong>Carrière</strong><span>Plus de 20 métiers sur des sites en Europe, en Chine et aux États-Unis.</span></a><a class="mega__card" href="/fr/actualites/"><strong>Actualités</strong><span>Nouveaux produits, projets, rendez-vous et coulisses du groupe RITZ.</span></a><a class="mega__card" href="/fr/contact/"><strong>Contact</strong><span>Questions, assistance technique ou projet concret : nos experts vous conseillent personnellement.</span></a>
 </div>
 </div>
 </header>
@@ -156,235 +313,121 @@
 <div class="intro__logo"><svg viewBox="0 0 258.72 140.09" focusable="false"><polygon class="intro__diamond" points="129.4,0 258.7,70.1 129.3,140.1 0,70.1" pathLength="1"/><path class="intro__frame" d="M74.74,103.3h109.25l-54.62,29.99-54.62-29.99ZM12.89,70.11l51.17-28.1H194.66l51.17,28.1-51.17,27.57H64.06L12.89,70.11ZM129.36,6.64l54.62,29.76H74.74L129.36,6.64Zm.05-6.64L0,70.11l129.31,69.98,129.41-69.98L129.41,0Z"/><g class="intro__mark"><path class="intro__ch" style="--i:0" d="M84.2,57.19c4.75,0,7.08,.9,7.08,5.06s-2.33,5.12-7.08,5.12h-9.78v-10.18h9.78ZM66.45,49.99v40.37h7.98v-15.85h9.4l8.35,15.85h8.98l-9.46-16.87c4.91-1.12,7.66-5.12,7.66-11.36,0-8.49-4.28-12.14-13.26-12.14h-19.66Z"/><path class="intro__ch" style="--i:1" d="M117.12,49.99h-8.35v40.37h8.35V49.99Z"/><path class="intro__ch" style="--i:2" d="M135.93,57.07v33.28h8.24V57.08h12.31v-7.03h-32.81v7.03h12.26Z"/><path class="intro__ch" style="--i:3" d="M172.99,83.46l19.27-33.73h-29.93v6.9h16.36l-19.33,33.73h31.85v-6.9h-18.23Z"/></g></svg><p class="intro__tag">Transformateurs de mesure depuis 1945</p></div>
 </div>
 <button class="intro__skip" type="button" data-intro-skip>Passer l’intro</button>
-<section class="hero2 hero--anim" data-hero2 aria-label="Images de nos usines">
-<div class="hero2__media"><figure class="hero2__slide is-on" data-slide="0" style="--pos:62% 50%"><img src="/img/mimg-intro_home_slider_7-1800.webp" srcset="/img/mimg-intro_home_slider_7-320.webp 320w, /img/mimg-intro_home_slider_7-640.webp 640w, /img/mimg-intro_home_slider_7-960.webp 960w, /img/mimg-intro_home_slider_7-1280.webp 1280w, /img/mimg-intro_home_slider_7-1800.webp 1800w" sizes="(max-width: 700px) 1800px, (max-width: 1100px) 150vw, 100vw" width="1800" height="813" alt="" fetchpriority="high" decoding="async"></figure><figure class="hero2__slide" data-slide="1" style="--pos:68% 35%"><img src="/img/mimg-stellenangebote_intro_slider_2_Produktion-1800.webp" srcset="/img/mimg-stellenangebote_intro_slider_2_Produktion-320.webp 320w, /img/mimg-stellenangebote_intro_slider_2_Produktion-640.webp 640w, /img/mimg-stellenangebote_intro_slider_2_Produktion-960.webp 960w, /img/mimg-stellenangebote_intro_slider_2_Produktion-1280.webp 1280w, /img/mimg-stellenangebote_intro_slider_2_Produktion-1800.webp 1800w" sizes="(max-width: 700px) 1800px, (max-width: 1100px) 150vw, 100vw" width="1800" height="813" alt="" loading="lazy" decoding="async"></figure><figure class="hero2__slide" data-slide="2" style="--pos:58% 50%"><img src="/img/mimg-intro_home_slider_6-1800.webp" srcset="/img/mimg-intro_home_slider_6-320.webp 320w, /img/mimg-intro_home_slider_6-640.webp 640w, /img/mimg-intro_home_slider_6-960.webp 960w, /img/mimg-intro_home_slider_6-1280.webp 1280w, /img/mimg-intro_home_slider_6-1800.webp 1800w" sizes="(max-width: 700px) 1800px, (max-width: 1100px) 150vw, 100vw" width="1800" height="813" alt="" loading="lazy" decoding="async"></figure><figure class="hero2__slide" data-slide="3" style="--pos:60% 50%"><img src="/img/mimg-intro_home_slider_4-1800.webp" srcset="/img/mimg-intro_home_slider_4-320.webp 320w, /img/mimg-intro_home_slider_4-640.webp 640w, /img/mimg-intro_home_slider_4-960.webp 960w, /img/mimg-intro_home_slider_4-1280.webp 1280w, /img/mimg-intro_home_slider_4-1800.webp 1800w" sizes="(max-width: 700px) 1800px, (max-width: 1100px) 150vw, 100vw" width="1800" height="813" alt="" loading="lazy" decoding="async"></figure></div>
-<div class="wrap hero2__inner">
-<h1><span class="h1w"><span style="--i:0">Nous</span></span> <span class="h1w"><span style="--i:1">rendons</span></span> <span class="h1w"><span style="--i:2">l’énergie</span></span> <span class="h1w"><span style="--i:3">mesurable.</span></span></h1>
-<p class="lead">Transformateurs de courant et de tension, capteurs, jeux de barres et pièces en résine coulée de 0,72 à 550 kV – développés et fabriqués en Europe, en Chine et aux États-Unis.</p>
-<form class="hero__search" role="search" action="/fr/recherche/" data-hero-search>
-<label class="vh" for="hero-q">Code de type, tension ou application</label>
-<input id="hero-q" name="q" type="search" placeholder="p. ex. GSO 1910, 24 kV ou ferroviaire" autocomplete="off">
-<button type="submit"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg><span>Rechercher</span></button>
-</form>
-<p class="hero__hint">Exemples : <button type="button" data-hint="GSO 1910">GSO 1910</button>, <button type="button" data-hint="KGBEI">KGBEI</button>, <button type="button" data-hint="24 kV">24 kV</button>, <button type="button" data-hint="Ferroviaire">Ferroviaire</button>, <button type="button" data-hint="Générateur">Générateur</button></p>
-<div class="hero2__cta"><a class="btn btn--red" href="/fr/produits/">Découvrir les produits</a><a class="btn btn--light" href="/fr/demande/">Envoyer une demande</a></div>
+<section class="st hero--anim" data-stage aria-labelledby="st-title">
+<div class="st__media" aria-hidden="true">
+<div class="st__frame">
+<img src="/img/mimg-intro_home_slider_6-1800.webp" srcset="/img/mimg-intro_home_slider_6-320.webp 320w, /img/mimg-intro_home_slider_6-640.webp 640w, /img/mimg-intro_home_slider_6-960.webp 960w, /img/mimg-intro_home_slider_6-1280.webp 1280w, /img/mimg-intro_home_slider_6-1800.webp 1800w" sizes="(max-aspect-ratio: 9/4) 230vh, 100vw" width="1800" height="813" alt="" class="st__photo" fetchpriority="high" decoding="async">
+<svg class="hud" viewBox="0 0 1800 813" preserveAspectRatio="none" focusable="false">
+<circle class="hud__glow" cx="1172" cy="437" r="300"/>
+<circle class="hud__ring" cx="1172" cy="437" r="300" pathLength="1"/>
+<path class="hud__ticks" d="M1485.6 453.4L1493.6 453.9M1484.3 469.8L1492.2 470.7M1482.1 486.1L1490.0 487.4M1479.1 502.3L1487.0 503.9M1470.6 534.0L1478.2 536.5M1465.1 549.5L1472.6 552.4M1458.9 564.7L1466.2 568.0M1451.8 579.6L1458.9 583.2M1435.3 608.0L1442.1 612.4M1426.0 621.6L1432.5 626.3M1416.0 634.6L1422.2 639.6M1405.3 647.1L1411.3 652.5M1382.1 670.3L1387.5 676.3M1369.6 681.0L1374.6 687.2M1356.6 691.0L1361.3 697.5M1343.0 700.3L1347.4 707.1M1314.6 716.8L1318.2 723.9M1299.7 723.9L1303.0 731.2M1284.5 730.1L1287.4 737.6M1269.0 735.6L1271.5 743.2M1237.3 744.1L1238.9 752.0M1221.1 747.1L1222.4 755.0M1204.8 749.3L1205.7 757.2M1188.4 750.6L1188.9 758.6M1155.6 750.6L1155.1 758.6M1139.2 749.3L1138.3 757.2M1122.9 747.1L1121.6 755.0M1106.7 744.1L1105.1 752.0M1075.0 735.6L1072.5 743.2M1059.5 730.1L1056.6 737.6M1044.3 723.9L1041.0 731.2M1029.4 716.8L1025.8 723.9M1001.0 700.3L996.6 707.1M987.4 691.0L982.7 697.5M974.4 681.0L969.4 687.2M961.9 670.3L956.5 676.3M938.7 647.1L932.7 652.5M928.0 634.6L921.8 639.6M918.0 621.6L911.5 626.3M908.7 608.0L901.9 612.4M892.2 579.6L885.1 583.2M885.1 564.7L877.8 568.0M878.9 549.5L871.4 552.4M873.4 534.0L865.8 536.5M864.9 502.3L857.0 503.9M861.9 486.1L854.0 487.4M859.7 469.8L851.8 470.7M858.4 453.4L850.4 453.9M858.4 420.6L850.4 420.1M859.7 404.2L851.8 403.3M861.9 387.9L854.0 386.6M864.9 371.7L857.0 370.1M873.4 340.0L865.8 337.5M878.9 324.5L871.4 321.6M885.1 309.3L877.8 306.0M892.2 294.4L885.1 290.8M908.7 266.0L901.9 261.6M918.0 252.4L911.5 247.7M928.0 239.4L921.8 234.4M938.7 226.9L932.7 221.5M961.9 203.7L956.5 197.7M974.4 193.0L969.4 186.8M987.4 183.0L982.7 176.5M1001.0 173.7L996.6 166.9M1029.4 157.2L1025.8 150.1M1044.3 150.1L1041.0 142.8M1059.5 143.9L1056.6 136.4M1075.0 138.4L1072.5 130.8M1106.7 129.9L1105.1 122.0M1122.9 126.9L1121.6 119.0M1139.2 124.7L1138.3 116.8M1155.6 123.4L1155.1 115.4M1188.4 123.4L1188.9 115.4M1204.8 124.7L1205.7 116.8M1221.1 126.9L1222.4 119.0M1237.3 129.9L1238.9 122.0M1269.0 138.4L1271.5 130.8M1284.5 143.9L1287.4 136.4M1299.7 150.1L1303.0 142.8M1314.6 157.2L1318.2 150.1M1343.0 173.7L1347.4 166.9M1356.6 183.0L1361.3 176.5M1369.6 193.0L1374.6 186.8M1382.1 203.7L1387.5 197.7M1405.3 226.9L1411.3 221.5M1416.0 239.4L1422.2 234.4M1426.0 252.4L1432.5 247.7M1435.3 266.0L1442.1 261.6M1451.8 294.4L1458.9 290.8M1458.9 309.3L1466.2 306.0M1465.1 324.5L1472.6 321.6M1470.6 340.0L1478.2 337.5M1479.1 371.7L1487.0 370.1M1482.1 387.9L1490.0 386.6M1484.3 404.2L1492.2 403.3M1485.6 420.6L1493.6 420.1"/><path class="hud__major" d="M1486.0 437.0L1504.0 437.0M1475.3 518.3L1492.7 522.9M1443.9 594.0L1459.5 603.0M1394.0 659.0L1406.8 671.8M1329.0 708.9L1338.0 724.5M1253.3 740.3L1257.9 757.7M1172.0 751.0L1172.0 769.0M1090.7 740.3L1086.1 757.7M1015.0 708.9L1006.0 724.5M950.0 659.0L937.2 671.8M900.1 594.0L884.5 603.0M868.7 518.3L851.3 522.9M858.0 437.0L840.0 437.0M868.7 355.7L851.3 351.1M900.1 280.0L884.5 271.0M950.0 215.0L937.2 202.2M1015.0 165.1L1006.0 149.5M1090.7 133.7L1086.1 116.3M1172.0 123.0L1172.0 105.0M1253.3 133.7L1257.9 116.3M1329.0 165.1L1338.0 149.5M1394.0 215.0L1406.8 202.2M1443.9 280.0L1459.5 271.0M1475.3 355.7L1492.7 351.1"/>
+<g class="hud__rot"><path class="hud__scan" d="M1289.0 115.6A342 342 0 0 1 1497.3 331.3"/><path class="hud__scan hud__scan--2" d="M1055.0 758.4A342 342 0 0 1 846.7 542.7"/></g>
+<g class="hud__rot hud__rot--rev"><path class="hud__flow" d="M837.5 315.2A356 356 0 0 1 952.8 156.5"/><path class="hud__flow" d="M1506.5 558.8A356 356 0 0 1 1391.2 717.5"/></g>
+<path class="hud__cross" d="M1190 437L1218 437M1154 437L1126 437M1172 455L1172 483M1172 419L1172 391"/>
+<path class="hud__lead hud__lead--1" d="M1172 437L1088 521L1036 521" pathLength="1"/>
+<path class="hud__lead hud__lead--2" d="M1442 211L1380 140L1292 140" pathLength="1"/>
+<circle class="hud__dot" cx="1172" cy="437" r="5"/><circle class="hud__dot hud__dot--2" cx="1442" cy="211" r="5"/>
+</svg>
+<span class="st__chip st__chip--a" style="left:57.22%;top:64.08%">Fenêtre pour le conducteur primaire</span>
+<span class="st__chip st__chip--b" style="left:71.44%;top:17.22%">Tore et enroulement moulés en résine</span>
+<span class="st__read" style="left:69.00%;top:80.07%">
+<span class="st__trace"><b>Courant primaire</b><i>2000 A</i><svg viewBox="0 0 120 40" preserveAspectRatio="none" focusable="false"><path d="M0 20.0L4 13.9L8 8.9L12 5.7L16 5.1L20 7.0L24 11.2L28 16.9L32 23.1L36 28.8L40 33.0L44 34.9L48 34.3L52 31.1L56 26.1L60 20.0L64 13.9L68 8.9L72 5.7L76 5.1L80 7.0L84 11.2L88 16.9L92 23.1L96 28.8L100 33.0L104 34.9L108 34.3L112 31.1L116 26.1L120 20.0L124 13.9L128 8.9L132 5.7L136 5.1L140 7.0L144 11.2L148 16.9L152 23.1L156 28.8L160 33.0L164 34.9L168 34.3L172 31.1L176 26.1L180 20.0L184 13.9L188 8.9L192 5.7L196 5.1L200 7.0L204 11.2L208 16.9L212 23.1L216 28.8L220 33.0L224 34.9L228 34.3L232 31.1L236 26.1L240 20.0"/></svg></span>
+<span class="st__trace st__trace--s"><b>Courant secondaire</b><i>5 A</i><svg viewBox="0 0 120 40" preserveAspectRatio="none" focusable="false"><path d="M0 20.0L4 18.4L8 17.0L12 16.2L16 16.0L20 16.5L24 17.6L28 19.2L32 20.8L36 22.4L40 23.5L44 24.0L48 23.8L52 23.0L56 21.6L60 20.0L64 18.4L68 17.0L72 16.2L76 16.0L80 16.5L84 17.6L88 19.2L92 20.8L96 22.4L100 23.5L104 24.0L108 23.8L112 23.0L116 21.6L120 20.0L124 18.4L128 17.0L132 16.2L136 16.0L140 16.5L144 17.6L148 19.2L152 20.8L156 22.4L160 23.5L164 24.0L168 23.8L172 23.0L176 21.6L180 20.0L184 18.4L188 17.0L192 16.2L196 16.0L200 16.5L204 17.6L208 19.2L212 20.8L216 22.4L220 23.5L224 24.0L228 23.8L232 23.0L236 21.6L240 20.0"/></svg></span>
+</span>
 </div>
-<div class="hero2__ctl wrap" data-hero2-ctl>
-<div class="hero2__dots"><button type="button" data-goto="0" aria-label="Image 1 sur 4" aria-current="true"><i></i></button><button type="button" data-goto="1" aria-label="Image 2 sur 4"><i></i></button><button type="button" data-goto="2" aria-label="Image 3 sur 4"><i></i></button><button type="button" data-goto="3" aria-label="Image 4 sur 4"><i></i></button></div>
-<button class="hero2__pause" type="button" data-hero2-pause aria-pressed="false" aria-label="Mettre le diaporama en pause" data-l-pause="Mettre le diaporama en pause" data-l-play="Reprendre le diaporama"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="16" height="16"><path d="M8 5v14M16 5v14"/></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="16" height="16"><path d="M7 4.5v15l12-7.5z"/></svg></button>
 </div>
-<div class="hero2__facts">
-<dl class="wrap hero2__fl" data-reveal="facts"><div class="hero2__fact"><dt>fondée à Hambourg</dt><dd><strong data-count>1945</strong></dd></div><div class="hero2__fact"><dt>collaborateurs</dt><dd><strong data-count>1 500+</strong></dd></div><div class="hero2__fact"><dt>usines dans 5 pays</dt><dd><strong data-count>7</strong></dd></div><div class="hero2__fact"><dt>plage de tension</dt><dd><strong>0,72–550<small>kV</small></strong></dd></div><div class="hero2__fact"><dt>pays avec représentation</dt><dd><strong data-count>60</strong></dd></div></dl>
+<div class="wrap st__inner">
+<h1 class="st__title" id="st-title"><span class="h1w"><span style="--i:0">Nous</span></span> <span class="h1w"><span style="--i:1">rendons</span></span> <span class="h1w"><span style="--i:2">l’énergie</span></span> <span class="h1w"><span style="--i:3">mesurable.</span></span></h1>
+<p class="st__lead">Depuis 1945, RITZ développe et fabrique des transformateurs de mesure, des capteurs et des jeux de barres pour les réseaux, l’industrie et le ferroviaire – de 0,72 à 550 kV.</p>
+<div class="st__links"><a class="btn btn--light" href="#prinzip">En savoir plus</a><a class="link link--light" href="/fr/produits/">Voir les produits</a></div>
+</div>
+<div class="st__foot">
+<dl class="wrap st__ruler" data-reveal="facts"><div class="st__fact"><dt>fondée à Hambourg</dt><dd><strong data-count>1945</strong></dd></div><div class="st__fact"><dt>collaborateurs</dt><dd><strong data-count>1 500+</strong></dd></div><div class="st__fact"><dt>usines dans 5 pays</dt><dd><strong data-count>7</strong></dd></div><div class="st__fact"><dt>plage de tension</dt><dd><strong>0,72–550<small>kV</small></strong></dd></div><div class="st__fact"><dt>pays avec représentation</dt><dd><strong data-count>60</strong></dd></div></dl>
 </div>
 </section>
-<nav class="wrap tasks-wrap" aria-labelledby="help-title">
-<h2 class="tasks__title" id="help-title">Comment pouvons-nous vous aider ?</h2>
-<div class="tasks"><a class="task" href="/fr/telechargements/"><strong><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Trouver une fiche technique</strong><span>Filtrez plus de 1 200 documents par type, gamme et langue.</span></a><a class="task" href="/fr/recherche-produits/"><strong><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12M20 18h0"/><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="18" r="2"/></svg>Configurer un transformateur</strong><span>Choisissez la version et envoyez-la directement sous forme de demande.</span></a><a class="task" href="/fr/contact/"><strong><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>Interlocuteurs</strong><span>Service commercial, usines et représentants dans plus de 50 pays.</span></a><a class="task" href="/fr/entreprise/qualite/"><strong><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Certificats</strong><span>ISO 9001, 14001, 50001, ISO/IEC 17025, IRIS et AEO.</span></a></div>
-</nav>
-<section class="section">
+<section class="ch" id="prinzip" aria-labelledby="pr-title">
+<div class="wrap ch__split">
+<h2 class="ch__title" id="pr-title" data-reveal="head">Courants élevés. Transformés avec précision.</h2>
+<div class="ch__body" data-reveal="head"><p class="ch__text">Un transformateur de mesure convertit les courants et tensions du réseau en petites grandeurs de mesure normalisées – proportionnelles, en phase et isolées galvaniquement. Compteurs, relais de protection et conduite de réseau s’y fient, souvent pendant des décennies.</p></div>
+</div>
+<div class="wrap ch__figs"><dl class="figs" data-reveal="facts"><div class="fig"><dt>classe de précision pour le comptage de facturation</dt><dd>0,2S</dd></div><div class="fig"><dt>courants dans les liaisons de générateurs</dt><dd>50 000 A</dd></div><div class="fig"><dt>niveau de tension le plus élevé de la gamme</dt><dd>550 kV</dd></div></dl></div>
+</section>
+<section class="ch ch--porcelain" aria-labelledby="sp-title">
 <div class="wrap">
-<div class="section-head section-head--row" data-reveal="head"><div class="stack" style="--s:.75rem"><h2>Gammes de produits</h2><p class="lead">Six gammes, une même exigence : une mesure précise et une longue durée de vie dans les conditions réelles du réseau.</p></div><a class="btn btn--ghost" href="/fr/recherche-produits/">Ouvrir le sélecteur de produits</a></div>
-<div class="areas-axis"><div class="vaxis vaxis--light" data-vaxis data-counts="206,196,75,64,63,66,71,48,19,21,13,4,4,4,4,1,1,1">
-<div class="vaxis__head">
-<span class="vaxis__title" id="vaxis-title">Votre niveau de tension</span>
-<span class="vaxis__readout"><strong data-vaxis-value>24&nbsp;kV</strong><span data-vaxis-count aria-live="polite">Produits correspondants : 71</span></span>
+<div class="ch__head" data-reveal="head"><h2 class="ch__title" id="sp-title">De 0,72 à 550 kV.</h2><p class="ch__lead">Six domaines de produits, une seule mission : mesurer le courant et la tension avec exactitude – de l’armoire électrique au poste de transformation.</p></div>
+<div class="sp" data-spectrum>
+<div class="sp__chart" data-reveal="chart">
+<div class="sp__axis" aria-hidden="true"><span class="sp__tick" style="left:4.94%"><span>0,72</span></span><span class="sp__tick" style="left:11.87%"><span>1,2</span></span><span class="sp__tick" style="left:26.76%"><span>3,6</span></span><span class="sp__tick" style="left:43.08%"><span>12</span></span><span class="sp__tick" style="left:57.97%"><span>36</span></span><span class="sp__tick" style="left:67.46%"><span>72,5</span></span><span class="sp__tick" style="left:76.85%"><span>145</span></span><span class="sp__tick" style="left:83.96%"><span>245</span></span><span class="sp__tick" style="left:94.92%"><span>550 kV</span></span></div>
+<ul class="sp__rows"><li><a class="sp__row" href="/fr/produits/basse-tension/" data-sp="niederspannung">
+<span class="sp__name">Basse tension</span><span class="sp__range">0,72–3,6 kV</span>
+<span class="sp__track" aria-hidden="true"><span class="sp__bar" style="--a:4.94%;--b:26.76%;--i:0"></span></span>
+</a></li><li><a class="sp__row is-on" href="/fr/produits/moyenne-tension/" data-sp="mittelspannung">
+<span class="sp__name">Moyenne tension</span><span class="sp__range">3,6–72,5 kV</span>
+<span class="sp__track" aria-hidden="true"><span class="sp__bar" style="--a:26.76%;--b:67.46%;--i:1"></span></span>
+</a></li><li><a class="sp__row" href="/fr/produits/haute-tension/" data-sp="hochspannung">
+<span class="sp__name">Haute tension</span><span class="sp__range">72,5–550 kV</span>
+<span class="sp__track" aria-hidden="true"><span class="sp__bar" style="--a:67.46%;--b:94.92%;--i:2"></span></span>
+</a></li><li><a class="sp__row" href="/fr/produits/electronique-capteurs/" data-sp="elektronik-sensoren">
+<span class="sp__name">Électronique &amp; capteurs</span><span class="sp__range">DC à 150 kHz</span>
+<span class="sp__track" aria-hidden="true"><span class="sp__bar" style="--a:4.94%;--b:70.39%;--i:3"></span></span>
+</a></li><li><a class="sp__row" href="/fr/produits/jeux-de-barres-sis/" data-sp="stromschienen-sis">
+<span class="sp__name">Jeux de barres SIS</span><span class="sp__range">jusqu’à 40,5 kV, 8 000 A</span>
+<span class="sp__track" aria-hidden="true"><span class="sp__bar" style="--a:26.76%;--b:59.56%;--i:4"></span></span>
+</a></li><li><a class="sp__row sp__row--part" href="/fr/produits/resine-coulee-duromer/" data-sp="giessharzteile-duromer">
+<span class="sp__name">Pièces en résine coulée DUROMER</span><span class="sp__range">BT, MT &amp; électronique</span>
+<span class="sp__track" aria-hidden="true"><span class="sp__bar" style="--a:4.94%;--b:67.46%;--i:5"></span></span>
+</a></li></ul>
 </div>
-<div class="vaxis__plot" data-vaxis-plot>
-<div class="vaxis__scale" aria-hidden="true" style="--ay:138px;height:162px">
-<span class="vaxis__tick" style="left:4.942%"><span>0,72</span></span><span class="vaxis__tick" style="left:11.866%"><span>1,2</span></span><span class="vaxis__tick" style="left:26.757%"><span>3,6</span></span><span class="vaxis__tick" style="left:43.076%"><span>12</span></span><span class="vaxis__tick" style="left:57.967%"><span>36</span></span><span class="vaxis__tick" style="left:67.456%"><span>72,5</span></span><span class="vaxis__tick" style="left:76.851%"><span>145</span></span><span class="vaxis__tick" style="left:83.961%"><span>245</span></span><span class="vaxis__tick" style="left:94.921%"><span>550&nbsp;kV</span></span><span class="vaxis__line"></span><span class="vaxis__band is-dim" data-band="niederspannung" data-lo="0.72" data-hi="3.6" style="--bi:0;left:4.942%;width:21.815%;top:4px;height:20px"><span>Basse tension</span></span><span class="vaxis__band is-on" data-band="mittelspannung" data-lo="3.6" data-hi="72.5" style="--bi:1;left:26.757%;width:40.699%;top:30px;height:20px"><span>Moyenne tension</span></span><span class="vaxis__band is-dim" data-band="hochspannung" data-lo="72.5" data-hi="550" style="--bi:2;left:67.456%;width:27.465%;top:56px;height:20px"><span>Haute tension</span></span><span class="vaxis__band is-on" data-band="elektronik-sensoren" data-lo="0.72" data-hi="90" style="--bi:3;left:4.942%;width:65.444%;top:82px;height:20px"><span>Électronique &amp; capteurs</span></span><span class="vaxis__band is-on" data-band="stromschienen-sis" data-lo="3.6" data-hi="72.5" style="--bi:4;left:26.757%;width:40.699%;top:108px;height:20px"><span>Jeux de barres SIS</span></span>
-<span class="vaxis__probe" data-probe style="--p:0.5247"><i class="vaxis__hit" data-lo="0.72" data-hi="3.6" style="top:14px"></i><i class="vaxis__hit is-on" data-lo="3.6" data-hi="72.5" style="top:40px"></i><i class="vaxis__hit" data-lo="72.5" data-hi="550" style="top:66px"></i><i class="vaxis__hit is-on" data-lo="0.72" data-hi="90" style="top:92px"></i><i class="vaxis__hit is-on" data-lo="3.6" data-hi="72.5" style="top:118px"></i></span>
-</div>
-<input class="vaxis__range" type="range" min="0" max="1000" step="1" value="525" aria-labelledby="vaxis-title" aria-valuetext="24 kV" data-vaxis-range>
-<span class="vaxis__focus" aria-hidden="true"></span>
-</div>
-<div class="vaxis__foot"><span>Faites glisser ou utilisez les touches fléchées</span><a class="btn btn--light btn--small" data-vaxis-go href="/fr/recherche-produits/?um=24">Afficher dans le sélecteur de produits</a></div>
-</div></div>
-<div class="areas">
-<a class="area" href="/fr/produits/basse-tension/">
-<div class="area__img" data-reveal="img"><img src="/img/mimg-ritz_header-niederspannung-1920.webp" srcset="/img/mimg-ritz_header-niederspannung-320.webp 320w, /img/mimg-ritz_header-niederspannung-640.webp 640w, /img/mimg-ritz_header-niederspannung-960.webp 960w, /img/mimg-ritz_header-niederspannung-1280.webp 1280w, /img/mimg-ritz_header-niederspannung-1920.webp 1920w" sizes="(max-width: 600px) calc(100vw * 2.24), (max-width: 960px) calc(50vw * 2.24), calc(33vw * 2.24)" width="1920" height="536" alt="" loading="lazy" decoding="async"></div>
-<div class="area__body"><span class="area__kv">0,72–3,6 kV</span><h3>Basse tension</h3><p>Transformateurs de courant pour la mesure et la protection, transformateurs de tension et dispositifs d’amortissement jusqu’à 3,6 kV.</p></div>
-<div class="area__foot"><span>198 produits</span><span class="go">En savoir plus</span></div>
-</a><a class="area" href="/fr/produits/moyenne-tension/">
-<div class="area__img" data-reveal="img"><img src="/img/mimg-ritz_header-mittelspannung-1920.webp" srcset="/img/mimg-ritz_header-mittelspannung-320.webp 320w, /img/mimg-ritz_header-mittelspannung-640.webp 640w, /img/mimg-ritz_header-mittelspannung-960.webp 960w, /img/mimg-ritz_header-mittelspannung-1280.webp 1280w, /img/mimg-ritz_header-mittelspannung-1920.webp 1920w" sizes="(max-width: 600px) calc(100vw * 2.24), (max-width: 960px) calc(50vw * 2.24), calc(33vw * 2.24)" width="1920" height="536" alt="" loading="lazy" decoding="async"></div>
-<div class="area__body"><span class="area__kv">3,6–72,5 kV</span><h3>Moyenne tension</h3><p>Transformateurs de courant, de tension et combinés pour l’intérieur et l’extérieur, protégés contre les contacts, pour le ferroviaire, les générateurs et la qualité de l’énergie.</p></div>
-<div class="area__foot"><span>71 produits</span><span class="go">En savoir plus</span></div>
-</a><a class="area" href="/fr/produits/haute-tension/">
-<div class="area__img" data-reveal="img"><img src="/img/mimg-Hochspannungswandler-Intro2-628.webp" srcset="/img/mimg-Hochspannungswandler-Intro2-320.webp 320w, /img/mimg-Hochspannungswandler-Intro2-628.webp 628w" sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 33vw" width="628" height="837" alt="" loading="lazy" decoding="async"></div>
-<div class="area__body"><span class="area__kv">72,5–550 kV</span><h3>Haute tension</h3><p>Transformateurs de courant, de tension et combinés à isolation papier-huile et transformateurs de tension capacitifs jusqu’à 550 kV.</p></div>
-<div class="area__foot"><span>4 produits</span><span class="go">En savoir plus</span></div>
-</a><a class="area" href="/fr/produits/electronique-capteurs/">
-<div class="area__img" data-reveal="img"><img src="/img/mimg-ritz_header-elektronik-1920.webp" srcset="/img/mimg-ritz_header-elektronik-320.webp 320w, /img/mimg-ritz_header-elektronik-640.webp 640w, /img/mimg-ritz_header-elektronik-960.webp 960w, /img/mimg-ritz_header-elektronik-1280.webp 1280w, /img/mimg-ritz_header-elektronik-1920.webp 1920w" sizes="(max-width: 600px) calc(100vw * 2.24), (max-width: 960px) calc(50vw * 2.24), calc(33vw * 2.24)" width="1920" height="536" alt="" loading="lazy" decoding="async"></div>
-<div class="area__body"><span class="area__kv">DC à 150 kHz</span><h3>Électronique &amp; capteurs</h3><p>Transformateurs électroniques pour la mesure DC et AC et capteurs passifs de faible puissance pour les réseaux intelligents.</p></div>
-<div class="area__foot"><span>21 produits</span><span class="go">En savoir plus</span></div>
-</a><a class="area" href="/fr/produits/jeux-de-barres-sis/">
-<div class="area__img" data-reveal="img"><img src="/img/mimg-SIS_Slider-1920.webp" srcset="/img/mimg-SIS_Slider-320.webp 320w, /img/mimg-SIS_Slider-640.webp 640w, /img/mimg-SIS_Slider-960.webp 960w, /img/mimg-SIS_Slider-1280.webp 1280w, /img/mimg-SIS_Slider-1920.webp 1920w" sizes="(max-width: 600px) calc(100vw * 2.24), (max-width: 960px) calc(50vw * 2.24), calc(33vw * 2.24)" width="1920" height="536" alt="" loading="lazy" decoding="async"></div>
-<div class="area__body"><span class="area__kv">jusqu’à 40,5 kV, 8 000 A</span><h3>Jeux de barres SIS</h3><p>Jeux de barres entièrement isolés à répartition capacitive du champ pour courants élevés dans un espace restreint, ainsi que des traversées.</p></div>
-<div class="area__foot"><span>2 produits</span><span class="go">En savoir plus</span></div>
-</a><a class="area" href="/fr/produits/resine-coulee-duromer/">
-<div class="area__img" data-reveal="img"><img src="/img/mimg-ritz_header-duromer-1920.webp" srcset="/img/mimg-ritz_header-duromer-320.webp 320w, /img/mimg-ritz_header-duromer-640.webp 640w, /img/mimg-ritz_header-duromer-960.webp 960w, /img/mimg-ritz_header-duromer-1280.webp 1280w, /img/mimg-ritz_header-duromer-1920.webp 1920w" sizes="(max-width: 600px) calc(100vw * 2.24), (max-width: 960px) calc(50vw * 2.24), calc(33vw * 2.24)" width="1920" height="536" alt="" loading="lazy" decoding="async"></div>
-<div class="area__body"><span class="area__kv">BT, MT &amp; électronique</span><h3>Pièces en résine coulée DUROMER</h3><p>Systèmes de résine coulée, pièces moulées et appareils à isolation solide – de la formulation à la production en série.</p></div>
-<div class="area__foot"><span>2 produits</span><span class="go">En savoir plus</span></div>
-</a>
+<div class="sp__view" aria-hidden="true"><figure class="sp__fig" data-sp-fig="niederspannung"><img src="/img/mimg-ritz_header-niederspannung-1280.webp" srcset="/img/mimg-ritz_header-niederspannung-320.webp 320w, /img/mimg-ritz_header-niederspannung-640.webp 640w, /img/mimg-ritz_header-niederspannung-960.webp 960w, /img/mimg-ritz_header-niederspannung-1280.webp 1280w" sizes="(max-width: 900px) calc(0px * 4.48), calc(36vw * 4.48)" width="1280" height="357" alt="" loading="lazy" decoding="async"><figcaption><b>Basse tension</b><span>Transformateurs de courant pour la mesure et la protection, transformateurs de tension et dispositifs d’amortissement jusqu’à 3,6 kV.</span></figcaption></figure><figure class="sp__fig is-on" data-sp-fig="mittelspannung"><img src="/img/mimg-ritz_header-mittelspannung-1280.webp" srcset="/img/mimg-ritz_header-mittelspannung-320.webp 320w, /img/mimg-ritz_header-mittelspannung-640.webp 640w, /img/mimg-ritz_header-mittelspannung-960.webp 960w, /img/mimg-ritz_header-mittelspannung-1280.webp 1280w" sizes="(max-width: 900px) calc(0px * 4.48), calc(36vw * 4.48)" width="1280" height="357" alt="" loading="lazy" decoding="async"><figcaption><b>Moyenne tension</b><span>Transformateurs de courant, de tension et combinés pour l’intérieur et l’extérieur, protégés contre les contacts, pour le ferroviaire, les générateurs et la qualité de l’énergie.</span></figcaption></figure><figure class="sp__fig" data-sp-fig="hochspannung"><img src="/img/mimg-Hochspannungswandler-Intro2-628.webp" srcset="/img/mimg-Hochspannungswandler-Intro2-320.webp 320w, /img/mimg-Hochspannungswandler-Intro2-628.webp 628w" sizes="(max-width: 900px) 0px, 36vw" width="628" height="837" alt="" loading="lazy" decoding="async"><figcaption><b>Haute tension</b><span>Transformateurs de courant, de tension et combinés à isolation papier-huile et transformateurs de tension capacitifs jusqu’à 550 kV.</span></figcaption></figure><figure class="sp__fig" data-sp-fig="elektronik-sensoren"><img src="/img/mimg-ritz_header-elektronik-1280.webp" srcset="/img/mimg-ritz_header-elektronik-320.webp 320w, /img/mimg-ritz_header-elektronik-640.webp 640w, /img/mimg-ritz_header-elektronik-960.webp 960w, /img/mimg-ritz_header-elektronik-1280.webp 1280w" sizes="(max-width: 900px) calc(0px * 4.48), calc(36vw * 4.48)" width="1280" height="357" alt="" loading="lazy" decoding="async"><figcaption><b>Électronique &amp; capteurs</b><span>Transformateurs électroniques pour la mesure DC et AC et capteurs passifs de faible puissance pour les réseaux intelligents.</span></figcaption></figure><figure class="sp__fig" data-sp-fig="stromschienen-sis"><img src="/img/mimg-SIS_Slider-1280.webp" srcset="/img/mimg-SIS_Slider-320.webp 320w, /img/mimg-SIS_Slider-640.webp 640w, /img/mimg-SIS_Slider-960.webp 960w, /img/mimg-SIS_Slider-1280.webp 1280w" sizes="(max-width: 900px) calc(0px * 4.48), calc(36vw * 4.48)" width="1280" height="357" alt="" loading="lazy" decoding="async"><figcaption><b>Jeux de barres SIS</b><span>Jeux de barres entièrement isolés à répartition capacitive du champ pour courants élevés dans un espace restreint, ainsi que des traversées.</span></figcaption></figure><figure class="sp__fig" data-sp-fig="giessharzteile-duromer"><img src="/img/mimg-ritz_header-duromer-1280.webp" srcset="/img/mimg-ritz_header-duromer-320.webp 320w, /img/mimg-ritz_header-duromer-640.webp 640w, /img/mimg-ritz_header-duromer-960.webp 960w, /img/mimg-ritz_header-duromer-1280.webp 1280w" sizes="(max-width: 900px) calc(0px * 4.48), calc(36vw * 4.48)" width="1280" height="357" alt="" loading="lazy" decoding="async"><figcaption><b>Pièces en résine coulée DUROMER</b><span>Systèmes de résine coulée, pièces moulées et appareils à isolation solide – de la formulation à la production en série.</span></figcaption></figure></div>
 </div>
 </div>
 </section>
-<section class="section" id="spezifikation">
-<div class="wrap hs" data-home-spec>
-<div class="hs__copy" data-reveal="head">
-<h2>Du cahier des charges au transformateur adapté</h2>
-<p class="lead">Collez votre besoin : la vérification de spécification reconnaît les données techniques et propose les types RITZ adaptés – directement ici, sans rien envoyer.</p>
-<ul class="hs__points"><li>Lit les cahiers des charges, les e-mails ainsi que les fichiers Excel et GAEB</li><li>Justifie chaque proposition, caractéristique par caractéristique</li><li>Remplit le configurateur et planifie les dates de commande</li></ul>
-<div class="cluster"><a class="btn btn--red" href="/fr/outils/analyse-specification/" data-hs-go>Analyse complète</a><a class="btn btn--ghost" href="/fr/outils/calculateurs/">Calculateurs pour transformateurs</a><a class="link" href="/fr/outils/">Tous les outils</a></div>
-</div>
-<div class="hs__panel">
-<label for="hs-text">Votre besoin</label>
-<textarea class="textarea" id="hs-text" data-hs-text spellcheck="false" autocomplete="off" rows="3">Transformateur de courant intérieur, Um 24 kV, 400/5/5 A, 0,5 FS5 15 VA, 5P20 10 VA, Ith 25 kA 1 s, 50 Hz</textarea>
-<p class="hs__marked" data-hs-marked aria-hidden="true">Transformateur de courant intérieur, <mark class="mk mk--um" title="Niveau de tension">Um 24 kV</mark>, <mark class="mk mk--ratio" title="Rapport">400/5/5 A</mark>, <mark class="mk mk--cls" title="Classe">0,5</mark> <mark class="mk mk--fs" title="Facteur de sécurité">FS5</mark> <mark class="mk mk--va" title="Puissance">15 VA</mark>, <mark class="mk mk--cls" title="Classe">5P20</mark> <mark class="mk mk--va" title="Puissance">10 VA</mark>, <mark class="mk mk--ith" title="Court-circuit">Ith 25 kA 1 s</mark>, <mark class="mk mk--freq" title="Fréquence">50 Hz</mark></p>
-<div class="scp__req" data-hs-req><span class="scp__lbl">Reconnu</span><span class="rq rq--kind">Transformateur de courant</span><span class="rq rq--um"><i>Um</i>24 kV</span><span class="rq rq--ratio"><i>Rapport</i>400/5 A</span><span class="rq rq--core"><i>Noyau 1</i>0,5 FS5 · 15 VA</span><span class="rq rq--core"><i>Noyau 2</i>5P20 · 10 VA</span><span class="rq rq--ith"><i>Ith</i>25 kA / 1 s</span><span class="rq rq--freq"><i>f</i>50 Hz</span><span class="rq rq--install">Intérieur</span></div>
-<div class="hs__res" data-hs-res aria-live="polite"><a class="hs__hit" href="/fr/produits/moyenne-tension/asn/"><span class="scp__img"><img src="/img/mimg-2022__07__innenraumanwendung_stromwandler_asn_12_17_5_24_36_stuetzerstromwandler-320.webp" srcset="/img/mimg-2022__07__innenraumanwendung_stromwandler_asn_12_17_5_24_36_stuetzerstromwandler-320.webp 320w" sizes="48px" width="320" height="174" alt="" class="is-cover" loading="lazy" decoding="async"></span><span><small>Meilleure correspondance</small><b>ASN</b><small>Transformateur de courant de type support, grand format</small></span><em>97&nbsp;%</em></a><a class="hs__hit" href="/fr/produits/moyenne-tension/ass/"><span class="scp__img"><img src="/img/mimg-2022__07__produkte_stromwandler_ASS_12_1_7_5_24_36_stuetzerstromwandler-320.webp" srcset="/img/mimg-2022__07__produkte_stromwandler_ASS_12_1_7_5_24_36_stuetzerstromwandler-320.webp 320w" sizes="48px" width="320" height="174" alt="" class="is-cover" loading="lazy" decoding="async"></span><span><b>ASS</b><small>Transformateur de courant de type support, format étroit</small></span><em>97&nbsp;%</em></a><a class="hs__hit" href="/fr/produits/moyenne-tension/asx/"><span class="scp__img"><span class="pvw pvw--sm"><svg class="pv" viewBox="-241 -312 418 418" style="--u:0.89" role="img" aria-hidden="true"><path class="pv-sh" d="M51 -121L221 -30L-69 146L-238 55Z"/><path class="r-s" d="M165 -116L35 -41A70 41 60 0 1 -35 -162L95 -237A70 41 60 0 1 165 -116Z"/><path class="pv-hl" d="M112 -213L-7 -144"/><path class="m-t" d="M-85 -249L85 -151L73 -144L-97 -242Z"/><path class="m-f" fill-rule="evenodd" d="M-97 -46L73 53L73 -144L-97 -242ZM-77 -51A7 4 60 0 0 -87 -57A7 4 60 0 0 -77 -51ZM63 29A7 4 60 0 0 52 23A7 4 60 0 0 63 29ZM-77 -212A7 4 60 0 0 -87 -218A7 4 60 0 0 -77 -212ZM63 -132A7 4 60 0 0 52 -138A7 4 60 0 0 63 -132Z"/><path class="m-r" d="M85 46L73 53L73 -144L85 -151Z"/><path class="r-s" d="M31 -20L-6 1A86 49 60 0 1 -92 -147L-55 -169A86 49 60 0 1 31 -20Z"/><path class="pv-hl" d="M-29 -142L-63 -123"/><path class="r-s" d="M-12 -9L-122 54A74 43 60 0 1 -196 -73L-86 -137A74 43 60 0 1 -12 -9Z"/><path class="pv-hl" d="M-67 -112L-168 -54"/><ellipse class="r-c" cx="-159" cy="-10" rx="74" ry="43" transform="rotate(60 -159 -10)"/><path class="e-s" d="M-146 13L-198 43A26 15 60 0 1 -224 -2L-172 -32A26 15 60 0 1 -146 13Z"/><path class="pv-hl" d="M-166 -23L-214 5"/><ellipse class="e-c" cx="-211" cy="21" rx="26" ry="15" transform="rotate(60 -211 21)"/><path class="m-s" d="M-147 29L-155 34A39 23 60 0 1 -195 -35L-186 -40A39 23 60 0 1 -147 29Z"/><ellipse class="m-c" cx="-175" cy="-1" rx="39" ry="23" transform="rotate(60 -175 -1)"/><path class="m-t" d="M3 -263L58 -231L8 -203L-47 -234Z"/><path class="m-f" d="M-47 -204L8 -173L8 -203L-47 -234Z"/><path class="m-r" d="M58 -201L8 -173L8 -203L58 -231Z"/><path class="g-t" d="M-42 -227L4 -200L1 -199L-45 -225Z"/><path class="g-f" d="M-45 -205L1 -179L1 -199L-45 -225Z"/><path class="g-r" d="M4 -180L1 -179L1 -199L4 -200Z"/></svg></span></span><span><b>ASX</b><small>Transformateur de courant de traversée</small></span><em>97&nbsp;%</em></a></div>
-</div>
-</div>
+<section class="band" aria-labelledby="mk-title">
+<div class="band__media" aria-hidden="true"><img src="/img/mimg-intro_home_slider_5-1800.webp" srcset="/img/mimg-intro_home_slider_5-320.webp 320w, /img/mimg-intro_home_slider_5-640.webp 640w, /img/mimg-intro_home_slider_5-960.webp 960w, /img/mimg-intro_home_slider_5-1280.webp 1280w, /img/mimg-intro_home_slider_5-1800.webp 1800w" sizes="100vw" width="1800" height="813" alt="" loading="lazy" decoding="async"></div>
+<div class="wrap band__inner" data-reveal="head"><h2 class="ch__title" id="mk-title">La précision naît en production.</h2><p class="ch__text">Bobiner, mouler, contrôler : chaque appareil est fabriqué dans l’une de nos usines en Europe, en Chine et aux États-Unis – et ne la quitte qu’après son essai individuel.</p></div>
 </section>
-<section class="section section--porcelain plants-sec">
+<section class="ch ch--night world" aria-labelledby="wo-title">
+<div class="wrap world__grid">
+<div class="world__copy" data-reveal="head">
+<h2 class="ch__title" id="wo-title">Fabriqué dans 7 usines dans le monde</h2>
+<p class="ch__lead">Depuis Hambourg, RITZ dirige un groupe de plus de 1 500 collaborateurs. Chaque usine a sa spécialité – des transformateurs de mesure basse tension à la haute tension.</p>
+<p class="cluster"><a class="btn btn--light" href="/fr/entreprise/sites/">Tous les sites</a><a class="link link--light" href="/fr/contact/#karte">Trouver un représentant</a></p>
+</div>
+<div class="world__map"><div class="wt" data-reveal="net" aria-hidden="true"><img class="wl-lt" src="/img/world-lite.svg" alt="" width="1000" height="520" loading="lazy"><img class="wl-dk" src="/img/world-lite-dark.svg" alt="" width="1000" height="520" loading="lazy"><svg class="wt__net" viewBox="0 0 1000 520" preserveAspectRatio="none" focusable="false"><path class="wt__arc" style="--i:0" pathLength="1" d="M522.5 97.4 Q520.2 87.4 517.8 106.3"/><path class="wt__arc" style="--i:1" pathLength="1" d="M522.5 97.4 Q523.4 87.4 524.3 107.7"/><path class="wt__arc" style="--i:2" pathLength="1" d="M522.5 97.4 Q527.0 87.4 531.5 104.2"/><path class="wt__arc" style="--i:3" pathLength="1" d="M522.5 97.4 Q527.7 87.4 532.9 113.0"/><path class="wt__arc" style="--i:4" pathLength="1" d="M522.5 97.4 Q534.4 87.4 546.4 116.8"/><path class="wt__arc" style="--i:5" pathLength="1" d="M522.5 97.4 Q584.5 47.9 646.6 189.9"/><path class="wt__arc" style="--i:6" pathLength="1" d="M522.5 97.4 Q405.4 20.1 288.3 156.9"/><path class="wt__arc" style="--i:7" pathLength="1" d="M522.5 97.4 Q406.0 20.1 289.4 161.5"/><path class="wt__arc" style="--i:8" pathLength="1" d="M522.5 97.4 Q668.5 1.2 814.6 168.7"/></svg><span class="wt__dot wt__dot--hq" data-loc-dot="hamburg" style="--i:0;left:52.25%;top:18.73%" title="Hamburg"></span><span class="wt__dot wt__dot--site" data-loc-dot="wirges" style="--i:1;left:51.78%;top:20.43%" title="Wirges"></span><span class="wt__dot wt__dot--production" data-loc-dot="kirchaich" style="--i:2;left:52.43%;top:20.72%" title="Oberaurach-Kirchaich"></span><span class="wt__dot wt__dot--production" data-loc-dot="dresden" style="--i:3;left:53.15%;top:20.04%" title="Ottendorf-Okrilla (Dresden)"></span><span class="wt__dot wt__dot--production" data-loc-dot="marchtrenk" style="--i:4;left:53.29%;top:21.72%" title="Marchtrenk"></span><span class="wt__dot wt__dot--production" data-loc-dot="kecskemet" style="--i:5;left:54.64%;top:22.47%" title="Kecskemét"></span><span class="wt__dot wt__dot--sales" data-loc-dot="dubai" style="--i:6;left:64.66%;top:36.52%" title="Dubai"></span><span class="wt__dot wt__dot--production" data-loc-dot="lavonia" style="--i:7;left:28.83%;top:30.17%" title="Lavonia (Hartwell), Georgia"></span><span class="wt__dot wt__dot--production" data-loc-dot="waynesboro" style="--i:8;left:28.94%;top:31.06%" title="Waynesboro, Georgia"></span><span class="wt__dot wt__dot--production" data-loc-dot="shanghai" style="--i:9;left:81.46%;top:32.44%" title="Shanghai"></span></div></div>
+</div>
+<ol class="wrap world__list"><li><a href="/fr/entreprise/sites/#hamburg" data-loc="hamburg"><b>Hamburg</b><span>Allemagne · Siège</span><span class="world__fn">Produits &amp; équipements</span></a></li><li><a href="/fr/entreprise/sites/#kirchaich" data-loc="kirchaich"><b>Oberaurach-Kirchaich</b><span>Allemagne</span><span class="world__fn">Transformateurs de courant ATEX</span></a></li><li><a href="/fr/entreprise/sites/#dresden" data-loc="dresden"><b>Ottendorf-Okrilla</b><span>Allemagne</span><span class="world__fn">Transformateurs de courant et de tension pour l’intérieur et l’extérieur jusqu’à 52 kV</span></a></li><li><a href="/fr/entreprise/sites/#marchtrenk" data-loc="marchtrenk"><b>Marchtrenk</b><span>Autriche</span><span class="world__fn">Transformateurs de courant et de tension basse tension</span></a></li><li><a href="/fr/entreprise/sites/#kecskemet" data-loc="kecskemet"><b>Kecskemét</b><span>Hongrie</span><span class="world__fn">Transformateurs de mesure basse et moyenne tension pour l’intérieur</span></a></li><li><a href="/fr/entreprise/sites/#shanghai" data-loc="shanghai"><b>Shanghai</b><span>Chine</span><span class="world__fn">Transformateurs de courant et de tension moyenne tension jusqu’à 40,5 kV</span></a></li><li><a href="/fr/entreprise/sites/#lavonia" data-loc="lavonia"><b>Lavonia (Hartwell), Georgia</b><span>États-Unis</span><span class="world__fn">Transformateurs de courant et de tension basse tension pour l’intérieur et l’extérieur</span></a></li><li><a href="/fr/entreprise/sites/#waynesboro" data-loc="waynesboro"><b>Waynesboro, Georgia</b><span>États-Unis</span><span class="world__fn">Production de transformateurs de tension et de courant haute tension</span></a></li></ol>
+</section>
+<section class="ch" aria-labelledby="he-title">
 <div class="wrap">
-<div class="plants-head">
-<div class="stack" style="--s:1rem" data-reveal="head">
-<h2>Fabriqué dans 7 usines dans le monde</h2>
-<p class="lead">Depuis Hambourg, RITZ dirige un groupe de plus de 1 500 collaborateurs. Chaque usine a sa spécialité – des transformateurs de mesure basse tension à la haute tension.</p>
-<div class="cluster"><a class="btn" href="/fr/entreprise/sites/">Tous les sites</a><a class="btn btn--ghost" href="/fr/contact/#karte">Trouver un représentant</a></div>
-</div>
-<div class="wt" data-reveal="net" aria-hidden="true"><img class="wl-lt" src="/img/world-lite.svg" alt="" width="1000" height="520" loading="lazy"><img class="wl-dk" src="/img/world-lite-dark.svg" alt="" width="1000" height="520" loading="lazy"><svg class="wt__net" viewBox="0 0 1000 520" preserveAspectRatio="none" focusable="false"><path class="wt__arc" style="--i:0" pathLength="1" d="M522.5 97.4 Q520.2 87.4 517.8 106.3"/><path class="wt__arc" style="--i:1" pathLength="1" d="M522.5 97.4 Q523.4 87.4 524.3 107.7"/><path class="wt__arc" style="--i:2" pathLength="1" d="M522.5 97.4 Q527.0 87.4 531.5 104.2"/><path class="wt__arc" style="--i:3" pathLength="1" d="M522.5 97.4 Q527.7 87.4 532.9 113.0"/><path class="wt__arc" style="--i:4" pathLength="1" d="M522.5 97.4 Q534.4 87.4 546.4 116.8"/><path class="wt__arc" style="--i:5" pathLength="1" d="M522.5 97.4 Q584.5 47.9 646.6 189.9"/><path class="wt__arc" style="--i:6" pathLength="1" d="M522.5 97.4 Q405.4 20.1 288.3 156.9"/><path class="wt__arc" style="--i:7" pathLength="1" d="M522.5 97.4 Q406.0 20.1 289.4 161.5"/><path class="wt__arc" style="--i:8" pathLength="1" d="M522.5 97.4 Q668.5 1.2 814.6 168.7"/></svg><span class="wt__dot wt__dot--hq" style="--i:0;left:52.25%;top:18.73%" title="Hamburg"></span><span class="wt__dot wt__dot--site" style="--i:1;left:51.78%;top:20.43%" title="Wirges"></span><span class="wt__dot wt__dot--production" style="--i:2;left:52.43%;top:20.72%" title="Oberaurach-Kirchaich"></span><span class="wt__dot wt__dot--production" style="--i:3;left:53.15%;top:20.04%" title="Ottendorf-Okrilla (Dresden)"></span><span class="wt__dot wt__dot--production" style="--i:4;left:53.29%;top:21.72%" title="Marchtrenk"></span><span class="wt__dot wt__dot--production" style="--i:5;left:54.64%;top:22.47%" title="Kecskemét"></span><span class="wt__dot wt__dot--sales" style="--i:6;left:64.66%;top:36.52%" title="Dubai"></span><span class="wt__dot wt__dot--production" style="--i:7;left:28.83%;top:30.17%" title="Lavonia (Hartwell), Georgia"></span><span class="wt__dot wt__dot--production" style="--i:8;left:28.94%;top:31.06%" title="Waynesboro, Georgia"></span><span class="wt__dot wt__dot--production" style="--i:9;left:81.46%;top:32.44%" title="Shanghai"></span></div>
-</div>
-<div class="plants" role="list"><a role="listitem" class="plant" href="/fr/entreprise/sites/#hamburg">
-<div class="plant__img" data-reveal="img"><img src="/img/mimg-2022__07__unternehmen_historie_1-640.webp" srcset="/img/mimg-2022__07__unternehmen_historie_1-320.webp 320w, /img/mimg-2022__07__unternehmen_historie_1-640.webp 640w" sizes="(max-width: 600px) 80vw, (max-width: 1100px) 40vw, 25vw" width="640" height="534" alt="" loading="lazy" decoding="async"></div>
-<div class="plant__body">
-<span class="plant__type">Siège · Allemagne</span>
-<h3>Hamburg</h3>
-<ul class="plant__fn"><li>Produits &amp; équipements</li><li>Électronique</li></ul>
-<span class="plant__staff">92 collaborateurs</span>
-</div>
-</a><a role="listitem" class="plant" href="/fr/entreprise/sites/#kirchaich">
-<div class="plant__img" data-reveal="img"><img src="/img/mimg-Luftbild_Kirchaich_2014_klein-1280.webp" srcset="/img/mimg-Luftbild_Kirchaich_2014_klein-320.webp 320w, /img/mimg-Luftbild_Kirchaich_2014_klein-640.webp 640w, /img/mimg-Luftbild_Kirchaich_2014_klein-960.webp 960w, /img/mimg-Luftbild_Kirchaich_2014_klein-1280.webp 1280w" sizes="(max-width: 600px) 80vw, (max-width: 1100px) 40vw, 25vw" width="1280" height="853" alt="" loading="lazy" decoding="async"></div>
-<div class="plant__body">
-<span class="plant__type">Usine · Allemagne</span>
-<h3>Oberaurach-Kirchaich</h3>
-<ul class="plant__fn"><li>Transformateurs de courant ATEX</li><li>Jeux de barres isolés en résine coulée jusqu’à 40,5 kV et 8 000 A</li></ul>
-<span class="plant__staff">133 collaborateurs</span>
-</div>
-</a><a role="listitem" class="plant" href="/fr/entreprise/sites/#dresden">
-<div class="plant__img" data-reveal="img"><img src="/img/mimg-image5-1384.webp" srcset="/img/mimg-image5-320.webp 320w, /img/mimg-image5-640.webp 640w, /img/mimg-image5-960.webp 960w, /img/mimg-image5-1280.webp 1280w, /img/mimg-image5-1384.webp 1384w" sizes="(max-width: 600px) 80vw, (max-width: 1100px) 40vw, 25vw" width="1384" height="358" alt="" loading="lazy" decoding="async"></div>
-<div class="plant__body">
-<span class="plant__type">Usine · Allemagne</span>
-<h3>Ottendorf-Okrilla</h3>
-<ul class="plant__fn"><li>Transformateurs de courant et de tension pour l’intérieur et l’extérieur jusqu’à 52 kV</li><li>Transformateurs sous enveloppe métallique et métallisés</li></ul>
-<span class="plant__staff">288 collaborateurs</span>
-</div>
-</a><a role="listitem" class="plant" href="/fr/entreprise/sites/#marchtrenk">
-<div class="plant__img"><svg class="plant__map" viewBox="457.9 66.1 150 93.8" aria-hidden="true" focusable="false"><use class="loc__land" href="/img/world-land.svg#land"/><circle cx="532.9" cy="113.0" r="7" class="loc__halo"/><circle cx="532.9" cy="113.0" r="3.4" class="loc__dot"/></svg></div>
-<div class="plant__body">
-<span class="plant__type">Usine · Autriche</span>
-<h3>Marchtrenk</h3>
-<ul class="plant__fn"><li>Transformateurs de courant et de tension basse tension</li><li>Transformateurs de courant de type traversée jusqu’à 36 kV</li></ul>
-<span class="plant__staff">138 collaborateurs</span>
-</div>
-</a><a role="listitem" class="plant" href="/fr/entreprise/sites/#kecskemet">
-<div class="plant__img" data-reveal="img"><img src="/img/mimg-image14-1280.webp" srcset="/img/mimg-image14-320.webp 320w, /img/mimg-image14-640.webp 640w, /img/mimg-image14-960.webp 960w, /img/mimg-image14-1280.webp 1280w" sizes="(max-width: 600px) 80vw, (max-width: 1100px) 40vw, 25vw" width="1280" height="720" alt="" loading="lazy" decoding="async"></div>
-<div class="plant__body">
-<span class="plant__type">Usine · Hongrie</span>
-<h3>Kecskemét</h3>
-<ul class="plant__fn"><li>Transformateurs de mesure basse et moyenne tension pour l’intérieur</li><li>Parties actives et autres composants de base pour transformateurs de courant et de tension</li></ul>
-<span class="plant__staff">325 collaborateurs</span>
-</div>
-</a><a role="listitem" class="plant" href="/fr/entreprise/sites/#shanghai">
-<div class="plant__img" data-reveal="img"><img src="/img/mimg-image12-1280.webp" srcset="/img/mimg-image12-320.webp 320w, /img/mimg-image12-640.webp 640w, /img/mimg-image12-960.webp 960w, /img/mimg-image12-1280.webp 1280w" sizes="(max-width: 600px) 80vw, (max-width: 1100px) 40vw, 25vw" width="1280" height="853" alt="" loading="lazy" decoding="async"></div>
-<div class="plant__body">
-<span class="plant__type">Usine · Chine</span>
-<h3>Shanghai</h3>
-<ul class="plant__fn"><li>Transformateurs de courant et de tension moyenne tension jusqu’à 40,5 kV</li><li>Transformateurs sous enveloppe métallique</li></ul>
-<span class="plant__staff">146 collaborateurs</span>
-</div>
-</a><a role="listitem" class="plant" href="/fr/entreprise/sites/#lavonia">
-<div class="plant__img" data-reveal="img"><img src="/img/mimg-image13-886.webp" srcset="/img/mimg-image13-320.webp 320w, /img/mimg-image13-640.webp 640w, /img/mimg-image13-886.webp 886w" sizes="(max-width: 600px) 80vw, (max-width: 1100px) 40vw, 25vw" width="886" height="591" alt="" loading="lazy" decoding="async"></div>
-<div class="plant__body">
-<span class="plant__type">Usine · États-Unis</span>
-<h3>Lavonia (Hartwell), Georgia</h3>
-<ul class="plant__fn"><li>Transformateurs de courant et de tension basse tension pour l’intérieur et l’extérieur</li><li>Transformateurs de courant et de tension moyenne tension pour l’extérieur</li></ul>
-<span class="plant__staff">330 collaborateurs</span>
-</div>
-</a><a role="listitem" class="plant" href="/fr/entreprise/sites/#waynesboro">
-<div class="plant__img" data-reveal="img"><img src="/img/mimg-image17-784.webp" srcset="/img/mimg-image17-320.webp 320w, /img/mimg-image17-640.webp 640w, /img/mimg-image17-784.webp 784w" sizes="(max-width: 600px) 80vw, (max-width: 1100px) 40vw, 25vw" width="784" height="449" alt="" loading="lazy" decoding="async"></div>
-<div class="plant__body">
-<span class="plant__type">Usine · États-Unis</span>
-<h3>Waynesboro, Georgia</h3>
-<ul class="plant__fn"><li>Production de transformateurs de tension et de courant haute tension</li><li>Transformateurs de courant et de tension moyenne tension</li></ul>
-<span class="plant__staff">75 collaborateurs</span>
-</div>
-</a></div>
+<div class="ch__head ch__head--row" data-reveal="head"><div><h2 class="ch__title" id="he-title">En croissance depuis 1945</h2><p class="ch__lead">De la fondation à Hambourg à la nouvelle usine haute tension aux États-Unis : huit décennies de transformateurs de mesure.</p></div><a class="link" href="/fr/entreprise/">Histoire de l’entreprise<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
+<ol class="tl2" tabindex="0" aria-label="En croissance depuis 1945"><li class="tl2__item"><span class="tl2__y">1945</span><span class="tl2__img"><img src="/img/mimg-unternehmen_vision_timeline_image_5-516.webp" srcset="/img/mimg-unternehmen_vision_timeline_image_5-320.webp 320w, /img/mimg-unternehmen_vision_timeline_image_5-516.webp 516w" sizes="(max-width: 700px) 60vw, 16vw" width="516" height="296" alt="" loading="lazy" decoding="async"></span><b>Création</b><span>Le Dr Hans Ritz fonde RITZ Messwandler à Hambourg.</span></li><li class="tl2__item"><span class="tl2__y">1956</span><span class="tl2__img"><img src="/img/mimg-image2-1-467.webp" srcset="/img/mimg-image2-1-320.webp 320w, /img/mimg-image2-1-467.webp 467w" sizes="(max-width: 700px) 60vw, 16vw" width="467" height="300" alt="" loading="lazy" decoding="async"></span><b>Autriche</b><span>Création de RITZ à Marchtrenk.</span></li><li class="tl2__item"><span class="tl2__y">1991</span><span class="tl2__img"><img src="/img/mimg-image5-960.webp" srcset="/img/mimg-image5-320.webp 320w, /img/mimg-image5-640.webp 640w, /img/mimg-image5-960.webp 960w" sizes="(max-width: 700px) 60vw, 16vw" width="960" height="248" alt="" loading="lazy" decoding="async"></span><b>TuR Dresden</b><span>Rachat de la division transformateurs de mesure de Transformatoren- und Röntgenwerk Dresden ; production haute tension à Waynesboro.</span></li><li class="tl2__item"><span class="tl2__y">2003</span><span class="tl2__img"><img src="/img/mimg-image12-960.webp" srcset="/img/mimg-image12-320.webp 320w, /img/mimg-image12-640.webp 640w, /img/mimg-image12-960.webp 960w" sizes="(max-width: 700px) 60vw, 16vw" width="960" height="640" alt="" loading="lazy" decoding="async"></span><b>Shanghai</b><span>RITZ Shanghai produit dans sa propre usine.</span></li><li class="tl2__item"><span class="tl2__y">2008</span><span class="tl2__img"><img src="/img/mimg-image13-886.webp" srcset="/img/mimg-image13-320.webp 320w, /img/mimg-image13-640.webp 640w, /img/mimg-image13-886.webp 886w" sizes="(max-width: 700px) 60vw, 16vw" width="886" height="591" alt="" loading="lazy" decoding="async"></span><b>RITZ USA</b><span>Création de RITZ à Hartwell (États-Unis) avec des transformateurs moyenne et basse tension.</span></li><li class="tl2__item"><span class="tl2__y">2026</span><span class="tl2__img"><img src="/img/mimg-RITZ-USA-HV-Waynesboro-Grand-Opening-2026-Ribbon-Cutting-960.webp" srcset="/img/mimg-RITZ-USA-HV-Waynesboro-Grand-Opening-2026-Ribbon-Cutting-320.webp 320w, /img/mimg-RITZ-USA-HV-Waynesboro-Grand-Opening-2026-Ribbon-Cutting-640.webp 640w, /img/mimg-RITZ-USA-HV-Waynesboro-Grand-Opening-2026-Ribbon-Cutting-960.webp 960w" sizes="(max-width: 700px) 60vw, 16vw" width="960" height="960" alt="" loading="lazy" decoding="async"></span><b>Nouvelle usine haute tension</b><span>Ouverture du centre de production et d’essai de transformateurs haute tension à Waynesboro, en Géorgie (États-Unis).</span></li></ol>
 </div>
 </section>
-<section class="section">
+<section class="ch ch--porcelain" aria-labelledby="qu-title">
+<div class="wrap ch__split">
+<h2 class="ch__title" id="qu-title" data-reveal="head">Chaque appareil contrôlé.</h2>
+<div class="ch__body" data-reveal="head">
+<p class="ch__text">Chaque appareil est soumis à un essai individuel de série. Nos bancs d’essai fonctionnent avec des tensions alternatives jusqu’à 400 kV et des courants jusqu’à 50 kA ; l’usine de Dresde abrite un organisme de contrôle reconnu par l’État pour la vérification officielle.</p>
+<dl class="figs figs--2"><div class="fig"><dt>tension d’essai sur les bancs d’essai haute tension</dt><dd>400 kV</dd></div><div class="fig"><dt>essais à fort courant</dt><dd>50 kA</dd></div><div class="fig"><dt>niveau de performance de RITZ Marchtrenk</dt><dd>IRIS Silver</dd></div><div class="fig"><dt>Fournisseur technologique de l’année chez Hitachi Energy</dt><dd>2024</dd></div></dl>
+<p><a class="link" href="/fr/entreprise/qualite/">Qualité &amp; certificats<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></p>
+</div>
+</div>
+</section>
+<section class="ch" aria-labelledby="nw-title">
 <div class="wrap">
-<div class="section-head" data-reveal="head"><div class="stack" style="--s:.75rem"><h2>Applications</h2><p class="lead">Des solutions par domaine d’application – avec les produits, les références et les interlocuteurs adaptés.</p></div></div>
-<div class="apps">
-<a class="app" href="/fr/applications/reseaux-energie/"><span class="app__img"><img src="/img/mimg-2022__06__image_empowering_the_future-320.webp" srcset="/img/mimg-2022__06__image_empowering_the_future-320.webp 320w" sizes="76px" width="320" height="229" alt="" loading="lazy" decoding="async"></span><span><strong>Fournisseurs d’énergie et réseaux</strong><span>Comptage de facturation, protection et qualité du réseau, de la distribution locale à la très haute tension.</span></span><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 6 6 6-6 6"/></svg></a><a class="app" href="/fr/applications/fabricants-appareillage/"><span class="app__img"><img src="/img/mimg-2022__07__unternehmen_qualitaetsmanagement_wandler_pruefung-320.webp" srcset="/img/mimg-2022__07__unternehmen_qualitaetsmanagement_wandler_pruefung-320.webp 320w" sizes="76px" width="320" height="320" alt="" loading="lazy" decoding="async"></span><span><strong>Constructeurs d’appareillages</strong><span>Transformateurs selon DIN 42600, versions sous enveloppe métallique et capteurs pour vos appareillages.</span></span><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 6 6 6-6 6"/></svg></a><a class="app" href="/fr/applications/industrie-infrastructure/"><span class="app__img"><img src="/img/mimg-Kundenreferenz-SIS-Projekt-BSW-3-320.webp" srcset="/img/mimg-Kundenreferenz-SIS-Projekt-BSW-3-320.webp 320w" sizes="76px" width="320" height="240" alt="" loading="lazy" decoding="async"></span><span><strong>Industrie et infrastructures</strong><span>Courants élevés, environnements difficiles et courant continu – de l’aciérie au centre de données.</span></span><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 6 6 6-6 6"/></svg></a><a class="app" href="/fr/applications/ferroviaire/"><span class="app__img"><img src="/img/mimg-2022__07__sonderwandler_bahnwandler_gsefb-320.webp" srcset="/img/mimg-2022__07__sonderwandler_bahnwandler_gsefb-320.webp 320w" sizes="calc(76px * 1.36)" width="320" height="174" alt="" loading="lazy" decoding="async"></span><span><strong>Ferroviaire</strong><span>Transformateurs pour le matériel roulant et les installations d’alimentation de traction – selon EN 50463 et STI.</span></span><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 6 6 6-6 6"/></svg></a><a class="app" href="/fr/applications/renouvelables-ccht-qualite-reseau/"><span class="app__img"><img src="/img/mimg-wind-energy-sq-320.webp" srcset="/img/mimg-wind-energy-sq-320.webp 320w" sizes="76px" width="320" height="320" alt="" loading="lazy" decoding="async"></span><span><strong>Énergies renouvelables, CCHT et qualité de l’énergie</strong><span>Mesure DC pour CCHT et SVC, transformateurs large bande pour la qualité du réseau.</span></span><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 6 6 6-6 6"/></svg></a><a class="app" href="/fr/applications/centrales-generateurs/"><span class="app__img"><img src="/img/mimg-IRBT-1-320.webp" srcset="/img/mimg-IRBT-1-320.webp 320w" sizes="calc(76px * 1.23)" width="320" height="192" alt="" loading="lazy" decoding="async"></span><span><strong>Centrales électriques et générateurs</strong><span>Transformateurs pour générateurs jusqu’à 50 000 A, alimentation auxiliaire et haute tension.</span></span><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 6 6 6-6 6"/></svg></a><a class="app" href="/fr/applications/comptage-essais/"><span class="app__img"><img src="/img/mimg-2022__07__unternehmen_qualitaetsmanagement_schienen_pruefung-320.webp" srcset="/img/mimg-2022__07__unternehmen_qualitaetsmanagement_schienen_pruefung-320.webp 320w" sizes="76px" width="320" height="320" alt="" loading="lazy" decoding="async"></span><span><strong>Mesure, essais et comptage</strong><span>Transformateurs certifiables, transformateurs de laboratoire et accessoires pour l’armoire de comptage.</span></span><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 6 6 6-6 6"/></svg></a>
-</div>
+<div class="ch__head ch__head--row" data-reveal="head"><h2 class="ch__title" id="nw-title">Actualités</h2><a class="link" href="/fr/actualites/">Toutes les actualités<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
+<ul class="nl"><li><a class="nl__item" href="/fr/actualites/customer-letter-about-the-latest-developments-in-foreign-trade-and-the-implications-of-regulation-eu-2026-2133/"><time datetime="2026-10-20">20 octobre 2026</time><span class="nl__cat">Entreprise</span><b lang="en">Customer letter about the latest developments in foreign trade and the implications of regulation (EU) 2026/2133</b><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></li><li><a class="nl__item" href="/fr/actualites/ritz-instrument-transformers-gmbh-achieves-the-iris-silver-quality-performance-level/"><time datetime="2026-06-29">29 juin 2026</time><span class="nl__cat">Entreprise</span><b lang="en">RITZ Instrument Transformers GmbH achieves the IRIS Silver Quality Performance Level</b><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></li><li><a class="nl__item" href="/fr/actualites/new-facility-waynesboro-usa/"><time datetime="2026-06-25">25 juin 2026</time><span class="nl__cat">Entreprise</span><b lang="en">New Facility Waynesboro, USA</b><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></li><li><a class="nl__item" href="/fr/actualites/ritz-auf-der-gritec-energy-conference/"><time datetime="2026-05-07">7 mai 2026</time><span class="nl__cat">Salons &amp; événements</span><b lang="de">RITZ auf der GRITEC Energy conference</b><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></li></ul>
 </div>
 </section>
-<section class="section section--resin">
-<div class="wrap">
-<div class="split">
-<div class="stack" style="--s:1.25rem" data-reveal="head">
-<h2>Testé, certifié, primé</h2>
-<p class="lead">Chaque appareil est soumis à un essai individuel de série. Nos bancs d’essai fonctionnent avec des tensions alternatives jusqu’à 400 kV et des courants jusqu’à 50 kA ; l’usine de Dresde abrite un organisme de contrôle reconnu par l’État pour la vérification officielle.</p>
-<p><a class="btn btn--light" href="/fr/entreprise/qualite/">Qualité &amp; certificats</a></p>
-</div>
-<div class="facts facts--2" data-reveal="facts"><div class="fact"><strong data-count>400 kV</strong><span>tension d’essai sur les bancs d’essai haute tension</span></div><div class="fact"><strong data-count>50 kA</strong><span>essais à fort courant</span></div><div class="fact"><strong data-count>IRIS Silver</strong><span>niveau de performance de RITZ Marchtrenk</span></div><div class="fact"><strong data-count>2024</strong><span>Fournisseur technologique de l’année chez Hitachi Energy</span></div></div>
-</div>
-<div class="certs certs--row"><a class="cert" href="/dokumente/w/000632-Ritz-Instrument-Transformers-GmbH-CERTIFICATE-deutsch-2026-07-17-QM15.pdf" target="_blank" rel="noopener"><b>ISO 9001</b><span>Management de la qualité</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="16" height="16"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg></a><a class="cert" href="/dokumente/w/000632-Ritz-Instrument-Transformers-GmbH-CERTIFICATE-deutsch-2026-07-17-UM15.pdf" target="_blank" rel="noopener"><b>ISO 14001</b><span>Management environnemental</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="16" height="16"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg></a><a class="cert" href="/dokumente/w/000632-Ritz-Instrument-Transformers-GmbH-CERTIFICATE-deutsch-2026-07-17-EMSt21.pdf" target="_blank" rel="noopener"><b>ISO 50001</b><span>Management de l’énergie</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="16" height="16"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg></a><a class="cert" href="/dokumente/w/Akkreditierung-Ritz-AT_ISO-17025.pdf" target="_blank" rel="noopener"><b>ISO/IEC 17025</b><span>Laboratoire d’essai accrédité (Autriche)</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="16" height="16"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg></a><a class="cert" href="/dokumente/w/Ritz-Messwandler-IRIS-Certificate-2024.pdf" target="_blank" rel="noopener"><b>IRIS</b><span>Industrie ferroviaire (RITZ Messwandler GmbH)</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="16" height="16"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg></a><a class="cert" href="/dokumente/w/IRIS_silver_status.pdf" target="_blank" rel="noopener"><b>IRIS Silver</b><span>Attestation de niveau de performance</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="16" height="16"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg></a></div>
-</div>
-</section>
-<section class="section heritage">
-<div class="wrap">
-<div class="section-head section-head--row" data-reveal="head"><div class="stack" style="--s:.75rem"><h2>En croissance depuis 1945</h2><p class="lead">De la fondation à Hambourg à la nouvelle usine haute tension aux États-Unis : huit décennies de transformateurs de mesure.</p></div><a class="btn btn--ghost" href="/fr/entreprise/">Histoire de l’entreprise</a></div>
-<ol class="her" data-reveal="facts" tabindex="0" aria-label="En croissance depuis 1945"><li class="her__item"><span class="her__year">1945</span><span class="her__img"><img src="/img/mimg-unternehmen_vision_timeline_image_5-516.webp" srcset="/img/mimg-unternehmen_vision_timeline_image_5-320.webp 320w, /img/mimg-unternehmen_vision_timeline_image_5-516.webp 516w" sizes="(max-width: 700px) 60vw, 16vw" width="516" height="296" alt="" loading="lazy" decoding="async"></span><b>Création</b><span>Le Dr Hans Ritz fonde RITZ Messwandler à Hambourg.</span></li><li class="her__item"><span class="her__year">1956</span><span class="her__img"><img src="/img/mimg-image2-1-467.webp" srcset="/img/mimg-image2-1-320.webp 320w, /img/mimg-image2-1-467.webp 467w" sizes="(max-width: 700px) 60vw, 16vw" width="467" height="300" alt="" loading="lazy" decoding="async"></span><b>Autriche</b><span>Création de RITZ à Marchtrenk.</span></li><li class="her__item"><span class="her__year">1991</span><span class="her__img"><img src="/img/mimg-image5-640.webp" srcset="/img/mimg-image5-320.webp 320w, /img/mimg-image5-640.webp 640w" sizes="(max-width: 700px) 60vw, 16vw" width="640" height="166" alt="" loading="lazy" decoding="async"></span><b>TuR Dresden</b><span>Rachat de la division transformateurs de mesure de Transformatoren- und Röntgenwerk Dresden ; production haute tension à Waynesboro.</span></li><li class="her__item"><span class="her__year">2003</span><span class="her__img"><img src="/img/mimg-image12-640.webp" srcset="/img/mimg-image12-320.webp 320w, /img/mimg-image12-640.webp 640w" sizes="(max-width: 700px) 60vw, 16vw" width="640" height="427" alt="" loading="lazy" decoding="async"></span><b>Shanghai</b><span>RITZ Shanghai produit dans sa propre usine.</span></li><li class="her__item"><span class="her__year">2008</span><span class="her__img"><img src="/img/mimg-image13-640.webp" srcset="/img/mimg-image13-320.webp 320w, /img/mimg-image13-640.webp 640w" sizes="(max-width: 700px) 60vw, 16vw" width="640" height="427" alt="" loading="lazy" decoding="async"></span><b>RITZ USA</b><span>Création de RITZ à Hartwell (États-Unis) avec des transformateurs moyenne et basse tension.</span></li><li class="her__item"><span class="her__year">2026</span><span class="her__img"><img src="/img/mimg-RITZ-USA-HV-Waynesboro-Grand-Opening-2026-Ribbon-Cutting-640.webp" srcset="/img/mimg-RITZ-USA-HV-Waynesboro-Grand-Opening-2026-Ribbon-Cutting-320.webp 320w, /img/mimg-RITZ-USA-HV-Waynesboro-Grand-Opening-2026-Ribbon-Cutting-640.webp 640w" sizes="(max-width: 700px) 60vw, 16vw" width="640" height="640" alt="" loading="lazy" decoding="async"></span><b>Nouvelle usine haute tension</b><span>Ouverture du centre de production et d’essai de transformateurs haute tension à Waynesboro, en Géorgie (États-Unis).</span></li></ol>
-</div>
-</section>
-<section class="section section--porcelain">
-<div class="wrap">
-<div class="section-head section-head--row" data-reveal="head"><div class="stack" style="--s:.75rem"><h2>Actualités</h2><p class="lead">Nouveaux produits, projets et rendez-vous.</p></div><a class="btn btn--ghost" href="/fr/actualites/">Toutes les actualités</a></div>
-<div class="news-grid"><a class="card" href="/fr/actualites/customer-letter-about-the-latest-developments-in-foreign-trade-and-the-implications-of-regulation-eu-2026-2133/">
-<div class="card__img" data-reveal="img"><span class="card__ph"><svg viewBox="0 0 80 40" width="80" height="40" aria-hidden="true"><path d="M40 2 78 20 40 38 2 20Z" fill="none" stroke="currentColor" stroke-width="2"/></svg><span>Entreprise</span></span></div>
-<div class="card__meta"><time datetime="2026-10-20">20 octobre 2026</time><span>Entreprise</span><span class="card__lang" title="en">EN</span></div>
-<h3 lang="en">Customer letter about the latest developments in foreign trade and the implications of regulation (EU) 2026/2133</h3>
-<p lang="en">Dear Valued Customers, We would like to inform you about the latest developments in foreign trade and the implications of Implementing Regulation …</p>
-</a><a class="card" href="/fr/actualites/ritz-instrument-transformers-gmbh-achieves-the-iris-silver-quality-performance-level/">
-<div class="card__img card__img--small" style="--bgimg:url(/img/mimg-IRIS_Silber-320.webp)" data-reveal="img"><img src="/img/mimg-IRIS_Silber-569.webp" srcset="/img/mimg-IRIS_Silber-320.webp 320w, /img/mimg-IRIS_Silber-569.webp 569w" sizes="569px" width="569" height="798" alt="" loading="lazy" decoding="async"></div>
-<div class="card__meta"><time datetime="2026-06-29">29 juin 2026</time><span>Entreprise</span><span class="card__lang" title="en">EN</span></div>
-<h3 lang="en">RITZ Instrument Transformers GmbH achieves the IRIS Silver Quality Performance Level</h3>
-<p lang="en">We are pleased to announce that RITZ Instrument Transformers GmbH has achieved the IRIS Silver Quality Performance Level in its most recent audit. …</p>
-</a><a class="card" href="/fr/actualites/new-facility-waynesboro-usa/">
-<div class="card__img" data-reveal="img"><img src="/img/mimg-RITZ-USA-HV-Waynesboro-Grand-Opening-2026-Ribbon-Cutting-960.webp" srcset="/img/mimg-RITZ-USA-HV-Waynesboro-Grand-Opening-2026-Ribbon-Cutting-320.webp 320w, /img/mimg-RITZ-USA-HV-Waynesboro-Grand-Opening-2026-Ribbon-Cutting-640.webp 640w, /img/mimg-RITZ-USA-HV-Waynesboro-Grand-Opening-2026-Ribbon-Cutting-960.webp 960w" sizes="(max-width: 560px) 100vw, (max-width: 900px) 50vw, 33vw" width="960" height="960" alt="" loading="lazy" decoding="async"></div>
-<div class="card__meta"><time datetime="2026-06-25">25 juin 2026</time><span>Entreprise</span><span class="card__lang" title="en">EN</span></div>
-<h3 lang="en">New Facility Waynesboro, USA</h3>
-<p lang="en">RITZ Instrument Transformers, Inc. is pleased to announce the grand opening of its new state-of-the-art manufacturing and test facility located at …</p>
-</a></div>
-</div>
-</section>
-<section class="section career-sec">
-<div class="wrap split split--even">
-<div class="career-mosaic" data-reveal="img">
-<span class="cm cm--0"><img src="/img/mimg-stellenangebote_intro_slider_2_Produktion-1800.webp" srcset="/img/mimg-stellenangebote_intro_slider_2_Produktion-320.webp 320w, /img/mimg-stellenangebote_intro_slider_2_Produktion-640.webp 640w, /img/mimg-stellenangebote_intro_slider_2_Produktion-960.webp 960w, /img/mimg-stellenangebote_intro_slider_2_Produktion-1280.webp 1280w, /img/mimg-stellenangebote_intro_slider_2_Produktion-1800.webp 1800w" sizes="(max-width: 900px) 100vw, 50vw" width="1800" height="813" alt="" loading="lazy" decoding="async"></span><span class="cm cm--1"><img src="/img/mimg-stellenangebote_intro_slider_5_Logistik-960.webp" srcset="/img/mimg-stellenangebote_intro_slider_5_Logistik-320.webp 320w, /img/mimg-stellenangebote_intro_slider_5_Logistik-640.webp 640w, /img/mimg-stellenangebote_intro_slider_5_Logistik-960.webp 960w" sizes="(max-width: 900px) 50vw, 25vw" width="960" height="434" alt="" loading="lazy" decoding="async"></span><span class="cm cm--2"><img src="/img/mimg-iStock-1146844837-2048x1366-960.webp" srcset="/img/mimg-iStock-1146844837-2048x1366-320.webp 320w, /img/mimg-iStock-1146844837-2048x1366-640.webp 640w, /img/mimg-iStock-1146844837-2048x1366-960.webp 960w" sizes="(max-width: 900px) 50vw, 25vw" width="960" height="641" alt="" loading="lazy" decoding="async"></span>
-</div>
-<div class="stack" style="--s:1.1rem" data-reveal="head">
-<h2>Travailler chez RITZ</h2>
-<p class="lead">Plus de 20 métiers – de l’apprentissage à la direction de banc d’essai. Avec horaires flexibles, 30 jours de congés et formation continue.</p>
-<p class="muted">15 postes à pourvoir</p>
-<div class="cluster"><a class="btn" href="/fr/carriere/">Offres d’emploi</a><a class="btn btn--ghost" href="/fr/carriere/apprentissage/">Apprentissage</a></div>
+<section class="ch ch--flush" aria-labelledby="ca-title">
+<div class="wrap career2">
+<div class="career2__img" data-reveal="img"><img src="/img/mimg-stellenangebote_intro_slider_2_Produktion-1800.webp" srcset="/img/mimg-stellenangebote_intro_slider_2_Produktion-320.webp 320w, /img/mimg-stellenangebote_intro_slider_2_Produktion-640.webp 640w, /img/mimg-stellenangebote_intro_slider_2_Produktion-960.webp 960w, /img/mimg-stellenangebote_intro_slider_2_Produktion-1280.webp 1280w, /img/mimg-stellenangebote_intro_slider_2_Produktion-1800.webp 1800w" sizes="(max-width: 900px) calc(100vw * 1.66), calc(58vw * 1.66)" width="1800" height="813" alt="" loading="lazy" decoding="async"></div>
+<div class="career2__copy" data-reveal="head">
+<h2 class="ch__title" id="ca-title">Travailler chez RITZ</h2>
+<p class="ch__text">Plus de 20 métiers – de l’apprentissage à la direction de banc d’essai. Avec horaires flexibles, 30 jours de congés et formation continue.</p>
+<p class="cluster"><a class="btn" href="/fr/carriere/">Offres d’emploi</a><span class="muted">15 postes à pourvoir</span></p>
 </div>
 </div>
-</section>
-<section class="section section--tight">
-<div class="wrap"><div class="ctaband"><div><h2>Vous préparez un projet ?</h2><p>Envoyez-nous votre spécification – nos équipes commerciales et d’ingénierie d’application dimensionnent le transformateur adapté.</p></div><a class="btn" href="/fr/demande/">Envoyer une demande</a></div></div>
 </section>
 </main>
 <footer class="ftr">
@@ -395,6 +438,7 @@
 <p class="ftr__claim">Empowering Our Electrical Future</p>
 <p class="ftr__lead">Transformateurs de mesure, capteurs, jeux de barres et pièces en résine coulée pour l’approvisionnement en énergie – développés et fabriqués en Europe, en Chine et aux États-Unis.</p>
 <address class="ftr__addr">RITZ Instrument Transformers GmbH<br>Wandsbeker Zollstraße 92–98<br>22041 Hamburg<br><a href="tel:+4940511230"><span class="nw">+49&nbsp;40&nbsp;51123&#8209;0</span></a><br><a href="mailto:info@ritz-international.com">info@ritz-international.com</a></address>
+<nav class="ftr__social" aria-label="Suivez-nous"><h2>Suivez-nous</h2><ul><li><a href="https://de.linkedin.com/company/ritz-instrument-transformers" target="_blank" rel="noopener" aria-label="LinkedIn (s’ouvre dans un nouvel onglet)">LinkedIn<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="15" height="15"><path d="M8 16 17 7M10 7h7v7"/></svg></a></li><li><a href="https://www.instagram.com/ritz_instrument_transformers/" target="_blank" rel="noopener" aria-label="Instagram (s’ouvre dans un nouvel onglet)">Instagram<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="15" height="15"><path d="M8 16 17 7M10 7h7v7"/></svg></a></li><li><a href="https://www.xing.com/pages/ritzinstrumenttransformersgmbh" target="_blank" rel="noopener" aria-label="Xing (s’ouvre dans un nouvel onglet)">Xing<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="15" height="15"><path d="M8 16 17 7M10 7h7v7"/></svg></a></li></ul></nav>
 </div>
 <nav aria-label="Produits"><h2>Produits</h2><ul>
 <li><a href="/fr/produits/basse-tension/">Basse tension</a></li><li><a href="/fr/produits/moyenne-tension/">Moyenne tension</a></li><li><a href="/fr/produits/haute-tension/">Haute tension</a></li><li><a href="/fr/produits/electronique-capteurs/">Électronique &amp; capteurs</a></li><li><a href="/fr/produits/jeux-de-barres-sis/">Jeux de barres SIS</a></li><li><a href="/fr/produits/resine-coulee-duromer/">Pièces en résine coulée DUROMER</a></li>
@@ -413,7 +457,7 @@
 </ul></nav>
 </div>
 <div class="ftr__mid">
-<div class="ftr__funding"><img src="/img/misc-bmwi-320.webp" srcset="/img/misc-bmwi-320.webp 320w" sizes="120px" width="320" height="329" alt="Financé par le ministère fédéral allemand de l’Économie et de la Protection du climat en vertu d’une décision du Bundestag allemand" loading="lazy" decoding="async"></div>
+<div class="ftr__funding"><img src="/img/misc-bmwi-320.webp" srcset="/img/misc-bmwi-320.webp 320w" sizes="(max-width: 600px) 150px, 196px" width="320" height="329" alt="Financé par le ministère fédéral allemand de l’Économie et de l’Énergie en vertu d’une décision du Bundestag allemand" loading="lazy" decoding="async"></div>
 <p class="ftr__note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="16" height="16"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Ce site web n’utilise ni cookies ni outils de suivi.</p>
 </div>
 <div class="ftr__bottom">

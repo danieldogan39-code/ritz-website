@@ -1,0 +1,1 @@
+function i(t,n){return t?!Array.isArray(t.vis)||t.vis.includes(n):!1}function s(t){let n=new Set;return(t||[]).filter(e=>{let o=e&&(e.same||e.id)||e;return n.has(o)?!1:(n.add(o),!0)})}function u(t,n,e){if(!t)return"";let o=t.tl||{},r=t.title||t.t||{};return o[n]||r[n]||r[e]||r.de||r.en||t.file||t.f||""}export{i as a,s as b,u as c};
