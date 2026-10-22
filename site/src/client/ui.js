@@ -10,8 +10,28 @@ export function initHeader() {
   hdr.__bound = true;
   let openKey = null, hoverT = null;
   const panels = () => $$('[data-mega-panel]', hdr);
-  const close = () => { openKey = null; panels().forEach((p) => (p.hidden = true)); $$('[data-mega]', hdr).forEach((b) => b.setAttribute('aria-expanded', 'false')); };
-  const open = (key) => { openKey = key; panels().forEach((p) => (p.hidden = p.dataset.megaPanel !== key)); $$('[data-mega]', hdr).forEach((b) => b.setAttribute('aria-expanded', String(b.dataset.mega === key))); };
+  const close = () => { openKey = null; hdr.classList.remove('is-open'); panels().forEach((p) => (p.hidden = true)); $$('[data-mega]', hdr).forEach((b) => b.setAttribute('aria-expanded', 'false')); };
+  // Vorschau-Spalte: Die Liste ist mindestens so hoch wie die sichtbare Vorschau (diese liegt absolut daneben)
+  const fit = (list) => { const p = list && list.querySelector('.mg__row.is-on .mg__pane'); if (list) list.style.minHeight = p ? `${p.offsetHeight}px` : ''; };
+  const pick = (row) => {
+    if (!row || row.classList.contains('is-on')) return;
+    for (const r of row.parentElement.children) r.classList.toggle('is-on', r === row);
+    fit(row.parentElement);
+  };
+  const open = (key) => {
+    openKey = key; hdr.classList.add('is-open');
+    panels().forEach((p) => {
+      p.hidden = p.dataset.megaPanel !== key;
+      if (p.hidden) return;
+      p.querySelectorAll('img[loading="lazy"]').forEach((i) => { i.loading = 'eager'; });
+      fit(p.querySelector('.mg__list'));
+    });
+    $$('[data-mega]', hdr).forEach((b) => b.setAttribute('aria-expanded', String(b.dataset.mega === key)));
+  };
+  // Eintrag per Zeiger erst nach kurzer Verweildauer wählen (Diagonale zur Vorschau schaltet nicht um), per Tastatur sofort
+  let rowT = null;
+  hdr.addEventListener('pointerover', (e) => { const it = e.target.closest('.mg__item'); clearTimeout(rowT); if (it) rowT = setTimeout(() => pick(it.parentElement), 70); });
+  hdr.addEventListener('focusin', (e) => { const it = e.target.closest('.mg__item'); if (it) pick(it.parentElement); });
   hdr.addEventListener('click', (e) => {
     const b = e.target.closest('[data-mega]');
     if (b) { e.preventDefault(); openKey === b.dataset.mega ? close() : open(b.dataset.mega); }
@@ -28,6 +48,12 @@ export function initHeader() {
   hdr.addEventListener('pointerleave', () => { if (!fine.matches) return; clearTimeout(hoverT); hoverT = setTimeout(close, 220); });
   hdr.addEventListener('pointerenter', () => clearTimeout(hoverT));
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && openKey) { const b = $(`[data-mega="${openKey}"]`, hdr); close(); b?.focus(); } });
+  // Fokus verlässt Knopf und Panel (Tab weiter zum nächsten Menüpunkt): Menü schließen
+  hdr.addEventListener('focusout', (e) => {
+    if (!openKey || !e.relatedTarget) return;
+    const item = $(`[data-mega="${openKey}"]`, hdr)?.parentElement;
+    if (item && !item.contains(e.relatedTarget)) close();
+  });
   document.addEventListener('click', (e) => { if (openKey && !e.target.closest('[data-hdr]')) close(); });
   // Sprache
   const lb = $('.lang__btn', hdr), lm = $('#lang-menu', hdr);
@@ -167,8 +193,13 @@ export function initFilters(root) {
   if (news) news.addEventListener('click', (e) => {
     const b = e.target.closest('[data-news-cat]');
     if (!b) return;
+    const cat = b.dataset.newsCat;
     $$('[data-news-cat]', news).forEach((x) => { x.classList.toggle('is-on', x === b); x.setAttribute('aria-pressed', String(x === b)); });
-    $$('[data-cat]', news).forEach((c) => { c.hidden = b.dataset.newsCat && c.dataset.cat !== b.dataset.newsCat; });
+    // Ohne Filter stehen die drei Fokus-Beiträge oben als Karten; mit Filter erscheinen alle Treffer in der Liste
+    const feat = $('[data-news-feat]', news);
+    if (feat) feat.hidden = !!cat;
+    $$('[data-cat]', news).forEach((c) => { c.hidden = cat ? c.dataset.cat !== cat : c.hasAttribute('data-feat'); });
+    $$('[data-year]', news).forEach((y) => { y.hidden = !y.querySelector('[data-cat]:not([hidden])'); });
   });
 }
 

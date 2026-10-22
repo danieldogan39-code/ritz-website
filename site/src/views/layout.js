@@ -1,6 +1,8 @@
 // Seitenrahmen: Kopf, Mega-Menüs, Drawer, Fuß, Seitenkopf, Bausteine
 import { esc, icon, LOGO, tpl, cls, imgTag, fmtNum, phoneTxt } from '../lib/util.js';
 import { LANGS, LANG_NAMES, AREAS, SECTORS } from '../lib/routes.js';
+import { AREA_IMG, SECTOR_IMG, PAGE_IMG } from '../lib/catalog.js';
+import { docTitleFor, docsForLang, dedupeCopies } from '../lib/doclang.js';
 
 export const GROUP_ANCHORS = {
   mittelspannung: ['ms.indoor.ct', 'ms.indoor.vt', 'ms.outdoor.ct', 'ms.metalclad', 'ms.pq'],
@@ -17,18 +19,19 @@ export function header(ctx) {
   const n = t.nav;
   const cur = ctx.route?.id || '';
   const active = (ids) => (ids.includes(cur) ? ' is-active' : '');
-  const megaBtn = (key, label, ids) =>
-    `<div class="nav__item"><button class="nav__link${active(ids)}" type="button" aria-expanded="false" aria-controls="mega-${key}" data-mega="${key}">${esc(label)}${icon('down')}</button></div>`;
+  // Das Panel folgt im DOM direkt auf seinen Knopf: Tab führt vom Knopf in das geöffnete Menü und danach weiter zum nächsten Punkt
+  const megaBtn = (key, label, ids, panel) =>
+    `<div class="nav__item"><button class="nav__link${active(ids)}" type="button" aria-expanded="false" aria-controls="mega-${key}" data-mega="${key}">${esc(label)}${icon('down')}</button>${panel}</div>`;
   const link = (id, label) => `<div class="nav__item"><a class="nav__link${active([id, id === 'news' ? 'article' : id, id === 'career' ? 'training' : '', id === 'career' ? 'internships' : ''])}" href="${href(id)}"${cur === id ? ' aria-current="page"' : ''}>${esc(label)}</a></div>`;
   return `<header class="hdr" data-hdr>
   <div class="wrap hdr__bar">
     <a class="logo" href="${href('home')}" aria-label="RITZ – ${esc(t.ui.home)}">${LOGO}</a>
     <nav class="nav" aria-label="${esc(t.ui.mainNav)}">
-      ${megaBtn('products', n.products, ['products', 'area', 'product', 'finder', 'compare'])}
-      ${megaBtn('sectors', n.sectors, ['sectors', 'sector'])}
+      ${megaBtn('products', n.products, ['products', 'area', 'product', 'finder', 'compare'], megaProducts(ctx))}
+      ${megaBtn('sectors', n.sectors, ['sectors', 'sector'], megaSectors(ctx))}
       <div class="nav__item"><a class="nav__link${active(['tools', 'assistant', 'calculators'])}" href="${href('tools')}"${cur === 'tools' ? ' aria-current="page"' : ''}>${esc(n.tools)}</a></div>
       ${link('downloads', n.downloads)}
-      ${megaBtn('company', n.company, ['company', 'locations', 'quality', 'responsibility', 'references'])}
+      ${megaBtn('company', n.company, ['company', 'locations', 'quality', 'responsibility', 'references'], megaCompany(ctx))}
       ${link('career', n.career)}
       ${link('news', n.news)}
     </nav>
@@ -40,9 +43,6 @@ export function header(ctx) {
       <button class="icon-btn burger" type="button" data-drawer-open aria-label="${esc(t.ui.menu)}" aria-expanded="false" aria-controls="drawer">${icon('menu')}</button>
     </div>
   </div>
-  ${megaProducts(ctx)}
-  ${megaSectors(ctx)}
-  ${megaCompany(ctx)}
 </header>`;
 }
 
@@ -56,50 +56,52 @@ function langSwitch(ctx) {
   </div>`;
 }
 
-function megaProducts(ctx) {
-  const { t, href } = ctx;
-  const col = (areas) => `<div class="mega__col">${areas.map((a) => `
-      <a class="mega__title" href="${href('area', { area: a })}">${esc(t.lbl.area[a])}<span class="kv">${esc(t.lbl.areaRange[a])}</span></a>
-      <ul class="mega__list">${(GROUP_ANCHORS[a] || []).map((g) => `<li><a href="${ctx.hrefA('area', { area: a }, anchorId(g))}">${esc(t.lbl.group[g])}</a></li>`).join('')}
-      ${(GROUP_ANCHORS[a] || []).length ? '' : `<li><a href="${href('area', { area: a })}">${esc(t.lbl.areaShort[a])}</a></li>`}</ul>`).join('')}</div>`;
-  return `<div class="mega" id="mega-products" data-mega-panel="products" hidden>
-    <div class="wrap mega__inner">
-      ${col(['mittelspannung', 'niederspannung'])}
-      ${col(['hochspannung', 'elektronik-sensoren'])}
-      ${col(['stromschienen-sis', 'giessharzteile-duromer'])}
-      <div class="mega__feature">
-        <strong class="h4">${esc(t.nav.megaFinderTitle)}</strong>
-        <p>${esc(t.nav.megaFinderText)}</p>
-        <a class="btn btn--light btn--small" href="${href('finder')}">${esc(t.ui.openFinder)}</a>
-        <a class="link link--light" href="${href('assistant')}">${esc(t.x.assist.title)}</a>
-        <a class="link link--light" href="${href('products')}">${esc(t.ui.allProducts)}</a>
-      </div>
+// Mega-Menüs: links eine kurze Liste, rechts die Vorschau des gewählten Eintrags (Bild, Satz, Unterpunkte).
+// Die Vorschau steht im DOM direkt hinter ihrem Eintrag, damit die Tab-Reihenfolge stimmt; sichtbar ist nur die aktive.
+function megaPanel(ctx, key, rows, foot) {
+  return `<div class="mega" id="mega-${key}" data-mega-panel="${key}" hidden>
+    <div class="wrap mg">
+      <ul class="mg__list">${rows.map((r, i) => `
+        <li class="mg__row${i === 0 ? ' is-on' : ''}"><a class="mg__item" href="${r.href}"><span class="mg__name">${esc(r.name)}</span>${r.meta ? `<span class="mg__meta">${esc(r.meta)}</span>` : ''}${icon('arrow', 'width="16" height="16"')}</a>
+          <div class="mg__pane">
+            <span class="mg__img">${r.img && ctx.img[r.img] ? imgTag(ctx, r.img, { alt: '', sizes: '(max-width: 1400px) 26vw, 360px', max: 960, cover: 4 / 3 }) : ''}</span>
+            <div class="mg__body">
+              <p class="mg__title">${esc(r.title || r.name)}</p>
+              ${r.text ? `<p class="mg__text">${esc(r.text)}</p>` : ''}
+              ${r.subs && r.subs.length ? `<ul class="mg__subs">${r.subs.map(([label, url]) => `<li><a href="${url}">${esc(label)}</a></li>`).join('')}</ul>` : ''}
+              <a class="link mg__cta" href="${r.href}" tabindex="-1">${esc(r.cta)}${icon('arrow')}</a>
+            </div>
+          </div>
+        </li>`).join('')}
+      </ul>
+      ${foot ? `<p class="mg__foot">${foot}</p>` : ''}
     </div>
   </div>`;
+}
+
+function megaProducts(ctx) {
+  const { t, href } = ctx;
+  const rows = AREAS.map((a) => ({
+    name: t.lbl.area[a], meta: t.lbl.areaRange[a], href: href('area', { area: a }), img: AREA_IMG[a], title: t.lbl.areaLong[a],
+    text: t.lbl.areaShort[a], subs: (GROUP_ANCHORS[a] || []).map((g) => [t.lbl.group[g], ctx.hrefA('area', { area: a }, anchorId(g))]), cta: t.ui.toArea,
+  }));
+  return megaPanel(ctx, 'products', rows, `<a href="${href('finder')}">${esc(t.nav.finder)}</a><a href="${href('assistant')}">${esc(t.x.assist.title)}</a><a href="${href('products')}">${esc(t.ui.allProducts)}</a>`);
 }
 
 function megaSectors(ctx) {
   const { t, href } = ctx;
   const S = t.pages.sectors.items;
-  return `<div class="mega" id="mega-sectors" data-mega-panel="sectors" hidden>
-    <div class="wrap mega__simple">
-      ${SECTORS.map((s) => `<a class="mega__card" href="${href('sector', { sector: s })}"><strong>${esc(S[s].title)}</strong><span>${esc(S[s].short)}</span></a>`).join('')}
-      <a class="mega__card" href="${href('sectors')}"><strong>${esc(t.nav.sectors)}</strong><span>${esc(t.pages.sectors.lead)}</span></a>
-    </div>
-  </div>`;
+  const rows = SECTORS.map((s) => ({ name: S[s].title, href: href('sector', { sector: s }), img: SECTOR_IMG[s], text: S[s].short, cta: t.ui.more }));
+  return megaPanel(ctx, 'sectors', rows, `<a href="${href('sectors')}">${esc(t.nav.allSectors)}</a>`);
 }
 
 function megaCompany(ctx) {
   const { t, href } = ctx;
   const P = t.pages;
-  const items = [['company', t.nav.about, t.nav.megaCompanyText], ['locations', t.nav.locations, P.locations.lead], ['quality', t.nav.quality, P.quality.lead],
-    ['responsibility', t.nav.responsibility, P.responsibility.lead], ['references', t.nav.references, P.references.lead], ['career', t.nav.career, t.nav.megaCareerText],
-    ['news', t.nav.news, P.news.lead], ['contact', t.nav.contact, P.contact.lead]];
-  return `<div class="mega" id="mega-company" data-mega-panel="company" hidden>
-    <div class="wrap mega__simple">
-      ${items.map(([id, title, text]) => `<a class="mega__card" href="${href(id)}"><strong>${esc(title)}</strong><span>${esc(shorten(text, 110))}</span></a>`).join('')}
-    </div>
-  </div>`;
+  const rows = [['company', t.nav.about, t.nav.megaCompanyText], ['locations', t.nav.locations, P.locations.lead], ['quality', t.nav.quality, P.quality.lead],
+    ['responsibility', t.nav.responsibility, P.responsibility.lead], ['references', t.nav.references, P.references.lead]]
+    .map(([id, name, text]) => ({ name, href: href(id), img: PAGE_IMG[id], text: shorten(text, 150), cta: t.ui.more }));
+  return megaPanel(ctx, 'company', rows, '');
 }
 
 export function shorten(s, n) {
@@ -147,6 +149,13 @@ export function drawer(ctx) {
 </div>`;
 }
 
+// Profile der RITZ-Gruppe in sozialen Netzwerken (wie im Fuß der bisherigen Website)
+export const SOCIAL = [
+  ['LinkedIn', 'https://de.linkedin.com/company/ritz-instrument-transformers'],
+  ['Instagram', 'https://www.instagram.com/ritz_instrument_transformers/'],
+  ['Xing', 'https://www.xing.com/pages/ritzinstrumenttransformersgmbh'],
+];
+
 export function footer(ctx) {
   const { t, href } = ctx;
   const F = t.footer;
@@ -159,6 +168,7 @@ export function footer(ctx) {
         <p class="ftr__claim">${esc(F.claim)}</p>
         <p class="ftr__lead">${esc(F.lead)}</p>
         <address class="ftr__addr">RITZ Instrument Transformers GmbH<br>Wandsbeker Zollstraße 92–98<br>22041 Hamburg<br><a href="tel:+4940511230"><span class="nw">+49&nbsp;40&nbsp;51123&#8209;0</span></a><br><a href="mailto:info@ritz-international.com">info@ritz-international.com</a></address>
+        <nav class="ftr__social" aria-label="${esc(F.follow)}"><h2>${esc(F.follow)}</h2><ul>${SOCIAL.map(([name, url]) => `<li><a href="${url}" target="_blank" rel="noopener" aria-label="${esc(tpl(F.newTab, { name }))}">${esc(name)}${icon('arrowUpRight', 'width="15" height="15"')}</a></li>`).join('')}</ul></nav>
       </div>
       <nav aria-label="${esc(F.colProducts)}"><h2>${esc(F.colProducts)}</h2><ul>
         ${AREAS.map((a) => `<li><a href="${href('area', { area: a })}">${esc(t.lbl.area[a])}</a></li>`).join('')}
@@ -177,7 +187,7 @@ export function footer(ctx) {
       </ul></nav>
     </div>
     <div class="ftr__mid">
-      ${ctx.img['misc/bmwi.png'] || ctx.img['misc/bmwi'] ? `<div class="ftr__funding">${imgTag(ctx, ctx.img['misc/bmwi'] ? 'misc/bmwi' : 'misc/bmwi.png', { alt: F.funding, sizes: '120px', max: 320 })}</div>` : ''}
+      ${ctx.img['misc/bmwi.png'] || ctx.img['misc/bmwi'] ? `<div class="ftr__funding">${imgTag(ctx, ctx.img['misc/bmwi'] ? 'misc/bmwi' : 'misc/bmwi.png', { alt: F.funding, sizes: '(max-width: 600px) 150px, 196px', max: 480 })}</div>` : ''}
       <p class="ftr__note">${icon('check', 'width="16" height="16"')}${esc(F.privacyNote)}</p>
     </div>
     <div class="ftr__bottom">
@@ -268,13 +278,20 @@ export function personCard(ctx, p, extra = '') {
 </article>`;
 }
 
+// Dokumente einer Sprachfassung wie auf der bisherigen Website: unsichtbare durch ihr Gegenstück ersetzen oder weglassen,
+// byte-gleiche Kopien nur einmal (Produktfinder-Dokumente gelten überall)
+export const langDocs = (ctx, docs) => dedupeCopies(docsForLang(docs, ctx.lang, ctx.data.docsById));
+// einzelnes Dokument für die Sprachfassung (oder null, wenn diese Fassung es nicht zeigte und es kein Gegenstück gibt)
+export const docIn = (ctx, d) => (d ? docsForLang([d], ctx.lang, ctx.data.docsById)[0] || null : null);
+
 // Dokumentzeile
 export function docRow(ctx, d) {
   const { t, lang } = ctx;
-  const title = d.title[lang] || d.title[ctx.dl] || d.title.de || d.title.en || d.file;
+  // Titel wie in der jeweiligen Sprachfassung der bisherigen Website (tl), sonst aus den Datensprachen
+  const title = docTitleFor(d, lang, ctx.dl);
   const L = { de: 'DE', en: 'EN', 'de+en': 'DE/EN', fr: 'FR', es: 'ES', hu: 'HU' }[d.lang] || '';
   // Sprache des angezeigten Titels (für Screenreader), wenn sie von der Seitensprache abweicht
-  const tl = d.title.de === title && d.title.en === title ? (/^(de|en|fr|es|hu)$/.test(d.lang || '') ? d.lang : lang)
+  const tl = d.tl && d.tl[lang] ? lang : d.title.de === title && d.title.en === title ? (/^(de|en|fr|es|hu)$/.test(d.lang || '') ? d.lang : lang)
     : d.title.de === title ? 'de' : d.title.en === title ? 'en' : lang;
   const size = d.size ? ctx.fmtBytes(d.size) : '';
   const local = !!ctx.docHref(d);

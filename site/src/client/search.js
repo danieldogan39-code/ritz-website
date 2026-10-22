@@ -2,6 +2,7 @@
 import { $, $$, getIndex, getT, getX, getData, clientCtx, debounce, CFG, handoff } from './core.js';
 import { esc, icon, imgTag, productGlyph, tpl } from '../lib/util.js';
 import { matchText, descriptor, imgFit, productThumb } from '../lib/product.js';
+import { docVisible, dedupeCopies, docTitleFor } from '../lib/doclang.js';
 
 const norm = (s) => String(s || '').toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '').replace(/ß/g, 'ss');
 
@@ -19,8 +20,8 @@ async function searchAll(q) {
   const pageHits = pages.filter((p) => p.k !== 'news').map((p) => [p, scoreText(p.t, p.x)]).filter((x) => x[1]).sort((a, b) => b[1] - a[1]).map((x) => x[0]);
   const newsHits = pages.filter((p) => p.k === 'news').map((p) => [p, scoreText(p.t, p.x)]).filter((x) => x[1]).sort((a, b) => b[1] - a[1]).map((x) => x[0]);
   const dl = ctx.dl;
-  const docHits = docs.map((d) => {
-    const title = d.t[dl] || d.t.de || d.t.en || d.f;
+  const docHits = dedupeCopies(docs.filter((d) => docVisible(d, CFG.lang))).map((d) => {
+    const title = docTitleFor(d, CFG.lang, dl);
     return [d, scoreText(title, d.f + ' ' + (d.c || ''))];
   }).filter((x) => x[1]).sort((a, b) => b[1] - a[1]).map((x) => x[0]);
   return { products: prods, pages: pageHits, docs: docHits, news: newsHits, ctx, t };
@@ -34,7 +35,7 @@ function hitHtml(kind, item, ctx, t, i, score = null) {
   }
   if (kind === 'doc') {
     const d = item;
-    const title = d.t[ctx.dl] || d.t.de || d.t.en || d.f;
+    const title = docTitleFor(d, CFG.lang, ctx.dl);
     const local = !!ctx.docHref(d);
     return `<a class="search__hit" role="option" id="sh-${i}" ${ctx.docAttrs(d)}><span class="ic">${icon(local ? 'file' : 'mail')}</span><span><b>${esc(title)}</b><span>${esc([t.lbl.docTypeOne[d.ty], (d.l || '').toUpperCase(), local ? '' : t.downloads.req.onRequest].filter(Boolean).join(', '))}</span></span></a>`;
   }

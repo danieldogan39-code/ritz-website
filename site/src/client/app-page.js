@@ -2,7 +2,7 @@
 import { initGallery, initTabs, initFilters, initContactFinder, initForms, initHero, initGotoSearch } from './ui.js';
 import { initCompareToggles } from './basket.js';
 import { $ } from './core.js';
-import { initMotion, initHero2 } from './motion.js';
+import { initMotion, initHero2, initStage } from './motion.js';
 
 export async function initPage(root = document) {
   initCompareToggles(root);
@@ -13,6 +13,7 @@ export async function initPage(root = document) {
   initGotoSearch(root);
   initMotion(root);
   initHero2(root);
+  initStage(root);
   const has = (s) => !!$(s, root);
   const jobs = [];
   if (has('[data-vaxis]')) jobs.push(import('./vaxis.js').then((m) => m.initVaxis(root)));

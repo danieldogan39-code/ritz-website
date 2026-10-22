@@ -65,7 +65,7 @@ export function makeCtx({ lang, mode = 'static', base = '/', t, data, img = {}, 
     },
     docTitle(d) {
       const tt = d.title || d.t || {};
-      return tt[lang] || tt[dl] || tt.de || tt.en || d.file || d.f || '';
+      return (d.tl && d.tl[lang]) || tt[lang] || tt[dl] || tt.de || tt.en || d.file || d.f || '';
     },
     docReq(d) {
       const R = t.downloads?.req;

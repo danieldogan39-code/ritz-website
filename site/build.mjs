@@ -297,7 +297,7 @@ function indexEntry(p) {
 function docsCompact() {
   return docs.map((d) => {
     const codes = d.products.map((id) => products.find((p) => p.id === id)?.code).filter(Boolean);
-    const o = { id: d.id, t: d.title, pa: d.path, lo: d.local ? 1 : undefined, f: d.file, ty: d.type, l: d.lang, s: d.size || undefined, a: d.areas.length ? d.areas : undefined, p: d.products.length ? d.products : undefined, c: codes.length ? codes.join(' ') : undefined, e: d.ext !== 'pdf' ? d.ext : undefined };
+    const o = { id: d.id, t: d.title, pa: d.path, lo: d.local ? 1 : undefined, f: d.file, ty: d.type, l: d.lang, s: d.size || undefined, a: d.areas.length ? d.areas : undefined, p: d.products.length ? d.products : undefined, c: codes.length ? codes.join(' ') : undefined, e: d.ext !== 'pdf' ? d.ext : undefined, vis: d.vis, tl: d.tl, alt: d.alt, al: d.areaLangs && Object.keys(d.areaLangs).length ? d.areaLangs : undefined, same: d.same };
     return JSON.parse(JSON.stringify(o));
   });
 }

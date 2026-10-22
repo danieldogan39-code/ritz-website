@@ -1,7 +1,8 @@
 // Produkte: Übersicht, Bereich, Produktdetail, Produktfinder, Vergleich, Anfrage
 import { esc, icon, imgTag, imgSrcset, tpl, fmtKv, fmtRange, fmtList, fmtNum, productGlyph, phoneTxt } from '../lib/util.js';
 import { AREAS, SECTORS } from '../lib/routes.js';
-import { phead, sectionHead, personCard, docRow, ctaBand, anchorId, ticks, crumbs } from './layout.js';
+import { docsForArea, dedupeCopies } from '../lib/doclang.js';
+import { phead, sectionHead, personCard, docRow, ctaBand, anchorId, ticks, crumbs, langDocs, docIn } from './layout.js';
 import { productCard, descriptor, descriptorLang, langAttr, groupProducts, keySpecs, KIND_GROUP, vmini, specRows, ratingPlate, imgFit, productDrawing, dimSpecRows } from '../lib/product.js';
 export { specRows };
 import { AREA_IMG, voltageAxis } from './home.js';
@@ -24,7 +25,7 @@ export function productsPage(ctx) {
   const P = t.pages.products;
   const counts = {};
   for (const p of ctx.data.products) counts[p.area] = (counts[p.area] || 0) + 1;
-  const knowledge = sortDocs(ctx, ctx.data.docs.filter((d) => d.type === 'knowledge' && (d.lang === ctx.dl || d.lang === 'de+en' || (ctx.dl !== 'de' && d.lang === 'en'))));
+  const knowledge = sortDocs(ctx, langDocs(ctx, ctx.data.docs.filter((d) => d.type === 'knowledge' && (d.vis || d.lang === ctx.dl || d.lang === 'de+en' || (ctx.dl !== 'de' && d.lang === 'en')))));
   return `${phead(ctx, { title: P.h1, lead: P.lead, image: 'mimg/ritz_header-unternehmen.webp', crumbs: [[t.nav.products]] })}
 <section class="section section--tight">
   <div class="wrap">
@@ -64,7 +65,8 @@ export function areaPage(ctx, area) {
   const people = peopleFor(ctx, area);
   const locs = (ctx.data.contacts.areaLocations[area] || []).map((x) => locById(ctx, x.location)).filter(Boolean);
   const uniqLocs = [...new Map(locs.map((l) => [l.id, l])).values()];
-  const areaDocs = sortDocs(ctx, ctx.data.docs.filter((d) => d.areas.includes(area) && ['catalog', 'knowledge', 'document', 'press'].includes(d.type) && !d.products.length));
+  // wie die Bereichsseite der jeweiligen Sprachfassung (areaLangs), Gegenstücke statt fremdsprachiger Fassungen
+  const areaDocs = sortDocs(ctx, dedupeCopies(docsForArea(ctx.data.docs.filter((d) => ['catalog', 'knowledge', 'document', 'press'].includes(d.type) && !d.products.length), area, ctx.lang, ctx.data.docsById)));
   const facts = A.facts || [];
   return `${phead(ctx, { title: A.title, lead: A.lead, image: AREA_IMG[area], crumbs: [[t.nav.products, href('products')], [t.lbl.area[area]]],
     aside: `<div class="cluster"><a class="btn btn--light" href="${href('finder', {}, { area })}">${esc(t.nav.finder)}</a></div>` })}
@@ -83,7 +85,7 @@ export function areaPage(ctx, area) {
   </div>
 </section>
 ${areaExtras(ctx, area)}
-${groups.map((g, i) => `<section class="section section--tight${i % 2 === 0 ? '' : ''}" id="${anchorId(g.key)}">
+${groups.map((g) => `<section class="section section--tight pgroup" id="${anchorId(g.key)}">
   <div class="wrap">
     ${sectionHead(t.lbl.group[g.key], t.lbl.groupText[g.key] || '', `<a class="link" href="${href('finder', {}, { area })}">${esc(ctx.plural(g.items.length, t.ui.productCount))}</a>`)}
     <div class="pgrid">${g.items.map((p) => productCard(ctx, p)).join('')}</div>
@@ -132,7 +134,7 @@ function areaExtras(ctx, area) {
       ['KS 79-05', 'KS_79-05_d-2.pdf', 'M005589_I05-1.pdf'], ['KS 95-06', 'KS_95-06_d-2.pdf', 'M005590_I06.pdf'], ['KS 120-08', 'KS_120-08_d-2.pdf', 'M005591_I06-1.pdf'],
       ['KS 160-12', 'KS_160-12_d-1.pdf', 'M005592_I06-1.pdf'], ['KSO 311', 'KSO_311_d-1.pdf', 'M006681I2-1.pdf'], ['KSW 52', 'KSW_52_d-1.pdf', 'M003651I5-1.pdf']];
     const U = 'https://ritz-international.com/wp-content/uploads/';
-    const doc = (f) => ctx.data.docs.find((d) => d.file === f);
+    const doc = (f) => docIn(ctx, ctx.data.docs.find((d) => d.file === f));
     return `<section class="section section--porcelain"><div class="wrap">
       ${sectionHead(A.standardTitle, A.standardLead)}
       <div class="table-wrap"><table class="spec spec--grid"><thead><tr><th scope="col">${esc(t.lbl.spec.code)}</th><th scope="col">${esc(t.lbl.docTypeOne.datasheet)}</th><th scope="col">${esc(t.lbl.docTypeOne.drawing)}</th></tr></thead>
@@ -178,7 +180,7 @@ export function productPage(ctx, p) {
   const { t, href, lang } = ctx;
   const T = t.product;
   const dl = ctx.dl;
-  const docs = sortDocs(ctx, (p.docs || []).map((id) => ctx.data.docsById[id]).filter(Boolean));
+  const docs = sortDocs(ctx, langDocs(ctx, (p.docs || []).map((id) => ctx.data.docsById[id]).filter(Boolean)));
   const datasheet = docs.find((d) => d.type === 'datasheet' && (d.lang === dl || d.lang === 'de+en')) || docs.find((d) => d.type === 'datasheet');
   const imgs = (p.images || []).filter((k) => ctx.img[k]);
   const people = peopleFor(ctx, p.area);

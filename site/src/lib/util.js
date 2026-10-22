@@ -123,6 +123,7 @@ const P = {
   pause: '<path d="M8 5v14M16 5v14"/>',
   play: '<path d="M7 4.5v15l12-7.5z"/>',
   ruler: '<path d="M3 16.5 16.5 3 21 7.5 7.5 21z"/><path d="m7 13 2 2M10 10l1.5 1.5M13 7l2 2"/>',
+  arrowUpRight: '<path d="M8 16 17 7M10 7h7v7"/>',
 };
 export function icon(name, extra = '') {
   // eigene Größe (extra) ersetzt die Standardgröße – doppelte Attribute würden ignoriert

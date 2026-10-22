@@ -1,24 +1,11 @@
 // Startseite
 import { esc, icon, imgTag, tpl, fmtDate, axisPos, AXIS_TICKS, fmtNum, htmlText, UM_STEPS } from '../lib/util.js';
-import { parsePosition } from '../lib/spec.js';
-import { matchProducts } from '../lib/match.js';
-import { reqChipsHtml, markedText, homeHitsHtml } from '../lib/reqfmt.js';
-import { AREAS, SECTORS } from '../lib/routes.js';
-import { sectionHead, ctaBand, shorten } from './layout.js';
+import { shorten } from './layout.js';
 import { projectLL } from '../lib/geo.js';
-import { CERT_FILES, LOC_IMG, HISTORY_IMG } from '../lib/catalog.js';
+import { HISTORY_IMG, AREA_IMG, SECTOR_IMG } from '../lib/catalog.js';
 import { coversUm } from '../lib/product.js';
 
-export const AREA_IMG = {
-  niederspannung: 'mimg/ritz_header-niederspannung.webp', mittelspannung: 'mimg/ritz_header-mittelspannung.webp',
-  hochspannung: 'mimg/Hochspannungswandler-Intro2.webp', 'elektronik-sensoren': 'mimg/ritz_header-elektronik.webp',
-  'stromschienen-sis': 'mimg/SIS_Slider.webp', 'giessharzteile-duromer': 'mimg/ritz_header-duromer.webp',
-};
-export const SECTOR_IMG = {
-  netze: 'mimg/2022__06__image_empowering_the_future.webp', schaltanlagenbau: 'mimg/2022__07__unternehmen_qualitaetsmanagement_wandler_pruefung.webp',
-  industrie: 'mimg/Kundenreferenz-SIS-Projekt-BSW-3.webp', bahn: 'mimg/2022__07__sonderwandler_bahnwandler_gsefb.webp',
-  erneuerbare: 'mimg/wind-energy-sq.webp', kraftwerke: 'mimg/IRBT-1.webp', messtechnik: 'mimg/2022__07__unternehmen_qualitaetsmanagement_schienen_pruefung.webp',
-};
+export { AREA_IMG, SECTOR_IMG };
 // Bänder der Spannungsachse
 export const AXIS_BANDS = [
   ['niederspannung', 0.72, 3.6], ['mittelspannung', 3.6, 72.5], ['hochspannung', 72.5, 550], ['elektronik-sensoren', 0.72, 90], ['stromschienen-sis', 3.6, 72.5],
@@ -81,7 +68,7 @@ export function worldTeaser(ctx) {
   const order = hq ? [hq, ...others] : locs;
   const dots = order.map((l, i) => {
     const [x, y] = P[l.id];
-    return `<span class="wt__dot wt__dot--${l.type}" style="--i:${i};left:${((x / W) * 100).toFixed(2)}%;top:${((y / Hh) * 100).toFixed(2)}%" title="${esc(l.city)}"></span>`;
+    return `<span class="wt__dot wt__dot--${l.type}" data-loc-dot="${l.id}" style="--i:${i};left:${((x / W) * 100).toFixed(2)}%;top:${((y / Hh) * 100).toFixed(2)}%" title="${esc(l.city)}"></span>`;
   }).join('');
   return `<div class="wt" data-reveal="net" aria-hidden="true"><img class="wl-lt" src="${ctx.base}img/world-lite.svg" alt="" width="1000" height="520" loading="lazy"><img class="wl-dk" src="${ctx.base}img/world-lite-dark.svg" alt="" width="1000" height="520" loading="lazy"><svg class="wt__net" viewBox="0 0 ${W} ${Hh}" preserveAspectRatio="none" focusable="false">${arcs}</svg>${dots}</div>`;
 }
@@ -137,13 +124,6 @@ function introOverlay(ctx) {
 // Überschrift Wort für Wort (Maske), damit der Einstieg ohne Layoutverschiebung läuft
 const words = (text) => String(text).split(' ').map((w, i) => `<span class="h1w"><span style="--i:${i}">${esc(w)}</span></span>`).join(' ');
 
-// Bühne der Startseite: Bilder aus den Werken (Überblendung, langsamer Zoom), Leitsatz, Suche und Kennzahlen
-export const HERO_SLIDES = [
-  ['mimg/intro_home_slider_7.webp', '62% 50%'],
-  ['mimg/stellenangebote_intro_slider_2_Produktion.webp', '68% 35%'],
-  ['mimg/intro_home_slider_6.webp', '58% 50%'],
-  ['mimg/intro_home_slider_4.webp', '60% 50%'],
-];
 // Kennzahlen aus den Stammdaten (Standorte, Mitarbeitende, Vertretungen)
 export function groupStats(ctx) {
   const locs = ctx.data.contacts.locations;
@@ -152,201 +132,246 @@ export function groupStats(ctx) {
   const repCountries = new Set((ctx.data.contacts.reps || []).map((r) => r.country).filter(Boolean)).size;
   return { plants: plants.length, plantCountries: new Set(plants.map((l) => l.country)).size, staff, staffRound: Math.floor(staff / 100) * 100, repCountries };
 }
-function heroStage(ctx) {
+
+// ---------- Bühne: ein Ringkern-Stromwandler im Detail, darüber das Messwerk ----------
+// Foto und Einblendungen teilen ein Koordinatensystem (Pixel des Fotos, 1800 × 813): Die Fläche hat das
+// Seitenverhältnis des Fotos und wird wie ein Titelbild beschnitten, so liegen Skala und Hinweise bei jeder
+// Fenstergröße genau auf dem Ring.
+const STAGE_IMG = 'mimg/intro_home_slider_6.webp';
+const STAGE = { w: 1800, h: 813, cx: 1172, cy: 437, r: 292 };
+const P = (x, y) => `left:${((x / STAGE.w) * 100).toFixed(2)}%;top:${((y / STAGE.h) * 100).toFixed(2)}%`;
+function arcPath(cx, cy, r, a0, a1) {
+  const p = (a) => [cx + r * Math.cos((a * Math.PI) / 180), cy + r * Math.sin((a * Math.PI) / 180)];
+  const [x0, y0] = p(a0), [x1, y1] = p(a1);
+  return `M${x0.toFixed(1)} ${y0.toFixed(1)}A${r} ${r} 0 ${a1 - a0 > 180 ? 1 : 0} 1 ${x1.toFixed(1)} ${y1.toFixed(1)}`;
+}
+function stageHud() {
+  const { cx, cy, r } = STAGE;
+  let ticks = '', major = '';
+  for (let a = 0; a < 360; a += 3) {
+    const long = a % 15 === 0;
+    const r1 = r + 22, r2 = r1 + (long ? 18 : 8);
+    const c = Math.cos((a * Math.PI) / 180), s = Math.sin((a * Math.PI) / 180);
+    const seg = `M${(cx + c * r1).toFixed(1)} ${(cy + s * r1).toFixed(1)}L${(cx + c * r2).toFixed(1)} ${(cy + s * r2).toFixed(1)}`;
+    if (long) major += seg; else ticks += seg;
+  }
+  const cross = [[1, 0], [-1, 0], [0, 1], [0, -1]].map(([dx, dy]) => `M${cx + dx * 18} ${cy + dy * 18}L${cx + dx * 46} ${cy + dy * 46}`).join('');
+  return `<svg class="hud" viewBox="0 0 ${STAGE.w} ${STAGE.h}" preserveAspectRatio="none" focusable="false">
+    <circle class="hud__glow" cx="${cx}" cy="${cy}" r="${r + 8}"/>
+    <circle class="hud__ring" cx="${cx}" cy="${cy}" r="${r + 8}" pathLength="1"/>
+    <path class="hud__ticks" d="${ticks}"/><path class="hud__major" d="${major}"/>
+    <g class="hud__rot"><path class="hud__scan" d="${arcPath(cx, cy, r + 50, -70, -18)}"/><path class="hud__scan hud__scan--2" d="${arcPath(cx, cy, r + 50, 110, 162)}"/></g>
+    <g class="hud__rot hud__rot--rev"><path class="hud__flow" d="${arcPath(cx, cy, r + 64, 200, 232)}"/><path class="hud__flow" d="${arcPath(cx, cy, r + 64, 20, 52)}"/></g>
+    <path class="hud__cross" d="${cross}"/>
+    <path class="hud__lead hud__lead--1" d="M${cx} ${cy}L${cx - 84} ${cy + 84}L${cx - 136} ${cy + 84}" pathLength="1"/>
+    <path class="hud__lead hud__lead--2" d="M${cx + 270} ${cy - 226}L${cx + 208} ${cy - 297}L${cx + 120} ${cy - 297}" pathLength="1"/>
+    <circle class="hud__dot" cx="${cx}" cy="${cy}" r="5"/><circle class="hud__dot hud__dot--2" cx="${cx + 270}" cy="${cy - 226}" r="5"/>
+  </svg>`;
+}
+// kleine Messkurve (zwei Perioden, doppelt lang zum Durchlaufen)
+function trace(amp) {
+  let d = '';
+  for (let x = 0; x <= 240; x += 4) d += `${x ? 'L' : 'M'}${x} ${(20 - amp * Math.sin((2 * Math.PI * x) / 60)).toFixed(1)}`;
+  return `<svg viewBox="0 0 120 40" preserveAspectRatio="none" focusable="false"><path d="${d}"/></svg>`;
+}
+function stage(ctx) {
   const { t, href, lang } = ctx;
-  const H = t.pages.home, Hs = H.hero2, St = H.stats;
+  const H = t.pages.home, S = H.st;
   const g = groupStats(ctx);
   const facts = [
-    ['1945', St.founded],
-    [`${fmtNum(g.staffRound, lang)}+`, St.staff],
-    [String(g.plants), tpl(St.plants, { n: g.plantCountries })],
-    [`${fmtNum(0.72, lang)}–550`, St.range, 'kV'],
-    ...(g.repCountries ? [[String(g.repCountries), St.reps]] : []),
+    ['1945', H.stats.founded],
+    [`${fmtNum(g.staffRound, lang)}+`, H.stats.staff],
+    [String(g.plants), tpl(H.stats.plants, { n: g.plantCountries })],
+    [`${fmtNum(0.72, lang)}–550`, H.stats.range, 'kV'],
+    ...(g.repCountries ? [[String(g.repCountries), H.stats.reps]] : []),
   ];
-  const slides = HERO_SLIDES.filter(([k]) => ctx.img[k]);
-  return `<section class="hero2 hero--anim" data-hero2 aria-label="${esc(Hs.slides)}">
-  <div class="hero2__media">${slides.map(([k, pos], i) => `<figure class="hero2__slide${i ? '' : ' is-on'}" data-slide="${i}" style="--pos:${pos}">${imgTag(ctx, k, { alt: '', sizes: '(max-width: 700px) 1800px, (max-width: 1100px) 150vw, 100vw', eager: i === 0 })}</figure>`).join('')}</div>
-  <div class="wrap hero2__inner">
-    <h1>${words(H.h1)}</h1>
-    <p class="lead">${esc(H.lead)}</p>
-    <form class="hero__search" role="search" action="${href('search')}" data-hero-search>
-      <label class="vh" for="hero-q">${esc(H.searchLabel)}</label>
-      <input id="hero-q" name="q" type="search" placeholder="${esc(H.searchPh)}" autocomplete="off">
-      <button type="submit">${icon('search')}<span>${esc(H.searchBtn)}</span></button>
-    </form>
-    <p class="hero__hint">${esc(H.hint)} ${H.hints.map((h) => `<button type="button" data-hint="${esc(h)}">${esc(h)}</button>`).join(', ')}</p>
-    <div class="hero2__cta"><a class="btn btn--red" href="${href('products')}">${esc(Hs.cta1)}</a><a class="btn btn--light" href="${href('inquiry')}">${esc(Hs.cta2)}</a></div>
+  const { cx, cy, r } = STAGE;
+  const photo = ctx.img[STAGE_IMG] ? imgTag(ctx, STAGE_IMG, { alt: '', sizes: '(max-aspect-ratio: 9/4) 230vh, 100vw', eager: true, cls: 'st__photo' }) : '';
+  return `<section class="st hero--anim" data-stage aria-labelledby="st-title">
+  <div class="st__media" aria-hidden="true">
+    <div class="st__frame">
+      ${photo}
+      ${stageHud()}
+      <span class="st__chip st__chip--a" style="${P(cx - 142, cy + 84)}">${esc(S.hudWindow)}</span>
+      <span class="st__chip st__chip--b" style="${P(cx + 114, cy - 297)}">${esc(S.hudCore)}</span>
+      <span class="st__read" style="${P(cx + 70, cy + 214)}">
+        <span class="st__trace"><b>${esc(S.primary)}</b><i>2000 A</i>${trace(15)}</span>
+        <span class="st__trace st__trace--s"><b>${esc(S.secondary)}</b><i>5 A</i>${trace(4)}</span>
+      </span>
+    </div>
   </div>
-  ${slides.length > 1 ? `<div class="hero2__ctl wrap" data-hero2-ctl>
-    <div class="hero2__dots">${slides.map((_, i) => `<button type="button" data-goto="${i}" aria-label="${esc(tpl(Hs.slide, { n: i + 1, total: slides.length }))}"${i ? '' : ' aria-current="true"'}><i></i></button>`).join('')}</div>
-    <button class="hero2__pause" type="button" data-hero2-pause aria-pressed="false" aria-label="${esc(Hs.pause)}" data-l-pause="${esc(Hs.pause)}" data-l-play="${esc(Hs.play)}">${icon('pause', 'width="16" height="16"')}${icon('play', 'width="16" height="16"')}</button>
-  </div>` : ''}
-  <div class="hero2__facts">
-    <dl class="wrap hero2__fl" data-reveal="facts">${facts.map(([a, b, unit]) => `<div class="hero2__fact"><dt>${esc(b)}</dt><dd><strong${unit ? '' : ' data-count'}>${esc(a)}${unit ? `<small>${esc(unit)}</small>` : ''}</strong></dd></div>`).join('')}</dl>
+  <div class="wrap st__inner">
+    <h1 class="st__title" id="st-title">${words(H.h1)}</h1>
+    <p class="st__lead">${esc(S.lead)}</p>
+    <div class="st__links"><a class="btn btn--light" href="#prinzip">${esc(S.cta1)}</a><a class="link link--light" href="${href('products')}">${esc(S.cta2)}</a></div>
+  </div>
+  <div class="st__foot">
+    <dl class="wrap st__ruler" data-reveal="facts">${facts.map(([a, b, unit]) => `<div class="st__fact"><dt>${esc(b)}</dt><dd><strong${unit ? '' : ' data-count'}>${esc(a)}${unit ? `<small>${esc(unit)}</small>` : ''}</strong></dd></div>`).join('')}</dl>
   </div>
 </section>`;
 }
 
-// Werke der Gruppe: Zentrale und Fertigungsstandorte mit Foto (sonst Kartenausschnitt), Spezialitäten, Mitarbeitenden
-function plantMap(ctx, l) {
-  const wm = ctx.data.worldmeta;
-  if (!l.lat || !wm) return '';
-  const [x, y] = projectLL(wm, l.lng, l.lat);
-  const w = 150, h = (w * 10) / 16;
-  return `<svg class="plant__map" viewBox="${(x - w / 2).toFixed(1)} ${(y - h / 2).toFixed(1)} ${w} ${h.toFixed(1)}" aria-hidden="true" focusable="false"><use class="loc__land" href="${ctx.base}img/world-land.svg#land"/><circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="7" class="loc__halo"/><circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="3.4" class="loc__dot"/></svg>`;
+// ---------- Prinzip ----------
+function principle(ctx) {
+  const Pr = ctx.t.pages.home.principle;
+  return `<section class="ch" id="prinzip" aria-labelledby="pr-title">
+  <div class="wrap ch__split">
+    <h2 class="ch__title" id="pr-title" data-reveal="head">${esc(Pr.title)}</h2>
+    <div class="ch__body" data-reveal="head"><p class="ch__text">${esc(Pr.text)}</p></div>
+  </div>
+  <div class="wrap ch__figs"><dl class="figs" data-reveal="facts">${Pr.facts.map(([v, l]) => `<div class="fig"><dt>${esc(l)}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl></div>
+</section>`;
 }
-// Allgemeine Funktionen (Vertrieb, Verwaltung, Konstruktion) ausblenden – erkannt an der deutschen Liste,
-// die Sprachfassungen haben dieselbe Reihenfolge
+
+// ---------- Spektrum: sechs Bereiche auf der Spannungsachse ----------
+const BANDS = { niederspannung: [0.72, 3.6], mittelspannung: [3.6, 72.5], hochspannung: [72.5, 550], 'elektronik-sensoren': [0.72, 90], 'stromschienen-sis': [3.6, 40.5], 'giessharzteile-duromer': [0.72, 72.5] };
+const pc = (v) => (axisPos(v) * 100).toFixed(2);
+function spectrum(ctx) {
+  const { t, href, lang } = ctx;
+  const Sp = t.pages.home.spectrum;
+  const order = ['niederspannung', 'mittelspannung', 'hochspannung', 'elektronik-sensoren', 'stromschienen-sis', 'giessharzteile-duromer'];
+  const ticks = AXIS_TICKS.map((v, i) => `<span class="sp__tick" style="left:${pc(v)}%"><span>${esc(fmtNum(v, lang))}${i === AXIS_TICKS.length - 1 ? ' kV' : ''}</span></span>`).join('');
+  return `<section class="ch ch--porcelain" aria-labelledby="sp-title">
+  <div class="wrap">
+    <div class="ch__head" data-reveal="head"><h2 class="ch__title" id="sp-title">${esc(Sp.title)}</h2><p class="ch__lead">${esc(Sp.lead)}</p></div>
+    <div class="sp" data-spectrum>
+      <div class="sp__chart" data-reveal="chart">
+        <div class="sp__axis" aria-hidden="true">${ticks}</div>
+        <ul class="sp__rows">${order.map((a, i) => {
+          const [lo, hi] = BANDS[a];
+          return `<li><a class="sp__row${i === 1 ? ' is-on' : ''}${a === 'giessharzteile-duromer' ? ' sp__row--part' : ''}" href="${href('area', { area: a })}" data-sp="${a}">
+            <span class="sp__name">${esc(t.lbl.area[a])}</span><span class="sp__range">${esc(t.lbl.areaRange[a])}</span>
+            <span class="sp__track" aria-hidden="true"><span class="sp__bar" style="--a:${pc(lo)}%;--b:${pc(hi)}%;--i:${i}"></span></span>
+          </a></li>`;
+        }).join('')}</ul>
+      </div>
+      <div class="sp__view" aria-hidden="true">${order.map((a, i) => `<figure class="sp__fig${i === 1 ? ' is-on' : ''}" data-sp-fig="${a}">${imgTag(ctx, AREA_IMG[a], { alt: '', sizes: '(max-width: 900px) 0px, 36vw', max: 1600, cover: 4 / 5 })}<figcaption><b>${esc(t.lbl.area[a])}</b><span>${esc(t.lbl.areaShort[a])}</span></figcaption></figure>`).join('')}</div>
+    </div>
+  </div>
+</section>`;
+}
+
+// ---------- Fertigung: Bildband ----------
+function making(ctx) {
+  const M = ctx.t.pages.home.making;
+  const k = 'mimg/intro_home_slider_5.webp';
+  return `<section class="band" aria-labelledby="mk-title">
+  <div class="band__media" aria-hidden="true">${ctx.img[k] ? imgTag(ctx, k, { alt: '', sizes: '100vw', max: 1920 }) : ''}</div>
+  <div class="wrap band__inner" data-reveal="head"><h2 class="ch__title" id="mk-title">${esc(M.title)}</h2><p class="ch__text">${esc(M.text)}</p></div>
+</section>`;
+}
+
+// ---------- Werke weltweit ----------
 const GENERIC_FN = /^(vertrieb|controlling|it$|personal|konstruktion|zwei gesellschaften)/i;
 function plantFunctions(l, lang, dl) {
   const de = l.functions?.de || [];
   const list = (l.functions && (l.functions[lang] || l.functions[dl] || l.functions.en)) || [];
   return list.filter((f, i) => !GENERIC_FN.test(de[i] || f));
 }
-function plantsSection(ctx) {
+function world(ctx) {
   const { t, lang } = ctx;
-  const P = t.pages.home.plants;
+  const W = t.pages.home.plants;
   const g = groupStats(ctx);
   const locs = ctx.data.contacts.locations.filter((l) => l.type === 'hq' || l.type === 'production');
   let region = (c) => c;
   try { const dn = new Intl.DisplayNames([lang], { type: 'region' }); region = (c) => dn.of(c) || c; } catch (e) { /* Kürzel */ }
-  const cards = locs.map((l) => {
-    const img = LOC_IMG[l.id];
-    const fn = plantFunctions(l, lang, ctx.dl).slice(0, 2);
-    return `<a class="plant" href="${ctx.hrefA('locations', {}, l.id)}">
-    <div class="plant__img"${img && ctx.img[img] ? ' data-reveal="img"' : ''}>${img && ctx.img[img] ? imgTag(ctx, img, { alt: '', sizes: '(max-width: 600px) 80vw, (max-width: 1100px) 40vw, 25vw', max: 1600 }) : plantMap(ctx, l)}</div>
-    <div class="plant__body">
-      <span class="plant__type">${esc(l.type === 'hq' ? P.hq : P.plant)} · ${esc(region(l.country))}</span>
-      <h3>${esc(l.city.replace(/\s*\(.*\)$/, ''))}</h3>
-      ${fn.length ? `<ul class="plant__fn">${fn.map((f) => `<li>${esc(f)}</li>`).join('')}</ul>` : ''}
-      ${l.employees ? `<span class="plant__staff">${esc(tpl(P.staff, { n: fmtNum(+l.employees, lang) }))}</span>` : ''}
+  return `<section class="ch ch--night world" aria-labelledby="wo-title">
+  <div class="wrap world__grid">
+    <div class="world__copy" data-reveal="head">
+      <h2 class="ch__title" id="wo-title">${esc(tpl(W.title, { n: g.plants }))}</h2>
+      <p class="ch__lead">${esc(tpl(W.lead, { staff: fmtNum(g.staffRound, lang) }))}</p>
+      <p class="cluster"><a class="btn btn--light" href="${ctx.href('locations')}">${esc(W.cta)}</a><a class="link link--light" href="${ctx.hrefA('contact', {}, 'karte')}">${esc(t.pages.home.worldCta2)}</a></p>
     </div>
-  </a>`;
-  }).join('');
-  return `<section class="section section--porcelain plants-sec">
-  <div class="wrap">
-    <div class="plants-head">
-      <div class="stack" style="--s:1rem" data-reveal="head">
-        <h2>${esc(tpl(P.title, { n: g.plants }))}</h2>
-        <p class="lead">${esc(tpl(P.lead, { staff: fmtNum(g.staffRound, lang) }))}</p>
-        <div class="cluster"><a class="btn" href="${ctx.href('locations')}">${esc(P.cta)}</a><a class="btn btn--ghost" href="${ctx.hrefA('contact', {}, 'karte')}">${esc(t.pages.home.worldCta2)}</a></div>
-      </div>
-      ${worldTeaser(ctx)}
-    </div>
-    <div class="plants" role="list">${cards.replace(/<a class="plant"/g, '<a role="listitem" class="plant"')}</div>
+    <div class="world__map">${worldTeaser(ctx)}</div>
   </div>
+  <ol class="wrap world__list">${locs.map((l) => `<li><a href="${ctx.hrefA('locations', {}, l.id)}" data-loc="${l.id}"><b>${esc(l.city.replace(/\s*\(.*\)$/, ''))}</b><span>${esc(region(l.country))}${l.type === 'hq' ? ` · ${esc(W.hq)}` : ''}</span><span class="world__fn">${esc(plantFunctions(l, lang, ctx.dl)[0] || '')}</span></a></li>`).join('')}</ol>
 </section>`;
 }
 
-// Geschichte in Etappen: Gründung bis heute (Texte aus der Unternehmensseite, Fotos aus der bisherigen Zeitleiste)
+// ---------- Geschichte ----------
 const HERITAGE_YEARS = ['1945', '1956', '1991', '2003', '2008', '2026'];
-function heritageSection(ctx) {
+function heritage(ctx) {
   const { t, href } = ctx;
   const C = t.pages.company;
   const Hh = t.pages.home.heritage;
   const items = HERITAGE_YEARS.map((y) => C.history.find(([yy]) => yy === y)).filter(Boolean);
-  return `<section class="section heritage">
+  return `<section class="ch" aria-labelledby="he-title">
   <div class="wrap">
-    ${sectionHead(Hh.title, Hh.lead, `<a class="btn btn--ghost" href="${href('company')}">${esc(Hh.cta)}</a>`, { reveal: true })}
-    <ol class="her" data-reveal="facts" tabindex="0" aria-label="${esc(Hh.title)}">${items.map(([year, title, text]) => {
+    <div class="ch__head ch__head--row" data-reveal="head"><div><h2 class="ch__title" id="he-title">${esc(Hh.title)}</h2><p class="ch__lead">${esc(Hh.lead)}</p></div><a class="link" href="${href('company')}">${esc(Hh.cta)}${icon('arrow')}</a></div>
+    <ol class="tl2" tabindex="0" aria-label="${esc(Hh.title)}">${items.map(([year, title, text]) => {
       const k = (HISTORY_IMG[year] || []).find((x) => ctx.img[x]);
-      return `<li class="her__item"><span class="her__year">${esc(year)}</span>${k ? `<span class="her__img">${imgTag(ctx, k, { alt: '', sizes: '(max-width: 700px) 60vw, 16vw', max: 640 })}</span>` : '<span class="her__img her__img--none" aria-hidden="true"></span>'}<b>${esc(title)}</b><span>${esc(text)}</span></li>`;
+      return `<li class="tl2__item"><span class="tl2__y">${esc(year)}</span>${k ? `<span class="tl2__img">${imgTag(ctx, k, { alt: '', sizes: '(max-width: 700px) 60vw, 16vw', max: 960 })}</span>` : '<span class="tl2__img tl2__img--none" aria-hidden="true"></span>'}<b>${esc(title)}</b><span>${esc(text)}</span></li>`;
     }).join('')}</ol>
   </div>
 </section>`;
 }
 
-export function home(ctx) {
-  const { t, href, lang, data } = ctx;
+// ---------- Qualität ----------
+function quality(ctx) {
+  const { t, href } = ctx;
   const H = t.pages.home;
-  const counts = {};
-  for (const p of data.products) counts[p.area] = (counts[p.area] || 0) + 1;
-  const news = data.news.slice(0, 3);
-  return `
-${introOverlay(ctx)}
-${heroStage(ctx)}
-
-<nav class="wrap tasks-wrap" aria-labelledby="help-title">
-  <h2 class="tasks__title" id="help-title">${esc(H.helpTitle)}</h2>
-  <div class="tasks">${H.tasks.map(([title, text, id, ic]) => `<a class="task" href="${href(id)}"><strong>${icon(ic)}${esc(title)}</strong><span>${esc(text)}</span></a>`).join('')}</div>
-</nav>
-
-<section class="section">
-  <div class="wrap">
-    ${sectionHead(H.areasTitle, H.areasLead, `<a class="btn btn--ghost" href="${href('finder')}">${esc(t.ui.openFinder)}</a>`, { reveal: true })}
-    <div class="areas-axis">${voltageAxis(ctx, { dark: false })}</div>
-    <div class="areas">
-      ${AREAS.map((a) => `<a class="area" href="${href('area', { area: a })}">
-        <div class="area__img" data-reveal="img">${imgTag(ctx, AREA_IMG[a], { alt: '', sizes: '(max-width: 600px) 100vw, (max-width: 960px) 50vw, 33vw', max: 1920, cover: 16 / 10 })}</div>
-        <div class="area__body"><span class="area__kv">${esc(t.lbl.areaRange[a])}</span><h3>${esc(t.lbl.area[a])}</h3><p>${esc(t.lbl.areaShort[a])}</p></div>
-        <div class="area__foot"><span>${esc(ctx.plural(counts[a] || 0, t.ui.productCount))}</span><span class="go">${esc(t.ui.more)}</span></div>
-      </a>`).join('')}
+  return `<section class="ch ch--porcelain" aria-labelledby="qu-title">
+  <div class="wrap ch__split">
+    <h2 class="ch__title" id="qu-title" data-reveal="head">${esc(H.qTitle)}</h2>
+    <div class="ch__body" data-reveal="head">
+      <p class="ch__text">${esc(H.proofLead)}</p>
+      <dl class="figs figs--2">${H.proofFacts.map(([v, l]) => `<div class="fig"><dt>${esc(l)}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl>
+      <p><a class="link" href="${href('quality')}">${esc(H.proofCta)}${icon('arrow')}</a></p>
     </div>
   </div>
-</section>
-
-${homeSpec(ctx)}
-
-${plantsSection(ctx)}
-
-<section class="section">
-  <div class="wrap">
-    ${sectionHead(H.sectorsTitle, H.sectorsLead, '', { reveal: true })}
-    <div class="apps">
-      ${SECTORS.map((s) => {
-        const S = t.pages.sectors.items[s];
-        return `<a class="app" href="${href('sector', { sector: s })}"><span class="app__img">${imgTag(ctx, SECTOR_IMG[s], { alt: '', sizes: '76px', max: 320, cover: 76 / 56 })}</span><span><strong>${esc(S.title)}</strong><span>${esc(S.short)}</span></span>${icon('right')}</a>`;
-      }).join('')}
-    </div>
-  </div>
-</section>
-
-<section class="section section--resin">
-  <div class="wrap">
-    <div class="split">
-      <div class="stack" style="--s:1.25rem" data-reveal="head">
-        <h2>${esc(H.proofTitle)}</h2>
-        <p class="lead">${esc(H.proofLead)}</p>
-        <p><a class="btn btn--light" href="${href('quality')}">${esc(H.proofCta)}</a></p>
-      </div>
-      <div class="facts facts--2" data-reveal="facts">${H.proofFacts.map(([a, b]) => `<div class="fact"><strong data-count>${esc(a)}</strong><span>${esc(b)}</span></div>`).join('')}</div>
-    </div>
-    <div class="certs certs--row">${t.pages.quality.certs.slice(0, 6).map(([n, d, key]) => {
-      const doc = data.docs.find((x) => x.file === CERT_FILES[key]);
-      return `<a class="cert" ${doc ? ctx.docAttrs(doc) : `href="${href('quality')}"`}><b>${esc(n)}</b><span>${esc(d)}</span>${doc ? icon(ctx.docHref(doc) ? 'download' : 'mail', 'width="16" height="16"') : ''}</a>`;
-    }).join('')}</div>
-  </div>
-</section>
-
-${heritageSection(ctx)}
-
-<section class="section section--porcelain">
-  <div class="wrap">
-    ${sectionHead(H.newsTitle, H.newsLead, `<a class="btn btn--ghost" href="${href('news')}">${esc(t.ui.allNews)}</a>`, { reveal: true })}
-    <div class="news-grid">${news.map((n) => newsCard(ctx, n, { reveal: true })).join('')}</div>
-  </div>
-</section>
-
-<section class="section career-sec">
-  <div class="wrap split split--even">
-    <div class="career-mosaic" data-reveal="img">
-      ${['mimg/stellenangebote_intro_slider_2_Produktion.webp', 'mimg/stellenangebote_intro_slider_5_Logistik.webp', 'mimg/iStock-1146844837-2048x1366.webp'].filter((k) => ctx.img[k]).map((k, i) => `<span class="cm cm--${i}">${imgTag(ctx, k, { alt: '', sizes: i ? '(max-width: 900px) 50vw, 25vw' : '(max-width: 900px) 100vw, 50vw', max: i ? 960 : 1800 })}</span>`).join('')}
-    </div>
-    <div class="stack" style="--s:1.1rem" data-reveal="head">
-      <h2>${esc(H.careerTitle)}</h2>
-      <p class="lead">${esc(H.careerLead)}</p>
-      <p class="muted">${esc(ctx.plural(data.jobs.length, t.ui.jobCount))}</p>
-      <div class="cluster"><a class="btn" href="${href('career')}">${esc(H.careerCta)}</a><a class="btn btn--ghost" href="${href('training')}">${esc(t.nav.training)}</a></div>
-    </div>
-  </div>
-</section>
-
-<section class="section section--tight">
-  <div class="wrap">${ctaBand(ctx, H.ctaTitle, H.ctaText, H.ctaBtn, href('inquiry'))}</div>
 </section>`;
 }
 
-export function newsCard(ctx, n, { reveal = false } = {}) {
+// ---------- News: ruhige Liste ----------
+function newsList(ctx) {
+  const { t, href, lang } = ctx;
+  const H = t.pages.home;
+  const items = ctx.data.news.slice(0, 4);
+  return `<section class="ch" aria-labelledby="nw-title">
+  <div class="wrap">
+    <div class="ch__head ch__head--row" data-reveal="head"><h2 class="ch__title" id="nw-title">${esc(H.newsTitle)}</h2><a class="link" href="${href('news')}">${esc(t.ui.allNews)}${icon('arrow')}</a></div>
+    <ul class="nl">${items.map((n) => {
+      const vf = n.v[lang] ? lang : n.v[ctx.dl] ? ctx.dl : n.v.de ? 'de' : Object.keys(n.v)[0];
+      const v = n.v[vf];
+      const vl = v.contentLang || vf;
+      return `<li><a class="nl__item" href="${href('article', { slug: ctx.newsSlug(n) })}"><time datetime="${n.date}">${esc(fmtDate(n.date, lang))}</time><span class="nl__cat">${esc(t.lbl.newsCat[n.cat] || '')}</span><b${vl !== lang ? ` lang="${vl}"` : ''}>${esc(v.title)}</b>${icon('arrow')}</a></li>`;
+    }).join('')}</ul>
+  </div>
+</section>`;
+}
+
+// ---------- Karriere ----------
+function career(ctx) {
+  const { t, href, data } = ctx;
+  const H = t.pages.home;
+  const k = 'mimg/stellenangebote_intro_slider_2_Produktion.webp';
+  return `<section class="ch ch--flush" aria-labelledby="ca-title">
+  <div class="wrap career2">
+    <div class="career2__img" data-reveal="img">${ctx.img[k] ? imgTag(ctx, k, { alt: '', sizes: '(max-width: 900px) 100vw, 58vw', max: 1800, cover: 4 / 3 }) : ''}</div>
+    <div class="career2__copy" data-reveal="head">
+      <h2 class="ch__title" id="ca-title">${esc(H.careerTitle)}</h2>
+      <p class="ch__text">${esc(H.careerLead)}</p>
+      <p class="cluster"><a class="btn" href="${href('career')}">${esc(H.careerCta)}</a><span class="muted">${esc(ctx.plural(data.jobs.length, t.ui.jobCount))}</span></p>
+    </div>
+  </div>
+</section>`;
+}
+
+export function home(ctx) {
+  return `
+${introOverlay(ctx)}
+${stage(ctx)}
+${principle(ctx)}
+${spectrum(ctx)}
+${making(ctx)}
+${world(ctx)}
+${heritage(ctx)}
+${quality(ctx)}
+${newsList(ctx)}
+${career(ctx)}`;
+}
+
+export function newsCard(ctx, n, { reveal = false, excerpt = true } = {}) {
   const { t, lang } = ctx;
   const vf = n.v[lang] ? lang : n.v[ctx.dl] ? ctx.dl : n.v.de ? 'de' : Object.keys(n.v)[0];
   const v = n.v[vf];
@@ -361,31 +386,6 @@ export function newsCard(ctx, n, { reveal = false } = {}) {
   <div class="card__img${small ? ' card__img--small' : ''}"${small ? ` style="--bgimg:url(${ctx.imgUrl(img, 320)})"` : ''}${reveal ? ' data-reveal="img"' : ''}>${img && ctx.img[img] ? imgTag(ctx, img, { alt: '', sizes: small ? `${ctx.img[img].w}px` : '(max-width: 560px) 100vw, (max-width: 900px) 50vw, 33vw', max: 1600 }) : `<span class="card__ph"><svg viewBox="0 0 80 40" width="80" height="40" aria-hidden="true"><path d="M40 2 78 20 40 38 2 20Z" fill="none" stroke="currentColor" stroke-width="2"/></svg><span>${esc(t.lbl.newsCat[n.cat] || '')}</span></span>`}</div>
   <div class="card__meta"><time datetime="${n.date}">${esc(fmtDate(n.date, lang))}</time><span>${esc(t.lbl.newsCat[n.cat] || '')}</span>${other ? `<span class="card__lang" title="${esc(t.ui[vl] || vl)}">${esc(vl.toUpperCase())}</span>` : ''}</div>
   <h3${other ? ` lang="${vl}"` : ''}>${esc(v.title)}</h3>
-  ${text ? `<p${other ? ` lang="${vl}"` : ''}>${esc(shorten(text, 150))}</p>` : ''}
+  ${excerpt && text ? `<p${other ? ` lang="${vl}"` : ''}>${esc(shorten(text, 150))}</p>` : ''}
 </a>`;
-}
-
-// Live-Spezifikations-Check (Vorschau): Ergebnis für den Beispieltext schon im HTML, Aktualisierung im Browser
-function homeSpec(ctx) {
-  const { t, href, lang } = ctx;
-  const X = t.x, Hx = X.home, A = X.assist;
-  const p = parsePosition(Hx.sample);
-  const best = matchProducts(p.req, ctx.data.products, null, { limit: 3 }).best;
-  return `<section class="section" id="spezifikation">
-  <div class="wrap hs" data-home-spec>
-    <div class="hs__copy" data-reveal="head">
-      <h2>${esc(Hx.title)}</h2>
-      <p class="lead">${esc(Hx.lead)}</p>
-      <ul class="hs__points">${Hx.points.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>
-      <div class="cluster"><a class="btn btn--red" href="${href('assistant')}" data-hs-go>${esc(Hx.cta)}</a><a class="btn btn--ghost" href="${href('calculators')}">${esc(Hx.calc)}</a><a class="link" href="${href('tools')}">${esc(Hx.tools)}</a></div>
-    </div>
-    <div class="hs__panel">
-      <label for="hs-text">${esc(Hx.label)}</label>
-      <textarea class="textarea" id="hs-text" data-hs-text spellcheck="false" autocomplete="off" rows="3">${esc(Hx.sample)}</textarea>
-      <p class="hs__marked" data-hs-marked aria-hidden="true">${markedText(Hx.sample, p.marks, A)}</p>
-      <div class="scp__req" data-hs-req><span class="scp__lbl">${esc(Hx.result)}</span>${reqChipsHtml(p.req, t, A, lang)}</div>
-      <div class="hs__res" data-hs-res aria-live="polite">${homeHitsHtml(ctx, best, X)}</div>
-    </div>
-  </div>
-</section>`;
 }

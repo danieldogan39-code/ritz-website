@@ -139,3 +139,46 @@ export function initHero2(root = document) {
   if ('requestIdleCallback' in window) requestIdleCallback(() => warm(1)); else setTimeout(() => warm(1), 1500);
   tick();
 }
+
+// Bühne der Startseite: Kopf liegt transparent über der Bühne, bis sie verlassen ist; Schleifen ruhen außerhalb
+// des Sichtbereichs. Spektrum: Bereich unter Zeiger oder Fokus wird hervorgehoben (Vorschau rechts).
+// Werke: Listeneintrag hebt seinen Punkt auf der Karte hervor.
+export function initStage(root = document) {
+  const st = root.querySelector('[data-stage]');
+  const hdr = document.querySelector('[data-hdr]');
+  if (st && !st.__st) {
+    st.__st = true;
+    let raf = 0;
+    const upd = () => {
+      raf = 0;
+      if (!st.isConnected) { removeEventListener('scroll', onScroll); hdr?.classList.remove('hdr--over'); return; }
+      const hh = hdr ? hdr.offsetHeight : 68;
+      hdr?.classList.toggle('hdr--over', st.getBoundingClientRect().bottom > hh + 8);
+    };
+    const onScroll = () => { if (!raf) raf = requestAnimationFrame(upd); };
+    addEventListener('scroll', onScroll, { passive: true });
+    addEventListener('resize', onScroll, { passive: true });
+    upd();
+    if ('IntersectionObserver' in window) new IntersectionObserver(([e]) => st.classList.toggle('is-idle', !e.isIntersecting)).observe(st);
+  } else if (!st) hdr?.classList.remove('hdr--over');
+  const sp = root.querySelector('[data-spectrum]');
+  if (sp && !sp.__sp) {
+    sp.__sp = true;
+    const rows = [...sp.querySelectorAll('[data-sp]')];
+    const figs = [...sp.querySelectorAll('[data-sp-fig]')];
+    const on = (a) => {
+      rows.forEach((r) => r.classList.toggle('is-on', r.dataset.sp === a));
+      figs.forEach((f) => f.classList.toggle('is-on', f.dataset.spFig === a));
+    };
+    rows.forEach((r) => { r.addEventListener('pointerenter', () => on(r.dataset.sp)); r.addEventListener('focus', () => on(r.dataset.sp)); });
+  }
+  const wl = root.querySelector('.world__list');
+  if (wl && !wl.__wl) {
+    wl.__wl = true;
+    const hot = (id) => root.querySelectorAll('[data-loc-dot]').forEach((d) => d.classList.toggle('is-hot', d.dataset.locDot === id));
+    wl.addEventListener('pointerover', (e) => { const a = e.target.closest('[data-loc]'); hot(a ? a.dataset.loc : null); });
+    wl.addEventListener('pointerleave', () => hot(null));
+    wl.addEventListener('focusin', (e) => { const a = e.target.closest('[data-loc]'); hot(a ? a.dataset.loc : null); });
+    wl.addEventListener('focusout', () => hot(null));
+  }
+}

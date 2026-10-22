@@ -1,5 +1,6 @@
 // Downloadcenter: Suche und Filter über alle Dokumente
-import { $, $$, getData, getT, clientCtx, readQuery, writeQuery, debounce } from './core.js';
+import { $, $$, getData, getT, clientCtx, readQuery, writeQuery, debounce, CFG } from './core.js';
+import { docVisible, dedupeCopies, docTitleFor } from '../lib/doclang.js';
 import { esc, tpl } from '../lib/util.js';
 import { docRow } from '../views/layout.js';
 
@@ -11,7 +12,9 @@ export async function initDownloads(root) {
   if (!box) return;
   const [docsC, t, ctx] = await Promise.all([getData('docs'), getT(), clientCtx()]);
   // kompaktes Format zurück in Dokumentobjekte
-  const docs = docsC.map((d) => ({ id: d.id, title: d.t, local: !!d.lo, path: d.pa, file: d.f, type: d.ty, lang: d.l, size: d.s, areas: d.a || [], codes: d.c || '', ext: d.e || 'pdf' }));
+  // nur, was die Sprachfassung zeigt (Hauptseiten-Dokumente je Sprache wie bisher, Produktfinder-Dokumente überall), Kopien einmal
+  const docs = dedupeCopies(docsC.map((d) => ({ id: d.id, title: d.t, local: !!d.lo, path: d.pa, file: d.f, type: d.ty, lang: d.l, size: d.s, areas: d.a || [], codes: d.c || '', ext: d.e || 'pdf', vis: d.vis, tl: d.tl, alt: d.alt, areaLangs: d.al, same: d.same }))
+    .filter((d) => docVisible(d, CFG.lang)));
   const q = $('[data-dl-q]', box), ty = $('[data-dl-type]', box), ar = $('[data-dl-area]', box), lg = $('[data-dl-lang]', box);
   const res = $('[data-dl-results]', box), cnt = $('[data-dl-count]', box), feat = $('[data-dl-featured]', box);
   const initial = new URLSearchParams(readQuery());
@@ -21,7 +24,7 @@ export async function initDownloads(root) {
   const render = () => {
     const words = norm(q.value).split(/\s+/).filter(Boolean);
     const list = docs.filter((d) => (!ty.value || d.type === ty.value) && (!ar.value || d.areas.includes(ar.value)) && (!lg.value || d.lang === lg.value)
-      && (!words.length || words.every((w) => norm(Object.values(d.title).join(' ') + ' ' + d.file + ' ' + d.codes).includes(w))));
+      && (!words.length || words.every((w) => norm(docTitleFor(d, CFG.lang, ctx.dl) + ' ' + Object.values(d.title).join(' ') + ' ' + d.file + ' ' + d.codes).includes(w))));
     cnt.textContent = list.length;
     const filtered = q.value || ty.value || ar.value || lg.value;
     feat.hidden = !!filtered;

@@ -763,6 +763,7 @@ for pr in products:
 # --------------------------------------------------------------------------------------
 MAIN_DOCS = json.load(open(f'{RAW}/main_docs.json'))
 docs = {}
+TSRC = {}  # (url, Sprache) -> Herkunft des Titels: catalog | family | shop | link | file | override (für die Titel je Sprachfassung)
 
 
 def doc_lang_guess(title, url):
@@ -809,13 +810,13 @@ def doc_type_guess(title, url):
     return 'document'
 
 
-def add_doc(url, title_de=None, title_en=None, typ=None, lang=None, size=None, area=None, product=None, source='main', pages=()):
+def add_doc(url, title_de=None, title_en=None, typ=None, lang=None, size=None, area=None, product=None, source='main', pages=(), tsrc=None):
     # Altlast: zwei Dokumentlinks in einem href verkettet → einzeln aufnehmen
     if re.search(r'(?:%20|\s)https?://', url):
         audit('altlasten', f'Defekter Dokumentlink (zwei URLs in einem Link): {url}')
         last = None
         for part in re.split(r'(?:%20|\s)+(?=https?://)', url):
-            last = add_doc(part, title_de, title_en, typ, None, size, area, product, source, pages)
+            last = add_doc(part, title_de, title_en, typ, None, size, area, product, source, pages, tsrc)
         return last
     key = url.split('?')[0]
     d = docs.get(key)
@@ -826,8 +827,10 @@ def add_doc(url, title_de=None, title_en=None, typ=None, lang=None, size=None, a
         docs[key] = d
     if title_de and not d['title'].get('de'):
         d['title']['de'] = title_de
+        TSRC[(key, 'de')] = tsrc
     if title_en and not d['title'].get('en'):
         d['title']['en'] = title_en
+        TSRC[(key, 'en')] = tsrc
     if typ and not d['type']:
         d['type'] = typ
     if lang and not d['lang']:
@@ -858,10 +861,10 @@ for pr in products:
         t_de = title if not re.match(r'^(Datasheet|Data-Sheet|Outline|Installation Manual|Technical Description|Operating|Leaflet|Product brochure)', title, re.I) else None
         t_en = title if not t_de else None
         d = add_doc(dr['url'], t_de, t_en, dr.get('type') if dr.get('type') != 'manual' else 'manual', dr.get('lang') or None, dr.get('size'),
-                    pr['area'], pr['id'], 'produkte' if 'produkte.' in dr['url'] else 'main')
+                    pr['area'], pr['id'], 'produkte' if 'produkte.' in dr['url'] else 'main', tsrc='catalog' if pr['catalog'] else 'shop')
         pr['docs'].append(did(d['url']))
     if pr.get('family') and pr['family'].get('datasheet'):
-        d = add_doc(pr['family']['datasheet'], f'Datenblatt {pr["code"]}', f'Datasheet {pr["code"]}', 'datasheet', 'de', None, pr['area'], pr['id'], 'main')
+        d = add_doc(pr['family']['datasheet'], f'Datenblatt {pr["code"]}', f'Datasheet {pr["code"]}', 'datasheet', 'de', None, pr['area'], pr['id'], 'main', tsrc='family')
         if did(d['url']) not in pr['docs']:
             pr['docs'].insert(0, did(d['url']))
 
@@ -869,6 +872,22 @@ for pr in products:
 PAGE_AREA = {'/produkte/mittelspannungswandler/': 'mittelspannung', '/produkte/niederspannungswandler/': 'niederspannung',
              '/produkte/hochspannungswandler/': 'hochspannung', '/produkte/stromschienen/': 'stromschienen-sis',
              '/produkte/giessharzteile-duromer/': 'giessharzteile-duromer', '/produkte/elektronische-messwandler-und-sensoren/': 'elektronik-sensoren'}
+PAGE_AREA_DE = dict(PAGE_AREA)
+CRAWL = [p for p in json.load(open(f'{RAW}/crawl.json')) if 'url' in p]
+
+
+def upath(u):
+    """Pfad einer Seite der alten Website, immer mit abschließendem Schrägstrich."""
+    pth = urlparse(u).path or '/'
+    return pth if pth.endswith('/') else pth + '/'
+
+
+# Bereichsseiten aller Sprachfassungen (hreflang der deutschen Seiten), damit auch nur englisch/französisch/… verlinkte Kataloge einen Bereich bekommen
+for _p in CRAWL:
+    _a = PAGE_AREA_DE.get(upath(_p['url']))
+    for _l, _u in (_p.get('hreflang') or []) if _a else []:
+        if _l != 'x-default' and 'ritz-international.com' in _u:
+            PAGE_AREA.setdefault(upath(_u), _a)
 GENERIC_LINK = {'weiterlesen', 'datenblatt', 'datasheet', 'produktbroschüre', 'product brochure', 'mehr erfahren', 'read more', '', 'download',
                 'datenblatt (englisch)', 'data sheet', 'adatlap', 'fiche technique', 'hoja de datos', 'en savoir plus', 'leer más', 'tovább'}
 
@@ -889,14 +908,20 @@ for url, info in MAIN_DOCS.items():
     fn = unquote(os.path.basename(urlparse(url).path))
     t_de = by_lang['de'][0] if by_lang.get('de') else None
     t_en = by_lang['en'][0] if by_lang.get('en') else None
+    src = 'link'
     if not t_de and not t_en:
         t_de = re.sub(r'[_\-]+', ' ', os.path.splitext(fn)[0]).strip()
+        src = 'file'
     area = None
     for pg in pages:
-        if pg in PAGE_AREA:
-            area = PAGE_AREA[pg]
+        if pg in PAGE_AREA_DE:
+            area = PAGE_AREA_DE[pg]
+    if area is None:  # nur auf einer anderssprachigen Bereichsseite verlinkt
+        for pg in pages:
+            if pg in PAGE_AREA:
+                area = PAGE_AREA[pg]
     ty = doc_type_guess((t_de or '') + ' ' + (t_en or '') + ' ' + fn, url)
-    add_doc(url, t_de, t_en, ty, doc_lang_guess((t_de or t_en or ''), url), None, area, None, 'main', pages)
+    add_doc(url, t_de, t_en, ty, doc_lang_guess((t_de or t_en or ''), url), None, area, None, 'main', pages, tsrc=src)
 
 # Bereinigung / Typen vervollständigen
 for d in docs.values():
@@ -954,8 +979,10 @@ for d in docs.values():
         a, b = DOC_TITLE[fn]
         if a:
             d['title']['de'] = a
+            TSRC[(d['url'], 'de')] = 'override'
         if b:
             d['title']['en'] = b
+            TSRC[(d['url'], 'en')] = 'override'
         if a and not b and d['source'] == 'main':
             d['title'].pop('en', None) if d['title'].get('en', '').lower() in ('additional burden', 'zusatzbürde') else None
     for k in list(d['title']):
@@ -1245,6 +1272,821 @@ for n in news:
     for lang, v in n['v'].items():
         oldurls.append(v['old'])
 oldurls = sorted(set(u.split('#')[0] for u in oldurls if 'ritz-international.com' in u))
+
+# --------------------------------------------------------------------------------------
+# Dokumente je Sprachfassung (Hauptseiten-Dokumente)
+#   vis   Sprachfassungen der alten Website, die das Dokument verlinkt haben (beliebige Seite)
+#   tl    Titel je Sprachfassung aus dem Linktext dieser Fassung; generische Linktexte („Datenblatt“, „Adatlap“ …)
+#         und Dateinamen als Linktext („KS_50-02_d“) → Dokumentart + Typcode der Zeile, in der der Link stand
+#   alt   Gegenstück je Sprache: das Dokument, das die anderssprachige Fassung derselben Seite an derselben Stelle
+#         verlinkt hat – nur wo die Seitenfassungen sicher übereinstimmen (gleiche Linkzahl und Linkart, oder
+#         gleiche Dokumente als Anker und dazwischen gleich lange Abschnitte); nur für Sprachen, in denen das Dokument
+#         selbst nicht sichtbar ist
+#   areaLangs  je Bereich die Sprachen, deren Bereichsseite das Dokument verlinkt hat (Bereiche aus Produkten fehlen hier)
+#   same  nur bei byte-gleichen Kopien: ID der Hauptkopie (die von den meisten Sprachfassungen verlinkte)
+#   lang  Inhaltssprache aus dem PDF-Text (erste Seiten), sonst aus Hinweisen im Dateinamen
+# Produkte mit Datenblatt der Hauptseite bekommen alle Sprachfassungen dieses Datenblatts in docs (Stellen auf den
+# Bereichsseiten bzw. in News). Auswertung in den Ansichten: site/src/lib/doclang.js, Prüfung: site/tools/qa/doc-langs.mjs
+# --------------------------------------------------------------------------------------
+import subprocess  # noqa: E402
+from html.parser import HTMLParser  # noqa: E402
+from concurrent.futures import ThreadPoolExecutor  # noqa: E402
+
+SITE_LANGS = ['de', 'en', 'fr', 'hu', 'es']
+
+# ---- Inhaltssprache -------------------------------------------------------------------
+LANG_STOP = {
+    'de': 'der die das und ist mit für von zu den dem des ein eine einer eines einem auf im nicht sich auch bei oder nach wird werden sind wir sie '
+          'als aus durch über unter bis zum zur wie kann können nur sowie unsere unser ihre ihr dieser diese dieses wenn alle haben hat sein noch '
+          'mehr gemäß bzw vom beim sowohl wurde wurden muss müssen soll sollen keine kein jedoch dass daß ohne gegen zwischen',
+    'en': 'the and of to is for with on by are be this that from as at or it which can not all have has our we you your will may these such other '
+          'into between up been its any more than their they shall must should used use were was there where when who would also each',
+    'fr': 'le la les des du et est une pour dans avec sur par au aux ce cette qui que sont ne pas nous vous leur été être ou à il elle ses son selon '
+          'votre notre peut comme',
+    'es': 'el los las del y es una por para con al lo se su sus como más este esta entre sobre sin también puede según nuestro nuestra hasta desde '
+          'ha han muy',
+    'hu': 'az és hogy nem egy van vagy meg mint ez azt ezt csak már kell valamint illetve szerint minden után között által esetén számára továbbá '
+          'amely amelyek amelyet ha így ezért pedig még lesz volt vannak akkor mert hanem sem alapján során mellett révén',
+}
+LANG_STOP = {k: set(v.split()) for k, v in LANG_STOP.items()}
+_lw = collections.Counter(w for s in LANG_STOP.values() for w in s)
+LANG_STOP = {k: {w for w in s if _lw[w] == 1} for k, s in LANG_STOP.items()}  # Wörter, die in zwei Sprachen vorkommen, zählen nicht
+LANG_CHARS = {'de': 'ßä', 'hu': 'őű', 'es': 'ñ', 'fr': 'çèêœ'}
+LANG_WORD = re.compile(r"[a-zäöüßàâçéèêëîïôûùÿñáíóúőűœ]+")
+
+
+def lang_counts(text):
+    c = collections.Counter()
+    for t in LANG_WORD.findall((text or '').lower()):
+        for k, s in LANG_STOP.items():
+            if t in s:
+                c[k] += 1
+        for k, ch in LANG_CHARS.items():
+            if any(x in t for x in ch):
+                c[k] += 1
+    return c
+
+
+def lang_from_text(text, hint=None):
+    """Sprache eines Textes aus Funktionswörtern; „de+en“ bei deutlich zweisprachigen Texten. None = zu wenig Text."""
+    c = lang_counts(text)
+    tot = sum(c.values())
+    if tot < 4:
+        return None
+    (l1, n1), *rest = sorted(c.items(), key=lambda kv: (-kv[1], SITE_LANGS.index(kv[0])))
+    if tot < 8 and n1 < 0.75 * tot:
+        return None
+    if rest and rest[0][1] >= 8 and rest[0][1] >= 0.3 * n1:
+        pair = {l1, rest[0][0]}
+        if pair == {'de', 'en'}:
+            return 'de+en'
+        if hint in pair:  # andere Zweisprachigkeit (z. B. ES/EN-Prospekt): Hinweis im Dateinamen entscheidet
+            return hint
+    return l1
+
+
+FN_LANG_TOK = {'de': {'de', 'deu', 'ger', 'german', 'deutsch', 'dtsch'}, 'en': {'en', 'eng', 'engl', 'english', 'englisch'},
+               'fr': {'fr', 'fra', 'francais', 'french'}, 'es': {'es', 'esp', 'espanol', 'spanish'}, 'hu': {'hu', 'hun', 'magyar'}}
+FN_LANG_WORDS = {
+    'de': {'datenblatt', 'spannungswandler', 'stromwandler', 'messwandler', 'katalog', 'sensoren', 'broschuere', 'durchfuehrungen', 'produktwissen',
+           'produktinformation', 'kundenmitteilung', 'kundenreferenz', 'hinweisgebersystem', 'verhaltenskodex', 'lieferbedingungen', 'zertifizierungsurkunde',
+           'akkreditierung', 'praesentation', 'foerderung', 'beleuchtung', 'reduktion', 'azubis', 'elektroniker', 'mechatroniker', 'instandhaltungstechniker',
+           'zusatzvermerk', 'besuch', 'generatorwandler', 'trikotsponsoring', 'produktionsuebersicht', 'harzloesungen', 'spezifikation', 'vorlage', 'messe',
+           'elektronik', 'hausmesse', 'verordnung'},
+    'en': {'datasheet', 'data', 'sheet', 'brochure', 'warranty', 'statement', 'notice', 'letter', 'customer', 'policy', 'facility', 'announces', 'solution',
+           'bushings', 'sensors', 'catalog', 'specification', 'tender', 'knowledge', 'analysis', 'trade', 'fairs', 'conflict', 'supplier', 'conduct',
+           'expansion', 'factory', 'regulation', 'additional', 'burden', 'optimized', 'resin'},
+}
+
+
+def file_lang_hint(fn):
+    """Sprache aus dem Dateinamen (Kürzel wie _de/_ENG/-GER-ENG, Endung _d/_e, sonst Fachwörter); None = kein klarer Hinweis."""
+    toks = [t for t in re.split(r'[^a-z0-9äöüß]+', os.path.splitext(fn)[0].lower()) if t]
+    while toks and toks[-1].isdigit():  # Kopien -1, -2 …
+        toks.pop()
+    found = {k for k, s in FN_LANG_TOK.items() if any(t in s for t in toks)}
+    if len(toks) > 1 and toks[-1] in ('d', 'e'):  # KS_50-02_d, KS_50-02_e
+        found.add('de' if toks[-1] == 'd' else 'en')
+    if toks and re.match(r'^\d+[de]$', toks[-1]):  # td-0023e, im-0006e (Dokumentnummer mit Sprachbuchstabe)
+        found.add('de' if toks[-1].endswith('d') else 'en')
+    if not found:
+        found = {k for k, s in FN_LANG_WORDS.items() if any(t in s for t in toks)}
+        if len(found) > 1:
+            return None
+    if found == {'de', 'en'}:
+        return 'de+en'
+    loc = found & {'fr', 'es', 'hu'}
+    if len(loc) == 1:
+        return loc.pop()
+    return next(iter(found)) if len(found) == 1 else None
+
+
+# Gescannte PDFs ohne Textebene, deren Dateiname keinen oder einen unvollständigen Hinweis gibt (Sprache per Texterkennung geprüft)
+DOC_LANG_SCAN = {'2420_001-2.pdf': 'de+en', 'Akkreditierung-Ritz-AT_ISO-17025.pdf': 'de+en'}
+
+
+def pdf_head_text(path, pages=3):
+    try:
+        r = subprocess.run(['pdftotext', '-l', str(pages), '-enc', 'UTF-8', path, '-'], capture_output=True, timeout=120)
+        if r.returncode == 0:
+            return r.stdout.decode('utf-8', 'replace')
+    except Exception:
+        pass
+    try:
+        from pypdf import PdfReader
+        return '\n'.join((pg.extract_text() or '') for pg in PdfReader(path).pages[:pages])
+    except Exception:
+        return None
+
+
+def local_doc_path(d):
+    return f'{RAW}/docs/' + d['path'][len('/dokumente/'):]
+
+
+LANG_CHANGES = []
+_main_docs = [d for d in docs_list if d['source'] == 'main']
+_pdfs = [d for d in _main_docs if d['ext'] == 'pdf' and os.path.exists(local_doc_path(d))]
+with ThreadPoolExecutor(4) as _ex:
+    _texts = dict(zip([d['id'] for d in _pdfs], _ex.map(lambda d: pdf_head_text(local_doc_path(d)), _pdfs)))
+for d in _main_docs:
+    hint = file_lang_hint(d['file'])
+    new, how = None, None
+    if d['file'] in DOC_LANG_SCAN:
+        new, how = DOC_LANG_SCAN[d['file']], 'Scan (geprüft)'
+    elif _texts.get(d['id']):
+        new, how = lang_from_text(_texts[d['id']], hint), 'PDF-Text'
+    if not new and hint:
+        new, how = hint, ('Dateiname (PDF ohne Text)' if d['id'] in _texts else 'Dateiname')
+    if new and new != d['lang']:
+        LANG_CHANGES.append((d['file'], d['lang'], new, how))
+        d['lang'] = new
+
+# Produktfinder-Dokumente (keine lokalen Dateien): nur offensichtlich falsche Angaben korrigieren
+#  a) Kopie eines Hauptseiten-PDFs (gleicher Dateiname, gleiche Größe) → dessen Inhaltssprache
+#  b) Titel kennzeichnet die englische Fassung („… (EN) …“, „Produktbeschreibung En …“) → „en“
+#  c) zweisprachiger Titel („Maßblatt - Outline Drawing“, „Betriebsanleitung - Operating Instruction“) → „de+en“
+#  d) Titel nur mit englischen Dokumentwörtern (auch mit den Tippfehlern des Shops), Angabe „de“ → „en“ (und umgekehrt)
+#  e) Dateiname mit Sprachkennung (td-0003e, deu) widerspricht der Angabe de/en
+#  (b–e nur, wenn der Dateiname nicht dagegen spricht)
+TITLE_EN_DOC = re.compile(r'\b(data[\s\-]*s\w{0,2}e{1,2}t|datasheet|descr?iption|instr\w*ction|install\w*|manual|outl\w*\s*-?\s*dra\w*ing|leaflet|operating|assembly)\b', re.I)
+TITLE_DE_DOC = re.compile(r'(datenblatt|ma(ß|ss)b\w*|beipackzettel|benutzerhandbuch|beschreibung|anleitung|anweisung|produktinformation|sicherheit|technische|übersicht|broschüre|aufbau|zeichnung)', re.I)
+TITLE_EN_EDITION = re.compile(r'\((?:en|eng|e)\)|\b(?:En|EN|Eng)\b(?!\s*\d)')  # „(EN)“, „Produktbeschreibung En …“: englische Fassung
+
+
+def norm_fn(fn):
+    s = os.path.splitext(fn.lower())[0]
+    s = re.sub(r'([_\-]+\d+_?)+$', '', s)
+    return re.sub(r'[^a-z0-9]+', '_', s).strip('_')
+
+
+_main_by_fn = collections.defaultdict(list)
+for d in _main_docs:
+    _main_by_fn[norm_fn(d['file'])].append(d)
+for d in docs_list:
+    if d['source'] != 'produkte':
+        continue
+    new, how = None, None
+    twins = _main_by_fn.get(norm_fn(d['file'])) or []
+    twins = [x for x in twins if d.get('size') and os.path.exists(local_doc_path(x)) and abs(os.path.getsize(local_doc_path(x)) - d['size']) <= 0.01 * d['size']]
+    if twins and len({x['lang'] for x in twins}) == 1 and twins[0]['id'] in _texts:
+        new, how = twins[0]['lang'], f'Kopie von {twins[0]["file"]}'
+    else:
+        t = ' '.join(d['title'].values())
+        en, de_ = bool(TITLE_EN_DOC.search(t)), bool(TITLE_DE_DOC.search(t))
+        hint = file_lang_hint(d['file'])
+        if en and TITLE_EN_EDITION.search(t) and d['lang'] != 'en' and hint != 'de':
+            new, how = 'en', 'Titel: englische Fassung'
+        elif en and de_ and d['lang'] in ('de', 'en') and not TITLE_EN_EDITION.search(t) and hint not in ('de', 'en'):
+            new, how = 'de+en', 'Titel zweisprachig'
+        elif en and not de_ and d['lang'] == 'de' and hint != 'de':
+            new, how = 'en', 'Titel englisch'
+        elif de_ and not en and d['lang'] == 'en' and hint != 'en':
+            new, how = 'de', 'Titel deutsch'
+        elif hint in ('de', 'en') and d['lang'] in ('de', 'en') and hint != d['lang'] and (en if hint == 'en' else de_):
+            new, how = hint, 'Dateiname'
+    if new and new != d['lang']:
+        LANG_CHANGES.append((d['file'], d['lang'], new, how))
+        d['lang'] = new
+
+# ---- Links der alten Seiten in Reihenfolge ---------------------------------------------
+DOC_HREF = re.compile(r'\.(pdf|docx?)(?:\?|$)', re.I)
+
+
+class _LinkParser(HTMLParser):
+    """Dokumentlinks eines HTML-Abschnitts in Reihenfolge, mit Zeilenkontext:
+    letzter Absatz mit Fettschrift und letztes Bild seit dem letzten Bild bzw. der letzten Überschrift."""
+
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.out, self.a, self.p, self.bold, self.row, self.img, self.h = [], None, None, False, None, None, None
+
+    def handle_starttag(self, tag, attrs):
+        at = dict(attrs)
+        if tag == 'a':
+            self.a = [at.get('href') or '', []]
+        elif tag == 'p':
+            self.p, self.bold = [], False
+        elif tag in ('strong', 'b'):
+            self.bold = True
+            if self.p is None:
+                self.p = []
+        elif tag == 'img':
+            self.img, self.row = at.get('src'), None
+        elif tag in ('h1', 'h2', 'h3', 'h4'):
+            self.h, self.row, self.img = [], None, None
+        elif tag == 'br':
+            for x in (self.p, self.a[1] if self.a else None):
+                if x is not None:
+                    x.append(' ')
+
+    def handle_endtag(self, tag):
+        if tag == 'a' and self.a is not None:
+            href, t = self.a
+            self.a = None
+            if DOC_HREF.search(href):
+                self.out.append(dict(href=href, t=re.sub(r'\s+', ' ', ''.join(t)).strip(), row=self.row, img=self.img))
+        elif tag == 'p' and self.p is not None:
+            txt = re.sub(r'\s+', ' ', ''.join(self.p)).strip()
+            if self.bold and txt:
+                self.row = txt
+            self.p = None
+        elif tag in ('h1', 'h2', 'h3', 'h4'):
+            self.h = None
+
+    def handle_data(self, data):
+        for x in (self.a[1] if self.a else None, self.p, self.h):
+            if x is not None:
+                x.append(data)
+
+
+def html_doc_links(h):
+    lp = _LinkParser()
+    lp.feed(h or '')
+    lp.close()
+    return lp.out
+
+
+def page_doc_links(p):
+    """Dokumentlinks einer abgegriffenen Seite in DOM-Reihenfolge. Widgets mit „inside“ sind Kopien von Inhalten eines
+    Akkordeons/Templates und werden übersprungen; Templates mit Akkordeon werden über dessen Einträge gelesen."""
+    ws = p.get('widgets') or []
+    inner = collections.defaultdict(list)
+    for w in ws:
+        if w.get('inside'):
+            inner[w['inside']].append(w)
+    out = []
+
+    def add(lst, w, item=None):
+        for x in lst:
+            out.append(dict(x, w=w['id'], item=item, post=w['w'] == 'theme-post-content'))
+
+    for w in ws:
+        if w.get('inside'):
+            continue
+        k = w['w']
+        if k in ('icon-list', 'pp-icon-list'):
+            add([dict(href=i.get('href') or '', t=re.sub(r'\s+', ' ', i.get('t') or '').strip(), row=None, img=None)
+                 for i in w.get('items') or [] if DOC_HREF.search(i.get('href') or '')], w)
+        elif k in ('template', 'jet-accordion'):
+            accs = [x for x in inner.get(w['id'], []) if x['w'] == 'jet-accordion'] if k == 'template' else [w]
+            if accs:
+                for acc in accs:
+                    for it in acc.get('items') or []:
+                        add(html_doc_links(it.get('html')), w, it.get('title'))
+            elif w.get('html'):
+                add(html_doc_links(w['html']), w)
+            else:
+                add([dict(href=h_, t=t_, row=None, img=None) for t_, h_ in w.get('links') or [] if DOC_HREF.search(h_)], w)
+        elif k in ('theme-post-content', 'text-editor', 'html'):
+            add(html_doc_links(w.get('html')), w)
+        elif w.get('href') and DOC_HREF.search(w['href']):
+            add([dict(href=w['href'], t=(w.get('alt') or '').strip(), row=None, img=None)], w)
+    return out
+
+
+def nurl(u):
+    return re.sub(r'^https?://(www\.)?', 'https://', unquote(u.split('?')[0].strip()))
+
+
+DOC_BY_URL = {nurl(d['url']): d for d in docs_list}
+CONCAT = re.compile(r'(?:%20|\s)+(?=https?://)')
+
+
+def href_part(href, plang):
+    """Verkettete Links (zwei Adressen in einem href): Teil in der Sprache der Seite, sonst der letzte."""
+    parts = [x for x in CONCAT.split(href.strip()) if x]
+    if len(parts) > 1:
+        return next((x for x in parts if file_lang_hint(os.path.basename(urlparse(x).path)) == plang), parts[-1])
+    return parts[0] if parts else href
+
+
+DOC_WARN = []
+PAGES = {}
+for p in CRAWL:
+    pth = upath(p['url'])
+    pl = page_lang(pth)
+    links = []
+    for x in page_doc_links(p):
+        d = DOC_BY_URL.get(nurl(href_part(x['href'], pl)))
+        if not d:
+            DOC_WARN.append(f'Dokumentlink ohne Dokument: {x["href"]} auf {pth}')
+            continue
+        if x['post'] and links and links[-1]['doc'] is d and links[-1]['w'] == x['w']:
+            links[-1]['t'] += x['t']  # ein Link, im HTML in zwei Anker zerteilt („New_facility_RIT“ + „Z_Waynesboro“)
+            continue
+        links.append(dict(x, doc=d))
+    PAGES[pth] = dict(lang=pl, links=links, kind=p.get('kind'), title=re.sub(r'\s+-\s+RITZ\s*$', '', html.unescape(p.get('title') or '')).strip())
+
+# ---- vis: Sprachfassungen mit Link (aus der Linkliste der Hauptseite) --------------------
+VIS = collections.defaultdict(set)
+AREA_LANGS = collections.defaultdict(lambda: collections.defaultdict(set))  # Dokument → Bereich → Sprachen, deren Bereichsseite es verlinkt
+PAGE_DOCS = collections.defaultdict(set)  # Seite → Dokument-IDs (für den Abgleich)
+for url, info in MAIN_DOCS.items():
+    for pg in info['pages']:
+        d = DOC_BY_URL.get(nurl(href_part(url, page_lang(pg))))
+        if d:
+            VIS[d['id']].add(page_lang(pg))
+            PAGE_DOCS[pg].add(d['id'])
+            if pg in PAGE_AREA:
+                AREA_LANGS[d['id']][PAGE_AREA[pg]].add(page_lang(pg))
+for pth, pg in PAGES.items():
+    got = {x['doc']['id'] for x in pg['links']}
+    if got != PAGE_DOCS.get(pth, set()):
+        DOC_WARN.append(f'Linkliste weicht von main_docs.json ab: {pth}')
+
+# ---- Linkarten, Typcodes der Zeilen ---------------------------------------------------
+GENERIC_DS = {
+    'de': {'datenblatt', 'datenblatt (englisch)', 'technisches datenblatt'},
+    'en': {'data sheet', 'datasheet', 'data sheet (english)', 'datasheet (english)'},
+    'fr': {'fiche de données', 'fiche technique', 'fiche technique (anglais)', 'fiche de données (anglais)'},
+    'hu': {'adatlap', 'adatlap (angol)'},
+    'es': {'ficha de datos', 'ficha de datos (inglés)', 'hoja de datos', 'ficha técnica'},
+}
+GENERIC_BR = {'de': {'produktbroschüre'}, 'en': {'product brochure'}, 'fr': {'brochure produit'}, 'hu': {'termékismertető'}, 'es': {'folleto del producto'}}
+GENERIC_OTHER = {'', 'download', 'downloads', 'pdf', 'weiterlesen', 'mehr erfahren', 'hier', 'read more', 'here', 'click here', 'en savoir plus', 'cliquez ici',
+                 'lire la suite', 'leer más', 'pulse aquí', 'haga clic aquí', 'tovább', 'bővebben', 'itt', 'kattintson ide'}
+# Typwort je Sprache für zusammengesetzte Titel; generischer Linktext der Seite → eigene Formulierung der Seite
+DS_TPL = {'de': 'Datenblatt {c}', 'en': 'Data sheet {c}', 'fr': 'Fiche de données {c}', 'hu': '{c} adatlap', 'es': 'Ficha de datos {c}'}
+DS_TPL_BY_TEXT = {'fiche technique': 'Fiche technique {c}', 'fiche technique (anglais)': 'Fiche technique {c}'}
+BR_TPL = {'de': 'Produktbroschüre {c}', 'en': 'Product brochure {c}', 'fr': 'Brochure produit {c}', 'hu': '{c} termékismertető', 'es': 'Folleto del producto {c}'}
+DR_TPL = {'de': 'Maßzeichnung {c}{n}', 'en': 'Dimension drawing {c}{n}', 'fr': 'Plan coté {c}{n}', 'hu': '{c} méretrajz{n}', 'es': 'Plano acotado {c}{n}'}
+LABEL_DS = re.compile(r'^([A-Z]{2,}[A-Z0-9]*)_([0-9][0-9\-]*)_([de])$')      # KS_50-02_d, KSO_311_e
+LABEL_DR = re.compile(r'^(M\d{6})_?I\d+$')                                     # M005585_I06, M006681I2
+CODE_RX = re.compile(r'^[A-Z]{2,}[A-Z0-9]*(?:\([A-Z]\))?(?:-[A-Z0-9]+)*$')
+CODE_STOP = {'TYPE', 'TYP', 'TIPO', 'DIN', 'IEC', 'EN', 'DC', 'AC', 'CT', 'VT', 'CCVT', 'PQ', 'GOST', 'RITZ', 'LWL', 'TSI', 'PLC', 'II', 'III', 'IV', 'KV'}
+MODEL_RX = re.compile(r'^(?:x?\d+[A-Za-z]{0,2}|\d+xx|\d+/\d+)$')               # 1082, x64, 7xx, 24D, 12/0
+NUM_RX = re.compile(r'^\d+(?:[.,]\d+)?$')
+
+
+def text_norm(t):
+    return re.sub(r'\s+', ' ', (t or '').replace('\xa0', ' ')).strip().lower()
+
+
+def file_like(t):
+    """Linktext ist nur ein Dateiname/Kürzel oder eine Adresse (KS_50-02_d, Product_knowledge_compact_HVDC, https://…)."""
+    s = (t or '').strip()
+    return bool(re.match(r'^https?://', s) or '_' in s)
+
+
+def same_text(a, b):
+    k = lambda t: re.sub(r'[\W_]+', ' ', (t or '').lower()).strip()
+    return bool(k(a)) and k(a) == k(b)
+
+
+def link_class(x, lang, page_title=''):
+    """Art eines Links: ds = Datenblatt, br = Produktbroschüre, dr = Maßzeichnung, code = nur ein Typcode („GBMW“),
+    gen = generisch/Dateiname/Beitragstitel als Linktext, named = sprechender Titel."""
+    t = text_norm(x['t'])
+    raw = (x['t'] or '').strip()
+    if t in GENERIC_DS.get(lang, ()) or LABEL_DS.match(raw):
+        return 'ds'
+    if t in GENERIC_BR.get(lang, ()):
+        return 'br'
+    if LABEL_DR.match(raw):
+        return 'dr'
+    if t in GENERIC_OTHER or file_like(raw) or (x['post'] and same_text(raw, page_title)):
+        return 'gen'
+    if CODE_RX.match(raw.split(' ')[0]) and re.match(r'^\S+(?: \S+)?$', raw) and (len(raw.split(' ')) == 1 or MODEL_RX.match(raw.split(' ')[1])):
+        return 'code'
+    return 'named'
+
+
+def row_code(text):
+    """Typcode aus der fett gesetzten Zeilenbeschriftung: „GSW 12/0 3,6 | 7,2 | 12 Stützerstromwandler …“ → („GSW 12/0“, [3,6 … 12]).
+    Spannungslisten („12 | 17,5 | 24“) gehören nicht zum Code, werden aber zur Unterscheidung gleicher Codes mitgeliefert."""
+    if not text:
+        return None, []
+    s = re.sub(r'(?<!\d),|,(?!\d)', ' , ', text.replace('\xa0', ' ').replace('|', ' | '))
+    toks = s.split()
+    for i, t in enumerate(toks):
+        parts = [x for x in t.split('/') if x]
+        if not parts or not all(CODE_RX.match(x) and x not in CODE_STOP and len(re.sub(r'[^A-Z]', '', x)) <= 7 for x in parts):
+            continue
+        codes, j = [], i + 1
+        cur = ' / '.join(parts)
+        if j < len(toks) and MODEL_RX.match(toks[j]) and not (j + 1 < len(toks) and toks[j + 1] == '|'):
+            cur += ' ' + toks[j]
+            j += 1
+        codes.append(cur)
+        while j + 1 < len(toks) and toks[j] in ('/', ',') and CODE_RX.match(toks[j + 1]) and toks[j + 1] not in CODE_STOP:
+            cur, j = toks[j + 1], j + 2
+            if j < len(toks) and MODEL_RX.match(toks[j]) and not (j + 1 < len(toks) and toks[j + 1] == '|'):
+                cur += ' ' + toks[j]
+                j += 1
+            codes.append(cur)
+        volts = []
+        while j < len(toks) and NUM_RX.match(toks[j]):
+            volts.append(toks[j])
+            if j + 2 < len(toks) and toks[j + 1] == '|' and NUM_RX.match(toks[j + 2]):
+                j += 2
+            else:
+                break
+        return ' / '.join(codes), volts
+    return None, []
+
+
+PROD_FIRST = collections.Counter(pr['code'].split(' ')[0] for pr in products)
+for pth, pg in PAGES.items():
+    L = pg['links']
+    for x in L:
+        x['cls'] = link_class(x, pg['lang'], pg['title'])
+        x['code'], x['volts'] = row_code(x['row'])
+        m = LABEL_DS.match((x['t'] or '').strip())
+        if m:
+            x['code'] = f'{m.group(1)} {m.group(2)}'
+        m = LABEL_DR.match((x['t'] or '').strip())
+        x['drno'] = m.group(1) if m else None
+    # Niederspannung: Zeile = Bild + Linkliste; der Datenblatt-Link der Zeile liefert den Code für die Maßzeichnung
+    for x in L:
+        if x['cls'] == 'dr' and not x['code']:
+            x['code'] = next((y['code'] for y in L if y is not x and y['item'] == x['item'] and y['img'] == x['img'] and y['w'] == x['w']
+                              and y['code'] and LABEL_DS.match((y['t'] or '').strip())), None)
+    # gleiche Codes für verschiedene Dokumente auf einer Seite (VEF 12…36 / VEF 52…72,5) → Spannungsbereich ergänzen
+    by_code = collections.defaultdict(set)
+    for x in L:
+        if x['code'] and x['row']:
+            by_code[x['code']].add(x['doc']['id'])
+    # ebenso, wenn der Code allein mehrere Produktfamilien bezeichnet (GI 30 / 36 und GI 52 / 72,5)
+    for x in L:
+        if x['code'] and x['volts'] and (len(by_code.get(x['code'], ())) > 1 or (' ' not in x['code'] and PROD_FIRST[x['code']] > 1)):
+            v = x['volts']
+            x['code'] = f'{x["code"]} {v[0]}…{v[-1]}' if len(v) > 1 else f'{x["code"]} {v[0]}'
+
+# ---- Sprachfassungen einer Seite (hreflang, News-Gruppen) und Abgleich der Linklisten ------------
+_dpar = {}
+
+
+def _dfind(x):
+    _dpar.setdefault(x, x)
+    while _dpar[x] != x:
+        _dpar[x] = _dpar[_dpar[x]]
+        x = _dpar[x]
+    return x
+
+
+def _dunion(a, b):
+    ra, rb = _dfind(a), _dfind(b)
+    if ra != rb:
+        _dpar[rb] = ra
+
+
+for p in CRAWL:
+    _dfind(upath(p['url']))
+    for l, u in p.get('hreflang') or []:
+        if l != 'x-default' and 'ritz-international.com' in u:
+            _dunion(upath(p['url']), upath(u))
+for n in news:
+    vs = [upath(v['old']) for v in n['v'].values() if v.get('old')]
+    for u in vs[1:]:
+        _dunion(vs[0], u)
+PAGE_GROUPS = collections.defaultdict(list)
+for pth in PAGES:
+    PAGE_GROUPS[_dfind(pth)].append(pth)
+
+# Rang der Seiten (bei mehreren möglichen Gegenstücken gewinnt die wichtigere Seite): Produktbereiche, Downloads und
+# Unternehmensseiten, Katalog-/Newsdownloads, News, Rest
+PAGE_PRIO_KEYS = {**{k: 0 for k in PAGE_AREA_DE}, '/downloads/': 1, '/unternehmen/qualitaetsmanagement/': 1, '/unternehmen/verantwortung/': 1,
+                  '/karriere/ausbildung/': 1, '/en/career/vacancies/': 1, '/en/latest-news/downloads/': 2, '/produktkataloge/': 2}
+GROUP_PRIO = {}
+for g, ms in PAGE_GROUPS.items():
+    pr_ = [PAGE_PRIO_KEYS[m] for m in ms if m in PAGE_PRIO_KEYS]
+    GROUP_PRIO[g] = min(pr_) if pr_ else (3 if any(PAGES[m]['kind'] == 'posts' for m in ms) else 4)
+
+
+def _kind(x):
+    return x['cls'] if x['cls'] in ('ds', 'br', 'dr') else 'x'
+
+
+def _code_conflict(a, b):
+    ca, cb = (a['code'] or '').split(' ')[0], (b['code'] or '').split(' ')[0]
+    return bool(ca and cb and ca != cb)
+
+
+def _lcs(a, b):
+    n, m = len(a), len(b)
+    T = [[0] * (m + 1) for _ in range(n + 1)]
+    for i in range(n - 1, -1, -1):
+        for j in range(m - 1, -1, -1):
+            T[i][j] = T[i + 1][j + 1] + 1 if a[i] == b[j] else max(T[i + 1][j], T[i][j + 1])
+    i = j = 0
+    out = []
+    while i < n and j < m:
+        if a[i] == b[j]:
+            out.append((i, j))
+            i, j = i + 1, j + 1
+        elif T[i + 1][j] >= T[i][j + 1]:
+            i += 1
+        else:
+            j += 1
+    return out
+
+
+def align_links(A, B):
+    """Paare (i, j) gleicher Stellen zweier Sprachfassungen einer Seite; leer, wo es nicht sicher ist."""
+    if not A or not B:
+        return [], 'leer'
+    if len(A) == len(B):
+        if len(A) == 1:
+            return [(0, 0)], 'ein Link'
+        if all(_kind(a) == _kind(b) and not _code_conflict(a, b) for a, b in zip(A, B)):
+            return [(i, i) for i in range(len(A))], 'Position'
+        return [], 'Linkart weicht ab'
+    anchors = _lcs([x['doc']['id'] for x in A], [x['doc']['id'] for x in B])
+    if not anchors:
+        return [], 'Anzahl weicht ab'
+    pairs = list(anchors)
+    bounds = [(-1, -1)] + anchors + [(len(A), len(B))]
+    for (i0, j0), (i1, j1) in zip(bounds, bounds[1:]):
+        ga, gb = list(range(i0 + 1, i1)), list(range(j0 + 1, j1))
+        if ga and len(ga) == len(gb) and all(_kind(A[i]) == _kind(B[j]) and not _code_conflict(A[i], B[j]) for i, j in zip(ga, gb)):
+            pairs.extend(zip(ga, gb))
+    return sorted(pairs), 'Anker'
+
+
+_npar = {}
+
+
+def _nfind(x):
+    _npar.setdefault(x, x)
+    while _npar[x] != x:
+        _npar[x] = _npar[_npar[x]]
+        x = _npar[x]
+    return x
+
+
+ALIGN_LOG = []
+for g, ms in PAGE_GROUPS.items():
+    ms = sorted(ms, key=lambda m: (SITE_LANGS.index(PAGES[m]['lang']), m))
+    for i, a in enumerate(ms):
+        for b in ms[i + 1:]:
+            A, B = PAGES[a]['links'], PAGES[b]['links']
+            if not A or not B:
+                continue
+            pairs, how = align_links(A, B)
+            ALIGN_LOG.append((a, b, len(A), len(B), len(pairs), how))
+            for ia, ib in pairs:
+                ra, rb = _nfind((a, ia)), _nfind((b, ib))
+                if ra != rb:
+                    _npar[rb] = ra
+SLOTS = collections.defaultdict(list)
+for pth, pg in PAGES.items():
+    for i in range(len(pg['links'])):
+        SLOTS[_nfind((pth, i))].append((pth, i))
+
+
+def _node(n):
+    return PAGES[n[0]]['links'][n[1]]
+
+
+# Typcode je Stelle: aus der deutschen Fassung (sonst EN, FR, ES, HU), damit alle Sprachen denselben Code verwenden
+for nodes in SLOTS.values():
+    ref = None
+    for l in ('de', 'en', 'fr', 'es', 'hu'):
+        ref = next((_node(n)['code'] for n in nodes if PAGES[n[0]]['lang'] == l and _node(n)['code']), None)
+        if ref:
+            break
+    for n in nodes:
+        _node(n)['slotcode'] = ref or _node(n)['code']
+
+# ---- alt -------------------------------------------------------------------------------
+DOC_SLOTS = collections.defaultdict(list)
+for root, nodes in SLOTS.items():
+    if len(nodes) > 1:
+        for n in nodes:
+            DOC_SLOTS[_node(n)['doc']['id']].append(root)
+ALT = collections.defaultdict(dict)
+for did_, roots in DOC_SLOTS.items():
+    cand = collections.defaultdict(list)
+    for root in set(roots):
+        prio = GROUP_PRIO[_dfind(SLOTS[root][0][0])]
+        for n in SLOTS[root]:
+            x, l = _node(n), PAGES[n[0]]['lang']
+            if l not in VIS[did_] and x['doc']['id'] != did_:
+                cand[l].append((prio, n[0], n[1], x['doc']['id']))
+    for l, cs in cand.items():
+        ALT[did_][l] = min(cs)[3]
+
+# ---- same: byte-gleiche Kopien (mehrfach hochgeladene Dateien) → ID der Kopie, die die meisten Sprachfassungen verlinkt haben ----
+SAME = {}
+_by_hash = collections.defaultdict(list)
+for d in _main_docs:
+    if os.path.exists(local_doc_path(d)):
+        with open(local_doc_path(d), 'rb') as f:
+            _by_hash[hashlib.md5(f.read()).hexdigest()].append(d)
+for ds in _by_hash.values():
+    if len(ds) > 1:
+        canon = sorted(ds, key=lambda x: (-len(VIS[x['id']]), len(x['file']), x['file']))[0]
+        for x in ds:
+            if x is not canon:
+                SAME[x['id']] = canon['id']
+
+# ---- Produkte: alle Sprachfassungen der Datenblätter (Stellen auf Bereichsseiten und in News) -------------
+DOCS_BY_ID = {d['id']: d for d in docs_list}
+
+
+def doc_variants(did_):
+    out = []
+    for root in DOC_SLOTS.get(did_, ()):
+        if GROUP_PRIO[_dfind(SLOTS[root][0][0])] not in (0, 3):
+            continue
+        for n in SLOTS[root]:
+            o = _node(n)['doc']['id']
+            if o != did_ and o not in out:
+                out.append(o)
+    return out
+
+
+# Datenblätter der Mittelspannungsseite, deren Dateiname einen anderen Typ nennt und die daher in FAMILY_MAIN fehlen.
+# Inhalt per Texterkennung geprüft: „De_VES_12_24…“ ist das Datenblatt VEF 12 | 17,5 | 24 | 36, „De_GSE_12_0_12…“ VEF 52 | 72,5,
+# „De_VEN_12_72_5…“ VZF 12 | 17,5 | 24 | 36 (die alte Seite verlinkte sie in genau diesen Zeilen; englisch: En_VEF_36_, En_VEF_72.5, En_VZF)
+ROW_DATASHEET = {'VEF 12…36': 'De_VES_12_24_Spannungswandler.pdf', 'VEF 52 / 72,5': 'De_GSE_12_0_12_Spannungswandler.pdf',
+                 'VZF': 'De_VEN_12_72_5_Spannungswandler.pdf'}
+_by_file = {d['file']: d for d in _main_docs}
+for pr in products:
+    fn = ROW_DATASHEET.get(pr['code'])
+    if fn and fn in _by_file and _by_file[fn]['id'] not in pr['docs']:
+        d = _by_file[fn]
+        pr['docs'].insert(0, d['id'])
+        if pr['id'] not in d['products']:
+            d['products'].append(pr['id'])
+        if pr['area'] not in d['areas']:
+            d['areas'].append(pr['area'])
+
+VARIANTS_ADDED = []
+for pr in products:
+    if not (pr.get('family') or pr['catalog'] or pr['code'] in ROW_DATASHEET):
+        continue
+    out = []
+    for i in pr['docs']:
+        out.append(i)
+        if DOCS_BY_ID[i]['source'] != 'main':
+            continue
+        for v in doc_variants(i):
+            if v not in pr['docs'] and v not in out:
+                out.append(v)
+                vd = DOCS_BY_ID[v]
+                if pr['id'] not in vd['products']:
+                    vd['products'].append(pr['id'])
+                if pr['area'] not in vd['areas']:
+                    vd['areas'].append(pr['area'])
+                VARIANTS_ADDED.append((pr['code'], DOCS_BY_ID[i]['file'], vd['file']))
+    pr['docs'] = out
+
+# ---- tl --------------------------------------------------------------------------------
+# Fehlplatzierte Links der alten Seiten: ein Dokument steht in einer Sprachfassung an einer Stelle, an der die anderen
+# Fassungen ein anderes Dokument zeigen, während es selbst in diesen Fassungen an einer anderen Stelle steht
+# (FR „Transformateur de courant à câble en deux parties“ → Mittelspannungskatalog; EN „SIS Flyer“ → SIS-Broschüre).
+# Ihr Linktext beschreibt ein anderes Dokument und wird für Titel nicht verwendet.
+MISPLACED = []
+for g, ms in PAGE_GROUPS.items():
+    roots_of = collections.defaultdict(set)
+    for m in ms:
+        for i, x in enumerate(PAGES[m]['links']):
+            roots_of[x['doc']['id']].add(_nfind((m, i)))
+    for m in ms:
+        for i, x in enumerate(PAGES[m]['links']):
+            root = _nfind((m, i))
+            here = [n for n in SLOTS[root] if n[0] != m]
+            if not here or any(_node(n)['doc'] is x['doc'] for n in here):
+                continue
+            if any(n[0] != m and _node(n)['doc'] is x['doc'] for r in roots_of[x['doc']['id']] if r != root for n in SLOTS[r]):
+                x['misplaced'] = True
+                MISPLACED.append((m, x['t'], x['doc']['file']))
+
+ALLCAPS_KEEP = {'RITZ', 'EOSS', 'EU', 'PQ', 'SIS', 'SISD', 'HVDC', 'IRIS', 'USA', 'AEO', 'ISO', 'ZVEI', 'VDMA', 'GE', 'UKE', 'CO2', 'EMVI', 'IRBT'}
+TITLE_TYPO = [('Accrediation', 'Accreditation'), ('Erbebensicherheit', 'Erdbebensicherheit')]
+
+
+def tidy_title(t, caps=False):
+    t = re.sub(r'\s+', ' ', (t or '').replace('\xa0', ' ')).strip()
+    t = t.rstrip(' :') if '¡' in t else t.rstrip(' !:')  # „¡…!“ (spanisch) vollständig lassen
+    for a, b in TITLE_TYPO:
+        t = t.replace(a, b)
+    if caps and t and not re.search(r'[a-zäöüßáéíóúőű]', t):  # GROSSGESCHRIEBENER Beitragstitel → normale Schreibung
+        t = ' '.join(w if w in ALLCAPS_KEEP or not re.search(r'[A-ZÄÖÜÁÉÍÓÚŐŰ]{2,}', w) else w.lower() for w in t.split(' '))
+        t = t[0].upper() + t[1:]
+    return t
+
+
+def composed_title(x, lang):
+    code = x.get('slotcode') or x.get('code')
+    if x['cls'] == 'ds' and code:
+        return DS_TPL_BY_TEXT.get(text_norm(x['t']), DS_TPL[lang]).format(c=code)
+    if x['cls'] == 'br' and code:
+        return BR_TPL[lang].format(c=code)
+    if x['cls'] == 'dr' and x['drno']:
+        return re.sub(r'\s+', ' ', DR_TPL[lang].format(c=code or x['drno'], n=f' ({x["drno"]})' if code else '')).strip()
+    if x['cls'] == 'code':
+        return DS_TPL[lang].format(c=x['t'].strip()) if x['doc']['type'] == 'datasheet' else x['t'].strip()
+    return None
+
+
+def product_code_title(d, lang):
+    """Generischer Link ohne Zeile (z. B. „DATENBLATT“ auf der DUROMER-Seite, Beitragstitel als Linktext): Code des Produkts."""
+    codes = sorted({pr['code'] for pr in products if pr['id'] in d['products']})
+    if len(codes) == 1 and d['type'] == 'datasheet':
+        return DS_TPL[lang].format(c=codes[0])
+    return None
+
+
+TL = {}
+TL_HOW = collections.Counter()
+TL_LOG = []
+for d in docs_list:
+    if d['source'] != 'main':
+        continue
+    tl = {}
+    nodes = [(pth, i) for pth, pg in PAGES.items() for i, x in enumerate(pg['links']) if x['doc'] is d]
+    for l in SITE_LANGS:
+        if l not in VIS[d['id']]:
+            continue
+        mine = [n for n in nodes if PAGES[n[0]]['lang'] == l]
+        mine.sort(key=lambda n: (GROUP_PRIO[_dfind(n[0])], n[0], n[1]))
+        ok = [n for n in mine if not _node(n).get('misplaced')]
+        src = TSRC.get((d['url'], l))
+        t, how, caps = None, None, False
+        if l in ('de', 'en') and src in ('override', 'catalog') and d['title'].get(l) and not (
+                src == 'catalog' and re.match(r'^(Datasheet|Datenblatt) ', d['title'][l]) and any(composed_title(_node(n), l) for n in ok)):
+            t, how = d['title'][l], 'Titel (gepflegt)'  # „Datasheet X“ aus dem Katalog: Schreibweise der Seite („Data sheet X“) bevorzugen
+        if not t:
+            named = [_node(n)['t'] for n in ok if _node(n)['cls'] == 'named']
+            if named:
+                t, how = max(named, key=len), 'Linktext'
+        if not t:
+            t = next((composed_title(_node(n), l) for n in ok if composed_title(_node(n), l)), None)
+            how = 'Typ + Code' if t else None
+        if not t:
+            t = product_code_title(d, l)
+            how = 'Typ + Produktcode' if t else None
+        if not t and l in ('de', 'en') and d['title'].get(l) and src not in ('file', 'family', None):
+            t, how = d['title'][l], 'Titel'
+        if not t:  # Linktext derselben Stelle in dieser Sprachfassung (Dokument an anderer Stelle derselben Seite verlinkt)
+            named = [_node(n)['t'] for r in DOC_SLOTS.get(d['id'], ()) for n in SLOTS[r]
+                     if PAGES[n[0]]['lang'] == l and _node(n)['cls'] == 'named' and not _node(n).get('misplaced')]
+            if named:
+                t, how = max(named, key=len), 'Linktext derselben Stelle'
+        if not t:
+            post = next((n[0] for n in mine if PAGES[n[0]]['kind'] == 'posts' and PAGES[n[0]]['title']), None)
+            if post:
+                en_title = next((PAGES[m]['title'] for m in PAGE_GROUPS[_dfind(post)] if PAGES[m]['lang'] == 'en' and PAGES[m]['kind'] == 'posts'), None)
+                if l != 'en' and tl.get('en') and same_text(PAGES[post]['title'], en_title):
+                    t, how = tl['en'], 'Titel EN (Beitrag unübersetzt)'
+                else:
+                    t, how, caps = PAGES[post]['title'], 'Beitragstitel', True
+        if not t:
+            t = tl.get('en') or tl.get('de') or d['title'].get('en') or d['title'].get('de')
+            how = 'Titel EN/DE' if t else None
+        if not t:
+            t, how = prettify(d['file']), 'Dateiname'
+        tl[l] = tidy_title(t, caps)
+        TL_HOW[how] += 1
+        TL_LOG.append((d['file'], l, how, tl[l]))
+    TL[d['id']] = tl
+
+for d in docs_list:
+    if d['source'] == 'main':
+        d['vis'] = sorted(VIS[d['id']])
+        d['tl'] = TL[d['id']]
+        d['alt'] = {l: ALT[d['id']][l] for l in SITE_LANGS if l in ALT[d['id']]}
+        d['areaLangs'] = {a: sorted(AREA_LANGS[d['id']][a]) for a in d['areas'] if AREA_LANGS[d['id']].get(a)}
+        if d['id'] in SAME:
+            d['same'] = SAME[d['id']]
+
+for w in DOC_WARN:
+    print('WARNUNG', w)
+for m, t, fn in MISPLACED:
+    print(f'Fehlplatzierter Link auf der alten Seite (Linktext nicht als Titel verwendet): {m} „{t}“ → {fn}')
+_src = {d['file']: d['source'] for d in docs_list}
+for _s, _label in (('main', 'Hauptseite'), ('produkte', 'Produktfinder')):
+    _ch = sorted((x for x in LANG_CHANGES if _src.get(x[0]) == _s), key=lambda x: x[0].lower())
+    print(f'Inhaltssprache geändert – {_label}: {len(_ch)} Dokumente (Datei: alt → neu, Quelle)')
+    for fn, a, b, how in _ch:
+        print(f'  {fn}: {a} → {b}  ({how})')
+print('Dokumente sichtbar je Sprache:', {l: sum(1 for d in docs_list if l in d.get('vis', ())) for l in SITE_LANGS})
+print('Titel je Sprache – Herkunft:', dict(TL_HOW))
+print('Gegenstücke (alt):', sum(len(d.get('alt') or {}) for d in docs_list), 'in', sum(1 for d in docs_list if d.get('alt')), 'Dokumenten;',
+      'Sprachvarianten zu Produkten ergänzt:', len(VARIANTS_ADDED))
+
 
 # --------------------------------------------------------------------------------------
 # Schreiben

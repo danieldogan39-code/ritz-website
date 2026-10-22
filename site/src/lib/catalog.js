@@ -9,6 +9,22 @@ export const SECTOR_LINKS = {
   messtechnik: { docs: ['Akkreditierung-Ritz-AT_ISO-17025.pdf', 'EOSS_122_DE_2021-11-1.pdf', 'Produktwissen_kompakt_Zusatzbuerde.pdf'], news: ['mehr-sicherheit-fuer-mensch', 'ritz-nimmt-an-xxx-vde'], areas: ['niederspannung', 'elektronik-sensoren'] },
 };
 
+export const AREA_IMG = {
+  niederspannung: 'mimg/ritz_header-niederspannung.webp', mittelspannung: 'mimg/ritz_header-mittelspannung.webp',
+  hochspannung: 'mimg/Hochspannungswandler-Intro2.webp', 'elektronik-sensoren': 'mimg/ritz_header-elektronik.webp',
+  'stromschienen-sis': 'mimg/SIS_Slider.webp', 'giessharzteile-duromer': 'mimg/ritz_header-duromer.webp',
+};
+export const SECTOR_IMG = {
+  netze: 'mimg/2022__06__image_empowering_the_future.webp', schaltanlagenbau: 'mimg/2022__07__unternehmen_qualitaetsmanagement_wandler_pruefung.webp',
+  industrie: 'mimg/Kundenreferenz-SIS-Projekt-BSW-3.webp', bahn: 'mimg/2022__07__sonderwandler_bahnwandler_gsefb.webp',
+  erneuerbare: 'mimg/wind-energy-sq.webp', kraftwerke: 'mimg/IRBT-1.webp', messtechnik: 'mimg/2022__07__unternehmen_qualitaetsmanagement_schienen_pruefung.webp',
+};
+// Bilder der Unternehmensseiten (Seitenkopf und Vorschau im Menü)
+export const PAGE_IMG = {
+  company: 'mimg/ritz_header-unternehmen.webp', locations: 'mimg/Luftbild_Kirchaich_2014_klein.webp', quality: 'mimg/JKI1023-2.webp',
+  responsibility: 'mimg/wind-energy-sq.webp', references: 'mimg/JKI0984-2-2048x1366.webp', career: 'mimg/stellenangebote_intro_slider_4_International.webp',
+};
+
 export const HISTORY_IMG = {
   // Zuordnung wie in der Zeitleiste der bisherigen Website (Abschnitt je Jahr: Text und Foto)
   2026: ['mimg/RITZ-USA-HV-Waynesboro-Grand-Opening-2026-Ribbon-Cutting.webp'],
