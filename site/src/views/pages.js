@@ -96,7 +96,7 @@ function groupStructure(ctx) {
   return `<section class="section" aria-labelledby="org-title">
   <div class="wrap">
     ${sectionHead(C.structureTitle, C.structureText, '', { id: 'org-title' })}
-    <div class="org" data-reveal="org">
+    <div class="org" data-reveal="org" data-org>
       <div class="org__node org__node--foundation"><span class="org__mark" aria-hidden="true"></span><strong>${esc(C.foundationTitle)}</strong><span>${esc(C.orgOwner)}</span></div>
       <span class="org__stem" aria-hidden="true"></span>
       <div class="org__node org__node--group"><span class="org__logo" aria-hidden="true">${group}</span><strong>${esc(C.orgGroup)}</strong><span>${esc(C.orgHq)}</span></div>

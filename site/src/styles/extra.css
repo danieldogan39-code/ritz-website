@@ -52,18 +52,6 @@
 .vaxis--light .vaxis__probe::after, .vaxis--light .vaxis__hit { box-shadow: 0 0 0 2px var(--paper); }
 .vaxis--light .btn--light { --bg: var(--ink); --fg: var(--paper); --bd: var(--ink); }
 
-/* Weltkarten-Teaser */
-.wt { position: relative; aspect-ratio: 1000 / 520; }
-.wt img { width: 100%; height: 100%; }
-/* Weltkarte hell/dunkel nach Farbschema */
-.wl-dk { display: none; }
-:root[data-theme="dark"] .wl-lt { display: none; }
-:root[data-theme="dark"] .wl-dk { display: block; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .wl-lt { display: none; } :root:not([data-theme="light"]) .wl-dk { display: block; } }
-.wt__dot { position: absolute; width: 12px; height: 12px; margin: -6px 0 0 -6px; border-radius: 50%; background: var(--red); border: 2px solid var(--paper); box-shadow: 0 0 0 4px color-mix(in srgb, var(--red) 22%, transparent); }
-.wt__dot--hq { width: 16px; height: 16px; margin: -8px 0 0 -8px; background: var(--ink); border-color: var(--red); border-width: 3px; }
-.wt__dot--site, .wt__dot--sales { background: var(--paper); border-color: var(--red); }
-
 /* Karten News: Platzhalter */
 .card__ph { display: grid; place-content: center; justify-items: center; gap: .7rem; height: 100%; color: var(--steel); font-size: .85rem; font-weight: 600; font-stretch: 90%; background: var(--porcelain); }
 .card__ph svg { color: var(--line-strong); width: 72px; height: auto; transition: color .3s var(--ease); }
@@ -557,11 +545,6 @@ input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; a
 @keyframes iTag { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
 @keyframes iOut { from { opacity: 1; } to { opacity: 0; } }
 
-/* ---------- Netzlinien auf der Weltkarte (auch ohne Bewegung sichtbar) ---------- */
-.wt__net { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; }
-.wt__arc { fill: none; stroke: var(--red); stroke-width: 1.6; stroke-linecap: round; opacity: .5; stroke-dasharray: 1; }
-.wt__dot--hq::after { content: ""; position: absolute; inset: -3px; border-radius: 50%; border: 2px solid var(--red); opacity: 0; pointer-events: none; }
-
 /* ---------- Druck-Rückmeldung und Hover nur mit Maus ---------- */
 .area, .card, .app, .task { transition: transform .16s var(--ease-out), background-color .18s var(--ease-out); }
 .area:active, .card:active, .task:active { transform: scale(.985); }
@@ -601,12 +584,6 @@ input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; a
   [data-reveal="img"].is-in img { animation: imgSettle 1.3s var(--ease-out) backwards; animation-delay: calc(var(--rv-i, 0) * 90ms); }
   :root.rv [data-reveal="facts"]:not(.is-in) > * { opacity: 0; }
   [data-reveal="facts"].is-in > * { animation: fadeIn .6s var(--ease-out) backwards; animation-delay: calc(var(--rv-i, 0) * 90ms); }
-  :root.rv .wt:not(.is-in) .wt__arc { stroke-dashoffset: 1; }
-  :root.rv .wt:not(.is-in) .wt__dot { opacity: 0; }
-  .wt.is-in .wt__arc { animation: iDraw 1s var(--ease-in-out) backwards; animation-delay: calc(.25s + var(--i) * 100ms); }
-  .wt.is-in .wt__dot { animation: dotIn .45s var(--ease-out) backwards; animation-delay: calc(1.05s + (var(--i) - 1) * 100ms); }
-  .wt.is-in .wt__dot--hq { animation-delay: .05s; }
-  .wt.is-in .wt__dot--hq::after { animation: ripple 1.4s var(--ease-out) .2s; }
 }
 @keyframes heroSettle { from { transform: scale(1.06); } }
 @keyframes wordUp { from { transform: translateY(108%); } }
@@ -627,7 +604,6 @@ strong[data-count] span { font-size: inherit; font-weight: inherit; line-height:
 @media print {
   .intro, .intro__skip { display: none !important; }
   [data-reveal], [data-reveal] * { opacity: 1 !important; clip-path: none !important; animation: none !important; }
-  .wt__arc { stroke-dashoffset: 0 !important; }
 }
 /* Dokumente auf Anfrage (noch nicht auf der Seite hinterlegt) */
 .doc--req .doc__icon { background: transparent; box-shadow: inset 0 0 0 1px var(--line-strong); color: var(--steel); }
@@ -677,6 +653,25 @@ img.is-lowres { width: auto !important; height: auto !important; max-width: 100%
 .org__sub { position: relative; padding-top: 24px; }
 .org__sub::before { content: ""; position: absolute; left: 50%; top: 0; width: 1px; height: 24px; background: var(--red); }
 .org__sub .org__card { border-top-width: 1px; }
+/* Leitungen als SVG (src/client/org.js): die CSS-Linien weichen, Platz bleibt; Impulse und Aufleuchten */
+.org { position: relative; }
+.org__svg { position: absolute; inset: 0; z-index: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; }
+.org.is-wired > :not(.org__svg) { position: relative; z-index: 1; }
+.org.is-wired .org__stem { visibility: hidden; }
+.org.is-wired :is(.org__cos, .org__co, .org__sub)::before, .org.is-wired :is(.org__co, .org__sub)::after { content: none; }
+.org__wire { fill: none; stroke: var(--red); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; transition: stroke-width .25s var(--ease-out), opacity .25s var(--ease-out); }
+.org__pulse { fill: none; stroke: #fff; stroke-width: 3; stroke-linecap: round; opacity: 0; filter: drop-shadow(0 0 2px var(--red)) drop-shadow(0 0 7px var(--red)); }
+.org__pulse--spark { stroke-width: 3.6; }
+.org__card { position: relative; }
+.org__glow { position: absolute; left: -1px; right: -1px; top: -2px; height: 2px; background: var(--red); box-shadow: 0 0 14px 2px rgb(205 23 25 / .5), 0 0 34px 6px rgb(205 23 25 / .22); opacity: 0; pointer-events: none; }
+.org__glow--src { visibility: visible; left: 50%; right: auto; top: -4px; width: 9px; height: 9px; margin-left: -4.5px; border-radius: 50%; }
+.org__logo { position: relative; }
+.org__glow--ring { inset: -5px; height: auto; border-radius: 50%; background: none; border: 2px solid var(--red); box-shadow: 0 0 18px 2px rgb(205 23 25 / .45); }
+.org__co { transition: opacity .3s var(--ease-out); }
+.org.has-hot .org__co:not(.is-hot) { opacity: .42; }
+.org.has-hot .org__wire:not(.is-hot) { opacity: .22; }
+.org.has-hot .org__wire.is-hot { stroke-width: 2.6; }
+.org__co.is-hot > .org__card { box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--red) 55%, transparent); }
 .org__brands-title { margin: clamp(56px, 7vw, 96px) 0 20px; font-size: var(--step-1); }
 .brands { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(16px, 2vw, 28px); margin: 0; padding: 0; list-style: none; }
 .brand { display: grid; align-content: start; gap: .45rem; min-width: 0; }

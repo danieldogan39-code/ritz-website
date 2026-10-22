@@ -32,6 +32,8 @@ export async function initPage(root = document) {
   if (has('[data-calc]')) jobs.push(import('./calc.js').then((m) => m.initCalc(root)));
   if (has('[data-home-spec]')) jobs.push(import('./homespec.js').then((m) => m.initHomeSpec(root)));
   if (has('[data-hx]')) jobs.push(import('./history.js').then((m) => m.initHistory(root)));
+  if (has('[data-nm]')) jobs.push(import('./netmap.js').then((m) => m.initNetMap(root)));
+  if (has('[data-org]')) jobs.push(import('./org.js').then((m) => m.initOrg(root)));
   if (has('[data-contact-finder]')) jobs.push(initContactFinder(root));
   if (has('[data-contact-form]')) jobs.push(initForms(root));
   await Promise.allSettled(jobs);

@@ -75,7 +75,8 @@
   }
 
   /* ---------- Menüs, Überlagerungen ---------- */
-  .mega:not([hidden]) { animation: megaIn .2s var(--ease-out); }
+  .mega:not([hidden]) { z-index: 1; animation: megaIn .2s var(--ease-out); }
+  .mega.is-leaving { z-index: 0; pointer-events: none; animation: megaOut .17s var(--ease-out) forwards; }
   .mg__row.is-on .mg__pane { animation: paneIn .26s var(--ease-out); }
   .mg__row.is-on .mg__img img { animation: paneImg .6s var(--ease-out); }
   .lang__menu:not([hidden]) { animation: megaIn .16s var(--ease-out); }
@@ -116,6 +117,10 @@
   .org.is-in .org__sub::before { transform-origin: top; animation: stemIn .3s var(--ease-in-out) 2.2s backwards; }
   .org.is-in .org__sub .org__card { animation: riseIn .5s var(--ease-out) 2.4s backwards; }
   .org__co:nth-child(1) { --k: 0; } .org__co:nth-child(2) { --k: 1; } .org__co:nth-child(3) { --k: 2; } .org__co:nth-child(4) { --k: 3; } .org__co:nth-child(5) { --k: 4; }
+  /* Mit Leitungen als SVG (src/client/org.js): Karten erscheinen, wenn ihre Leitung ankommt */
+  .org.is-wired.is-in .org__node--group { animation-delay: var(--at-g, .6s); }
+  .org.is-wired.is-in .org__co > .org__card { animation-delay: var(--at, 1.75s); }
+  .org.is-wired.is-in .org__sub .org__card { animation-delay: var(--at-sub, 2.4s); }
 }
 
 @keyframes vtOut { to { opacity: 0; transform: translateY(-8px); } }
@@ -127,6 +132,7 @@
 @keyframes svPan { from { translate: 0 -7%; } to { translate: 0 7%; } }
 @keyframes svPanS { from { translate: 0 -4.5%; } to { translate: 0 4.5%; } }
 @keyframes megaIn { from { opacity: 0; translate: 0 -8px; } }
+@keyframes megaOut { to { opacity: 0; translate: 0 -4px; } }
 @keyframes paneIn { from { opacity: 0; translate: 12px 0; } }
 @keyframes paneImg { from { scale: 1.07; } }
 @keyframes popIn { from { opacity: 0; scale: .97; translate: 0 -6px; } }

@@ -362,9 +362,25 @@ p { margin: 0; text-wrap: pretty; }
 }
 .drawer { position: fixed; inset: 0; z-index: 70; display: grid; grid-template-columns: 1fr minmax(0, 440px); }
 .drawer__scrim { background: rgb(13 9 8 / .5); }
-.drawer__panel { background: var(--paper); height: 100%; overflow-y: auto; padding: calc(env(safe-area-inset-top, 0px) + 12px) max(20px, env(safe-area-inset-right, 0px)) calc(env(safe-area-inset-bottom, 0px) + 24px) 20px; display: flex; flex-direction: column; gap: 1rem; box-shadow: var(--shadow-lg); animation: slideIn .28s var(--ease); }
-@keyframes slideIn { from { transform: translateX(24px); opacity: 0; } to { transform: none; opacity: 1; } }
-.drawer__head { display: flex; justify-content: space-between; align-items: center; }
+/* Kopf und Projektmappe stehen fest, dazwischen scrollt das Menü */
+.drawer__panel { display: flex; flex-direction: column; height: 100%; min-height: 0; overflow: hidden; background: var(--paper); box-shadow: var(--shadow-lg); }
+.drawer__body { flex: 1; min-height: 0; display: flex; flex-direction: column; gap: 1rem; overflow-y: auto; overscroll-behavior: contain; padding: 4px max(20px, env(safe-area-inset-right, 0px)) 24px 20px; }
+.drawer__foot { flex: none; padding: 12px max(20px, env(safe-area-inset-right, 0px)) calc(env(safe-area-inset-bottom, 0px) + 14px) 20px; border-top: 1px solid var(--line); background: var(--paper); box-shadow: 0 -14px 24px -18px rgb(28 19 17 / .28); }
+/* Öffnen: Schleier blendet auf, Tafel gleitet herein (ausklingend), Einträge folgen gestaffelt; Schließen zügig */
+.drawer__scrim { opacity: 0; }
+.drawer__panel { translate: 100% 0; }
+.drawer.is-open .drawer__scrim { opacity: 1; }
+.drawer.is-open .drawer__panel { translate: 0 0; }
+@media (prefers-reduced-motion: no-preference) {
+  .drawer__scrim { transition: opacity .3s var(--ease); }
+  .drawer__panel { transition: translate .3s cubic-bezier(.5, 0, .75, .3); }
+  .drawer.is-open .drawer__panel { transition: translate .55s var(--ease-drawer); }
+  .drawer.is-open :is(.drawer__body > .btn, .mnav > li, .drawer__body > .cluster) { animation: drawerIn .5s var(--ease-out) backwards; animation-delay: calc(.1s + var(--i, 0) * 34ms); }
+  .drawer.is-open .drawer__foot { animation: drawerFoot .5s var(--ease-out) .22s backwards; }
+}
+@keyframes drawerIn { from { opacity: 0; translate: 26px 0; } }
+@keyframes drawerFoot { from { opacity: 0; translate: 0 100%; } }
+.drawer__head { flex: none; display: flex; justify-content: space-between; align-items: center; padding: calc(env(safe-area-inset-top, 0px) + 12px) max(20px, env(safe-area-inset-right, 0px)) 12px 20px; }
 .mnav { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
 .mnav > li { border-bottom: 1px solid var(--line); }
 .mnav details > summary, .mnav > li > a { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; font-weight: 650; font-size: 1.15rem; font-stretch: 104%; text-decoration: none; list-style: none; cursor: pointer; }

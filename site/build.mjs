@@ -167,6 +167,32 @@ function worldLite(fill = '#cfcac4') {
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${world.W} ${world.H}"><path fill="${fill}" d="${d}"/></svg>`;
 }
 
+// Punktkarte der Landflächen (Startseite, „Weltweit vernetzt“): Bild für die Ansicht ohne JavaScript und bis die
+// Leinwand gezeichnet ist. Sechseckraster mit Teilung NM_SP (gleiche Formel wie src/client/netmap.js); je Zeile eine
+// Strecke pro zusammenhängender Landfolge, stroke-dasharray „0 Teilung“ mit runden Enden setzt die Punkte.
+const NM_SP = 4.6;
+let worldDotsP = null;
+function worldDots() {
+  return (worldDotsP ||= (async () => {
+    const R = 2;
+    const src = Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="${world.W * R}" height="${world.H * R}" viewBox="0 0 ${world.W} ${world.H}"><rect width="${world.W}" height="${world.H}" fill="#000"/><path fill="#fff" d="${world.land}"/></svg>`);
+    const { data, info } = await sharp(src).greyscale().raw().toBuffer({ resolveWithObject: true });
+    const land = (x, y) => { const px = Math.floor(x * R), py = Math.floor(y * R); return px >= 0 && py >= 0 && px < info.width && py < info.height && data[py * info.width + px] > 127; };
+    const sp = NM_SP, dy = (sp * Math.sqrt(3)) / 2, f = (v) => +v.toFixed(2);
+    let d = '';
+    for (let row = 0; dy / 2 + row * dy < world.H; row++) {
+      const y = dy / 2 + row * dy, x0 = sp / 2 + (row % 2) * (sp / 2), n = Math.floor((world.W - x0) / sp) + 1;
+      let run = -1;
+      for (let i = 0; i <= n; i++) {
+        const on = i < n && land(x0 + i * sp, y);
+        if (on && run < 0) run = i;
+        if (!on && run >= 0) { d += `M${f(x0 + run * sp)} ${f(y)}h${f((i - 1 - run) * sp + 0.01)}`; run = -1; }
+      }
+    }
+    return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${world.W} ${world.H}"><path d="${d}" fill="none" stroke="#f6f0ec" stroke-opacity=".3" stroke-width="${f(sp * 0.34)}" stroke-linecap="round" stroke-dasharray="0 ${sp}"/></svg>`;
+  })());
+}
+
 // Detailreiche Landfläche als referenzierbarer Pfad (für Kartenausschnitte per <use>, Farbe per CSS)
 function worldLand() {
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${world.W} ${world.H}"><path id="land" d="${world.land}"/></svg>`;
@@ -189,15 +215,18 @@ function themeScript() {
   return `<script>(function(){var d=document.documentElement;d.dataset.hostTheme=d.dataset.theme||'';try{var t=JSON.parse(localStorage.getItem('ritz-theme')||'"auto"');if(t==='light'||t==='dark')d.dataset.theme=t}catch(e){}})()</script>`;
 }
 // Bewegung: setzt vor dem ersten Bild :root.rv (Ausgangszustände fürs Einblenden) und startet auf der
-// Startseite einmal je Sitzung das Intro (data-intro: play → out → entfernt). Überspringen per Klick, Taste,
-// Mausrad oder Wischen; bei reduzierter Bewegung passiert nichts. mode: 'home' | 'spa' (Startseite am Hash).
+// Startseite das Intro (data-intro: play → out → entfernt): beim ersten Aufruf und danach bei jedem dritten
+// erneuten Laden (Zähler „ritz-intro-n“ im localStorage läuft 0 → 1 → 2 → 0, das Intro kommt bei 0; ohne
+// Speicher jedes Mal). sessionStorage „ritz-intro“ schaltet es ab (Prüfskripte). Überspringen per Klick, Taste,
+// Mausrad oder Wischen; bei reduzierter Bewegung passiert nichts. mode: 'home' | 'page' (nur Einblenden) | 'spa' (Startseite am Hash).
 function motionScript(mode) {
-  const isHome = mode === 'spa' ? "(function(h){return !h||h==='#'||/^#(de|en|fr|hu|es)$/.test(h)})(location.hash)" : 'true';
+  const isHome = mode === 'spa' ? "(function(h){return !h||h==='#'||/^#(de|en|fr|hu|es)$/.test(h)})(location.hash)" : mode === 'home' ? 'true' : 'false';
   return `<script>(function(d){try{
 if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
 if('IntersectionObserver' in window){d.classList.add('rv');setTimeout(function(){if(!d.classList.contains('rv-ok'))d.classList.remove('rv')},4000)}
 if(!${isHome})return;
-try{var s=sessionStorage;if(s.getItem('ritz-intro'))return;s.setItem('ritz-intro','1')}catch(e){}
+try{if(sessionStorage.getItem('ritz-intro'))return}catch(e){}
+try{var ls=localStorage,k=parseInt(ls.getItem('ritz-intro-n'),10)||0;ls.setItem('ritz-intro-n',String((k+1)%3));if(k!==0)return}catch(e){}
 d.setAttribute('data-intro','play');
 var done=0,EV=['pointerdown','keydown','wheel','touchstart'];
 function q(x){return document.querySelector(x)}
@@ -256,7 +285,7 @@ ${alternates.map(([l, u]) => `<link rel="alternate" hreflang="${l}" href="${SITE
 <link rel="preload" href="/assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/main.css?v=${V}">
 ${themeScript()}
-${route.id === 'home' ? motionScript('home') : ''}
+${motionScript(route.id === 'home' ? 'home' : 'page')}
 <script>window.__RITZ__=${JSON.stringify(cfg)}</script>
 <script type="module" src="/assets/app.js?v=${V}"></script>
 ${jsonld(ctx, route, page)}
@@ -444,11 +473,13 @@ async function bundleAssets(out, mode) {
     wr(`${out}/img/world-lite.svg`, worldLite());
     wr(`${out}/img/world-lite-dark.svg`, worldLite('#3a312d'));
     wr(`${out}/img/world-land.svg`, worldLand());
+    wr(`${out}/img/world-dots.svg`, await worldDots());
   } else {
     await esbuild.build({ entryPoints: { app: `${SRC}/client/spa.js` }, bundle: true, splitting: true, format: 'esm', minify: true, outdir: out, chunkNames: 'chunks/[name]-[hash]', target: ['es2020'], legalComments: 'none' });
     wr(`${out}/img/world-lite.svg`, worldLite());
     wr(`${out}/img/world-lite-dark.svg`, worldLite('#3a312d'));
     wr(`${out}/img/world-land.svg`, worldLand());
+    wr(`${out}/img/world-dots.svg`, await worldDots());
   }
 }
 

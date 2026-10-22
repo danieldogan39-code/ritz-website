@@ -10,7 +10,16 @@ export function initHeader() {
   hdr.__bound = true;
   let openKey = null, hoverT = null;
   const panels = () => $$('[data-mega-panel]', hdr);
-  const close = () => { openKey = null; hdr.classList.remove('is-open'); panels().forEach((p) => (p.hidden = true)); $$('[data-mega]', hdr).forEach((b) => b.setAttribute('aria-expanded', 'false')); };
+  // Ausblenden: Panel bleibt kurz sichtbar und blendet aus (motion.css, .is-leaving), dann hidden
+  const still = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const hide = (p) => {
+    if (p.hidden || p.classList.contains('is-leaving')) return;
+    if (still()) { p.hidden = true; return; }
+    p.classList.add('is-leaving');
+    p.__leaveT = setTimeout(() => { p.classList.remove('is-leaving'); p.hidden = true; }, 170);
+  };
+  const show = (p) => { clearTimeout(p.__leaveT); p.classList.remove('is-leaving'); p.hidden = false; };
+  const close = () => { openKey = null; hdr.classList.remove('is-open'); panels().forEach(hide); $$('[data-mega]', hdr).forEach((b) => b.setAttribute('aria-expanded', 'false')); };
   // Vorschau-Spalte: Die Liste ist mindestens so hoch wie die sichtbare Vorschau (diese liegt absolut daneben)
   const fit = (list) => { const p = list && list.querySelector('.mg__row.is-on .mg__pane'); if (list) list.style.minHeight = p ? `${p.offsetHeight}px` : ''; };
   const pick = (row) => {
@@ -21,8 +30,8 @@ export function initHeader() {
   const open = (key) => {
     openKey = key; hdr.classList.add('is-open');
     panels().forEach((p) => {
-      p.hidden = p.dataset.megaPanel !== key;
-      if (p.hidden) return;
+      if (p.dataset.megaPanel !== key) { hide(p); return; }
+      show(p);
       p.querySelectorAll('img[loading="lazy"]').forEach((i) => { i.loading = 'eager'; });
       fit(p.querySelector('.mg__list'));
     });
@@ -69,13 +78,30 @@ export function initDrawer() {
   const dr = $('[data-drawer]');
   if (!dr || dr.__bound) return;
   dr.__bound = true;
-  let last = null;
+  let last = null, closeT = 0;
+  const still = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // Öffnen: sichtbar machen, Ausgangslage übernehmen lassen, dann .is-open (Übergänge in main.css);
+  // Schließen: .is-open entfernen und erst nach dem Hinausgleiten verbergen
   const set = (on) => {
-    dr.hidden = !on;
+    clearTimeout(closeT);
+    if (on) {
+      dr.hidden = false;
+      void dr.offsetWidth;
+      dr.classList.add('is-open');
+    } else {
+      dr.classList.remove('is-open');
+      if (still()) dr.hidden = true; else closeT = setTimeout(() => { dr.hidden = true; }, 320);
+    }
     document.body.style.overflow = on ? 'hidden' : '';
     $$('[data-drawer-open]').forEach((b) => b.setAttribute('aria-expanded', String(on)));
     if (on) { last = document.activeElement; dr.querySelector('.drawer__panel button, .drawer__panel a')?.focus(); } else last?.focus?.();
   };
+  // Akkordeon: nur ein Untermenü offen (Browser ohne details[name] schließen hier die anderen)
+  dr.addEventListener('toggle', (e) => {
+    const d = e.target;
+    if (d.tagName !== 'DETAILS' || !d.open) return;
+    for (const o of dr.querySelectorAll('.mnav details[open]')) if (o !== d) o.open = false;
+  }, true);
   document.addEventListener('click', (e) => {
     if (e.target.closest('[data-drawer-open]')) set(true);
     else if (e.target.closest('[data-drawer-close]')) set(false);
@@ -83,7 +109,7 @@ export function initDrawer() {
     else if (!dr.hidden && e.target.closest('.drawer__panel [data-search-open]')) set(false);
   });
   document.addEventListener('keydown', (e) => {
-    if (dr.hidden) return;
+    if (dr.hidden || !dr.classList.contains('is-open')) return;
     if (e.key === 'Escape') { set(false); return; }
     // Fokus im geöffneten Menü halten
     if (e.key === 'Tab') {

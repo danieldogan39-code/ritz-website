@@ -1,5 +1,6 @@
 // Intro und Startseiten-Bewegung prüfen: Einzelbilder des Intros (angehalten), echter Ablauf mit Flug ins Logo,
-// zweiter Aufruf ohne Intro, reduzierte Bewegung, Überspringen, Konsolenfehler.
+// zweiter und dritter Aufruf ohne Intro, vierter wieder mit (jedes dritte Neuladen), reduzierte Bewegung,
+// Überspringen, Konsolenfehler.
 // node tools/qa/intro.mjs [basis-url] [ausgabeordner]
 import { chromium } from 'playwright-core';
 import { existsSync, mkdirSync } from 'node:fs';
@@ -70,6 +71,12 @@ for (const [name, opt] of Object.entries(VIEWS)) {
   console.log(name, 'nicht eingeblendet nach Scrollen:', hidden.length, hidden.slice(0, 5));
   const counts = await page.evaluate(() => [...document.querySelectorAll('[data-count]')].map((e) => e.textContent));
   console.log(name, 'Zahlen:', JSON.stringify(counts));
+  // dritter Aufruf ohne, vierter wieder mit Intro
+  await page.goto(base + path, { waitUntil: 'domcontentloaded' });
+  const st3 = await page.evaluate(() => document.documentElement.getAttribute('data-intro'));
+  await page.goto(base + path, { waitUntil: 'domcontentloaded' });
+  const st4 = await page.evaluate(() => document.documentElement.getAttribute('data-intro'));
+  console.log(name, 'dritter/vierter Aufruf', JSON.stringify({ third: st3, fourth: st4 }), st3 === null && st4 === 'play' ? 'ok' : 'FEHLER');
   await ctx.close();
 }
 

@@ -114,37 +114,28 @@ export function shorten(s, n) {
 export function drawer(ctx) {
   const { t, href } = ctx;
   const sum = (label) => `<summary>${esc(label)}${icon('down')}</summary>`;
+  // Menüpunkte mit Untermenü: Akkordeon (name = nur einer offen; Schließen animiert über ::details-content)
+  const sub = (label, items) => `<details name="mnav">${sum(label)}<ul>${items}</ul></details>`;
+  const top = [
+    sub(t.nav.products, `${AREAS.map((a) => `<li><a href="${href('area', { area: a })}">${esc(t.lbl.area[a])}</a></li>`).join('')}<li><a href="${href('finder')}">${esc(t.nav.finder)}</a></li><li><a href="${href('products')}">${esc(t.ui.allProducts)}</a></li>`),
+    sub(t.nav.sectors, SECTORS.map((s) => `<li><a href="${href('sector', { sector: s })}">${esc(t.pages.sectors.items[s].title)}</a></li>`).join('')),
+    sub(t.nav.tools, `<li><a href="${href('assistant')}">${esc(t.x.assist.title)}</a></li><li><a href="${href('calculators')}">${esc(t.x.calc.title)}</a></li><li><a href="${href('inquiry')}">${esc(t.ui.inquiryList)}</a></li><li><a href="${href('tools')}">${esc(t.x.hub.title)}</a></li>`),
+    `<a href="${href('downloads')}">${esc(t.nav.downloads)}</a>`,
+    sub(t.nav.company, `<li><a href="${href('company')}">${esc(t.nav.about)}</a></li><li><a href="${href('locations')}">${esc(t.nav.locations)}</a></li><li><a href="${href('quality')}">${esc(t.nav.quality)}</a></li><li><a href="${href('responsibility')}">${esc(t.nav.responsibility)}</a></li><li><a href="${href('references')}">${esc(t.nav.references)}</a></li>`),
+    sub(t.nav.career, `<li><a href="${href('career')}">${esc(t.nav.jobs)}</a></li><li><a href="${href('training')}">${esc(t.nav.training)}</a></li><li><a href="${href('internships')}">${esc(t.nav.internships)}</a></li>`),
+    `<a href="${href('news')}">${esc(t.nav.news)}</a>`,
+    `<a href="${href('contact')}">${esc(t.nav.contact)}</a>`,
+  ];
   return `<div class="drawer" id="drawer" data-drawer hidden>
   <div class="drawer__scrim" data-drawer-close></div>
   <div class="drawer__panel" role="dialog" aria-modal="true" aria-label="${esc(t.ui.menu)}">
     <div class="drawer__head"><a class="logo" href="${href('home')}" aria-label="RITZ">${LOGO}</a><button class="icon-btn" type="button" data-drawer-close aria-label="${esc(t.ui.close)}">${icon('close')}</button></div>
-    <button class="btn btn--ghost btn--block" type="button" data-search-open>${icon('search')}${esc(t.ui.search)}</button>
-    <ul class="mnav">
-      <li><details>${sum(t.nav.products)}<ul>
-        ${AREAS.map((a) => `<li><a href="${href('area', { area: a })}">${esc(t.lbl.area[a])}</a></li>`).join('')}
-        <li><a href="${href('finder')}">${esc(t.nav.finder)}</a></li><li><a href="${href('products')}">${esc(t.ui.allProducts)}</a></li>
-      </ul></details></li>
-      <li><details>${sum(t.nav.sectors)}<ul>
-        ${SECTORS.map((s) => `<li><a href="${href('sector', { sector: s })}">${esc(t.pages.sectors.items[s].title)}</a></li>`).join('')}
-      </ul></details></li>
-      <li><details>${sum(t.nav.tools)}<ul>
-        <li><a href="${href('assistant')}">${esc(t.x.assist.title)}</a></li><li><a href="${href('calculators')}">${esc(t.x.calc.title)}</a></li>
-        <li><a href="${href('inquiry')}">${esc(t.ui.inquiryList)}</a></li><li><a href="${href('tools')}">${esc(t.x.hub.title)}</a></li>
-      </ul></details></li>
-      <li><a href="${href('downloads')}">${esc(t.nav.downloads)}</a></li>
-      <li><details>${sum(t.nav.company)}<ul>
-        <li><a href="${href('company')}">${esc(t.nav.about)}</a></li><li><a href="${href('locations')}">${esc(t.nav.locations)}</a></li>
-        <li><a href="${href('quality')}">${esc(t.nav.quality)}</a></li><li><a href="${href('responsibility')}">${esc(t.nav.responsibility)}</a></li>
-        <li><a href="${href('references')}">${esc(t.nav.references)}</a></li>
-      </ul></details></li>
-      <li><details>${sum(t.nav.career)}<ul>
-        <li><a href="${href('career')}">${esc(t.nav.jobs)}</a></li><li><a href="${href('training')}">${esc(t.nav.training)}</a></li><li><a href="${href('internships')}">${esc(t.nav.internships)}</a></li>
-      </ul></details></li>
-      <li><a href="${href('news')}">${esc(t.nav.news)}</a></li>
-      <li><a href="${href('contact')}">${esc(t.nav.contact)}</a></li>
-    </ul>
-    <div class="cluster">${LANGS.map((l) => `<a class="chip${l === ctx.lang ? ' is-on' : ''}" href="${ctx.langHref(l)}" hreflang="${l}" lang="${l}" data-lang-link="${l}">${l.toUpperCase()}</a>`).join('')}</div>
-    <a class="btn btn--red btn--block" href="${href('inquiry')}">${icon('clipboard')}${esc(t.ui.inquiryList)}<span class="badge-inline" data-basket-count hidden>0</span></a>
+    <div class="drawer__body">
+      <button class="btn btn--ghost btn--block" type="button" data-search-open style="--i:0">${icon('search')}${esc(t.ui.search)}</button>
+      <ul class="mnav">${top.map((x, i) => `<li style="--i:${i + 1}">${x}</li>`).join('')}</ul>
+      <div class="cluster" style="--i:${top.length + 1}">${LANGS.map((l) => `<a class="chip${l === ctx.lang ? ' is-on' : ''}" href="${ctx.langHref(l)}" hreflang="${l}" lang="${l}" data-lang-link="${l}">${l.toUpperCase()}</a>`).join('')}</div>
+    </div>
+    <div class="drawer__foot"><a class="btn btn--red btn--block" href="${href('inquiry')}">${icon('clipboard')}${esc(t.ui.inquiryList)}<span class="badge-inline" data-basket-count hidden>0</span></a></div>
   </div>
 </div>`;
 }

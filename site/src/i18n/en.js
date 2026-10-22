@@ -251,6 +251,7 @@ export default {
       qTitle: "Every device tested.",
       helpTitle: 'How can we help?',
       plants: { title: 'Made in {n} plants worldwide', lead: 'From Hamburg, RITZ leads a group of more than {staff} people. Every plant has its speciality – from low-voltage to high-voltage instrument transformers.', staff: '{n} employees', cta: 'All locations', hq: 'Headquarters', plant: 'Plant' },
+      net: { title: 'Connected worldwide', lead: 'From Hamburg to the world: {sites} RITZ sites in {cc} countries and representatives in {reps} countries bring RITZ instrument transformers wherever grids are built and operated.', sites: 'RITZ sites', siteCountries: 'countries with a RITZ site', repCountries: 'countries with representatives', layers: 'Layers', reps: 'Representatives', net: 'Connections', region: 'Region', world: 'World', country: 'Choose a country', countryPh: 'Choose a country …', map: 'World map with all RITZ sites and representatives', marks: 'Sites and representatives', help: 'Arrow keys move between the points, Enter shows the details, Escape closes them, plus and minus zoom.', site: 'View site', rep: 'Contact and all representatives', alsoHere: 'Also here', legendSite: 'RITZ site', legendRep: 'Representative' },
       heritage: { title: 'Growing since 1945', lead: 'From its founding in Hamburg to the new high-voltage plant in the USA: eight decades of instrument transformer engineering.', cta: 'Company history' },
       title: 'Instrument transformers, sensors and busbars since 1945',
       h1: 'We make power measurable.',

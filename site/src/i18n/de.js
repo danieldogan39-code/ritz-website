@@ -255,6 +255,7 @@ export default {
       qTitle: "Jedes Gerät geprüft.",
       helpTitle: 'Wobei dürfen wir helfen?',
       plants: { title: 'Gefertigt in {n} Werken weltweit', lead: 'Von Hamburg aus führt RITZ eine Gruppe mit mehr als {staff} Mitarbeitenden. Jedes Werk hat seine Spezialität – vom Niederspannungswandler bis zum Hochspannungswandler.', staff: '{n} Mitarbeitende', cta: 'Alle Standorte', hq: 'Zentrale', plant: 'Werk' },
+      net: { title: 'Weltweit vernetzt', lead: 'Von Hamburg aus in die Welt: {sites} eigene Standorte in {cc} Ländern und Vertretungen in {reps} Ländern bringen RITZ-Messwandler dorthin, wo Netze gebaut und betrieben werden.', sites: 'RITZ-Standorte', siteCountries: 'Länder mit eigenem Standort', repCountries: 'Länder mit Vertretung', layers: 'Ebenen', reps: 'Vertretungen', net: 'Verbindungen', region: 'Region', world: 'Welt', country: 'Land wählen', countryPh: 'Land wählen …', map: 'Weltkarte mit allen RITZ-Standorten und Vertretungen', marks: 'Standorte und Vertretungen', help: 'Pfeiltasten wechseln zwischen den Punkten, Eingabe zeigt die Details, Escape schließt sie, Plus und Minus zoomen.', site: 'Zum Standort', rep: 'Kontakt und alle Vertretungen', alsoHere: 'Ebenfalls hier', legendSite: 'RITZ-Standort', legendRep: 'Vertretung' },
       heritage: { title: 'Seit 1945 gewachsen', lead: 'Von der Gründung in Hamburg bis zum neuen Hochspannungswerk in den USA: acht Jahrzehnte Messwandlerbau.', cta: 'Unternehmensgeschichte' },
       title: 'Messwandler, Sensoren und Stromschienen seit 1945',
       h1: 'Wir machen Energie messbar.',
