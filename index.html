@@ -17,11 +17,11 @@
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#141110" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="/favicon.ico" sizes="32x32"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest">
 <link rel="preload" href="/assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/main.css?v=617a2e47">
+<link rel="stylesheet" href="/assets/main.css?v=0d06dcc2">
 <script>(function(){var d=document.documentElement;d.dataset.hostTheme=d.dataset.theme||'';try{var t=JSON.parse(localStorage.getItem('ritz-theme')||'"auto"');if(t==='light'||t==='dark')d.dataset.theme=t}catch(e){}})()</script>
 <script>(function(d){try{if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;if('IntersectionObserver' in window){d.classList.add('rv');setTimeout(function(){if(!d.classList.contains('rv-ok'))d.classList.remove('rv')},4000)}if(!true)return;try{var ss=sessionStorage;ss.removeItem('ritz-intro');if(ss.getItem('ritz-intro-skip'))return}catch(e){}try{var ls=localStorage,k=parseInt(ls.getItem('ritz-intro-n'),10)||0;ls.setItem('ritz-intro-n',String((k+1)%3));if(k!==0)return}catch(e){}d.setAttribute('data-intro','play');var done=0,EV=['pointerdown','keydown','wheel','touchstart'];function q(x){return document.querySelector(x)}function off(){d.removeAttribute('data-intro');var x=document.querySelectorAll('.intro,.intro__skip');for(var i=0;i<x.length;i++)x[i].parentNode.removeChild(x[i])}function end(skip){if(done)return;done=1;for(var i=0;i<EV.length;i++)removeEventListener(EV[i],onSkip,true);var o=q('.intro');if(!o){off();return}var lg=o.querySelector('.intro__logo'),sv=lg&&lg.querySelector('svg'),hd=q('.hdr .logo svg');if(!skip&&sv&&hd){var a=sv.getBoundingClientRect(),b=hd.getBoundingClientRect();if(a.width&&b.width){lg.style.setProperty('--fx',(b.left+b.width/2-a.left-a.width/2).toFixed(1)+'px');lg.style.setProperty('--fy',(b.top+b.height/2-a.top-a.height/2).toFixed(1)+'px');lg.style.setProperty('--fs',(b.width/a.width).toFixed(4));lg.style.setProperty('--fc',getComputedStyle(hd).color);o.classList.add('is-fly')}else skip=1}if(skip)o.classList.add('is-skip');d.setAttribute('data-intro','out');setTimeout(off,skip?300:720)}function onSkip(e){if(e.type==='keydown'&&/^(Shift|Control|Alt|Meta|CapsLock)$/.test(e.key))return;end(1)}for(var i=0;i<EV.length;i++)addEventListener(EV[i],onSkip,{capture:true,passive:true});addEventListener('animationend',function(e){if(e.animationName==='iTag')end(0)});var fb=0;addEventListener('animationstart',function(e){if(e.animationName==='iFade'&&!fb)fb=setTimeout(function(){end(0)},3400)});setTimeout(function(){end(0)},6000);}catch(e){}})(document.documentElement)</script>
-<script>window.__RITZ__={"lang":"de","mode":"static","base":"/","dataBase":"/data/","v":"617a2e47","api":null,"preview":true,"route":{"id":"home","p":{}}}</script>
-<script type="module" src="/assets/app.js?v=617a2e47"></script>
+<script>window.__RITZ__={"lang":"de","mode":"static","base":"/","dataBase":"/data/","v":"0d06dcc2","api":null,"preview":true,"route":{"id":"home","p":{}}}</script>
+<script type="module" src="/assets/app.js?v=0d06dcc2"></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"RITZ Instrument Transformers GmbH","url":"https://ritz.entwurf.medialyte.de","logo":"https://ritz.entwurf.medialyte.de/assets/logo.svg","foundingDate":"1945","address":{"@type":"PostalAddress","streetAddress":"Wandsbeker Zollstraße 92–98","postalCode":"22041","addressLocality":"Hamburg","addressCountry":"DE"},"telephone":"+49 40 51123-0","email":"info@ritz-international.com"}</script>
 </head>
 <body class="is-home">
@@ -337,13 +337,21 @@
 <div><dt>Länder mit Vertretung</dt><dd><strong data-count>60</strong></dd></div>
 </dl>
 </div>
-<div class="wrap nm__bar" data-nm-bar hidden>
+<div class="wrap nm__wrap">
+<div class="nm__tile">
+<div class="nm__bar nm__bar--sheet" data-nm-bar hidden>
+<div class="nm__view" id="nm-view-home" tabindex="-1" data-nm-view>
+<div class="nm__viewhead"><span aria-hidden="true">Kartenansicht</span><button type="button" class="nm__popx" aria-label="Schließen" data-nm-viewx><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+<p class="nm__viewlbl" aria-hidden="true">Ebenen</p>
 <div class="nm__layers" role="group" aria-label="Ebenen">
 <button type="button" class="nm__tog" data-nm-layer="sites" aria-pressed="true"><i class="nm__key nm__key--site" aria-hidden="true"></i>RITZ-Standorte</button>
 <button type="button" class="nm__tog" data-nm-layer="reps" aria-pressed="true"><i class="nm__key nm__key--rep" aria-hidden="true"></i>Vertretungen</button>
 <button type="button" class="nm__tog" data-nm-layer="net" aria-pressed="true"><i class="nm__key nm__key--net" aria-hidden="true"></i>Verbindungen</button>
 </div>
+<p class="nm__viewlbl" aria-hidden="true">Region</p>
 <div class="nm__regions" role="group" aria-label="Region"><button type="button" class="nm__reg" data-nm-region="world" aria-pressed="true">Welt</button><button type="button" class="nm__reg" data-nm-region="europe" aria-pressed="false">Europa</button><button type="button" class="nm__reg" data-nm-region="americas" aria-pressed="false">Amerika</button><button type="button" class="nm__reg" data-nm-region="apac" aria-pressed="false">Asien-Pazifik</button><button type="button" class="nm__reg" data-nm-region="africa" aria-pressed="false">Afrika &amp; Nahost</button></div>
+</div>
+<button type="button" class="nm__viewbtn" aria-expanded="false" aria-controls="nm-view-home" data-nm-viewbtn><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3 9 5-9 5-9-5z"/><path d="m3 13 9 5 9-5"/></svg><span>Ansicht</span></button>
 <div class="nm__pick" data-nm-pick>
 <button type="button" class="nm__pickbtn" aria-haspopup="dialog" aria-expanded="false" aria-controls="nm-pick-home" data-nm-pickbtn><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span class="nm__picklbl" data-nm-picklbl>Land wählen …</span><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></button>
 <button type="button" class="nm__pickx" aria-label="Auswahl aufheben" data-nm-pickx hidden><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
@@ -370,6 +378,8 @@
 </div>
 <div class="nm__card" data-nm-card hidden></div>
 <p class="vh" id="nm-help-home">Pfeiltasten wechseln zwischen den Punkten, Eingabe zeigt die Details, Escape schließt sie, Plus und Minus zoomen.</p>
+</div>
+</div>
 </div>
 <div class="wrap nm__foot">
 <p class="nm__legend" data-nm-legend><span><i class="nm__key nm__key--site" aria-hidden="true"></i>RITZ-Standort</span><span><i class="nm__key nm__key--rep" aria-hidden="true"></i>Vertretung</span></p>
@@ -459,12 +469,22 @@
 <div class="band__media" aria-hidden="true"><img src="/img/mimg-intro_home_slider_5-1800.webp" srcset="/img/mimg-intro_home_slider_5-320.webp 320w, /img/mimg-intro_home_slider_5-640.webp 640w, /img/mimg-intro_home_slider_5-960.webp 960w, /img/mimg-intro_home_slider_5-1280.webp 1280w, /img/mimg-intro_home_slider_5-1800.webp 1800w" sizes="100vw" width="1800" height="813" alt="" loading="lazy" decoding="async"></div>
 <div class="wrap band__inner" data-reveal="head"><h2 class="ch__title" id="mk-title">Präzision entsteht in der Fertigung.</h2><p class="ch__text">Wickeln, vergießen, prüfen: Jedes Gerät entsteht in einem unserer Werke in Europa, China und den USA – und verlässt es erst nach der Stückprüfung.</p></div>
 </section>
-<section class="ch ch--porcelain" aria-labelledby="qu-title">
+<section class="ch ch--porcelain ch--rig" aria-labelledby="qu-title">
 <div class="wrap ch__split">
+<div class="ch__lhs">
 <h2 class="ch__title" id="qu-title" data-reveal="head">Jedes Gerät geprüft.</h2>
+<div class="rig" data-rig data-u="400" data-uu="kV" data-i="50" data-iu="kA" data-reveal="img" aria-hidden="true">
+<div class="rig__top"><span class="rig__mode"><i class="rig__led"></i><span data-rig-mode>Wechselspannung</span></span><span class="rig__read"><b data-rig-val>400</b><small data-rig-unit>kV</small></span></div>
+<div class="rig__scope">
+<svg viewBox="0 0 600 200" preserveAspectRatio="none"><path class="rig__grid" d="M50 0V200M100 0V200M150 0V200M200 0V200M250 0V200M300 0V200M350 0V200M400 0V200M450 0V200M500 0V200M550 0V200M0 25H600M0 50H600M0 75H600M0 100H600M0 125H600M0 150H600M0 175H600"/><path class="rig__axis" d="M0 100H600"/><path class="rig__trace" data-rig-trace d="M0.0 100.0L5.0 83.4L10.0 67.5L15.0 53.0L20.0 40.5L25.0 30.7L30.0 23.9L35.0 20.4L40.0 20.4L45.0 23.9L50.0 30.7L55.0 40.5L60.0 53.0L65.0 67.5L70.0 83.4L75.0 100.0L80.0 116.6L85.0 132.5L90.0 147.0L95.0 159.5L100.0 169.3L105.0 176.1L110.0 179.6L115.0 179.6L120.0 176.1L125.0 169.3L130.0 159.5L135.0 147.0L140.0 132.5L145.0 116.6L150.0 100.0L155.0 83.4L160.0 67.5L165.0 53.0L170.0 40.5L175.0 30.7L180.0 23.9L185.0 20.4L190.0 20.4L195.0 23.9L200.0 30.7L205.0 40.5L210.0 53.0L215.0 67.5L220.0 83.4L225.0 100.0L230.0 116.6L235.0 132.5L240.0 147.0L245.0 159.5L250.0 169.3L255.0 176.1L260.0 179.6L265.0 179.6L270.0 176.1L275.0 169.3L280.0 159.5L285.0 147.0L290.0 132.5L295.0 116.6L300.0 100.0L305.0 83.4L310.0 67.5L315.0 53.0L320.0 40.5L325.0 30.7L330.0 23.9L335.0 20.4L340.0 20.4L345.0 23.9L350.0 30.7L355.0 40.5L360.0 53.0L365.0 67.5L370.0 83.4L375.0 100.0L380.0 116.6L385.0 132.5L390.0 147.0L395.0 159.5L400.0 169.3L405.0 176.1L410.0 179.6L415.0 179.6L420.0 176.1L425.0 169.3L430.0 159.5L435.0 147.0L440.0 132.5L445.0 116.6L450.0 100.0L455.0 83.4L460.0 67.5L465.0 53.0L470.0 40.5L475.0 30.7L480.0 23.9L485.0 20.4L490.0 20.4L495.0 23.9L500.0 30.7L505.0 40.5L510.0 53.0L515.0 67.5L520.0 83.4L525.0 100.0L530.0 116.6L535.0 132.5L540.0 147.0L545.0 159.5L550.0 169.3L555.0 176.1L560.0 179.6L565.0 179.6L570.0 176.1L575.0 169.3L580.0 159.5L585.0 147.0L590.0 132.5L595.0 116.6L600.0 100.0"/></svg>
+<span class="rig__stamp"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="20"/><path d="M15 24.5l6 6 12-13"/></svg></span>
+</div>
+<ol class="rig__steps"><li class="is-done" data-rig-step="0"><span class="rig__bar"><i></i></span><b>Wechselspannung</b><small>bis 400 kV</small></li><li class="is-done" data-rig-step="1"><span class="rig__bar"><i></i></span><b>Hochstrom</b><small>bis 50 kA</small></li><li class="is-done" data-rig-step="2"><span class="rig__bar"><i></i></span><b>Prüfprotokoll</b><small>bestanden</small></li></ol>
+</div>
+</div>
 <div class="ch__body" data-reveal="head">
 <p class="ch__text">Jedes Gerät wird stückgeprüft. Unsere Prüffelder messen mit Wechselspannungen bis 400 kV und Strömen bis 50 kA; im Werk Dresden arbeitet eine staatlich anerkannte Prüfstelle für die amtliche Beglaubigung.</p>
-<dl class="figs figs--2"><div class="fig"><dt>Prüfspannung in den Hochspannungsprüffeldern</dt><dd>400 kV</dd></div><div class="fig"><dt>Hochstromprüfungen</dt><dd>50 kA</dd></div><div class="fig"><dt>Performance Level für RITZ Marchtrenk</dt><dd>IRIS Silver</dd></div><div class="fig"><dt>Technologielieferant des Jahres bei Hitachi Energy</dt><dd>2024</dd></div></dl>
+<dl class="figs figs--2" data-reveal="facts"><div class="fig" data-rig-fig="0"><dt>Prüfspannung in den Hochspannungsprüffeldern</dt><dd data-count>400 kV</dd></div><div class="fig" data-rig-fig="1"><dt>Hochstromprüfungen</dt><dd data-count>50 kA</dd></div><div class="fig"><dt>Performance Level für RITZ Marchtrenk</dt><dd>IRIS Silver</dd></div><div class="fig"><dt>Technologielieferant des Jahres bei Hitachi Energy</dt><dd>2024</dd></div></dl>
 <p><a class="link" href="/de/unternehmen/qualitaet/">Qualität &amp; Zertifikate<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></p>
 </div>
 </div>
