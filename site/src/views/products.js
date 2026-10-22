@@ -211,9 +211,9 @@ export function productPage(ctx, p) {
   <div class="wrap pd">
     <div class="gallery" data-gallery>
       ${imgs.length ? `<button class="gallery__main" type="button" data-gallery-main aria-label="${esc(T.zoom)}">
-        ${imgTag(ctx, imgs[0], { alt: `${p.code} – ${desc}`, sizes: '(max-width: 900px) 100vw, 58vw', eager: true, max: 1200, cls: imgFit(ctx, imgs[0]), lowres: 760 })}
+        ${imgTag(ctx, imgs[0], { alt: `${p.code} – ${desc}`, sizes: '(max-width: 900px) 100vw, 58vw', eager: true, max: 1600, cls: imgFit(ctx, imgs[0]), lowres: 760 })}
       </button>` : drawingGallery(ctx, p)}
-      ${imgs.length > 1 ? `<div class="gallery__thumbs" role="list" aria-label="${esc(T.gallery)}">${imgs.map((k, i) => `<button type="button" role="listitem" data-gallery-thumb="${i}" data-full="${ctx.imgUrl(k, 1200)}" data-srcset="${imgSrcset(ctx, k, 1200)}"${ctx.img[k].w < 760 ? ` data-sizes="${ctx.img[k].w}px" data-lowres` : ''} aria-current="${i === 0}" aria-label="${esc(T.gallery)} ${i + 1}">${imgTag(ctx, k, { alt: '', sizes: '76px', max: 320 })}</button>`).join('')}</div>` : ''}
+      ${imgs.length > 1 ? `<div class="gallery__thumbs" role="list" aria-label="${esc(T.gallery)}">${imgs.map((k, i) => `<button type="button" role="listitem" data-gallery-thumb="${i}" data-full="${ctx.imgUrl(k, 1600)}" data-srcset="${imgSrcset(ctx, k, 1600)}"${ctx.img[k].w < 760 ? ` data-sizes="${ctx.img[k].w}px" data-lowres` : ''} aria-current="${i === 0}" aria-label="${esc(T.gallery)} ${i + 1}">${imgTag(ctx, k, { alt: '', sizes: '76px', max: 320 })}</button>`).join('')}</div>` : ''}
       ${imgs.length && !p.catalog && p.images.some((k) => k.startsWith('mimg/')) ? `<p class="small faint">${esc(T.imageNote)}</p>` : ''}
     </div>
     <div class="pd__summary">

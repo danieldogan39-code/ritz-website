@@ -77,7 +77,7 @@ export function companyPage(ctx) {
   const C = t.pages.company;
   const mgr = (name, role, board = false) => {
     const k = personImg(name, board);
-    return `<figure class="mgr"><div class="mgr__img">${k && ctx.img[k] ? imgTag(ctx, k, { alt: name, sizes: '(max-width: 900px) 50vw, 25vw', max: 640 }) : ''}</div><figcaption><b>${esc(name)}</b><span>${esc(role)}</span></figcaption></figure>`;
+    return `<figure class="mgr"><div class="mgr__img">${k && ctx.img[k] ? imgTag(ctx, k, { alt: name, sizes: '(max-width: 900px) 50vw, 25vw', max: 1280 }) : ''}</div><figcaption><b>${esc(name)}</b><span>${esc(role)}</span></figcaption></figure>`;
   };
   return `${phead(ctx, { title: C.h1, lead: C.lead, image: 'mimg/ritz_header-unternehmen.webp', crumbs: [[C.title]] })}
 <section class="section">
@@ -110,8 +110,8 @@ export function companyPage(ctx) {
 <section class="section">
   <div class="wrap split split--even">
     <div class="stack" style="--s:1rem"><h2 class="h3">${esc(C.structureTitle)}</h2><p>${esc(C.structureText)}</p>
-      <figure class="figure figure--dark">${imgTag(ctx, 'mimg/RTZ_Group-Organisation_grafik_V3-scaled_v2.webp', { alt: C.structureTitle, sizes: '(max-width: 900px) 100vw, 50vw', max: 1200 })}</figure>
-      <figure class="figure figure--dark">${imgTag(ctx, 'mimg/RTZ_logo-anordnung-scaled.webp', { alt: 'RITZ, MWB, WTW, TuR', sizes: '(max-width: 900px) 100vw, 50vw', max: 1200 })}</figure>
+      <figure class="figure figure--dark">${imgTag(ctx, 'mimg/RTZ_Group-Organisation_grafik_V3-scaled_v2.webp', { alt: C.structureTitle, sizes: '(max-width: 900px) 100vw, 50vw', max: 1920 })}</figure>
+      <figure class="figure figure--dark">${imgTag(ctx, 'mimg/RTZ_logo-anordnung-scaled.webp', { alt: 'RITZ, MWB, WTW, TuR', sizes: '(max-width: 900px) 100vw, 50vw', max: 1920 })}</figure>
     </div>
     <div class="stack" style="--s:1rem"><h2 class="h3">${esc(C.foundationTitle)}</h2><p>${esc(C.foundationText)}</p>
       <figure class="figure">${imgTag(ctx, 'mimg/image3.webp', { alt: '', sizes: '(max-width: 900px) 100vw, 50vw', max: 960 })}<figcaption>Illustration ©UKE</figcaption></figure>
@@ -159,7 +159,7 @@ export function locCard(ctx, l) {
   const fn = (l.functions && (l.functions[lang] || l.functions.en)) || [];
   const addr = locAddress(l, lang);
   return `<article class="loc" id="${l.id}">
-  <div class="loc__img">${img && ctx.img[img] ? imgTag(ctx, img, { alt: l.city, sizes: '(max-width: 700px) 100vw, 33vw', max: 960 }) : locMap(ctx, l)}</div>
+  <div class="loc__img">${img && ctx.img[img] ? imgTag(ctx, img, { alt: l.city, sizes: '(max-width: 700px) 100vw, 33vw', max: 1600 }) : locMap(ctx, l)}</div>
   <div class="loc__body">
     <span class="loc__type loc__type--${l.type}">${esc(t.lbl.locType[l.type] || '')}</span>
     <h3>${esc(l.city)}</h3>
@@ -432,7 +432,7 @@ export function articlePage(ctx, n) {
   const la = cl !== lang ? ` lang="${cl}"` : '';
   let langName = cl;
   try { langName = new Intl.DisplayNames([lang], { type: 'language' }).of(cl) || cl; } catch (e) { /* Kürzel */ }
-  const body = (v.html || '').replace(/<img data-img="([^"]+)" alt="">/g, (m, k) => (ctx.img[k] ? `<figure class="figure">${imgTag(ctx, k, { alt: '', sizes: '(max-width: 900px) 100vw, 680px', max: 1200, lowres: 560 })}</figure>` : ''))
+  const body = (v.html || '').replace(/<img data-img="([^"]+)" alt="">/g, (m, k) => (ctx.img[k] ? `<figure class="figure">${imgTag(ctx, k, { alt: '', sizes: '(max-width: 900px) 100vw, 680px', max: 1600, lowres: 560 })}</figure>` : ''))
     .replace(/<a data-doc="([^"]+)" href="[^"]*">/g, (m, id) => { const d = ctx.data.docsById[id]; return d ? `<a ${ctx.docAttrs(d)}>` : '<a>'; })
     // Verweise auf Seiten der alten Website (beim Build in Routen übersetzt)
     .replace(/<a data-route="article" data-news="([^"]+)">/g, (m, id) => { const x = ctx.data.news.find((k) => k.id === id); return x ? `<a href="${href('article', { slug: ctx.newsSlug(x) })}">` : '<a>'; })
@@ -452,7 +452,7 @@ export function articlePage(ctx, n) {
     <div>
       <header class="stack mb" style="--s:.8rem"><div class="card__meta"><time datetime="${n.date}">${esc(fmtDate(n.date, lang))}</time><span>${esc(t.lbl.newsCat[n.cat])}</span></div><h1 class="h2${/[^\s\-–/]{18,}/.test(v.title) ? ' lw' : ''}"${la}>${esc(v.title)}</h1></header>
       ${cl !== lang ? `<p class="notice small">${esc(tpl(t.ui.untranslated, { lang: langName }))}</p>` : ''}
-      ${heroImg ? `<figure class="article__hero">${imgTag(ctx, heroImg, { alt: '', sizes: '(max-width: 900px) 100vw, 760px', eager: true, max: 1200, lowres: 600 })}</figure>` : ''}
+      ${heroImg ? `<figure class="article__hero">${imgTag(ctx, heroImg, { alt: '', sizes: '(max-width: 900px) 100vw, 760px', eager: true, max: 1600, lowres: 600 })}</figure>` : ''}
       <div class="prose"${la}>${body}</div>
       ${docs.length ? `<h2 class="h4 mt-xl">${esc(N.attachments)}</h2><div class="docs">${docs.map((d) => docRow(ctx, d)).join('')}</div>` : ''}
     </div>

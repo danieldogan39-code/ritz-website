@@ -214,7 +214,7 @@ function plantsSection(ctx) {
     const img = LOC_IMG[l.id];
     const fn = plantFunctions(l, lang, ctx.dl).slice(0, 2);
     return `<a class="plant" href="${ctx.hrefA('locations', {}, l.id)}">
-    <div class="plant__img"${img && ctx.img[img] ? ' data-reveal="img"' : ''}>${img && ctx.img[img] ? imgTag(ctx, img, { alt: '', sizes: '(max-width: 600px) 80vw, (max-width: 1100px) 40vw, 25vw', max: 960 }) : plantMap(ctx, l)}</div>
+    <div class="plant__img"${img && ctx.img[img] ? ' data-reveal="img"' : ''}>${img && ctx.img[img] ? imgTag(ctx, img, { alt: '', sizes: '(max-width: 600px) 80vw, (max-width: 1100px) 40vw, 25vw', max: 1600 }) : plantMap(ctx, l)}</div>
     <div class="plant__body">
       <span class="plant__type">${esc(l.type === 'hq' ? P.hq : P.plant)} · ${esc(region(l.country))}</span>
       <h3>${esc(l.city.replace(/\s*\(.*\)$/, ''))}</h3>
@@ -358,7 +358,7 @@ export function newsCard(ctx, n, { reveal = false } = {}) {
   // kleine Altbilder (z. B. 212 × 300) nicht strecken: eingepasst vor unscharfem Hintergrund
   const small = !!(img && ctx.img[img] && ctx.img[img].w < 600);
   return `<a class="card" href="${url}">
-  <div class="card__img${small ? ' card__img--small' : ''}"${small ? ` style="--bgimg:url(${ctx.imgUrl(img, 320)})"` : ''}${reveal ? ' data-reveal="img"' : ''}>${img && ctx.img[img] ? imgTag(ctx, img, { alt: '', sizes: small ? `${ctx.img[img].w}px` : '(max-width: 560px) 100vw, (max-width: 900px) 50vw, 33vw', max: 960 }) : `<span class="card__ph"><svg viewBox="0 0 80 40" width="80" height="40" aria-hidden="true"><path d="M40 2 78 20 40 38 2 20Z" fill="none" stroke="currentColor" stroke-width="2"/></svg><span>${esc(t.lbl.newsCat[n.cat] || '')}</span></span>`}</div>
+  <div class="card__img${small ? ' card__img--small' : ''}"${small ? ` style="--bgimg:url(${ctx.imgUrl(img, 320)})"` : ''}${reveal ? ' data-reveal="img"' : ''}>${img && ctx.img[img] ? imgTag(ctx, img, { alt: '', sizes: small ? `${ctx.img[img].w}px` : '(max-width: 560px) 100vw, (max-width: 900px) 50vw, 33vw', max: 1600 }) : `<span class="card__ph"><svg viewBox="0 0 80 40" width="80" height="40" aria-hidden="true"><path d="M40 2 78 20 40 38 2 20Z" fill="none" stroke="currentColor" stroke-width="2"/></svg><span>${esc(t.lbl.newsCat[n.cat] || '')}</span></span>`}</div>
   <div class="card__meta"><time datetime="${n.date}">${esc(fmtDate(n.date, lang))}</time><span>${esc(t.lbl.newsCat[n.cat] || '')}</span>${other ? `<span class="card__lang" title="${esc(t.ui[vl] || vl)}">${esc(vl.toUpperCase())}</span>` : ''}</div>
   <h3${other ? ` lang="${vl}"` : ''}>${esc(v.title)}</h3>
   ${text ? `<p${other ? ` lang="${vl}"` : ''}>${esc(shorten(text, 150))}</p>` : ''}

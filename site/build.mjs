@@ -427,7 +427,8 @@ async function bundleAssets(out, mode) {
   // PDF-Leser (pdf.js, Legacy-Build) – wird nur geladen, wenn im Spezifikations-Check eine PDF geöffnet wird
   const vend = mode === 'static' ? `${out}/assets/vendor` : `${out}/vendor`;
   fs.mkdirSync(vend, { recursive: true });
-  for (const f of ['pdf.min.mjs', 'pdf.worker.min.mjs']) fs.copyFileSync(`node_modules/pdfjs-dist/legacy/build/${f}`, `${vend}/${f}`);
+  // rohe Steuerzeichen (ESC u. a. in Zeichenketten) als \u-Escape schreiben – gleiche Bedeutung, aber reiner Text (Vorschau-Upload verlangt das)
+  for (const f of ['pdf.min.mjs', 'pdf.worker.min.mjs']) wr(`${vend}/${f}`, fs.readFileSync(`node_modules/pdfjs-dist/legacy/build/${f}`, 'utf8').replace(/[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]/g, (c) => '\\u' + c.charCodeAt(0).toString(16).padStart(4, '0')));
   wr(mode === 'static' ? `${out}/assets/main.css` : `${out}/app.css`, cssMin);
   if (mode === 'static') {
     await esbuild.build({ entryPoints: [`${SRC}/client/app.js`], bundle: true, splitting: true, format: 'esm', minify: true, outdir: `${out}/assets`, chunkNames: 'chunks/[name]-[hash]', target: ['es2020'], legalComments: 'none' });
