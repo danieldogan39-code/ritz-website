@@ -17,11 +17,11 @@
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#141110" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="/favicon.ico" sizes="32x32"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest">
 <link rel="preload" href="/assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/main.css?v=6fa65a99">
+<link rel="stylesheet" href="/assets/main.css?v=896e7072">
 <script>(function(){var d=document.documentElement;d.dataset.hostTheme=d.dataset.theme||'';try{var t=JSON.parse(localStorage.getItem('ritz-theme')||'"auto"');if(t==='light'||t==='dark')d.dataset.theme=t}catch(e){}})()</script>
 <script>(function(d){try{if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;if('IntersectionObserver' in window){d.classList.add('rv');setTimeout(function(){if(!d.classList.contains('rv-ok'))d.classList.remove('rv')},4000)}if(!false)return;try{var ss=sessionStorage;ss.removeItem('ritz-intro');if(ss.getItem('ritz-intro-skip'))return}catch(e){}try{var ls=localStorage,k=parseInt(ls.getItem('ritz-intro-n'),10)||0;ls.setItem('ritz-intro-n',String((k+1)%5));if(k!==0)return}catch(e){}d.setAttribute('data-intro','play');var done=0,EV=['pointerdown','keydown','wheel','touchstart'];function q(x){return document.querySelector(x)}function off(){d.removeAttribute('data-intro');var x=document.querySelectorAll('.intro,.intro__skip');for(var i=0;i<x.length;i++)x[i].parentNode.removeChild(x[i])}function end(skip){if(done)return;done=1;for(var i=0;i<EV.length;i++)removeEventListener(EV[i],onSkip,true);var o=q('.intro');if(!o){off();return}var lg=o.querySelector('.intro__logo'),sv=lg&&lg.querySelector('svg'),hd=q('.hdr .logo svg');if(!skip&&sv&&hd){var a=sv.getBoundingClientRect(),b=hd.getBoundingClientRect();if(a.width&&b.width){lg.style.setProperty('--fx',(b.left+b.width/2-a.left-a.width/2).toFixed(1)+'px');lg.style.setProperty('--fy',(b.top+b.height/2-a.top-a.height/2).toFixed(1)+'px');lg.style.setProperty('--fs',(b.width/a.width).toFixed(4));lg.style.setProperty('--fc',getComputedStyle(hd).color);o.classList.add('is-fly')}else skip=1}if(skip)o.classList.add('is-skip');d.setAttribute('data-intro','out');setTimeout(off,skip?300:720)}function onSkip(e){if(e.type==='keydown'&&/^(Shift|Control|Alt|Meta|CapsLock)$/.test(e.key))return;end(1)}for(var i=0;i<EV.length;i++)addEventListener(EV[i],onSkip,{capture:true,passive:true});addEventListener('animationend',function(e){if(e.animationName==='iTag')end(0)});var fb=0;addEventListener('animationstart',function(e){if(e.animationName==='iFade'&&!fb)fb=setTimeout(function(){end(0)},3400)});setTimeout(function(){end(0)},6000);}catch(e){}})(document.documentElement)</script>
-<script>window.__RITZ__={"lang":"es","mode":"static","base":"/","dataBase":"/data/","v":"6fa65a99","api":null,"preview":true,"route":{"id":"sector","p":{"sector":"erneuerbare"}}}</script>
-<script type="module" src="/assets/app.js?v=6fa65a99"></script>
+<script>window.__RITZ__={"lang":"es","mode":"static","base":"/","dataBase":"/data/","v":"896e7072","api":null,"preview":true,"route":{"id":"sector","p":{"sector":"erneuerbare"}}}</script>
+<script type="module" src="/assets/app.js?v=896e7072"></script>
 </head>
 <body class="">
 <a class="skip" href="#main">Ir al contenido</a>
@@ -398,7 +398,12 @@
 </div>
 </section>
 <section class="section"><div class="wrap"><div class="section-head"><div class="stack" style="--s:.75rem"><h2>En la práctica</h2></div></div><div class="news-grid"><a class="card" href="/es/noticias/overview-of-hvdc-and-applications/">
-<div class="card__img"><span class="card__ph"><svg viewBox="0 0 80 40" width="80" height="40" aria-hidden="true"><path d="M40 2 78 20 40 38 2 20Z" fill="none" stroke="currentColor" stroke-width="2"/></svg><span>Productos y tecnología</span></span></div>
+<div class="card__img"><span class="nc nc--dc" style="--kl:4" aria-hidden="true"><svg class="nc__art nc__art--edge" viewBox="0 0 200 100" style="aspect-ratio:200 / 100" aria-hidden="true" focusable="false">
+<path class="nc__l" d="M4 50L6 45.4L8 41.4L10 38.5L12 37.1L14 37.4L16 39.3L18 42.6L20 46.9L22 51.6L24 56L26 59.7L28 62.2L30 63L32 62.2L34 59.7L36 56L38 51.6L40 46.9L42 42.6L44 39.3L46 37.4L48 37.1L50 38.5L52 41.4L54 45.4L56 50"/>
+<rect class="nc__l" x="62" y="26" width="48" height="48"/><path class="nc__t" d="M62 74 110 26"/>
+<path class="nc__l" d="M68 40c2.5-4 5-4 7.5 0s5 4 7.5 0"/><path class="nc__l" d="M90 58H104"/><path class="nc__l nc__da" d="M90 64H104"/>
+<path class="nc__a" d="M110 44H200"/><path class="nc__a nc__da" d="M110 56H200"/>
+<path class="nc__t" d="M184 34v6M181 37h6M181 63h6"/></svg><span class="nc__txt"><span class="nc__sub">Corriente continua en alta tensión</span><b class="nc__kw">HVDC</b></span></span></div>
 <div class="card__meta"><time datetime="2026-02-16">16 de febrero de 2026</time><span>Productos y tecnología</span><span class="card__lang" title="en">EN</span></div>
 <h3 lang="en">Overview of HVDC and applications</h3>
 <p lang="en">We offer various solutions for HVDC applications. Product_knowledge_compact_HVDC</p>
