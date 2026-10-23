@@ -17,11 +17,11 @@
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#141110" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="/favicon.ico" sizes="32x32"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest">
 <link rel="preload" href="/assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/main.css?v=e277e7dd">
+<link rel="stylesheet" href="/assets/main.css?v=df3c3582">
 <script>(function(){var d=document.documentElement;d.dataset.hostTheme=d.dataset.theme||'';try{var t=JSON.parse(localStorage.getItem('ritz-theme')||'"auto"');if(t==='light'||t==='dark')d.dataset.theme=t}catch(e){}})()</script>
 <script>(function(d){try{if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;if('IntersectionObserver' in window){d.classList.add('rv');setTimeout(function(){if(!d.classList.contains('rv-ok'))d.classList.remove('rv')},4000)}if(!false)return;try{var ss=sessionStorage;ss.removeItem('ritz-intro');if(ss.getItem('ritz-intro-skip'))return}catch(e){}try{var ls=localStorage,k=parseInt(ls.getItem('ritz-intro-n'),10)||0;ls.setItem('ritz-intro-n',String((k+1)%5));if(k!==0)return}catch(e){}d.setAttribute('data-intro','play');var done=0,EV=['pointerdown','keydown','wheel','touchstart'];function q(x){return document.querySelector(x)}function off(){d.removeAttribute('data-intro');var x=document.querySelectorAll('.intro,.intro__skip');for(var i=0;i<x.length;i++)x[i].parentNode.removeChild(x[i])}function end(skip){if(done)return;done=1;for(var i=0;i<EV.length;i++)removeEventListener(EV[i],onSkip,true);var o=q('.intro');if(!o){off();return}var lg=o.querySelector('.intro__logo'),sv=lg&&lg.querySelector('svg'),hd=q('.hdr .logo svg');if(!skip&&sv&&hd){var a=sv.getBoundingClientRect(),b=hd.getBoundingClientRect();if(a.width&&b.width){lg.style.setProperty('--fx',(b.left+b.width/2-a.left-a.width/2).toFixed(1)+'px');lg.style.setProperty('--fy',(b.top+b.height/2-a.top-a.height/2).toFixed(1)+'px');lg.style.setProperty('--fs',(b.width/a.width).toFixed(4));lg.style.setProperty('--fc',getComputedStyle(hd).color);o.classList.add('is-fly')}else skip=1}if(skip)o.classList.add('is-skip');d.setAttribute('data-intro','out');setTimeout(off,skip?300:720)}function onSkip(e){if(e.type==='keydown'&&/^(Shift|Control|Alt|Meta|CapsLock)$/.test(e.key))return;end(1)}for(var i=0;i<EV.length;i++)addEventListener(EV[i],onSkip,{capture:true,passive:true});addEventListener('animationend',function(e){if(e.animationName==='iTag')end(0)});var fb=0;addEventListener('animationstart',function(e){if(e.animationName==='iFade'&&!fb)fb=setTimeout(function(){end(0)},3400)});setTimeout(function(){end(0)},6000);}catch(e){}})(document.documentElement)</script>
-<script>window.__RITZ__={"lang":"fr","mode":"static","base":"/","dataBase":"/data/","v":"e277e7dd","api":null,"preview":true,"route":{"id":"sector","p":{"sector":"messtechnik"}}}</script>
-<script type="module" src="/assets/app.js?v=e277e7dd"></script>
+<script>window.__RITZ__={"lang":"fr","mode":"static","base":"/","dataBase":"/data/","v":"df3c3582","api":null,"preview":true,"route":{"id":"sector","p":{"sector":"messtechnik"}}}</script>
+<script type="module" src="/assets/app.js?v=df3c3582"></script>
 </head>
 <body class="">
 <a class="skip" href="#main">Aller au contenu</a>
@@ -265,23 +265,58 @@
 </div>
 </div>
 <main id="main" tabindex="-1">
-<section class="phead phead--figure ">
+<div class="sc-page" data-sector><section class="phead sc-hero">
 <div class="wrap"><nav aria-label="Fil d’Ariane"><ol class="crumbs"><li><a href="/fr/">Accueil</a></li><li><a href="/fr/applications/">Applications</a></li><li><span aria-current="page">Mesure, essais et comptage</span></li></ol></nav>
-<div class="phead__grid phead__grid--figure"><div><h1>Mesure, essais et comptage</h1><p class="lead">Partout où l’énergie est facturée ou étalonnée, la précision est décisive – tout comme la preuve de cette précision.</p></div>
-<figure class="phead__fig"><img src="/img/mimg-2022__07__unternehmen_qualitaetsmanagement_schienen_pruefung-408.webp" srcset="/img/mimg-2022__07__unternehmen_qualitaetsmanagement_schienen_pruefung-320.webp 320w, /img/mimg-2022__07__unternehmen_qualitaetsmanagement_schienen_pruefung-408.webp 408w" sizes="(max-width: 900px) 100vw, 42vw" width="408" height="408" alt="" class="is-cover" fetchpriority="high" decoding="async"></figure></div>
+<div class="sc-hero__top">
+<h1>Mesure, essais et comptage</h1>
+<div class="sc-hero__side">
+<p class="lead">Partout où l’énergie est facturée ou étalonnée, la précision est décisive – tout comme la preuve de cette précision.</p>
+<div class="cluster sc-hero__cta"><a class="btn" href="#produkte">Voir les produits</a><a class="btn btn--ghost" href="/fr/demande/"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m3 7 9 6 9-6"/></svg>Envoyer une demande</a></div>
+</div>
+</div>
+<dl class="sc-facts"><div><dt>Produits</dt><dd>233<small>dans 3 groupes de produits</small></dd></div><div><dt>Niveaux de tension</dt><dd>0,72–72,5 kV<small><span class="sc-axis" aria-hidden="true"><b style="left:4.95%"></b><b style="left:39.63%"></b><b style="left:74.32%"></b><i style="left:0.00%;width:69.48%"></i></span></small></dd></div><div><dt>Délai départ usine</dt><dd>à partir de 2 semaines<small>selon le type</small></dd></div><div><dt>Fabriqué en</dt><dd>Allemagne, Autriche, Hongrie</dd></div></dl>
+<div class="mp" data-mp>
+<div class="mp__main">
+<div class="mp__head"><b class="mp__t">Emplacements dans l’installation</b><span class="mp__s">Comptage de facturation et laboratoire d’essais</span></div>
+<div class="mp__scroll" tabindex="0" role="group" aria-label="Schéma unifilaire : Comptage de facturation et laboratoire d’essais"><svg class="mp__svg" viewBox="0 0 960 440" aria-hidden="true" focusable="false">
+<g class="mp-wires"><path class="mp-w" d="M40 90L560 90" pathLength="1"/><path class="mp-w mp-w--lv" d="M660 176L660 136L880 136L880 176" pathLength="1"/><path class="mp-w mp-w--lv" d="M660 176L660 306L880 306L880 176" pathLength="1"/></g><g class="mp-secs"><path class="mp-s" d="M180 161L180 236"/><path class="mp-s" d="M300 142L300 236"/><path class="mp-s" d="M240 267L240 320"/><path class="mp-s" d="M734 306L770 306L770 246"/><path class="mp-s" d="M806 306L790 306L790 246"/></g><g class="mp-eqs"><path class="mp-arr" d="M559 84V96L568 90Z"/><rect class="mp-eq" x="165" y="237" width="150" height="30" rx="2"/><text class="mp-sym mp-sym--b" x="240" y="253">Bornier d’essai</text><rect class="mp-eq" x="208" y="321" width="64" height="46" rx="2"/><text class="mp-sym mp-sym--b" x="240" y="345">kWh</text><rect class="mp-frame" x="620" y="40" width="310" height="370" rx="4"/><rect class="mp-eq" x="711" y="122" width="118" height="28" rx="2"/><text class="mp-sym mp-sym--b" x="770" y="137">Courant d’essai</text><circle class="mp-eq mp-eq--o" cx="820" cy="306" r="14"/><rect class="mp-eq" x="734.5" y="215" width="91" height="30" rx="2"/><text class="mp-sym mp-sym--b" x="780" y="231">Comparateur</text></g>
+<g class="mp-labels"><text x="40" y="34" class="mp-t--f">Comptage de facturation</text><text x="40" y="72" class="mp-t--v">20 kV</text><text x="560" y="72" text-anchor="end" class="mp-t--s">Client</text><text x="240" y="390" text-anchor="middle" class="mp-t--s">Compteur</text><text x="632" y="66" class="mp-t--f">Laboratoire d’essais</text><text x="820" y="342" text-anchor="middle" class="mp-t--s">Transformateur étalon</text></g><g class="mp-pts"><g class="mp-pt" data-pt="1" style="--pi:1"><circle class="mp-r" cx="180" cy="90" r="11"/><path class="mp-r-l" d="M300 90V102"/><circle class="mp-r mp-r--f" cx="300" cy="110" r="8"/><circle class="mp-r mp-r--f" cx="300" cy="122" r="8"/><path class="mp-lead" d="M188 82L226 50"/><g class="mp-b"><circle cx="226" cy="50" r="13"/><text x="226" y="51">1</text></g><path class="mp-lead" d="M312 118L340 132"/><g class="mp-b"><circle cx="340" cy="132" r="13"/><text x="340" y="133">1</text></g></g><g class="mp-pt" data-pt="2" style="--pi:2"><circle class="mp-r" cx="720" cy="306" r="14"/><path class="mp-lead" d="M720 320L720 360"/><g class="mp-b"><circle cx="720" cy="360" r="13"/><text x="720" y="361">2</text></g></g><g class="mp-pt" data-pt="3" style="--pi:3"><rect class="mp-r mp-r--f" x="163" y="143" width="34" height="18" rx="2"/><text class="mp-sym mp-sym--r" x="180" y="153">EOSS</text><path class="mp-r-l" d="M180 101V143"/><path class="mp-lead" d="M163 152L132 152"/><g class="mp-b"><circle cx="132" cy="152" r="13"/><text x="132" y="153">3</text></g></g></g></svg></div>
+<p class="mp__hint" aria-hidden="true">Faites glisser pour déplacer le schéma</p>
+<p class="mp__keys" aria-hidden="true"><span><i class="k-hv"></i>Haute tension</span><span><i></i>Moyenne et basse tension</span><span><i class="k-sec"></i>Ligne de mesure et de signal</span><span><i class="k-r"></i>Produit RITZ</span></p>
+</div>
+<nav class="mp__legend" aria-label="Emplacements et groupes de produits"><h2>Emplacements et groupes de produits</h2><ol><li><a href="#gruppe-1" data-pt="1"><span class="sc-n">1</span><b>Transformateurs certifiables</b><small>229 produits</small></a></li><li><a href="#gruppe-2" data-pt="2"><span class="sc-n">2</span><b>Transformateurs de laboratoire et multigammes</b><small>2 produits</small></a></li><li><a href="#gruppe-3" data-pt="3"><span class="sc-n">3</span><b>Accessoires</b><small>2 produits</small></a></li></ol></nav>
+</div>
 </div>
 </section>
-<section class="section">
-<div class="wrap split">
-<div class="stack" style="--s:1rem"><h2 class="h3">Les enjeux</h2><ul class="ticks"><li>Vérification officielle sans détour</li><li>Transformateurs de laboratoire à plusieurs gammes de mesure</li><li>Sécurité en cas de circuit secondaire ouvert</li></ul></div>
-<div class="prose"><p>L’usine de Dresde abrite un organisme de contrôle indépendant, reconnu par l’État et habilité à procéder à la vérification officielle des transformateurs de mesure. Le banc d’essai en Autriche est un service de vérification agréé du BEV ; le laboratoire est accrédité selon ISO/IEC 17025.</p><p>La protection contre la tension en circuit ouvert EOSS 122 limite les tensions dangereuses lorsque le circuit secondaire d’un transformateur de courant est ouvert par inadvertance.</p></div>
+<section class="section sc-needs" aria-labelledby="sc-needs-t">
+<div class="wrap sc-needs__grid">
+<div class="sc-needs__img"><img src="/img/mimg-2022__07__unternehmen_qualitaetsmanagement_schienen_pruefung-408.webp" srcset="/img/mimg-2022__07__unternehmen_qualitaetsmanagement_schienen_pruefung-320.webp 320w, /img/mimg-2022__07__unternehmen_qualitaetsmanagement_schienen_pruefung-408.webp 408w" sizes="(max-width: 900px) calc(100vw * 1.25), calc(34vw * 1.25)" width="408" height="408" alt="" loading="lazy" decoding="async"></div>
+<div class="sc-needs__body">
+<h2 id="sc-needs-t">Les enjeux</h2>
+<ul class="sc-needs__list"><li class="sc-need">
+<div class="sc-need__b"><h3>Vérification sans détour</h3><p>Dans l’usine de Dresde, un organisme de contrôle indépendant reconnu par l’État vérifie officiellement les transformateurs de mesure ; à Marchtrenk, le service de vérification agréé par le BEV assure la vérification pour l’Autriche.</p></div>
+<a class="sc-need__go" href="#gruppe-1" data-pt="1"><span class="sc-n">1</span><span>Transformateurs certifiables</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="16" height="16"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+</li><li class="sc-need">
+<div class="sc-need__b"><h3>La précision, preuves à l’appui</h3><p>Notre laboratoire d’étalonnage de Marchtrenk est accrédité selon l’ISO/IEC 17025 et détermine l’erreur de rapport avec une incertitude descendant jusqu’à 0,010 %.</p></div>
+<a class="sc-need__go" href="#gruppe-1" data-pt="1"><span class="sc-n">1</span><span>Transformateurs certifiables</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="16" height="16"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+</li><li class="sc-need">
+<div class="sc-need__b"><h3>Transformateurs de laboratoire multigammes</h3><p>Les transformateurs de laboratoire et multigammes KSW 300 et LKS 104 couvrent plusieurs plages de mesure avec un seul appareil.</p></div>
+<a class="sc-need__go" href="#gruppe-2" data-pt="2"><span class="sc-n">2</span><span>Transformateurs de laboratoire et multigammes</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="16" height="16"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+</li><li class="sc-need">
+<div class="sc-need__b"><h3>Sécurité en cas de circuit secondaire ouvert</h3><p>La protection EOSS 122 limite à moins de 50 V la tension d’un circuit secondaire ouvert. Elle est intégrée directement aux transformateurs de courant de 1 A au secondaire.</p></div>
+<a class="sc-need__go" href="#gruppe-3" data-pt="3"><span class="sc-n">3</span><span>Accessoires</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="16" height="16"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+</li></ul>
+<p class="sc-needs__more"><a class="link" href="/fr/entreprise/qualite/">Comment nous testons et étalonnons<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="16" height="16"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></p>
+</div>
 </div>
 </section>
-<section class="section section--porcelain">
+<section class="section section--porcelain sc-prod" id="produkte" aria-labelledby="sc-prod-t">
 <div class="wrap">
-<div class="section-head"><div class="stack" style="--s:.75rem"><h2>Produits adaptés</h2></div></div>
-<div class="sgroups"><a class="sgroup" href="/fr/recherche-produits/?app=verifiable"><strong>Transformateurs certifiables</strong><span>229 produits</span><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 6 6 6-6 6"/></svg></a><a class="sgroup" href="/fr/recherche-produits/?form=laboratory"><strong>Transformateurs de laboratoire et multigammes</strong><span>2 produits</span><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 6 6 6-6 6"/></svg></a><a class="sgroup" href="/fr/recherche-produits/?kindGroup=other&area=elektronik-sensoren"><strong>Accessoires</strong><span>2 produits</span><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 6 6 6-6 6"/></svg></a></div>
-<h3 class="h4 mt">Transformateurs certifiables</h3><div class="pgrid pgrid--sector"><article class="pcard" data-pid="asn">
+<div class="section-head"><div class="stack" style="--s:.75rem"><h2 id="sc-prod-t">Produits adaptés</h2></div></div>
+<div class="sc-tabs" data-sc-tabs hidden aria-label="Produits adaptés"><button type="button" class="sc-tab" data-sc-tab="1"><span class="sc-n">1</span><span class="sc-tab__l">Transformateurs certifiables</span><small>229</small></button><button type="button" class="sc-tab" data-sc-tab="2"><span class="sc-n">2</span><span class="sc-tab__l">Transformateurs de laboratoire et multigammes</span><small>2</small></button><button type="button" class="sc-tab" data-sc-tab="3"><span class="sc-n">3</span><span class="sc-tab__l">Accessoires</span><small>2</small></button></div>
+<div class="sc-panel" id="gruppe-1" data-sc-panel="1">
+<h3 class="sc-panel__h"><span class="sc-n">1</span>Transformateurs certifiables <small>229 produits</small></h3>
+<div class="pgrid pgrid--sector"><article class="pcard" data-pid="asn">
 <div class="pcard__stage"><img src="/img/mimg-2022__07__innenraumanwendung_stromwandler_asn_12_17_5_24_36_stuetzerstromwandler-623.webp" srcset="/img/mimg-2022__07__innenraumanwendung_stromwandler_asn_12_17_5_24_36_stuetzerstromwandler-320.webp 320w, /img/mimg-2022__07__innenraumanwendung_stromwandler_asn_12_17_5_24_36_stuetzerstromwandler-623.webp 623w" sizes="(max-width: 600px) 50vw, 240px" width="623" height="338" alt="ASN" class="is-cover" loading="lazy" decoding="async"><span class="pcard__made">Origine : Hongrie</span></div>
 <div class="pcard__body">
 <h3 class="pcard__code"><a href="/fr/produits/moyenne-tension/asn/">ASN</a></h3>
@@ -394,10 +429,75 @@
 </div>
 </div>
 </article></div>
-<p class="mt"><a class="btn btn--ghost" href="/fr/recherche-produits/?app=verifiable">Afficher dans le sélecteur de produits (229)</a></p>
+<p class="sc-panel__more"><a class="btn btn--ghost" href="/fr/recherche-produits/?app=verifiable">Les 229 produits dans le sélecteur</a></p>
+</div><div class="sc-panel" id="gruppe-2" data-sc-panel="2">
+<h3 class="sc-panel__h"><span class="sc-n">2</span>Transformateurs de laboratoire et multigammes <small>2 produits</small></h3>
+<div class="pgrid pgrid--sector"><article class="pcard" data-pid="ksw-300">
+<div class="pcard__stage"><span class="pvw"><svg class="pv" viewBox="-207 -148 448 336" style="--u:0.953" role="img" aria-label="Schéma: KSW 300"><path class="pv-sh" d="M0 0L167 90L45 167L-121 77Z"/><path class="r-t" d="M0 -120L156 -30L35 40L-121 -50Z"/><path class="r-f" d="M-121 70L35 160L35 40L-121 -50Z"/><path class="r-r" d="M156 90L35 160L35 40L156 -30Z"/><path class="pv-edge" d="M-115 -45L28 38"/><path class="k-t" d="M-5 -110L132 -30L91 -7L-46 -86Z"/><path class="k-f" d="M-46 -82L91 -3L91 -7L-46 -86Z"/><path class="k-r" d="M132 -27L91 -3L91 -7L132 -30Z"/><path class="e-s" d="M-21 -89L-21 -104A11 6 0 0 1 0 -104L0 -89A11 6 0 0 1 -21 -89Z"/><ellipse class="e-c" cx="-10" cy="-104" rx="11" ry="6"/><path class="e-s" d="M6 -74L6 -89A11 6 0 0 1 27 -89L27 -74A11 6 0 0 1 6 -74Z"/><ellipse class="e-c" cx="16" cy="-89" rx="11" ry="6"/><path class="e-s" d="M32 -58L32 -74A11 6 0 0 1 53 -74L53 -58A11 6 0 0 1 32 -58Z"/><ellipse class="e-c" cx="43" cy="-74" rx="11" ry="6"/><path class="e-s" d="M59 -43L59 -58A11 6 0 0 1 80 -58L80 -43A11 6 0 0 1 59 -43Z"/><ellipse class="e-c" cx="69" cy="-58" rx="11" ry="6"/><path class="e-s" d="M85 -28L85 -43A11 6 0 0 1 106 -43L106 -28A11 6 0 0 1 85 -28Z"/><ellipse class="e-c" cx="96" cy="-43" rx="11" ry="6"/><path class="k-t" d="M-63 -76L74 3L40 23L-97 -57Z"/><path class="k-f" d="M-97 -53L40 26L40 23L-97 -57Z"/><path class="k-r" d="M74 7L40 26L40 23L74 3Z"/><path class="m-s" d="M-48 -43L-48 -47A9 5 0 0 1 -31 -47L-31 -43A9 5 0 0 1 -48 -43Z"/><ellipse class="m-c" cx="-40" cy="-47" rx="9" ry="5"/><path class="pv-slot" d="M-47 -47L-32 -47"/><path class="m-s" d="M8 -11L8 -14A9 5 0 0 1 25 -14L25 -11A9 5 0 0 1 8 -11Z"/><ellipse class="m-c" cx="16" cy="-14" rx="9" ry="5"/><path class="pv-slot" d="M9 -14L24 -14"/></svg></span><span class="pcard__made">Origine : Autriche</span></div>
+<div class="pcard__body">
+<h3 class="pcard__code"><a href="/fr/produits/basse-tension/ksw-300/">KSW 300</a></h3>
+<p class="pcard__name">Transformateur de courant de laboratoire et multigamme</p>
+<dl class="pcard__specs"><div><dt>Tension Um</dt><dd>0,72 / 1,2 kV</dd></div><div><dt>Classes</dt><dd>0,2 / 0,5 / 1</dd></div></dl>
+</div>
+<div class="pcard__foot">
+<div class="vmini" role="img" aria-label="Um 0,72 / 1,2 kV"><div class="vmini__bar"><span class="vmini__fill" style="left:4.9%;width:6.9%"></span></div><div class="vmini__labels"><span>0,72–1,2 kV</span></div></div>
+<div class="pcard__actions">
+<button type="button" data-compare-toggle="ksw-300" aria-pressed="false" aria-label="Comparer: KSW 300" title="Comparer"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 8h14M14 4l4 4-4 4M20 16H6M10 12l-4 4 4 4"/></svg></button>
+<button type="button" data-basket-add="ksw-300" aria-label="Ajouter au dossier projet: KSW 300" title="Ajouter au dossier projet"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="4" width="14" height="17" rx="1"/><path d="M9 4V3h6v1M12 9.5v7M8.5 13h7"/></svg></button>
+</div>
+</div>
+</article><article class="pcard" data-pid="lks-104">
+<div class="pcard__stage"><span class="pvw"><svg class="pv" viewBox="-207 -148 448 336" style="--u:0.953" role="img" aria-label="Schéma: LKS 104"><path class="pv-sh" d="M0 0L167 90L45 167L-121 77Z"/><path class="r-t" d="M0 -120L156 -30L35 40L-121 -50Z"/><path class="r-f" d="M-121 70L35 160L35 40L-121 -50Z"/><path class="r-r" d="M156 90L35 160L35 40L156 -30Z"/><path class="pv-edge" d="M-115 -45L28 38"/><path class="k-t" d="M-5 -110L132 -30L91 -7L-46 -86Z"/><path class="k-f" d="M-46 -82L91 -3L91 -7L-46 -86Z"/><path class="k-r" d="M132 -27L91 -3L91 -7L132 -30Z"/><path class="e-s" d="M-21 -89L-21 -104A11 6 0 0 1 0 -104L0 -89A11 6 0 0 1 -21 -89Z"/><ellipse class="e-c" cx="-10" cy="-104" rx="11" ry="6"/><path class="e-s" d="M6 -74L6 -89A11 6 0 0 1 27 -89L27 -74A11 6 0 0 1 6 -74Z"/><ellipse class="e-c" cx="16" cy="-89" rx="11" ry="6"/><path class="e-s" d="M32 -58L32 -74A11 6 0 0 1 53 -74L53 -58A11 6 0 0 1 32 -58Z"/><ellipse class="e-c" cx="43" cy="-74" rx="11" ry="6"/><path class="e-s" d="M59 -43L59 -58A11 6 0 0 1 80 -58L80 -43A11 6 0 0 1 59 -43Z"/><ellipse class="e-c" cx="69" cy="-58" rx="11" ry="6"/><path class="e-s" d="M85 -28L85 -43A11 6 0 0 1 106 -43L106 -28A11 6 0 0 1 85 -28Z"/><ellipse class="e-c" cx="96" cy="-43" rx="11" ry="6"/><path class="k-t" d="M-63 -76L74 3L40 23L-97 -57Z"/><path class="k-f" d="M-97 -53L40 26L40 23L-97 -57Z"/><path class="k-r" d="M74 7L40 26L40 23L74 3Z"/><path class="m-s" d="M-48 -43L-48 -47A9 5 0 0 1 -31 -47L-31 -43A9 5 0 0 1 -48 -43Z"/><ellipse class="m-c" cx="-40" cy="-47" rx="9" ry="5"/><path class="pv-slot" d="M-47 -47L-32 -47"/><path class="m-s" d="M8 -11L8 -14A9 5 0 0 1 25 -14L25 -11A9 5 0 0 1 8 -11Z"/><ellipse class="m-c" cx="16" cy="-14" rx="9" ry="5"/><path class="pv-slot" d="M9 -14L24 -14"/></svg></span><span class="pcard__made">Origine : Autriche</span></div>
+<div class="pcard__body">
+<h3 class="pcard__code"><a href="/fr/produits/basse-tension/lks-104/">LKS 104</a></h3>
+<p class="pcard__name">Transformateur de courant de laboratoire et multigamme</p>
+<dl class="pcard__specs"><div><dt>Tension Um</dt><dd>0,72 / 1,2 kV</dd></div><div><dt>Classes</dt><dd>0,1 / 0,2 / 0,5 / 1</dd></div></dl>
+</div>
+<div class="pcard__foot">
+<div class="vmini" role="img" aria-label="Um 0,72 / 1,2 kV"><div class="vmini__bar"><span class="vmini__fill" style="left:4.9%;width:6.9%"></span></div><div class="vmini__labels"><span>0,72–1,2 kV</span></div></div>
+<div class="pcard__actions">
+<button type="button" data-compare-toggle="lks-104" aria-pressed="false" aria-label="Comparer: LKS 104" title="Comparer"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 8h14M14 4l4 4-4 4M20 16H6M10 12l-4 4 4 4"/></svg></button>
+<button type="button" data-basket-add="lks-104" aria-label="Ajouter au dossier projet: LKS 104" title="Ajouter au dossier projet"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="4" width="14" height="17" rx="1"/><path d="M9 4V3h6v1M12 9.5v7M8.5 13h7"/></svg></button>
+</div>
+</div>
+</article></div>
+<p class="sc-panel__more"><a class="btn btn--ghost" href="/fr/recherche-produits/?form=laboratory">Les 2 produits dans le sélecteur</a></p>
+</div><div class="sc-panel" id="gruppe-3" data-sc-panel="3">
+<h3 class="sc-panel__h"><span class="sc-n">3</span>Accessoires <small>2 produits</small></h3>
+<div class="pgrid pgrid--sector"><article class="pcard" data-pid="eoss-122">
+<div class="pcard__stage"><img src="/img/mimg-2022__10__produkte_messwandlerzubehoer_offenspannungsschutz_eoss_122-623.webp" srcset="/img/mimg-2022__10__produkte_messwandlerzubehoer_offenspannungsschutz_eoss_122-320.webp 320w, /img/mimg-2022__10__produkte_messwandlerzubehoer_offenspannungsschutz_eoss_122-623.webp 623w" sizes="(max-width: 600px) 50vw, 240px" width="623" height="338" alt="EOSS 122" class="is-cover" loading="lazy" decoding="async"><span class="pcard__made">Origine : Allemagne</span></div>
+<div class="pcard__body">
+<h3 class="pcard__code"><a href="/fr/produits/electronique-capteurs/eoss-122/">EOSS 122</a></h3>
+<p class="pcard__name">Protection contre la tension en circuit ouvert pour transformateurs de courant</p>
+<div class="cluster"><span class="tag tag--line">Spécifique au projet</span></div>
+</div>
+<div class="pcard__foot">
+<div class="vmini vmini--none" aria-hidden="true"></div>
+<div class="pcard__actions">
+<button type="button" data-compare-toggle="eoss-122" aria-pressed="false" aria-label="Comparer: EOSS 122" title="Comparer"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 8h14M14 4l4 4-4 4M20 16H6M10 12l-4 4 4 4"/></svg></button>
+<button type="button" data-basket-add="eoss-122" aria-label="Ajouter au dossier projet: EOSS 122" title="Ajouter au dossier projet"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="4" width="14" height="17" rx="1"/><path d="M9 4V3h6v1M12 9.5v7M8.5 13h7"/></svg></button>
+</div>
+</div>
+</article><article class="pcard" data-pid="evba-06">
+<div class="pcard__stage"><img src="/img/mimg-2022__10__produkte_stand-alone_elektronik_pufferverstaerker_evba_006-623.webp" srcset="/img/mimg-2022__10__produkte_stand-alone_elektronik_pufferverstaerker_evba_006-320.webp 320w, /img/mimg-2022__10__produkte_stand-alone_elektronik_pufferverstaerker_evba_006-623.webp 623w" sizes="(max-width: 600px) 50vw, 240px" width="623" height="338" alt="EVBA 06" class="is-cover" loading="lazy" decoding="async"><span class="pcard__made">Origine : Allemagne</span></div>
+<div class="pcard__body">
+<h3 class="pcard__code"><a href="/fr/produits/electronique-capteurs/evba-06/">EVBA 06</a></h3>
+<p class="pcard__name">Amplificateur tampon (électronique autonome)</p>
+<div class="cluster"><span class="tag tag--line">Spécifique au projet</span></div>
+</div>
+<div class="pcard__foot">
+<div class="vmini vmini--none" aria-hidden="true"></div>
+<div class="pcard__actions">
+<button type="button" data-compare-toggle="evba-06" aria-pressed="false" aria-label="Comparer: EVBA 06" title="Comparer"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 8h14M14 4l4 4-4 4M20 16H6M10 12l-4 4 4 4"/></svg></button>
+<button type="button" data-basket-add="evba-06" aria-label="Ajouter au dossier projet: EVBA 06" title="Ajouter au dossier projet"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="4" width="14" height="17" rx="1"/><path d="M9 4V3h6v1M12 9.5v7M8.5 13h7"/></svg></button>
+</div>
+</div>
+</article></div>
+<p class="sc-panel__more"><a class="btn btn--ghost" href="/fr/recherche-produits/?kindGroup=other&area=elektronik-sensoren">Les 2 produits dans le sélecteur</a></p>
+</div>
 </div>
 </section>
-<section class="section"><div class="wrap"><div class="section-head"><div class="stack" style="--s:.75rem"><h2>En pratique</h2></div></div><div class="news-grid"><a class="card" href="/fr/actualites/plus-de-securite-pour-les-personnes-et-les-installations-la-nouvelle-protection-contre-la-tension-en-circuit-ouvert-eoss/">
+<section class="section sc-proof"><div class="wrap"><div class="section-head"><div class="stack" style="--s:.75rem"><h2>En pratique</h2></div></div><div class="news-grid"><a class="card" href="/fr/actualites/plus-de-securite-pour-les-personnes-et-les-installations-la-nouvelle-protection-contre-la-tension-en-circuit-ouvert-eoss/">
 <div class="card__img"><img src="/img/mimg-EOSS-768x378-1-768.webp" srcset="/img/mimg-EOSS-768x378-1-320.webp 320w, /img/mimg-EOSS-768x378-1-640.webp 640w, /img/mimg-EOSS-768x378-1-768.webp 768w" sizes="(max-width: 560px) 100vw, (max-width: 900px) 50vw, 33vw" width="768" height="378" alt="" loading="lazy" decoding="async"></div>
 <div class="card__meta"><time datetime="2017-02-01">1 février 2017</time><span>Produits &amp; technique</span></div>
 <h3>Plus de sécurité pour les personnes et les installations – la nouvelle protection contre la tension en circuit ouvert EOSS !</h3>
@@ -407,6 +507,11 @@
 <div class="card__meta"><time datetime="2024-09-18">18 septembre 2024</time><span>Salons &amp; événements</span></div>
 <h3>RITZ participe à la 30e conférence VDE sur le comptage les 17 et 18 septembre 2024 à Gera</h3>
 <p>Rendez visite à nos collègues sur le stand RITZ ! Votre équipe commerciale RITZ</p>
+</a><a class="card" href="/fr/actualites/additional-burden/">
+<div class="card__img card__img--small" style="--bgimg:url(/img/mimg-Zusatzbuerde-320.webp)"><img src="/img/mimg-Zusatzbuerde-589.webp" srcset="/img/mimg-Zusatzbuerde-320.webp 320w, /img/mimg-Zusatzbuerde-589.webp 589w" sizes="589px" width="589" height="293" alt="" loading="lazy" decoding="async"></div>
+<div class="card__meta"><time datetime="2026-02-16">16 février 2026</time><span>Produits &amp; technique</span><span class="card__lang" title="en">EN</span></div>
+<h3 lang="en">Additional burden</h3>
+<p lang="en">An additional burden is an additional device that is used to achieve sufficient burdening of measuring transformers that have not been sufficiently …</p>
 </a></div></div></section>
 <section class="section section--tight"><div class="wrap"><div class="section-head"><div class="stack" style="--s:.75rem"><h2>Documents</h2></div></div><div class="docs docs--cols"><a class="doc" href="/dokumente/w/201808_EOSS_122_datasheet.pdf" target="_blank" rel="noopener" data-doc-id="d11212b22">
 <span class="doc__icon" aria-hidden="true">PDF</span>
@@ -441,6 +546,10 @@
 <span class="line-mail"><a href="mailto:gregor.pohl@ritz-international.com"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m3 7 9 6 9-6"/></svg><span>gregor.pohl@ritz-international.com</span></a><button class="copy" type="button" data-copy="gregor.pohl@ritz-international.com" aria-label="Copier: gregor.pohl@ritz-international.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="15" height="15"><rect x="8" y="8" width="12" height="12" rx="1"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg></button></span>
 </div>
 </article></div></div></section>
+<section class="section sc-more" aria-labelledby="sc-more-t"><div class="wrap">
+<h2 class="h3" id="sc-more-t">Autres applications</h2>
+<ul class="sc-others"><li><a class="sc-other" href="/fr/applications/reseaux-energie/"><span class="sc-other__img"><img src="/img/mimg-2022__06__image_empowering_the_future-640.webp" srcset="/img/mimg-2022__06__image_empowering_the_future-320.webp 320w, /img/mimg-2022__06__image_empowering_the_future-640.webp 640w" sizes="calc(120px * 1.40)" width="640" height="458" alt="" loading="lazy" decoding="async"></span><span class="sc-other__b"><b>Fournisseurs d’énergie et réseaux</b><span>Comptage de facturation, protection et qualité du réseau, de la distribution locale à la très haute tension.</span></span></a></li><li><a class="sc-other" href="/fr/applications/fabricants-appareillage/"><span class="sc-other__img"><img src="/img/mimg-2022__07__unternehmen_qualitaetsmanagement_wandler_pruefung-408.webp" srcset="/img/mimg-2022__07__unternehmen_qualitaetsmanagement_wandler_pruefung-320.webp 320w, /img/mimg-2022__07__unternehmen_qualitaetsmanagement_wandler_pruefung-408.webp 408w" sizes="120px" width="408" height="408" alt="" loading="lazy" decoding="async"></span><span class="sc-other__b"><b>Constructeurs d’appareillages</b><span>Transformateurs selon DIN 42600, versions sous enveloppe métallique et capteurs pour vos appareillages.</span></span></a></li><li><a class="sc-other" href="/fr/applications/industrie-infrastructure/"><span class="sc-other__img"><img src="/img/mimg-Kundenreferenz-SIS-Projekt-BSW-3-640.webp" srcset="/img/mimg-Kundenreferenz-SIS-Projekt-BSW-3-320.webp 320w, /img/mimg-Kundenreferenz-SIS-Projekt-BSW-3-640.webp 640w" sizes="calc(120px * 1.33)" width="640" height="480" alt="" loading="lazy" decoding="async"></span><span class="sc-other__b"><b>Industrie et infrastructures</b><span>Courants élevés, environnements difficiles et courant continu – de l’aciérie au centre de données.</span></span></a></li><li><a class="sc-other" href="/fr/applications/ferroviaire/"><span class="sc-other__img"><img src="/img/mimg-2022__07__sonderwandler_bahnwandler_gsefb-623.webp" srcset="/img/mimg-2022__07__sonderwandler_bahnwandler_gsefb-320.webp 320w, /img/mimg-2022__07__sonderwandler_bahnwandler_gsefb-623.webp 623w" sizes="calc(120px * 1.84)" width="623" height="338" alt="" loading="lazy" decoding="async"></span><span class="sc-other__b"><b>Ferroviaire</b><span>Transformateurs pour le matériel roulant et les installations d’alimentation de traction – selon EN 50463 et STI.</span></span></a></li><li><a class="sc-other" href="/fr/applications/renouvelables-ccht-qualite-reseau/"><span class="sc-other__img"><img src="/img/mimg-wind-energy-sq-640.webp" srcset="/img/mimg-wind-energy-sq-320.webp 320w, /img/mimg-wind-energy-sq-640.webp 640w" sizes="120px" width="640" height="640" alt="" loading="lazy" decoding="async"></span><span class="sc-other__b"><b>Énergies renouvelables, CCHT et qualité de l’énergie</b><span>Mesure DC pour CCHT et SVC, transformateurs large bande pour la qualité du réseau.</span></span></a></li><li><a class="sc-other" href="/fr/applications/centrales-generateurs/"><span class="sc-other__img"><img src="/img/mimg-IRBT-1-640.webp" srcset="/img/mimg-IRBT-1-320.webp 320w, /img/mimg-IRBT-1-640.webp 640w" sizes="calc(120px * 1.67)" width="640" height="383" alt="" loading="lazy" decoding="async"></span><span class="sc-other__b"><b>Centrales électriques et générateurs</b><span>Transformateurs pour générateurs jusqu’à 50 000 A, alimentation auxiliaire et haute tension.</span></span></a></li></ul>
+</div></section></div>
 </main>
 <footer class="ftr">
 <div class="wrap">

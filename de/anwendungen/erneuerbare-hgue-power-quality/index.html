@@ -17,11 +17,11 @@
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#141110" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="/favicon.ico" sizes="32x32"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest">
 <link rel="preload" href="/assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/main.css?v=e277e7dd">
+<link rel="stylesheet" href="/assets/main.css?v=df3c3582">
 <script>(function(){var d=document.documentElement;d.dataset.hostTheme=d.dataset.theme||'';try{var t=JSON.parse(localStorage.getItem('ritz-theme')||'"auto"');if(t==='light'||t==='dark')d.dataset.theme=t}catch(e){}})()</script>
 <script>(function(d){try{if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;if('IntersectionObserver' in window){d.classList.add('rv');setTimeout(function(){if(!d.classList.contains('rv-ok'))d.classList.remove('rv')},4000)}if(!false)return;try{var ss=sessionStorage;ss.removeItem('ritz-intro');if(ss.getItem('ritz-intro-skip'))return}catch(e){}try{var ls=localStorage,k=parseInt(ls.getItem('ritz-intro-n'),10)||0;ls.setItem('ritz-intro-n',String((k+1)%5));if(k!==0)return}catch(e){}d.setAttribute('data-intro','play');var done=0,EV=['pointerdown','keydown','wheel','touchstart'];function q(x){return document.querySelector(x)}function off(){d.removeAttribute('data-intro');var x=document.querySelectorAll('.intro,.intro__skip');for(var i=0;i<x.length;i++)x[i].parentNode.removeChild(x[i])}function end(skip){if(done)return;done=1;for(var i=0;i<EV.length;i++)removeEventListener(EV[i],onSkip,true);var o=q('.intro');if(!o){off();return}var lg=o.querySelector('.intro__logo'),sv=lg&&lg.querySelector('svg'),hd=q('.hdr .logo svg');if(!skip&&sv&&hd){var a=sv.getBoundingClientRect(),b=hd.getBoundingClientRect();if(a.width&&b.width){lg.style.setProperty('--fx',(b.left+b.width/2-a.left-a.width/2).toFixed(1)+'px');lg.style.setProperty('--fy',(b.top+b.height/2-a.top-a.height/2).toFixed(1)+'px');lg.style.setProperty('--fs',(b.width/a.width).toFixed(4));lg.style.setProperty('--fc',getComputedStyle(hd).color);o.classList.add('is-fly')}else skip=1}if(skip)o.classList.add('is-skip');d.setAttribute('data-intro','out');setTimeout(off,skip?300:720)}function onSkip(e){if(e.type==='keydown'&&/^(Shift|Control|Alt|Meta|CapsLock)$/.test(e.key))return;end(1)}for(var i=0;i<EV.length;i++)addEventListener(EV[i],onSkip,{capture:true,passive:true});addEventListener('animationend',function(e){if(e.animationName==='iTag')end(0)});var fb=0;addEventListener('animationstart',function(e){if(e.animationName==='iFade'&&!fb)fb=setTimeout(function(){end(0)},3400)});setTimeout(function(){end(0)},6000);}catch(e){}})(document.documentElement)</script>
-<script>window.__RITZ__={"lang":"de","mode":"static","base":"/","dataBase":"/data/","v":"e277e7dd","api":null,"preview":true,"route":{"id":"sector","p":{"sector":"erneuerbare"}}}</script>
-<script type="module" src="/assets/app.js?v=e277e7dd"></script>
+<script>window.__RITZ__={"lang":"de","mode":"static","base":"/","dataBase":"/data/","v":"df3c3582","api":null,"preview":true,"route":{"id":"sector","p":{"sector":"erneuerbare"}}}</script>
+<script type="module" src="/assets/app.js?v=df3c3582"></script>
 </head>
 <body class="">
 <a class="skip" href="#main">Zum Inhalt springen</a>
@@ -265,23 +265,58 @@
 </div>
 </div>
 <main id="main" tabindex="-1">
-<section class="phead phead--figure ">
+<div class="sc-page" data-sector><section class="phead sc-hero">
 <div class="wrap"><nav aria-label="Brotkrumennavigation"><ol class="crumbs"><li><a href="/de/">Startseite</a></li><li><a href="/de/anwendungen/">Anwendungen</a></li><li><span aria-current="page">Erneuerbare, HGÜ und Power Quality</span></li></ol></nav>
-<div class="phead__grid phead__grid--figure"><div><h1>Erneuerbare, HGÜ und Power Quality</h1><p class="lead">Leistungselektronik und erneuerbare Erzeugung verändern die Netze: Gleichstromanteile, Oberschwingungen und Stabilisierungsanlagen erfordern neue Messtechnik.</p></div>
-<figure class="phead__fig"><img src="/img/mimg-wind-energy-sq-960.webp" srcset="/img/mimg-wind-energy-sq-320.webp 320w, /img/mimg-wind-energy-sq-640.webp 640w, /img/mimg-wind-energy-sq-960.webp 960w" sizes="(max-width: 900px) 100vw, 42vw" width="960" height="960" alt="" class="is-cover" fetchpriority="high" decoding="async"></figure></div>
+<div class="sc-hero__top">
+<h1>Erneuer&shy;bare, HGÜ und Power Quality</h1>
+<div class="sc-hero__side">
+<p class="lead">Leistungselektronik und erneuerbare Erzeugung verändern die Netze: Gleichstromanteile, Oberschwingungen und Stabilisierungsanlagen erfordern neue Messtechnik.</p>
+<div class="cluster sc-hero__cta"><a class="btn" href="#produkte">Produkte ansehen</a><a class="btn btn--ghost" href="/de/anfrage/"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m3 7 9 6 9-6"/></svg>Anfrage stellen</a></div>
+</div>
+</div>
+<dl class="sc-facts"><div><dt>Produkte</dt><dd>18<small>in 3 Produktgruppen</small></dd></div><div><dt>Spannungsebenen</dt><dd>0,72–52 kV<small><span class="sc-axis" aria-hidden="true"><b style="left:4.95%"></b><b style="left:39.63%"></b><b style="left:74.32%"></b><i style="left:0.00%;width:64.47%"></i></span></small></dd></div><div><dt>Lieferzeit ab Werk</dt><dd>ab 3 Wochen<small>je nach Typ</small></dd></div><div><dt>Gefertigt in</dt><dd>Deutschland, Österreich</dd></div></dl>
+<div class="mp" data-mp>
+<div class="mp__main">
+<div class="mp__head"><b class="mp__t">Einsatzorte in der Anlage</b><span class="mp__s">Von der Einspeisung über die HGÜ-Strecke ins Netz</span></div>
+<div class="mp__scroll" tabindex="0" role="group" aria-label="Übersichtsschaltbild: Von der Einspeisung über die HGÜ-Strecke ins Netz"><svg class="mp__svg" viewBox="0 22 960 392" aria-hidden="true" focusable="false">
+<g class="mp-wires"><path class="mp-w" d="M60 132L60 170" pathLength="1"/><path class="mp-w" d="M110 120L110 170" pathLength="1"/><path class="mp-w" d="M150 146L150 170" pathLength="1"/><path class="mp-bus" d="M40 170H260" pathLength="1"/><path class="mp-w" d="M230 170L230 234" pathLength="1"/><path class="mp-w mp-w--hv" d="M230 269L230 300L330 300" pathLength="1"/><path class="mp-w mp-w--dc" d="M404 284L736 284" pathLength="1"/><path class="mp-w mp-w--dc" d="M404 316L736 316" pathLength="1"/><path class="mp-w mp-w--hv" d="M800 300L870 300" pathLength="1"/><path class="mp-bus mp-w--hv" d="M870 120V380" pathLength="1"/><path class="mp-w mp-w--hv" d="M870 160L920 160L920 200" pathLength="1"/></g><g class="mp-secs"><path class="mp-s" d="M241 206L300 206"/></g><g class="mp-eqs"><path class="mp-eq-l" d="M60 92V132"/><path class="mp-eq-l" d="M60 92L58 70M60 92L79 102M60 92L42 104"/><circle class="mp-eq" cx="60" cy="92" r="3"/><path class="mp-eq-l" d="M110 80V120"/><path class="mp-eq-l" d="M110 80L108 58M110 80L129 90M110 80L92 92"/><circle class="mp-eq" cx="110" cy="80" r="3"/><path class="mp-eq-l" d="M128 130L138 108H172L162 130Z M133 119H167 M145 108L140 130 M159 108L154 130"/><path class="mp-eq-l" d="M150 130V146"/><circle class="mp-eq mp-eq--o" cx="230" cy="240" r="17"/><circle class="mp-eq mp-eq--o" cx="230" cy="264" r="17"/><rect class="mp-eq" x="302" y="191" width="56" height="30" rx="2"/><text class="mp-sym mp-sym--b" x="330" y="207">PQ</text><rect class="mp-eq" x="340" y="268" width="64" height="64"/><path class="mp-eq-l" d="M340 332L404 268"/><text class="mp-sym mp-sym--s" x="356" y="292">~</text><text class="mp-sym mp-sym--s" x="388" y="316">=</text><rect class="mp-eq" x="736" y="268" width="64" height="64"/><path class="mp-eq-l" d="M736 332L800 268"/><text class="mp-sym mp-sym--s" x="752" y="292">~</text><text class="mp-sym mp-sym--s" x="784" y="316">=</text><path class="mp-eq-l" d="M570 378V386M561 386H579M564 390H576M567 394H573"/><rect class="mp-eq" x="898" y="202" width="44" height="40" rx="2"/><text class="mp-sym mp-sym--b" x="920" y="223">SVC</text></g>
+<g class="mp-labels"><text x="40" y="44" class="mp-t--s">Wind und Photovoltaik</text><text x="40" y="196" class="mp-t--v">33 kV</text><text x="262" y="232" class="mp-t--s">Netzanschlusspunkt</text><text x="372" y="356" text-anchor="middle" class="mp-t--s">Stromrichter</text><text x="570" y="264" text-anchor="middle" class="mp-t--v">HGÜ-Strecke</text><text x="870" y="104" text-anchor="middle" class="mp-t--hv">Netz</text></g><g class="mp-pts"><g class="mp-pt" data-pt="1" style="--pi:1"><circle class="mp-r" cx="230" cy="206" r="11"/><path class="mp-r-l" d="M230 206H204"/><circle class="mp-r mp-r--f" cx="196" cy="206" r="8"/><circle class="mp-r mp-r--f" cx="184" cy="206" r="8"/><path class="mp-lead" d="M238 198L286 160"/><g class="mp-b"><circle cx="286" cy="160" r="13"/><text x="286" y="161">1</text></g></g><g class="mp-pt" data-pt="2" style="--pi:2"><circle class="mp-r" cx="490" cy="284" r="11"/><circle class="mp-r" cx="650" cy="316" r="11"/><path class="mp-lead" d="M490 273L490 236"/><g class="mp-b"><circle cx="490" cy="236" r="13"/><text x="490" y="237">2</text></g><path class="mp-lead" d="M650 327L650 364"/><g class="mp-b"><circle cx="650" cy="364" r="13"/><text x="650" y="365">2</text></g><circle class="mp-r" cx="920" cy="184" r="9"/><path class="mp-lead" d="M920 175L920 130"/><g class="mp-b"><circle cx="920" cy="130" r="13"/><text x="920" y="131">2</text></g></g><g class="mp-pt" data-pt="3" style="--pi:3"><path class="mp-r-l" d="M570 316V340"/><rect class="mp-r mp-r--f" x="564" y="340" width="12" height="24" rx="2"/><path class="mp-r-l" d="M570 364V378"/><path class="mp-lead" d="M576 352L608 352"/><g class="mp-b"><circle cx="608" cy="352" r="13"/><text x="608" y="353">3</text></g></g></g></svg></div>
+<p class="mp__hint" aria-hidden="true">Zum Verschieben wischen</p>
+<p class="mp__keys" aria-hidden="true"><span><i class="k-hv"></i>Hochspannung</span><span><i></i>Mittel- und Niederspannung</span><span><i class="k-sec"></i>Mess- und Signalleitung</span><span><i class="k-r"></i>RITZ-Produkt</span></p>
+</div>
+<nav class="mp__legend" aria-label="Einsatzorte und Produktgruppen"><h2>Einsatzorte und Produktgruppen</h2><ol><li><a href="#gruppe-1" data-pt="1"><span class="sc-n">1</span><b>Power Quality</b><small>12 Produkte</small></a></li><li><a href="#gruppe-2" data-pt="2"><span class="sc-n">2</span><b>DC-Messung</b><small>7 Produkte</small></a></li><li><a href="#gruppe-3" data-pt="3"><span class="sc-n">3</span><b>Elektronische Wandler</b><small>6 Produkte</small></a></li></ol></nav>
+</div>
 </div>
 </section>
-<section class="section">
-<div class="wrap split">
-<div class="stack" style="--s:1rem"><h2 class="h3">Worauf es ankommt</h2><ul class="ticks"><li>Hochgenaue Messung von Gleich-, Wechsel- und Mischströmen</li><li>Erfassung von Oberschwingungen bis in den kHz-Bereich</li><li>Messung in SVC-Anlagen, Back-to-Back-Stationen und DC-Links</li></ul></div>
-<div class="prose"><p>Elektronische Stromwandler EMVI arbeiten nach dem Nullfluss-Prinzip; der kompakte EMVI 4005 misst Ströme bis 12.000 A. Elektronische Spannungswandler EGIW und EVBA messen Gleich- und Wechselspannungen mit Trenn- oder Pufferverstärker und optischer Übertragung.</p><p>Für die Netzqualität liefern wir Strom-, Spannungs- und Kombiwandler als Breitbandwandler mit optional erweitertem Frequenzbereich bis 9 kHz.</p></div>
+<section class="section sc-needs" aria-labelledby="sc-needs-t">
+<div class="wrap sc-needs__grid">
+<div class="sc-needs__img"><img src="/img/mimg-wind-energy-sq-960.webp" srcset="/img/mimg-wind-energy-sq-320.webp 320w, /img/mimg-wind-energy-sq-640.webp 640w, /img/mimg-wind-energy-sq-960.webp 960w" sizes="(max-width: 900px) calc(100vw * 1.25), calc(34vw * 1.25)" width="960" height="960" alt="" loading="lazy" decoding="async"></div>
+<div class="sc-needs__body">
+<h2 id="sc-needs-t">Worauf es ankommt</h2>
+<ul class="sc-needs__list"><li class="sc-need">
+<div class="sc-need__b"><h3>Oberschwingungen richtig messen</h3><p>Herkömmliche Wandler sind nur für die Nennfrequenz geprüft. Unsere Breitbandwandler, entwickelt mit der TU Dresden und der Leibniz Universität Hannover, übertragen Oberschwingungen definiert bis 9 kHz – passend zur Analyse nach DIN EN 61000-4-30 und 61000-4-7.</p></div>
+<a class="sc-need__go" href="#gruppe-1" data-pt="1"><span class="sc-n">1</span><span>Power Quality</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="16" height="16"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+</li><li class="sc-need">
+<div class="sc-need__b"><h3>Gleichstrom in HGÜ- und SVC-Anlagen</h3><p>Das Messsystem EMVI arbeitet nach dem Nullfluss-Prinzip und ist seit 1985 in nahezu allen großen HGÜ-, SVC- und GKK-Anlagen weltweit im Einsatz – für Gleich- und Wechselströme bis 24 kA.</p></div>
+<a class="sc-need__go" href="#gruppe-2" data-pt="2"><span class="sc-n">2</span><span>DC-Messung</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="16" height="16"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+</li><li class="sc-need">
+<div class="sc-need__b"><h3>Neubau oder Modernisierung</h3><p>In neuen Anlagen sitzen die Sensorköpfe an vollisolierten Leitern oder Durchführungen. Bei Modernisierungen ersetzen wartungsfreie OMVDC-Wandler ältere ölisolierte Geräte auf gleicher Montagehöhe.</p></div>
+<a class="sc-need__go" href="#gruppe-2" data-pt="2"><span class="sc-n">2</span><span>DC-Messung</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="16" height="16"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+</li><li class="sc-need">
+<div class="sc-need__b"><h3>Gleich- und Wechselspannung</h3><p>Elektronische Spannungswandler EGIW und EVBA messen mit Trenn- oder Pufferverstärker und optischer Übertragung.</p></div>
+<a class="sc-need__go" href="#gruppe-3" data-pt="3"><span class="sc-n">3</span><span>Elektronische Wandler</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="16" height="16"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+</li></ul>
+<p class="sc-needs__more"><a class="link" href="/de/unternehmen/qualitaet/">Wie wir prüfen und kalibrieren<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="16" height="16"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></p>
+</div>
 </div>
 </section>
-<section class="section section--porcelain">
+<section class="section section--porcelain sc-prod" id="produkte" aria-labelledby="sc-prod-t">
 <div class="wrap">
-<div class="section-head"><div class="stack" style="--s:.75rem"><h2>Passende Produkte</h2></div></div>
-<div class="sgroups"><a class="sgroup" href="/de/produktfinder/?app=power-quality"><strong>Power Quality</strong><span>12 Produkte</span><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 6 6 6-6 6"/></svg></a><a class="sgroup" href="/de/produktfinder/?app=dc-measurement"><strong>DC-Messung</strong><span>7 Produkte</span><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 6 6 6-6 6"/></svg></a><a class="sgroup" href="/de/produktfinder/?kindGroup=electronic"><strong>Elektronische Wandler</strong><span>6 Produkte</span><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 6 6 6-6 6"/></svg></a></div>
-<h3 class="h4 mt">Power Quality</h3><div class="pgrid pgrid--sector"><article class="pcard" data-pid="emvi-4005">
+<div class="section-head"><div class="stack" style="--s:.75rem"><h2 id="sc-prod-t">Passende Produkte</h2></div></div>
+<div class="sc-tabs" data-sc-tabs hidden aria-label="Passende Produkte"><button type="button" class="sc-tab" data-sc-tab="1"><span class="sc-n">1</span><span class="sc-tab__l">Power Quality</span><small>12</small></button><button type="button" class="sc-tab" data-sc-tab="2"><span class="sc-n">2</span><span class="sc-tab__l">DC-Messung</span><small>7</small></button><button type="button" class="sc-tab" data-sc-tab="3"><span class="sc-n">3</span><span class="sc-tab__l">Elektronische Wandler</span><small>6</small></button></div>
+<div class="sc-panel" id="gruppe-1" data-sc-panel="1">
+<h3 class="sc-panel__h"><span class="sc-n">1</span>Power Quality <small>12 Produkte</small></h3>
+<div class="pgrid pgrid--sector"><article class="pcard" data-pid="emvi-4005">
 <div class="pcard__stage"><img src="/img/mimg-EMVI-260.webp" srcset="/img/mimg-EMVI-260.webp 260w" sizes="(max-width: 600px) 50vw, 240px" width="260" height="367" alt="EMVI 4005" class="is-cover" loading="lazy" decoding="async"><span class="pcard__made">Made in Deutschland</span></div>
 <div class="pcard__body">
 <h3 class="pcard__code"><a href="/de/produkte/elektronik-sensoren/emvi-4005/">EMVI 4005</a></h3>
@@ -394,10 +429,211 @@
 </div>
 </div>
 </article></div>
-<p class="mt"><a class="btn btn--ghost" href="/de/produktfinder/?app=power-quality">Im Produktfinder anzeigen (12)</a></p>
+<p class="sc-panel__more"><a class="btn btn--ghost" href="/de/produktfinder/?app=power-quality">Alle 12 im Produktfinder</a></p>
+</div><div class="sc-panel" id="gruppe-2" data-sc-panel="2">
+<h3 class="sc-panel__h"><span class="sc-n">2</span>DC-Messung <small>7 Produkte</small></h3>
+<div class="pgrid pgrid--sector"><article class="pcard" data-pid="egiw-x45">
+<div class="pcard__stage"><span class="pvw"><svg class="pv" viewBox="-174 -118 288 216" style="--u:0.613" role="img" aria-label="Schemazeichnung: EGIW x45"><path class="pv-sh" d="M0 0L42 23L-58 82L-100 59Z"/><path class="k-t" d="M0 -100L39 -78L-61 -20L-100 -43Z"/><path class="k-f" d="M-100 58L-61 80L-61 -20L-100 -43Z"/><path class="k-r" d="M39 23L-61 80L-61 -20L39 -78Z"/><path class="pv-edge" d="M-98 -40L-62 -19"/><ellipse class="pv-led-g" cx="-88" cy="-14" rx="3" ry="2" transform="rotate(60 -88 -14)"/><ellipse class="pv-led-r" cx="-75" cy="-7" rx="3" ry="2" transform="rotate(60 -75 -7)"/><path class="pv-label" d="M-93 32L-68 46L-68 14L-93 0Z"/><path class="k-t" d="M-13 -94L22 -74L-48 -33L-82 -53Z"/><path class="k-f" d="M-82 -50L-48 -30L-48 -33L-82 -53Z"/><path class="k-r" d="M22 -70L-48 -30L-48 -33L22 -74Z"/><path class="m-s" d="M-44 -69L-44 -71A4 2 0 0 1 -36 -71L-36 -69A4 2 0 0 1 -44 -69Z"/><ellipse class="m-c" cx="-40" cy="-71" rx="4" ry="2"/><path class="pv-slot" d="M-43 -71L-37 -71"/><path class="m-s" d="M-34 -64L-34 -65A4 2 0 0 1 -26 -65L-26 -64A4 2 0 0 1 -34 -64Z"/><ellipse class="m-c" cx="-30" cy="-65" rx="4" ry="2"/><path class="pv-slot" d="M-34 -65L-27 -65"/><path class="m-s" d="M-24 -58L-24 -60A4 2 0 0 1 -17 -60L-17 -58A4 2 0 0 1 -24 -58Z"/><ellipse class="m-c" cx="-21" cy="-60" rx="4" ry="2"/><path class="pv-slot" d="M-24 -60L-17 -60"/></svg></span><span class="pcard__made">Made in Deutschland</span></div>
+<div class="pcard__body">
+<h3 class="pcard__code"><a href="/de/produkte/elektronik-sensoren/egiw-x45/">EGIW x45</a></h3>
+<p class="pcard__name">Elektronischer Spannungswandler mit Trennverstärker</p>
+<div class="cluster"><span class="tag tag--line">Projektspezifisch</span></div>
+</div>
+<div class="pcard__foot">
+<div class="vmini vmini--none" aria-hidden="true"></div>
+<div class="pcard__actions">
+<button type="button" data-compare-toggle="egiw-x45" aria-pressed="false" aria-label="Vergleichen: EGIW x45" title="Vergleichen"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 8h14M14 4l4 4-4 4M20 16H6M10 12l-4 4 4 4"/></svg></button>
+<button type="button" data-basket-add="egiw-x45" aria-label="In die Projektmappe: EGIW x45" title="In die Projektmappe"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="4" width="14" height="17" rx="1"/><path d="M9 4V3h6v1M12 9.5v7M8.5 13h7"/></svg></button>
+</div>
+</div>
+</article><article class="pcard" data-pid="egiw-x64">
+<div class="pcard__stage"><img src="/img/mimg-2022__10__produkte_elektronische_spannungwandler_elektronischer_spannungswandler_egiw_x64-623.webp" srcset="/img/mimg-2022__10__produkte_elektronische_spannungwandler_elektronischer_spannungswandler_egiw_x64-320.webp 320w, /img/mimg-2022__10__produkte_elektronische_spannungwandler_elektronischer_spannungswandler_egiw_x64-623.webp 623w" sizes="(max-width: 600px) 50vw, 240px" width="623" height="338" alt="EGIW x64" class="is-cover" loading="lazy" decoding="async"><span class="pcard__made">Made in Deutschland</span></div>
+<div class="pcard__body">
+<h3 class="pcard__code"><a href="/de/produkte/elektronik-sensoren/egiw-x64/">EGIW x64</a></h3>
+<p class="pcard__name">Elektronischer Spannungswandler</p>
+<dl class="pcard__specs"><div><dt>Spannung Um</dt><dd>12 / 24 / 36 / 52 kV</dd></div><div><dt>Sekundärspannung</dt><dd>3,25/√3</dd></div><div><dt>Klassen</dt><dd>0,5</dd></div></dl>
+</div>
+<div class="pcard__foot">
+<div class="vmini" role="img" aria-label="Um 12 / 24 / 36 / 52 kV"><div class="vmini__bar"><span class="vmini__fill" style="left:43.1%;width:19.9%"></span></div><div class="vmini__labels"><span>12–52 kV</span></div></div>
+<div class="pcard__actions">
+<button type="button" data-compare-toggle="egiw-x64" aria-pressed="false" aria-label="Vergleichen: EGIW x64" title="Vergleichen"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 8h14M14 4l4 4-4 4M20 16H6M10 12l-4 4 4 4"/></svg></button>
+<button type="button" data-basket-add="egiw-x64" aria-label="In die Projektmappe: EGIW x64" title="In die Projektmappe"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="4" width="14" height="17" rx="1"/><path d="M9 4V3h6v1M12 9.5v7M8.5 13h7"/></svg></button>
+</div>
+</div>
+</article><article class="pcard" data-pid="egiw-x85">
+<div class="pcard__stage"><img src="/img/mimg-2022__10__produkte_elektronische_spannungwandler_elektronischer_spannungswandler_egiw_x85-623.webp" srcset="/img/mimg-2022__10__produkte_elektronische_spannungwandler_elektronischer_spannungswandler_egiw_x85-320.webp 320w, /img/mimg-2022__10__produkte_elektronische_spannungwandler_elektronischer_spannungswandler_egiw_x85-623.webp 623w" sizes="(max-width: 600px) 50vw, 240px" width="623" height="338" alt="EGIW x85" class="is-cover" loading="lazy" decoding="async"><span class="pcard__made">Made in Deutschland</span></div>
+<div class="pcard__body">
+<h3 class="pcard__code"><a href="/de/produkte/elektronik-sensoren/egiw-x85/">EGIW x85</a></h3>
+<p class="pcard__name">Elektronischer Spannungswandler</p>
+<dl class="pcard__specs"><div><dt>Spannung Um</dt><dd>6–52 kV</dd></div><div><dt>Sekundärspannung</dt><dd>3,25/√3</dd></div><div><dt>Klassen</dt><dd>0,2</dd></div></dl>
+</div>
+<div class="pcard__foot">
+<div class="vmini" role="img" aria-label="Um 6–52 kV"><div class="vmini__bar"><span class="vmini__fill" style="left:33.7%;width:29.3%"></span></div><div class="vmini__labels"><span>6–52 kV</span></div></div>
+<div class="pcard__actions">
+<button type="button" data-compare-toggle="egiw-x85" aria-pressed="false" aria-label="Vergleichen: EGIW x85" title="Vergleichen"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 8h14M14 4l4 4-4 4M20 16H6M10 12l-4 4 4 4"/></svg></button>
+<button type="button" data-basket-add="egiw-x85" aria-label="In die Projektmappe: EGIW x85" title="In die Projektmappe"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="4" width="14" height="17" rx="1"/><path d="M9 4V3h6v1M12 9.5v7M8.5 13h7"/></svg></button>
+</div>
+</div>
+</article><article class="pcard" data-pid="emvi-7xx">
+<div class="pcard__stage"><img src="/img/mimg-2022__10__produkte_elektronische_stromwandler_elektronischer_stromwandler_emvi_7xx-623.webp" srcset="/img/mimg-2022__10__produkte_elektronische_stromwandler_elektronischer_stromwandler_emvi_7xx-320.webp 320w, /img/mimg-2022__10__produkte_elektronische_stromwandler_elektronischer_stromwandler_emvi_7xx-623.webp 623w" sizes="(max-width: 600px) 50vw, 240px" width="623" height="338" alt="EMVI 7xx" class="is-cover" loading="lazy" decoding="async"><span class="pcard__made">Made in Deutschland</span></div>
+<div class="pcard__body">
+<h3 class="pcard__code"><a href="/de/produkte/elektronik-sensoren/emvi-7xx/">EMVI 7xx</a></h3>
+<p class="pcard__name">Elektronischer Stromwandler</p>
+<dl class="pcard__specs"><div><dt>Primärstrom</dt><dd>3.500 A</dd></div><div><dt>Sekundärspannung</dt><dd>2,5</dd></div><div><dt>Klassen</dt><dd>0,1 / 0,2</dd></div></dl>
+</div>
+<div class="pcard__foot">
+<div class="vmini vmini--none" aria-hidden="true"></div>
+<div class="pcard__actions">
+<button type="button" data-compare-toggle="emvi-7xx" aria-pressed="false" aria-label="Vergleichen: EMVI 7xx" title="Vergleichen"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 8h14M14 4l4 4-4 4M20 16H6M10 12l-4 4 4 4"/></svg></button>
+<button type="button" data-basket-add="emvi-7xx" aria-label="In die Projektmappe: EMVI 7xx" title="In die Projektmappe"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="4" width="14" height="17" rx="1"/><path d="M9 4V3h6v1M12 9.5v7M8.5 13h7"/></svg></button>
+</div>
+</div>
+</article><article class="pcard" data-pid="emvi-4005">
+<div class="pcard__stage"><img src="/img/mimg-EMVI-260.webp" srcset="/img/mimg-EMVI-260.webp 260w" sizes="(max-width: 600px) 50vw, 240px" width="260" height="367" alt="EMVI 4005" class="is-cover" loading="lazy" decoding="async"><span class="pcard__made">Made in Deutschland</span></div>
+<div class="pcard__body">
+<h3 class="pcard__code"><a href="/de/produkte/elektronik-sensoren/emvi-4005/">EMVI 4005</a></h3>
+<p class="pcard__name">Elektronischer Stromwandler für DC- und AC-Ströme bis 12.000 A</p>
+<div class="cluster"><span class="tag tag--red">Neu</span><span class="tag tag--line">Projektspezifisch</span></div>
+</div>
+<div class="pcard__foot">
+<div class="vmini vmini--none" aria-hidden="true"></div>
+<div class="pcard__actions">
+<button type="button" data-compare-toggle="emvi-4005" aria-pressed="false" aria-label="Vergleichen: EMVI 4005" title="Vergleichen"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 8h14M14 4l4 4-4 4M20 16H6M10 12l-4 4 4 4"/></svg></button>
+<button type="button" data-basket-add="emvi-4005" aria-label="In die Projektmappe: EMVI 4005" title="In die Projektmappe"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="4" width="14" height="17" rx="1"/><path d="M9 4V3h6v1M12 9.5v7M8.5 13h7"/></svg></button>
+</div>
+</div>
+</article><article class="pcard" data-pid="evba-06">
+<div class="pcard__stage"><img src="/img/mimg-2022__10__produkte_stand-alone_elektronik_pufferverstaerker_evba_006-623.webp" srcset="/img/mimg-2022__10__produkte_stand-alone_elektronik_pufferverstaerker_evba_006-320.webp 320w, /img/mimg-2022__10__produkte_stand-alone_elektronik_pufferverstaerker_evba_006-623.webp 623w" sizes="(max-width: 600px) 50vw, 240px" width="623" height="338" alt="EVBA 06" class="is-cover" loading="lazy" decoding="async"><span class="pcard__made">Made in Deutschland</span></div>
+<div class="pcard__body">
+<h3 class="pcard__code"><a href="/de/produkte/elektronik-sensoren/evba-06/">EVBA 06</a></h3>
+<p class="pcard__name">Pufferverstärker (Stand-alone-Elektronik)</p>
+<div class="cluster"><span class="tag tag--line">Projektspezifisch</span></div>
+</div>
+<div class="pcard__foot">
+<div class="vmini vmini--none" aria-hidden="true"></div>
+<div class="pcard__actions">
+<button type="button" data-compare-toggle="evba-06" aria-pressed="false" aria-label="Vergleichen: EVBA 06" title="Vergleichen"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 8h14M14 4l4 4-4 4M20 16H6M10 12l-4 4 4 4"/></svg></button>
+<button type="button" data-basket-add="evba-06" aria-label="In die Projektmappe: EVBA 06" title="In die Projektmappe"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="4" width="14" height="17" rx="1"/><path d="M9 4V3h6v1M12 9.5v7M8.5 13h7"/></svg></button>
+</div>
+</div>
+</article><article class="pcard" data-pid="evba-x06">
+<div class="pcard__stage"><img src="/img/mimg-2022__10__produkte_elektronische_spannungwandler_elektronischer_spannungswandler_evba_x06-623.webp" srcset="/img/mimg-2022__10__produkte_elektronische_spannungwandler_elektronischer_spannungswandler_evba_x06-320.webp 320w, /img/mimg-2022__10__produkte_elektronische_spannungwandler_elektronischer_spannungswandler_evba_x06-623.webp 623w" sizes="(max-width: 600px) 50vw, 240px" width="623" height="338" alt="EVBA x06" class="is-cover" loading="lazy" decoding="async"><span class="pcard__made">Made in Deutschland</span></div>
+<div class="pcard__body">
+<h3 class="pcard__code"><a href="/de/produkte/elektronik-sensoren/evba-x06/">EVBA x06</a></h3>
+<p class="pcard__name">Elektronischer Spannungswandler</p>
+<dl class="pcard__specs"><div><dt>Spannung Um</dt><dd>6–52 kV</dd></div><div><dt>Sekundärspannung</dt><dd>3,25/√3</dd></div><div><dt>Klassen</dt><dd>0,2</dd></div></dl>
+</div>
+<div class="pcard__foot">
+<div class="vmini" role="img" aria-label="Um 6–52 kV"><div class="vmini__bar"><span class="vmini__fill" style="left:33.7%;width:29.3%"></span></div><div class="vmini__labels"><span>6–52 kV</span></div></div>
+<div class="pcard__actions">
+<button type="button" data-compare-toggle="evba-x06" aria-pressed="false" aria-label="Vergleichen: EVBA x06" title="Vergleichen"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 8h14M14 4l4 4-4 4M20 16H6M10 12l-4 4 4 4"/></svg></button>
+<button type="button" data-basket-add="evba-x06" aria-label="In die Projektmappe: EVBA x06" title="In die Projektmappe"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="4" width="14" height="17" rx="1"/><path d="M9 4V3h6v1M12 9.5v7M8.5 13h7"/></svg></button>
+</div>
+</div>
+</article></div>
+<p class="sc-panel__more"><a class="btn btn--ghost" href="/de/produktfinder/?app=dc-measurement">Alle 7 im Produktfinder</a></p>
+</div><div class="sc-panel" id="gruppe-3" data-sc-panel="3">
+<h3 class="sc-panel__h"><span class="sc-n">3</span>Elektronische Wandler <small>6 Produkte</small></h3>
+<div class="pgrid pgrid--sector"><article class="pcard" data-pid="egiw-x45">
+<div class="pcard__stage"><span class="pvw"><svg class="pv" viewBox="-174 -118 288 216" style="--u:0.613" role="img" aria-label="Schemazeichnung: EGIW x45"><path class="pv-sh" d="M0 0L42 23L-58 82L-100 59Z"/><path class="k-t" d="M0 -100L39 -78L-61 -20L-100 -43Z"/><path class="k-f" d="M-100 58L-61 80L-61 -20L-100 -43Z"/><path class="k-r" d="M39 23L-61 80L-61 -20L39 -78Z"/><path class="pv-edge" d="M-98 -40L-62 -19"/><ellipse class="pv-led-g" cx="-88" cy="-14" rx="3" ry="2" transform="rotate(60 -88 -14)"/><ellipse class="pv-led-r" cx="-75" cy="-7" rx="3" ry="2" transform="rotate(60 -75 -7)"/><path class="pv-label" d="M-93 32L-68 46L-68 14L-93 0Z"/><path class="k-t" d="M-13 -94L22 -74L-48 -33L-82 -53Z"/><path class="k-f" d="M-82 -50L-48 -30L-48 -33L-82 -53Z"/><path class="k-r" d="M22 -70L-48 -30L-48 -33L22 -74Z"/><path class="m-s" d="M-44 -69L-44 -71A4 2 0 0 1 -36 -71L-36 -69A4 2 0 0 1 -44 -69Z"/><ellipse class="m-c" cx="-40" cy="-71" rx="4" ry="2"/><path class="pv-slot" d="M-43 -71L-37 -71"/><path class="m-s" d="M-34 -64L-34 -65A4 2 0 0 1 -26 -65L-26 -64A4 2 0 0 1 -34 -64Z"/><ellipse class="m-c" cx="-30" cy="-65" rx="4" ry="2"/><path class="pv-slot" d="M-34 -65L-27 -65"/><path class="m-s" d="M-24 -58L-24 -60A4 2 0 0 1 -17 -60L-17 -58A4 2 0 0 1 -24 -58Z"/><ellipse class="m-c" cx="-21" cy="-60" rx="4" ry="2"/><path class="pv-slot" d="M-24 -60L-17 -60"/></svg></span><span class="pcard__made">Made in Deutschland</span></div>
+<div class="pcard__body">
+<h3 class="pcard__code"><a href="/de/produkte/elektronik-sensoren/egiw-x45/">EGIW x45</a></h3>
+<p class="pcard__name">Elektronischer Spannungswandler mit Trennverstärker</p>
+<div class="cluster"><span class="tag tag--line">Projektspezifisch</span></div>
+</div>
+<div class="pcard__foot">
+<div class="vmini vmini--none" aria-hidden="true"></div>
+<div class="pcard__actions">
+<button type="button" data-compare-toggle="egiw-x45" aria-pressed="false" aria-label="Vergleichen: EGIW x45" title="Vergleichen"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 8h14M14 4l4 4-4 4M20 16H6M10 12l-4 4 4 4"/></svg></button>
+<button type="button" data-basket-add="egiw-x45" aria-label="In die Projektmappe: EGIW x45" title="In die Projektmappe"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="4" width="14" height="17" rx="1"/><path d="M9 4V3h6v1M12 9.5v7M8.5 13h7"/></svg></button>
+</div>
+</div>
+</article><article class="pcard" data-pid="egiw-x64">
+<div class="pcard__stage"><img src="/img/mimg-2022__10__produkte_elektronische_spannungwandler_elektronischer_spannungswandler_egiw_x64-623.webp" srcset="/img/mimg-2022__10__produkte_elektronische_spannungwandler_elektronischer_spannungswandler_egiw_x64-320.webp 320w, /img/mimg-2022__10__produkte_elektronische_spannungwandler_elektronischer_spannungswandler_egiw_x64-623.webp 623w" sizes="(max-width: 600px) 50vw, 240px" width="623" height="338" alt="EGIW x64" class="is-cover" loading="lazy" decoding="async"><span class="pcard__made">Made in Deutschland</span></div>
+<div class="pcard__body">
+<h3 class="pcard__code"><a href="/de/produkte/elektronik-sensoren/egiw-x64/">EGIW x64</a></h3>
+<p class="pcard__name">Elektronischer Spannungswandler</p>
+<dl class="pcard__specs"><div><dt>Spannung Um</dt><dd>12 / 24 / 36 / 52 kV</dd></div><div><dt>Sekundärspannung</dt><dd>3,25/√3</dd></div><div><dt>Klassen</dt><dd>0,5</dd></div></dl>
+</div>
+<div class="pcard__foot">
+<div class="vmini" role="img" aria-label="Um 12 / 24 / 36 / 52 kV"><div class="vmini__bar"><span class="vmini__fill" style="left:43.1%;width:19.9%"></span></div><div class="vmini__labels"><span>12–52 kV</span></div></div>
+<div class="pcard__actions">
+<button type="button" data-compare-toggle="egiw-x64" aria-pressed="false" aria-label="Vergleichen: EGIW x64" title="Vergleichen"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 8h14M14 4l4 4-4 4M20 16H6M10 12l-4 4 4 4"/></svg></button>
+<button type="button" data-basket-add="egiw-x64" aria-label="In die Projektmappe: EGIW x64" title="In die Projektmappe"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="4" width="14" height="17" rx="1"/><path d="M9 4V3h6v1M12 9.5v7M8.5 13h7"/></svg></button>
+</div>
+</div>
+</article><article class="pcard" data-pid="egiw-x85">
+<div class="pcard__stage"><img src="/img/mimg-2022__10__produkte_elektronische_spannungwandler_elektronischer_spannungswandler_egiw_x85-623.webp" srcset="/img/mimg-2022__10__produkte_elektronische_spannungwandler_elektronischer_spannungswandler_egiw_x85-320.webp 320w, /img/mimg-2022__10__produkte_elektronische_spannungwandler_elektronischer_spannungswandler_egiw_x85-623.webp 623w" sizes="(max-width: 600px) 50vw, 240px" width="623" height="338" alt="EGIW x85" class="is-cover" loading="lazy" decoding="async"><span class="pcard__made">Made in Deutschland</span></div>
+<div class="pcard__body">
+<h3 class="pcard__code"><a href="/de/produkte/elektronik-sensoren/egiw-x85/">EGIW x85</a></h3>
+<p class="pcard__name">Elektronischer Spannungswandler</p>
+<dl class="pcard__specs"><div><dt>Spannung Um</dt><dd>6–52 kV</dd></div><div><dt>Sekundärspannung</dt><dd>3,25/√3</dd></div><div><dt>Klassen</dt><dd>0,2</dd></div></dl>
+</div>
+<div class="pcard__foot">
+<div class="vmini" role="img" aria-label="Um 6–52 kV"><div class="vmini__bar"><span class="vmini__fill" style="left:33.7%;width:29.3%"></span></div><div class="vmini__labels"><span>6–52 kV</span></div></div>
+<div class="pcard__actions">
+<button type="button" data-compare-toggle="egiw-x85" aria-pressed="false" aria-label="Vergleichen: EGIW x85" title="Vergleichen"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 8h14M14 4l4 4-4 4M20 16H6M10 12l-4 4 4 4"/></svg></button>
+<button type="button" data-basket-add="egiw-x85" aria-label="In die Projektmappe: EGIW x85" title="In die Projektmappe"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="4" width="14" height="17" rx="1"/><path d="M9 4V3h6v1M12 9.5v7M8.5 13h7"/></svg></button>
+</div>
+</div>
+</article><article class="pcard" data-pid="emvi-7xx">
+<div class="pcard__stage"><img src="/img/mimg-2022__10__produkte_elektronische_stromwandler_elektronischer_stromwandler_emvi_7xx-623.webp" srcset="/img/mimg-2022__10__produkte_elektronische_stromwandler_elektronischer_stromwandler_emvi_7xx-320.webp 320w, /img/mimg-2022__10__produkte_elektronische_stromwandler_elektronischer_stromwandler_emvi_7xx-623.webp 623w" sizes="(max-width: 600px) 50vw, 240px" width="623" height="338" alt="EMVI 7xx" class="is-cover" loading="lazy" decoding="async"><span class="pcard__made">Made in Deutschland</span></div>
+<div class="pcard__body">
+<h3 class="pcard__code"><a href="/de/produkte/elektronik-sensoren/emvi-7xx/">EMVI 7xx</a></h3>
+<p class="pcard__name">Elektronischer Stromwandler</p>
+<dl class="pcard__specs"><div><dt>Primärstrom</dt><dd>3.500 A</dd></div><div><dt>Sekundärspannung</dt><dd>2,5</dd></div><div><dt>Klassen</dt><dd>0,1 / 0,2</dd></div></dl>
+</div>
+<div class="pcard__foot">
+<div class="vmini vmini--none" aria-hidden="true"></div>
+<div class="pcard__actions">
+<button type="button" data-compare-toggle="emvi-7xx" aria-pressed="false" aria-label="Vergleichen: EMVI 7xx" title="Vergleichen"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 8h14M14 4l4 4-4 4M20 16H6M10 12l-4 4 4 4"/></svg></button>
+<button type="button" data-basket-add="emvi-7xx" aria-label="In die Projektmappe: EMVI 7xx" title="In die Projektmappe"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="4" width="14" height="17" rx="1"/><path d="M9 4V3h6v1M12 9.5v7M8.5 13h7"/></svg></button>
+</div>
+</div>
+</article><article class="pcard" data-pid="emvi-4005">
+<div class="pcard__stage"><img src="/img/mimg-EMVI-260.webp" srcset="/img/mimg-EMVI-260.webp 260w" sizes="(max-width: 600px) 50vw, 240px" width="260" height="367" alt="EMVI 4005" class="is-cover" loading="lazy" decoding="async"><span class="pcard__made">Made in Deutschland</span></div>
+<div class="pcard__body">
+<h3 class="pcard__code"><a href="/de/produkte/elektronik-sensoren/emvi-4005/">EMVI 4005</a></h3>
+<p class="pcard__name">Elektronischer Stromwandler für DC- und AC-Ströme bis 12.000 A</p>
+<div class="cluster"><span class="tag tag--red">Neu</span><span class="tag tag--line">Projektspezifisch</span></div>
+</div>
+<div class="pcard__foot">
+<div class="vmini vmini--none" aria-hidden="true"></div>
+<div class="pcard__actions">
+<button type="button" data-compare-toggle="emvi-4005" aria-pressed="false" aria-label="Vergleichen: EMVI 4005" title="Vergleichen"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 8h14M14 4l4 4-4 4M20 16H6M10 12l-4 4 4 4"/></svg></button>
+<button type="button" data-basket-add="emvi-4005" aria-label="In die Projektmappe: EMVI 4005" title="In die Projektmappe"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="4" width="14" height="17" rx="1"/><path d="M9 4V3h6v1M12 9.5v7M8.5 13h7"/></svg></button>
+</div>
+</div>
+</article><article class="pcard" data-pid="evba-x06">
+<div class="pcard__stage"><img src="/img/mimg-2022__10__produkte_elektronische_spannungwandler_elektronischer_spannungswandler_evba_x06-623.webp" srcset="/img/mimg-2022__10__produkte_elektronische_spannungwandler_elektronischer_spannungswandler_evba_x06-320.webp 320w, /img/mimg-2022__10__produkte_elektronische_spannungwandler_elektronischer_spannungswandler_evba_x06-623.webp 623w" sizes="(max-width: 600px) 50vw, 240px" width="623" height="338" alt="EVBA x06" class="is-cover" loading="lazy" decoding="async"><span class="pcard__made">Made in Deutschland</span></div>
+<div class="pcard__body">
+<h3 class="pcard__code"><a href="/de/produkte/elektronik-sensoren/evba-x06/">EVBA x06</a></h3>
+<p class="pcard__name">Elektronischer Spannungswandler</p>
+<dl class="pcard__specs"><div><dt>Spannung Um</dt><dd>6–52 kV</dd></div><div><dt>Sekundärspannung</dt><dd>3,25/√3</dd></div><div><dt>Klassen</dt><dd>0,2</dd></div></dl>
+</div>
+<div class="pcard__foot">
+<div class="vmini" role="img" aria-label="Um 6–52 kV"><div class="vmini__bar"><span class="vmini__fill" style="left:33.7%;width:29.3%"></span></div><div class="vmini__labels"><span>6–52 kV</span></div></div>
+<div class="pcard__actions">
+<button type="button" data-compare-toggle="evba-x06" aria-pressed="false" aria-label="Vergleichen: EVBA x06" title="Vergleichen"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 8h14M14 4l4 4-4 4M20 16H6M10 12l-4 4 4 4"/></svg></button>
+<button type="button" data-basket-add="evba-x06" aria-label="In die Projektmappe: EVBA x06" title="In die Projektmappe"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="4" width="14" height="17" rx="1"/><path d="M9 4V3h6v1M12 9.5v7M8.5 13h7"/></svg></button>
+</div>
+</div>
+</article></div>
+<p class="sc-panel__more"><a class="btn btn--ghost" href="/de/produktfinder/?kindGroup=electronic">Alle 6 im Produktfinder</a></p>
+</div>
 </div>
 </section>
-<section class="section"><div class="wrap"><div class="section-head"><div class="stack" style="--s:.75rem"><h2>Aus der Praxis</h2></div></div><div class="news-grid"><a class="card" href="/de/news/uebersicht-hvdc-und-anwendungen/">
+<section class="section sc-proof"><div class="wrap"><div class="section-head"><div class="stack" style="--s:.75rem"><h2>Aus der Praxis</h2></div></div><div class="news-grid"><a class="card" href="/de/news/auszeichnung-zum-lieferanten-des-jahres-bei-den-hitachi-supplier-days-2024/">
+<div class="card__img card__img--small" style="--bgimg:url(/img/mimg-Ritz-Lieferanten-auszeichnung_Ausgeschnitten-1-288.webp)"><img src="/img/mimg-Ritz-Lieferanten-auszeichnung_Ausgeschnitten-1-288.webp" srcset="/img/mimg-Ritz-Lieferanten-auszeichnung_Ausgeschnitten-1-288.webp 288w" sizes="288px" width="288" height="234" alt="" loading="lazy" decoding="async"></div>
+<div class="card__meta"><time datetime="2024-06-19">19. Juni 2024</time><span>Referenzen</span></div>
+<h3>Auszeichnung zum Lieferanten des Jahres bei den Hitachi Supplier Days 2024</h3>
+<p>Ritz Instrument Transformers wurde im April von Hitachi Energy Schweden zum Technologielieferanten des Jahres ernannt. Die kontinuierliche …</p>
+</a><a class="card" href="/de/news/25-jahre-hochgenaue-dc-messung/">
+<div class="card__img card__img--small" style="--bgimg:url(/img/mimg-ritz-emvi_01-212x300-1-212.webp)"><img src="/img/mimg-ritz-emvi_01-212x300-1-212.webp" srcset="/img/mimg-ritz-emvi_01-212x300-1-212.webp 212w" sizes="212px" width="212" height="300" alt="" loading="lazy" decoding="async"></div>
+<div class="card__meta"><time datetime="2022-08-19">19. August 2022</time><span>Produkte &amp; Technik</span></div>
+<h3>25 Jahre hochgenaue DC-Messung</h3>
+<p>RITZ erneut von seinem schwedischen Partner in HGÜ-Projekten beauftragt: 96 DC-Messsysteme Seit fast 25 Jahren ermöglicht die …</p>
+</a><a class="card" href="/de/news/uebersicht-hvdc-und-anwendungen/">
 <div class="card__img"><span class="nc nc--dc" style="--kl:4" aria-hidden="true"><svg class="nc__art nc__art--edge" viewBox="0 0 200 100" style="aspect-ratio:200 / 100" aria-hidden="true" focusable="false">
 <path class="nc__l" d="M4 50L6 45.4L8 41.4L10 38.5L12 37.1L14 37.4L16 39.3L18 42.6L20 46.9L22 51.6L24 56L26 59.7L28 62.2L30 63L32 62.2L34 59.7L36 56L38 51.6L40 46.9L42 42.6L44 39.3L46 37.4L48 37.1L50 38.5L52 41.4L54 45.4L56 50"/>
 <rect class="nc__l" x="62" y="26" width="48" height="48"/><path class="nc__t" d="M62 74 110 26"/>
@@ -407,16 +643,6 @@
 <div class="card__meta"><time datetime="2026-02-16">16. Februar 2026</time><span>Produkte &amp; Technik</span></div>
 <h3>Übersicht HVDC und Anwendungen</h3>
 <p>Wir bieten verschiedene Lösungen zu HVDC Anwendungen. Produktwissen_kompakt_HVDC</p>
-</a><a class="card" href="/de/news/emvi-produktneuheit/">
-<div class="card__img card__img--small" style="--bgimg:url(/img/mimg-EMVI-260.webp)"><img src="/img/mimg-EMVI-260.webp" srcset="/img/mimg-EMVI-260.webp 260w" sizes="260px" width="260" height="367" alt="" loading="lazy" decoding="async"></div>
-<div class="card__meta"><time datetime="2026-02-16">16. Februar 2026</time><span>Produkte &amp; Technik</span></div>
-<h3>EMVI Produktneuheit</h3>
-<p>ELEKTRONISCHER STROMWANDLER EMVI 4005 HOCHGENAUE MESSUNG VON DC- UND AC-STRÖMEN ANWENDUNG In Mittelspannungsanwendungen wie SVC-Anlagen, Back-to-Back …</p>
-</a><a class="card" href="/de/news/auszeichnung-zum-lieferanten-des-jahres-bei-den-hitachi-supplier-days-2024/">
-<div class="card__img card__img--small" style="--bgimg:url(/img/mimg-Ritz-Lieferanten-auszeichnung_Ausgeschnitten-1-288.webp)"><img src="/img/mimg-Ritz-Lieferanten-auszeichnung_Ausgeschnitten-1-288.webp" srcset="/img/mimg-Ritz-Lieferanten-auszeichnung_Ausgeschnitten-1-288.webp 288w" sizes="288px" width="288" height="234" alt="" loading="lazy" decoding="async"></div>
-<div class="card__meta"><time datetime="2024-06-19">19. Juni 2024</time><span>Referenzen</span></div>
-<h3>Auszeichnung zum Lieferanten des Jahres bei den Hitachi Supplier Days 2024</h3>
-<p>Ritz Instrument Transformers wurde im April von Hitachi Energy Schweden zum Technologielieferanten des Jahres ernannt. Die kontinuierliche …</p>
 </a></div></div></section>
 <section class="section section--tight"><div class="wrap"><div class="section-head"><div class="stack" style="--s:.75rem"><h2>Unterlagen</h2></div></div><div class="docs docs--cols"><a class="doc" href="/dokumente/w/J2-DE_EMVI-4005-Word-DATENBLATT_2Seiter.pdf" target="_blank" rel="noopener" data-doc-id="df590fa30">
 <span class="doc__icon" aria-hidden="true">PDF</span>
@@ -459,6 +685,10 @@
 <span class="line-mail"><a href="mailto:kay.leschick@ritz-international.com"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m3 7 9 6 9-6"/></svg><span>kay.leschick@ritz-international.com</span></a><button class="copy" type="button" data-copy="kay.leschick@ritz-international.com" aria-label="Kopieren: kay.leschick@ritz-international.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="15" height="15"><rect x="8" y="8" width="12" height="12" rx="1"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg></button></span>
 </div>
 </article></div></div></section>
+<section class="section sc-more" aria-labelledby="sc-more-t"><div class="wrap">
+<h2 class="h3" id="sc-more-t">Weitere Anwendungen</h2>
+<ul class="sc-others"><li><a class="sc-other" href="/de/anwendungen/energieversorgung-netze/"><span class="sc-other__img"><img src="/img/mimg-2022__06__image_empowering_the_future-640.webp" srcset="/img/mimg-2022__06__image_empowering_the_future-320.webp 320w, /img/mimg-2022__06__image_empowering_the_future-640.webp 640w" sizes="calc(120px * 1.40)" width="640" height="458" alt="" loading="lazy" decoding="async"></span><span class="sc-other__b"><b>Energieversorgung und Netze</b><span>Abrechnungsmessung, Schutz und Netzqualität vom Ortsnetz bis zur Höchstspannung.</span></span></a></li><li><a class="sc-other" href="/de/anwendungen/schaltanlagenbau/"><span class="sc-other__img"><img src="/img/mimg-2022__07__unternehmen_qualitaetsmanagement_wandler_pruefung-408.webp" srcset="/img/mimg-2022__07__unternehmen_qualitaetsmanagement_wandler_pruefung-320.webp 320w, /img/mimg-2022__07__unternehmen_qualitaetsmanagement_wandler_pruefung-408.webp 408w" sizes="120px" width="408" height="408" alt="" loading="lazy" decoding="async"></span><span class="sc-other__b"><b>Schaltanlagenbau</b><span>Wandler nach DIN 42600, metallgekapselte Ausführungen und Sensoren für Ihre Anlagen.</span></span></a></li><li><a class="sc-other" href="/de/anwendungen/industrie-infrastruktur/"><span class="sc-other__img"><img src="/img/mimg-Kundenreferenz-SIS-Projekt-BSW-3-640.webp" srcset="/img/mimg-Kundenreferenz-SIS-Projekt-BSW-3-320.webp 320w, /img/mimg-Kundenreferenz-SIS-Projekt-BSW-3-640.webp 640w" sizes="calc(120px * 1.33)" width="640" height="480" alt="" loading="lazy" decoding="async"></span><span class="sc-other__b"><b>Industrie und Infrastruktur</b><span>Hohe Ströme, raue Umgebungen und Gleichstrom – von Stahlwerk bis Rechenzentrum.</span></span></a></li><li><a class="sc-other" href="/de/anwendungen/bahntechnik/"><span class="sc-other__img"><img src="/img/mimg-2022__07__sonderwandler_bahnwandler_gsefb-623.webp" srcset="/img/mimg-2022__07__sonderwandler_bahnwandler_gsefb-320.webp 320w, /img/mimg-2022__07__sonderwandler_bahnwandler_gsefb-623.webp 623w" sizes="calc(120px * 1.84)" width="623" height="338" alt="" loading="lazy" decoding="async"></span><span class="sc-other__b"><b>Bahntechnik</b><span>Wandler für Schienenfahrzeuge und Bahnstromanlagen – nach EN 50463 und TSI.</span></span></a></li><li><a class="sc-other" href="/de/anwendungen/kraftwerke-generatoren/"><span class="sc-other__img"><img src="/img/mimg-IRBT-1-640.webp" srcset="/img/mimg-IRBT-1-320.webp 320w, /img/mimg-IRBT-1-640.webp 640w" sizes="calc(120px * 1.67)" width="640" height="383" alt="" loading="lazy" decoding="async"></span><span class="sc-other__b"><b>Kraftwerke und Generatoren</b><span>Generatorwandler bis 50.000 A, Eigenversorgung und Hochspannung.</span></span></a></li><li><a class="sc-other" href="/de/anwendungen/mess-pruef-zaehlertechnik/"><span class="sc-other__img"><img src="/img/mimg-2022__07__unternehmen_qualitaetsmanagement_schienen_pruefung-408.webp" srcset="/img/mimg-2022__07__unternehmen_qualitaetsmanagement_schienen_pruefung-320.webp 320w, /img/mimg-2022__07__unternehmen_qualitaetsmanagement_schienen_pruefung-408.webp 408w" sizes="120px" width="408" height="408" alt="" loading="lazy" decoding="async"></span><span class="sc-other__b"><b>Mess-, Prüf- und Zählertechnik</b><span>Beglaubigungsfähige Wandler, Laborwandler und Zubehör für den Zählerplatz.</span></span></a></li></ul>
+</div></section></div>
 </main>
 <footer class="ftr">
 <div class="wrap">
