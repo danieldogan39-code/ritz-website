@@ -91,6 +91,26 @@ export const MAP_STORIES = [
   { news: 'kundenreferenz-sis-projekt-bsw', cat: 'case', lat: 48.59408950805664, lng: 7.822681903839111 },
 ];
 
+// Titelkarten der Beiträge ohne Foto (src/views/newscover.js): Schlagwort (kw, Zeilen mit \n), Unterzeile je Sprache,
+// Motiv (ring: Ringkernwandler als Maßzeichnung, block: metallgekapselter Blockwandler, dc: Stromrichter-Schaltzeichen, doc: Schreiben mit Siegel,
+// cal: Kalenderblatt mit dem Datum, map: Punktkarte mit Ort at = [Breite, Länge]).
+export const NEWS_COVERS = {
+  'kundenmitteilung-zu-aktuellen-entwicklungen-im-aussenwirtschaftsbereich-sowie-zur-eu-verordnung-eu-2026-2133': {
+    kw: '(EU)\n2026/2133', motif: 'doc',
+    sub: { de: 'Kundenmitteilung', en: 'Customer letter', fr: 'Lettre aux clients', hu: 'Ügyféltájékoztató', es: 'Carta a los clientes' },
+  },
+  'ritz-auf-der-gritec-energy-conference': { kw: 'GRITEC', sub: 'Energy Conference', motif: 'cal' },
+  'uebersicht-hvdc-und-anwendungen': {
+    kw: 'HVDC', motif: 'dc',
+    sub: { de: 'Hochspannungs-Gleichstrom-Übertragung', en: 'High-voltage direct current', fr: 'Courant continu à haute tension', hu: 'Nagyfeszültségű egyenáramú átvitel', es: 'Corriente continua en alta tensión' },
+  },
+  'konstruktion-neues-hochspannungswerk': { kw: 'Waynesboro', sub: 'Georgia, USA', motif: 'map', at: [33.0896, -82.0157] },
+  'neue-produkte-gbmw-gbmei': {
+    kw: 'GBMW\nGBMEI', motif: 'block',
+    sub: { de: 'Neue Produkte', en: 'New products', fr: 'Nouveaux produits', hu: 'Új termékek', es: 'Nuevos productos' },
+  },
+};
+
 export const LOC_IMG = {
   hamburg: 'mimg/2022__07__unternehmen_historie_1.webp', kirchaich: 'mimg/Luftbild_Kirchaich_2014_klein.webp', dresden: 'mimg/image5.webp',
   wirges: 'mimg/image4.webp', kecskemet: 'mimg/image14.webp', shanghai: 'mimg/image12.webp', lavonia: 'mimg/image13.webp', waynesboro: 'mimg/image17.webp',

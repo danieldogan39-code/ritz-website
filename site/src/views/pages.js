@@ -9,6 +9,7 @@ import { SECTOR_LINKS, HISTORY_IMG, personImg, REFERENCE_IMG, REFERENCE_DOC, REF
 import { filterProducts, parseQuery, productCard, imgFit } from '../lib/product.js';
 import { projectLL, locAddress } from '../lib/geo.js';
 import { netMapBlock } from './netmap.js';
+import { newsCover } from './newscover.js';
 import { sortDocs, peopleFor, countryOptions } from './products.js';
 
 const docByFile = (ctx, f) => ctx.data.docs.find((d) => d.file === f);
@@ -531,7 +532,7 @@ export function articlePage(ctx, n) {
     <div>
       <header class="stack mb" style="--s:.8rem"><div class="card__meta"><time datetime="${n.date}">${esc(fmtDate(n.date, lang))}</time><span>${esc(t.lbl.newsCat[n.cat])}</span></div><h1 class="h2${/[^\s\-–/]{18,}/.test(v.title) ? ' lw' : ''}"${la}>${esc(v.title)}</h1></header>
       ${cl !== lang ? `<p class="notice small">${esc(tpl(t.ui.untranslated, { lang: langName }))}</p>` : ''}
-      ${heroImg ? `<figure class="article__hero">${imgTag(ctx, heroImg, { alt: '', sizes: '(max-width: 900px) 100vw, 760px', eager: true, max: 1600, lowres: 600 })}</figure>` : ''}
+      ${heroImg ? `<figure class="article__hero">${imgTag(ctx, heroImg, { alt: '', sizes: '(max-width: 900px) 100vw, 760px', eager: true, max: 1600, lowres: 600 })}</figure>` : !n.image && !(n.images || []).length ? `<figure class="article__hero article__hero--cover" aria-hidden="true">${newsCover(ctx, n, { hero: true })}</figure>` : ''}
       <div class="prose"${la}>${body}</div>
       ${docs.length ? `<h2 class="h4 mt-xl">${esc(N.attachments)}</h2><div class="docs">${docs.map((d) => docRow(ctx, d)).join('')}</div>` : ''}
     </div>
