@@ -3,6 +3,7 @@
 // wo vorhanden, sonst die Kenndaten des Produktindex.
 
 import { makeModel, visibleOptions, visibleValues, prune, isText, isMulti, missingRequired, selectionLines } from './cfgcore.js';
+import { cmpCode } from './util.js';
 
 const GROUP = {
   ct: ['ct', 'electronic-ct', 'current-sensor', 'combi-sensor'],
@@ -211,7 +212,7 @@ export function matchProducts(req, products, cfgAll = null, { limit = 3 } = {}) 
   const res = products.map((p) => evaluate(req, p, cfgAll?.[p.id]));
   const lvWanted = req.um != null && req.um <= 1.2;
   const area = (p) => (lvWanted ? (p.area === 'niederspannung' ? 0 : 1) : req.um >= 3.6 ? (p.area === 'niederspannung' ? 1 : 0) : 0);
-  res.sort((a, b) => (a.unsuitable - b.unsuitable) || (b.score - a.score) || (area(a.p) - area(b.p)) || ((a.p.weeks?.[0] ?? 99) - (b.p.weeks?.[0] ?? 99)) || ((b.p.cfg ? 1 : 0) - (a.p.cfg ? 1 : 0)) || a.p.code.localeCompare(b.p.code, 'de', { numeric: true }));
+  res.sort((a, b) => (a.unsuitable - b.unsuitable) || (b.score - a.score) || (area(a.p) - area(b.p)) || ((a.p.weeks?.[0] ?? 99) - (b.p.weeks?.[0] ?? 99)) || ((b.p.cfg ? 1 : 0) - (a.p.cfg ? 1 : 0)) || cmpCode(a.p.code, b.p.code));
   const ok = res.filter((r) => !r.unsuitable && r.score > 0.35);
   return { best: ok.slice(0, limit), fallback: ok.length ? null : res.find((r) => r.score > 0) || null, total: ok.length };
 }

@@ -41,9 +41,12 @@ export async function initFinder(root) {
     classes: ['0.1', '0.2', '0.2S', '0.5', '0.5S', '1', '3', '5P', '10P', 'PX', '3P', '6P'], isr: ['1', '5'], freq: ['16.7', '50', '60', 'broad'],
   };
   const OPEN = ['area', 'kindGroup', 'install', 'um', 'app'];
+  // Karte je Produkt nur einmal erzeugen (Schemazeichnungen entstehen im Browser), bei jeder Filteränderung wiederverwenden
+  const cards = new WeakMap();
+  const cardOf = (p) => { let h = cards.get(p); if (h === undefined) cards.set(p, (h = productCard(ctx, p))); return h; };
 
   function counts(f) {
-    const base = filterProducts(products, q, t, { except: f });
+    const base = filterProducts(products, q, t, { except: f, sort: false });
     const c = {};
     for (const p of base) for (const v of new Set(facetValues(p, f))) c[v] = (c[v] || 0) + 1;
     return c;
@@ -98,7 +101,7 @@ export async function initFinder(root) {
       more.innerHTML = '';
       return;
     }
-    res.innerHTML = list.slice(0, shown).map((p) => productCard(ctx, p)).join('');
+    res.innerHTML = list.slice(0, shown).map(cardOf).join('');
     more.innerHTML = list.length > shown ? `<button class="btn btn--ghost" type="button" data-show-more>${esc(tpl(F.showMore, { n: Math.min(PAGE, list.length - shown) }))}</button>` : '';
     initCompareToggles(res);
   }

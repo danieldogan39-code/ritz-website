@@ -22,7 +22,7 @@ export function initAppBar() {
     full = Math.max(full, h);
     root.classList.toggle('is-typing', !!typing(document.activeElement) && h < full - 120);
   };
-  update();
+  requestAnimationFrame(update); // erst im nächsten Bild messen (sonst erzwungenes Layout mitten im Start)
   vv?.addEventListener('resize', update);
   addEventListener('resize', update);
   document.addEventListener('focusin', () => { update(); setTimeout(update, 400); });
@@ -112,9 +112,10 @@ export function initHeader() {
   lb?.addEventListener('click', () => { const o = lm.hidden; lm.hidden = !o; lb.setAttribute('aria-expanded', String(o)); if (o) lm.querySelector('a')?.focus(); });
   document.addEventListener('click', (e) => { if (lm && !lm.hidden && !e.target.closest('[data-lang]')) { lm.hidden = true; lb.setAttribute('aria-expanded', 'false'); } });
   lm?.addEventListener('keydown', (e) => { if (e.key === 'Escape') { lm.hidden = true; lb.setAttribute('aria-expanded', 'false'); lb.focus(); } });
-  // Schatten beim Scrollen
+  // Schatten beim Scrollen. Den Ausgangszustand erst im nächsten Bild lesen: scrollY erzwingt sonst mitten im Start
+  // ein vollständiges Layout der Seite, das nach den übrigen Startarbeiten noch einmal anfällt.
   const onScroll = () => hdr.classList.toggle('is-scrolled', window.scrollY > 8);
-  window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true }); requestAnimationFrame(onScroll);
 }
 
 // Handy-Menü. Die Vorschau (SPA) ersetzt das Menü bei jedem Seitenwechsel: das Akkordeon hängt am jeweiligen Element,

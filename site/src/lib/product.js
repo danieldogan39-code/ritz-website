@@ -1,5 +1,5 @@
 // Produktlogik (isomorph): Bezeichnung, Facetten, Karten, Spannungsbalken, Gruppen
-import { esc, icon, fmtKv, fmtRange, fmtList, fmtNum, axisPos, imgTag, productGlyph, nbsp, UM_STEPS, fmtCls, fmtClasses } from './util.js';
+import { esc, icon, fmtKv, fmtRange, fmtList, fmtNum, axisPos, imgTag, productGlyph, nbsp, UM_STEPS, fmtCls, fmtClasses, cmpCode } from './util.js';
 import { dataLang } from './routes.js';
 import { productVisual } from './visual.js';
 import { dimRows } from './dims.js';
@@ -183,29 +183,45 @@ export function facetValues(p, f) {
   }
 }
 
+// Suche und Finder vergleichen bei jedem Tastendruck alle Produkte: die normalisierte Anfrage einmal je Anfrage, die
+// normalisierten Texte eines Produkts einmal je Produkt (und Sprache) berechnen – das Ergebnis bleibt dasselbe.
+let lastQ = null;
+function queryParts(q) {
+  if (lastQ?.q !== q) {
+    const qs = norm(q).trim();
+    lastQ = { q, qs, qc: compact(q), kv: qs.match(/^(\d+(?:[.,]\d+)?)\s*kv$/), words: qs.split(/\s+/).filter(Boolean) };
+  }
+  return lastQ;
+}
+const MT = new WeakMap();
+function productTexts(p) {
+  let d = MT.get(p);
+  if (!d) { d = { code: compact(p.code), alias: (p.aliases || []).map(compact), hay: {} }; MT.set(p, d); }
+  return d;
+}
 export function matchText(p, q, t) {
   if (!q) return 1;
-  const qs = norm(q).trim();
+  const { qs, qc, kv, words } = queryParts(q);
   if (!qs) return 1;
-  const qc = compact(q);
-  const code = compact(p.code);
-  const alias = (p.aliases || []).map(compact);
+  const d = productTexts(p);
+  const code = d.code;
+  const alias = d.alias;
   if (code === qc || alias.includes(qc)) return 100;
   if (qc.length >= 2 && (code.startsWith(qc) || alias.some((a) => a.startsWith(qc)))) return 60;
   // Spannung "24 kV" / "24kv"
-  const kv = qs.match(/^(\d+(?:[.,]\d+)?)\s*kv$/);
   if (kv) {
     const v = parseFloat(kv[1].replace(',', '.'));
     return (p.um || []).some((u) => Math.abs(u - v) < 0.01) ? 50 : 0;
   }
-  const hay = norm([p.code, ...(p.aliases || []), p.name?.de, p.name?.en, t ? descriptor(p, t, t.meta.lang) : '', p.search || ''].join(' '));
-  const words = qs.split(/\s+/).filter(Boolean);
+  const lk = t ? t.meta.lang : '';
+  const hay = (d.hay[lk] ??= norm([p.code, ...(p.aliases || []), p.name?.de, p.name?.en, t ? descriptor(p, t, t.meta.lang) : '', p.search || ''].join(' ')));
   if (words.every((w) => hay.includes(w))) return 20 + (code.includes(qc) ? 10 : 0);
   if (code.includes(qc) && qc.length >= 3) return 15;
   return 0;
 }
 
-export function filterProducts(products, q, t, { except = null } = {}) {
+// sort: false liefert die Treffer unsortiert (für Trefferzahlen, bei denen die Reihenfolge keine Rolle spielt)
+export function filterProducts(products, q, t, { except = null, sort: sorted = true } = {}) {
   const um = q.um ? parseFloat(q.um) : null;
   const ipr = q.ipr ? parseFloat(q.ipr) : null;
   const weeks = q.weeks ? parseFloat(q.weeks) : null;
@@ -228,8 +244,9 @@ export function filterProducts(products, q, t, { except = null } = {}) {
     if (!score) continue;
     res.push([p, score]);
   }
+  if (!sorted) return res.map((x) => x[0]);
   const sort = q.sort || (q.q ? 'relevance' : 'code');
-  const byCode = (a, b) => a[0].code.localeCompare(b[0].code, 'de', { numeric: true });
+  const byCode = (a, b) => cmpCode(a[0].code, b[0].code);
   if (sort === 'relevance') res.sort((a, b) => b[1] - a[1] || byCode(a, b));
   else if (sort === 'um') res.sort((a, b) => (Math.min(...(a[0].um.length ? a[0].um : [1e9])) - Math.min(...(b[0].um.length ? b[0].um : [1e9]))) || byCode(a, b));
   else if (sort === 'weeks') res.sort((a, b) => ((a[0].weeks?.[0] ?? 99) - (b[0].weeks?.[0] ?? 99)) || byCode(a, b));

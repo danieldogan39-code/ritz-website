@@ -213,7 +213,7 @@ p { margin: 0; text-wrap: pretty; }
 .prose h3 { font-size: var(--step-2); margin-top: 1.4em; }
 .prose ul, .prose ol { padding-left: 1.2em; }
 .prose li + li { margin-top: .35em; }
-.prose a { color: var(--red-ink); }
+.prose a { color: var(--red-ink); overflow-wrap: anywhere; } /* lange Dateinamen/Adressen brechen statt die Seite zu verbreitern */
 .prose img { border-radius: var(--radius); margin-block: 1.5em; }
 .prose table { width: 100%; font-size: var(--step--1); }
 .prose td, .prose th { border-bottom: 1px solid var(--line); padding: .5em .6em; text-align: left; vertical-align: top; }
@@ -668,6 +668,14 @@ p { margin: 0; text-wrap: pretty; }
 .plist .pcard__made { left: 0; right: 0; top: auto; bottom: 0; padding: .18rem .3rem; overflow: hidden; font-size: .64rem; text-align: center; text-overflow: ellipsis; white-space: nowrap; background: rgb(255 255 255 / .88); }
 .plist .pcard__foot { padding: 14px 16px; flex-direction: column; align-items: stretch; }
 .plist { grid-template-columns: minmax(0, 1fr); }
+/* Lange Produktlisten (Bereichsseiten mit bis zu rund 200 Karten, Produktfinder): Karten außerhalb des Bildschirms
+   rendert der Browser erst beim Heranscrollen – das spart beim Laden den Großteil der Stil- und Layoutarbeit. Die
+   Platzhalterhöhe entspricht etwa einer Karte, nach dem ersten Zeichnen merkt er sich die echte (auto). */
+.pgrid--long > .pcard { content-visibility: auto; contain-intrinsic-block-size: auto 410px; }
+.plist > .pcard { contain-intrinsic-block-size: auto 120px; }
+/* „Zurück“ oder Neuladen: Der Browser stellt die Scrollposition wieder her und braucht dafür die echten Höhen
+   (Klasse aus dem Kopfskript, siehe build.mjs) */
+.nav-restore .pgrid--long > .pcard { content-visibility: visible; }
 @media (max-width: 600px) {
   .pgrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .pcard__body { padding: 10px 12px 8px; }
@@ -675,6 +683,8 @@ p { margin: 0; text-wrap: pretty; }
   .pcard__code { font-size: 1rem; }
   .pcard__specs { display: none; }
   .plist { grid-template-columns: minmax(0, 1fr); } /* sonst gewinnt die zweispaltige Kachelansicht darüber */
+  .pgrid--long > .pcard { contain-intrinsic-block-size: auto 330px; }
+  .plist > .pcard { contain-intrinsic-block-size: auto 185px; }
   .plist .pcard { grid-template-columns: 96px minmax(0, 1fr); align-items: start; }
   .plist .pcard__stage { height: 96px; min-height: 0; }
   .plist .pcard__made { font-size: .56rem; letter-spacing: 0; }

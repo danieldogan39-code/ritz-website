@@ -25,9 +25,9 @@ export function sectorsPage(ctx) {
   const S = t.pages.sectors;
   return `${phead(ctx, { title: S.h1, lead: S.lead, image: 'mimg/4-Konen-Adapter-in-Anlage-1.webp', figure: true, crumbs: [[S.title]] })}
 <section class="section section--tight"><div class="wrap">
-  <div class="scards">${SECTORS.map((s) => {
+  <div class="scards">${SECTORS.map((s, i) => {
     const it = S.items[s];
-    return `<a class="scard" href="${href('sector', { sector: s })}"><span class="scard__img">${imgTag(ctx, SECTOR_IMG[s], { alt: '', sizes: '(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw', max: 960 })}</span><span class="scard__body"><strong>${esc(it.title)}</strong><span>${esc(it.short)}</span></span></a>`;
+    return `<a class="scard" href="${href('sector', { sector: s })}"><span class="scard__img">${imgTag(ctx, SECTOR_IMG[s], { alt: '', sizes: '(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw', max: 960, soon: i === 0 })}</span><span class="scard__body"><strong>${esc(it.title)}</strong><span>${esc(it.short)}</span></span></a>`;
   }).join('')}
     <div class="scard scard--cta"><h2 class="h3">${esc(t.pages.home.ctaTitle)}</h2><p>${esc(t.pages.home.ctaText)}</p><div class="cluster"><a class="btn btn--light" href="${href('inquiry')}">${esc(t.pages.home.ctaBtn)}</a><a class="btn btn--ghost-light" href="${href('contact')}">${esc(t.nav.contact)}</a></div></div>
   </div>
@@ -247,7 +247,7 @@ export function referencesPage(ctx) {
     const doc = REFERENCE_DOC[i] && docIn(ctx, docByFile(ctx, REFERENCE_DOC[i]));
     const n = REFERENCE_NEWS[i] && newsByPrefix(ctx, REFERENCE_NEWS[i]);
     return `<article class="ref${i % 2 ? ' ref--flip' : ''}">
-      <div class="ref__img">${ctx.img[REFERENCE_IMG[i]] ? imgTag(ctx, REFERENCE_IMG[i], { alt: '', sizes: '(max-width: 900px) 100vw, 40vw', max: 960, cls: imgFit(ctx, REFERENCE_IMG[i]), lowres: 500 }) : ''}</div>
+      <div class="ref__img">${ctx.img[REFERENCE_IMG[i]] ? imgTag(ctx, REFERENCE_IMG[i], { alt: '', sizes: '(max-width: 900px) 100vw, 40vw', max: 960, cls: imgFit(ctx, REFERENCE_IMG[i]), lowres: 500, soon: i === 0 }) : ''}</div>
       <div class="ref__body stack" style="--s:.8rem"><span class="area__kv">${esc(who)}</span><h2 class="h3">${esc(what)}</h2><p>${esc(text)}</p>
         <div class="cluster">${doc ? `<a class="btn btn--ghost btn--small" ${ctx.docAttrs(doc)}>${ctx.docHref(doc) ? `${icon('download')}PDF` : `${icon('mail')}${esc(t.downloads.req.doc)}`}</a>` : ''}${n ? `<a class="link" href="${href('article', { slug: ctx.newsSlug(n) })}">${esc(t.ui.readArticle)}</a>` : ''}</div>
       </div>
@@ -403,7 +403,7 @@ export function newsPage(ctx) {
   <div class="nx__filter" role="group" aria-label="${esc(N.filterLabel)}"><button class="chip is-on" type="button" data-news-cat="" aria-pressed="true">${esc(N.filterAll)}</button>${cats.map((c) => `<button class="chip" type="button" data-news-cat="${c}" aria-pressed="false">${esc(t.lbl.newsCat[c])}</button>`).join('')}</div>
   <div class="nx__feat" data-news-feat>
     <h2 class="vh">${esc(N.featured)}</h2>
-    <div class="news-grid news-grid--feat">${feat.map((n) => newsCard(ctx, n, { excerpt: false })).join('')}</div>
+    <div class="news-grid news-grid--feat">${feat.map((n, i) => newsCard(ctx, n, { excerpt: false, soon: i === 0 })).join('')}</div>
   </div>
   ${years.map((y) => `<section class="nx__year" data-year="${y}" aria-labelledby="ny-${y}"><h2 class="nx__y" id="ny-${y}">${y}</h2><ul class="nl nl--compact">${all.filter((n) => n.date.startsWith(y)).map(row).join('')}</ul></section>`).join('')}
 </div></section>`;

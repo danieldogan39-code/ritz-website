@@ -1,36 +1,57 @@
 // Globale Suche (Overlay + Suchseite)
 import { $, $$, getIndex, getT, getX, getData, clientCtx, debounce, CFG, handoff } from './core.js';
-import { esc, icon, imgTag, productGlyph, tpl } from '../lib/util.js';
+import { esc, icon, imgTag, productGlyph, tpl, cmpCode } from '../lib/util.js';
 import { matchText, descriptor, imgFit, productThumb } from '../lib/product.js';
 import { docVisible, dedupeCopies, docTitleFor } from '../lib/doclang.js';
 
 const norm = (s) => String(s || '').toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '').replace(/ß/g, 'ss');
+// Bei jedem Tastendruck werden alle Seiten, Meldungen und Dokumente durchsucht: normalisierte Titel und Texte je
+// Eintrag (und Sprache) nur einmal berechnen, ebenso die Liste der in dieser Sprache sichtbaren Dokumente.
+const NT = new WeakMap();
+const normOf = (o, lang, mk) => {
+  let v = NT.get(o);
+  if (!v || v.l !== lang) { const [title, text] = mk(); v = { l: lang, tt: norm(title), tx: norm(text) }; NT.set(o, v); }
+  return v;
+};
+let visDocs = null;
+const visibleDocs = (docs, lang) => {
+  if (visDocs?.docs !== docs || visDocs.lang !== lang) visDocs = { docs, lang, list: dedupeCopies(docs.filter((d) => docVisible(d, lang))) };
+  return visDocs.list;
+};
 
 async function searchAll(q) {
   const [idx, t, ctx, pages, docs] = await Promise.all([getIndex(), getT(), clientCtx(), getData('pages-' + CFG.lang).catch(() => []), getData('docs').catch(() => [])]);
   const qs = norm(q).trim();
   if (!qs) return { products: [], pages: [], docs: [], news: [], ctx, t };
   const words = qs.split(/\s+/);
-  const prods = idx.products.map((p) => [p, matchText(p, q, t)]).filter((x) => x[1] > 0).sort((a, b) => b[1] - a[1] || a[0].code.localeCompare(b[0].code, 'de', { numeric: true })).map((x) => x[0]);
-  const scoreText = (title, text) => {
-    const tt = norm(title), tx = norm(text);
+  const prods = idx.products.map((p) => [p, matchText(p, q, t)]).filter((x) => x[1] > 0).sort((a, b) => b[1] - a[1] || cmpCode(a[0].code, b[0].code)).map((x) => x[0]);
+  const scoreText = ({ tt, tx }) => {
     if (!words.every((w) => tt.includes(w) || tx.includes(w))) return 0;
     return (words.every((w) => tt.includes(w)) ? 10 : 0) + (tt.startsWith(qs) ? 5 : 0) + 1;
   };
-  const pageHits = pages.filter((p) => p.k !== 'news').map((p) => [p, scoreText(p.t, p.x)]).filter((x) => x[1]).sort((a, b) => b[1] - a[1]).map((x) => x[0]);
-  const newsHits = pages.filter((p) => p.k === 'news').map((p) => [p, scoreText(p.t, p.x)]).filter((x) => x[1]).sort((a, b) => b[1] - a[1]).map((x) => x[0]);
+  const lang = CFG.lang;
+  const pageScore = (p) => scoreText(normOf(p, lang, () => [p.t, p.x]));
+  const pageHits = pages.filter((p) => p.k !== 'news').map((p) => [p, pageScore(p)]).filter((x) => x[1]).sort((a, b) => b[1] - a[1]).map((x) => x[0]);
+  const newsHits = pages.filter((p) => p.k === 'news').map((p) => [p, pageScore(p)]).filter((x) => x[1]).sort((a, b) => b[1] - a[1]).map((x) => x[0]);
   const dl = ctx.dl;
-  const docHits = dedupeCopies(docs.filter((d) => docVisible(d, CFG.lang))).map((d) => {
-    const title = docTitleFor(d, CFG.lang, dl);
-    return [d, scoreText(title, d.f + ' ' + (d.c || ''))];
-  }).filter((x) => x[1]).sort((a, b) => b[1] - a[1]).map((x) => x[0]);
+  const docHits = visibleDocs(docs, lang).map((d) => [d, scoreText(normOf(d, lang, () => [docTitleFor(d, lang, dl), d.f + ' ' + (d.c || '')]))])
+    .filter((x) => x[1]).sort((a, b) => b[1] - a[1]).map((x) => x[0]);
   return { products: prods, pages: pageHits, docs: docHits, news: newsHits, ctx, t };
 }
 
+// Vorschaubild je Produkt und Sprache nur einmal zeichnen (Schemazeichnungen entstehen im Browser)
+const THUMB = new Map();
+const thumbOf = (ctx, p) => {
+  let m = THUMB.get(ctx.lang);
+  if (!m) THUMB.set(ctx.lang, (m = new WeakMap()));
+  let h = m.get(p);
+  if (h === undefined) m.set(p, (h = productThumb(ctx, p, { sizes: '44px' })));
+  return h;
+};
 function hitHtml(kind, item, ctx, t, i, score = null) {
   if (kind === 'product') {
     const p = item;
-    const img = productThumb(ctx, p, { sizes: '44px' });
+    const img = thumbOf(ctx, p);
     return `<a class="search__hit" role="option" id="sh-${i}" href="${ctx.href('product', { area: p.area, slug: p.id })}"><span class="ic">${img}</span><span><b>${esc(p.code)}</b><span>${esc(descriptor(p, t, ctx.lang))} – ${esc(t.lbl.area[p.area])}</span></span>${score != null ? `<em class="search__score">${score}&nbsp;%</em>` : ''}</a>`;
   }
   if (kind === 'doc') {

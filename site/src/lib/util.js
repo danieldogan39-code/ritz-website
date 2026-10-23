@@ -22,6 +22,10 @@ export function fmtNum(v, lang, opts = {}) {
   nfCache[key] ||= new Intl.NumberFormat(LOCALES[lang] || 'de-DE', { maximumFractionDigits: 2, ...opts });
   return nfCache[key].format(v);
 }
+// Typenbezeichnungen natürlich sortieren („GSE 4“ vor „GSE 12“). Ein Collator für alle Vergleiche: localeCompare mit
+// Sprache und Optionen baut bei jedem Aufruf einen neuen – beim Sortieren hunderter Produkte die teuerste Stelle.
+const CODE_COLL = new Intl.Collator('de', { numeric: true });
+export const cmpCode = (a, b) => CODE_COLL.compare(a, b);
 export const nbsp = ' ';
 export const thin = ' ';
 
@@ -51,10 +55,13 @@ export function fmtBytes(n, lang) {
   if (n < 1024 * 1024) return `${fmtNum(Math.max(1, Math.round(n / 1024)), lang)}${nbsp}KB`;
   return `${fmtNum(n / 1024 / 1024, lang, { maximumFractionDigits: 1 })}${nbsp}MB`;
 }
+const dfCache = {};
 export function fmtDate(iso, lang, opts = { day: 'numeric', month: 'long', year: 'numeric' }) {
   if (!iso) return '';
   const d = new Date(iso + (iso.length === 10 ? 'T12:00:00Z' : ''));
-  return new Intl.DateTimeFormat(LOCALES[lang] || 'de-DE', { ...opts, timeZone: 'UTC' }).format(d);
+  const key = lang + JSON.stringify(opts);
+  dfCache[key] ||= new Intl.DateTimeFormat(LOCALES[lang] || 'de-DE', { ...opts, timeZone: 'UTC' });
+  return dfCache[key].format(d);
 }
 export function slugify(s) {
   return String(s).normalize('NFKD').replace(/[̀-ͯ]/g, '').replace(/ß/g, 'ss').replace(/[^a-zA-Z0-9]+/g, '-').replace(/^-|-$/g, '').toLowerCase();
@@ -65,9 +72,11 @@ export function telHref(phone) {
 export function tpl(str, vars) {
   return String(str).replace(/\{(\w+)\}/g, (_, k) => (vars[k] ?? ''));
 }
+const prCache = {};
+export const pluralRule = (lang, n) => (prCache[lang] ||= new Intl.PluralRules(LOCALES[lang] || 'de-DE')).select(n);
 export function plural(lang, n, forms) {
   // forms: { one, other }
-  const r = new Intl.PluralRules(LOCALES[lang] || 'de-DE').select(n);
+  const r = pluralRule(lang, n);
   return tpl(forms[r] ?? forms.other, { n: fmtNum(n, lang) });
 }
 
@@ -139,7 +148,9 @@ export const LOGO = '<svg viewBox="0 0 258.72 140.09" width="84" height="45" rol
 
 // ---------- Bilder ----------
 // manifest[key] = { n: 'name', w, h, ws: [320, 640, ...] }
-export function imgTag(ctx, key, { alt = '', sizes = '100vw', cls: c = '', eager = false, max = 9999, fallback = '', cover = 0, lowres = 0 } = {}) {
+// eager: wichtigstes Bild der Seite (sofort, hohe Priorität); soon: steht beim Öffnen im Bild, wird aber nicht
+// bevorzugt (sofort laden, ohne loading="lazy", das erst nach dem Layout anfordert); sonst verzögert
+export function imgTag(ctx, key, { alt = '', sizes = '100vw', cls: c = '', eager = false, soon = false, max = 9999, fallback = '', cover = 0, lowres = 0 } = {}) {
   const m = key && ctx.img[key];
   if (!m) return fallback;
   // Gering aufgelöste Motive nicht über ihre natürliche Größe hinaus vergrößern (Rahmen bleibt, Bild mittig)
@@ -154,7 +165,7 @@ export function imgTag(ctx, key, { alt = '', sizes = '100vw', cls: c = '', eager
   const src = (w) => `${ctx.base}img/${m.n}-${w}.webp`;
   const largest = use[use.length - 1];
   const h = Math.round((m.h / m.w) * largest);
-  return `<img src="${src(largest)}" srcset="${use.map((w) => `${src(w)} ${w}w`).join(', ')}" sizes="${sizes}" width="${largest}" height="${h}" alt="${esc(alt)}"${c ? ` class="${c}"` : ''}${eager ? ' fetchpriority="high"' : ' loading="lazy"'} decoding="async">`;
+  return `<img src="${src(largest)}" srcset="${use.map((w) => `${src(w)} ${w}w`).join(', ')}" sizes="${sizes}" width="${largest}" height="${h}" alt="${esc(alt)}"${c ? ` class="${c}"` : ''}${eager ? ' fetchpriority="high"' : soon ? '' : ' loading="lazy"'} decoding="async">`;
 }
 // srcset aller Varianten bis max (für Bildwechsel per Skript)
 export function imgSrcset(ctx, key, max = 9999) {

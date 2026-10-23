@@ -226,8 +226,10 @@ function allRoutes(lang) {
 }
 
 // ---------------- HTML-Rahmen ----------------
+// Theme vor dem ersten Bild setzen. Außerdem: Bei „Zurück“ oder Neuladen stellt der Browser die Scrollposition wieder her –
+// dafür brauchen lange Produktlisten ihre echten Kartenhöhen (.nav-restore schaltet das verzögerte Rendern dort ab).
 function themeScript() {
-  return `<script>(function(){var d=document.documentElement;d.dataset.hostTheme=d.dataset.theme||'';try{var t=JSON.parse(localStorage.getItem('ritz-theme')||'"auto"');if(t==='light'||t==='dark')d.dataset.theme=t}catch(e){}})()</script>`;
+  return `<script>(function(){var d=document.documentElement;d.dataset.hostTheme=d.dataset.theme||'';try{var t=JSON.parse(localStorage.getItem('ritz-theme')||'"auto"');if(t==='light'||t==='dark')d.dataset.theme=t}catch(e){}try{var n=performance.getEntriesByType('navigation')[0];if(n&&(n.type==='back_forward'||n.type==='reload'))d.classList.add('nav-restore')}catch(e){}})()</script>`;
 }
 // Bewegung: setzt vor dem ersten Bild :root.rv (Ausgangszustände fürs Einblenden) und startet auf der
 // Startseite das Intro (data-intro: play → out → entfernt): beim ersten Aufruf und danach bei jedem fünften
@@ -280,6 +282,10 @@ function jsonld(ctx, route, page) {
   }
   return out.map((o) => `<script type="application/ld+json">${JSON.stringify(o).replace(/</g, '\\u003c')}</script>`).join('');
 }
+// Seitenwechsel ohne Wartezeit: Chromium-Browser laden eine verlinkte Seite vor, sobald der Zeiger kurz auf dem Link
+// verweilt oder der Finger ihn berührt (Speculation Rules, „moderate“) – nur eigene Seiten, keine Dokumente,
+// Formularziele oder Links in neuen Fenstern. Andere Browser übergehen den Block.
+const SPECULATION = `<script type="speculationrules">${JSON.stringify({ prefetch: [{ source: 'document', where: { and: [{ href_matches: '/*' }, { not: { href_matches: ['/api/*', '/dokumente/*', '/wp-content/*', '/_projekt/*', '/*.pdf', '/*.zip'] } }, { not: { selector_matches: '[download], [target="_blank"], [data-doc-req], [data-no-prefetch]' } }] }, eagerness: 'moderate' }] })}</script>`;
 function shell(ctx, page, route, { url, alternates }) {
   const t = ctx.t;
   const title = route.id === 'home' ? `RITZ Instrument Transformers – ${page.title}` : `${page.title} | RITZ`;
@@ -304,6 +310,7 @@ ${themeScript()}
 ${motionScript(route.id === 'home' ? 'home' : 'page')}
 <script>window.__RITZ__=${JSON.stringify(cfg)}</script>
 <script type="module" src="/assets/app.js?v=${V}"></script>
+${SPECULATION}
 ${jsonld(ctx, route, page)}
 </head>
 <body class="${page.bodyClass || ''}">
@@ -663,6 +670,8 @@ AddDefaultCharset utf-8
 AddType application/manifest+json .webmanifest
 AddType image/webp .webp
 AddType font/woff2 .woff2
+# Module (pdf.js als .mjs) brauchen einen JavaScript-Typ, sonst lädt der Browser sie nicht
+AddType text/javascript .js .mjs
 ErrorDocument 404 /de/404.html
 
 <IfModule mod_headers.c>
@@ -678,12 +687,20 @@ ErrorDocument 404 /de/404.html
   <FilesMatch "\\.(css|js)$">
     Header set Cache-Control "public, max-age=31536000, immutable"
   </FilesMatch>
+  # ohne Versionskennung im Namen: PDF-Leser, Symbole, Manifest – eine Woche
+  <FilesMatch "\\.(mjs|ico|webmanifest)$">
+    Header set Cache-Control "public, max-age=604800"
+  </FilesMatch>
   <FilesMatch "\\.(html|json|xml)$">
     Header set Cache-Control "public, max-age=600, must-revalidate"
   </FilesMatch>
 </IfModule>
+# Komprimieren: Brotli, wo der Server es kann (rund 15–20 % kleiner als gzip), sonst gzip
+<IfModule mod_brotli.c>
+  AddOutputFilterByType BROTLI_COMPRESS text/html text/css text/javascript application/javascript application/json application/manifest+json image/svg+xml image/x-icon application/xml text/xml text/plain
+</IfModule>
 <IfModule mod_deflate.c>
-  AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml application/xml text/plain
+  AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/json application/manifest+json image/svg+xml image/x-icon application/xml text/xml text/plain
 </IfModule>
 
 RewriteEngine On

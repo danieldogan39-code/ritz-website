@@ -2,8 +2,7 @@
 //
 // Bereich einer Stelle: aus dem Feld `area` der Stellendaten (z. B. Abteilung aus dem Personio-Feed), sonst aus dem
 // Stellentitel abgeleitet. Reihenfolge der Regeln zählt: „Vertriebsingenieur“ ist Vertrieb, „Qualitätsingenieur“ Prüfen.
-import { esc, fmtNum } from './util.js';
-import { LOCALES } from './routes.js';
+import { esc, fmtNum, pluralRule } from './util.js';
 
 export const JOB_AREAS = ['sales', 'dev', 'make', 'test', 'log', 'org'];
 // die ersten fünf sind Stationen auf dem Weg des Wandlers, „org“ begleitet sie
@@ -44,7 +43,7 @@ export const normJob = (s) => String(s || '').toLowerCase().normalize('NFKD').re
 
 // Anzahl mit hervorgehobener Zahl („<b>3</b> offene Stellen“), Pluralregel der Sprache
 export function countHtml(lang, n, forms) {
-  const r = new Intl.PluralRules(LOCALES[lang] || 'de-DE').select(n);
+  const r = pluralRule(lang, n);
   const f = forms[r] ?? forms.other;
   return esc(f).replace('{n}', `<b>${esc(fmtNum(n, lang))}</b>`);
 }

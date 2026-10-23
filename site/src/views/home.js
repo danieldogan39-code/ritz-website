@@ -505,7 +505,7 @@ ${newsList(ctx)}
 ${career(ctx)}`;
 }
 
-export function newsCard(ctx, n, { reveal = false, excerpt = true } = {}) {
+export function newsCard(ctx, n, { reveal = false, excerpt = true, eager = false, soon = false } = {}) {
   const { t, lang } = ctx;
   const vf = n.v[lang] ? lang : n.v[ctx.dl] ? ctx.dl : n.v.de ? 'de' : Object.keys(n.v)[0];
   const v = n.v[vf];
@@ -517,7 +517,7 @@ export function newsCard(ctx, n, { reveal = false, excerpt = true } = {}) {
   // kleine Altbilder (z. B. 212 × 300) nicht strecken: eingepasst vor unscharfem Hintergrund
   const small = !!(img && ctx.img[img] && ctx.img[img].w < 600);
   return `<a class="card" href="${url}">
-  <div class="card__img${small ? ' card__img--small' : ''}"${small ? ` style="--bgimg:url(${ctx.imgUrl(img, 320)})"` : ''}${reveal ? ' data-reveal="img"' : ''}>${img && ctx.img[img] ? imgTag(ctx, img, { alt: '', sizes: small ? `${ctx.img[img].w}px` : '(max-width: 560px) 100vw, (max-width: 900px) 50vw, 33vw', max: 1600 }) : newsCover(ctx, n)}</div>
+  <div class="card__img${small ? ' card__img--small' : ''}"${small ? ` style="--bgimg:url(${ctx.imgUrl(img, 320)})"` : ''}${reveal ? ' data-reveal="img"' : ''}>${img && ctx.img[img] ? imgTag(ctx, img, { alt: '', sizes: small ? `${ctx.img[img].w}px` : '(max-width: 560px) 100vw, (max-width: 900px) 50vw, 33vw', max: 1600, eager, soon }) : newsCover(ctx, n)}</div>
   <div class="card__meta"><time datetime="${n.date}">${esc(fmtDate(n.date, lang))}</time><span>${esc(t.lbl.newsCat[n.cat] || '')}</span>${other ? `<span class="card__lang" title="${esc(t.ui[vl] || vl)}">${esc(vl.toUpperCase())}</span>` : ''}</div>
   <h3${other ? ` lang="${vl}"` : ''}>${esc(v.title)}</h3>
   ${excerpt && text ? `<p${other ? ` lang="${vl}"` : ''}>${esc(shorten(text, 150))}</p>` : ''}

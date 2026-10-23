@@ -1,5 +1,5 @@
 // Produkte: Übersicht, Bereich, Produktdetail, Produktfinder, Vergleich, Anfrage
-import { esc, icon, imgTag, imgSrcset, tpl, fmtKv, fmtRange, fmtList, fmtNum, productGlyph, phoneTxt } from '../lib/util.js';
+import { esc, icon, imgTag, imgSrcset, tpl, fmtKv, fmtRange, fmtList, fmtNum, productGlyph, phoneTxt, cmpCode } from '../lib/util.js';
 import { AREAS, SECTORS } from '../lib/routes.js';
 import { docsForArea, dedupeCopies } from '../lib/doclang.js';
 import { phead, sectionHead, personCard, docRow, ctaBand, anchorId, ticks, crumbs, langDocs, docIn } from './layout.js';
@@ -88,7 +88,7 @@ ${areaExtras(ctx, area)}
 ${groups.map((g) => `<section class="section section--tight pgroup" id="${anchorId(g.key)}">
   <div class="wrap">
     ${sectionHead(t.lbl.group[g.key], t.lbl.groupText[g.key] || '', `<a class="link" href="${href('finder', {}, { area })}">${esc(ctx.plural(g.items.length, t.ui.productCount))}</a>`)}
-    <div class="pgrid">${g.items.map((p) => productCard(ctx, p)).join('')}</div>
+    <div class="pgrid pgrid--long">${g.items.map((p) => productCard(ctx, p)).join('')}</div>
   </div>
 </section>`).join('')}
 ${areaDocs.length ? `<section class="section section--porcelain">
@@ -288,14 +288,14 @@ function specTable(ctx, p) {
 function relatedProducts(ctx, p) {
   const same = ctx.data.products.filter((x) => x.id !== p.id && x.area === p.area && KIND_GROUP[x.kind] === KIND_GROUP[p.kind]);
   const score = (x) => (x.dk?.n === p.dk?.n ? 3 : 0) + (x.install.some((i) => p.install.includes(i)) ? 1 : 0) + ((x.um || []).some((u) => (p.um || []).includes(u)) ? 2 : 0) + (x.code.split(' ')[0] === p.code.split(' ')[0] ? 2 : 0);
-  return same.map((x) => [x, score(x)]).sort((a, b) => b[1] - a[1] || a[0].code.localeCompare(b[0].code, 'de', { numeric: true })).slice(0, 4).map((x) => x[0]);
+  return same.map((x) => [x, score(x)]).sort((a, b) => b[1] - a[1] || cmpCode(a[0].code, b[0].code)).slice(0, 4).map((x) => x[0]);
 }
 
 // ---------------- Produktfinder ----------------
 export function finderPage(ctx) {
   const { t, href } = ctx;
   const F = t.finder;
-  const initial = ctx.data.products.slice().sort((a, b) => a.code.localeCompare(b.code, 'de', { numeric: true })).slice(0, 24);
+  const initial = ctx.data.products.slice().sort((a, b) => cmpCode(a.code, b.code)).slice(0, 24);
   return `${phead(ctx, { title: F.title, lead: F.lead, crumbs: [[t.nav.products, href('products')], [F.title]], cls: 'phead--compact' })}
 <section class="section section--tight">
   <div class="wrap finder" data-finder>
@@ -316,7 +316,7 @@ export function finderPage(ctx) {
         </div>
       </div>
       <div class="active-filters" data-active-filters></div>
-      <div class="pgrid" data-results>${initial.map((p) => productCard(ctx, p)).join('')}</div>
+      <div class="pgrid pgrid--long" data-results>${initial.map((p) => productCard(ctx, p)).join('')}</div>
       <div class="finder__more" data-more></div>
       <noscript><p class="notice">${esc(F.lead)}</p></noscript>
     </div>
