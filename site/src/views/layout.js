@@ -313,7 +313,7 @@ export const langDocs = (ctx, docs) => dedupeCopies(docsForLang(docs, ctx.lang, 
 export const docIn = (ctx, d) => (d ? docsForLang([d], ctx.lang, ctx.data.docsById)[0] || null : null);
 
 // Dokumentzeile
-export function docRow(ctx, d) {
+export function docRow(ctx, d, { meta = [] } = {}) {
   const { t, lang } = ctx;
   // Titel wie in der jeweiligen Sprachfassung der bisherigen Website (tl), sonst aus den Datensprachen
   const title = docTitleFor(d, lang, ctx.dl);
@@ -326,7 +326,7 @@ export function docRow(ctx, d) {
   const R = t.downloads.req;
   return `<a class="doc${local ? '' : ' doc--req'}" ${ctx.docAttrs(d)} data-doc-id="${d.id}">
   <span class="doc__icon" aria-hidden="true">${esc((d.ext || 'pdf').toUpperCase())}</span>
-  <span><span class="doc__title"${tl !== lang ? ` lang="${tl}"` : ''}>${esc(title)}</span><span class="doc__meta"><span>${esc(t.lbl.docTypeOne[d.type] || '')}</span>${local ? (size ? `<span>${esc(size)}</span>` : '') : `<span>${esc(R.onRequest)}</span>`}</span></span>
+  <span><span class="doc__title"${tl !== lang ? ` lang="${tl}"` : ''}>${esc(title)}</span><span class="doc__meta">${meta.length ? meta.map((x) => `<span>${esc(x)}</span>`).join('') : `<span>${esc(t.lbl.docTypeOne[d.type] || '')}</span>`}${local ? (size ? `<span>${esc(size)}</span>` : '') : `<span>${esc(R.onRequest)}</span>`}</span></span>
   ${L ? `<span class="doc__lang" title="${esc(L)}">${esc(L)}</span>` : '<span></span>'}
   <span class="doc__go">${local ? `${icon('download')}<span class="vh">${esc(t.ui.download)}</span>` : `${icon('mail')}<span class="doc__req">${esc(R.doc)}</span>`}</span>
 </a>`;

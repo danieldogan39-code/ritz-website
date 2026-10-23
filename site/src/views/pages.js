@@ -5,7 +5,7 @@ import { SECTORS, AREAS } from '../lib/routes.js';
 import { phead, sectionHead, personCard, docRow, ctaBand, ticks, crumbs, shorten, langDocs, docIn } from './layout.js';
 import { SECTOR_IMG, newsCard } from './home.js';
 import { docVisible, dedupeCopies } from '../lib/doclang.js';
-import { SECTOR_LINKS, HISTORY_IMG, personImg, REFERENCE_IMG, REFERENCE_DOC, REFERENCE_NEWS, CERT_FILES, RESP_DOCS, FEATURED_DOCS, FEATURED_DOCS_EN, LOC_IMG } from '../lib/catalog.js';
+import { SECTOR_LINKS, HISTORY_IMG, personImg, REFERENCE_IMG, REFERENCE_DOC, REFERENCE_NEWS, CERT_FILES, FEATURED_DOCS, FEATURED_DOCS_EN, LOC_IMG } from '../lib/catalog.js';
 import { filterProducts, parseQuery, productCard, imgFit } from '../lib/product.js';
 import { projectLL, locAddress } from '../lib/geo.js';
 import { netMapBlock } from './netmap.js';
@@ -199,7 +199,7 @@ ${historyJourney(ctx)}
   </div>
 </section>
 ${groupStructure(ctx)}
-<section class="section section--porcelain">
+<section class="section section--porcelain" id="stiftung">
   <div class="wrap split split--even foundation">
     <div class="stack" style="--s:1rem"><h2>${esc(C.foundationTitle)}</h2><p class="lead">${esc(C.foundationText)}</p></div>
     <figure class="figure">${imgTag(ctx, 'mimg/image3.webp', { alt: '', sizes: '(max-width: 900px) 100vw, 50vw', max: 960 })}<figcaption>Illustration ©UKE</figcaption></figure>
@@ -296,17 +296,8 @@ export function qualityPage(ctx) {
 }
 
 // ---------------- Verantwortung ----------------
-export function responsibilityPage(ctx) {
-  const { t, href } = ctx;
-  const R = t.pages.responsibility;
-  const docs = sortDocs(ctx, langDocs(ctx, RESP_DOCS.map((f) => docByFile(ctx, f)).filter(Boolean)));
-  const news = ctx.data.news.filter((n) => n.cat === 'responsibility').slice(0, 3);
-  const block = ([title, paras], ic) => `<div class="esg"><span class="esg__icon">${icon(ic)}</span><h2 class="h3">${esc(title)}</h2>${paras.map((x) => `<p>${esc(x)}</p>`).join('')}</div>`;
-  return `${phead(ctx, { title: R.h1, lead: R.lead, image: 'mimg/wind-energy-sq.webp', crumbs: [[t.nav.company, href('company')], [R.title]] })}
-<section class="section"><div class="wrap grid g-3">${block(R.env, 'globe')}${block(R.soc, 'user')}${block(R.gov, 'check')}</div></section>
-<section class="section section--porcelain"><div class="wrap">${sectionHead(R.docsTitle)}<div class="docs docs--cols">${docs.map((d) => docRow(ctx, d)).join('')}</div></div></section>
-${news.length ? `<section class="section"><div class="wrap">${sectionHead(R.newsTitle)}<div class="news-grid">${news.map((n) => newsCard(ctx, n)).join('')}</div></div></section>` : ''}`;
-}
+// eigene Datei (responsibility.js)
+export { responsibilityPage } from './responsibility.js';
 
 // ---------------- Referenzen ----------------
 export function referencesPage(ctx) {

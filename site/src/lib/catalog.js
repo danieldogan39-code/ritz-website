@@ -22,7 +22,7 @@ export const SECTOR_IMG = {
 // Bilder der Unternehmensseiten (Seitenkopf und Vorschau im Menü)
 export const PAGE_IMG = {
   company: 'mimg/ritz_header-unternehmen.webp', locations: 'mimg/Luftbild_Kirchaich_2014_klein.webp', quality: 'mimg/JKI1023-2.webp',
-  responsibility: 'mimg/wind-energy-sq.webp', references: 'mimg/JKI0984-2-2048x1366.webp', career: 'mimg/IMG_20230607_060125_233.webp',
+  responsibility: 'mimg/image003.webp', references: 'mimg/JKI0984-2-2048x1366.webp', career: 'mimg/IMG_20230607_060125_233.webp',
 };
 
 export const HISTORY_IMG = {
@@ -64,9 +64,50 @@ export const CERT_FILES = {
   IRIS_silver_status: 'IRIS_silver_status.pdf', 'AEO-F': 'Zertifizierungsurkunde-RITZ-AEO-F-.pdf',
 };
 
-export const RESP_DOCS = ['DE-Hinweisgebersystem.pdf', 'EN-Hinweisgebersystem.pdf', 'RITZ_Praesentation_UKE_2025-1.pdf', 'RITZ-CO2-Reduktion-in-den-Werken-1.pdf',
-  'Verhaltenskodex_Lieferanten_30_7_2025-1.pdf', 'Supplier-Code-of-Conduct-.pdf', 'ZVEI-VDMA-Code-of-Conduct-RITZ-DE.pdf', 'ZVEI-VDMA-Code-of-Conduct-RITZ-EN.pdf',
-  'Foerderung-des-Projektes-zum-Austausch-der-Beleuchtung-an-dem-Standort-Ottendorf-Okrilla.docx', 'DRC_conflict_free-purchasing_policy.pdf'];
+// ---------- Verantwortung ----------
+// CO₂-Reduktion 2021–2024 (Scope 1 und 2) je Standort in Europa, laut RITZ-Dokument „CO₂-Reduktion in den Werken“ (Juli 2025)
+export const CO2_CUT = { doc: 'RITZ-CO2-Reduktion-in-den-Werken-1.pdf', news: 'co2-reduktion-in-den-werken', from: 2021, to: 2024,
+  sites: [['dresden', -92], ['kirchaich', -71], ['hamburg', -49], ['marchtrenk', -48], ['kecskemet', -20]] };
+// Maßnahmen aus demselben Dokument; Standorte nur, wo das Dokument sie nennt
+export const CO2_MEASURES = { eff: [], elec: [], pv: ['marchtrenk', 'kecskemet'], green: ['kirchaich', 'dresden', 'hamburg', 'marchtrenk'] };
+// Zertifizierte Managementsysteme (DQS, Zertifikate vom 17.07.2026): Standorte laut Anhang und Gültigkeit
+export const CERT_SCOPE = {
+  UM15: { std: 'ISO 14001:2015', sites: ['hamburg', 'dresden', 'kirchaich', 'marchtrenk', 'kecskemet'], valid: '2029-08-14' },
+  EMSt21: { std: 'ISO 50001:2018', sites: ['hamburg', 'dresden', 'kirchaich', 'kecskemet'], valid: '2029-09-15' },
+};
+// LED-Projekt Ottendorf-Okrilla (EFRE/SAB) mit dem Pflichthinweis aus dem RITZ-Dokument
+export const LED_PROJECT = { doc: 'Foerderung-des-Projektes-zum-Austausch-der-Beleuchtung-an-dem-Standort-Ottendorf-Okrilla.docx', img: 'mimg/foerderhinweis-efre-sachsen.webp' };
+export const FOUNDATION = { img: 'mimg/Screenshot-2025-06-26-183902.webp', news: 'das-neueste-aus-der-alzheimerforschung-veranstaltung-bei-ritz-mit-experten-vom-uke', doc: 'RITZ_Praesentation_UKE_2025-1.pdf' };
+// Engagement vor Ort (Beitrag, Bild); Texte je Sprache in pages.responsibility.engage, gleiche Reihenfolge
+export const ENGAGE = [
+  ['f1-in-schools', 'mimg/image003.webp'],
+  ['ritz-oeffnet-tueren-fuer-kleine-entdecker-kita-kinder-blicken-hinter-die-kulissen-der-technik', 'mimg/RITZ_Kita_Kinder_Besuch_im_Werk.webp'],
+  ['ein-voller-erfolg-auf-und-neben-dem-platz', 'mimg/Ritz-Naisa.webp'],
+  ['sponsoring-sportclub-lichteneiche', 'mimg/IMG_3816-scaled.webp'],
+];
+// Regeln und Meldewege: Dateien je Thema (die Sprachfassung wählt die passende)
+export const GOV_DOCS = {
+  coc: ['ZVEI-VDMA-Code-of-Conduct-RITZ-DE.pdf', 'ZVEI-VDMA-Code-of-Conduct-RITZ-EN.pdf'],
+  supplier: ['Verhaltenskodex_Lieferanten_30_7_2025-1.pdf', 'Supplier-Code-of-Conduct-.pdf'],
+  drc: ['DRC_conflict_free-purchasing_policy.pdf'],
+  aeo: ['Zertifizierungsurkunde-RITZ-AEO-F-.pdf'],
+  wb: ['DE-Hinweisgebersystem.pdf', 'EN-Hinweisgebersystem.pdf'],
+};
+// Meldeformular der externen Ombudsperson (laut Dokument „Hinweisgebersystem“, deutsche und englische Fassung)
+export const WB_FORM = { de: 'https://www.ombudsperson-frankfurt.de/de/kontaktformular/?company=RITZ_INSTRUMENT_TRANSFORMERS_GMBH', en: 'https://www.ombudsperson-frankfurt.de/en/contactform/?company=RITZ_INSTRUMENT_TRANSFORMERS_GMBH' };
+// Nachweise: Bereich, Dateien, Stand (valid = gültig bis, since = seit, date = Stand)
+export const RESP_EVIDENCE = [
+  ['env', [CERT_FILES.UM15], { valid: '2029-08-14' }],
+  ['env', [CERT_FILES.EMSt21], { valid: '2029-09-15' }],
+  ['env', [CO2_CUT.doc], { date: '2025-07-03' }],
+  ['env', [LED_PROJECT.doc], {}],
+  ['soc', [FOUNDATION.doc], { date: '2025-06-26' }],
+  ['gov', GOV_DOCS.coc, { date: '2022-01-01' }],
+  ['gov', GOV_DOCS.supplier, { date: '2025-07-30' }],
+  ['gov', GOV_DOCS.drc, { date: '2024-03-06' }],
+  ['gov', GOV_DOCS.aeo, { since: '2015-09-24' }],
+  ['gov', GOV_DOCS.wb, {}],
+];
 
 export const FEATURED_DOCS = ['RITZ-Mittelspannungswandler_Standard_GER_2014_01-2-1.pdf', 'RITZ-Metallgekapselte_Messwandler_GER_2013-02-1.pdf', 'N7-2002-111.pdf',
   'DE-Kundenkatalog-Sensoren_2024_V3.pdf', 'RITZ_SIS_Broschuere_DE-1.pdf', 'Allgemeine-Lieferbedingungen-GL2018.pdf', 'AEB_Ritz_final_dtsch_Apr2023.pdf',
