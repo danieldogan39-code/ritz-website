@@ -66,20 +66,38 @@ export function initHeader() {
   let rowT = null;
   hdr.addEventListener('pointerover', (e) => { const it = e.target.closest('.mg__item'); clearTimeout(rowT); if (it) rowT = setTimeout(() => pick(it.parentElement), 70); });
   hdr.addEventListener('focusin', (e) => { const it = e.target.closest('.mg__item'); if (it) pick(it.parentElement); });
+  // Zeiger: Öffnen und Schließen mit getrennten Zeitgebern. Fährt die Maus von außen direkt auf einen Menüpunkt,
+  // meldet der Browser erst „pointerover“ am Punkt und danach „pointerenter“ an der Kopfleiste – das Betreten darf
+  // deshalb nur ein geplantes Schließen aufheben, nie das gerade geplante Öffnen.
+  let openT = null, hoverAt = 0;
+  const fine = matchMedia('(hover: hover) and (pointer: fine)');
+  const mouse = (e) => fine.matches && e.pointerType !== 'touch';
   hdr.addEventListener('click', (e) => {
     const b = e.target.closest('[data-mega]');
-    if (b) { e.preventDefault(); openKey === b.dataset.mega ? close() : open(b.dataset.mega); }
+    if (b) {
+      e.preventDefault();
+      clearTimeout(openT);
+      // gerade per Zeiger geöffnet: ein Klick aus Gewohnheit bestätigt nur, statt das Menü wieder zu schließen
+      if (openKey === b.dataset.mega) { if (performance.now() - hoverAt > 600) close(); } else open(b.dataset.mega);
+    }
     if (e.target.closest('[data-mega-panel] a')) close();
   });
-  const fine = matchMedia('(hover: hover) and (pointer: fine)');
   hdr.addEventListener('pointerover', (e) => {
-    if (!fine.matches) return;
+    if (!mouse(e)) return;
     const b = e.target.closest('[data-mega]');
-    clearTimeout(hoverT);
-    if (b) hoverT = setTimeout(() => open(b.dataset.mega), 120);
-    else if (e.target.closest('.nav__link') && !e.target.closest('[data-mega]')) hoverT = setTimeout(close, 120);
+    if (b) {
+      clearTimeout(hoverT);
+      clearTimeout(openT);
+      if (openKey === b.dataset.mega) return;
+      // ist schon ein Menü offen, wechselt es schneller
+      openT = setTimeout(() => { open(b.dataset.mega); hoverAt = performance.now(); }, openKey ? 70 : 120);
+      return;
+    }
+    clearTimeout(openT);
+    if (e.target.closest('[data-mega-panel]')) { clearTimeout(hoverT); return; } // im offenen Panel bleibt es offen
+    if (e.target.closest('.nav__link')) { clearTimeout(hoverT); hoverT = setTimeout(close, 120); }
   });
-  hdr.addEventListener('pointerleave', () => { if (!fine.matches) return; clearTimeout(hoverT); hoverT = setTimeout(close, 220); });
+  hdr.addEventListener('pointerleave', (e) => { if (!mouse(e)) return; clearTimeout(openT); clearTimeout(hoverT); hoverT = setTimeout(close, 220); });
   hdr.addEventListener('pointerenter', () => clearTimeout(hoverT));
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && openKey) { const b = $(`[data-mega="${openKey}"]`, hdr); close(); b?.focus(); } });
   // Fokus verlässt Knopf und Panel (Tab weiter zum nächsten Menüpunkt): Menü schließen
