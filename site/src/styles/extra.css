@@ -205,14 +205,6 @@
 .scard:hover strong { color: var(--red-ink); }
 @media (max-width: 1000px) { .scards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 600px) { .scards { grid-template-columns: minmax(0, 1fr); } }
-.sgroups { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1px; padding: 1px; }
-.sgroups > * { box-shadow: 0 0 0 1px var(--line); }
-.sgroup { display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-rows: auto auto; gap: .2rem .8rem; padding: 18px 18px; background: var(--paper); text-decoration: none; align-items: center; }
-.sgroup strong { font-weight: 650; }
-.sgroup span { color: var(--steel); font-size: .88rem; font-variant-numeric: tabular-nums; grid-column: 1; }
-.sgroup svg { grid-column: 2; grid-row: 1 / span 2; width: 18px; height: 18px; color: var(--steel); }
-.sgroup:hover strong { color: var(--red-ink); }
-.sgroup:hover svg { color: var(--red); }
 
 /* Unternehmen */
 .media-cover--tall { aspect-ratio: 4 / 5; }

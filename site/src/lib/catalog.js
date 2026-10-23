@@ -1,12 +1,18 @@
 // Redaktionelle Zuordnungen (sprachunabhängig)
 export const SECTOR_LINKS = {
-  netze: { docs: ['Produktwissen_kompakt_metallgekapselte_Kombiwandler.pdf', 'Compact_product_knowledge_metal_clad_combined_transformers.pdf', 'Produktwissen_kompakt_Zusatzbuerde.pdf', 'Compact_product_knowledge_additonal_burden.pdf', 'PQ_Analyse_DE.pdf'], news: ['kombiwandler-platzersparnis', 'zusatzbuerde'], areas: ['mittelspannung', 'hochspannung'] },
-  schaltanlagenbau: { docs: ['RITZ-Metallgekapselte_Messwandler_GER_2013-02-1.pdf', 'RITZ-Mittelspannungswandler_Standard_GER_2014_01-2-1.pdf', 'Technische_Spezifikation_SIS.pdf', 'F2PD003_Tender_Textbesipiele_SIS_DE.pdf'], news: ['ge-hypact-anlage', 'kundenreferenz-sis'], areas: ['mittelspannung', 'stromschienen-sis', 'elektronik-sensoren'] },
+  netze: { docs: ['Produktwissen_kompakt_metallgekapselte_Kombiwandler.pdf', 'Compact_product_knowledge_metal_clad_combined_transformers.pdf', 'Produktwissen_kompakt_Zusatzbuerde.pdf', 'Compact_product_knowledge_additonal_burden.pdf', 'PQ_Analyse_DE.pdf'], news: ['kombiwandler-platzersparnis', 'zusatzbuerde', 'neues-werk-in-waynesboro'], areas: ['mittelspannung', 'hochspannung'] },
+  schaltanlagenbau: { docs: ['RITZ-Metallgekapselte_Messwandler_GER_2013-02-1.pdf', 'RITZ-Mittelspannungswandler_Standard_GER_2014_01-2-1.pdf', 'Technische_Spezifikation_SIS.pdf', 'F2PD003_Tender_Textbesipiele_SIS_DE.pdf'], news: ['ge-hypact-anlage', 'kundenreferenz-sis', 'neue-produkte-gbmw-gbmei'], areas: ['mittelspannung', 'stromschienen-sis', 'elektronik-sensoren'] },
   industrie: { docs: ['Kundenreferenz-SIS-Projekt-BSW.pdf', 'RITZ-Ringkern-Stromwandler_bis_10000A.pdf', 'RITZ-ERKU23_Zweiteilige_Kabelumbau-Stromwandler-GER_2013-02.pdf', 'RITZ_SIS_Broschuere_DE-1.pdf'], news: ['kundenreferenz-sis', 'emvi-produktneuheit'], areas: ['stromschienen-sis', 'niederspannung', 'elektronik-sensoren'] },
   bahn: { docs: ['Ritz-Messwandler-IRIS-Certificate-2024.pdf', 'IRIS_silver_status.pdf'], news: ['ritz-marchtrenk-erreichte'], areas: ['mittelspannung'] },
-  erneuerbare: { docs: ['Produktwissen_kompakt_HVDC.pdf', 'Product_knowledge_compact_HVDC.pdf', 'Die_Power_Quality_Analyse.pdf', 'MKGBEA24_DE_23.04.2018._Digitale-Version.pdf', 'MKGBEA24_EN.pdf', '2302-AM-Offenbach-v6.pdf', 'J2-DE_EMVI-4005-Word-DATENBLATT_2Seiter.pdf'], news: ['uebersicht-hvdc', 'emvi-produktneuheit', 'auszeichnung-zum-lieferanten'], areas: ['elektronik-sensoren', 'mittelspannung'] },
+  erneuerbare: { docs: ['Produktwissen_kompakt_HVDC.pdf', 'Product_knowledge_compact_HVDC.pdf', 'Die_Power_Quality_Analyse.pdf', 'MKGBEA24_DE_23.04.2018._Digitale-Version.pdf', 'MKGBEA24_EN.pdf', '2302-AM-Offenbach-v6.pdf', 'J2-DE_EMVI-4005-Word-DATENBLATT_2Seiter.pdf'], news: ['auszeichnung-zum-lieferanten', '25-jahre-hochgenaue-dc-messung', 'uebersicht-hvdc'], areas: ['elektronik-sensoren', 'mittelspannung'] },
   kraftwerke: { docs: ['IRBT_Generatorwandler_optimiertes_Design.pdf', 'IRBT_generator_transformer_optimized_design.pdf'], news: ['irbt-generatorwandler', 'neues-werk-in-waynesboro'], areas: ['mittelspannung', 'hochspannung'] },
-  messtechnik: { docs: ['Akkreditierung-Ritz-AT_ISO-17025.pdf', 'EOSS_122_DE_2021-11-1.pdf', 'Produktwissen_kompakt_Zusatzbuerde.pdf'], news: ['mehr-sicherheit-fuer-mensch', 'ritz-nimmt-an-xxx-vde'], areas: ['niederspannung', 'elektronik-sensoren'] },
+  messtechnik: { docs: ['Akkreditierung-Ritz-AT_ISO-17025.pdf', 'EOSS_122_DE_2021-11-1.pdf', 'Produktwissen_kompakt_Zusatzbuerde.pdf'], news: ['mehr-sicherheit-fuer-mensch', 'ritz-nimmt-an-xxx-vde', 'zusatzbuerde'], areas: ['niederspannung', 'elektronik-sensoren'] },
+};
+
+// Anforderungen je Branche (Reihenfolge wie pages.sectors.items.<branche>.needs): Nummer der passenden Produktgruppe (1-basiert)
+export const SECTOR_NEEDS = {
+  netze: [1, 1, 2, 5, 3, 4], schaltanlagenbau: [1, 2, 3, 4, 5, 1], industrie: [1, 2, 3, 4, 5], bahn: [1, 1, 1, 1, 2, 1],
+  erneuerbare: [1, 2, 2, 3], kraftwerke: [1, 1, 2, 3], messtechnik: [1, 1, 2, 3],
 };
 
 export const AREA_IMG = {

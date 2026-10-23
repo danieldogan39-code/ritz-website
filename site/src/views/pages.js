@@ -5,12 +5,12 @@ import { SECTORS, AREAS } from '../lib/routes.js';
 import { phead, sectionHead, personCard, docRow, ctaBand, ticks, crumbs, shorten, langDocs, docIn } from './layout.js';
 import { SECTOR_IMG, newsCard } from './home.js';
 import { docVisible, dedupeCopies } from '../lib/doclang.js';
-import { SECTOR_LINKS, HISTORY_IMG, personImg, REFERENCE_IMG, REFERENCE_DOC, REFERENCE_NEWS, FEATURED_DOCS, FEATURED_DOCS_EN, LOC_IMG } from '../lib/catalog.js';
-import { filterProducts, parseQuery, productCard, imgFit } from '../lib/product.js';
+import { HISTORY_IMG, personImg, REFERENCE_IMG, REFERENCE_DOC, REFERENCE_NEWS, FEATURED_DOCS, FEATURED_DOCS_EN, LOC_IMG } from '../lib/catalog.js';
+import { imgFit } from '../lib/product.js';
 import { projectLL, locAddress } from '../lib/geo.js';
 import { netMapBlock } from './netmap.js';
 import { newsCover } from './newscover.js';
-import { sortDocs, peopleFor, countryOptions } from './products.js';
+import { countryOptions } from './products.js';
 
 const docByFile = (ctx, f) => ctx.data.docs.find((d) => d.file === f);
 // Downloadcenter: alle Dokumente, die die Sprachfassung zeigt (Hauptseite je Sprache, Produktfinder überall), Kopien einmal
@@ -34,42 +34,8 @@ export function sectorsPage(ctx) {
 </div></section>`;
 }
 
-export function sectorPage(ctx, sector) {
-  const { t, href } = ctx;
-  const S = t.pages.sectors;
-  const it = S.items[sector];
-  const L = SECTOR_LINKS[sector];
-  const docsShown = sortDocs(ctx, langDocs(ctx, L.docs.map((f) => docByFile(ctx, f)).filter(Boolean)));
-  const news = L.news.map((p) => newsByPrefix(ctx, p)).filter(Boolean);
-  const people = [...new Map(L.areas.flatMap((a) => peopleFor(ctx, a)).filter((p) => p.email).map((p) => [p.id, p])).values()].slice(0, 4);
-  const groups = it.groups.map(([label, qs]) => {
-    const q = parseQuery(qs);
-    const n = filterProducts(ctx.data.products, q, t).length;
-    return { label, qs, n, q };
-  });
-  // Erste Gruppe direkt als Produktkarten zeigen
-  const g0 = groups[0];
-  const top = g0 ? filterProducts(ctx.data.products, g0.q, t).slice(0, 8) : [];
-  const finderQ = (g) => Object.fromEntries(new URLSearchParams(g.qs));
-  return `${phead(ctx, { title: it.title, lead: it.lead, image: SECTOR_IMG[sector], figure: true, crumbs: [[S.title, href('sectors')], [it.title]] })}
-<section class="section">
-  <div class="wrap split">
-    <div class="stack" style="--s:1rem"><h2 class="h3">${esc(S.challenges)}</h2>${ticks(it.challenges)}</div>
-    <div class="prose">${it.text.map((x) => `<p>${esc(x)}</p>`).join('')}</div>
-  </div>
-</section>
-<section class="section section--porcelain">
-  <div class="wrap">
-    ${sectionHead(S.solutions)}
-    <div class="sgroups">${groups.map((g) => `<a class="sgroup" href="${href('finder', {}, finderQ(g))}"><strong>${esc(g.label)}</strong><span>${esc(ctx.plural(g.n, t.ui.productCount))}</span>${icon('right')}</a>`).join('')}</div>
-    ${top.length ? `<h3 class="h4 mt">${esc(g0.label)}</h3><div class="pgrid pgrid--sector">${top.map((p) => productCard(ctx, p)).join('')}</div>
-    ${g0.n > top.length ? `<p class="mt"><a class="btn btn--ghost" href="${href('finder', {}, finderQ(g0))}">${esc(S.toFinder)} (${g0.n})</a></p>` : ''}` : ''}
-  </div>
-</section>
-${news.length ? `<section class="section"><div class="wrap">${sectionHead(S.proof)}<div class="news-grid">${news.map((n) => newsCard(ctx, n)).join('')}</div></div></section>` : ''}
-${docsShown.length ? `<section class="section section--tight"><div class="wrap">${sectionHead(S.docs)}<div class="docs docs--cols">${docsShown.map((d) => docRow(ctx, d)).join('')}</div></div></section>` : ''}
-${people.length ? `<section class="section section--porcelain"><div class="wrap">${sectionHead(t.ui.contactPersons)}<div class="people">${people.map((p) => personCard(ctx, p)).join('')}</div></div></section>` : ''}`;
-}
+// eigene Datei (sector.js)
+export { sectorPage } from './sector.js';
 
 // ---------------- Unternehmen ----------------
 // Firmenstruktur: Stiftung → Gruppe → Gesellschaften (Namen wie im Organigramm der bisherigen Website), darunter die Marken

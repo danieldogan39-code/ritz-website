@@ -1,0 +1,176 @@
+/* =====================================================================
+   Anwendungsseiten — „Wo RITZ in Ihrer Anlage sitzt“
+   Kopf mit Branchenname und Kennwerten, darunter das Schaltbild der typischen Anlage als Leitwartentafel
+   (immer dunkel): Spannungsebenen farbig, RITZ-Einbauorte rot mit Kennziffer. Die Kennziffern ziehen sich
+   durch die Seite – Legende, Anforderungen und Produktgruppen tragen dieselbe Nummer. Farben nur über Tokens
+   bzw. die tafeleigenen Werte (--mp-*), die in hellem und dunklem Modus gleich sind, weil die Tafel dunkel bleibt.
+   ===================================================================== */
+
+/* ---------- Kopf ---------- */
+.sc-hero { padding-block: clamp(24px, 3.5vw, 48px) clamp(28px, 4vw, 56px); }
+.sc-hero__top { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 18px clamp(28px, 5vw, 88px); align-items: end; margin-top: clamp(12px, 2vw, 28px); }
+.sc-hero h1 { font-size: clamp(2.2rem, 1.35rem + 2.9vw, 4.2rem); max-width: 16ch; hyphens: manual; -webkit-hyphens: manual; }
+.sc-hero__side { display: grid; gap: 1.1rem; justify-items: start; }
+.sc-hero__side .lead { max-width: 50ch; }
+.sc-hero__cta { gap: .6rem; }
+.sc-facts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; margin: clamp(22px, 3vw, 36px) 0 0; border-top: 1px solid var(--line-strong); }
+.sc-facts > div { min-width: 0; padding: 12px 18px 2px 0; }
+.sc-facts > div + div { padding-left: 18px; border-left: 1px solid var(--line); }
+.sc-facts dt { font-size: .78rem; color: var(--steel); }
+.sc-facts dd { margin: 3px 0 0; font-size: var(--step-1); font-weight: 720; font-stretch: 92%; line-height: 1.25; font-variant-numeric: tabular-nums; }
+.sc-facts dd small { display: block; margin-top: 2px; font-size: .8rem; font-weight: 500; font-stretch: 100%; color: var(--graphite); }
+/* Spannungsachse 0,72 … 550 kV (logarithmisch), Einsatzbereich rot */
+.sc-axis { position: relative; display: block; height: 14px; margin-top: 8px; }
+.sc-axis::before { content: ""; position: absolute; left: 0; right: 0; top: 6px; height: 2px; background: var(--line-strong); }
+.sc-axis i { position: absolute; top: 3px; height: 8px; background: var(--red); border-radius: 1px; }
+.sc-axis b { position: absolute; top: 0; width: 1px; height: 14px; background: var(--line-strong); }
+@media (max-width: 1000px) {
+  .sc-hero__top { grid-template-columns: minmax(0, 1fr); align-items: start; }
+  .sc-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .sc-facts > div:nth-child(3) { padding-left: 0; border-left: 0; }
+  .sc-facts > div:nth-child(n+3) { border-top: 1px solid var(--line); margin-top: 10px; }
+}
+
+/* ---------- Leitwartentafel mit Schaltbild ---------- */
+.mp { --mp-bg: var(--resin); --mp-line: #efe6e1; --mp-dim: #b8aaa3; --mp-hv: #e3a06b; --mp-red: #ff5a4f; --mp-red-fill: #d42022; --mp-ex: #e3b04b;
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(250px, 300px); margin-top: clamp(24px, 3vw, 40px); background: var(--mp-bg); color: var(--on-resin); border-radius: var(--radius-lg); overflow: hidden; }
+.mp__main { min-width: 0; padding: clamp(16px, 2.2vw, 28px) clamp(16px, 2.2vw, 28px) 18px; }
+.mp__head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 20px; margin-bottom: 10px; }
+.mp__t { font-size: 1rem; font-weight: 700; color: var(--on-resin); }
+.mp__s { font-size: .82rem; color: var(--on-resin-2); }
+.mp__scroll { overflow-x: auto; overscroll-behavior-x: contain; scrollbar-width: thin; scrollbar-color: var(--on-resin-line) transparent; }
+.mp__svg { display: block; width: 100%; height: auto; min-width: 0; font-family: var(--f); }
+.mp__keys { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 12px; font-size: .78rem; color: var(--on-resin-2); }
+.mp__keys span { display: inline-flex; align-items: center; gap: 7px; }
+.mp__keys i { display: inline-block; width: 20px; height: 0; border-top: 3px solid var(--mp-line); }
+.mp__keys .k-hv { border-color: var(--mp-hv); }
+.mp__keys .k-sec { border-top: 2px dashed var(--mp-dim); }
+.mp__keys .k-r { width: 12px; height: 12px; border: 3px solid var(--mp-red); border-radius: 50%; }
+.mp__hint { display: none; font-size: .78rem; color: var(--on-resin-2); margin-top: 8px; }
+/* Zeichnung */
+.mp__svg text { font-size: 14px; fill: var(--mp-dim); font-stretch: 92%; }
+.mp__svg .mp-t--v { fill: var(--mp-line); font-weight: 700; }
+.mp__svg .mp-t--hv { fill: var(--mp-hv); font-weight: 700; }
+.mp__svg .mp-t--s { font-size: 13px; }
+.mp__svg .mp-t--f { font-size: 12.5px; font-weight: 650; letter-spacing: .02em; }
+.mp__svg .mp-sym { fill: var(--mp-line); font-size: 18px; font-weight: 700; text-anchor: middle; dominant-baseline: middle; }
+.mp__svg .mp-sym--s, .mp__svg .mp-sym--m { font-size: 14px; }
+.mp__svg .mp-sym--b { font-size: 12px; font-weight: 650; }
+.mp__svg .mp-sym--r { fill: var(--mp-red); font-size: 9.5px; font-weight: 760; }
+.mp-w { fill: none; stroke: var(--mp-line); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+.mp-w--hv { stroke: var(--mp-hv); }
+.mp-w--lv { stroke: var(--mp-dim); stroke-width: 2; }
+.mp-w--dc { stroke-width: 3.5; }
+.mp-w--thick { stroke-width: 6; }
+.mp-bus { fill: none; stroke: var(--mp-line); stroke-width: 7; }
+.mp-bus.mp-w--hv { stroke: var(--mp-hv); }
+.mp-s { fill: none; stroke: var(--mp-dim); stroke-width: 1.5; stroke-dasharray: 5 4; }
+.mp-eq { fill: var(--mp-bg); stroke: var(--mp-line); stroke-width: 2; }
+.mp-eq--o { fill: none; }
+.mp-eq-l { fill: none; stroke: var(--mp-line); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.mp-eq-l--thin { stroke: var(--mp-dim); stroke-width: 1; }
+.mp-frame { fill: none; stroke: var(--mp-dim); stroke-opacity: .5; stroke-width: 1.2; stroke-dasharray: 6 5; }
+.mp-ex { fill: none; stroke: var(--mp-ex); stroke-width: 1.5; stroke-dasharray: 7 5; }
+.mp-veh { fill: rgb(255 255 255 / .04); stroke: var(--mp-dim); stroke-width: 1.5; }
+.mp-arr { fill: var(--mp-line); }
+.mp-r { fill: none; stroke: var(--mp-red); stroke-width: 3; }
+.mp-r--f { fill: var(--mp-bg); stroke-width: 2.5; }
+.mp-r--h { stroke-width: 2; }
+.mp-r-l { fill: none; stroke: var(--mp-red); stroke-width: 2.5; stroke-linecap: round; }
+.mp-r-bar { fill: none; stroke: var(--mp-red); stroke-width: 12; stroke-linejoin: round; }
+.mp-r-bar2 { fill: none; stroke: var(--mp-bg); stroke-width: 6; stroke-linejoin: round; }
+.mp-lead { stroke: var(--mp-red); stroke-width: 1.5; }
+.mp-b circle { fill: var(--mp-red-fill); stroke: var(--mp-bg); stroke-width: 3; }
+.mp-b text { fill: #fff; font-size: 14px; font-weight: 760; font-stretch: 90%; text-anchor: middle; dominant-baseline: middle; }
+.mp-pt { cursor: pointer; transition: opacity .2s var(--ease); }
+.mp.has-hot .mp-pt:not(.is-hot) { opacity: .3; }
+.mp-pt.is-hot .mp-b circle { stroke: var(--mp-red); stroke-width: 2; }
+/* Legende */
+.mp__legend { display: grid; align-content: start; gap: 2px; padding: clamp(16px, 2.2vw, 28px) clamp(14px, 1.8vw, 22px); background: rgb(255 255 255 / .04); border-left: 1px solid var(--on-resin-line); }
+.mp__legend h2 { margin: 0 0 8px; font-size: .82rem; font-weight: 650; font-stretch: 100%; letter-spacing: 0; color: var(--on-resin-2); }
+.mp__legend ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+/* Ziffer links, rechts Gruppenname und darunter die Produktzahl – lange Namen („Beglaubigungsfähige
+   Mittelspannungswandler“) haben so die ganze Breite und stoßen nicht an die Zahl */
+.mp__legend a { display: grid; grid-template-columns: 26px minmax(0, 1fr); gap: 2px 12px; align-items: start; padding: 9px 8px; color: var(--on-resin); text-decoration: none; border-radius: 4px; transition: background-color .15s var(--ease); }
+.mp__legend a:hover, .mp__legend a.is-hot { background: rgb(255 255 255 / .07); }
+.mp__legend a:focus-visible { outline: 2px solid var(--mp-red); outline-offset: -2px; }
+.mp__legend .sc-n { grid-row: span 2; }
+.mp__legend b { min-width: 0; padding-top: 2px; font-size: .95rem; font-weight: 650; line-height: 1.3; overflow-wrap: break-word; hyphens: auto; -webkit-hyphens: auto; }
+.mp__legend small { grid-column: 2; font-size: .8rem; color: var(--on-resin-2); font-variant-numeric: tabular-nums; }
+.sc-n { display: inline-grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: var(--red); color: #fff; font-size: .82rem; font-weight: 760; font-variant-numeric: tabular-nums; }
+@media (max-width: 1100px) {
+  .mp { grid-template-columns: minmax(0, 1fr); }
+  .mp__legend { border-left: 0; border-top: 1px solid var(--on-resin-line); }
+  .mp__legend ol { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 2px 12px; }
+}
+@media (max-width: 760px) {
+  .mp__svg { min-width: 760px; }
+  .mp__hint { display: block; }
+}
+
+/* ---------- Worauf es ankommt ---------- */
+.sc-needs__grid { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); gap: clamp(24px, 4.5vw, 80px); align-items: start; }
+.sc-needs__img { position: sticky; top: calc(var(--header-h) + 24px); aspect-ratio: 4 / 5; overflow: hidden; background: var(--porcelain-2); }
+.sc-needs__img img { width: 100%; height: 100%; object-fit: cover; }
+.sc-needs__body h2 { margin-bottom: clamp(16px, 2vw, 28px); }
+.sc-needs__list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line-strong); }
+.sc-need { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 10px 28px; align-items: start; padding: 18px 0 20px; border-bottom: 1px solid var(--line); }
+.sc-need__b { min-width: 0; }
+.sc-need h3 { font-size: 1.12rem; font-weight: 700; font-stretch: 100%; line-height: 1.3; }
+.sc-need p { margin-top: .35rem; max-width: 64ch; color: var(--graphite); overflow-wrap: break-word; hyphens: auto; -webkit-hyphens: auto; }
+.sc-need__go { display: inline-flex; align-items: center; gap: 9px; max-width: 15rem; padding: 6px 0; font-size: .88rem; font-weight: 650; line-height: 1.3; color: var(--ink); text-decoration: none; }
+.sc-need__go svg { flex: none; color: var(--red-ink); transition: translate .2s var(--ease-out); }
+.sc-need__go .sc-n { flex: none; }
+.sc-need__go:hover { color: var(--red-ink); }
+.sc-need__go:hover svg { translate: 3px 0; }
+.sc-needs__more { margin-top: 20px; }
+@media (max-width: 900px) {
+  .sc-needs__grid { grid-template-columns: minmax(0, 1fr); }
+  .sc-needs__img { position: static; aspect-ratio: 16 / 9; }
+}
+@media (max-width: 640px) {
+  .sc-need { grid-template-columns: minmax(0, 1fr); }
+  .sc-need__go { max-width: none; }
+}
+
+/* ---------- Produktgruppen ---------- */
+/* Sprung zu den Produkten: die Überschrift landet knapp unter der Kopfleiste, nicht erst nach dem Abschnittsabstand */
+.sc-prod { scroll-margin-top: calc(24px - clamp(56px, 7vw, 112px)); }
+.sc-tabs { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; margin-bottom: 18px; padding-bottom: 2px; }
+.sc-tabs::-webkit-scrollbar { display: none; }
+.sc-tab { flex: none; display: inline-flex; align-items: center; gap: 9px; padding: 10px 14px 10px 10px; font: inherit; font-size: .92rem; font-weight: 600; color: var(--graphite); background: var(--paper); border: 1px solid var(--line); border-radius: 999px; cursor: pointer; transition: color .15s var(--ease), border-color .15s var(--ease), background-color .15s var(--ease); }
+.sc-tab .sc-n { width: 22px; height: 22px; font-size: .74rem; background: var(--steel); }
+.sc-tab small { font-size: .78rem; font-weight: 600; color: var(--steel); font-variant-numeric: tabular-nums; }
+.sc-tab:hover { color: var(--ink); border-color: var(--line-strong); }
+.sc-tab[aria-selected="true"] { color: var(--ink); border-color: var(--ink); box-shadow: inset 0 0 0 1px var(--ink); }
+.sc-tab[aria-selected="true"] .sc-n { background: var(--red); }
+.sc-tab:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+.sc-panel + .sc-panel { margin-top: clamp(32px, 4vw, 52px); }
+.sc-panel:focus-visible { outline: 2px solid var(--focus); outline-offset: 6px; }
+.sc-panel__h { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; font-size: var(--step-1); font-weight: 700; font-stretch: 100%; }
+.sc-panel__h small { font-size: .85rem; font-weight: 500; color: var(--steel); }
+.sc-panel__more { margin-top: 18px; }
+.has-tabs .sc-panel + .sc-panel { margin-top: 0; }
+.has-tabs .sc-panel__h { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+/* ---------- Weitere Anwendungen ---------- */
+.sc-others { list-style: none; margin: 18px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.sc-other { display: grid; grid-template-columns: 88px minmax(0, 1fr); gap: 14px; align-items: center; height: 100%; padding: 10px; color: var(--ink); text-decoration: none; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); transition: border-color .15s var(--ease); }
+.sc-other__img { aspect-ratio: 1; overflow: hidden; background: var(--porcelain-2); border-radius: 2px; }
+.sc-other__img img { width: 100%; height: 100%; object-fit: cover; }
+.sc-other__b { display: grid; gap: 3px; min-width: 0; }
+.sc-other__b b { font-size: .98rem; font-weight: 700; line-height: 1.3; }
+.sc-other__b span { font-size: .84rem; line-height: 1.4; color: var(--graphite); }
+.sc-other:hover { border-color: var(--line-strong); }
+.sc-other:hover b { color: var(--red-ink); }
+@media (max-width: 1000px) { .sc-others { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 640px) { .sc-others { grid-template-columns: minmax(0, 1fr); } .sc-other { grid-template-columns: 72px minmax(0, 1fr); } }
+
+/* ---------- Bewegung: die Tafel schaltet sich ein ---------- */
+@media screen and (prefers-reduced-motion: no-preference) {
+  .mp-w, .mp-bus { stroke-dasharray: 1 2; stroke-dashoffset: 1; animation: mpDraw 1.1s var(--ease-in-out) .15s forwards; }
+  .mp-secs, .mp-eqs, .mp-labels { animation: mpFade .6s var(--ease-out) .7s backwards; }
+  .mp-pts .mp-pt { animation: mpFade .45s var(--ease-out) calc(1.05s + var(--pi) * .12s) backwards; }
+}
+@keyframes mpDraw { to { stroke-dashoffset: 0; } }
+@keyframes mpFade { from { opacity: 0; } }

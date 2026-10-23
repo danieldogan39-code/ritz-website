@@ -102,10 +102,11 @@ async function render() {
   initPage($('#main'));
 }
 
-// In-Page-Anker ohne Routenwechsel behandeln
+// In-Page-Anker ohne Routenwechsel behandeln – außer, eine Komponente hat den Klick schon selbst erledigt
+// (Anwendungsseiten: Gruppenlinks wählen den Reiter und führen zum Produktbereich)
 document.addEventListener('click', (e) => {
   const a = e.target.closest('a[href^="#"]');
-  if (!a) return;
+  if (!a || e.defaultPrevented) return;
   const href = a.getAttribute('href');
   if (parseSpaHash(href)) return;
   const el = document.getElementById(href.slice(1));

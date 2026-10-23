@@ -31,6 +31,7 @@ export async function initPage(root = document) {
   if (has('[data-org]')) jobs.push(import('./org.js').then((m) => m.initOrg(root)));
   if (has('[data-rig]')) jobs.push(import('./rig.js').then((m) => m.initRig(root)));
   if (has('[data-career]')) jobs.push(import('./career.js').then((m) => m.initCareer(root)));
+  if (has('[data-sector]')) jobs.push(import('./sector.js').then((m) => m.initSector(root)));
   if (has('[data-contact-finder]')) jobs.push(initContactFinder(root));
   if (has('[data-contact-form]')) jobs.push(initForms(root));
   await Promise.allSettled(jobs);
