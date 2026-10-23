@@ -501,7 +501,7 @@ async function favicons(out) {
 }
 
 async function bundleAssets(out, mode) {
-  let css = ['main', 'extra', 'tools', 'visual', 'home', 'motion'].map((n) => `${SRC}/styles/${n}.css`).filter((f) => fs.existsSync(f)).map((f) => fs.readFileSync(f, 'utf8')).join('\n');
+  let css = ['main', 'extra', 'tools', 'visual', 'home', 'career', 'motion'].map((n) => `${SRC}/styles/${n}.css`).filter((f) => fs.existsSync(f)).map((f) => fs.readFileSync(f, 'utf8')).join('\n');
   if (mode === 'static') {
     css = css.replace('__FONT_LATIN__', '/assets/fonts/archivo-latin.woff2').replace('__FONT_LATIN_EXT__', '/assets/fonts/archivo-latin-ext.woff2');
     fs.mkdirSync(`${out}/assets/fonts`, { recursive: true });

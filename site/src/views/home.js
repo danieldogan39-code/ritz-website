@@ -484,7 +484,7 @@ function career(ctx) {
     <div class="career2__copy" data-reveal="head">
       <h2 class="ch__title" id="ca-title">${esc(H.careerTitle)}</h2>
       <p class="ch__text">${esc(H.careerLead)}</p>
-      <p class="cluster"><a class="btn" href="${href('career')}">${esc(H.careerCta)}</a><span class="muted">${esc(ctx.plural(data.jobs.length, t.ui.jobCount))}</span></p>
+      <p class="cluster"><a class="btn" href="${ctx.hrefA('career', {}, 'stellen')}">${esc(H.careerCta)}</a><span class="muted">${esc(ctx.plural(data.jobs.length, t.ui.jobCount))}</span></p>
     </div>
   </div>
 </section>`;

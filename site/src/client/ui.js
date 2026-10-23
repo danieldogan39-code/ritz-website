@@ -315,13 +315,6 @@ export function initTabs(root) {
 }
 
 export function initFilters(root) {
-  // Stellen
-  const jobs = $('[data-jobs]', root);
-  if (jobs) {
-    const loc = $('[data-jobs-loc]', jobs), ty = $('[data-jobs-type]', jobs);
-    const run = () => $$('[data-city]', jobs).forEach((j) => { j.hidden = (loc.value && j.dataset.city !== loc.value) || (ty.value && j.dataset.type !== ty.value); });
-    loc?.addEventListener('change', run); ty?.addEventListener('change', run);
-  }
   // News
   const news = $('[data-news]', root);
   if (news) news.addEventListener('click', (e) => {

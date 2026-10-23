@@ -423,30 +423,8 @@ export function contactPage(ctx) {
 }
 
 // ---------------- Karriere ----------------
-export function careerPage(ctx) {
-  const { t, href, lang } = ctx;
-  const K = t.pages.career;
-  const jobs = ctx.data.jobs;
-  const hr = ctx.data.contacts.people.find((p) => p.id === 'maria-schunk');
-  return `${phead(ctx, { title: K.title, h1: K.h1, lead: K.lead, image: 'mimg/stellenangebote_intro_slider_4_International.webp', crumbs: [[K.title]] })}
-<section class="section section--tight">
-  <div class="wrap">
-    ${sectionHead(K.benefitsTitle)}
-    <ul class="benefits">${K.benefits.map((b) => `<li>${icon('check')}<span>${esc(b)}</span></li>`).join('')}</ul>
-  </div>
-</section>
-<section class="section section--porcelain" id="stellen">
-  <div class="wrap" data-jobs>
-    ${sectionHead(K.jobsTitle, K.jobsLead, `<div class="cluster"><select class="select select--small" data-jobs-loc aria-label="${esc(K.jobsAll)}"><option value="">${esc(K.jobsAll)}</option>${[...new Set(jobs.map((j) => j.city))].map((c) => `<option>${esc(c)}</option>`).join('')}</select><select class="select select--small" data-jobs-type aria-label="${esc(K.jobsType)}"><option value="">${esc(K.jobsType)}</option>${Object.entries(t.lbl.jobType).map(([k, v]) => `<option value="${k}">${esc(v)}</option>`).join('')}</select></div>`)}
-    <div class="jobs" data-jobs-list>${jobs.map((j) => `<a class="job" href="${esc(j.url)}" target="_blank" rel="noopener" data-city="${esc(j.city)}" data-type="${j.type}"><b>${esc(j.title)}</b><span>${icon('pin', 'width="16" height="16"')} ${esc(j.city)}</span><span>${esc(t.lbl.jobType[j.type])}, ${esc(t.lbl.jobTime[j.time])}</span>${icon('external')}</a>`).join('')}</div>
-    <p class="small faint mt">${esc(K.jobsNote)} <a href="https://ritz.jobs.personio.de/" target="_blank" rel="noopener">${esc(K.portal)}</a></p>
-  </div>
-</section>
-<section class="section">
-  <div class="wrap grid g-2">${K.paths.map(([h, x, id], i) => `<a class="pathcard" href="${href(id)}"><span class="pathcard__img">${imgTag(ctx, i === 0 ? 'mimg/2022__06__stellenangebote_ausbildung_images_1.webp' : 'mimg/praktika_intro_Bild_rechts.webp', { alt: '', sizes: '(max-width: 600px) 100vw, 50vw', max: 960 })}</span><span class="pathcard__body"><strong>${esc(h)}</strong><span>${esc(x)}</span></span></a>`).join('')}</div>
-</section>
-${hr ? `<section class="section section--tight"><div class="wrap"><div class="people people--one"><article class="person"><span class="person__kind">${esc(K.contactTitle)}</span><h3>${esc(hr.name)}</h3><p class="role">${esc(K.contactRole)}</p><div class="lines"><a href="mailto:${esc(hr.email)}">${icon('mail')}<span>${esc(hr.email)}</span></a></div></article></div></div></section>` : ''}`;
-}
+// Hauptseite in career.js; Ausbildung und Praktika hier
+export { careerPage } from './career.js';
 
 export function trainingPage(ctx) {
   const { t, href } = ctx;

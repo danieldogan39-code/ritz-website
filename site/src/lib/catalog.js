@@ -22,7 +22,7 @@ export const SECTOR_IMG = {
 // Bilder der Unternehmensseiten (Seitenkopf und Vorschau im Menü)
 export const PAGE_IMG = {
   company: 'mimg/ritz_header-unternehmen.webp', locations: 'mimg/Luftbild_Kirchaich_2014_klein.webp', quality: 'mimg/JKI1023-2.webp',
-  responsibility: 'mimg/wind-energy-sq.webp', references: 'mimg/JKI0984-2-2048x1366.webp', career: 'mimg/stellenangebote_intro_slider_4_International.webp',
+  responsibility: 'mimg/wind-energy-sq.webp', references: 'mimg/JKI0984-2-2048x1366.webp', career: 'mimg/IMG_20230607_060125_233.webp',
 };
 
 export const HISTORY_IMG = {
@@ -110,6 +110,17 @@ export const NEWS_COVERS = {
     sub: { de: 'Neue Produkte', en: 'New products', fr: 'Nouveaux produits', hu: 'Új termékek', es: 'Nuevos productos' },
   },
 };
+
+// Karriereseite: Foto im Kopf (Teamchallenge Dresden, Bildunterschrift verlinkt den Beitrag) und Einblicke aus den News
+// (Beitrag, Bild – erstes Element groß). Nur echte Fotos aus den Beiträgen, keine Stockbilder.
+export const CAREER_HERO = { img: 'mimg/IMG_20230607_060125_233.webp', news: 'teamchallenge-in-dresden' };
+export const CAREER_NEWS = [
+  ['personalmesse-karrierestart-dresden', 'mimg/IMG-20240119-WA0003.webp'],
+  ['teamchallenge-in-dresden', 'mimg/IMG_20230607_060435_853.webp'],
+  ['ritz-familienfest', 'mimg/20230624_160153.webp'],
+  ['ritz-oeffnet-tueren-fuer-kleine-entdecker-kita-kinder-blicken-hinter-die-kulissen-der-technik', 'mimg/RITZ_Kita_Kinder_Besuch_im_Werk.webp'],
+  ['ritz-mitarbeiterin-zur-besten-auszubildenden-ihres-lehrgangs-ausgezeichnet-worden', 'mimg/Foto_Ehrung_IHK_Petersen-768x510-1.webp'],
+];
 
 export const LOC_IMG = {
   hamburg: 'mimg/2022__07__unternehmen_historie_1.webp', kirchaich: 'mimg/Luftbild_Kirchaich_2014_klein.webp', dresden: 'mimg/image5.webp',

@@ -125,7 +125,7 @@ export function drawer(ctx) {
     sub(t.nav.tools, `<li><a href="${href('assistant')}">${esc(t.x.assist.title)}</a></li><li><a href="${href('calculators')}">${esc(t.x.calc.title)}</a></li><li><a href="${href('inquiry')}">${esc(t.ui.inquiryList)}</a></li><li><a href="${href('tools')}">${esc(t.x.hub.title)}</a></li>`),
     `<a href="${href('downloads')}">${esc(t.nav.downloads)}</a>`,
     sub(t.nav.company, `<li><a href="${href('company')}">${esc(t.nav.about)}</a></li><li><a href="${href('locations')}">${esc(t.nav.locations)}</a></li><li><a href="${href('quality')}">${esc(t.nav.quality)}</a></li><li><a href="${href('responsibility')}">${esc(t.nav.responsibility)}</a></li><li><a href="${href('references')}">${esc(t.nav.references)}</a></li>`),
-    sub(t.nav.career, `<li><a href="${href('career')}">${esc(t.nav.jobs)}</a></li><li><a href="${href('training')}">${esc(t.nav.training)}</a></li><li><a href="${href('internships')}">${esc(t.nav.internships)}</a></li>`),
+    sub(t.nav.career, `<li><a href="${href('career')}">${esc(t.nav.career)}</a></li><li><a href="${ctx.hrefA('career', {}, 'stellen')}">${esc(t.nav.jobs)}</a></li><li><a href="${href('training')}">${esc(t.nav.training)}</a></li><li><a href="${href('internships')}">${esc(t.nav.internships)}</a></li>`),
     `<a href="${href('news')}">${esc(t.nav.news)}</a>`,
     `<a href="${href('contact')}">${esc(t.nav.contact)}</a>`,
   ];
