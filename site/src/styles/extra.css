@@ -247,17 +247,6 @@
 .skip--inline { position: absolute; left: 12px; top: 12px; z-index: 5; }
 .skip--inline:not(:focus) { clip-path: inset(50%); width: 1px; height: 1px; padding: 0; overflow: hidden; white-space: nowrap; }
 
-/* Qualität */
-.certgrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; padding: 1px; }
-.certgrid > * { box-shadow: 0 0 0 1px var(--line); }
-.certcard { display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-rows: auto auto; gap: .15rem .8rem; padding: 16px; background: var(--paper); text-decoration: none; align-items: center; }
-.certcard b { font-size: 1.1rem; font-stretch: 96%; }
-.certcard span { color: var(--graphite); font-size: .86rem; grid-column: 1; }
-.certcard svg { grid-column: 2; grid-row: 1 / span 2; color: var(--steel); }
-.certcard:hover b { color: var(--red-ink); }
-.certcard:hover svg { color: var(--red); }
-@media (max-width: 520px) { .certgrid { grid-template-columns: minmax(0, 1fr); } }
-
 /* Verantwortung */
 .esg { display: grid; gap: .8rem; align-content: start; padding-top: 18px; border-top: 2px solid var(--ink); }
 .esg__icon { width: 44px; height: 44px; display: grid; place-items: center; background: var(--red-soft); color: var(--red-ink); }

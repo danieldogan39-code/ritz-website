@@ -45,7 +45,7 @@
     :is(.section-head, .split > .stack, .ctaband, .prose > h2):not([data-reveal], [data-reveal] *, .mega *, .search *, .drawer *, .hx *) {
       animation: svRise linear both; animation-timeline: view(); animation-range: entry 0% entry 80%;
     }
-    :is(.card, .pcard, .scard, .area, .app, .task, .mgr, .certcard, .feature, .esg, .job, .doc, .org__card, .brand, .person, .sgroup, .dlcat,
+    :is(.card, .pcard, .scard, .area, .app, .task, .mgr, .feature, .esg, .job, .doc, .org__card, .brand, .person, .sgroup, .dlcat,
       .mega__card--page, .ref, .loc, .fact, .nl__item, .world__list li, .tl2__item, .ftr__grid > *, .table-wrap, .pd-sec, .ks, .figure):not([data-reveal] *, .mega *, .search *, .drawer *, .hx *, [data-finder] *) {
       animation: svRise linear both; animation-timeline: view(); animation-range: entry 0% entry 70%;
     }
@@ -94,8 +94,8 @@
   .doc:hover .doc__go svg { translate: 0 2px; }
   .pcard { transition: box-shadow .2s var(--ease), transform .25s var(--ease-out); }
   .pcard:hover { transform: translateY(-3px); }
-  .scard, .loc, .certcard, .dlcat, .person { transition: transform .25s var(--ease-out), border-color .2s var(--ease), box-shadow .2s var(--ease); }
-  :is(.scard, .certcard, .dlcat):hover { transform: translateY(-3px); }
+  .scard, .loc, .dlcat, .person { transition: transform .25s var(--ease-out), border-color .2s var(--ease), box-shadow .2s var(--ease); }
+  :is(.scard, .dlcat):hover { transform: translateY(-3px); }
   /* Glanz über dunklen und roten Schaltflächen */
   /* nur gefüllte Knöpfe; overflow: hidden hält den Glanz im Knopf, auch wo keine Schräge (clip-path) schneidet */
   .btn:not(.btn--ghost, .btn--light, .btn--line, .btn--ghost-light) { position: relative; overflow: hidden; }

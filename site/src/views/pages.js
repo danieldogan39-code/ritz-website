@@ -5,7 +5,7 @@ import { SECTORS, AREAS } from '../lib/routes.js';
 import { phead, sectionHead, personCard, docRow, ctaBand, ticks, crumbs, shorten, langDocs, docIn } from './layout.js';
 import { SECTOR_IMG, newsCard } from './home.js';
 import { docVisible, dedupeCopies } from '../lib/doclang.js';
-import { SECTOR_LINKS, HISTORY_IMG, personImg, REFERENCE_IMG, REFERENCE_DOC, REFERENCE_NEWS, CERT_FILES, FEATURED_DOCS, FEATURED_DOCS_EN, LOC_IMG } from '../lib/catalog.js';
+import { SECTOR_LINKS, HISTORY_IMG, personImg, REFERENCE_IMG, REFERENCE_DOC, REFERENCE_NEWS, FEATURED_DOCS, FEATURED_DOCS_EN, LOC_IMG } from '../lib/catalog.js';
 import { filterProducts, parseQuery, productCard, imgFit } from '../lib/product.js';
 import { projectLL, locAddress } from '../lib/geo.js';
 import { netMapBlock } from './netmap.js';
@@ -264,36 +264,8 @@ export function locCard(ctx, l) {
 }
 
 // ---------------- Qualität ----------------
-export function qualityPage(ctx) {
-  const { t, href } = ctx;
-  const Q = t.pages.quality;
-  return `${phead(ctx, { title: Q.h1, lead: Q.lead, image: 'mimg/JKI1023-2.webp', figure: true, crumbs: [[t.nav.company, href('company')], [Q.title]] })}
-<section class="section">
-  <div class="wrap split">
-    <div class="prose">${Q.body.map((x) => `<p class="lead">${esc(x)}</p>`).join('')}</div>
-    <div class="certgrid">${Q.certs.map(([n, d, key]) => {
-      const doc = docIn(ctx, docByFile(ctx, CERT_FILES[key]));
-      return `<a class="certcard" ${doc ? ctx.docAttrs(doc) : `href="${ctx.href('contact', {}, { topic: 2 })}"`}><b>${esc(n)}</b><span>${esc(d)}</span>${icon(doc && ctx.docHref(doc) ? 'download' : 'mail', 'width="18" height="18"')}</a>`;
-    }).join('')}</div>
-  </div>
-</section>
-<section class="section section--resin">
-  <div class="wrap">
-    ${sectionHead(Q.testTitle)}
-    <div class="grid g-3">${Q.test.map(([h, x]) => `<div class="feature feature--dark"><h3>${esc(h)}</h3><p>${esc(x)}</p></div>`).join('')}</div>
-  </div>
-</section>
-<section class="section">
-  <div class="wrap grid g-2">
-    <figure class="figure">${imgTag(ctx, 'mimg/2022__07__unternehmen_qualitaetsmanagement_wandler_pruefung.webp', { alt: Q.imgTransformer, sizes: '(max-width: 600px) 100vw, 50vw', max: 960, lowres: 640 })}<figcaption>${esc(Q.imgTransformer)}</figcaption></figure>
-    <figure class="figure">${imgTag(ctx, 'mimg/2022__07__unternehmen_qualitaetsmanagement_schienen_pruefung.webp', { alt: Q.imgBusbar, sizes: '(max-width: 600px) 100vw, 50vw', max: 960, lowres: 640 })}<figcaption>${esc(Q.imgBusbar)}</figcaption></figure>
-  </div>
-</section>
-<section class="section section--porcelain"><div class="wrap split split--even">
-  <div class="stack" style="--s:1rem"><h2 class="h3">${esc(Q.aeoTitle)}</h2><p>${esc(Q.aeo)}</p></div>
-  <div class="stack" style="--s:1rem">${ctaBand(ctx, t.nav.downloads, t.pages.home.tasks[0][1], t.ui.allDownloads, href('downloads', {}, { type: 'certificate' }))}</div>
-</div></section>`;
-}
+// eigene Datei (quality.js)
+export { qualityPage } from './quality.js';
 
 // ---------------- Verantwortung ----------------
 // eigene Datei (responsibility.js)

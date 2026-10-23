@@ -64,6 +64,39 @@ export const CERT_FILES = {
   IRIS_silver_status: 'IRIS_silver_status.pdf', 'AEO-F': 'Zertifizierungsurkunde-RITZ-AEO-F-.pdf',
 };
 
+// ---------- Qualität ----------
+// Fehlergrenzen eines Stromwandlers der Klasse 0,2S nach IEC 61869-2: Strommessabweichung in ± % bei % des Bemessungsstroms
+export const CT_CLASS = { cls: 0.2, s: true, pts: [[1, 0.75], [5, 0.35], [20, 0.2], [100, 0.2], [120, 0.2]] };
+// Akkreditierungsumfang der Kalibrierstelle 0633 (Akkreditierung Austria, Erstakkreditierung 06.07.2017, Beilage zum Bescheid):
+// Kalibriergegenstand, Frequenz in Hz, primäre Bemessungsgröße [von, bis] als [Wert, Einheit] (gt = „über“),
+// kleinste angebbare erweiterte Messunsicherheit (k = 2) für Messabweichung in % und Fehlwinkel in min
+export const LAB_SCOPE = { id: '0633', since: '2017-07-06', file: CERT_FILES[17025], rows: [
+  ['ct', 50, [1, 'A'], [20000, 'A'], 0.010, 0.72],
+  ['vt', 50, [100, 'V'], [60, 'kV'], 0.010, 0.77],
+  ['vt', 50, [60, 'kV', 'gt'], ['220/√3', 'kV'], 0.012, 0.80],
+  ['vt', 16.7, [500, 'V'], [20, 'kV'], 0.018, 0.89],
+] };
+// Zertifikate und Zulassungen je Standort in Europa (Reihenfolge der Spalten); Texte je Sprache in pages.quality.cm.rows
+// Quellen: DQS-Zertifikate vom 17.07.2026 mit Anhang, IRIS-Zertifikat (Quality Austria, 12.04.2024) und Silver-Statement 2026,
+// Akkreditierungsurkunde 0633, AEO-Zertifikat DE AEOF 119540; Eichstelle und Prüfstelle laut bisheriger Website
+export const QUALITY_SITES = ['hamburg', 'dresden', 'kirchaich', 'marchtrenk', 'kecskemet'];
+export const QUALITY_CERTS = [
+  { k: 'iso9001', std: 'ISO 9001:2015', no: '000632 QM15', sites: QUALITY_SITES, valid: '2029-08-14', files: [CERT_FILES.QM15] },
+  { k: 'iso14001', std: 'ISO 14001:2015', no: '000632 UM15', sites: QUALITY_SITES, valid: '2029-08-14', files: [CERT_FILES.UM15] },
+  { k: 'iso50001', std: 'ISO 50001:2018', no: '000632 EMSt21', sites: ['hamburg', 'dresden', 'kirchaich', 'kecskemet'], valid: '2029-09-15', files: [CERT_FILES.EMSt21] },
+  { k: 'iris', std: 'IRIS Certification', no: 'IR-00053/0', sites: ['marchtrenk'], valid: '2027-06-21', files: [CERT_FILES['IRIS-Certificate']], extra: [CERT_FILES.IRIS_silver_status] },
+  { k: 'lab', std: 'ISO/IEC 17025', no: '0633', sites: ['marchtrenk'], since: '2017-07-06', files: [CERT_FILES[17025]] },
+  { k: 'bev', sites: ['marchtrenk'] },
+  { k: 'pst', sites: ['dresden'] },
+  { k: 'aeo', std: 'AEO-F', no: 'DE AEOF 119540', sites: ['hamburg', 'dresden', 'kirchaich'], since: '2015-09-24', files: [CERT_FILES['AEO-F']] },
+];
+// Von außen bestätigt: Beiträge (Texte je Sprache in pages.quality.rec, gleiche Reihenfolge)
+export const QUALITY_REC = ['ritz-marchtrenk-erreichte-bei-der-zertifizierung-den-iris-silver-quality-performance-level',
+  'auszeichnung-zum-lieferanten-des-jahres-bei-den-hitachi-supplier-days-2024', '25-jahre-hochgenaue-dc-messung'];
+// Bilder der Prüfung
+export const QUALITY_IMG = { inspect: 'mimg/Hochspannungswandler-Intro2.webp',
+  transformer: 'mimg/2022__07__unternehmen_qualitaetsmanagement_wandler_pruefung.webp', busbar: 'mimg/2022__07__unternehmen_qualitaetsmanagement_schienen_pruefung.webp' };
+
 // ---------- Verantwortung ----------
 // CO₂-Reduktion 2021–2024 (Scope 1 und 2) je Standort in Europa, laut RITZ-Dokument „CO₂-Reduktion in den Werken“ (Juli 2025)
 export const CO2_CUT = { doc: 'RITZ-CO2-Reduktion-in-den-Werken-1.pdf', news: 'co2-reduktion-in-den-werken', from: 2021, to: 2024,
