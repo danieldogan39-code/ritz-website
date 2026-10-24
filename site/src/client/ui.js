@@ -112,6 +112,11 @@ export function initHeader() {
   lb?.addEventListener('click', () => { const o = lm.hidden; lm.hidden = !o; lb.setAttribute('aria-expanded', String(o)); if (o) lm.querySelector('a')?.focus(); });
   document.addEventListener('click', (e) => { if (lm && !lm.hidden && !e.target.closest('[data-lang]')) { lm.hidden = true; lb.setAttribute('aria-expanded', 'false'); } });
   lm?.addEventListener('keydown', (e) => { if (e.key === 'Escape') { lm.hidden = true; lb.setAttribute('aria-expanded', 'false'); lb.focus(); } });
+  // Gewählte Sprache merken: die Startadresse (/) öffnet beim nächsten Besuch diese Sprache statt der des Browsers
+  if (!document.__langPick) {
+    document.__langPick = true;
+    document.addEventListener('click', (e) => { const a = e.target.closest?.('a[data-lang-link]'); if (a) document.cookie = `ritz-lang=${a.dataset.langLink};path=/;max-age=31536000;samesite=lax`; });
+  }
   // Schatten beim Scrollen. Den Ausgangszustand erst im nächsten Bild lesen: scrollY erzwingt sonst mitten im Start
   // ein vollständiges Layout der Seite, das nach den übrigen Startarbeiten noch einmal anfällt.
   const onScroll = () => hdr.classList.toggle('is-scrolled', window.scrollY > 8);

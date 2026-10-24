@@ -13,7 +13,7 @@
 .plain a:hover { text-decoration: underline; }
 
 /* Kopf: Schatten beim Scrollen, Badge im Drawer */
-.hdr { transition: box-shadow .2s var(--ease); }
+.hdr { transition: box-shadow .2s var(--ease), background-color .25s var(--ease-out); }
 .hdr.is-scrolled { box-shadow: 0 6px 24px -18px rgb(28 19 17 / .45); }
 .badge-inline { margin-left: .4rem; min-width: 22px; height: 22px; padding: 0 6px; border-radius: 11px; background: #fff; color: var(--red); font-size: 12px; font-weight: 700; line-height: 22px; text-align: center; }
 .link--light { color: #fff; border-color: rgb(255 255 255 / .5); }
@@ -808,7 +808,8 @@ img.is-lowres { width: auto !important; height: auto !important; max-width: 100%
   .hx.is-live .hx__scale { height: 36px; }
   .hx.is-live .hx__mark { width: 12px; margin-left: -6px; }
   .hx.is-live .hx__mark i { width: 7px; height: 7px; }
-  .hx.is-live .hx__step { opacity: .45; transition: opacity .4s var(--ease-out); }
+  /* nicht aktive Etappen nur leicht zurücknehmen: auf dem Telefon liest man die Liste, sie muss lesbar bleiben */
+  .hx.is-live .hx__step { opacity: .72; transition: opacity .4s var(--ease-out); }
   .hx.is-live .hx__step.is-on { opacity: 1; }
 }
 @media (prefers-reduced-motion: no-preference) {

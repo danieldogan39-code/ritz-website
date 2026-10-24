@@ -215,6 +215,9 @@
 .hdr.hdr--over:not(.is-open) .hdr__cta { --bg: transparent; --fg: #fff; --bd: rgb(255 255 255 / .5); color: #fff; }
 .hdr.hdr--over:not(.is-open) .hdr__cta:hover { --bg: #fff; --fg: #1b1716; --bd: #fff; color: #1b1716; }
 .hdr.hdr--over:not(.is-open) :focus-visible { outline-color: #fff; }
+/* Beim Scrollen über die Bühne: dunkles Glas statt transparent – sonst laufen Leitsatz und Knöpfe unter der
+   weißen Navigation durch und beides wird unlesbar. Ganz oben bleibt der Kopf transparent. */
+.hdr.hdr--over.is-scrolled:not(.is-open) { background: rgb(13 9 8 / .86); -webkit-backdrop-filter: saturate(140%) blur(14px); backdrop-filter: saturate(140%) blur(14px); border-bottom-color: rgb(255 255 255 / .08); }
 
 /* Bewegung der Bühne: ein Einstieg, danach ruhige Schleifen; bei reduzierter Bewegung steht alles.
    Alle Schleifen sind transform oder opacity ganzer Ebenen (Compositor, kein Neuzeichnen). */
@@ -374,7 +377,7 @@
 .nm::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
   background: radial-gradient(52% 46% at 52% 58%, rgb(255 74 67 / .075), transparent 72%), radial-gradient(30% 40% at 22% 70%, rgb(227 154 95 / .05), transparent 70%); }
 .nm__head { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 6fr); gap: clamp(28px, 5vw, 88px); align-items: end; }
-.nm__copy .ch__lead { max-width: 54ch; }
+.nm__copy .ch__lead { max-width: 54ch; color: var(--on-night-2); } /* dunkler Abschnitt: im hellen Modus sonst Grau auf Schwarz */
 .nm__stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 0; border-top: 1px solid var(--night-line); }
 .nm__stats > div { display: flex; flex-direction: column-reverse; justify-content: flex-end; gap: .45rem; padding: 16px 14px 0 0; min-width: 0; }
 .nm__stats > div + div { padding-left: 16px; border-left: 1px solid var(--night-line); }

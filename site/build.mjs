@@ -282,6 +282,9 @@ function jsonld(ctx, route, page) {
   }
   return out.map((o) => `<script type="application/ld+json">${JSON.stringify(o).replace(/</g, '\\u003c')}</script>`).join('');
 }
+// Sprache für die Startadresse: im Sprachmenü gewählte Sprache (Cookie), sonst die erste unterstützte aus den
+// Browsereinstellungen, sonst Englisch (ohne jede Angabe Deutsch) – dieselbe Logik wie die .htaccess
+const LANG_PICK = `function pickLang(){var L=['de','en','fr','hu','es'],m=document.cookie.match(/(?:^|;\\s*)ritz-lang=(de|en|fr|hu|es)(?:;|$)/);if(m)return m[1];var a=navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||''];for(var i=0;i<a.length;i++){var l=String(a[i]).slice(0,2).toLowerCase();if(L.indexOf(l)>-1)return l}return a[0]?'en':'de'}`;
 // Seitenwechsel ohne Wartezeit: Chromium-Browser laden eine verlinkte Seite vor, sobald der Zeiger kurz auf dem Link
 // verweilt oder der Finger ihn berührt (Speculation Rules, „moderate“) – nur eigene Seiten, keine Dokumente,
 // Formularziele oder Links in neuen Fenstern. Andere Browser übergehen den Block.
@@ -710,15 +713,15 @@ RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 # Projektunterlagen nicht öffentlich ausliefern
 RewriteRule ^_projekt(/|$) - [F,L]
 
-# Startseite: Sprache nach Browser
-RewriteCond %{HTTP:Accept-Language} ^en [NC]
+# Startseite: Sprache nach Browser. Zuerst eine früher im Sprachmenü gewählte Sprache (Cookie ritz-lang), dann die
+# erste unterstützte Sprache aus der Liste des Browsers (Reihenfolge der Einstellungen, z. B. „nl, en, de“ → en);
+# keine davon → Englisch; ohne Angabe (z. B. Suchmaschinen) → Deutsch
+RewriteCond %{HTTP_COOKIE} (?:^|;\\s*)ritz-lang=(de|en|fr|hu|es)(?:;|$)
+RewriteRule ^$ /%1/ [R=302,L]
+RewriteCond %{HTTP:Accept-Language} (?:^|,)\\s*(de|en|fr|hu|es)(?:[-_;,]|$)
+RewriteRule ^$ /%1/ [R=302,L]
+RewriteCond %{HTTP:Accept-Language} .
 RewriteRule ^$ /en/ [R=302,L]
-RewriteCond %{HTTP:Accept-Language} ^fr [NC]
-RewriteRule ^$ /fr/ [R=302,L]
-RewriteCond %{HTTP:Accept-Language} ^hu [NC]
-RewriteRule ^$ /hu/ [R=302,L]
-RewriteCond %{HTTP:Accept-Language} ^es [NC]
-RewriteRule ^$ /es/ [R=302,L]
 RewriteRule ^$ /de/ [R=302,L]
 
 # Dokumente: bis zur Migration unter /wp-content/uploads/ belassen (Ordner übernehmen).
@@ -802,9 +805,10 @@ echo json_encode(['ok' => (bool)$ok]);
     wr(`${DIST}/api/anfrage.php`, php('inquiry'));
     wr(`${DIST}/api/kontakt.php`, php('contact'));
   }
-  // Entwurf: Startadresse zeigt direkt die deutsche Startseite (alle Links sind absolut, das passt auch hier)
-  if (DRAFT) wr(`${DIST}/index.html`, fs.readFileSync(`${DIST}/de/index.html`, 'utf8'));
-  else wr(`${DIST}/index.html`, `<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RITZ Instrument Transformers</title><link rel="canonical" href="${SITE}/de/"><meta http-equiv="refresh" content="0; url=/de/"><script>var l=(navigator.language||'de').slice(0,2);location.replace('/'+(['de','en','fr','hu','es'].indexOf(l)>-1?l:'de')+'/')</script></head><body><p>${LANGS.map((l) => `<a href="/${l}/" hreflang="${l}">${LANG_NAMES[l]}</a>`).join(' | ')}</p></body></html>`);
+  // Entwurf (GitHub Pages, keine Serverregeln): Startadresse ist die deutsche Startseite; ein kleines Skript im Kopf
+  // leitet vor dem ersten Bild in die Sprache des Browsers um (wie die .htaccess in Produktion)
+  if (DRAFT) wr(`${DIST}/index.html`, fs.readFileSync(`${DIST}/de/index.html`, 'utf8').replace('<meta charset="utf-8">', `<meta charset="utf-8"><script>${LANG_PICK}if(location.pathname==='/'){var __l=pickLang();if(__l!=='de')location.replace('/'+__l+'/'+location.search+location.hash)}</script>`));
+  else wr(`${DIST}/index.html`, `<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RITZ Instrument Transformers</title><link rel="canonical" href="${SITE}/de/"><noscript><meta http-equiv="refresh" content="0; url=/de/"></noscript><script>${LANG_PICK}location.replace('/'+pickLang()+'/')</script></head><body><p>${LANGS.map((l) => `<a href="/${l}/" hreflang="${l}">${LANG_NAMES[l]}</a>`).join(' | ')}</p></body></html>`);
   wr(`${DIST}/404.html`, fs.readFileSync(`${DIST}/de/404.html`, 'utf8'));
 }
 
