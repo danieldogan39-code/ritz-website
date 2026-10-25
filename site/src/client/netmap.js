@@ -1130,6 +1130,7 @@ function setup(el) {
   frame.addEventListener('pointerdown', (e) => {
     if (!live || e.button > 0 || e.target.closest('.nm__zoom')) return;
     lastPtr = e.pointerType;
+    if (e.pointerType !== 'mouse') chase = null; // Finger hält eine gleitende Ansicht an
     if (e.pointerType === 'mouse') sleepUntil = 0; // Klick weckt die Karte: das Mausrad zoomt sofort
     ptrT = performance.now();
     ptrs.set(e.pointerId, local(e));
@@ -1163,11 +1164,17 @@ function setup(el) {
         frame.classList.add('is-drag');
         flight = null; userView(); setSnap(null);
         drag.x = e.clientX; drag.y = e.clientY; drag.cx = cam.x; drag.cy = cam.y; // kein Sprung um die Schwelle
+        drag.vx = 0; drag.vy = 0; drag.lx = e.clientX; drag.ly = e.clientY; drag.lt = e.timeStamp;
         return;
       }
       if (drag.moved) {
+        // Finger wie Maus: in alle Richtungen (die Karte nimmt Gesten selbst an, touch-action: none; die Seite rollt
+        // ober- und unterhalb der Karte)
         cam.x = drag.cx - dx / cam.s;
-        cam.y = drag.cy - (drag.type === 'mouse' ? dy : 0) / cam.s; // Finger: senkrecht scrollt die Seite
+        cam.y = drag.cy - dy / cam.s;
+        const dt = e.timeStamp - drag.lt;
+        if (dt > 0) { const k = Math.min(1, dt / 50); drag.vx += ((e.clientX - drag.lx) / dt - drag.vx) * k; drag.vy += ((e.clientY - drag.ly) / dt - drag.vy) * k; }
+        drag.lx = e.clientX; drag.ly = e.clientY; drag.lt = e.timeStamp;
         clampCam(); setRegion(''); kick();
         return;
       }
@@ -1200,7 +1207,16 @@ function setup(el) {
     const d = drag;
     drag = null;
     frame.classList.remove('is-drag');
-    if (d.moved) dragEnd = performance.now();
+    if (d.moved) {
+      dragEnd = performance.now();
+      // Schwung nach einem schnellen Wischen (Finger): die Ansicht gleitet weich aus
+      const sp = Math.hypot(d.vx || 0, d.vy || 0);
+      if (d.type !== 'mouse' && sp > 0.25 && e.timeStamp - (d.lt || 0) < 80) {
+        const k = Math.min(420, 160 + sp * 160);
+        const to = clampCam({ x: cam.x - (d.vx * k) / cam.s, y: cam.y - (d.vy * k) / cam.s, s: cam.s });
+        chase = { x: to.x, y: to.y, t: performance.now() }; kick();
+      }
+    }
     // Marker selbst behandelt ihr click-Ereignis (auch für Screenreader und Tastatur)
     if (d.moved || e.type !== 'pointerup' || e.target.closest('.nm__zoom, .nm__mk') || phase === 'wait') return;
     const [px, py] = local(e);
@@ -1262,6 +1278,7 @@ function setup(el) {
   frame.addEventListener('gesturechange', (e) => {
     if (!gs) return;
     e.preventDefault();
+    if (pinch) return; // Touch-Bildschirm: das Zwei-Finger-Zoomen über Pointer-Ereignisse übernimmt (sonst doppelt)
     cam.s = clamp(gs.s0 * e.scale, sMin, sMax);
     cam.x = gs.mx - (gs.px - vw / 2) / cam.s; cam.y = gs.my - (gs.py - vh / 2) / cam.s;
     clampCam(); setRegion(''); kick();

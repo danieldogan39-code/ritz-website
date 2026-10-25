@@ -483,6 +483,8 @@
 /* Bühne: ohne JavaScript ein Bild im Seitenverhältnis der Karte, die Marker in Prozent darauf */
 .nm__stage { position: relative; margin-top: clamp(18px, 2.4vw, 32px); }
 .nm__frame { position: relative; width: min(100% - 2 * var(--gutter, 20px), calc(78vh * 1000 / 520), 1640px); aspect-ratio: 1000 / 520; margin-inline: auto; touch-action: pan-y; }
+/* bedienbare Karte: Wischen und Zwei-Finger-Zoom gehören der Karte, nicht der Seite (sonst zoomt die ganze Website) */
+.nm.is-live .nm__frame { touch-action: none; }
 .nm__img { position: absolute; inset: 0; width: 100%; height: 100%; transition: opacity .5s var(--ease-out); }
 .nm__img.is-gone { opacity: 0; }
 .nm__cv { position: absolute; inset: 0; display: none; width: 100%; height: 100%; }
