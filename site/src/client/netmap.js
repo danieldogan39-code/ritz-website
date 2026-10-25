@@ -107,6 +107,7 @@ function setup(el) {
   const tEnd = Math.max(0, ...nodes.map((n) => n.t)) + 650;
   let visible = false, raf = 0, idleRaf = 0, lastIdle = 0, nextPulse = 0, flight = null;
   let pinned = null, hovered = null, snap = null, roving = hq, lastFocus = null, focusAmt = 0;
+  let markSig = ''; // zuletzt gesetzte Markerlage (placeMarks)
   let followBase = null, inside = false, backT = 0, dwellT = 0, glideT = 0, flashT = 0, lock = null, lastPX = 0, lastPY = 0;
   let pickSync = null; // Länderwahl zeigt das Land des angehefteten Punkts
   let viewSync = null; // Knopf „Ansicht“ (Telefon) markiert ausgeblendete Ebenen
@@ -220,7 +221,7 @@ function setup(el) {
     if (followBase) followBase = { ...base };
     flight = null;
     sized = true;
-    for (const n of nodes) if (n.lbl) n.lw = n.lbl.offsetWidth;
+    for (const n of nodes) if (n.lbl) n.lw = n.lbl.offsetWidth; markSig = '';
     cardFloat = getComputedStyle(card).position === 'absolute';
     if (!card.hidden) measureCard();
     render(performance.now());
@@ -427,9 +428,15 @@ function setup(el) {
   // ---------- Marker, Beschriftungen, Zielring ----------
   const RK = { hq: 3, production: 2, site: 1, sales: 1, rep: 0 };
   const LBL_AT = mode === 'locations' ? 0 : 2.2; // ab diesem Maßstab alle Standortnamen (Kollisionen ausgenommen)
+  // Marker nur neu setzen, wenn sich Ansicht, Fokus oder sichtbare Einträge geändert haben: während das Netz sich
+  // einzeichnet, steht die Kamera – bisher wurden trotzdem in jedem Bild alle Marker neu positioniert (Stil für ~80 Elemente)
   function placeMarks() {
-    const lblOn = cam.s >= LBL_AT;
     const focus = pinned || hovered;
+    let sig = `${cam.x.toFixed(2)},${cam.y.toFixed(2)},${cam.s.toFixed(4)},${vw},${vh},${nodes.indexOf(focus)},${nodes.indexOf(snap)},${nodes.indexOf(pinned)}|`;
+    for (const n of nodes) sig += (n.on ? 1 : 0) + (n.match ? 2 : 0) + (n.lbl ? 4 : 0);
+    if (sig === markSig) { placeRet(); return; }
+    markSig = sig;
+    const lblOn = cam.s >= LBL_AT;
     const placed = [];
     const overlap = (a, b) => a.x0 < b.x1 && a.x1 > b.x0 && a.y0 < b.y1 && a.y1 > b.y0;
     for (const n of nodes) {

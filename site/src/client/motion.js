@@ -147,22 +147,23 @@ export function initHero2(root = document) {
 // Werke: Listeneintrag hebt seinen Punkt auf der Karte hervor.
 export function initStage(root = document) {
   const st = root.querySelector('[data-stage]');
-  const hdr = document.querySelector('[data-hdr]');
+  const hdrNow = () => document.querySelector('[data-hdr]');
   if (st && !st.__st) {
     st.__st = true;
-    let raf = 0;
-    const upd = () => {
-      raf = 0;
-      if (!st.isConnected) { removeEventListener('scroll', onScroll); hdr?.classList.remove('hdr--over'); return; }
-      const hh = hdr ? hdr.offsetHeight : 68;
-      hdr?.classList.toggle('hdr--over', st.getBoundingClientRect().bottom > hh + 8);
+    // Kopf transparent, solange die Bühne unter ihm liegt (Unterkante der Bühne tiefer als Kopfhöhe + 8 px).
+    // IntersectionObserver mit oben um die Kopfhöhe verkleinertem Sichtbereich: keine Messung bei jedem Scrollbild
+    const watch = () => {
+      window.__stIO?.disconnect();
+      const hh = hdrNow()?.offsetHeight || 68;
+      if (!('IntersectionObserver' in window)) { hdrNow()?.classList.toggle('hdr--over', st.getBoundingClientRect().bottom > hh + 8); return; }
+      window.__stIO = new IntersectionObserver(([e]) => { if (st.isConnected) hdrNow()?.classList.toggle('hdr--over', e.isIntersecting); else { window.__stIO?.disconnect(); hdrNow()?.classList.remove('hdr--over'); } }, { rootMargin: `-${hh + 8}px 0px 0px 0px` });
+      window.__stIO.observe(st);
     };
-    const onScroll = () => { if (!raf) raf = requestAnimationFrame(upd); };
-    addEventListener('scroll', onScroll, { passive: true });
-    addEventListener('resize', onScroll, { passive: true });
-    upd();
+    watch();
+    let rt = 0;
+    addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(() => { if (st.isConnected) watch(); }, 150); }, { passive: true });
     if ('IntersectionObserver' in window) new IntersectionObserver(([e]) => st.classList.toggle('is-idle', !e.isIntersecting)).observe(st);
-  } else if (!st) hdr?.classList.remove('hdr--over');
+  } else if (!st) { window.__stIO?.disconnect(); hdrNow()?.classList.remove('hdr--over'); }
   const sp = root.querySelector('[data-spectrum]');
   if (sp && !sp.__sp) {
     sp.__sp = true;
@@ -184,3 +185,33 @@ export function initStage(root = document) {
     wl.addEventListener('focusout', () => hot(null));
   }
 }
+
+// Einblendungen mit Scroll-Zeitachse (motion.css): Jede aktive Animation dieser Art lässt den Browser bei jedem
+// Scrollbild den Stil ihres Elements neu berechnen – auf langen Seiten mehrere hundert Elemente. Weit außerhalb des
+// Bildschirms (mehr als gut eine Fensterhöhe) sieht man sie nicht, dort wird die Animation ausgesetzt (.sv-off).
+// Oberhalb ist ihr Endzustand ohnehin „keine Veränderung“, unterhalb wird sie rechtzeitig vor dem Eintreten wieder
+// angehängt – sichtbar ändert sich nichts. Nur Elemente, deren Animationen ausschließlich scrollgebunden sind.
+let svIO = null;
+export function initScrollGate() {
+  if (!('IntersectionObserver' in window) || !document.getAnimations || typeof DocumentTimeline === 'undefined') return;
+  const run = () => {
+    // ausgesetzte Elemente haben keine Animation und fehlten sonst in der Liste: erst alle wieder freigeben
+    svIO?.disconnect();
+    document.querySelectorAll('.sv-off').forEach((el) => el.classList.remove('sv-off'));
+    const hosts = new Map();
+    for (const a of document.getAnimations()) {
+      const t = a.effect?.target;
+      if (!t) continue;
+      const scroll = !!a.timeline && !(a.timeline instanceof DocumentTimeline);
+      if (!scroll) hosts.set(t, false);
+      else if (!hosts.has(t)) hosts.set(t, true);
+    }
+    svIO?.disconnect();
+    svIO = new IntersectionObserver((es) => { for (const e of es) e.target.classList.toggle('sv-off', !e.isIntersecting); }, { rootMargin: '125% 0px 125% 0px' });
+    for (const [el, ok] of hosts) if (ok && el.isConnected && el !== document.documentElement && !el.closest('.hdr')) svIO.observe(el);
+  };
+  requestAnimationFrame(() => requestAnimationFrame(run));
+  // zweiter Durchgang, wenn Einstiegsanimationen (z. B. Seitenkopf) abgelaufen sind: deren Elemente kommen dann dazu
+  clearTimeout(window.__svT); window.__svT = setTimeout(run, 2600);
+}
+

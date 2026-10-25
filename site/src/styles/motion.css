@@ -40,6 +40,8 @@
       animation: svProgress linear both; animation-timeline: scroll(root block); }
   }
 
+  /* weit außerhalb des Bildschirms ausgesetzt (siehe initScrollGate in motion.js) */
+  .sv-off, .sv-off::before, .sv-off::after { animation: none !important; animation-timeline: auto !important; }
   /* ---------- Einblenden beim Scrollen (eigene Zeitachse je Element: staffelt sich von selbst) ---------- */
   @supports (animation-timeline: view()) {
     :is(.section-head, .split > .stack, .ctaband, .prose > h2):not([data-reveal], [data-reveal] *, .mega *, .search *, .drawer *, .hx *) {

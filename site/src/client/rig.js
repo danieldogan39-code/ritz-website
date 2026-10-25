@@ -95,6 +95,7 @@ function setup(el) {
   const start = () => {
     if (on) return;
     on = true;
+    el.classList.remove('is-off');
     const now = performance.now();
     t0 = pausedAt ? now - pausedAt : now; // beim Wiedersehen dort weiter, wo der Monitor stand
     raf = requestAnimationFrame(frame);
@@ -102,6 +103,7 @@ function setup(el) {
   const stop = () => {
     if (!on) return;
     on = false;
+    el.classList.add('is-off');
     pausedAt = (performance.now() - t0) % TOTAL;
     cancelAnimationFrame(raf);
     raf = 0;

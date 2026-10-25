@@ -814,6 +814,7 @@ img.is-lowres { width: auto !important; height: auto !important; max-width: 100%
 }
 @media (prefers-reduced-motion: no-preference) {
   .hx__scan { animation: hxScan 6s linear infinite; }
+  .hx.is-idle .hx__scan { animation-play-state: paused; } /* außerhalb des Sichtbereichs (history.js) */
   .hx__frame.is-wipe::after { animation: hxWipe .9s cubic-bezier(.77, 0, .175, 1); }
   .hx.is-back .hx__frame.is-wipe::after { animation-name: hxWipeBack; }
 }

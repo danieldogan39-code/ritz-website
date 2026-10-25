@@ -119,8 +119,21 @@ export function initHeader() {
   }
   // Schatten beim Scrollen. Den Ausgangszustand erst im nächsten Bild lesen: scrollY erzwingt sonst mitten im Start
   // ein vollständiges Layout der Seite, das nach den übrigen Startarbeiten noch einmal anfällt.
-  const onScroll = () => hdr.classList.toggle('is-scrolled', window.scrollY > 8);
-  window.addEventListener('scroll', onScroll, { passive: true }); requestAnimationFrame(onScroll);
+  // Umgesetzt mit einem 9 px hohen Merker am Seitenanfang und IntersectionObserver: kein Scroll-Handler, der bei jedem
+  // Scrollereignis scrollY liest (das erzwang auf schwachen Geräten Stil- und Layoutberechnung mitten im Scrollen)
+  if ('IntersectionObserver' in window) {
+    let mark = document.querySelector('[data-top-mark]');
+    if (!mark) {
+      mark = document.createElement('div');
+      mark.setAttribute('data-top-mark', ''); mark.setAttribute('aria-hidden', 'true');
+      mark.style.cssText = 'position:absolute;top:0;left:0;width:1px;height:9px;pointer-events:none;visibility:hidden';
+      document.body.prepend(mark);
+      new IntersectionObserver(([e]) => document.querySelector('[data-hdr]')?.classList.toggle('is-scrolled', !e.isIntersecting)).observe(mark);
+    }
+  } else {
+    const onScroll = () => hdr.classList.toggle('is-scrolled', window.scrollY > 8);
+    window.addEventListener('scroll', onScroll, { passive: true }); requestAnimationFrame(onScroll);
+  }
 }
 
 // Handy-Menü. Die Vorschau (SPA) ersetzt das Menü bei jedem Seitenwechsel: das Akkordeon hängt am jeweiligen Element,

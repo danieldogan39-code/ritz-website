@@ -18,6 +18,9 @@ export function initHistory(root = document) {
   const prev = hx.querySelector('[data-hx-prev]');
   const next = hx.querySelector('[data-hx-next]');
   const last = steps.length - 1;
+  // Fortschritt nur an den beiden Elementen setzen, die ihn nutzen: eine Variable am ganzen Abschnitt ließe den Browser
+  // bei jedem Etappenwechsel den Stil aller Nachkommen neu berechnen
+  const prog = [...hx.querySelectorAll('.hx__fill, .hx__needle')];
   hx.classList.add('is-live');
   let cur = -1, lock = 0;
   const warm = (i) => { const img = shots[i]?.querySelector('img'); if (img && img.loading === 'lazy') img.loading = 'eager'; };
@@ -31,12 +34,17 @@ export function initHistory(root = document) {
     marks.forEach((m, k) => { m.classList.toggle('is-past', k < i); if (k === i) m.setAttribute('aria-current', 'step'); else m.removeAttribute('aria-current'); });
     const y = steps[i].dataset.year || '';
     [...y].forEach((c, k) => digs[k]?.style.setProperty('--d', c));
-    hx.style.setProperty('--hx-p', (i / last).toFixed(4));
+    const pv = (i / last).toFixed(4); prog.forEach((el) => el.style.setProperty('--hx-p', pv));
     if (nEl) nEl.textContent = String(i + 1).padStart(2, '0');
     if (label) label.textContent = y;
     if (prev) prev.disabled = i === 0;
     if (next) next.disabled = i === last;
-    if (frame && was >= 0 && !reduced()) { frame.classList.remove('is-wipe'); void frame.offsetWidth; frame.classList.add('is-wipe'); }
+    // Wischblende neu starten, ohne das Layout zu erzwingen (bisher offsetWidth): läuft sie schon, auf Anfang setzen
+    if (frame && was >= 0 && !reduced()) {
+      const a = frame.classList.contains('is-wipe') && frame.getAnimations({ subtree: true }).filter((x) => /^hxWipe/.test(x.animationName || ''));
+      if (a && a.length) a.forEach((x) => { x.currentTime = 0; x.play(); });
+      else { frame.classList.remove('is-wipe'); requestAnimationFrame(() => frame.classList.add('is-wipe')); }
+    }
     cur = i;
     warm(i + 1); warm(i - 1);
   };
@@ -66,4 +74,6 @@ export function initHistory(root = document) {
   });
   set(0);
   warm(0);
+  // Dauerbewegung (Abtastlinie) ruht, solange der Abschnitt nicht zu sehen ist
+  new IntersectionObserver(([e]) => hx.classList.toggle('is-idle', !e.isIntersecting)).observe(hx);
 }

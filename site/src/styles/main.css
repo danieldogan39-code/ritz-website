@@ -304,8 +304,8 @@ p { margin: 0; text-wrap: pretty; }
 /* ---------- header ---------- */
 .hdr { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 50; background: var(--paper); border-bottom: 1px solid var(--line); }
 @supports ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
-  /* fast deckend: der Kopf nimmt über dunklen oder roten Abschnitten keinen Grau- oder Rosaschimmer an */
-  .hdr { background: color-mix(in srgb, var(--paper) 98%, transparent); backdrop-filter: saturate(180%) blur(16px); -webkit-backdrop-filter: saturate(180%) blur(16px); }
+  /* deckend und ohne Weichzeichner: bei der bisherigen Deckkraft von 98 % war die Unschärfe nicht zu sehen, kostete aber
+     in jedem Scrollbild eine Weichzeichnung über die volle Breite (auf schwachen Grafikchips spürbar) */
   /* geöffnetes Mega-Menü: Kopf und Panel als eine ruhige Fläche (auch über der dunklen Bühne) */
   .hdr.is-open { background: var(--paper); }
 }
