@@ -408,9 +408,8 @@ p { margin: 0; text-wrap: pretty; }
   :root { --abar-h: 62px; }
   body { padding-bottom: calc(var(--abar-h) + env(safe-area-inset-bottom, 0px)); }
   .abar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 58; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); align-items: end; height: calc(var(--abar-h) + env(safe-area-inset-bottom, 0px)); padding: 0 max(4px, env(safe-area-inset-right, 0px)) env(safe-area-inset-bottom, 0px) max(4px, env(safe-area-inset-left, 0px)); background: var(--paper); border-top: 1px solid var(--line); box-shadow: 0 -12px 30px -20px rgb(28 19 17 / .4); transition: translate .32s var(--ease-out); }
-  @supports ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
-    .abar { background: color-mix(in srgb, var(--paper) 90%, transparent); backdrop-filter: saturate(180%) blur(16px); -webkit-backdrop-filter: saturate(180%) blur(16px); }
-  }
+  /* deckend wie der Kopf: durchscheinend wirkte die Leiste über dunklen Abschnitten grau und Text schimmerte hinter den
+     Beschriftungen durch */
   .is-typing .abar { translate: 0 calc(100% + 8px); }
   .abar__it { position: relative; display: grid; justify-items: center; align-content: center; gap: 3px; min-width: 0; height: var(--abar-h); padding: 0 2px; border: 0; background: none; color: var(--graphite); font: inherit; font-size: .69rem; font-weight: 620; letter-spacing: .01em; line-height: 1.1; text-decoration: none; cursor: pointer; -webkit-tap-highlight-color: transparent; }
   .abar__ic { position: relative; display: grid; place-items: center; width: 26px; height: 26px; transition: scale .16s var(--ease-out), translate .2s var(--ease-out); }
@@ -422,7 +421,8 @@ p { margin: 0; text-wrap: pretty; }
   .abar__it:focus-visible { outline: 2px solid var(--focus); outline-offset: -4px; border-radius: 10px; }
   .abar .badge-count { top: -5px; right: -10px; }
   /* Produktfinder: rote Raute, die über die Leiste hinausragt */
-  .abar__it--main { color: var(--ink); }
+  .abar__it--main { color: var(--graphite); } /* Beschriftung wie die übrigen Einträge, dunkel nur wenn aktiv */
+  .abar__it--main.is-on { color: var(--ink); }
   .abar__gem { position: relative; display: grid; place-items: center; width: 48px; height: 48px; margin-top: -22px; translate: 0 -3px; color: #fff; transition: scale .16s var(--ease-out); }
   .abar__gem::before { content: ""; position: absolute; inset: 7px; border-radius: 9px; background: var(--red); rotate: 45deg; box-shadow: 0 0 0 4px var(--paper), 0 10px 20px -6px rgb(205 23 25 / .6); transition: box-shadow .2s var(--ease-out); }
   .abar__gem svg { position: relative; }

@@ -14,9 +14,24 @@
   /* ---------- Seitenübergänge: Kopf bleibt stehen, Inhalt blendet über ---------- */
   @view-transition { navigation: auto; }
   .hdr { view-transition-name: site-header; }
-  ::view-transition-old(root) { animation: vtOut .2s var(--ease-out) both; }
+  .abar { view-transition-name: site-appbar; }
+  /* Die Seitenfläche wird nicht von alter auf neue Größe gezogen: auf dem Telefon ändert sich zwischen zwei Seiten oft
+     die Fensterhöhe (Adressleiste ein-/ausgeblendet) – der Browser stauchte die ganze Seite dann kurz zusammen.
+     Alte und neue Ansicht liegen stattdessen unverzerrt, oben ausgerichtet übereinander und blenden über. */
+  ::view-transition-group(root) { animation: none; }
+  ::view-transition-old(root), ::view-transition-new(root) { height: auto; object-fit: none; object-position: 50% 0; }
+  /* die alte Seite bleibt deckend darunter, die neue blendet darüber auf – sonst schimmert Weiß durch (dunkle Flächen
+     wurden mitten im Wechsel kurz grau) */
+  ::view-transition-old(root) { animation: none; }
   ::view-transition-new(root) { animation: vtIn .42s var(--ease-out) both; }
-  ::view-transition-group(site-header) { animation-duration: .25s; }
+  /* Kopf und App-Leiste bleiben stehen (keine Größen- oder Lageänderung), ihr Inhalt wechselt ohne Wackeln */
+  ::view-transition-group(site-header), ::view-transition-group(site-appbar) { animation: none; }
+  ::view-transition-old(site-header), ::view-transition-old(site-appbar) { animation: vtFade .16s var(--ease-out) both reverse; }
+  ::view-transition-new(site-header), ::view-transition-new(site-appbar) { animation: vtFade .16s var(--ease-out) both; }
+  @media (max-width: 760px) {
+    /* Telefon: reine Überblendung ohne Verschieben – sonst rutscht der ganze Inhalt sichtbar hoch und runter */
+    ::view-transition-new(root) { animation: vtFadeIn .3s var(--ease-out) both; }
+  }
 
   /* ---------- Seitenkopf: Auftritt beim Laden ---------- */
   .phead .crumbs { animation: fadeIn .5s var(--ease-out) backwards; }
@@ -126,8 +141,9 @@
   .org.is-wired.is-in .org__sub .org__card { animation-delay: var(--at-sub, 2.4s); }
 }
 
-@keyframes vtOut { to { opacity: 0; transform: translateY(-8px); } }
 @keyframes vtIn { from { opacity: 0; transform: translateY(14px); } }
+@keyframes vtFade { from { opacity: 0; } }
+@keyframes vtFadeIn { from { opacity: 0; } }
 @keyframes svProgress { to { transform: scaleX(1); } }
 @keyframes svRise { from { opacity: 0; translate: 0 34px; } to { opacity: 1; translate: none; } }
 @keyframes svZoom { from { scale: 1.14; } to { scale: 1; } }
