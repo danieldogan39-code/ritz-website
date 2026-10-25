@@ -313,6 +313,7 @@ ${themeScript()}
 ${motionScript(route.id === 'home' ? 'home' : 'page')}
 <script>window.__RITZ__=${JSON.stringify(cfg)}</script>
 <script type="module" src="/assets/app.js?v=${V}"></script>
+<link rel="expect" href="#main" blocking="render">
 ${SPECULATION}
 ${jsonld(ctx, route, page)}
 </head>
