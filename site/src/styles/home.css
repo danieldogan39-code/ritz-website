@@ -541,7 +541,7 @@
 .nm:not(.is-live) .nm__mk--hq .nm__lbl { opacity: 1; }
 
 /* Karte zum Punkt: neben dem Marker, auf dem Telefon unter der Weltkarte */
-.nm__card { position: absolute; left: 0; top: 0; z-index: 6; width: min(320px, calc(100% - 24px)); max-height: calc(100% - 24px); overflow: auto; overscroll-behavior: contain; padding: 16px 18px 14px; border: 1px solid rgb(246 240 236 / .16); border-radius: 6px; background: rgb(29 20 18 / .9); color: var(--on-night); font-size: .9rem; line-height: 1.45; box-shadow: 0 26px 50px -22px rgb(0 0 0 / .85); pointer-events: none; }
+.nm__card { position: absolute; left: 0; top: 0; z-index: 6; width: min(320px, calc(100% - 24px)); max-height: calc(100% - 24px); overflow: auto; overscroll-behavior: auto; /* Mausrad über der Karte rollt die Seite weiter, wenn der Inhalt nicht (mehr) scrollt */ padding: 16px 18px 14px; border: 1px solid rgb(246 240 236 / .16); border-radius: 6px; background: rgb(29 20 18 / .9); color: var(--on-night); font-size: .9rem; line-height: 1.45; box-shadow: 0 26px 50px -22px rgb(0 0 0 / .85); pointer-events: none; }
 @supports ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) { .nm__card { background: rgb(29 20 18 / .78); backdrop-filter: blur(12px) saturate(140%); -webkit-backdrop-filter: blur(12px) saturate(140%); } }
 .nm__card::before { content: ""; position: absolute; left: 18px; right: 18px; top: 0; height: 2px; background: var(--hud-red); }
 .nm__card.is-rep::before { background: var(--hud-copper); }
@@ -696,7 +696,7 @@
   .nm__tile .nm__bar { padding: 12px 14px; }
   .nm.is-live .nm__tile .nm__frame { height: clamp(260px, 72vw, 420px); }
   .nm__tile .nm__card { margin: 0; border-width: 1px 0 0; border-radius: 0; box-shadow: none; }
-  .nm__card { position: relative; left: auto; top: auto; width: auto; max-height: none; margin: 12px var(--gutter, 20px) 0; pointer-events: auto; }
+  .nm__card { position: relative; left: auto; top: auto; width: auto; max-height: none; overflow: visible; margin: 12px var(--gutter, 20px) 0; pointer-events: auto; } /* unter der Karte: kein eigener Scrollbereich, das Mausrad rollt die Seite */
   .nm--panel .nm__card { margin: 0; border-width: 1px 0 0; border-radius: 0; box-shadow: none; }
   .nm--panel { border-radius: 8px; }
   .nm--panel .nm__bar { padding: 12px 14px; }
