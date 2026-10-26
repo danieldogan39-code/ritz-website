@@ -386,9 +386,9 @@ p { margin: 0; text-wrap: pretty; }
   .burger { display: inline-grid; }
   .hdr__finder { margin-inline: .3rem .15rem; }
 }
-/* Telefon: Sprache steht im Menü, der Produktfinder bleibt sichtbar (sehr schmal nur als Symbol) */
+/* Telefon: Sprachwahl bleibt im Kopf (kompakt: Flagge und Kürzel), der Produktfinder bleibt sichtbar */
 @media (max-width: 560px) {
-  .hdr .lang { display: none; }
+  .hdr .lang__btn { height: 38px; padding: 0 .5rem; }
   .hdr__bar { gap: .6rem; }
   .hdr__tools { gap: 0; }
   .hdr__tools .icon-btn { width: 40px; height: 40px; }
@@ -1119,4 +1119,16 @@ kbd { font-family: var(--f); font-size: .75rem; border: 1px solid var(--line-str
   .section { padding-block: 16px; }
   a { text-decoration: none; }
   .pd { grid-template-columns: 1fr 1fr; }
+}
+
+/* Auswahlreihen als Aufklappliste auf dem Telefon (picker.js): nur wenn die Reihe nicht in die Breite passt */
+.pick { display: none; }
+@media (max-width: 760px) {
+  .pick:not([hidden]) { display: block; position: relative; margin: 0 0 14px; }
+  .pick::after { content: ""; position: absolute; right: 16px; top: 50%; width: 8px; height: 8px; margin-top: -6px; border: solid var(--ink); border-width: 0 2px 2px 0; rotate: 45deg; pointer-events: none; }
+  .pick__sel { appearance: none; -webkit-appearance: none; width: 100%; min-height: 48px; padding: 10px 44px 10px 14px; border: 1px solid var(--line-strong); border-radius: var(--radius); background: var(--paper); color: var(--ink); font: inherit; font-size: 1rem; font-weight: 620; line-height: 1.3; text-overflow: ellipsis; cursor: pointer; }
+  .pick__sel:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+  .is-picked { display: none !important; }
+  /* Abschnittsleiste (oben angeheftet): das Auswahlfeld sitzt in der Leiste */
+  .pd-tabs .pick:not([hidden]) { margin: 8px var(--gutter-r) 8px var(--gutter); }
 }

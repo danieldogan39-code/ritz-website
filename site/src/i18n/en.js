@@ -230,7 +230,7 @@ export default {
   },
   map: {
     title: 'RITZ worldwide', all: 'All', locations: 'RITZ locations', reps: 'Representatives', legendHq: 'Headquarters', legendProd: 'Production', legendSite: 'Site',
-    legendSales: 'Sales', legendRep: 'Representative', zoomIn: 'Zoom in', zoomOut: 'Zoom out', reset: 'Reset view', listTitle: 'Entries', count1: '{n} entry', countN: '{n} entries',
+    legendSales: 'Sales', legendRep: 'Representative', twoFinger: 'Use two fingers to move and zoom the map', zoomIn: 'Zoom in', zoomOut: 'Zoom out', reset: 'Reset view', listTitle: 'Entries', count1: '{n} entry', countN: '{n} entries',
     filterPh: 'Search country or company', choose: 'Select a point on the map or an entry in the list.', servedBy: 'Served by',
     keyboard: 'Tab through the locations, Enter opens the details.',
   },

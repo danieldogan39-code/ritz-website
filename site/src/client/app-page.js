@@ -36,5 +36,6 @@ export async function initPage(root = document) {
   if (has('[data-contact-finder]')) jobs.push(initContactFinder(root));
   if (has('[data-contact-form]')) jobs.push(initForms(root));
   await Promise.allSettled(jobs);
+  import('./picker.js').then((m) => m.initPickers(root));
 }
 

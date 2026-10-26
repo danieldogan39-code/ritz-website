@@ -1168,10 +1168,8 @@ function setup(el) {
         return;
       }
       if (drag.moved) {
-        // Finger wie Maus: in alle Richtungen (die Karte nimmt Gesten selbst an, touch-action: none; die Seite rollt
-        // ober- und unterhalb der Karte)
         cam.x = drag.cx - dx / cam.s;
-        cam.y = drag.cy - dy / cam.s;
+        cam.y = drag.cy - (drag.type === 'mouse' ? dy : 0) / cam.s; // Finger: senkrecht rollt die Seite (zwei Finger: Karte)
         const dt = e.timeStamp - drag.lt;
         if (dt > 0) { const k = Math.min(1, dt / 50); drag.vx += ((e.clientX - drag.lx) / dt - drag.vx) * k; drag.vy += ((e.clientY - drag.ly) / dt - drag.vy) * k; }
         drag.lx = e.clientX; drag.ly = e.clientY; drag.lt = e.timeStamp;
@@ -1210,10 +1208,10 @@ function setup(el) {
     if (d.moved) {
       dragEnd = performance.now();
       // Schwung nach einem schnellen Wischen (Finger): die Ansicht gleitet weich aus
-      const sp = Math.hypot(d.vx || 0, d.vy || 0);
+      const sp = Math.abs(d.vx || 0);
       if (d.type !== 'mouse' && sp > 0.25 && e.timeStamp - (d.lt || 0) < 80) {
         const k = Math.min(420, 160 + sp * 160);
-        const to = clampCam({ x: cam.x - (d.vx * k) / cam.s, y: cam.y - (d.vy * k) / cam.s, s: cam.s });
+        const to = clampCam({ x: cam.x - (d.vx * k) / cam.s, y: cam.y, s: cam.s });
         chase = { x: to.x, y: to.y, t: performance.now() }; kick();
       }
     }
@@ -1238,6 +1236,18 @@ function setup(el) {
   };
   frame.addEventListener('pointerup', endPtr);
   frame.addEventListener('pointercancel', endPtr);
+  // Zwei Finger auf der Karte: Seitenzoom des Browsers unterdrücken (die Karte zoomt über Pointer-Ereignisse)
+  const twoF = (e) => { if (live && e.touches.length > 1) e.preventDefault(); };
+  frame.addEventListener('touchstart', twoF, { passive: false });
+  frame.addEventListener('touchmove', twoF, { passive: false });
+  // Ein Finger senkrecht: die Seite rollt – kurz zeigen, wie man die Karte bewegt (höchstens zweimal, mit Abstand)
+  const hint2 = frame.querySelector('[data-nm-hint2]');
+  let hintN = 0, hintT = 0, hintOff = 0;
+  frame.addEventListener('pointercancel', (e) => {
+    if (!live || !hint2 || e.pointerType !== 'touch' || pinch || ptrs.size || hintN >= 2 || performance.now() - hintT < 8000) return;
+    hintN++; hintT = performance.now();
+    hint2.classList.add('is-on'); clearTimeout(hintOff); hintOff = setTimeout(() => hint2.classList.remove('is-on'), 1600);
+  });
   frame.addEventListener('pointerenter', (e) => { if (e.pointerType === 'mouse') { inside = true; lastCX = e.clientX; lastCY = e.clientY; clearTimeout(backT); armIdle(); } });
   frame.addEventListener('pointerleave', (e) => {
     if (e.pointerType !== 'mouse') return;

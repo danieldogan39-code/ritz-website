@@ -230,7 +230,7 @@ export default {
   },
   map: {
     title: 'A RITZ világszerte', all: 'Összes', locations: 'RITZ-telephelyek', reps: 'Képviseletek', legendHq: 'Központ', legendProd: 'Gyártás', legendSite: 'Telephely',
-    legendSales: 'Értékesítés', legendRep: 'Képviselet', zoomIn: 'Nagyítás', zoomOut: 'Kicsinyítés', reset: 'Nézet visszaállítása', listTitle: 'Bejegyzések', count1: '{n} bejegyzés', countN: '{n} bejegyzés',
+    legendSales: 'Értékesítés', legendRep: 'Képviselet', twoFinger: 'A térkép mozgatásához és nagyításához használjon két ujjat', zoomIn: 'Nagyítás', zoomOut: 'Kicsinyítés', reset: 'Nézet visszaállítása', listTitle: 'Bejegyzések', count1: '{n} bejegyzés', countN: '{n} bejegyzés',
     filterPh: 'Ország vagy cég keresése', choose: 'Válasszon egy pontot a térképen vagy egy bejegyzést a listában.', servedBy: 'Illetékes',
     keyboard: 'A Tab billentyűvel lépkedhet a telephelyek között, az Enter megnyitja a részleteket.',
   },

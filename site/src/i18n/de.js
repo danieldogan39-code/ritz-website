@@ -233,7 +233,7 @@ export default {
   },
   map: {
     title: 'RITZ weltweit', all: 'Alle', locations: 'RITZ-Standorte', reps: 'Vertretungen', legendHq: 'Zentrale', legendProd: 'Produktion', legendSite: 'Standort',
-    legendSales: 'Vertrieb', legendRep: 'Vertretung', zoomIn: 'Vergrößern', zoomOut: 'Verkleinern', reset: 'Ansicht zurücksetzen', listTitle: 'Einträge', count1: '{n} Eintrag', countN: '{n} Einträge',
+    legendSales: 'Vertrieb', legendRep: 'Vertretung', twoFinger: 'Karte mit zwei Fingern verschieben und zoomen', zoomIn: 'Vergrößern', zoomOut: 'Verkleinern', reset: 'Ansicht zurücksetzen', listTitle: 'Einträge', count1: '{n} Eintrag', countN: '{n} Einträge',
     filterPh: 'Land oder Firma suchen', choose: 'Wählen Sie einen Punkt auf der Karte oder einen Eintrag in der Liste.', servedBy: 'Betreut von',
     keyboard: 'Mit Tab durch die Standorte, Eingabe öffnet die Details.',
   },

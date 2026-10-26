@@ -186,6 +186,7 @@ function stageHTML(ctx, m, N) {
       <canvas class="nm__cv" data-nm-base aria-hidden="true"></canvas>
       <canvas class="nm__cv nm__cv--fx" data-nm-fx aria-hidden="true"></canvas>
       <span class="nm__ret" data-nm-ret aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <div class="nm__hint2" data-nm-hint2 aria-hidden="true"><span>${esc(t.map.twoFinger)}</span></div>
       <div class="nm__zoom" data-nm-zoom hidden>
         <button type="button" data-nm-z="in" aria-label="${esc(t.map.zoomIn)}">${icon('plus')}</button>
         <button type="button" data-nm-z="out" aria-label="${esc(t.map.zoomOut)}">${icon('minus')}</button>

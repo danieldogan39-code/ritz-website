@@ -230,7 +230,7 @@ export default {
   },
   map: {
     title: 'RITZ dans le monde', all: 'Tous', locations: 'Sites RITZ', reps: 'Représentants', legendHq: 'Siège', legendProd: 'Production', legendSite: 'Site',
-    legendSales: 'Vente', legendRep: 'Représentant', zoomIn: 'Zoom avant', zoomOut: 'Zoom arrière', reset: 'Réinitialiser la vue', listTitle: 'Entrées', count1: '{n} entrée', countN: '{n} entrées',
+    legendSales: 'Vente', legendRep: 'Représentant', twoFinger: 'Utilisez deux doigts pour déplacer et zoomer la carte', zoomIn: 'Zoom avant', zoomOut: 'Zoom arrière', reset: 'Réinitialiser la vue', listTitle: 'Entrées', count1: '{n} entrée', countN: '{n} entrées',
     filterPh: 'Rechercher un pays ou une société', choose: 'Sélectionnez un point sur la carte ou une entrée dans la liste.', servedBy: 'Pris en charge par',
     keyboard: 'Parcourez les sites avec Tab ; Entrée affiche les détails.',
   },
