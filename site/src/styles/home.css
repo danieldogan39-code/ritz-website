@@ -223,7 +223,10 @@
 /* Bewegung der Bühne: ein Einstieg, danach ruhige Schleifen; bei reduzierter Bewegung steht alles.
    Alle Schleifen sind transform oder opacity ganzer Ebenen (Compositor, kein Neuzeichnen). */
 @media (prefers-reduced-motion: no-preference) {
-  .st__frame { animation: stZoom 18s var(--ease-out) both; }
+  /* Kein langsames Heranzoomen des ganzen Bühnenrahmens mehr: es skalierte 18 s lang Foto und alle Grafikebenen
+     gemeinsam (größter Rechenposten der Bühne, ruckelte vor allem während des Scanners, feine Linien flimmerten). */
+  /* Scanner-Ebenen vorab anlegen und rastern, damit der Scan nicht mit einem Hänger beginnt */
+  .xr__rev, .xr__rev > svg, .xr__win, .xr__win .xr__art { will-change: transform; }
   .hud__ring { stroke-dasharray: 1; animation: stDraw 1.6s var(--ease-out) .25s both; }
   .hud--scale { animation: stFade 1.2s var(--ease-out) .7s both; }
   .hud__rot { animation: stSpin 16s linear infinite; }
@@ -248,8 +251,8 @@
   .hero--anim .st__foot { animation: fadeIn .8s var(--ease-out) .5s backwards; }
   :root[data-intro="play"] :is(.hero--anim .st__lead, .hero--anim .st__links, .hero--anim .st__foot) { animation-play-state: paused; }
   :root.rv .sp__chart:not(.is-in) .sp__bar { transform: scaleX(0); }
-  .st.is-idle :is(.st__frame, .hud__rot, .hud--glow, .st__wave svg, .xr__rev, .xr__rev > svg, .xr__win, .xr__art) { animation-play-state: paused; }
-  :root[data-intro="play"] .st :is(.st__frame, .hud__ring, .hud--scale, .hud--lead path, .st__dot, .st__ping, .st__chip, .st__read, .xr__rev, .xr__rev > svg, .xr__win, .xr__art) { animation-play-state: paused; }
+  .st.is-idle :is(.hud__rot, .hud--glow, .st__wave svg, .xr__rev, .xr__rev > svg, .xr__win, .xr__art) { animation-play-state: paused; }
+  :root[data-intro="play"] .st :is(.hud__ring, .hud--scale, .hud--lead path, .st__dot, .st__ping, .st__chip, .st__read, .xr__rev, .xr__rev > svg, .xr__win, .xr__art) { animation-play-state: paused; }
 }
 @keyframes stPing { 0% { opacity: .9; transform: scale(.18); } 100% { opacity: 0; transform: scale(1); } }
 @keyframes xrRev { from { transform: translateX(var(--ra)); } to { transform: none; } }
@@ -259,7 +262,6 @@
 /* leiser zweiter Scan: 19 % von 14 s entsprechen der Dauer des ersten */
 @keyframes xrWinLoop { 0% { transform: translateX(var(--wa)); opacity: 0; } 2% { opacity: .65; } 17% { opacity: .65; } 19%, 100% { transform: translateX(var(--wb)); opacity: 0; } }
 @keyframes xrArtLoop { 0% { transform: translateX(var(--aa)); } 19%, 100% { transform: translateX(var(--ab)); } }
-@keyframes stZoom { from { scale: 1.08; } to { scale: 1; } }
 @keyframes stDraw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
 @keyframes stFade { from { opacity: 0; } }
 @keyframes stUp { from { opacity: 0; transform: translate(0, calc(-100% + 14px)); } }
