@@ -254,6 +254,15 @@ export function crumbs(ctx, items) {
 
 // Überschriften mit sehr langen Wörtern (z. B. „Niederspannungswandler“) erhalten auf Telefonen eine schmalere Schnittbreite
 export const lw = (text) => (/[^\s\-–/]{18,}/.test(String(text || '')) ? ' class="lw"' : '');
+// Deutsche Komposita in solchen Überschriften an der Fuge trennen („Mittelspannungs-wandler“ statt einer Silbentrennung
+// mitten im Wort oder eines Umbruchs ohne Strich, wo der Browser kein Trennwörterbuch hat)
+const FUGE = /([A-Za-zÄÖÜäöüß]{6,}?)(wandler|hinweise|erklärung|bedingungen|schienen)(?![A-Za-zäöüß])/g;
+export const lwh = (text) => {
+  const e = esc(text);
+  if (!lw(text)) return { cls: '', html: e };
+  const h = e.replace(FUGE, '$1&shy;$2');
+  return { cls: h !== e ? ' class="lw lw--shy"' : ' class="lw"', html: h };
+};
 
 export function phead(ctx, { title, lead, crumbs: cr, aside = '', image = null, imageAlt = '', h1 = null, cls: c = '', figure = false }) {
   const H = h1 || title;
@@ -263,7 +272,7 @@ export function phead(ctx, { title, lead, crumbs: cr, aside = '', image = null, 
     const fit = m.bg === 'w' ? 'is-contain' : 'is-cover';
     return `<section class="phead phead--figure ${c}">
   <div class="wrap">${crumbs(ctx, cr)}
-    <div class="phead__grid phead__grid--figure"><div><h1${lw(H)}>${esc(H)}</h1>${lead ? `<p class="lead">${esc(lead)}</p>` : ''}${aside ? `<div class="phead__aside phead__aside--inline">${aside}</div>` : ''}</div>
+    <div class="phead__grid phead__grid--figure"><div><h1${lwh(H).cls}>${lwh(H).html}</h1>${lead ? `<p class="lead">${esc(lead)}</p>` : ''}${aside ? `<div class="phead__aside phead__aside--inline">${aside}</div>` : ''}</div>
     <figure class="phead__fig">${imgTag(ctx, image, { alt: imageAlt, sizes: '(max-width: 900px) 100vw, 42vw', eager: true, cls: fit })}</figure></div>
   </div>
 </section>`;
@@ -272,13 +281,13 @@ export function phead(ctx, { title, lead, crumbs: cr, aside = '', image = null, 
     return `<section class="phead phead--image ${c}">
   <div class="phead__bg">${imgTag(ctx, image, { alt: imageAlt, sizes: '100vw', eager: true })}</div>
   <div class="wrap">${crumbs(ctx, cr)}
-    <div class="phead__grid"><div><h1${lw(H)}>${esc(H)}</h1>${lead ? `<p class="lead">${esc(lead)}</p>` : ''}</div>${aside ? `<div class="phead__aside">${aside}</div>` : ''}</div>
+    <div class="phead__grid"><div><h1${lwh(H).cls}>${lwh(H).html}</h1>${lead ? `<p class="lead">${esc(lead)}</p>` : ''}</div>${aside ? `<div class="phead__aside">${aside}</div>` : ''}</div>
   </div>
 </section>`;
   }
   return `<section class="phead ${c}">
   <div class="wrap">${crumbs(ctx, cr)}
-    <div class="phead__grid"><div><h1${lw(H)}>${esc(H)}</h1>${lead ? `<p class="lead">${esc(lead)}</p>` : ''}</div>${aside ? `<div class="phead__aside">${aside}</div>` : ''}</div>
+    <div class="phead__grid"><div><h1${lwh(H).cls}>${lwh(H).html}</h1>${lead ? `<p class="lead">${esc(lead)}</p>` : ''}</div>${aside ? `<div class="phead__aside">${aside}</div>` : ''}</div>
   </div>
 </section>`;
 }

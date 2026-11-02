@@ -48,6 +48,18 @@ const rgba = (c, a) => `rgba(${c[0]},${c[1]},${c[2]},${clamp(a, 0, 1).toFixed(3)
 const norm = (s) => String(s || '').toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '');
 const idle = (fn, timeout) => ('requestIdleCallback' in window ? requestIdleCallback(fn, { timeout }) : setTimeout(fn, 200));
 
+// Landmaske im Worker rechnen (vendor/nm-raster.js, Quelle nm-raster.worker.js)
+function rasterOffThread(d, jobs) {
+  return new Promise((res, rej) => {
+    if (!('Worker' in window) || !('OffscreenCanvas' in window)) return rej();
+    let w;
+    try { w = new Worker(new URL(`../vendor/nm-raster.js?v=${window.__RITZ__?.v || ''}`, import.meta.url)); } catch (e) { return rej(e); }
+    const end = (f) => (x) => { w.terminate(); f(x); };
+    w.onmessage = end((e) => (e.data?.ok ? res(e.data.out) : rej()));
+    w.onerror = end(rej);
+    w.postMessage({ d, jobs });
+  });
+}
 export function initNetMap(root = document) {
   for (const el of root.querySelectorAll('[data-nm]')) {
     if (el.__nm) continue;
@@ -124,21 +136,25 @@ function setup(el) {
     const txt = await (await fetch(url)).text();
     const d = /\sd="([^"]+)"/.exec(txt)?.[1];
     if (!d) throw new Error('Landfläche fehlt');
-    const path = new Path2D(d);
-    const mk = (box, R) => {
-      const w = Math.ceil((box[2] - box[0]) * R), h = Math.ceil((box[3] - box[1]) * R);
-      const c = document.createElement('canvas');
-      c.width = w; c.height = h;
-      const x = c.getContext('2d', { willReadFrequently: true });
-      x.setTransform(R, 0, 0, R, -box[0] * R, -box[1] * R);
-      x.fillStyle = '#fff';
-      x.fill(path);
-      const a = x.getImageData(0, 0, w, h).data;
-      const m = new Uint8Array(w * h);
-      for (let i = 0; i < m.length; i++) m[i] = a[i * 4 + 3] > 110 ? 1 : 0;
-      return { box, R, w, h, m };
-    };
-    raster = { world: mk([0, 0, W, H], 1.6), eu: mk(EU, 6) };
+    const jobs = [[[0, 0, W, H], 1.6], [EU, 6]];
+    // erst im Worker (kein langer Block im Hauptthread, ~130 ms auf schwachen Telefonen), sonst hier
+    const out = await rasterOffThread(d, jobs).catch(() => {
+      const path = new Path2D(d);
+      return jobs.map(([box, R]) => {
+        const w = Math.ceil((box[2] - box[0]) * R), h = Math.ceil((box[3] - box[1]) * R);
+        const c = document.createElement('canvas');
+        c.width = w; c.height = h;
+        const x = c.getContext('2d', { willReadFrequently: true });
+        x.setTransform(R, 0, 0, R, -box[0] * R, -box[1] * R);
+        x.fillStyle = '#fff';
+        x.fill(path);
+        const u = new Uint32Array(x.getImageData(0, 0, w, h).data.buffer);
+        const m = new Uint8Array(w * h);
+        for (let i = 0; i < m.length; i++) m[i] = (u[i] >>> 24) > 110 ? 1 : 0;
+        return { box, R, w, h, m };
+      });
+    });
+    raster = { world: out[0], eu: out[1] };
   }
   const inEU = (x, y) => x >= EU[0] && x < EU[2] && y >= EU[1] && y < EU[3];
   function land(x, y, fine) {
@@ -1394,7 +1410,7 @@ function setup(el) {
   const onVis = () => { if (!el.isConnected) { document.removeEventListener('visibilitychange', onVis); return; } if (!document.hidden && phase === 'done') loop(); };
   document.addEventListener('visibilitychange', onVis);
   const boot = async () => {
-    try { await loadRaster(); } catch (e) { return; } // ohne Landmaske (offline, Seitenwechsel während des Ladens) bleibt das Punktbild
+    try { await loadRaster(); } catch (e) { el.classList.add('is-static'); return; } // ohne Landmaske (offline, Seitenwechsel während des Ladens) bleibt das Punktbild
     if (!el.isConnected) return;
     live = true;
     el.classList.add('is-live');

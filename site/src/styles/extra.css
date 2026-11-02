@@ -418,6 +418,12 @@ input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; a
   h1.lw { font-size: clamp(1.75rem, 1rem + 4.4vw, 2.1rem); }
   h2.lw { font-size: clamp(1.55rem, .9rem + 4vw, 1.9rem); }
 }
+/* Komposita mit gesetzter Fuge (layout.js, lwh): nur dort trennen – und so groß, dass der längere Wortteil
+   („Mittelspannungs-“) in die Spalte passt; sonst bräche der Browser ihn ohne Strich */
+.lw--shy { hyphens: manual; -webkit-hyphens: manual; }
+.phead__grid > div:has(> h1.lw--shy) { container-type: inline-size; }
+.phead h1.lw--shy { font-size: min(var(--step-5), 9.4cqi); }
+@media (max-width: 480px) { .phead h1.lw--shy { font-size: min(clamp(1.75rem, 1rem + 4.4vw, 2.1rem), 9.4cqi); } }
 
 /* =====================================================================================================
    Startseite: Intro und Bewegung

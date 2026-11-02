@@ -1121,9 +1121,9 @@ kbd { font-family: var(--f); font-size: .75rem; border: 1px solid var(--line-str
   .pd { grid-template-columns: 1fr 1fr; }
 }
 
-/* Auswahlreihen als Aufklappliste auf dem Telefon (picker.js): nur wenn die Reihe nicht in die Breite passt */
+/* Auswahlreihen als Aufklappliste auf Telefon und Tablet (picker.js): nur wenn die Reihe nicht in die Breite passt */
 .pick { display: none; }
-@media (max-width: 760px) {
+@media (max-width: 1024px) {
   .pick:not([hidden]) { display: block; position: relative; margin: 0 0 14px; }
   .pick::after { content: ""; position: absolute; right: 16px; top: 50%; width: 8px; height: 8px; margin-top: -6px; border: solid var(--ink); border-width: 0 2px 2px 0; rotate: 45deg; pointer-events: none; }
   .pick__sel { appearance: none; -webkit-appearance: none; width: 100%; min-height: 48px; padding: 10px 44px 10px 14px; border: 1px solid var(--line-strong); border-radius: var(--radius); background: var(--paper); color: var(--ink); font: inherit; font-size: 1rem; font-weight: 620; line-height: 1.3; text-overflow: ellipsis; cursor: pointer; }
@@ -1131,4 +1131,15 @@ kbd { font-family: var(--f); font-size: .75rem; border: 1px solid var(--line-str
   .is-picked { display: none !important; }
   /* Abschnittsleiste (oben angeheftet): das Auswahlfeld sitzt in der Leiste */
   .pd-tabs .pick:not([hidden]) { margin: 8px var(--gutter-r) 8px var(--gutter); }
+  /* Kartenleiste: so hoch wie die Regionenreihe, die es ersetzt – nichts rückt nach, wenn das Feld erscheint */
+  .nm__bar .pick:not([hidden]) { margin: 0; }
+  .nm__bar .pick__sel { min-height: 42px; padding-block: 6px; }
+}
+@media (min-width: 761px) and (max-width: 1024px) { .pick:not([hidden]) { max-width: 26rem; } }
+
+/* Kleine Bedienelemente: auf Touchgeräten größere, unsichtbare Trefferfläche (mind. ~32 px hoch), Aussehen unverändert */
+@media (pointer: coarse) {
+  .copy, .ftr__legal a, .hero__hint button, .fg__doc, .certm__doc, .ms__doc, .rule__doc { position: relative; }
+  .copy::before, .ftr__legal a::before, .hero__hint button::before, .fg__doc::before, .certm__doc::before, .ms__doc::before, .rule__doc::before { content: ""; position: absolute; inset: -6px -3px; }
+  .copy::before { inset: -10px -10px -10px -4px; }
 }

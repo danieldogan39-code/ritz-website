@@ -229,7 +229,7 @@ function allRoutes(lang) {
 // Theme vor dem ersten Bild setzen. Außerdem: Bei „Zurück“ oder Neuladen stellt der Browser die Scrollposition wieder her –
 // dafür brauchen lange Produktlisten ihre echten Kartenhöhen (.nav-restore schaltet das verzögerte Rendern dort ab).
 function themeScript() {
-  return `<script>(function(){var d=document.documentElement;d.dataset.hostTheme=d.dataset.theme||'';try{var t=JSON.parse(localStorage.getItem('ritz-theme')||'"auto"');if(t==='light'||t==='dark')d.dataset.theme=t}catch(e){}try{var n=performance.getEntriesByType('navigation')[0];if(n&&(n.type==='back_forward'||n.type==='reload'))d.classList.add('nav-restore')}catch(e){}})()</script>`;
+  return `<script>(function(){var d=document.documentElement;d.classList.add('has-js');d.dataset.hostTheme=d.dataset.theme||'';try{var t=JSON.parse(localStorage.getItem('ritz-theme')||'"auto"');if(t==='light'||t==='dark')d.dataset.theme=t}catch(e){}try{var n=performance.getEntriesByType('navigation')[0];if(n&&(n.type==='back_forward'||n.type==='reload'))d.classList.add('nav-restore')}catch(e){}})()</script>`;
 }
 // Bewegung: setzt vor dem ersten Bild :root.rv (Ausgangszustände fürs Einblenden) und startet auf der
 // Startseite das Intro (data-intro: play → out → entfernt): beim ersten Aufruf und danach bei jedem fünften
@@ -265,7 +265,13 @@ var fb=0;addEventListener('animationstart',function(e){if(e.animationName==='iFa
 setTimeout(function(){end(0)},${mode === 'spa' ? 12000 : 6000});
 }catch(e){}})(document.documentElement)</script>`.replace(/\n/g, '');
 }
-function jsonld(ctx, route, page) {
+// Vorschaubild für Teilen und strukturierte Daten: Produktbild bzw. Titelbild der News, sonst das Startbild
+function pageImage(ctx, route) {
+  const k = route.id === 'product' ? (route.product.images || []).find((x) => ctx.img[x])
+    : route.id === 'article' && route.news.image && ctx.img[route.news.image] ? route.news.image : null;
+  return k ? SITE + ctx.imgUrl(k, 1280) : null;
+}
+function jsonld(ctx, route, page, url) {
   const org = { '@context': 'https://schema.org', '@type': 'Organization', name: 'RITZ Instrument Transformers GmbH', url: SITE, logo: `${SITE}/assets/logo.svg`, foundingDate: '1945',
     address: { '@type': 'PostalAddress', streetAddress: 'Wandsbeker Zollstraße 92–98', postalCode: '22041', addressLocality: 'Hamburg', addressCountry: 'DE' }, telephone: '+49 40 51123-0', email: 'info@ritz-international.com' };
   const out = [];
@@ -278,7 +284,10 @@ function jsonld(ctx, route, page) {
   }
   if (route.id === 'article') {
     const n = route.news;
-    out.push({ '@context': 'https://schema.org', '@type': 'NewsArticle', headline: page.title, datePublished: n.date, publisher: { '@type': 'Organization', name: 'RITZ Instrument Transformers GmbH' } });
+    const img = pageImage(ctx, route);
+    const pub = { '@type': 'Organization', name: 'RITZ Instrument Transformers GmbH', url: SITE, logo: { '@type': 'ImageObject', url: `${SITE}/icon-512.png` } };
+    out.push({ '@context': 'https://schema.org', '@type': 'NewsArticle', headline: page.title, datePublished: n.date, dateModified: n.date, inLanguage: ctx.lang,
+      ...(img ? { image: [img] } : {}), author: pub, publisher: pub, mainEntityOfPage: `${SITE}${url}` });
   }
   return out.map((o) => `<script type="application/ld+json">${JSON.stringify(o).replace(/</g, '\\u003c')}</script>`).join('');
 }
@@ -292,7 +301,7 @@ const SPECULATION = `<script type="speculationrules">${JSON.stringify({ prefetch
 function shell(ctx, page, route, { url, alternates }) {
   const t = ctx.t;
   const title = route.id === 'home' ? `RITZ Instrument Transformers – ${page.title}` : `${page.title} | RITZ`;
-  const ogImg = ctx.img['mimg/intro_home_slider_6.webp'] ? SITE + ctx.imgUrl('mimg/intro_home_slider_6.webp', 1280) : '';
+  const ogImg = pageImage(ctx, route) || (ctx.img['mimg/intro_home_slider_6.webp'] ? SITE + ctx.imgUrl('mimg/intro_home_slider_6.webp', 1280) : '');
   const cfg = { lang: ctx.lang, mode: 'static', base: '/', dataBase: '/data/', v: V, api: DRAFT ? null : '/api/', ...(DRAFT ? { preview: true } : {}), route: { id: route.id, p: route.p }, ...(DOCBASE ? { docBase: DOCBASE } : {}) };
   return `<!doctype html>
 <html lang="${ctx.lang}">
@@ -315,7 +324,7 @@ ${motionScript(route.id === 'home' ? 'home' : 'page')}
 <script type="module" src="/assets/app.js?v=${V}"></script>
 <link rel="expect" href="#main" blocking="render">
 ${SPECULATION}
-${jsonld(ctx, route, page)}
+${jsonld(ctx, route, page, url)}
 </head>
 <body class="${page.bodyClass || ''}">
 <a class="skip" href="#main">${esc(t.ui.skip)}</a>
@@ -537,6 +546,8 @@ async function bundleAssets(out, mode) {
   // rohe Steuerzeichen (ESC u. a. in Zeichenketten) als \u-Escape schreiben – gleiche Bedeutung, aber reiner Text (Vorschau-Upload verlangt das)
   for (const f of ['pdf.min.mjs', 'pdf.worker.min.mjs']) wr(`${vend}/${f}`, fs.readFileSync(`node_modules/pdfjs-dist/legacy/build/${f}`, 'utf8').replace(/[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]/g, (c) => '\\u' + c.charCodeAt(0).toString(16).padStart(4, '0')));
   wr(mode === 'static' ? `${out}/assets/main.css` : `${out}/app.css`, cssMin);
+  // Worker der Netzkarte (Landmaske): eigene Datei, weil die CSP keine blob:-Worker erlaubt
+  wr(`${vend}/nm-raster.js`, (await esbuild.transform(fs.readFileSync(`${SRC}/client/nm-raster.worker.js`, 'utf8'), { minify: true, target: 'es2020' })).code);
   if (mode === 'static') {
     await esbuild.build({ entryPoints: [`${SRC}/client/app.js`], bundle: true, splitting: true, format: 'esm', minify: true, outdir: `${out}/assets`, chunkNames: 'chunks/[name]-[hash]', target: ['es2020'], legalComments: 'none' });
     // Logo & Favicons

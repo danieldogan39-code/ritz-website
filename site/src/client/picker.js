@@ -1,10 +1,10 @@
-// Auswahlreihen (Reiter, Abschnittsleisten, Regionen) auf dem Telefon als Aufklappliste: Passt die Reihe nicht in die
+// Auswahlreihen (Reiter, Abschnittsleisten, Regionen) auf Telefon und Tablet (bis 1024 px) als Aufklappliste: Passt die Reihe nicht in die
 // Breite, erscheint statt der abgeschnittenen Reihe ein Auswahlfeld (natives <select>, auf dem Telefon das System-
 // Auswahlblatt). Es zeigt den aktiven Eintrag; eine Wahl löst den Klick auf den ursprünglichen Eintrag aus – Reiter,
 // Sprungmarken und Filter funktionieren also unverändert. Breitere Fenster behalten die Reihe.
 const ROWS = '.sc-tabs, .pd-tabs__list, .calc__tabs, .nm__regions';
 const ACTIVE = '[aria-selected="true"], [aria-pressed="true"], [aria-current]:not([aria-current="false"]), .is-active, .is-on';
-const MQ = matchMedia('(max-width: 760px)');
+const MQ = matchMedia('(max-width: 1024px)');
 
 const labelOf = (it) => {
   const n = it.querySelector('.sc-n')?.textContent.trim();

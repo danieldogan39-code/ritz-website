@@ -20,7 +20,7 @@ export function renderRoute(ctx, route) {
       const p = route.product;
       const d = descriptor(p, t, ctx.lang);
       const text = (p.desc?.[ctx.dl] || p.desc?.en || [])[0] || '';
-      return r(`${p.code} – ${d}`, productPage(ctx, p), shorten(`${p.code}: ${d}. ${text}`, 158), { type: 'product' });
+      return r(`${p.code} – ${d}`, productPage(ctx, p), shorten(`${p.code}: ${d}.${text ? ` ${text}` : ''}`, 158), { type: 'product' });
     }
     case 'finder': return r(t.finder.title, finderPage(ctx), t.finder.lead);
     case 'compare': return r(t.compare.title, comparePage(ctx), t.compare.lead, { noindex: true });
@@ -45,7 +45,9 @@ export function renderRoute(ctx, route) {
       // Fallback = keine eigene Sprachfassung oder nur eine Kopie aus einer anderen Sprache → noindex, nicht in Sitemap/Suche
       const own = n.v[ctx.lang];
       const fallback = !own || own.untranslated || (own.contentLang && own.contentLang !== ctx.lang);
-      return r(v.title, P.articlePage(ctx, n), shorten(text || v.title, 158), { type: 'article', fallback: !!fallback });
+      // Sehr kurze Texte (nur ein Dateiname oder die Überschrift) ergeben keine brauchbare Beschreibung
+      const lean = text.length < 70 || /^\S*_\S*$/.test(text.trim());
+      return r(v.title, P.articlePage(ctx, n), shorten(lean ? `${v.title} – ${pg.news.lead}` : text, 158), { type: 'article', fallback: !!fallback });
     }
     case 'imprint': return r(pg.imprint.title, P.imprintPage(ctx), `${pg.imprint.title}: RITZ Instrument Transformers GmbH, Wandsbeker Zollstraße 92–98, 22041 Hamburg`, { noindex: false });
     case 'privacy': return r(pg.privacy.title, P.privacyPage(ctx), pg.privacy.lead);

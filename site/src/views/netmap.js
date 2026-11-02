@@ -175,7 +175,7 @@ const kindCls = (k) => (k === 'hq' ? 'hq' : k === 'rep' ? 'rep' : k === 'story' 
 function marksHTML(m) {
   return m.nodes.map((n, i) => {
     const label = n.items.map((it) => (it.k === 's' ? `${it.ca}: ${it.ti}` : `${m.L.types[it.k === 'l' ? it.ty : 'rep']} ${it.k === 'l' ? n.label : it.ti}, ${it.co}`)).join('; ');
-    return `<button type="button" class="nm__mk nm__mk--${kindCls(n.k)}${n.items.length > 1 ? ' nm__mk--multi' : ''}" data-n="${i}" style="--x:${(n.x / 10).toFixed(2)}%;--y:${(n.y / 5.2).toFixed(2)}%;--d:${n.t}ms" aria-label="${esc(label)}"${i === m.hq ? '' : ' tabindex="-1"'}><i></i>${n.k !== 'rep' && n.k !== 'story' ? `<span class="nm__lbl" aria-hidden="true">${esc(n.label)}</span>` : ''}</button>`;
+    return `<button type="button" class="nm__mk nm__mk--${kindCls(n.k)}${n.items.length > 1 ? ' nm__mk--multi' : ''}" data-n="${i}" style="--x:${(n.x / 10).toFixed(2)}%;--y:${(n.y / 5.2).toFixed(2)}%;--xf:${(n.x / 1000).toFixed(4)};--yf:${(n.y / 520).toFixed(4)};--d:${n.t}ms" aria-label="${esc(label)}"${i === m.hq ? '' : ' tabindex="-1"'}><i></i>${n.k !== 'rep' && n.k !== 'story' ? `<span class="nm__lbl" aria-hidden="true">${esc(n.label)}</span>` : ''}</button>`;
   }).join('');
 }
 function stageHTML(ctx, m, N) {
@@ -270,7 +270,7 @@ export function netMapHome(ctx) {
   </div>
   <div class="wrap nm__wrap">
     <div class="nm__tile">
-      <div class="nm__bar nm__bar--sheet" data-nm-bar hidden>
+      <div class="nm__bar nm__bar--sheet" data-nm-bar>
         ${viewHTML(ctx, N, 'home', true, true)}
         ${countryPick(ctx, m, N)}
       </div>
@@ -303,7 +303,7 @@ export function netMapBlock(ctx, { mode = 'contact' } = {}) {
   }).join('');
   const contact = mode === 'contact';
   return `<div class="nm nm--panel nm--${mode}" data-nm data-nm-mode="${mode}">
-  <div class="nm__bar${contact ? ' nm__bar--sheet' : ''}" data-nm-bar hidden>
+  <div class="nm__bar${contact ? ' nm__bar--sheet' : ''}" data-nm-bar>
     ${contact ? viewHTML(ctx, N, mode, false) : regionsHTML(ctx, N)}
   </div>
   <div class="nm__body">

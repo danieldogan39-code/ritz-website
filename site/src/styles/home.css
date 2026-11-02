@@ -388,7 +388,8 @@
 .nm__stats dt { font-size: .86rem; line-height: 1.35; color: var(--on-night-2); }
 
 .nm__bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 20px; margin-top: clamp(40px, 5vw, 64px); }
-.nm__bar[hidden] { display: none; }
+/* Ohne Skript (oder ohne Landmaske, .is-static) gibt es keine Regionen- und Ebenenwahl */
+:root:not(.has-js) .nm .nm__bar, :root .nm.is-static .nm__bar { display: none; }
 .nm__layers, .nm__regions { display: flex; flex-wrap: wrap; gap: 6px; }
 .nm__tog, .nm__reg { display: inline-flex; align-items: center; gap: .55rem; min-height: 38px; padding: 0 15px; border: 1px solid var(--night-line); border-radius: 999px; background: transparent; color: var(--on-night-2); font: inherit; font-size: .88rem; font-weight: 560; cursor: pointer; transition: background-color .2s var(--ease), border-color .2s var(--ease), color .2s var(--ease); }
 .nm__tog:hover, .nm__reg:hover { border-color: rgb(246 240 236 / .5); color: var(--on-night); }
@@ -493,13 +494,22 @@
 .nm__img.is-gone { opacity: 0; }
 .nm__cv { position: absolute; inset: 0; display: none; width: 100%; height: 100%; }
 .nm__marks { position: absolute; inset: 0; }
-.nm.is-live .nm__frame { width: 100%; max-width: 1760px; aspect-ratio: auto; height: clamp(300px, min(54vw, 80vh), 900px); overflow: hidden; cursor: grab; user-select: none; -webkit-user-select: none; }
+:is(.nm.is-live, :root.has-js .nm:not(.is-static)) .nm__frame { width: 100%; max-width: 1760px; aspect-ratio: auto; height: clamp(300px, min(54vw, 80vh), 900px); overflow: hidden; cursor: grab; user-select: none; -webkit-user-select: none; }
 .nm.is-live .nm__frame.is-snap { cursor: pointer; }
 .nm.is-live .nm__frame.is-drag { cursor: grabbing; }
 .nm.is-live .nm__cv { display: block; }
+/* Mit Skript steht die Karte von Anfang an in ihrer endgültigen Größe (Leiste da, Legende weg): nichts verschiebt sich,
+   wenn sie lebendig wird. Das Punktbild davor bleibt unverzerrt mittig, die Marker sitzen auf ihm. Lädt die Landmaske
+   nicht, setzt netmap.js .is-static und es gilt wieder die Fassung ohne Skript. */
+:root.has-js .nm:not(.is-static) .nm__legend { display: none; }
+:root.has-js .nm:not(.is-static) .nm__frame { container-type: size; }
+:root.has-js .nm:not(.is-static) .nm__img { inset: auto; left: 50%; top: 50%; width: min(100cqw, 100cqh * 1000 / 520); height: auto; aspect-ratio: 1000 / 520; translate: -50% -50%; }
+:root.has-js .nm:not(.is-live, .is-static) .nm__mk { --iw: min(100cqw, 100cqh * 1000 / 520); left: calc((100cqw - var(--iw)) / 2 + var(--xf) * var(--iw)); top: calc((100cqh - var(--iw) * .52) / 2 + var(--yf) * var(--iw) * .52); }
 
 .nm__mk { position: absolute; left: var(--x); top: var(--y); z-index: 1; display: grid; place-items: center; width: 28px; height: 28px; margin: -14px 0 0 -14px; padding: 0; border: 0; border-radius: 50%; background: none; color: var(--on-night); cursor: pointer; -webkit-tap-highlight-color: transparent; transition: opacity .24s var(--ease-out), scale .3s var(--ease-out), visibility 0s; }
 .nm.is-live .nm__mk { left: 0; top: 0; }
+/* Zwischen „lebendig“ und dem Auftakt springen die Marker an ihre neue Stelle – unsichtbar, damit nichts „verrutscht“ */
+.nm.is-live:not(.is-run, .is-done) .nm__mk { visibility: hidden; }
 .nm__mk > i { display: block; width: 8px; height: 8px; border-radius: 50%; background: var(--hud-copper); box-shadow: 0 0 0 1.5px var(--night), 0 0 10px rgb(227 154 95 / .6); transition: scale .25s var(--ease-out), box-shadow .25s var(--ease-out); }
 .nm__mk--site { z-index: 2; }
 .nm__mk--site > i { width: 11px; height: 11px; border-radius: 1.5px; rotate: 45deg; background: var(--hud-red); box-shadow: 0 0 0 1.5px var(--night), 0 0 14px rgb(255 74 67 / .75); }
@@ -612,7 +622,7 @@
 }
 .nm__tile .nm__stage { margin: 0; }
 .nm__tile .nm__frame { width: 100%; }
-.nm.is-live .nm__tile .nm__frame { max-width: none; height: clamp(320px, min(48vw, 70vh), 760px); }
+:is(.nm.is-live, :root.has-js .nm:not(.is-static)) .nm__tile .nm__frame { max-width: none; height: clamp(320px, min(48vw, 70vh), 760px); }
 
 /* Unterseiten: Karte und Liste in einer dunklen Fläche */
 .nm--panel { padding: 0; border-radius: 10px; box-shadow: 0 0 0 1px var(--night-line); }
@@ -620,7 +630,7 @@
 .nm__body { display: grid; grid-template-columns: minmax(0, 1fr) clamp(260px, 25vw, 340px); }
 .nm--panel .nm__stage { min-width: 0; margin: 0; }
 .nm--panel .nm__frame { width: 100%; }
-.nm--panel.is-live .nm__frame { max-width: none; height: clamp(340px, 42vw, 600px); }
+:is(.nm--panel.is-live, :root.has-js .nm--panel:not(.is-static)) .nm__frame { max-width: none; height: clamp(340px, 42vw, 600px); }
 .nm__panel { display: flex; flex-direction: column; min-width: 0; contain: size; border-left: 1px solid var(--night-line); background: rgb(246 240 236 / .025); }
 .nm__search { position: relative; margin: 14px 14px 0; }
 .nm__search svg { position: absolute; left: 13px; top: 50%; width: 17px; height: 17px; translate: 0 -50%; color: var(--on-night-2); pointer-events: none; }
@@ -644,7 +654,7 @@
 @media (max-width: 900px) {
   .nm__body { grid-template-columns: minmax(0, 1fr); }
   .nm__panel { contain: none; max-height: min(62vh, 480px); border-left: 0; border-top: 1px solid var(--night-line); }
-  .nm--panel.is-live .nm__frame { height: clamp(280px, 62vw, 460px); }
+  :is(.nm--panel.is-live, :root.has-js .nm--panel:not(.is-static)) .nm__frame { height: clamp(280px, 62vw, 460px); }
 }
 
 @media (max-width: 1000px) { .nm__head { grid-template-columns: minmax(0, 1fr); } }
@@ -691,12 +701,12 @@
   .nm__popq input { height: 44px; font-size: 1rem; } /* 16 px: iOS zoomt nicht ins Feld */
   .nm__opts { flex: 1 1 auto; min-height: 0; max-height: none; }
   .nm__opt { min-height: 46px; padding-block: 8px; font-size: 1rem; }
-  .nm.is-live .nm__frame { height: clamp(250px, 66vw, 420px); }
-  .nm--panel.is-live .nm__frame { height: clamp(260px, 72vw, 420px); }
+  :is(.nm.is-live, :root.has-js .nm:not(.is-static)) .nm__frame { height: clamp(250px, 66vw, 420px); }
+  :is(.nm--panel.is-live, :root.has-js .nm--panel:not(.is-static)) .nm__frame { height: clamp(260px, 72vw, 420px); }
   .nm__wrap { margin-top: 28px; }
   .nm__tile { border-radius: 8px; }
   .nm__tile .nm__bar { padding: 12px 14px; }
-  .nm.is-live .nm__tile .nm__frame { height: clamp(260px, 72vw, 420px); }
+  :is(.nm.is-live, :root.has-js .nm:not(.is-static)) .nm__tile .nm__frame { height: clamp(260px, 72vw, 420px); }
   .nm__tile .nm__card { margin: 0; border-width: 1px 0 0; border-radius: 0; box-shadow: none; }
   .nm__card { position: relative; left: auto; top: auto; width: auto; max-height: none; overflow: visible; margin: 12px var(--gutter, 20px) 0; pointer-events: auto; } /* unter der Karte: kein eigener Scrollbereich, das Mausrad rollt die Seite */
   .nm--panel .nm__card { margin: 0; border-width: 1px 0 0; border-radius: 0; box-shadow: none; }
