@@ -30,6 +30,7 @@ export async function initPage(root = document) {
   if (has('[data-hx]')) jobs.push(import('./history.js').then((m) => m.initHistory(root)));
   if (has('[data-nm]')) jobs.push(import('./netmap.js').then((m) => m.initNetMap(root)));
   if (has('[data-org]')) jobs.push(import('./org.js').then((m) => m.initOrg(root)));
+  if (has('[data-film]')) jobs.push(import('./film.js').then((m) => m.initFilm(root)));
   if (has('[data-rig]')) jobs.push(import('./rig.js').then((m) => m.initRig(root)));
   if (has('[data-career]')) jobs.push(import('./career.js').then((m) => m.initCareer(root)));
   if (has('[data-sector]')) jobs.push(import('./sector.js').then((m) => m.initSector(root)));

@@ -462,6 +462,16 @@ async function buildStatic(cacheDir) {
     }
     log('Dokumente auf der Seite:', nd, 'von', docs.length, `(${(bytes / 1e6).toFixed(0)} MB), übrige über Anforderung`);
   }
+  // Firmenfilm (raw/film/*.mp4 → /film/, siehe src/views/film.js; feste Verknüpfung statt Kopie, wo möglich)
+  const FILM_DIR = `${ROOT}/raw/film`;
+  if (fs.existsSync(FILM_DIR)) {
+    fs.mkdirSync(`${DIST}/film`, { recursive: true });
+    for (const f of fs.readdirSync(FILM_DIR).filter((x) => x.endsWith('.mp4'))) {
+      const dst = `${DIST}/film/${f}`;
+      fs.rmSync(dst, { force: true });
+      try { fs.linkSync(`${FILM_DIR}/${f}`, dst); } catch (e) { fs.copyFileSync(`${FILM_DIR}/${f}`, dst); }
+    }
+  }
   // Sitemap, robots, Weiterleitungen, API
   if (!DRAFT) wr(`${DIST}/sitemap.xml`, `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${sitemap.map((s) => `<url><loc>${SITE}${s.url}</loc><lastmod>${s.lastmod}</lastmod>${s.alternates.map(([l, u]) => `<xhtml:link rel="alternate" hreflang="${l}" href="${SITE}${u}"/>`).join('')}</url>`).join('\n')}\n</urlset>\n`);
   wr(`${DIST}/robots.txt`, DRAFT ? 'User-agent: *\nDisallow: /\n' : `User-agent: *\nAllow: /\nDisallow: /api/\nDisallow: /*/suche/\nDisallow: /*/search/\n\nSitemap: ${SITE}/sitemap.xml\n`);
@@ -512,7 +522,7 @@ async function favicons(out) {
 }
 
 async function bundleAssets(out, mode) {
-  let css = ['main', 'extra', 'tools', 'visual', 'home', 'career', 'resp', 'quality', 'sector', 'motion'].map((n) => `${SRC}/styles/${n}.css`).filter((f) => fs.existsSync(f)).map((f) => fs.readFileSync(f, 'utf8')).join('\n');
+  let css = ['main', 'extra', 'tools', 'visual', 'home', 'film', 'career', 'resp', 'quality', 'sector', 'motion'].map((n) => `${SRC}/styles/${n}.css`).filter((f) => fs.existsSync(f)).map((f) => fs.readFileSync(f, 'utf8')).join('\n');
   if (mode === 'static') {
     css = css.replace('__FONT_LATIN__', '/assets/fonts/archivo-latin.woff2').replace('__FONT_LATIN_EXT__', '/assets/fonts/archivo-latin-ext.woff2');
     fs.mkdirSync(`${out}/assets/fonts`, { recursive: true });
@@ -674,6 +684,7 @@ AddDefaultCharset utf-8
 AddType application/manifest+json .webmanifest
 AddType image/webp .webp
 AddType font/woff2 .woff2
+AddType video/mp4 .mp4
 # Module (pdf.js als .mjs) brauchen einen JavaScript-Typ, sonst lädt der Browser sie nicht
 AddType text/javascript .js .mjs
 ErrorDocument 404 /de/404.html
@@ -691,8 +702,8 @@ ErrorDocument 404 /de/404.html
   <FilesMatch "\\.(css|js)$">
     Header set Cache-Control "public, max-age=31536000, immutable"
   </FilesMatch>
-  # ohne Versionskennung im Namen: PDF-Leser, Symbole, Manifest – eine Woche
-  <FilesMatch "\\.(mjs|ico|webmanifest)$">
+  # ohne Versionskennung im Namen: PDF-Leser, Symbole, Manifest, Film – eine Woche
+  <FilesMatch "\\.(mjs|ico|webmanifest|mp4)$">
     Header set Cache-Control "public, max-age=604800"
   </FilesMatch>
   <FilesMatch "\\.(html|json|xml)$">

@@ -5,6 +5,7 @@ import { netMapHome } from './netmap.js';
 import { newsCover } from './newscover.js';
 import { HISTORY_IMG, AREA_IMG, SECTOR_IMG } from '../lib/catalog.js';
 import { coversUm } from '../lib/product.js';
+import { filmBlock, filmHeroLink } from './film.js';
 
 export { AREA_IMG, SECTOR_IMG };
 // Bänder der Spannungsachse
@@ -299,7 +300,7 @@ function stage(ctx) {
   <div class="wrap st__inner">
     <h1 class="st__title" id="st-title">${words(H.h1)}</h1>
     <p class="st__lead">${esc(S.lead)}</p>
-    <div class="st__links"><a class="btn btn--light" href="#prinzip">${esc(S.cta1)}</a><a class="link link--light" href="${href('products')}">${esc(S.cta2)}</a></div>
+    <div class="st__links"><a class="btn btn--light" href="#prinzip">${esc(S.cta1)}</a><a class="link link--light" href="${href('products')}">${esc(S.cta2)}</a>${filmHeroLink(ctx)}</div>
   </div>
   <div class="st__foot">
     <dl class="wrap st__ruler" data-reveal="facts">${facts.map(([a, b, unit]) => `<div class="st__fact"><dt>${esc(b)}</dt><dd><strong${unit ? '' : ' data-count'}>${esc(a)}${unit ? `<small>${esc(unit)}</small>` : ''}</strong></dd></div>`).join('')}</dl>
@@ -498,6 +499,7 @@ ${netMapHome(ctx)}
 ${principle(ctx)}
 ${spectrum(ctx)}
 ${finderSearch(ctx)}
+${filmBlock(ctx)}
 ${heritage(ctx)}
 ${making(ctx)}
 ${quality(ctx)}

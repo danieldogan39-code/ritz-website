@@ -11,6 +11,7 @@ import { projectLL, locAddress } from '../lib/geo.js';
 import { netMapBlock } from './netmap.js';
 import { newsCover } from './newscover.js';
 import { countryOptions } from './products.js';
+import { filmBlock } from './film.js';
 
 const docByFile = (ctx, f) => ctx.data.docs.find((d) => d.file === f);
 // Downloadcenter: alle Dokumente, die die Sprachfassung zeigt (Hauptseite je Sprache, Produktfinder überall), Kopien einmal
@@ -152,6 +153,7 @@ export function companyPage(ctx) {
     </div>
   </div>
 </section>
+${filmBlock(ctx, { cls: 'film--page' })}
 <section class="section section--resin">
   <div class="wrap">${sectionHead(C.factsTitle)}<div class="facts" data-reveal="facts">${C.facts.map(([a, b]) => `<div class="fact"><strong data-count>${esc(a)}</strong><span>${esc(b)}</span></div>`).join('')}</div></div>
 </section>
