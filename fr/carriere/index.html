@@ -17,11 +17,11 @@
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#141110" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="/favicon.ico" sizes="32x32"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest">
 <link rel="preload" href="/assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/main.css?v=31622c07">
-<script>(function(){var d=document.documentElement;d.dataset.hostTheme=d.dataset.theme||'';try{var t=JSON.parse(localStorage.getItem('ritz-theme')||'"auto"');if(t==='light'||t==='dark')d.dataset.theme=t}catch(e){}try{var n=performance.getEntriesByType('navigation')[0];if(n&&(n.type==='back_forward'||n.type==='reload'))d.classList.add('nav-restore')}catch(e){}})()</script>
+<link rel="stylesheet" href="/assets/main.css?v=915dfcb0">
+<script>(function(){var d=document.documentElement;d.classList.add('has-js');d.dataset.hostTheme=d.dataset.theme||'';try{var t=JSON.parse(localStorage.getItem('ritz-theme')||'"auto"');if(t==='light'||t==='dark')d.dataset.theme=t}catch(e){}try{var n=performance.getEntriesByType('navigation')[0];if(n&&(n.type==='back_forward'||n.type==='reload'))d.classList.add('nav-restore')}catch(e){}})()</script>
 <script>(function(d){try{if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;if('IntersectionObserver' in window){d.classList.add('rv');setTimeout(function(){if(!d.classList.contains('rv-ok'))d.classList.remove('rv')},4000)}if(!false)return;try{var ss=sessionStorage;ss.removeItem('ritz-intro');if(ss.getItem('ritz-intro-skip'))return}catch(e){}try{var ls=localStorage,k=parseInt(ls.getItem('ritz-intro-n'),10)||0;ls.setItem('ritz-intro-n',String((k+1)%5));if(k!==0)return}catch(e){}d.setAttribute('data-intro','play');var done=0,EV=['pointerdown','keydown','wheel','touchstart'];function q(x){return document.querySelector(x)}function off(){d.removeAttribute('data-intro');var x=document.querySelectorAll('.intro,.intro__skip');for(var i=0;i<x.length;i++)x[i].parentNode.removeChild(x[i])}function end(skip){if(done)return;done=1;for(var i=0;i<EV.length;i++)removeEventListener(EV[i],onSkip,true);var o=q('.intro');if(!o){off();return}var lg=o.querySelector('.intro__logo'),sv=lg&&lg.querySelector('svg'),hd=q('.hdr .logo svg');if(!skip&&sv&&hd){var a=sv.getBoundingClientRect(),b=hd.getBoundingClientRect();if(a.width&&b.width){lg.style.setProperty('--fx',(b.left+b.width/2-a.left-a.width/2).toFixed(1)+'px');lg.style.setProperty('--fy',(b.top+b.height/2-a.top-a.height/2).toFixed(1)+'px');lg.style.setProperty('--fs',(b.width/a.width).toFixed(4));lg.style.setProperty('--fc',getComputedStyle(hd).color);o.classList.add('is-fly')}else skip=1}if(skip)o.classList.add('is-skip');d.setAttribute('data-intro','out');setTimeout(off,skip?300:720)}function onSkip(e){if(e.type==='keydown'&&/^(Shift|Control|Alt|Meta|CapsLock)$/.test(e.key))return;end(1)}for(var i=0;i<EV.length;i++)addEventListener(EV[i],onSkip,{capture:true,passive:true});addEventListener('animationend',function(e){if(e.animationName==='iTag')end(0)});var fb=0;addEventListener('animationstart',function(e){if(e.animationName==='iFade'&&!fb)fb=setTimeout(function(){end(0)},3400)});setTimeout(function(){end(0)},6000);}catch(e){}})(document.documentElement)</script>
-<script>window.__RITZ__={"lang":"fr","mode":"static","base":"/","dataBase":"/data/","v":"31622c07","api":null,"preview":true,"route":{"id":"career","p":{}}}</script>
-<script type="module" src="/assets/app.js?v=31622c07"></script>
+<script>window.__RITZ__={"lang":"fr","mode":"static","base":"/","dataBase":"/data/","v":"915dfcb0","api":null,"preview":true,"route":{"id":"career","p":{}}}</script>
+<script type="module" src="/assets/app.js?v=915dfcb0"></script>
 <link rel="expect" href="#main" blocking="render">
 <script type="speculationrules">{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/api/*","/dokumente/*","/wp-content/*","/_projekt/*","/*.pdf","/*.zip"]}},{"not":{"selector_matches":"[download], [target=\"_blank\"], [data-doc-req], [data-no-prefetch]"}}]},"eagerness":"moderate"}]}</script>
 </head>
@@ -274,7 +274,7 @@
 <h1>Certainement une bonne décision.</h1>
 <p class="lead">RITZ rend l’énergie mesurable. Plus de 1 500 personnes sur dix sites développent, fabriquent et testent nos transformateurs de mesure – dans plus de 20 métiers, sous l’égide de la Fondation RITZ.</p>
 <div class="cluster cr-hero__cta">
-<a class="btn btn--red" href="#stellen">Offres d’emploi<span class="cr-badge">15</span></a>
+<a class="btn btn--red" href="#stellen">Offres d’emploi<span class="cr-badge">14</span></a>
 <a class="btn btn--ghost" href="/fr/carriere/apprentissage/">Apprentissage</a>
 <a class="btn btn--ghost" href="/fr/carriere/stages/">Stages &amp; mémoires</a>
 </div>
@@ -302,7 +302,7 @@
 <p class="stn__d">Développement et conception</p>
 <p class="stn__x">De nouveaux transformateurs et capteurs – et les machines sur lesquelles ils sont fabriqués.</p>
 <p class="stn__r">p. ex. conception, ingénierie, électronique</p>
-<button class="stn__b" type="button" data-stn-b="dev" data-dept="Développement et conception" aria-pressed="false"><span class="stn__c" data-stn-c><b>3</b> postes à pourvoir</span><span class="vh">: Développement et conception</span></button>
+<button class="stn__b" type="button" data-stn-b="dev" data-dept="Développement et conception" aria-pressed="false"><span class="stn__c" data-stn-c><b>2</b> postes à pourvoir</span><span class="vh">: Développement et conception</span></button>
 </li><li class="stn__i stn__i--make" data-stn="make">
 <span class="stn__node" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="13.8" r="7.3"/><circle cx="12" cy="13.8" r="3.2"/><path d="M8.7 7.3V3.6h6.6v3.7"/><path d="M10.6 3.6V2.2M13.4 3.6V2.2"/></svg></span>
 <h3 class="stn__v">Fabriquer</h3>
@@ -335,21 +335,17 @@
 <div class="jb" data-jb>
 <div class="jb__bar">
 <div class="jb__q"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="18" height="18"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg><label class="vh" for="jb-q">Rechercher une offre</label><input class="input" id="jb-q" type="search" placeholder="Intitulé ou mot-clé, p. ex. essais" autocomplete="off" spellcheck="false" data-jb-q></div>
-<div class="jb__f" role="group" aria-labelledby="jb-loc-l"><span class="jb__fl" id="jb-loc-l">Site</span><button class="chip is-on" type="button" data-jb-loc="" aria-pressed="true">Tous</button><button class="chip" type="button" data-jb-loc="hamburg" aria-pressed="false">Hambourg <span class="chip__n" data-n>2</span></button><button class="chip" type="button" data-jb-loc="kirchaich" aria-pressed="false">Kirchaich <span class="chip__n" data-n>4</span></button><button class="chip" type="button" data-jb-loc="dresden" aria-pressed="false">Ottendorf-Okrilla <span class="chip__n" data-n>9</span></button></div>
-<div class="jb__f" role="group" aria-labelledby="jb-type-l"><span class="jb__fl" id="jb-type-l">Type de poste</span><button class="chip is-on" type="button" data-jb-type="" aria-pressed="true">Tous</button><button class="chip" type="button" data-jb-type="training" aria-pressed="false">Apprentissage <span class="chip__n" data-n>2</span></button><button class="chip" type="button" data-jb-type="permanent" aria-pressed="false">Poste permanent <span class="chip__n" data-n>13</span></button></div>
+<div class="jb__f" role="group" aria-labelledby="jb-loc-l"><span class="jb__fl" id="jb-loc-l">Site</span><button class="chip is-on" type="button" data-jb-loc="" aria-pressed="true">Tous</button><button class="chip" type="button" data-jb-loc="hamburg" aria-pressed="false">Hambourg <span class="chip__n" data-n>1</span></button><button class="chip" type="button" data-jb-loc="kirchaich" aria-pressed="false">Kirchaich <span class="chip__n" data-n>4</span></button><button class="chip" type="button" data-jb-loc="dresden" aria-pressed="false">Ottendorf-Okrilla <span class="chip__n" data-n>9</span></button></div>
+<div class="jb__f" role="group" aria-labelledby="jb-type-l"><span class="jb__fl" id="jb-type-l">Type de poste</span><button class="chip is-on" type="button" data-jb-type="" aria-pressed="true">Tous</button><button class="chip" type="button" data-jb-type="training" aria-pressed="false">Apprentissage <span class="chip__n" data-n>2</span></button><button class="chip" type="button" data-jb-type="permanent" aria-pressed="false">Poste permanent <span class="chip__n" data-n>12</span></button></div>
 </div>
 <div class="jb__status">
-<p class="jb__count" aria-live="polite" data-jb-count><b>15</b> postes à pourvoir</p>
+<p class="jb__count" aria-live="polite" data-jb-count><b>14</b> postes à pourvoir</p>
 <span class="jb__area" data-jb-area hidden><span>Domaine: <b data-jb-area-l></b></span><button class="icon-btn icon-btn--small" type="button" data-jb-area-x aria-label="Retirer le filtre de domaine"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="14" height="14"><path d="M6 6l12 12M18 6 6 18"/></svg></button></span>
 <button class="jb__reset" type="button" data-jb-reset hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="15" height="15"><path d="M4 12a8 8 0 1 0 2.4-5.7M4 4v4h4"/></svg>Réinitialiser les filtres</button>
 </div>
 <div class="jb__groups" data-jb-groups><section class="jg" data-jg="dev" aria-labelledby="jg-dev">
-<h3 class="jg__h" id="jg-dev"><span class="jg__v">Développer</span><span class="jg__d">Développement et conception</span><span class="jg__n" data-jg-n>3</span></h3>
-<ul class="jg__list"><li data-job data-area="dev" data-loc="hamburg" data-type="permanent" data-q="konstrukteur (m/w/d) hamburg hambourg developper developpement et conception conception, ingenierie, electronique poste permanent"><a class="jr" href="https://ritz.jobs.personio.de/job/2749868" target="_blank" rel="noopener">
-<span class="jr__t" lang="de"><b>Konstrukteur</b> <span class="jr__g">(m/w/d)</span></span>
-<span class="jr__meta"><span class="jr__loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="16" height="16"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Hambourg</span><span class="jr__type">Poste permanent, Temps plein</span></span>
-<span class="jr__go"><span class="jr__gol">Voir l’offre</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="18" height="18"><path d="M8 16 17 7M10 7h7v7"/></svg><span class="vh"> (s’ouvre dans un nouvel onglet)</span></span>
-</a></li><li data-job data-area="dev" data-loc="kirchaich" data-type="permanent" data-q="specialist engineering (m/w/d) kirchaich kirchaich developper developpement et conception conception, ingenierie, electronique poste permanent"><a class="jr" href="https://ritz.jobs.personio.de/job/2455915" target="_blank" rel="noopener">
+<h3 class="jg__h" id="jg-dev"><span class="jg__v">Développer</span><span class="jg__d">Développement et conception</span><span class="jg__n" data-jg-n>2</span></h3>
+<ul class="jg__list"><li data-job data-area="dev" data-loc="kirchaich" data-type="permanent" data-q="specialist engineering (m/w/d) kirchaich kirchaich developper developpement et conception conception, ingenierie, electronique poste permanent"><a class="jr" href="https://ritz.jobs.personio.de/job/2455915" target="_blank" rel="noopener">
 <span class="jr__t" lang="de"><b>Specialist Engineering</b> <span class="jr__g">(m/w/d)</span></span>
 <span class="jr__meta"><span class="jr__loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="16" height="16"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Kirchaich</span><span class="jr__type">Poste permanent, Temps plein</span></span>
 <span class="jr__go"><span class="jr__gol">Voir l’offre</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="18" height="18"><path d="M8 16 17 7M10 7h7v7"/></svg><span class="vh"> (s’ouvre dans un nouvel onglet)</span></span>
@@ -409,13 +405,13 @@
 </a></li></ul>
 </section><section class="jg" data-jg="org" aria-labelledby="jg-org">
 <h3 class="jg__h" id="jg-org"><span class="jg__v">Organiser</span><span class="jg__d">Administration et informatique</span><span class="jg__n" data-jg-n>2</span></h3>
-<ul class="jg__list"><li data-job data-area="org" data-loc="hamburg" data-type="permanent" data-q="group erp manager (m/w/d) hamburg hambourg organiser administration et informatique rh, erp et informatique, gestion commerciale poste permanent"><a class="jr" href="https://ritz.jobs.personio.de/job/2740479" target="_blank" rel="noopener">
-<span class="jr__t" lang="de"><b>Group ERP Manager</b> <span class="jr__g">(m/w/d)</span></span>
-<span class="jr__meta"><span class="jr__loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="16" height="16"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Hambourg</span><span class="jr__type">Poste permanent, Temps plein</span></span>
-<span class="jr__go"><span class="jr__gol">Voir l’offre</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="18" height="18"><path d="M8 16 17 7M10 7h7v7"/></svg><span class="vh"> (s’ouvre dans un nouvel onglet)</span></span>
-</a></li><li data-job data-area="org" data-loc="dresden" data-type="permanent" data-q="hr specialist (m/w/d) ottendorf-okrilla ottendorf-okrilla organiser administration et informatique rh, erp et informatique, gestion commerciale poste permanent"><a class="jr" href="https://ritz.jobs.personio.de/job/2573686" target="_blank" rel="noopener">
+<ul class="jg__list"><li data-job data-area="org" data-loc="dresden" data-type="permanent" data-q="hr specialist (m/w/d) ottendorf-okrilla ottendorf-okrilla organiser administration et informatique rh, erp et informatique, gestion commerciale poste permanent"><a class="jr" href="https://ritz.jobs.personio.de/job/2855096" target="_blank" rel="noopener">
 <span class="jr__t" lang="de"><b>HR Specialist</b> <span class="jr__g">(m/w/d)</span></span>
 <span class="jr__meta"><span class="jr__loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="16" height="16"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Ottendorf-Okrilla</span><span class="jr__type">Poste permanent, Temps plein</span></span>
+<span class="jr__go"><span class="jr__gol">Voir l’offre</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="18" height="18"><path d="M8 16 17 7M10 7h7v7"/></svg><span class="vh"> (s’ouvre dans un nouvel onglet)</span></span>
+</a></li><li data-job data-area="org" data-loc="hamburg" data-type="permanent" data-q="group erp manager (m/w/d) hamburg hambourg organiser administration et informatique rh, erp et informatique, gestion commerciale poste permanent"><a class="jr" href="https://ritz.jobs.personio.de/job/2740479" target="_blank" rel="noopener">
+<span class="jr__t" lang="de"><b>Group ERP Manager</b> <span class="jr__g">(m/w/d)</span></span>
+<span class="jr__meta"><span class="jr__loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="16" height="16"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Hambourg</span><span class="jr__type">Poste permanent, Temps plein</span></span>
 <span class="jr__go"><span class="jr__gol">Voir l’offre</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="18" height="18"><path d="M8 16 17 7M10 7h7v7"/></svg><span class="vh"> (s’ouvre dans un nouvel onglet)</span></span>
 </a></li></ul>
 </section></div>
@@ -446,7 +442,7 @@
 <span class="entry__stage">Avec de l’expérience</span>
 <h3 class="entry__t">Poste permanent</h3>
 <p>Postulez à une offre publiée sur le portail carrières – ou envoyez une candidature spontanée par e-mail au service RH.</p>
-<p class="entry__open"><b>13</b> postes à pourvoir</p>
+<p class="entry__open"><b>12</b> postes à pourvoir</p>
 <a class="link entry__go" href="#stellen">Voir les offres<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="16" height="16"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
 </li></ol>
 </div>
@@ -501,7 +497,7 @@
 <p class="small muted">92 Collaborateurs</p>
 <p class="csite__tr"><span>Apprentissages</span>Informaticien spécialisé en intégration de systèmes (h/f/d), Employé commercial industriel (h/f/d)</p>
 <div class="csite__foot">
-<a class="btn btn--small btn--ghost" href="#stellen" data-jb-goto="hamburg">Offres à Hambourg<span class="cr-badge cr-badge--ink">2</span></a>
+<a class="btn btn--small btn--ghost" href="#stellen" data-jb-goto="hamburg">Offres à Hambourg<span class="cr-badge cr-badge--ink">1</span></a>
 <span class="line-mail"><a href="mailto:personal.hamburg@ritz-international.com"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m3 7 9 6 9-6"/></svg><span>personal.hamburg@ritz-international.com</span></a><button class="copy" type="button" data-copy="personal.hamburg@ritz-international.com" aria-label="Copier: personal.hamburg@ritz-international.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="15" height="15"><rect x="8" y="8" width="12" height="12" rx="1"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg></button></span>
 </div>
 </div>
