@@ -1,5 +1,5 @@
 // Firmenfilm „RITZ in 90 Sekunden“ (Startseite und Unternehmen)
-// Bisher nur auf Deutsch: Für eine Sprache ohne Eintrag in FILM entfällt der Block (und der Bühnenlink).
+// Deutsch: deutscher Film. EN, FR, HU, ES: englischer Sprecher mit Texten und Untertiteln in der Sprache der Seite.
 // Dateien: raw/film/<datei>-1080.mp4 und -720.mp4 (Build kopiert sie nach /film/), Standbild raw/img/misc/<poster>.jpg.
 // Kapitel: Sekunde, an der das Kapitel im Film beginnt (kurz vor dem ersten Wort des Sprechers).
 import { esc, icon, imgTag, imgUrl } from '../lib/util.js';
@@ -41,6 +41,79 @@ export const FILM = {
     ],
   },
 };
+
+// Internationale Fassungen: englischer Sprecher, Texte im Bild und Untertitel in der Sprache der Seite
+// (Quelle der Texte: social/ritz-video/v2/sprachen.py). Kapitel nach den Zeiten des englischen Sprechers.
+const CH_EN = [0, 14.5, 27.5, 40.4, 50.8, 55.9, 61.9, 75.1];
+const intl = (lang, o) => ({ file: `ritz-film-${lang}`, poster: 'misc/film-poster-de', dur: 90, ...o, chapters: CH_EN.map((s, i) => [s, o.chapters[i]]) });
+FILM.en = intl('en', {
+  mb: 47,
+  title: 'RITZ in 90 seconds.',
+  lead: 'From winding and resin casting to high-voltage testing, from Hamburg to customers around the world: how RITZ builds instrument transformers and where they are at work.',
+  play: 'Play film', playLabel: 'Play the film “RITZ in 90 seconds” with sound', hero: 'Watch film', meta: 'with narration and subtitles',
+  chaptersLabel: 'Film chapters', chapterAt: 'Chapter {label} from {time}', text: 'Film transcript', download: 'Download film',
+  chapters: ['Measuring power', 'Since 1945', 'Production', 'Products', 'Applications', 'Awards', 'Worldwide', 'Together'],
+  transcript: [
+    'Electricity is everywhere. It powers our cities, our industry, our everyday lives. But every kilowatt-hour has to be measured, protected and safely distributed.',
+    'That is exactly why RITZ has been building instrument transformers since 1945 – the precision instruments of the power grid. What began in Hamburg is now an international group of companies.',
+    'From winding and resin casting to high-voltage testing: every device is made in our own plants. We even produce the cast resin ourselves. And no transformer leaves the plant untested.',
+    'Low, medium and high voltage up to 550 kilovolts, electronic sensors, busbars and cast resin parts – all from a single source. In wind farms, rail networks, high-voltage DC links and industry.',
+    'Award-winning, certified and officially recognised.',
+    'More than 1,500 people at ten sites in Europe, China and the USA work on this every day – and representatives in over 60 countries bring RITZ to customers around the world.',
+    'Together with our customers. For a stronger, more sustainable grid. RITZ. Empowering Our Electrical Future.',
+  ],
+});
+FILM.fr = intl('fr', {
+  mb: 47,
+  title: 'RITZ en 90 secondes.',
+  lead: 'Du bobinage et de la coulée de résine aux essais haute tension, de Hambourg aux clients du monde entier : comment RITZ fabrique ses transformateurs de mesure et où ils sont utilisés.',
+  play: 'Lire le film', playLabel: 'Lire le film « RITZ en 90 secondes » avec le son', hero: 'Voir le film', meta: 'en anglais, sous-titré en français',
+  chaptersLabel: 'Chapitres du film', chapterAt: 'Chapitre {label} à partir de {time}', text: 'Texte du film', download: 'Télécharger le film',
+  chapters: ['Mesurer le courant', 'Depuis 1945', 'Fabrication', 'Produits', 'Applications', 'Distinctions', 'Dans le monde', 'Ensemble'],
+  transcript: [
+    'L’électricité est partout. Elle alimente nos villes, notre industrie, notre quotidien. Mais chaque kilowattheure doit être mesuré, protégé et distribué en toute sécurité.',
+    'C’est précisément pour cela que RITZ fabrique des transformateurs de mesure depuis 1945 – les instruments de précision du réseau électrique. Née à Hambourg, RITZ est aujourd’hui un groupe international.',
+    'Bobinage, coulée de résine, essais haute tension : chaque appareil est fabriqué dans nos propres usines. Nous produisons même notre résine. Et aucun transformateur ne quitte l’usine sans essai.',
+    'Basse, moyenne et haute tension jusqu’à 550 kilovolts, capteurs électroniques, jeux de barres, pièces en résine – tout d’un seul fournisseur. Dans les parcs éoliens, les réseaux ferroviaires, les liaisons CCHT et l’industrie.',
+    'Primée, certifiée et officiellement reconnue.',
+    'Plus de 1 500 personnes sur dix sites en Europe, en Chine et aux États-Unis y travaillent chaque jour – et nos représentations dans plus de 60 pays rapprochent RITZ des clients du monde entier.',
+    'Ensemble avec nos clients. Pour un réseau plus fort et plus durable. RITZ. Empowering Our Electrical Future.',
+  ],
+});
+FILM.hu = intl('hu', {
+  mb: 47,
+  title: 'A RITZ 90 másodpercben.',
+  lead: 'A tekercseléstől és a gyantaöntéstől a nagyfeszültségű vizsgálatig, Hamburgtól az ügyfelekig szerte a világon: így készülnek a RITZ mérőváltói, és itt dolgoznak.',
+  play: 'Film lejátszása', playLabel: 'A „RITZ 90 másodpercben” film lejátszása hanggal', hero: 'Film megtekintése', meta: 'angolul, magyar felirattal',
+  chaptersLabel: 'A film fejezetei', chapterAt: '{label} fejezet ({time})', text: 'A film szövege', download: 'Film letöltése',
+  chapters: ['Árammérés', '1945 óta', 'Gyártás', 'Termékek', 'Alkalmazások', 'Díjak', 'Világszerte', 'Együtt'],
+  transcript: [
+    'Az áram mindenütt jelen van. Városainkat, iparunkat, mindennapjainkat működteti. De minden kilowattórát mérni, védeni és biztonságosan elosztani kell.',
+    'A RITZ éppen ezért gyárt 1945 óta mérőváltókat – az elektromos hálózat precíziós műszereit. Ami Hamburgban kezdődött, ma nemzetközi vállalatcsoport.',
+    'Tekercselés, gyantaöntés, nagyfeszültségű vizsgálat: minden készülék saját gyárainkban készül. Még az öntőgyantát is magunk állítjuk elő. És egyetlen váltó sem hagyja el vizsgálat nélkül a gyárat.',
+    'Kis-, közép- és nagyfeszültség 550 kilovoltig, elektronikus érzékelők, sínek, öntött gyanta alkatrészek – minden egy kézből. Szélparkokban, vasúti hálózatokban, HVDC-összeköttetésekben és az iparban.',
+    'Díjazott, tanúsított és hatóságilag elismert.',
+    'Több mint 1500 ember tíz telephelyen, Európában, Kínában és az USA-ban dolgozik ezen nap mint nap – és több mint 60 ország képviseletei viszik el a RITZ-et az ügyfelekhez szerte a világon.',
+    'Együtt ügyfeleinkkel. Egy erősebb, fenntarthatóbb hálózatért. RITZ. Empowering Our Electrical Future.',
+  ],
+});
+FILM.es = intl('es', {
+  mb: 47,
+  title: 'RITZ en 90 segundos.',
+  lead: 'Del bobinado y el colado de resina al ensayo de alta tensión, de Hamburgo a clientes de todo el mundo: cómo fabrica RITZ sus transformadores de medida y dónde trabajan.',
+  play: 'Reproducir vídeo', playLabel: 'Reproducir el vídeo «RITZ en 90 segundos» con sonido', hero: 'Ver vídeo', meta: 'en inglés, con subtítulos en español',
+  chaptersLabel: 'Capítulos del vídeo', chapterAt: 'Capítulo {label} desde {time}', text: 'Texto del vídeo', download: 'Descargar vídeo',
+  chapters: ['Medir la energía', 'Desde 1945', 'Fabricación', 'Productos', 'Aplicaciones', 'Premios', 'En el mundo', 'Juntos'],
+  transcript: [
+    'La electricidad está en todas partes. Impulsa nuestras ciudades, nuestra industria, nuestra vida diaria. Pero cada kilovatio hora debe medirse, protegerse y distribuirse de forma segura.',
+    'Por eso RITZ fabrica transformadores de medida desde 1945: los instrumentos de precisión de la red eléctrica. Lo que empezó en Hamburgo es hoy un grupo empresarial internacional.',
+    'Del bobinado y el colado de resina al ensayo de alta tensión: cada equipo se fabrica en nuestras propias plantas. Incluso producimos nosotros mismos la resina. Y ningún transformador sale de fábrica sin ensayar.',
+    'Baja, media y alta tensión hasta 550 kilovoltios, sensores electrónicos, barras y piezas de resina colada: todo de un mismo proveedor. En parques eólicos, redes ferroviarias, enlaces HVDC y la industria.',
+    'Premiada, certificada y reconocida oficialmente.',
+    'Más de 1500 personas en diez sedes de Europa, China y EE. UU. trabajan en ello cada día, y representantes en más de 60 países acercan RITZ a clientes de todo el mundo.',
+    'Junto a nuestros clientes. Por una red más fuerte y sostenible. RITZ. Empowering Our Electrical Future.',
+  ],
+});
 
 export const filmFor = (ctx) => (ctx.mode === 'static' ? FILM[ctx.lang] || null : null);
 const mmss = (s) => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, '0')}`;
