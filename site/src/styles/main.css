@@ -325,7 +325,7 @@ p { margin: 0; text-wrap: pretty; }
 .lang { position: relative; }
 .lang__btn { display: inline-flex; align-items: center; gap: .3em; height: 40px; padding: 0 .6rem; border: 1px solid var(--line); background: transparent; cursor: pointer; font-weight: 600; font-size: .85rem; font-stretch: 90%; }
 .lang__btn:hover { border-color: var(--ink); }
-.lang__menu { position: absolute; right: 0; top: calc(100% + 8px); min-width: 180px; padding: .4rem; background: var(--paper); border: 1px solid var(--line); box-shadow: var(--shadow); display: grid; }
+.lang__menu { position: absolute; right: 0; top: calc(100% + 8px); min-width: 180px; padding: .4rem; color: var(--ink); /* eigene Schriftfarbe: über der Bühne erbt der Kopf Weiß */ background: var(--paper); border: 1px solid var(--line); box-shadow: var(--shadow); display: grid; }
 .lang__menu a { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: .65rem; padding: .55rem .7rem; text-decoration: none; font-size: .95rem; }
 .lang__menu a b { font-weight: inherit; }
 .lang__menu a:hover, .lang__menu a[aria-current="true"] { background: var(--porcelain); color: var(--ink); }
